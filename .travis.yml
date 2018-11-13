@@ -27,7 +27,7 @@ env:
 before_install:
     - sudo apt-get install openssl
     - export PATH=$(echo $PATH | tr ':' "\n" | sed '/\/opt\/python/d' | tr "\n" ":" | sed "s|::|:|g")
-    - openssl aes-256-cbc -K $encrypted_7df67eab0e50_key -iv $encrypted_7df67eab0e50_iv
+    - openssl aes-256-cbc -K $encrypted_5a2fdba610ae_key -iv $encrypted_5a2fdba610ae_iv
       -in deploy_key.enc -out ./deploy_key -d
     - eval "$(ssh-agent -s)"
     - chmod 600 ./deploy_key
