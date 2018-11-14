@@ -115,8 +115,8 @@ public:
         nRejectBlockOutdatedMajority = 950;
         nToCheckBlockUpgradeMajority = 1000;
         nMinerThreads = 0;
-        nTargetTimespan = 1 * 60; // SecureCloudCoin: 1 day
-        nTargetSpacing = 1 * 60;  // SecureCloudCoin: 1 minute
+        nTargetTimespan = 1 * 60; // Hotchain: 1 day
+        nTargetSpacing = 1 * 60;  // Hotchain: 1 minute
         nMaturity = 10;
         nMasternodeCountDrift = 20;
         nMaxMoneyOut = 60000000 * COIN;
@@ -237,8 +237,8 @@ public:
         nRejectBlockOutdatedMajority = 75;
         nToCheckBlockUpgradeMajority = 100;
         nMinerThreads = 0;
-        nTargetTimespan = 1 * 60; // SecureCloudCoin: 1 day
-        nTargetSpacing = 1 * 60;  // SecureCloudCoin: 1 minute
+        nTargetTimespan = 1 * 60; // Hotchain: 1 day
+        nTargetSpacing = 1 * 60;  // Hotchain: 1 minute
         nLastPoWBlock = 200;
         nMaturity = 15;
         nMasternodeCountDrift = 4;
@@ -265,9 +265,9 @@ public:
 
         vFixedSeeds.clear();
         vSeeds.clear();
-        //vSeeds.push_back(CDNSSeedData("testnet.sc2.io", "testnet.sc2.io"));         // Single node address
-        //vSeeds.push_back(CDNSSeedData("testnet1.sc2.io", "testnet1.sc2.io"));       // Single node address
-        //vSeeds.push_back(CDNSSeedData("testnet.securecloudcoincoin.org", "testnet.securecloudcoincoin.org"));       // Single node address
+        //vSeeds.push_back(CDNSSeedData("testnet.hotchain.me", "testnet.hotchain.me"));         // Single node address
+        //vSeeds.push_back(CDNSSeedData("testnet1.hotchain.me", "testnet1.hotchain.me"));       // Single node address
+        //vSeeds.push_back(CDNSSeedData("testnet2.hotchain.me", "testnet2.hotchain.me"));       // Single node address
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 17); // Testnet hotchain addresses start with '7'
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 18);  // Testnet hotchain script addresses start with '8'
