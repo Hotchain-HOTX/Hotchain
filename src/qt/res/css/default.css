@@ -931,12 +931,12 @@ min-width:400px;
 
 QWidget .QFrame#frame_Space { /* Space between Header and Content */
 min-width:400px;
-background-color:#f8f6f6;
+/*background-color:#f8f6f6;*/
 }
 
 QWidget .QFrame#frame_Content { /* Actual Content */
 min-width:400px;
-background-color:#f8f6f6;
+/*background-color:#f8f6f6;*/
 }
 
 QWidget .QFrame#frame_Balances { /* Upper left side */
