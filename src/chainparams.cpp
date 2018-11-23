@@ -160,12 +160,12 @@ public:
         assert(hashGenesisBlock == uint256("0x000007cc5cc9b865157817742539218f877b6e39ae83d2b0f4d6b953ec2364e1"));
         assert(genesis.hashMerkleRoot == uint256("0xcdce2aaba7508325f8c28bf93cdd766b9bcb7e72607d9e5a95129537187074b0"));
 		
-	vSeeds.push_back(CDNSSeedData("node1.hotchain.com", "node1.hotchain.com"));         // Primary DNS Seeder
-	vSeeds.push_back(CDNSSeedData("node2.hotchain.com", "node2.hotchain.com"));         // Single node address
-	vSeeds.push_back(CDNSSeedData("node3.hotchain.com", "node3.hotchain.com"));         // Single node address
-	vSeeds.push_back(CDNSSeedData("node4.hotchain.com", "node4.hotchain.com"));         // Single node address
-	vSeeds.push_back(CDNSSeedData("node5.hotchain.com", "node5.hotchain.com"));         // Single node address
-	vSeeds.push_back(CDNSSeedData("node6.hotchain.com", "node6.hotchain.com"));         // Single node address
+	vSeeds.push_back(CDNSSeedData("node1.hotchain.me", "node1.hotchain.me"));         // Primary DNS Seeder
+	vSeeds.push_back(CDNSSeedData("node2.hotchain.me", "node2.hotchain.me"));         // Single node address
+	vSeeds.push_back(CDNSSeedData("node3.hotchain.me", "node3.hotchain.me"));         // Single node address
+	vSeeds.push_back(CDNSSeedData("node4.hotchain.me", "node4.hotchain.me"));         // Single node address
+	vSeeds.push_back(CDNSSeedData("node5.hotchain.me", "node5.hotchain.me"));         // Single node address
+	vSeeds.push_back(CDNSSeedData("node6.hotchain.me", "node6.hotchain.me"));         // Single node address
 
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 100); // Hotchain's wallet address starts with a X
