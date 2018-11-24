@@ -2513,8 +2513,8 @@ https://www.transifex.com/hotchain-project/hotchain-project-translations</source
     </message>
     <message>
         <location line="+25"/>
-        <source>Port of the proxy (e.g. 22222)</source>
-        <translation>Port of the proxy (e.g. 22222)</translation>
+        <source>Port of the proxy (e.g. 9069)</source>
+        <translation>Port of the proxy (e.g. 9069)</translation>
     </message>
     <message>
         <location line="+36"/>
@@ -6586,8 +6586,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+3"/>
-        <source>(22222 could be used only on mainnet)</source>
-        <translation type="unfinished">(22222 could be used only on mainnet)</translation>
+        <source>(9069 could be used only on mainnet)</source>
+        <translation type="unfinished">(9069 could be used only on mainnet)</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -6601,7 +6601,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+1"/>
-        <source>(must be 22222 for mainnet)</source>
+        <source>(must be 9069 for mainnet)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>

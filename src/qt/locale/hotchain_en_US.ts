@@ -1744,8 +1744,8 @@ https://www.transifex.com/hotchain-project/hotchain-project-translations</transl
         <translation>&amp;Port:</translation>
     </message>
     <message>
-        <source>Port of the proxy (e.g. 22222)</source>
-        <translation>Port of the proxy (e.g. 22222)</translation>
+        <source>Port of the proxy (e.g. 9069)</source>
+        <translation>Port of the proxy (e.g. 9069)</translation>
     </message>
     <message>
         <source>&amp;Window</source>
@@ -4166,8 +4166,8 @@ for example: alertnotify=echo %%s | mail -s "HOTCHAIN Alert" admin@foo.com
         <translation>You must specify a masternodeprivkey in the configuration. Please see documentation for help.</translation>
     </message>
     <message>
-        <source>(22222 could be used only on mainnet)</source>
-        <translation>(22222 could be used only on mainnet)</translation>
+        <source>(9069 could be used only on mainnet)</source>
+        <translation>(9069 could be used only on mainnet)</translation>
     </message>
     <message>
         <source>(default: %s)</source>
@@ -4178,8 +4178,8 @@ for example: alertnotify=echo %%s | mail -s "HOTCHAIN Alert" admin@foo.com
         <translation>(default: 1)</translation>
     </message>
     <message>
-        <source>(must be 22222 for mainnet)</source>
-        <translation>(must be 22222 for mainnet)</translation>
+        <source>(must be 9069 for mainnet)</source>
+        <translation>(must be 9069 for mainnet)</translation>
     </message>
     <message>
         <source>Accept command line and JSON-RPC commands</source>

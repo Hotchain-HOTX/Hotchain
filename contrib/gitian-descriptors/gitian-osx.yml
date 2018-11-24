@@ -28,7 +28,7 @@ packages:
 - "python-setuptools"
 - "fonts-tuffy"
 remotes:
-- "url": "https://github.com/hotchain-project/hotchain.git"
+- "url": "https://github.com/Hotchain-HOTX/Hotchain.git"
   "dir": "hotchain"
 files:
 - "MacOSX10.11.sdk.tar.gz"

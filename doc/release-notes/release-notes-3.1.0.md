@@ -1,8 +1,8 @@
-Hotchain Wallet version *3.1.0* is now available from:  <https://github.com/hotchain-project/hotchain/releases>
+Hotchain Wallet version *3.1.0* is now available from:  <https://github.com/Hotchain-HOTX/Hotchain/releases>
 
 This is a new major version release, including various bug fixes and performance improvements, as well as updated translations.
 
-Please report bugs using the issue tracker at github: <https://github.com/hotchain-project/hotchain/issues>
+Please report bugs using the issue tracker at github: <https://github.com/Hotchain-HOTX/Hotchain/issues>
 
 
 Mandatory Update

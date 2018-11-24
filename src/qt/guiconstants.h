@@ -54,7 +54,7 @@ static const int MAX_URI_LENGTH = 255;
 #define SPINNER_FRAMES 35
 
 #define QAPP_ORG_NAME "HOTCHAIN"
-#define QAPP_ORG_DOMAIN "hotx.io"
+#define QAPP_ORG_DOMAIN "hotchain.me"
 #define QAPP_APP_NAME_DEFAULT "hotchain-Qt"
 #define QAPP_APP_NAME_TESTNET "hotchain-Qt-testnet"
 

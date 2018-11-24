@@ -232,7 +232,8 @@ public:
         pchMessageStart[2] = 0x11;
         pchMessageStart[3] = 0x34;
         vAlertPubKey = ParseHex("0435c877fa14069a89ab3cb4660ecd80e7c77db360ea9892b7893e8b6a0feac4fd90d39feacfe172504d5d2cdc192cfa428086ea29c71905ec4307e2c450406d6d");
-        nP2pPort = 51434;
+        nP2pPort = 10500;
+		nRpcPort = 11000;
         nEnforceBlockUpgradeMajority = 51;
         nRejectBlockOutdatedMajority = 75;
         nToCheckBlockUpgradeMajority = 100;
@@ -240,10 +241,10 @@ public:
         nTargetTimespan = 1 * 60; // Hotchain: 1 day
         nTargetSpacing = 1 * 60;  // Hotchain: 1 minute
         nLastPoWBlock = 200;
-        nMaturity = 15;
-        nMasternodeCountDrift = 4;
+        nMaturity = 10;
+        nMasternodeCountDrift = 20;
         //nModifierUpdateBlock = 51197; //approx Mon, 17 Apr 2017 04:00:00 GMT
-        nMaxMoneyOut = 43199500 * COIN;
+        nMaxMoneyOut = 60000000 * COIN;
         //nZerocoinStartHeight = 201576;
         //nZerocoinStartTime = 1501776000;
         //nBlockEnforceSerialRange = 1; //Enforce serial range starting this block

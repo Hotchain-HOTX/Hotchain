@@ -3,7 +3,7 @@ Hotchain Wallet
 
 Setup
 ---------------------
-[Hotchain Wallet](http://hotx.io/wallet) is the original HOTCHAIN client and it builds the backbone of the network. However, it downloads and stores the entire history of HOTCHAIN transactions; depending on the speed of your computer and network connection, the synchronization process can take anywhere from a few hours to a day or more. Thankfully you only have to do this once.
+[Hotchain Wallet](http://hotchain.me/wallet) is the original HOTCHAIN client and it builds the backbone of the network. However, it downloads and stores the entire history of HOTCHAIN transactions; depending on the speed of your computer and network connection, the synchronization process can take anywhere from a few hours to a day or more. Thankfully you only have to do this once.
 
 Running
 ---------------------
@@ -28,9 +28,9 @@ Drag hotchain-Qt to your applications folder, and then run hotchain-Qt.
 
 * See the documentation at the [HOTCHAIN Wiki](https://en.bitcoin.it/wiki/Main_Page) ***TODO***
 for help and more information.
-* Ask for help on [BitcoinTalk](https://bitcointalk.org/index.php?topic=1262920.0) or on the [HOTCHAIN Forum](http://forum.hotx.io/).
-* Join our Discord server [Discord Server](https://discord.hotx.io)
-* Join one of our Slack groups [HOTCHAIN Slack Groups](https://hotx.io/slack-logins/) (Main community is replaced by Discord).
+* Ask for help on [BitcoinTalk](https://bitcointalk.org/index.php?topic=1262920.0) or on the [HOTCHAIN Forum](http://forum.hotchain.me/).
+* Join our Discord server [Discord Server](https://discord.hotchain.me)
+* Join one of our Slack groups [HOTCHAIN Slack Groups](https://hotchain.me/slack-logins/) (Main community is replaced by Discord).
 
 Building
 ---------------------
@@ -42,22 +42,16 @@ The following are developer notes on how to build HOTCHAIN on your native platfo
 
 Development
 ---------------------
-The Hotchain repo's [root README](https://github.com/HOTCHAIN-Project/HOTCHAIN/blob/master/README.md) contains relevant information on the development process and automated testing.
+The Hotchain repo's [root README](https://github.com/Hotchain-HOTX/Hotchain/blob/master/README.md) contains relevant information on the development process and automated testing.
 
 - [Developer Notes](developer-notes.md)
 - [Multiwallet Qt Development](multiwallet-qt.md)
 - [Release Notes](release-notes.md)
 - [Release Process](release-process.md)
-- [Source Code Documentation (External Link)](https://dev.visucore.com/bitcoin/doxygen/) ***TODO***
 - [Translation Process](translation_process.md)
 - [Unit Tests](unit-tests.md)
 - [Unauthenticated REST Interface](REST-interface.md)
 - [Dnsseed Policy](dnsseed-policy.md)
-
-### Resources
-
-* Discuss on the [BitcoinTalk](https://bitcointalk.org/index.php?topic=1262920.0) or the [HOTCHAIN](http://forum.hotx.io/) forum.
-* Join the [HOTCHAIN-Dev](https://hotchain-dev.slack.com/) Slack group ([Sign-Up](https://hotchain-dev.herokuapp.com/)).
 
 ### Miscellaneous
 - [Assets Attribution](assets-attribution.md)

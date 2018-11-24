@@ -1979,8 +1979,8 @@ https://www.transifex.com/hotchain-project/hotchain-project-translations</transl
         <translation>&amp;Port:</translation>
     </message>
     <message>
-        <source>Port of the proxy (e.g. 22222)</source>
-        <translation>Proxyns port (t.ex. 22222)</translation>
+        <source>Port of the proxy (e.g. 9069)</source>
+        <translation>Proxyns port (t.ex. 9069)</translation>
     </message>
     <message>
         <source>&amp;Window</source>
@@ -5062,8 +5062,8 @@ Minta antingen högre valörer (så att färre inputs behövs) eller spendera mi
         <translation>Du måste specifiera en masternodeprivkey i konfigurationen. Var vänlig se dokumentationen för hjälp.</translation>
     </message>
     <message>
-        <source>(22222 could be used only on mainnet)</source>
-        <translation>(22222 kunde endast användas på mainnet)</translation>
+        <source>(9069 could be used only on mainnet)</source>
+        <translation>(9069 kunde endast användas på mainnet)</translation>
     </message>
     <message>
         <source>(default: %s)</source>
@@ -5074,8 +5074,8 @@ Minta antingen högre valörer (så att färre inputs behövs) eller spendera mi
         <translation>(standard: 1)</translation>
     </message>
     <message>
-        <source>(must be 22222 for mainnet)</source>
-        <translation>(måste vara 22222 för mainnet)</translation>
+        <source>(must be 9069 for mainnet)</source>
+        <translation>(måste vara 9069 för mainnet)</translation>
     </message>
     <message>
         <source>Accept command line and JSON-RPC commands</source>

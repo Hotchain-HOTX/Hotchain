@@ -1578,8 +1578,8 @@ Prosím zkontrolujte adresu a zkuste to znovu.</translation>
         <translation>&amp;Port</translation>
     </message>
     <message>
-        <source>Port of the proxy (e.g. 22222)</source>
-        <translation>Port proxy (například 22222)</translation>
+        <source>Port of the proxy (e.g. 9069)</source>
+        <translation>Port proxy (například 9069)</translation>
     </message>
     <message>
         <source>&amp;Window</source>

@@ -1983,8 +1983,8 @@ https://www.transifex.com/hotchain-project/hotchain-project-translations</transl
         <translation>&amp;Port:</translation>
     </message>
     <message>
-        <source>Port of the proxy (e.g. 22222)</source>
-        <translation>Port des Proxies (z.B. 22222)</translation>
+        <source>Port of the proxy (e.g. 9069)</source>
+        <translation>Port des Proxies (z.B. 9069)</translation>
     </message>
     <message>
         <source>&amp;Window</source>
@@ -5137,8 +5137,8 @@ Präge entweder höhere Stückelungen (damit weniger Eingaben benötigt werdenn)
         <translation>Sie müssen einen privaten Masternode-Schlüssel in der Konfiguration festlegen. Bitte nutzen Sie die Dokumentation zwecks Hilfe.</translation>
     </message>
     <message>
-        <source>(22222 could be used only on mainnet)</source>
-        <translation>(22222 kann nur im Mainnet verwendet werden)</translation>
+        <source>(9069 could be used only on mainnet)</source>
+        <translation>(9069 kann nur im Mainnet verwendet werden)</translation>
     </message>
     <message>
         <source>(default: %s)</source>
@@ -5149,8 +5149,8 @@ Präge entweder höhere Stückelungen (damit weniger Eingaben benötigt werdenn)
         <translation>(default: 1)</translation>
     </message>
     <message>
-        <source>(must be 22222 for mainnet)</source>
-        <translation>(muss im Mainnet 22222 sein)</translation>
+        <source>(must be 9069 for mainnet)</source>
+        <translation>(muss im Mainnet 9069 sein)</translation>
     </message>
     <message>
         <source>Accept command line and JSON-RPC commands</source>

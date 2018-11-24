@@ -1927,8 +1927,8 @@ https://www.transifex.com/hotchain-project/hotchain-project-translations</transl
         <translation>Port:</translation>
     </message>
     <message>
-        <source>Port of the proxy (e.g. 22222)</source>
-        <translation>Port du proxy (ex: 22222)</translation>
+        <source>Port of the proxy (e.g. 9069)</source>
+        <translation>Port du proxy (ex: 9069)</translation>
     </message>
     <message>
         <source>&amp;Window</source>

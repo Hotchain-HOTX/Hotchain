@@ -106,6 +106,6 @@ To create a new language template, you will need to edit the languages manifest 
 **Note:** that the language translation file **must end in `.qm`** (the compiled extension), and not `.ts`.
 
 ### Questions and general assistance
-The Hotchain Wallet translation maintainers include *Fuzzbawls and s3v3nh4cks*. You can find them, and others, in the [HOTCHAIN Discord](https://discord.hotx.io).
+The Hotchain Wallet translation maintainers include *Fuzzbawls and s3v3nh4cks*. You can find them, and others, in the [HOTCHAIN Discord](https://discord.hotchain.me).
 
 Announcements will be posted during application pre-releases to notify translators to check for updates.

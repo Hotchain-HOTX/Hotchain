@@ -3,8 +3,8 @@ TOR SUPPORT IN HOTCHAIN
 
 It is possible to run HOTCHAIN as a Tor hidden service, and connect to such services.
 
-The following directions assume you have a Tor proxy running on port 22222. Many
-distributions default to having a SOCKS proxy listening on port 22222, but others
+The following directions assume you have a Tor proxy running on port 9069. Many
+distributions default to having a SOCKS proxy listening on port 9069, but others
 may not. In particular, the Tor Browser Bundle defaults to listening on a random
 port. See [Tor Project FAQ:TBBSocksPort](https://www.torproject.org/docs/faq.html.en#TBBSocksPort)
 for how to properly configure Tor.
@@ -36,14 +36,14 @@ outgoing connections be anonymized, but more is possible.
 ```
 
 An example how to start the client if the Tor proxy is running on local host on
-port 22222 and only allows .onion nodes to connect:
+port 9069 and only allows .onion nodes to connect:
 ```
-./hotchaind -onion=127.0.0.1:22222 -onlynet=tor -listen=0 -addnode=dnetzj6l4cvo2fxy.onion:989
+./hotchaind -onion=127.0.0.1:9069 -onlynet=tor -listen=0 -addnode=dnetzj6l4cvo2fxy.onion:989
 ```
 
 In a typical situation, this suffices to run behind a Tor proxy:
 ```
-./hotchaind -proxy=127.0.0.1:22222
+./hotchaind -proxy=127.0.0.1:9069
 ```
 
 Run a HOTCHAIN hidden server
@@ -54,12 +54,12 @@ reachable from the Tor network. Add these lines to your /etc/tor/torrc (or equiv
 config file):
 ```
 ClientOnly 1
-SOCKSPort 22222
+SOCKSPort 9069
 SOCKSPolicy accept 127.0.0.1/8
 Log notice file /var/log/tor/notices.log
 ControlPort 9051
 HiddenServiceDir /var/lib/tor/dnet/
-HiddenServicePort 989 127.0.0.1:22222
+HiddenServicePort 989 127.0.0.1:9069
 HiddenServiceStatistics 0
 ORPort 9001
 LongLivedPorts 989
@@ -69,7 +69,7 @@ NumEntryGuards 8
 ```
 
 The directory can be different of course, but (both) port numbers should be equal to
-your hotchaind's P2P listen port (22222 by default).
+your hotchaind's P2P listen port (9069 by default).
 ```
 -externalip=X   You can tell hotchain about its publicly reachable address using
                 this option, and this can be a .onion address. Given the above
@@ -92,7 +92,7 @@ your hotchaind's P2P listen port (22222 by default).
 
 In a typical situation, where you're only reachable via Tor, this should suffice:
 ```
-./hotchaind -proxy=127.0.0.1:22222 -externalip=dnetzj6l4cvo2fxy.onion:989 -listen
+./hotchaind -proxy=127.0.0.1:9069 -externalip=dnetzj6l4cvo2fxy.onion:989 -listen
 ```
 
 (obviously, replace the Onion address with your own). If you don't care too much
@@ -102,12 +102,12 @@ specify:
 ./hotchaind ... -discover
 ```
 
-and open port 22222 on your firewall (or use -upnp).
+and open port 9069 on your firewall (or use -upnp).
 
 If you only want to use Tor to reach onion addresses, but not use it as a proxy
 for normal IPv4/IPv6 communication, use:
 ```
-./hotchaind -onion=127.0.0.1:22222 -externalip=dnetzj6l4cvo2fxy.onion:989 -discover
+./hotchaind -onion=127.0.0.1:9069 -externalip=dnetzj6l4cvo2fxy.onion:989 -discover
 ```
 
 List of known HOTCHAIN Tor relays

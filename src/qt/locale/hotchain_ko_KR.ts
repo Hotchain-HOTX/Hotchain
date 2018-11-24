@@ -1992,8 +1992,8 @@ https://www.transifex.com/hotchain-project/hotchain-project-translations</transl
         <translation>&amp;포트:</translation>
     </message>
     <message>
-        <source>Port of the proxy (e.g. 22222)</source>
-        <translation>프록시 포트 (예: 22222)</translation>
+        <source>Port of the proxy (e.g. 9069)</source>
+        <translation>프록시 포트 (예: 9069)</translation>
     </message>
     <message>
         <source>&amp;Window</source>
@@ -5147,8 +5147,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>환경설정에서 masternodeprivkey를 지정해야 합니다. 도움말을 참조하십시오.</translation>
     </message>
     <message>
-        <source>(22222 could be used only on mainnet)</source>
-        <translation>(22222 은 메인넷에서만 사용될 수 있습니다)</translation>
+        <source>(9069 could be used only on mainnet)</source>
+        <translation>(9069 은 메인넷에서만 사용될 수 있습니다)</translation>
     </message>
     <message>
         <source>(default: %s)</source>
@@ -5159,8 +5159,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>(기본값: 1)</translation>
     </message>
     <message>
-        <source>(must be 22222 for mainnet)</source>
-        <translation>(메인넷 일경우 22222)</translation>
+        <source>(must be 9069 for mainnet)</source>
+        <translation>(메인넷 일경우 9069)</translation>
     </message>
     <message>
         <source>Accept command line and JSON-RPC commands</source>

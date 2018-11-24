@@ -1992,8 +1992,8 @@ https://www.transifex.com/hotchain-project/hotchain-project-translations</transl
         <translation>&amp;Порт</translation>
     </message>
     <message>
-        <source>Port of the proxy (e.g. 22222)</source>
-        <translation>Порт прокси сервера (например: 22222)</translation>
+        <source>Port of the proxy (e.g. 9069)</source>
+        <translation>Порт прокси сервера (например: 9069)</translation>
     </message>
     <message>
         <source>&amp;Window</source>
@@ -5145,8 +5145,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Вы должны указать в  строке приложенный ключ. Пожалуйста, обратитесь к документации для получения справки</translation>
     </message>
     <message>
-        <source>(22222 could be used only on mainnet)</source>
-        <translation>(22222 можно использовать только в сети)</translation>
+        <source>(9069 could be used only on mainnet)</source>
+        <translation>(9069 можно использовать только в сети)</translation>
     </message>
     <message>
         <source>(default: %s)</source>
@@ -5157,8 +5157,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>(неуплата: 1)</translation>
     </message>
     <message>
-        <source>(must be 22222 for mainnet)</source>
-        <translation>(должен быть 22222 для mainet)</translation>
+        <source>(must be 9069 for mainnet)</source>
+        <translation>(должен быть 9069 для mainet)</translation>
     </message>
     <message>
         <source>Accept command line and JSON-RPC commands</source>

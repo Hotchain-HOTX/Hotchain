@@ -1,36 +1,31 @@
 # Hotchain
 
-[![Build Status](https://travis-ci.org/Hotchain/Hotchain.svg?branch=master)](https://travis-ci.org/Hotchain/Hotchain) [![GitHub version](https://badge.fury.io/gh/Hotchain%2FHOTCHAIN.svg)](https://badge.fury.io/gh/Hotchain%2FHOTCHAIN) [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/hotchain-project/hotx/issues) [![HitCount](http://hits.dwyl.io/Hotchain/Hotchain/Hotchain.svg)](http://hits.dwyl.io/Hotchain/Hotchain/Hotchain)
-
-
-
-Hotchain is the digital form of rupees, which is a currency used throughout South Asia. Hotchain is intended to provide a digital currency to a growing number of residents in emerging markets that are unable to access bank accounts and credit cards.
+Anonymous, lucrative and HOT! The Hotchain ecosystem is based on a privacy focused cryptocurrency and a secure adult entertainment platform. You can be a spectator, a performer or an investor. Join us and become an Hotchain Superstar!
 
 
 # Specifications :
 
-  - Proof of Stake with MN & Governance
+  - Proof of Stake with MN
   - Zerocoin v2 with staking 
   - Instant Transactions via SwiftTx
-  - DAO Governance
   - 60sec block time
-  - 20k for Masternodes
+  - 10k for Masternodes
 
 
 Mainnet Ports :
-  - P2P 22222
-  - RPC 10538
+  - P2P 9069
+  - RPC 6990
 
 Testnet Ports :
   - P2P 10500
   - RPC 11000
 
-A total of 39M Hotchain's were premined to swap the community's holding at [Block 1](https://find.hotx.io/block/1)
+A total of 60M HOTX were premined.
 
 
 ### Block Rewards
 
-Find out more about our block reward & governance structure and percentages on our [website](https://www.hotx.io) .
+Find out more about our block reward and percentages on our [website](https://www.hotchain.me) .
 
 License
 ----

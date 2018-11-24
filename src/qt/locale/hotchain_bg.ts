@@ -1988,8 +1988,8 @@ https://www.transifex.com/hotchain-project/hotchain-project-translations</transl
         <translation>&amp;Порт:</translation>
     </message>
     <message>
-        <source>Port of the proxy (e.g. 22222)</source>
-        <translation>Порт за проксито (например 22222)</translation>
+        <source>Port of the proxy (e.g. 9069)</source>
+        <translation>Порт за проксито (например 9069)</translation>
     </message>
     <message>
         <source>&amp;Window</source>
@@ -5130,8 +5130,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Трябва да зададете masternodeprivkey в конфигурационния файл. Консултирайте се с документацията за повече помощ.</translation>
     </message>
     <message>
-        <source>(22222 could be used only on mainnet)</source>
-        <translation>(22222 може да се ползва само в mainnet)</translation>
+        <source>(9069 could be used only on mainnet)</source>
+        <translation>(9069 може да се ползва само в mainnet)</translation>
     </message>
     <message>
         <source>(default: %s)</source>
@@ -5142,8 +5142,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>(по подразбиране: 1)</translation>
     </message>
     <message>
-        <source>(must be 22222 for mainnet)</source>
-        <translation>(трябва да е 22222 за mainnet)</translation>
+        <source>(must be 9069 for mainnet)</source>
+        <translation>(трябва да е 9069 за mainnet)</translation>
     </message>
     <message>
         <source>Accept command line and JSON-RPC commands</source>

@@ -1992,8 +1992,8 @@ https://www.transifex.com/hotchain-project/hotchain-project-translations</transl
         <translation>&amp;Poort:</translation>
     </message>
     <message>
-        <source>Port of the proxy (e.g. 22222)</source>
-        <translation>Proxy-poort (v.b. 22222)</translation>
+        <source>Port of the proxy (e.g. 9069)</source>
+        <translation>Proxy-poort (v.b. 9069)</translation>
     </message>
     <message>
         <source>&amp;Window</source>
@@ -5146,8 +5146,8 @@ Ofwel het munten van hogere denominaties (dus minder invoer nodig) of het te bes
         <translation>Je moet een masternodeprivkey opgeven in de configuratie. Raadpleeg de documentatie voor hulp.</translation>
     </message>
     <message>
-        <source>(22222 could be used only on mainnet)</source>
-        <translation>(22222 kan alleen op mainnet worden gebruikt)</translation>
+        <source>(9069 could be used only on mainnet)</source>
+        <translation>(9069 kan alleen op mainnet worden gebruikt)</translation>
     </message>
     <message>
         <source>(default: %s)</source>
@@ -5158,8 +5158,8 @@ Ofwel het munten van hogere denominaties (dus minder invoer nodig) of het te bes
         <translation>(standaard: 1)</translation>
     </message>
     <message>
-        <source>(must be 22222 for mainnet)</source>
-        <translation>(moet 22222 voor mainnet zijn)</translation>
+        <source>(must be 9069 for mainnet)</source>
+        <translation>(moet 9069 voor mainnet zijn)</translation>
     </message>
     <message>
         <source>Accept command line and JSON-RPC commands</source>
