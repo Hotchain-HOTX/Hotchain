@@ -188,7 +188,7 @@ public:
         fHeadersFirstSyncingActive = false;
 
         nPoolMaxTransactions = 3;
-        strSporkKey = "04d5cac4800494827f62438d4d5bdaefdc9b51e70c007e0e6ec1c980b4786e29e4a72b2b630dc90bf4260bc7d7b756bb5d1d11ea1a604667ef282c2bebb48ae9b8";
+        strSporkKey = "04c280424d76d9ea1bd218d95d5286fef8e1686a3296fdcbf6a0003bfd2a1882756e56e709e88fae85010b0904dd11cdc0f3f0741f97ac87d49f7e97ad5db3b6ca";
 		strObfuscationPoolDummyAddress = "hG1YnZZZ1TkWWWU78uhVenYnVRDFfTf3hS";
         //nStartMasternodePayments = 1529268033; //Wed, 25 Jun 2014 20:36:16 GMT
 
