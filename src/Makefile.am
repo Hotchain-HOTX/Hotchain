@@ -65,18 +65,20 @@ noinst_PROGRAMS =
 TESTS =
 
 if BUILD_BITCOIND
-  bin_PROGRAMS += hotchaind
+  bin_PROGRAMS += pivxd
 endif
 
 if BUILD_BITCOIN_UTILS
-  bin_PROGRAMS += hotchain-cli hotchain-tx
+  bin_PROGRAMS += pivx-cli pivx-tx
 endif
 
 .PHONY: FORCE
-# Hotchain Wallet #
+# pivx core #
 BITCOIN_CORE_H = \
   activemasternode.h \
   accumulators.h \
+  accumulatorcheckpoints.h \
+  accumulatorcheckpoints.json.h \
   accumulatormap.h \
   addrman.h \
   alert.h \
@@ -112,6 +114,9 @@ BITCOIN_CORE_H = \
   httprpc.h \
   httpserver.h \
   init.h \
+  invalid.h \
+  invalid_outpoints.json.h \
+  invalid_serials.json.h \
   kernel.h \
   swifttx.h \
   key.h \
@@ -172,9 +177,9 @@ BITCOIN_CORE_H = \
   wallet.h \
   wallet_ismine.h \
   walletdb.h \
-  zhotxchain.h \
-  zhotxtracker.h \
-  zhotxwallet.h \
+  zpivchain.h \
+  zpivtracker.h \
+  zpivwallet.h \
   zmq/zmqabstractnotifier.h \
   zmq/zmqconfig.h \
   zmq/zmqnotificationinterface.h \
@@ -186,9 +191,9 @@ obj/build.h: FORCE
 	  "$(abs_top_srcdir)"
 libbitcoin_util_a-clientversion.$(OBJEXT): obj/build.h
 
-# server: shared between hotchaind and hotchain-qt
+# server: shared between pivxd and pivx-qt
 libbitcoin_server_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES) $(MINIUPNPC_CPPFLAGS) $(EVENT_CFLAGS) $(EVENT_PTHREADS_CFLAGS)
-libbitcoin_server_a_CXXFLAGS = $(AM_CXXFLAGS) $(HOTX_FLAGS)
+libbitcoin_server_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
 libbitcoin_server_a_SOURCES = \
   addrman.cpp \
   alert.cpp \
@@ -222,22 +227,22 @@ libbitcoin_server_a_SOURCES = \
   txdb.cpp \
   txmempool.cpp \
   validationinterface.cpp \
-  zhotxchain.cpp \
+  zpivchain.cpp \
   $(BITCOIN_CORE_H)
 
 if ENABLE_ZMQ
 libbitcoin_zmq_a_CPPFLAGS = $(BITCOIN_INCLUDES) $(ZMQ_CFLAGS)
-libbitcoin_zmq_a_CXXFLAGS = $(AM_CXXFLAGS) $(HOTX_FLAGS)
+libbitcoin_zmq_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
 libbitcoin_zmq_a_SOURCES = \
   zmq/zmqabstractnotifier.cpp \
   zmq/zmqnotificationinterface.cpp \
   zmq/zmqpublishnotifier.cpp
 endif
 
-# wallet: shared between hotchaind and hotchain-qt, but only linked
+# wallet: shared between pivxd and pivx-qt, but only linked
 # when wallet enabled
 libbitcoin_wallet_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
-libbitcoin_wallet_a_CXXFLAGS = $(AM_CXXFLAGS) $(HOTX_FLAGS)
+libbitcoin_wallet_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
 libbitcoin_wallet_a_SOURCES = \
   activemasternode.cpp \
   bip38.cpp \
@@ -262,14 +267,14 @@ libbitcoin_wallet_a_SOURCES = \
   wallet.cpp \
   wallet_ismine.cpp \
   walletdb.cpp \
-  zhotxwallet.cpp \
-  zhotxtracker.cpp \
+  zpivwallet.cpp \
+  zpivtracker.cpp \
   stakeinput.cpp \
   $(BITCOIN_CORE_H)
 
 # crypto primitives library
 crypto_libbitcoin_crypto_a_CPPFLAGS = $(AM_CPPFLAGS)
-crypto_libbitcoin_crypto_a_CXXFLAGS = $(AM_CXXFLAGS) $(HOTX_FLAGS)
+crypto_libbitcoin_crypto_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
 crypto_libbitcoin_crypto_a_SOURCES = \
   crypto/sha1.cpp \
   crypto/sha256.cpp \
@@ -279,26 +284,13 @@ crypto_libbitcoin_crypto_a_SOURCES = \
   crypto/hmac_sha512.cpp \
   crypto/scrypt.cpp \
   crypto/ripemd160.cpp \
-  crypto/sph_md_helper.c \
-  crypto/sph_sha2big.c \
   crypto/aes_helper.c \
   crypto/blake.c \
   crypto/bmw.c \
   crypto/groestl.c \
   crypto/jh.c \
-  crypto/luffa.c \
   crypto/keccak.c \
   crypto/skein.c \
-  crypto/cubehash.c \
-  crypto/shavite.c \
-  crypto/shabal.c \
-  crypto/simd.c \
-  crypto/echo.c \
-  crypto/whirlpool.c \
-  crypto/haval.c \
-  crypto/hamsi.c \
-  crypto/fugue.c \
-  crypto/sha2.c \
   crypto/common.h \
   crypto/sha256.h \
   crypto/sha512.h \
@@ -313,23 +305,12 @@ crypto_libbitcoin_crypto_a_SOURCES = \
   crypto/sph_groestl.h \
   crypto/sph_jh.h \
   crypto/sph_keccak.h \
-  crypto/sph_luffa.h \
-  crypto/sph_shavite.h \
-  crypto/sph_hamsi.h \
-  crypto/sph_cubehash.h \
   crypto/sph_skein.h \
-  crypto/sph_simd.h \
-  crypto/sph_fugue.h \
-  crypto/sph_echo.h \
-  crypto/sph_shabal.h \
-  crypto/sph_whirlpool.h \
-  crypto/sph_sha2.h \
-  crypto/sph_haval.h \
   crypto/sph_types.h
 
 # libzerocoin library
 libzerocoin_libbitcoin_zerocoin_a_CPPFLAGS = $(AM_CPPFLAGS) $(BOOST_CPPFLAGS)
-libzerocoin_libbitcoin_zerocoin_a_CXXFLAGS = $(AM_CXXFLAGS) $(HOTX_FLAGS)
+libzerocoin_libbitcoin_zerocoin_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
 libzerocoin_libbitcoin_zerocoin_a_SOURCES = \
   libzerocoin/Accumulator.h \
   libzerocoin/AccumulatorProofOfKnowledge.h \
@@ -353,11 +334,12 @@ libzerocoin_libbitcoin_zerocoin_a_SOURCES = \
   libzerocoin/Params.cpp \
   libzerocoin/SerialNumberSignatureOfKnowledge.cpp
 
-# common: shared between hotchaind, and hotchain-qt and non-server tools
+# common: shared between pivxd, and pivx-qt and non-server tools
 libbitcoin_common_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
-libbitcoin_common_a_CXXFLAGS = $(AM_CXXFLAGS) $(HOTX_FLAGS)
+libbitcoin_common_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
 libbitcoin_common_a_SOURCES = \
   accumulators.cpp \
+  accumulatorcheckpoints.cpp \
   accumulatormap.cpp \
   allocators.cpp \
   amount.cpp \
@@ -373,6 +355,7 @@ libbitcoin_common_a_SOURCES = \
   core_read.cpp \
   core_write.cpp \
   hash.cpp \
+  invalid.cpp \
   key.cpp \
   keystore.cpp \
   netbase.cpp \
@@ -392,7 +375,7 @@ libbitcoin_common_a_SOURCES = \
 # This library *must* be included to make sure that the glibc
 # backward-compatibility objects and their sanity checks are linked.
 libbitcoin_util_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
-libbitcoin_util_a_CXXFLAGS = $(AM_CXXFLAGS) $(HOTX_FLAGS)
+libbitcoin_util_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
 libbitcoin_util_a_SOURCES = \
   allocators.cpp \
   compat/strnlen.cpp \
@@ -415,9 +398,9 @@ libbitcoin_util_a_SOURCES += compat/glibc_compat.cpp
 AM_LDFLAGS += $(COMPAT_LDFLAGS)
 endif
 
-# cli: shared between hotchain-cli and hotchain-qt
+# cli: shared between pivx-cli and pivx-qt
 libbitcoin_cli_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
-libbitcoin_cli_a_CXXFLAGS = $(AM_CXXFLAGS) $(HOTX_FLAGS)
+libbitcoin_cli_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
 libbitcoin_cli_a_SOURCES = \
   rpc/client.cpp \
   $(BITCOIN_CORE_H)
@@ -425,16 +408,16 @@ libbitcoin_cli_a_SOURCES = \
 nodist_libbitcoin_util_a_SOURCES = $(srcdir)/obj/build.h
 #
 
-# hotchaind binary #
-hotchaind_SOURCES = hotchaind.cpp
-hotchaind_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
-hotchaind_CXXFLAGS = $(AM_CXXFLAGS) $(HOTX_FLAGS)
-hotchaind_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+# pivxd binary #
+pivxd_SOURCES = pivxd.cpp
+pivxd_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
+pivxd_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+pivxd_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 if TARGET_WINDOWS
-hotchaind_SOURCES += hotchaind-res.rc
+pivxd_SOURCES += pivxd-res.rc
 endif
-hotchaind_LDADD = \
+pivxd_LDADD = \
   $(LIBBITCOIN_SERVER) \
   $(LIBBITCOIN_COMMON) \
   $(LIBUNIVALUE) \
@@ -448,38 +431,38 @@ hotchaind_LDADD = \
   $(LIBMEMENV) \
   $(LIBSECP256K1)
 
-hotchaind_LDADD += $(BOOST_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS) $(EVENT_PTHREADS_LIBS) $(EVENT_LIBS) $(ZMQ_LIBS)
+pivxd_LDADD += $(BOOST_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS) $(EVENT_PTHREADS_LIBS) $(EVENT_LIBS) $(ZMQ_LIBS)
 
-# hotchain-cli binary #
-hotchain_cli_SOURCES = hotchain-cli.cpp
-hotchain_cli_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES) $(EVENT_CFLAGS)
-hotchain_cli_CXXFLAGS = $(AM_CXXFLAGS) $(HOTX_FLAGS)
-hotchain_cli_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+# pivx-cli binary #
+pivx_cli_SOURCES = pivx-cli.cpp
+pivx_cli_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES) $(EVENT_CFLAGS)
+pivx_cli_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+pivx_cli_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 if TARGET_WINDOWS
-hotchain_cli_SOURCES += hotchain-cli-res.rc
+pivx_cli_SOURCES += pivx-cli-res.rc
 endif
 
-hotchain_cli_LDADD = \
+pivx_cli_LDADD = \
   $(LIBBITCOIN_CLI) \
   $(LIBUNIVALUE) \
   $(LIBBITCOIN_UTIL) \
   $(LIBBITCOIN_CRYPTO)
 
-hotchain_cli_LDADD += $(BOOST_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(EVENT_LIBS)
+pivx_cli_LDADD += $(BOOST_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(EVENT_LIBS)
 #
 
-# hotchain-tx binary #
-hotchain_tx_SOURCES = hotchain-tx.cpp
-hotchain_tx_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
-hotchain_tx_CXXFLAGS = $(AM_CXXFLAGS) $(HOTX_FLAGS)
-hotchain_tx_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+# pivx-tx binary #
+pivx_tx_SOURCES = pivx-tx.cpp
+pivx_tx_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
+pivx_tx_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+pivx_tx_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 if TARGET_WINDOWS
-hotchain_tx_SOURCES += hotchain-tx-res.rc
+pivx_tx_SOURCES += pivx-tx-res.rc
 endif
 
-hotchain_tx_LDADD = \
+pivx_tx_LDADD = \
   $(LIBUNIVALUE) \
   $(LIBBITCOIN_COMMON) \
   $(LIBBITCOIN_ZEROCOIN) \
@@ -487,7 +470,7 @@ hotchain_tx_LDADD = \
   $(LIBBITCOIN_CRYPTO) \
   $(LIBSECP256K1)
 
-hotchain_tx_LDADD += $(BOOST_LIBS) $(CRYPTO_LIBS)
+pivx_tx_LDADD += $(BOOST_LIBS) $(CRYPTO_LIBS)
 #
 
 # bitcoinconsensus library #

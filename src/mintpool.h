@@ -1,10 +1,9 @@
-// Copyright (c) 2017-2018 The PIVX Developers
-// Copyright (c) 2018 Cryptopie 
+// Copyright (c) 2017-2018 The PIVX developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef HOTCHAIN_MINTPOOL_H
-#define HOTCHAIN_MINTPOOL_H
+#ifndef PIVX_MINTPOOL_H
+#define PIVX_MINTPOOL_H
 
 #include <map>
 #include <list>
@@ -51,4 +50,4 @@ public:
 };
 
 
-#endif //HOTCHAIN_MINTPOOL_H
+#endif //PIVX_MINTPOOL_H

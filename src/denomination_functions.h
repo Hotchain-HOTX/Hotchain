@@ -1,5 +1,4 @@
-// Copyright (c) 2017-2018 The PIVX Developers
-// Copyright (c) 2018 Cryptopie 
+// Copyright (c) 2017-2018 The PIVX developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -9,9 +8,6 @@
 #include "primitives/zerocoin.h"
 #include <list>
 #include <map>
-
-std::map<libzerocoin::CoinDenomination, int> calculateOutputs(const CAmount nValueTarget);
-
 std::vector<CMintMeta> SelectMintsFromList(const CAmount nValueTarget, CAmount& nSelectedValue,
                                                int nMaxNumberOfSpends,
                                                bool fMinimizeChange,

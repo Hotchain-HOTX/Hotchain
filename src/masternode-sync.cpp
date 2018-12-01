@@ -1,5 +1,5 @@
 // Copyright (c) 2014-2015 The Dash developers
-// Copyright (c) 2015-2017 The PIVX Developers 
+// Copyright (c) 2015-2017 The PIVX developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -330,8 +330,6 @@ void CMasternodeSync::Process()
             if (RequestedMasternodeAssets == MASTERNODE_SYNC_MNW) {
                 if (lastMasternodeWinner > 0 && lastMasternodeWinner < GetTime() - MASTERNODE_SYNC_TIMEOUT * 2 && RequestedMasternodeAttempt >= MASTERNODE_SYNC_THRESHOLD) { //hasn't received a new item in the last five seconds, so we'll move to the
                     GetNextAsset();
-                    // Try to activate our masternode if possible
-                    activeMasternode.ManageStatus();
                     return;
                 }
 
@@ -349,8 +347,6 @@ void CMasternodeSync::Process()
                         nCountFailures++;
                     } else {
                         GetNextAsset();
-                        // Try to activate our masternode if possible
-                        activeMasternode.ManageStatus();
                     }
                     return;
                 }

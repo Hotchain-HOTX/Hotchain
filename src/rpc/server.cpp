@@ -1,7 +1,7 @@
 // Copyright (c) 2010 Satoshi Nakamoto
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
-// Copyright (c) 2015-2018 The PIVX Developers 
+// Copyright (c) 2015-2018 The PIVX developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -37,7 +37,7 @@ static std::string rpcWarmupStatus("RPC server started");
 static CCriticalSection cs_rpcWarmup;
 
 /* Timer-creating functions */
-static std::vector<RPCTimerInterface*> timerInterfaces;
+static RPCTimerInterface* timerInterface = NULL;
 /* Map of name to timer.
  * @note Can be changed to std::unique_ptr when C++11 */
 static std::map<std::string, boost::shared_ptr<RPCTimerBase> > deadlineTimers;
@@ -113,6 +113,9 @@ static inline int64_t roundint64(double d)
 
 CAmount AmountFromValue(const UniValue& value)
 {
+    if (!value.isNum())
+        throw JSONRPCError(RPC_TYPE_ERROR, "Amount is not a number");
+
     double dAmount = value.get_real();
     if (dAmount <= 0.0 || dAmount > 21000000.0)
         throw JSONRPCError(RPC_TYPE_ERROR, "Invalid amount");
@@ -263,11 +266,11 @@ UniValue stop(const UniValue& params, bool fHelp)
     if (fHelp || params.size() > 1)
         throw runtime_error(
             "stop\n"
-            "\nStop HOTCHAIN server.");
+            "\nStop PIVX server.");
     // Event loop will exit after current HTTP requests have been handled, so
     // this reply will get back to the client.
     StartShutdown();
-    return "HOTCHAIN server stopping";
+    return "PIVX server stopping";
 }
 
 
@@ -351,37 +354,37 @@ static const CRPCCommand vRPCCommands[] =
         {"hidden", "reconsiderblock", &reconsiderblock, true, true, false},
         {"hidden", "setmocktime", &setmocktime, true, false, false},
 
-        /* HOTCHAIN features */
-        {"hotchain", "masternode", &masternode, true, true, false},
-        {"hotchain", "listmasternodes", &listmasternodes, true, true, false},
-        {"hotchain", "getmasternodecount", &getmasternodecount, true, true, false},
-        {"hotchain", "masternodeconnect", &masternodeconnect, true, true, false},
-        {"hotchain", "createmasternodebroadcast", &createmasternodebroadcast, true, true, false},
-        {"hotchain", "decodemasternodebroadcast", &decodemasternodebroadcast, true, true, false},
-        {"hotchain", "relaymasternodebroadcast", &relaymasternodebroadcast, true, true, false},
-        {"hotchain", "masternodecurrent", &masternodecurrent, true, true, false},
-        {"hotchain", "masternodedebug", &masternodedebug, true, true, false},
-        {"hotchain", "startmasternode", &startmasternode, true, true, false},
-        {"hotchain", "createmasternodekey", &createmasternodekey, true, true, false},
-        {"hotchain", "getmasternodeoutputs", &getmasternodeoutputs, true, true, false},
-        {"hotchain", "listmasternodeconf", &listmasternodeconf, true, true, false},
-        {"hotchain", "getmasternodestatus", &getmasternodestatus, true, true, false},
-        {"hotchain", "getmasternodewinners", &getmasternodewinners, true, true, false},
-        {"hotchain", "getmasternodescores", &getmasternodescores, true, true, false},
-        {"hotchain", "mnbudget", &mnbudget, true, true, false},
-        {"hotchain", "preparebudget", &preparebudget, true, true, false},
-        {"hotchain", "submitbudget", &submitbudget, true, true, false},
-        {"hotchain", "mnbudgetvote", &mnbudgetvote, true, true, false},
-        {"hotchain", "getbudgetvotes", &getbudgetvotes, true, true, false},
-        {"hotchain", "getnextsuperblock", &getnextsuperblock, true, true, false},
-        {"hotchain", "getbudgetprojection", &getbudgetprojection, true, true, false},
-        {"hotchain", "getbudgetinfo", &getbudgetinfo, true, true, false},
-        {"hotchain", "mnbudgetrawvote", &mnbudgetrawvote, true, true, false},
-        {"hotchain", "mnfinalbudget", &mnfinalbudget, true, true, false},
-        {"hotchain", "checkbudgets", &checkbudgets, true, true, false},
-        {"hotchain", "mnsync", &mnsync, true, true, false},
-        {"hotchain", "spork", &spork, true, true, false},
-        {"hotchain", "getpoolinfo", &getpoolinfo, true, true, false},
+        /* PIVX features */
+        {"pivx", "masternode", &masternode, true, true, false},
+        {"pivx", "listmasternodes", &listmasternodes, true, true, false},
+        {"pivx", "getmasternodecount", &getmasternodecount, true, true, false},
+        {"pivx", "masternodeconnect", &masternodeconnect, true, true, false},
+        {"pivx", "createmasternodebroadcast", &createmasternodebroadcast, true, true, false},
+        {"pivx", "decodemasternodebroadcast", &decodemasternodebroadcast, true, true, false},
+        {"pivx", "relaymasternodebroadcast", &relaymasternodebroadcast, true, true, false},
+        {"pivx", "masternodecurrent", &masternodecurrent, true, true, false},
+        {"pivx", "masternodedebug", &masternodedebug, true, true, false},
+        {"pivx", "startmasternode", &startmasternode, true, true, false},
+        {"pivx", "createmasternodekey", &createmasternodekey, true, true, false},
+        {"pivx", "getmasternodeoutputs", &getmasternodeoutputs, true, true, false},
+        {"pivx", "listmasternodeconf", &listmasternodeconf, true, true, false},
+        {"pivx", "getmasternodestatus", &getmasternodestatus, true, true, false},
+        {"pivx", "getmasternodewinners", &getmasternodewinners, true, true, false},
+        {"pivx", "getmasternodescores", &getmasternodescores, true, true, false},
+        {"pivx", "mnbudget", &mnbudget, true, true, false},
+        {"pivx", "preparebudget", &preparebudget, true, true, false},
+        {"pivx", "submitbudget", &submitbudget, true, true, false},
+        {"pivx", "mnbudgetvote", &mnbudgetvote, true, true, false},
+        {"pivx", "getbudgetvotes", &getbudgetvotes, true, true, false},
+        {"pivx", "getnextsuperblock", &getnextsuperblock, true, true, false},
+        {"pivx", "getbudgetprojection", &getbudgetprojection, true, true, false},
+        {"pivx", "getbudgetinfo", &getbudgetinfo, true, true, false},
+        {"pivx", "mnbudgetrawvote", &mnbudgetrawvote, true, true, false},
+        {"pivx", "mnfinalbudget", &mnfinalbudget, true, true, false},
+        {"pivx", "checkbudgets", &checkbudgets, true, true, false},
+        {"pivx", "mnsync", &mnsync, true, true, false},
+        {"pivx", "spork", &spork, true, true, false},
+        {"pivx", "getpoolinfo", &getpoolinfo, true, true, false},
 
 #ifdef ENABLE_WALLET
         /* Wallet */
@@ -439,6 +442,7 @@ static const CRPCCommand vRPCCommands[] =
         {"zerocoin", "listzerocoinamounts", &listzerocoinamounts, false, false, true},
         {"zerocoin", "mintzerocoin", &mintzerocoin, false, false, true},
         {"zerocoin", "spendzerocoin", &spendzerocoin, false, false, true},
+        {"zerocoin", "spendzerocoinmints", &spendzerocoinmints, false, false, true},
         {"zerocoin", "resetmintzerocoin", &resetmintzerocoin, false, false, true},
         {"zerocoin", "resetspentzerocoin", &resetspentzerocoin, false, false, true},
         {"zerocoin", "getarchivedzerocoin", &getarchivedzerocoin, false, false, true},
@@ -446,11 +450,11 @@ static const CRPCCommand vRPCCommands[] =
         {"zerocoin", "exportzerocoins", &exportzerocoins, false, false, true},
         {"zerocoin", "reconsiderzerocoins", &reconsiderzerocoins, false, false, true},
         {"zerocoin", "getspentzerocoinamount", &getspentzerocoinamount, false, false, false},
-        {"zerocoin", "getzhotxseed", &getzhotxseed, false, false, true},
-        {"zerocoin", "setzhotxseed", &setzhotxseed, false, false, true},
+        {"zerocoin", "getzpivseed", &getzpivseed, false, false, true},
+        {"zerocoin", "setzpivseed", &setzpivseed, false, false, true},
         {"zerocoin", "generatemintlist", &generatemintlist, false, false, true},
-        {"zerocoin", "searchdzhotx", &searchdzhotx, false, false, true},
-        {"zerocoin", "dzhotxstate", &dzhotxstate, false, false, true}
+        {"zerocoin", "searchdzpiv", &searchdzpiv, false, false, true},
+        {"zerocoin", "dzpivstate", &dzpivstate, false, false, true}
 
 #endif // ENABLE_WALLET
 };
@@ -614,34 +618,38 @@ std::vector<std::string> CRPCTable::listCommands() const
 
 std::string HelpExampleCli(string methodname, string args)
 {
-    return "> hotchain-cli " + methodname + " " + args + "\n";
+    return "> pivx-cli " + methodname + " " + args + "\n";
 }
 
 std::string HelpExampleRpc(string methodname, string args)
 {
     return "> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", "
            "\"method\": \"" +
-           methodname + "\", \"params\": [" + args + "] }' -H 'content-type: text/plain;' http://127.0.0.1:6990/\n";
+           methodname + "\", \"params\": [" + args + "] }' -H 'content-type: text/plain;' http://127.0.0.1:51473/\n";
 }
 
-void RPCRegisterTimerInterface(RPCTimerInterface *iface)
+void RPCSetTimerInterfaceIfUnset(RPCTimerInterface *iface)
 {
-    timerInterfaces.push_back(iface);
+    if (!timerInterface)
+        timerInterface = iface;
 }
 
-void RPCUnregisterTimerInterface(RPCTimerInterface *iface)
+void RPCSetTimerInterface(RPCTimerInterface *iface)
 {
-    std::vector<RPCTimerInterface*>::iterator i = std::find(timerInterfaces.begin(), timerInterfaces.end(), iface);
-    assert(i != timerInterfaces.end());
-    timerInterfaces.erase(i);
+    timerInterface = iface;
+}
+
+void RPCUnsetTimerInterface(RPCTimerInterface *iface)
+{
+    if (timerInterface == iface)
+        timerInterface = NULL;
 }
 
 void RPCRunLater(const std::string& name, boost::function<void(void)> func, int64_t nSeconds)
 {
-    if (timerInterfaces.empty())
+    if (!timerInterface)
         throw JSONRPCError(RPC_INTERNAL_ERROR, "No timer handler registered for RPC");
     deadlineTimers.erase(name);
-    RPCTimerInterface* timerInterface = timerInterfaces[0];
     LogPrint("rpc", "queue run of timer %s in %i seconds (using %s)\n", name, nSeconds, timerInterface->Name());
     deadlineTimers.insert(std::make_pair(name, boost::shared_ptr<RPCTimerBase>(timerInterface->NewTimer(func, nSeconds*1000))));
 }
