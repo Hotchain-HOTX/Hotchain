@@ -53,7 +53,7 @@ static void convertSeed6(std::vector<CAddress>& vSeedsOut, const SeedSpec6* data
 // + Contains no strange transactions
 static Checkpoints::MapCheckpoints mapCheckpoints =
     boost::assign::map_list_of
-    (0, uint256("0x0000054a98283034a191d20247700c7ad352795e95ba9284967c5b3c414a310d"));
+    (0, uint256("0x9a1bd35df5e5d48e2ac71a2e87f33b94679307248ca2d5ef56535d1010fb2889"));
 static const Checkpoints::CCheckpointData data = {
     &mapCheckpoints,
     1543687682, // * UNIX timestamp of last checkpoint block
@@ -146,10 +146,10 @@ public:
          * Build the genesis block. Note that the output of the genesis coinbase cannot
          * be spent as it did not originally exist in the database.
          *
-         * CBlock(hash=00000ffd590b14, ver=1, hashPrevBlock=00000000000000, hashMerkleRoot=e0028e, nTime=1390095618, nBits=1e0ffff0, nNonce=28917698, vtx=1)
-         *   CTransaction(hash=e0028e, ver=1, vin.size=1, vout.size=1, nLockTime=0)
-         *     CTxIn(COutPoint(000000, -1), coinbase 04ffff001d01044c5957697265642030392f4a616e2f3230313420546865204772616e64204578706572696d656e7420476f6573204c6976653a204f76657273746f636b2e636f6d204973204e6f7720416363657074696e6720426974636f696e73)
-         *     CTxOut(nValue=50.00000000, scriptPubKey=0xA9037BAC7050C479B121CF)
+         * CBlock(hash=9a1bd35df5e5d48e2ac71a2e87f33b94679307248ca2d5ef56535d1010fb2889, ver=1, hashPrevBlock=0000000000000000000000000000000000000000000000000000000000000000, hashMerkleRoot=d327211b0409ff843d383d66ff2f9eb4f69d08c9285de21e3000f55f07649e41, nTime=1543687682, nBits=1e0ffff0, nNonce=20578543, vtx=1)
+         * CTransaction(hash=d327211b04, ver=1, vin.size=1, vout.size=1, nLockTime=0)
+         * CTxIn(COutPoint(0000000000000000000000000000000000000000000000000000000000000000, 4294967295), coinbase 04ffff001d01044ccc466f7220746865206c697073206f6620616e20696d6d6f72616c20776f6d616e206472697020686f6e65792c20416e6420686572206d6f75746820697320736d6f6f74686572207468616e206f696c3b2042757420696e2074686520656e64207368652069732062697474657220617320776f726d776f6f642c20536861727020617320612074776f2d65646765642073776f72642e20486572206665657420676f20646f776e20746f2064656174682c20486572207374657073206c617920686f6c64206f662068656c6c)
+         *    CTxOut(nValue=250.00000000, scriptPubKey=0447a052e673ddce4448632ddec60a)
          *   vMerkleTree: e0028e
          */
         const char* pszTimestamp = "For the lips of an immoral woman drip honey, And her mouth is smoother than oil; But in the end she is bitter as wormwood, Sharp as a two-edged sword. Her feet go down to death, Her steps lay hold of hell";
@@ -168,8 +168,8 @@ public:
         genesis.nNonce = 20578543;
 
         hashGenesisBlock = genesis.GetHash();
-        assert(hashGenesisBlock == uint256("0x0000054a98283034a191d20247700c7ad352795e95ba9284967c5b3c414a310d"));
-        assert(genesis.hashMerkleRoot == uint256("0xf20acf02b071532cca96ef57c6877b5c8073332cf6cc4a3359d4538e022f46c2"));
+        assert(hashGenesisBlock == uint256("0x9a1bd35df5e5d48e2ac71a2e87f33b94679307248ca2d5ef56535d1010fb2889"));
+        assert(genesis.hashMerkleRoot == uint256("0xd327211b0409ff843d383d66ff2f9eb4f69d08c9285de21e3000f55f07649e41"));
 		
 	vSeeds.push_back(CDNSSeedData("node1.hotchain.me", "node1.hotchain.me"));         // Primary DNS Seeder
 	vSeeds.push_back(CDNSSeedData("node2.hotchain.me", "node2.hotchain.me"));         // Single node address
@@ -272,7 +272,7 @@ public:
         genesis.nNonce = 2402015;
 
         hashGenesisBlock = genesis.GetHash();
-        assert(hashGenesisBlock == uint256("0x0000041e482b9b9691d98eefb48473405c0b8ec31b76df3797c74a78680ef818"));
+        assert(hashGenesisBlock == uint256("0x9a1bd35df5e5d48e2ac71a2e87f33b94679307248ca2d5ef56535d1010fb2889"));
 
         vFixedSeeds.clear();
         vSeeds.clear();
@@ -344,7 +344,7 @@ public:
 
         hashGenesisBlock = genesis.GetHash();
         nDefaultPort = 51476;
-        assert(hashGenesisBlock == uint256("0x4f023a2120d9127b21bbad01724fdb79b519f593f2a85b60d3d79160ec5f29df"));
+        assert(hashGenesisBlock == uint256("0x9a1bd35df5e5d48e2ac71a2e87f33b94679307248ca2d5ef56535d1010fb2889"));
 
         vFixedSeeds.clear(); //! Testnet mode doesn't have any fixed seeds.
         vSeeds.clear();      //! Testnet mode doesn't have any DNS seeds.
