@@ -144,8 +144,8 @@
         <translation>Czy na pewno chcesz zakodować portfel?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR HOTCHAIN&lt;/b&gt;!</source>
-        <translation>Ostrzeżenie: Jeżeli zakodujesz portfel i stracisz do niego hasło , UTRACISZ WSZYSTKIE HOTCHAIN!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR HOTX&lt;/b&gt;!</source>
+        <translation>Ostrzeżenie: Jeżeli zakodujesz portfel i stracisz do niego hasło , UTRACISZ WSZYSTKIE HOTX!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -509,12 +509,12 @@
         <translation>&amp;Pomoc</translation>
     </message>
     <message>
-        <source>Hotchain Wallet</source>
-        <translation>&amp;Rdzeń HOTCHAIN</translation>
+        <source>Hotchain Core</source>
+        <translation>&amp;Rdzeń Hotchain</translation>
     </message>
     <message>
-        <source>Send coins to a HOTCHAIN address</source>
-        <translation>Wyślij monety do adresu HOTCHAIN</translation>
+        <source>Send coins to a Hotchain address</source>
+        <translation>Wyślij monety do adresu Hotchain</translation>
     </message>
     <message>
         <source>Request payments (generates QR codes and hotchain: URIs)</source>
@@ -529,24 +529,24 @@
         <translation>Przeglądaj masternodes</translation>
     </message>
     <message>
-        <source>&amp;About Hotchain Wallet</source>
+        <source>&amp;About Hotchain Core</source>
         <translation>&amp;O rdzeniu bitcoina</translation>
     </message>
     <message>
-        <source>Show information about Hotchain Wallet</source>
+        <source>Show information about Hotchain Core</source>
         <translation>Pokaż informacje o rdzeniu bitcoina</translation>
     </message>
     <message>
-        <source>Modify configuration options for HOTCHAIN</source>
-        <translation>Modyfikuj opcje konfiguracji HOTCHAIN</translation>
+        <source>Modify configuration options for Hotchain</source>
+        <translation>Modyfikuj opcje konfiguracji Hotchain</translation>
     </message>
     <message>
-        <source>Sign messages with your HOTCHAIN addresses to prove you own them</source>
-        <translation>Zatwierdź wiadomość z twoimi adresami HOTCHAIN, by udowodnić, że jesteś w ich posiadaniu</translation>
+        <source>Sign messages with your Hotchain addresses to prove you own them</source>
+        <translation>Zatwierdź wiadomość z twoimi adresami Hotchain, by udowodnić, że jesteś w ich posiadaniu</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified HOTCHAIN addresses</source>
-        <translation>Zweryfikuj wiadomości by upewnić się, że zostały zatwierdzone z podanego adresu HOTCHAIN</translation>
+        <source>Verify messages to ensure they were signed with specified Hotchain addresses</source>
+        <translation>Zweryfikuj wiadomości by upewnić się, że zostały zatwierdzone z podanego adresu Hotchain</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -573,8 +573,8 @@
         <translation>Otwórz &amp;Plik konfiguracji Masternode</translation>
     </message>
     <message>
-        <source>Open a HOTCHAIN: URI or payment request</source>
-        <translation>Otwórz HOTCHAIN: URI i żądanie zapłaty</translation>
+        <source>Open a Hotchain: URI or payment request</source>
+        <translation>Otwórz Hotchain: URI i żądanie zapłaty</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -585,12 +585,12 @@
         <translation>Okno eksplorera bloków</translation>
     </message>
     <message>
-        <source>Show the Hotchain Wallet help message to get a list with possible HOTCHAIN command-line options</source>
-        <translation>Pokaż wiadomość pomocy rdzenia HOTCHAIN, aby dostać listę możliwych opcji HOTCHAIN command-line</translation>
+        <source>Show the Hotchain Core help message to get a list with possible Hotchain command-line options</source>
+        <translation>Pokaż wiadomość pomocy rdzenia Hotchain, aby dostać listę możliwych opcji Hotchain command-line</translation>
     </message>
     <message>
-        <source>Hotchain Wallet client</source>
-        <translation>Rdzeń HOTCHAIN klient</translation>
+        <source>Hotchain Core client</source>
+        <translation>Rdzeń Hotchain klient</translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -899,8 +899,8 @@ MultiWysyłlka: %1</translation>
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>Hotchain Wallet</source>
-        <translation>&amp;Rdzeń HOTCHAIN</translation>
+        <source>Hotchain Core</source>
+        <translation>&amp;Rdzeń Hotchain</translation>
     </message>
     </context>
 <context>
@@ -914,8 +914,8 @@ MultiWysyłlka: %1</translation>
         <translation>Użyj niestandardowej ścieżki danych</translation>
     </message>
     <message>
-        <source>Hotchain Wallet</source>
-        <translation>&amp;Rdzeń HOTCHAIN</translation>
+        <source>Hotchain Core</source>
+        <translation>&amp;Rdzeń Hotchain</translation>
     </message>
     <message>
         <source>Error</source>
@@ -1190,12 +1190,12 @@ Proszę sprawdzić adres i spróbować ponownie</translation>
         <translation>Zezwól na przychodzące połączenia</translation>
     </message>
     <message>
-        <source>Automatically start HOTCHAIN after logging in to the system.</source>
-        <translation>Automatycznie uruchom HOTCHAIN po zalogowaniu do systemu</translation>
+        <source>Automatically start Hotchain after logging in to the system.</source>
+        <translation>Automatycznie uruchom Hotchain po zalogowaniu do systemu</translation>
     </message>
     <message>
-        <source>&amp;Start HOTCHAIN on system login</source>
-        <translation>&amp;Uruchom HOTCHAIN podczas logowania do systemu</translation>
+        <source>&amp;Start Hotchain on system login</source>
+        <translation>&amp;Uruchom Hotchain podczas logowania do systemu</translation>
     </message>
     <message>
         <source>Whether to show coin control features or not.</source>
@@ -1214,8 +1214,8 @@ Proszę sprawdzić adres i spróbować ponownie</translation>
         <translation>&amp;Sieć</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting HOTCHAIN.</source>
-        <translation>Język interfejsu użytkownika może być wybrany tutaj. Ustawienia ulegną zmianie po restarcie HOTCHAIN</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting Hotchain.</source>
+        <translation>Język interfejsu użytkownika może być wybrany tutaj. Ustawienia ulegną zmianie po restarcie Hotchain</translation>
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
@@ -1224,8 +1224,8 @@ https://www.transifex.com/hotchain-project/hotchain-project-translations</source
 https://www.transifex.com/hotchain-project/hotchain-project-translations </translation>
     </message>
     <message>
-        <source>Connect to the HOTCHAIN network through a SOCKS5 proxy.</source>
-        <translation>Połącz z siecią HOTCHAIN poprzez SOCKS5 proxy.</translation>
+        <source>Connect to the Hotchain network through a SOCKS5 proxy.</source>
+        <translation>Połącz z siecią Hotchain poprzez SOCKS5 proxy.</translation>
     </message>
     <message>
         <source>Proxy &amp;IP:</source>
@@ -1240,8 +1240,8 @@ https://www.transifex.com/hotchain-project/hotchain-project-translations </trans
         <translation>&amp;Port</translation>
     </message>
     <message>
-        <source>Port of the proxy (e.g. 9069)</source>
-        <translation>Port proxy (np. 9069)</translation>
+        <source>Port of the proxy (e.g. 9050)</source>
+        <translation>Port proxy (np. 9050)</translation>
     </message>
     <message>
         <source>&amp;Window</source>
@@ -1463,8 +1463,8 @@ https://www.transifex.com/hotchain-project/hotchain-project-translations </trans
         <translation>Liczba</translation>
     </message>
     <message>
-        <source>Enter a HOTCHAIN address (e.g. %1)</source>
-        <translation>Wprowadź adres HOTCHAIN (np. %1)</translation>
+        <source>Enter a Hotchain address (e.g. %1)</source>
+        <translation>Wprowadź adres Hotchain (np. %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -1894,8 +1894,8 @@ https://www.transifex.com/hotchain-project/hotchain-project-translations </trans
         <translation>Alt+P</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this HOTCHAIN address</source>
-        <translation>Zatwierdź wiadomość, aby udowodnić, że podany adres HOTCHAIN jest w twoim posiadaniu</translation>
+        <source>Sign the message to prove you own this Hotchain address</source>
+        <translation>Zatwierdź wiadomość, aby udowodnić, że podany adres Hotchain jest w twoim posiadaniu</translation>
     </message>
     <message>
         <source>Clear &amp;All</source>
@@ -1929,8 +1929,8 @@ https://www.transifex.com/hotchain-project/hotchain-project-translations </trans
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Hotchain Wallet</source>
-        <translation>&amp;Rdzeń HOTCHAIN</translation>
+        <source>Hotchain Core</source>
+        <translation>&amp;Rdzeń Hotchain</translation>
     </message>
     </context>
 <context>

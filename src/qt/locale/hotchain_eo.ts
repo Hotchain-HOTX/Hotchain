@@ -62,11 +62,11 @@
         <translation>Ricevanta adresojn</translation>
     </message>
     <message>
-        <source>These are your HOTCHAIN addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Ĉi tiuj estas viaj HOTCHAIN adreso por sendi pagojn. Ĉiam kontroku la kvanto kaj la ricevanta antaŭ ol sendi monerojn.</translation>
+        <source>These are your Hotchain addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Ĉi tiuj estas viaj Hotchain adreso por sendi pagojn. Ĉiam kontroku la kvanto kaj la ricevanta antaŭ ol sendi monerojn.</translation>
     </message>
     <message>
-        <source>These are your HOTCHAIN addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <source>These are your Hotchain addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
         <translation>Ĉi tiuj estas vian adreson por ricevi pagojn. Ĝi rekomendas uzi novajn ricenvantan adreson por ĉiu nova transakcio.</translation>
     </message>
     <message>
@@ -176,15 +176,15 @@
         <translation>Konfirmi monerĉifrado</translation>
     </message>
     <message>
-        <source>HOTCHAIN will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your HOTCHAINs from being stolen by malware infecting your computer.</source>
-        <translation>HOTCHAIN fermos nun por fini ĉifran procezon. Memoru ke ĉifri vian monujon ne povas plene protekti viajn HOTCHAINs de esti ŝtelita per malware infektanta vian komputilon.</translation>
+        <source>Hotchain will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your HOTXs from being stolen by malware infecting your computer.</source>
+        <translation>Hotchain fermos nun por fini ĉifran procezon. Memoru ke ĉifri vian monujon ne povas plene protekti viajn HOTXs de esti ŝtelita per malware infektanta vian komputilon.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Ĉu vi certas ke vi volas ĉifri vian monujon?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR HOTCHAIN&lt;/b&gt;!</source>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR HOTX&lt;/b&gt;!</source>
         <translation>Averto: se vi ĉifras vian monujo kaj perdi vian pasfrazon, vi &lt;b&gt;PERDOS VIAN TUTAN MONON&lt;/b&gt;!</translation>
     </message>
     <message>
@@ -254,11 +254,11 @@
         <translation>Adreso:</translation>
     </message>
     <message>
-        <source>Enter a HOTCHAIN Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
-        <translation>Eniri unu HOTCHAIN adreso ke vi volus ĉifri per BIP 38. Eniri unu pasfrazon meze skatolo. Klaku ĉifri por komputi la ĉifrita privata ŝlosilo.</translation>
+        <source>Enter a Hotchain Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
+        <translation>Eniri unu Hotchain adreso ke vi volus ĉifri per BIP 38. Eniri unu pasfrazon meze skatolo. Klaku ĉifri por komputi la ĉifrita privata ŝlosilo.</translation>
     </message>
     <message>
-        <source>The HOTCHAIN address to encrypt</source>
+        <source>The Hotchain address to encrypt</source>
         <translation>Adreson por ĉifri</translation>
     </message>
     <message>
@@ -290,8 +290,8 @@
         <translation>Kopiu la aktualan subskribo al la sistemo-poŝo</translation>
     </message>
     <message>
-        <source>Encrypt the private key for this HOTCHAIN address</source>
-        <translation>Ĉifri la privata ŝlosilo por ĉi tiu HOTCHAIN adreso</translation>
+        <source>Encrypt the private key for this Hotchain address</source>
+        <translation>Ĉifri la privata ŝlosilo por ĉi tiu Hotchain adreso</translation>
     </message>
     <message>
         <source>Reset all fields</source>
@@ -645,12 +645,12 @@
         <translation>Iloj langeto</translation>
     </message>
     <message>
-        <source>Hotchain Wallet</source>
-        <translation>HOTCHAIN kerno</translation>
+        <source>Hotchain Core</source>
+        <translation>Hotchain kerno</translation>
     </message>
     <message>
-        <source>Send coins to a HOTCHAIN address</source>
-        <translation>Sendu mono al HOTCHAIN addreso</translation>
+        <source>Send coins to a Hotchain address</source>
+        <translation>Sendu mono al Hotchain addreso</translation>
     </message>
     <message>
         <source>Request payments (generates QR codes and hotchain: URIs)</source>
@@ -669,24 +669,24 @@
         <translation>Foliumi mastro-nodo</translation>
     </message>
     <message>
-        <source>&amp;About Hotchain Wallet</source>
-        <translation>&amp;Pri HOTCHAIN Kerno</translation>
+        <source>&amp;About Hotchain Core</source>
+        <translation>&amp;Pri Hotchain Kerno</translation>
     </message>
     <message>
-        <source>Show information about Hotchain Wallet</source>
-        <translation>Montri informon pri HOTCHAIN Kerno</translation>
+        <source>Show information about Hotchain Core</source>
+        <translation>Montri informon pri Hotchain Kerno</translation>
     </message>
     <message>
-        <source>Modify configuration options for HOTCHAIN</source>
-        <translation>Modifi agordajn opciojn por HOTCHAIN</translation>
+        <source>Modify configuration options for Hotchain</source>
+        <translation>Modifi agordajn opciojn por Hotchain</translation>
     </message>
     <message>
-        <source>Sign messages with your HOTCHAIN addresses to prove you own them</source>
-        <translation>Subskribu mesaĝo per via HOTCHAIN adreso por pruvi vi posedas ĝin</translation>
+        <source>Sign messages with your Hotchain addresses to prove you own them</source>
+        <translation>Subskribu mesaĝo per via Hotchain adreso por pruvi vi posedas ĝin</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified HOTCHAIN addresses</source>
-        <translation>Kontrolu mesaĝojn por certigi ke ili estas subskribita kun specifita HOTCHAIN adreso</translation>
+        <source>Verify messages to ensure they were signed with specified Hotchain addresses</source>
+        <translation>Kontrolu mesaĝojn por certigi ke ili estas subskribita kun specifita Hotchain adreso</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -717,8 +717,8 @@
         <translation>Malfermi mastro-nodo agord-dosieron</translation>
     </message>
     <message>
-        <source>Open a HOTCHAIN: URI or payment request</source>
-        <translation>Malfermi unu HOTCHAIN: URI aŭ pago peto</translation>
+        <source>Open a Hotchain: URI or payment request</source>
+        <translation>Malfermi unu Hotchain: URI aŭ pago peto</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -729,16 +729,16 @@
         <translation>Bloko esplorilo fenestro</translation>
     </message>
     <message>
-        <source>Show the Hotchain Wallet help message to get a list with possible HOTCHAIN command-line options</source>
-        <translation>Montri la HOTCHAIN Kore help-mesaĝo por havi liston de havebla HOTCHAIN komandlinion opciojn</translation>
+        <source>Show the Hotchain Core help message to get a list with possible Hotchain command-line options</source>
+        <translation>Montri la Hotchain Kore help-mesaĝo por havi liston de havebla Hotchain komandlinion opciojn</translation>
     </message>
     <message>
-        <source>Hotchain Wallet client</source>
-        <translation>HOTCHAIN Kerno kliento</translation>
+        <source>Hotchain Core client</source>
+        <translation>Hotchain Kerno kliento</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to HOTCHAIN network</source>
-        <translation><numerusform>%n aktiva ligo(j) al la HOTCHAIN reto</numerusform><numerusform>%n aktiva ligo(j) al la HOTCHAIN reto</numerusform></translation>
+        <source>%n active connection(s) to Hotchain network</source>
+        <translation><numerusform>%n aktiva ligo(j) al la Hotchain reto</numerusform><numerusform>%n aktiva ligo(j) al la Hotchain reto</numerusform></translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -1122,8 +1122,8 @@ Muktisendi: %1</translation>
         <translation>Ĉi tiun etikedo ruĝiĝas se iu ajna ricevanto ricevas totalo pli malgranda ol %1.</translation>
     </message>
     <message>
-        <source>Can vary +/- %1 hotx per input.</source>
-        <translation>Povas varii +/- %1 hotx per enigo.</translation>
+        <source>Can vary +/- %1 uhotx per input.</source>
+        <translation>Povas varii +/- %1 uhotx per enigo.</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -1177,8 +1177,8 @@ Muktisendi: %1</translation>
         <translation>Redaktu sendantan adreson</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid HOTCHAIN address.</source>
-        <translation>La enirita "%1" adreso ne estas validan HOTCHAIN adreson.</translation>
+        <source>The entered address "%1" is not a valid Hotchain address.</source>
+        <translation>La enirita "%1" adreso ne estas validan Hotchain adreson.</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -1223,16 +1223,16 @@ Muktisendi: %1</translation>
         <translation>versio</translation>
     </message>
     <message>
-        <source>Hotchain Wallet</source>
-        <translation>HOTCHAIN kerno</translation>
+        <source>Hotchain Core</source>
+        <translation>Hotchain kerno</translation>
     </message>
     <message>
         <source>(%1-bit)</source>
         <translation>(%1-bajto)</translation>
     </message>
     <message>
-        <source>About Hotchain Wallet</source>
-        <translation>Pri HOTCHAIN Kerno</translation>
+        <source>About Hotchain Core</source>
+        <translation>Pri Hotchain Kerno</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -1274,16 +1274,16 @@ Muktisendi: %1</translation>
         <translation>Bonvenon</translation>
     </message>
     <message>
-        <source>Welcome to Hotchain Wallet.</source>
-        <translation>Bonvenon al la HOTCHAIN Kerno.</translation>
+        <source>Welcome to Hotchain Core.</source>
+        <translation>Bonvenon al la Hotchain Kerno.</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where Hotchain Wallet will store its data.</source>
-        <translation>Ĉar estas la unuan fojon ke la programo estas lanĉita, vi povas elekti kie HOTCHAIN kernk storigis sian datumojn. </translation>
+        <source>As this is the first time the program is launched, you can choose where Hotchain Core will store its data.</source>
+        <translation>Ĉar estas la unuan fojon ke la programo estas lanĉita, vi povas elekti kie Hotchain kernk storigis sian datumojn. </translation>
     </message>
     <message>
-        <source>Hotchain Wallet will download and store a copy of the HOTCHAIN block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>HOTCHAIN kerno elŝutos kaj konservi kopion de la HOTCHAIN blokĉeno. Almenaŭ %1GB datumoj stokitos en ĉi tiun dosierujo, kaj ĝi kresko kun la tempo. Monujo stokitos en ĉi tiun dosierujo.</translation>
+        <source>Hotchain Core will download and store a copy of the Hotchain block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>Hotchain kerno elŝutos kaj konservi kopion de la Hotchain blokĉeno. Almenaŭ %1GB datumoj stokitos en ĉi tiun dosierujo, kaj ĝi kresko kun la tempo. Monujo stokitos en ĉi tiun dosierujo.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -1294,8 +1294,8 @@ Muktisendi: %1</translation>
         <translation>Uzi kutimon datumojn dosierujo:</translation>
     </message>
     <message>
-        <source>Hotchain Wallet</source>
-        <translation>HOTCHAIN kerno</translation>
+        <source>Hotchain Core</source>
+        <translation>Hotchain kerno</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -1561,8 +1561,8 @@ Bonvolu kontroku la adreson kaj riprovu</translation>
         <translation>Adreso / Kvanto:</translation>
     </message>
     <message>
-        <source>Add destinations to send HOTCHAIN to</source>
-        <translation>Aldonu destinoj por sendi HOTCHAIN al</translation>
+        <source>Add destinations to send HOTX to</source>
+        <translation>Aldonu destinoj por sendi HOTX al</translation>
     </message>
     <message>
         <source>Add &amp;Destination</source>
@@ -1628,12 +1628,12 @@ Bonvolu kontroku la adreson kaj riprovu</translation>
         <translation>Bonvolu elekti privata nivelo.</translation>
     </message>
     <message>
-        <source>This option is the quickest and will cost about ~0.025 HOTCHAIN to anonymize 10000 HOTCHAIN</source>
-        <translation>Tion opcion estas la plej rapida kaji kostos ~0.025 HOTCHAIN por anonimigi 10000 HOTCHAIN</translation>
+        <source>This option is the quickest and will cost about ~0.025 HOTX to anonymize 10000 HOTX</source>
+        <translation>Tion opcion estas la plej rapida kaji kostos ~0.025 HOTX por anonimigi 10000 HOTX</translation>
     </message>
     <message>
-        <source>This option is moderately fast and will cost about 0.05 HOTCHAIN to anonymize 10000 HOTCHAIN</source>
-        <translation>Tion opcion estas moderebla rapide kaj kostos ĉirkaŭ 0.05 HOTCHAIN por anonimigi 10000 HOTCHAIN</translation>
+        <source>This option is moderately fast and will cost about 0.05 HOTX to anonymize 10000 HOTX</source>
+        <translation>Tion opcion estas moderebla rapide kaj kostos ĉirkaŭ 0.05 HOTX por anonimigi 10000 HOTX</translation>
     </message>
     <message>
         <source>This is the slowest and most secure option. Using maximum anonymity will cost</source>
@@ -1682,8 +1682,8 @@ Bonvolu kontroku la adreson kaj riprovu</translation>
         <translation>&amp;Monujo</translation>
     </message>
     <message>
-        <source>Automatically open the HOTCHAIN client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Aŭtomate malfermi HOTCHAIN klienton havenon en la enkursigilo. Tio nur laboras kiam via enkursigilo subtenas UPnP kaj estas ebligita.</translation>
+        <source>Automatically open the Hotchain client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Aŭtomate malfermi Hotchain klienton havenon en la enkursigilo. Tio nur laboras kiam via enkursigilo subtenas UPnP kaj estas ebligita.</translation>
     </message>
     <message>
         <source>Accept connections from outside</source>
@@ -1694,8 +1694,8 @@ Bonvolu kontroku la adreson kaj riprovu</translation>
         <translation>Sperta</translation>
     </message>
     <message>
-        <source>&amp;Start HOTCHAIN on system login</source>
-        <translation>&amp;Komencu HOTCHAIN en sistem-ensaluto</translation>
+        <source>&amp;Start Hotchain on system login</source>
+        <translation>&amp;Komencu Hotchain en sistem-ensaluto</translation>
     </message>
     <message>
         <source>&amp;Spend unconfirmed change</source>
@@ -1706,8 +1706,8 @@ Bonvolu kontroku la adreson kaj riprovu</translation>
         <translation>&amp;Reto</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting HOTCHAIN.</source>
-        <translation>La uzanta interfaco lingvo povas esti agordi ĉi tie. Tio agordo efektivigos post rekomenci HOTCHAIN.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting Hotchain.</source>
+        <translation>La uzanta interfaco lingvo povas esti agordi ĉi tie. Tio agordo efektivigos post rekomenci Hotchain.</translation>
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
@@ -1716,8 +1716,8 @@ https://www.transifex.com/hotchain-project/hotchain-project-translations</source
 https://www.transifex.com/hotchain-project/hotchain-project-translations</translation>
     </message>
     <message>
-        <source>Connect to the HOTCHAIN network through a SOCKS5 proxy.</source>
-        <translation>Konekti al la HOTCHAIN reto per SOCKS5 prokurilo.</translation>
+        <source>Connect to the Hotchain network through a SOCKS5 proxy.</source>
+        <translation>Konekti al la Hotchain reto per SOCKS5 prokurilo.</translation>
     </message>
     <message>
         <source>Proxy &amp;IP:</source>
@@ -1787,16 +1787,16 @@ https://www.transifex.com/hotchain-project/hotchain-project-translations</transl
         <translation>Via aktuala elspezebla saldo</translation>
     </message>
     <message>
-        <source>HOTCHAIN Balance</source>
-        <translation>HOTCHAIN kvanto</translation>
+        <source>HOTX Balance</source>
+        <translation>HOTX kvanto</translation>
     </message>
     <message>
         <source>Immature:</source>
         <translation>Nematura:</translation>
     </message>
     <message>
-        <source>Your current HOTCHAIN balance, unconfirmed and immature transactions included</source>
-        <translation>Via aktuala HOTCHAIN totalo, nekonformita kaj nematurita transakcioj inkluzivita</translation>
+        <source>Your current Hotchain balance, unconfirmed and immature transactions included</source>
+        <translation>Via aktuala Hotchain totalo, nekonformita kaj nematurita transakcioj inkluzivita</translation>
     </message>
     <message>
         <source>zHOTX Balance</source>
@@ -1809,8 +1809,8 @@ Immature: confirmed, but less than 1 mint of the same denomination after it was 
 Nematura: konfirmita, sed malpli ol 1 minto el la samo nomado post ĝin estis mintita</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the HOTCHAIN network after a connection is established, but this process has not completed yet.</source>
-        <translation>Montrata informon povas esti malmoderna. Via monujo automate sinkronigis kun la HOTCHAIN reto post konekcio establas, sed ĉi tio procezo ankoraŭ ne kompletigis.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Hotchain network after a connection is established, but this process has not completed yet.</source>
+        <translation>Montrata informon povas esti malmoderna. Via monujo automate sinkronigis kun la Hotchain reto post konekcio establas, sed ĉi tio procezo ankoraŭ ne kompletigis.</translation>
     </message>
     <message>
         <source>OVERVIEW</source>
@@ -1849,7 +1849,7 @@ Nematura: konfirmita, sed malpli ol 1 minto el la samo nomado post ĝin estis mi
     </message>
     <message>
         <source>Payment request file cannot be read! This can be caused by an invalid payment request file.</source>
-        <translation>Pago peto dosiero ne povas estas legi! Ĉi tio pieas esti kauzita por nevalida pago peto dosiero.</translation>
+        <translation>Pago peto dosiero ne povas estas legi! Ĉi tio hotxas esti kauzita por nevalida pago peto dosiero.</translation>
     </message>
     <message>
         <source>Payment request rejected</source>
@@ -1862,8 +1862,8 @@ Nematura: konfirmita, sed malpli ol 1 minto el la samo nomado post ĝin estis mi
 <context>
     <name>PrivacyDialog</name>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the HOTCHAIN network after a connection is established, but this process has not completed yet.</source>
-        <translation>Montrata informon povas esti malmoderna. Via monujo automate sinkronigis kun la HOTCHAIN reto post konekcio establas, sed ĉi tio procezo ankoraŭ ne kompletigis.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Hotchain network after a connection is established, but this process has not completed yet.</source>
+        <translation>Montrata informon povas esti malmoderna. Via monujo automate sinkronigis kun la Hotchain reto post konekcio establas, sed ĉi tio procezo ankoraŭ ne kompletigis.</translation>
     </message>
     <message>
         <source>0</source>
@@ -1874,8 +1874,8 @@ Nematura: konfirmita, sed malpli ol 1 minto el la samo nomado post ĝin estis mi
         <translation>zHOTX</translation>
     </message>
     <message>
-        <source>0.000 000 00 HOTCHAIN</source>
-        <translation>0.000 000 00 HOTCHAIN</translation>
+        <source>0.000 000 00 HOTX</source>
+        <translation>0.000 000 00 HOTX</translation>
     </message>
     <message>
         <source>Reset</source>
@@ -1918,8 +1918,8 @@ Nematura: konfirmita, sed malpli ol 1 minto el la samo nomado post ĝin estis mi
         <translation>Pagu &amp;Al:</translation>
     </message>
     <message>
-        <source>The HOTCHAIN address to send the payment to. Creates local payment to yourself when empty.</source>
-        <translation>HOTCHAIN adreso por alsendi la pago. Kreas lokala pago al vi mem kiam malplenija.</translation>
+        <source>The Hotchain address to send the payment to. Creates local payment to yourself when empty.</source>
+        <translation>Hotchain adreso por alsendi la pago. Kreas lokala pago al vi mem kiam malplenija.</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2101,8 +2101,8 @@ Nematura: konfirmita, sed malpli ol 1 minto el la samo nomado post ĝin estis mi
         <translation>Rekonstrui indekson</translation>
     </message>
     <message>
-        <source>Welcome to the HOTCHAIN RPC console.</source>
-        <translation>Bonvenon al la HOTCHAIN RPC konzolo.</translation>
+        <source>Welcome to the Hotchain RPC console.</source>
+        <translation>Bonvenon al la Hotchain RPC konzolo.</translation>
     </message>
     <message>
         <source>1 &amp;hour</source>
@@ -2297,8 +2297,8 @@ Nematura: konfirmita, sed malpli ol 1 minto el la samo nomado post ĝin estis mi
         <translation>Se estas aktiva sed ŝanĝo-adreso estas malpleniĝa au nevalida, ŝanĝo sendos al nova generita adreson.</translation>
     </message>
     <message>
-        <source>0 HOTCHAIN</source>
-        <translation>0 HOTCHAIN</translation>
+        <source>0 HOTX</source>
+        <translation>0 HOTX</translation>
     </message>
     <message>
         <source>Open Coin Control...</source>
@@ -2345,8 +2345,8 @@ Nematura: konfirmita, sed malpli ol 1 minto el la samo nomado post ĝin estis mi
         <translation>Kopi ŝanĝo</translation>
     </message>
     <message>
-        <source>Warning: Invalid HOTCHAIN address</source>
-        <translation>Averto: nevalida HOTCHAIN adreson</translation>
+        <source>Warning: Invalid Hotchain address</source>
+        <translation>Averto: nevalida Hotchain adreson</translation>
     </message>
     <message>
         <source>Are you sure you want to send?</source>
@@ -2372,8 +2372,8 @@ Nematura: konfirmita, sed malpli ol 1 minto el la samo nomado post ĝin estis mi
         <translation>Pagu &amp;Al:</translation>
     </message>
     <message>
-        <source>The HOTCHAIN address to send the payment to</source>
-        <translation>HOTCHAINC adreso por sendi la pago al</translation>
+        <source>The Hotchain address to send the payment to</source>
+        <translation>HOTXC adreso por sendi la pago al</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2407,8 +2407,8 @@ Nematura: konfirmita, sed malpli ol 1 minto el la samo nomado post ĝin estis mi
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>Hotchain Wallet is shutting down...</source>
-        <translation>HOTCHAIN kerno fermanta...</translation>
+        <source>Hotchain Core is shutting down...</source>
+        <translation>Hotchain kerno fermanta...</translation>
     </message>
     </context>
 <context>
@@ -2461,8 +2461,8 @@ Nematura: konfirmita, sed malpli ol 1 minto el la samo nomado post ĝin estis mi
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Hotchain Wallet</source>
-        <translation>HOTCHAIN kerno</translation>
+        <source>Hotchain Core</source>
+        <translation>Hotchain kerno</translation>
     </message>
     <message>
         <source>The Bitcoin Core developers</source>
@@ -2473,8 +2473,8 @@ Nematura: konfirmita, sed malpli ol 1 minto el la samo nomado post ĝin estis mi
         <translation>La Dash kerno programistoj</translation>
     </message>
     <message>
-        <source>The Hotchain Wallet developers</source>
-        <translation>La HOTCHAIN kerno programistoj</translation>
+        <source>The Hotchain Core developers</source>
+        <translation>La Hotchain kerno programistoj</translation>
     </message>
     </context>
 <context>

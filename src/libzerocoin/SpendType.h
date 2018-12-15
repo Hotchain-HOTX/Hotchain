@@ -1,9 +1,9 @@
-// Copyright (c) 2018 The PIVX Developers 
+// Copyright (c) 2018 The Hotchain developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef HOTCHAIN_SPENDTYPE_H
-#define HOTCHAIN_SPENDTYPE_H
+#ifndef HOTXX_SPENDTYPE_H
+#define HOTXX_SPENDTYPE_H
 
 #include <cstdint>
 
@@ -16,4 +16,4 @@ namespace libzerocoin {
     };
 }
 
-#endif //HOTCHAIN_SPENDTYPE_H
+#endif //HOTXX_SPENDTYPE_H

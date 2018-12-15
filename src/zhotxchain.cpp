@@ -1,9 +1,9 @@
-// Copyright (c) 2018 The PIVX Developers 
+// Copyright (c) 2018 The Hotchain developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #include "zhotxchain.h"
-//#include "invalid.h"
+#include "invalid.h"
 #include "main.h"
 #include "txdb.h"
 #include "ui_interface.h"
@@ -24,7 +24,7 @@ bool BlockToMintValueVector(const CBlock& block, const libzerocoin::CoinDenomina
                 continue;
 
             CValidationState state;
-            libzerocoin::PublicCoin coin(Params().Zerocoin_Params());
+            libzerocoin::PublicCoin coin(Params().Zerocoin_Params(false));
             if(!TxOutToPublicCoin(txOut, coin, state))
                 return false;
 
@@ -38,37 +38,37 @@ bool BlockToMintValueVector(const CBlock& block, const libzerocoin::CoinDenomina
     return true;
 }
 
-bool BlockToPubcoinList(const CBlock& block, std::list<libzerocoin::PublicCoin>& listPubcoins)
+bool BlockToPubcoinList(const CBlock& block, std::list<libzerocoin::PublicCoin>& listPubcoins, bool fFilterInvalid)
 {
     for (const CTransaction& tx : block.vtx) {
         if(!tx.IsZerocoinMint())
             continue;
 
         // Filter out mints that have used invalid outpoints
-        // if (fFilterInvalid) {
-        //     bool fValid = true;
-        //     for (const CTxIn& in : tx.vin) {
-        //         if (!ValidOutPoint(in.prevout, INT_MAX)) {
-        //             fValid = false;
-        //             break;
-        //         }
-        //     }
-        //     if (!fValid)
-        //         continue;
-        // }
+        if (fFilterInvalid) {
+            bool fValid = true;
+            for (const CTxIn& in : tx.vin) {
+                if (!ValidOutPoint(in.prevout, INT_MAX)) {
+                    fValid = false;
+                    break;
+                }
+            }
+            if (!fValid)
+                continue;
+        }
 
         uint256 txHash = tx.GetHash();
         for (unsigned int i = 0; i < tx.vout.size(); i++) {
             //Filter out mints that use invalid outpoints - edge case: invalid spend with minted change
-            //if (fFilterInvalid && !ValidOutPoint(COutPoint(txHash, i), INT_MAX))
-            //    break;
+            if (fFilterInvalid && !ValidOutPoint(COutPoint(txHash, i), INT_MAX))
+                break;
 
             const CTxOut txOut = tx.vout[i];
             if(!txOut.scriptPubKey.IsZerocoinMint())
                 continue;
 
             CValidationState state;
-            libzerocoin::PublicCoin pubCoin(Params().Zerocoin_Params());
+            libzerocoin::PublicCoin pubCoin(Params().Zerocoin_Params(false));
             if(!TxOutToPublicCoin(txOut, pubCoin, state))
                 return false;
 
@@ -80,37 +80,37 @@ bool BlockToPubcoinList(const CBlock& block, std::list<libzerocoin::PublicCoin>&
 }
 
 //return a list of zerocoin mints contained in a specific block
-bool BlockToZerocoinMintList(const CBlock& block, std::list<CZerocoinMint>& vMints)
+bool BlockToZerocoinMintList(const CBlock& block, std::list<CZerocoinMint>& vMints, bool fFilterInvalid)
 {
     for (const CTransaction& tx : block.vtx) {
         if(!tx.IsZerocoinMint())
             continue;
 
         // Filter out mints that have used invalid outpoints
-        // if (fFilterInvalid) {
-        //     bool fValid = true;
-        //     for (const CTxIn& in : tx.vin) {
-        //         if (!ValidOutPoint(in.prevout, INT_MAX)) {
-        //             fValid = false;
-        //             break;
-        //         }
-        //     }
-        //     if (!fValid)
-        //         continue;
-        // }
+        if (fFilterInvalid) {
+            bool fValid = true;
+            for (const CTxIn& in : tx.vin) {
+                if (!ValidOutPoint(in.prevout, INT_MAX)) {
+                    fValid = false;
+                    break;
+                }
+            }
+            if (!fValid)
+                continue;
+        }
 
         uint256 txHash = tx.GetHash();
         for (unsigned int i = 0; i < tx.vout.size(); i++) {
             //Filter out mints that use invalid outpoints - edge case: invalid spend with minted change
-            //if (fFilterInvalid && !ValidOutPoint(COutPoint(txHash, i), INT_MAX))
-            //    break;
+            if (fFilterInvalid && !ValidOutPoint(COutPoint(txHash, i), INT_MAX))
+                break;
 
             const CTxOut txOut = tx.vout[i];
             if(!txOut.scriptPubKey.IsZerocoinMint())
                 continue;
 
             CValidationState state;
-            libzerocoin::PublicCoin pubCoin(Params().Zerocoin_Params());
+            libzerocoin::PublicCoin pubCoin(Params().Zerocoin_Params(false));
             if(!TxOutToPublicCoin(txOut, pubCoin, state))
                 return false;
 
@@ -180,7 +180,7 @@ void FindMints(std::vector<CMintMeta> vMintsToFind, std::vector<CMintMeta>& vMin
         for (auto& out : tx.vout) {
             if (!out.IsZerocoinMint())
                 continue;
-            libzerocoin::PublicCoin pubcoin(Params().Zerocoin_Params());
+            libzerocoin::PublicCoin pubcoin(Params().Zerocoin_Params(meta.nVersion < libzerocoin::PrivateCoin::PUBKEY_VERSION));
             CValidationState state;
             TxOutToPublicCoin(out, pubcoin, state);
             if (GetPubCoinHash(pubcoin.getValue()) == meta.hashPubcoin && pubcoin.getDenomination() != meta.denom) {
@@ -202,6 +202,11 @@ void FindMints(std::vector<CMintMeta> vMintsToFind, std::vector<CMintMeta>& vMin
 
         vMintsToUpdate.push_back(meta);
     }
+}
+
+int GetZerocoinStartHeight()
+{
+    return Params().Zerocoin_StartHeight();
 }
 
 bool GetZerocoinMint(const CBigNum& bnPubcoin, uint256& txHash)
@@ -256,12 +261,11 @@ std::string ReindexZerocoinDB()
 
     uiInterface.ShowProgress(_("Reindexing zerocoin database..."), 0);
 
-    CBlockIndex* pindex = chainActive.Genesis();
+    CBlockIndex* pindex = chainActive[Params().Zerocoin_StartHeight()];
     std::vector<std::pair<libzerocoin::CoinSpend, uint256> > vSpendInfo;
     std::vector<std::pair<libzerocoin::PublicCoin, uint256> > vMintInfo;
     while (pindex) {
-        uiInterface.ShowProgress(_("Reindexing zerocoin database..."), 
-            std::max(1, std::min(99, (int)((double)pindex->nHeight / (double)chainActive.Height()) * 100)));
+        uiInterface.ShowProgress(_("Reindexing zerocoin database..."), std::max(1, std::min(99, (int)((double)(pindex->nHeight - Params().Zerocoin_StartHeight()) / (double)(chainActive.Height() - Params().Zerocoin_StartHeight()) * 100))));
 
         if (pindex->nHeight % 1000 == 0)
             LogPrintf("Reindexing zerocoin : block %d...\n", pindex->nHeight);
@@ -296,7 +300,7 @@ std::string ReindexZerocoinDB()
                                 continue;
 
                             CValidationState state;
-                            libzerocoin::PublicCoin coin(Params().Zerocoin_Params());
+                            libzerocoin::PublicCoin coin(Params().Zerocoin_Params(pindex->nHeight < Params().Zerocoin_Block_V2_Start()));
                             TxOutToPublicCoin(out, coin, state);
                             vMintInfo.push_back(make_pair(coin, txid));
                         }
@@ -338,7 +342,8 @@ libzerocoin::CoinSpend TxInToZerocoinSpend(const CTxIn& txin)
     dataTxIn.insert(dataTxIn.end(), txin.scriptSig.begin() + BIGNUM_SIZE, txin.scriptSig.end());
     CDataStream serializedCoinSpend(dataTxIn, SER_NETWORK, PROTOCOL_VERSION);
 
-    libzerocoin::CoinSpend spend(Params().Zerocoin_Params(), serializedCoinSpend);
+    libzerocoin::ZerocoinParams* paramsAccumulator = Params().Zerocoin_Params(chainActive.Height() < Params().Zerocoin_Block_V2_Start());
+    libzerocoin::CoinSpend spend(Params().Zerocoin_Params(true), paramsAccumulator, serializedCoinSpend);
 
     return spend;
 }
@@ -356,14 +361,14 @@ bool TxOutToPublicCoin(const CTxOut& txout, libzerocoin::PublicCoin& pubCoin, CV
     if (denomination == libzerocoin::ZQ_ERROR)
         return state.DoS(100, error("TxOutToPublicCoin : txout.nValue is not correct"));
 
-    libzerocoin::PublicCoin checkPubCoin(Params().Zerocoin_Params(), publicZerocoin, denomination);
+    libzerocoin::PublicCoin checkPubCoin(Params().Zerocoin_Params(false), publicZerocoin, denomination);
     pubCoin = checkPubCoin;
 
     return true;
 }
 
 //return a list of zerocoin spends contained in a specific block, list may have many denominations
-std::list<libzerocoin::CoinDenomination> ZerocoinSpendListFromBlock(const CBlock& block)
+std::list<libzerocoin::CoinDenomination> ZerocoinSpendListFromBlock(const CBlock& block, bool fFilterInvalid)
 {
     std::list<libzerocoin::CoinDenomination> vSpends;
     for (const CTransaction& tx : block.vtx) {
@@ -374,11 +379,11 @@ std::list<libzerocoin::CoinDenomination> ZerocoinSpendListFromBlock(const CBlock
             if (!txin.scriptSig.IsZerocoinSpend())
                 continue;
 
-            // if (fFilterInvalid) {
-            //     libzerocoin::CoinSpend spend = TxInToZerocoinSpend(txin);
-            //     if (invalid_out::ContainsSerial(spend.getCoinSerialNumber()))
-            //         continue;
-            // }
+            if (fFilterInvalid) {
+                libzerocoin::CoinSpend spend = TxInToZerocoinSpend(txin);
+                if (invalid_out::ContainsSerial(spend.getCoinSerialNumber()))
+                    continue;
+            }
 
             libzerocoin::CoinDenomination c = libzerocoin::IntToZerocoinDenomination(txin.nSequence);
             vSpends.push_back(c);

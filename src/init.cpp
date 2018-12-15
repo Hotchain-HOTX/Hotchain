@@ -1,7 +1,7 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
-// Copyright (c) 2015-2018 The PIVX Developers 
+// Copyright (c) 2015-2018 The Hotchain developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -11,6 +11,7 @@
 
 #include "init.h"
 
+#include "accumulatorcheckpoints.h"
 #include "accumulators.h"
 #include "activemasternode.h"
 #include "addrman.h"
@@ -19,6 +20,7 @@
 #include "compat/sanity.h"
 #include "httpserver.h"
 #include "httprpc.h"
+#include "invalid.h"
 #include "key.h"
 #include "main.h"
 #include "masternode-budget.h"
@@ -169,14 +171,15 @@ static CCoinsViewDB* pcoinsdbview = NULL;
 static CCoinsViewErrorCatcher* pcoinscatcher = NULL;
 static boost::scoped_ptr<ECCVerifyHandle> globalVerifyHandle;
 
-void Interrupt(boost::thread_group& threadGroup)
+static boost::thread_group threadGroup;
+static CScheduler scheduler;
+void Interrupt()
 {
     InterruptHTTPServer();
     InterruptHTTPRPC();
     InterruptRPC();
     InterruptREST();
     InterruptTorControl();
-    threadGroup.interrupt_all();
 }
 
 /** Preparing steps before shutting down or restarting the wallet */
@@ -210,6 +213,11 @@ void PrepareShutdown()
     DumpBudgets();
     DumpMasternodePayments();
     UnregisterNodeSignals(GetNodeSignals());
+
+    // After everything has been shut down, but before things get flushed, stop the
+    // CScheduler/checkqueue threadGroup
+    threadGroup.interrupt_all();
+    threadGroup.join_all();
 
     if (fFeeEstimatesInitialized) {
         boost::filesystem::path est_path = GetDataDir() / FEE_ESTIMATES_FILENAME;
@@ -380,7 +388,7 @@ std::string HelpMessage(HelpMessageMode mode)
 #endif
     strUsage += HelpMessageOpt("-reindex", _("Rebuild block chain index from current blk000??.dat files") + " " + _("on startup"));
     strUsage += HelpMessageOpt("-reindexaccumulators", _("Reindex the accumulator database") + " " + _("on startup"));
-    strUsage += HelpMessageOpt("-reindexmoneysupply", _("Reindex the HOTCHAIN and zHOTX money supply statistics") + " " + _("on startup"));
+    strUsage += HelpMessageOpt("-reindexmoneysupply", _("Reindex the HOTX and zHOTX money supply statistics") + " " + _("on startup"));
     strUsage += HelpMessageOpt("-resync", _("Delete blockchain folders and resync from scratch") + " " + _("on startup"));
 #if !defined(WIN32)
     strUsage += HelpMessageOpt("-sysperms", _("Create new files with system default permissions, instead of umask 077 (only effective with disabled wallet functionality)"));
@@ -408,7 +416,7 @@ std::string HelpMessage(HelpMessageMode mode)
     strUsage += HelpMessageOpt("-onlynet=<net>", _("Only connect to nodes in network <net> (ipv4, ipv6 or onion)"));
     strUsage += HelpMessageOpt("-permitbaremultisig", strprintf(_("Relay non-P2SH multisig (default: %u)"), 1));
     strUsage += HelpMessageOpt("-peerbloomfilters", strprintf(_("Support filtering of blocks and transaction with bloom filters (default: %u)"), DEFAULT_PEERBLOOMFILTERS));
-    strUsage += HelpMessageOpt("-port=<port>", strprintf(_("Listen for connections on <port> (default: %u or testnet: %u)"), 9069, 10500));
+    strUsage += HelpMessageOpt("-port=<port>", strprintf(_("Listen for connections on <port> (default: %u or testnet: %u)"), 51472, 51474));
     strUsage += HelpMessageOpt("-proxy=<ip:port>", _("Connect through SOCKS5 proxy"));
     strUsage += HelpMessageOpt("-proxyrandomize", strprintf(_("Randomize credentials for every proxy connection. This enables Tor stream isolation (default: %u)"), 1));
     strUsage += HelpMessageOpt("-seednode=<ip>", _("Connect to a node to retrieve peer addresses, and disconnect"));
@@ -435,9 +443,9 @@ std::string HelpMessage(HelpMessageMode mode)
     strUsage += HelpMessageOpt("-disablewallet", _("Do not load the wallet and disable wallet RPC calls"));
     strUsage += HelpMessageOpt("-keypool=<n>", strprintf(_("Set key pool size to <n> (default: %u)"), 100));
     if (GetBoolArg("-help-debug", false))
-        strUsage += HelpMessageOpt("-mintxfee=<amt>", strprintf(_("Fees (in HOTCHAIN/Kb) smaller than this are considered zero fee for transaction creation (default: %s)"),
+        strUsage += HelpMessageOpt("-mintxfee=<amt>", strprintf(_("Fees (in HOTX/Kb) smaller than this are considered zero fee for transaction creation (default: %s)"),
             FormatMoney(CWallet::minTxFee.GetFeePerK())));
-    strUsage += HelpMessageOpt("-paytxfee=<amt>", strprintf(_("Fee (in HOTCHAIN/kB) to add to transactions you send (default: %s)"), FormatMoney(payTxFee.GetFeePerK())));
+    strUsage += HelpMessageOpt("-paytxfee=<amt>", strprintf(_("Fee (in HOTX/kB) to add to transactions you send (default: %s)"), FormatMoney(payTxFee.GetFeePerK())));
     strUsage += HelpMessageOpt("-rescan", _("Rescan the block chain for missing wallet transactions") + " " + _("on startup"));
     strUsage += HelpMessageOpt("-salvagewallet", _("Attempt to recover private keys from a corrupt wallet.dat") + " " + _("on startup"));
     strUsage += HelpMessageOpt("-sendfreetransactions", strprintf(_("Send transactions as zero-fee transactions if possible (default: %u)"), 0));
@@ -466,6 +474,7 @@ std::string HelpMessage(HelpMessageMode mode)
 #endif
 
     strUsage += HelpMessageGroup(_("Debugging/Testing options:"));
+    strUsage += HelpMessageOpt("-uacomment=<cmt>", _("Append comment to the user agent string"));
     if (GetBoolArg("-help-debug", false)) {
         strUsage += HelpMessageOpt("-checkblockindex", strprintf("Do a full consistency check for mapBlockIndex, setBlockIndexCandidates, chainActive and mapBlocksUnlinked occasionally. Also sets -checkmempool (default: %u)", Params(CBaseChainParams::MAIN).DefaultConsistencyChecks()));
         strUsage += HelpMessageOpt("-checkmempool=<n>", strprintf("Run checks every <n> transactions (default: %u)", Params(CBaseChainParams::MAIN).DefaultConsistencyChecks()));
@@ -499,7 +508,7 @@ std::string HelpMessage(HelpMessageMode mode)
         strUsage += HelpMessageOpt("-relaypriority", strprintf(_("Require high priority for relaying free or low-fee transactions (default:%u)"), 1));
         strUsage += HelpMessageOpt("-maxsigcachesize=<n>", strprintf(_("Limit size of signature cache to <n> entries (default: %u)"), 50000));
     }
-    strUsage += HelpMessageOpt("-minrelaytxfee=<amt>", strprintf(_("Fees (in HOTCHAIN/Kb) smaller than this are considered zero fee for relaying (default: %s)"), FormatMoney(::minRelayTxFee.GetFeePerK())));
+    strUsage += HelpMessageOpt("-minrelaytxfee=<amt>", strprintf(_("Fees (in HOTX/Kb) smaller than this are considered zero fee for relaying (default: %s)"), FormatMoney(::minRelayTxFee.GetFeePerK())));
     strUsage += HelpMessageOpt("-printtoconsole", strprintf(_("Send trace/debug info to console instead of debug.log file (default: %u)"), 0));
     if (GetBoolArg("-help-debug", false)) {
         strUsage += HelpMessageOpt("-printpriority", strprintf(_("Log transaction priority and fee per kB when mining blocks (default: %u)"), 0));
@@ -510,12 +519,12 @@ std::string HelpMessage(HelpMessageMode mode)
     }
     strUsage += HelpMessageOpt("-shrinkdebugfile", _("Shrink debug.log file on client startup (default: 1 when no -debug)"));
     strUsage += HelpMessageOpt("-testnet", _("Use the test network"));
-    strUsage += HelpMessageOpt("-litemode=<n>", strprintf(_("Disable all HOTCHAIN specific functionality (Masternodes, Zerocoin, SwiftX, Budgeting) (0-1, default: %u)"), 0));
+    strUsage += HelpMessageOpt("-litemode=<n>", strprintf(_("Disable all Hotchain specific functionality (Masternodes, Zerocoin, SwiftX, Budgeting) (0-1, default: %u)"), 0));
 
 #ifdef ENABLE_WALLET
     strUsage += HelpMessageGroup(_("Staking options:"));
     strUsage += HelpMessageOpt("-staking=<n>", strprintf(_("Enable staking functionality (0-1, default: %u)"), 1));
-    strUsage += HelpMessageOpt("-piestake=<n>", strprintf(_("Enable or disable staking functionality for HOTCHAIN inputs (0-1, default: %u)"), 1));
+    strUsage += HelpMessageOpt("-hotxstake=<n>", strprintf(_("Enable or disable staking functionality for HOTX inputs (0-1, default: %u)"), 1));
     strUsage += HelpMessageOpt("-zhotxstake=<n>", strprintf(_("Enable or disable staking functionality for zHOTX inputs (0-1, default: %u)"), 1));
     strUsage += HelpMessageOpt("-reservebalance=<amt>", _("Keep the specified amount available for spending at all times (default: 0)"));
     if (GetBoolArg("-help-debug", false)) {
@@ -529,7 +538,7 @@ std::string HelpMessage(HelpMessageMode mode)
     strUsage += HelpMessageOpt("-mnconf=<file>", strprintf(_("Specify masternode configuration file (default: %s)"), "masternode.conf"));
     strUsage += HelpMessageOpt("-mnconflock=<n>", strprintf(_("Lock masternodes from masternode configuration file (default: %u)"), 1));
     strUsage += HelpMessageOpt("-masternodeprivkey=<n>", _("Set the masternode private key"));
-    strUsage += HelpMessageOpt("-masternodeaddr=<n>", strprintf(_("Set external address:port to get to this masternode (example: %s)"), "128.127.106.235:9069"));
+    strUsage += HelpMessageOpt("-masternodeaddr=<n>", strprintf(_("Set external address:port to get to this masternode (example: %s)"), "128.127.106.235:51472"));
     strUsage += HelpMessageOpt("-budgetvotemode=<mode>", _("Change automatic finalized budget voting behavior. mode=auto: Vote for only exact finalized budget match to my generated budget. (string, default: auto)"));
 
     strUsage += HelpMessageGroup(_("Zerocoin options:"));
@@ -542,7 +551,7 @@ std::string HelpMessage(HelpMessageMode mode)
 #endif // ENABLE_WALLET
     strUsage += HelpMessageOpt("-reindexzerocoin=<n>", strprintf(_("Delete all zerocoin spends and mints that have been recorded to the blockchain database and reindex them (0-1, default: %u)"), 0));
 
-//    strUsage += "  -anonymizehotchainamount=<n>     " + strprintf(_("Keep N HOTCHAIN anonymized (default: %u)"), 0) + "\n";
+//    strUsage += "  -anonymizehotchainamount=<n>     " + strprintf(_("Keep N HOTX anonymized (default: %u)"), 0) + "\n";
 //    strUsage += "  -liquidityprovider=<n>       " + strprintf(_("Provide liquidity to Obfuscation by infrequently mixing coins on a continual basis (0-100, default: %u, 1=very frequent, high fees, 100=very infrequent, low fees)"), 0) + "\n";
 
     strUsage += HelpMessageGroup(_("SwiftX options:"));
@@ -568,7 +577,7 @@ std::string HelpMessage(HelpMessageMode mode)
     strUsage += HelpMessageOpt("-rpccookiefile=<loc>", _("Location of the auth cookie (default: data dir)"));
     strUsage += HelpMessageOpt("-rpcuser=<user>", _("Username for JSON-RPC connections"));
     strUsage += HelpMessageOpt("-rpcpassword=<pw>", _("Password for JSON-RPC connections"));
-    strUsage += HelpMessageOpt("-rpcport=<port>", strprintf(_("Listen for JSON-RPC connections on <port> (default: %u or testnet: %u)"), 6990, 11000));
+    strUsage += HelpMessageOpt("-rpcport=<port>", strprintf(_("Listen for JSON-RPC connections on <port> (default: %u or testnet: %u)"), 51473, 51475));
     strUsage += HelpMessageOpt("-rpcallowip=<ip>", _("Allow JSON-RPC connections from specified source. Valid for <ip> are a single IP (e.g. 1.2.3.4), a network/netmask (e.g. 1.2.3.4/255.255.255.0) or a network/CIDR (e.g. 1.2.3.4/24). This option can be specified multiple times"));
     strUsage += HelpMessageOpt("-rpcthreads=<n>", strprintf(_("Set the number of threads to service RPC calls (default: %d)"), DEFAULT_HTTP_THREADS));
     if (GetBoolArg("-help-debug", false)) {
@@ -584,9 +593,7 @@ std::string LicenseInfo()
            "\n" +
            FormatParagraph(strprintf(_("Copyright (C) 2014-%i The Dash Core Developers"), COPYRIGHT_YEAR)) + "\n" +
            "\n" +
-           FormatParagraph(strprintf(_("Copyright (C) 2015-%i The PIVX Core Developers"), COPYRIGHT_YEAR)) + "\n" +
-           "\n" +
-           FormatParagraph(strprintf(_("Copyright (C) 2017-%i The Hotchain Wallet Developers"), COPYRIGHT_YEAR)) + "\n" +
+           FormatParagraph(strprintf(_("Copyright (C) 2015-%i The Hotchain Core Developers"), COPYRIGHT_YEAR)) + "\n" +
            "\n" +
            FormatParagraph(_("This is experimental software.")) + "\n" +
            "\n" +
@@ -687,7 +694,7 @@ void ThreadImport(std::vector<boost::filesystem::path> vImportFiles)
 }
 
 /** Sanity checks
- *  Ensure that HOTCHAIN is running in a usable environment with all
+ *  Ensure that Hotchain is running in a usable environment with all
  *  necessary library support.
  */
 bool InitSanityCheck(void)
@@ -702,7 +709,7 @@ bool InitSanityCheck(void)
     return true;
 }
 
-bool AppInitServers(boost::thread_group& threadGroup)
+bool AppInitServers()
 {
     RPCServer::OnStopped(&OnRPCStopped);
     RPCServer::OnPreCommand(&OnRPCPreCommand);
@@ -722,7 +729,7 @@ bool AppInitServers(boost::thread_group& threadGroup)
 /** Initialize hotchain.
  *  @pre Parameters should be parsed and config file should be read.
  */
-bool AppInit2(boost::thread_group& threadGroup, CScheduler& scheduler)
+bool AppInit2()
 {
 // ********************************************************* Step 1: setup
 #ifdef _MSC_VER
@@ -992,7 +999,7 @@ bool AppInit2(boost::thread_group& threadGroup, CScheduler& scheduler)
 
     // Sanity check
     if (!InitSanityCheck())
-        return InitError(_("Initialization sanity check failed. Hotchain Wallet is shutting down."));
+        return InitError(_("Initialization sanity check failed. Hotchain Core is shutting down."));
 
     std::string strDataDir = GetDataDir().string();
 #ifdef ENABLE_WALLET
@@ -1000,7 +1007,7 @@ bool AppInit2(boost::thread_group& threadGroup, CScheduler& scheduler)
     if (strWalletFile != boost::filesystem::basename(strWalletFile) + boost::filesystem::extension(strWalletFile))
         return InitError(strprintf(_("Wallet %s resides outside data directory %s"), strWalletFile, strDataDir));
 #endif
-    // Make sure only a single HOTCHAIN process is using the data directory.
+    // Make sure only a single Hotchain process is using the data directory.
     boost::filesystem::path pathLockFile = GetDataDir() / ".lock";
     FILE* file = fopen(pathLockFile.string().c_str(), "a"); // empty lock file; created if it doesn't exist.
     if (file) fclose(file);
@@ -1008,7 +1015,7 @@ bool AppInit2(boost::thread_group& threadGroup, CScheduler& scheduler)
 
     // Wait maximum 10 seconds if an old wallet is still running. Avoids lockup during restart
     if (!lock.timed_lock(boost::get_system_time() + boost::posix_time::seconds(10)))
-        return InitError(strprintf(_("Cannot obtain a lock on data directory %s. Hotchain Wallet is probably already running."), strDataDir));
+        return InitError(strprintf(_("Cannot obtain a lock on data directory %s. Hotchain Core is probably already running."), strDataDir));
 
 #ifndef WIN32
     CreatePidFile(GetPidFile(), getpid());
@@ -1016,7 +1023,7 @@ bool AppInit2(boost::thread_group& threadGroup, CScheduler& scheduler)
     if (GetBoolArg("-shrinkdebugfile", !fDebug))
         ShrinkDebugFile();
     LogPrintf("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
-    LogPrintf("HOTCHAIN version %s (%s)\n", FormatFullVersion(), CLIENT_DATE);
+    LogPrintf("Hotchain version %s (%s)\n", FormatFullVersion(), CLIENT_DATE);
     LogPrintf("Using OpenSSL version %s\n", SSLeay_version(SSLEAY_VERSION));
 #ifdef ENABLE_WALLET
     LogPrintf("Using BerkeleyDB version %s\n", DbEnv::version(0, 0, 0));
@@ -1052,7 +1059,7 @@ bool AppInit2(boost::thread_group& threadGroup, CScheduler& scheduler)
      */
     if (fServer) {
         uiInterface.InitMessage.connect(SetRPCWarmupStatus);
-        if (!AppInitServers(threadGroup))
+        if (!AppInitServers())
             return InitError(_("Unable to start HTTP server. See debug log for details."));
     }
 
@@ -1212,6 +1219,21 @@ bool AppInit2(boost::thread_group& threadGroup, CScheduler& scheduler)
 
     RegisterNodeSignals(GetNodeSignals());
 
+    // sanitize comments per BIP-0014, format user agent and check total size
+    std::vector<std::string> uacomments;
+    for (const std::string& cmt : mapMultiArgs["-uacomment"]) {
+        if (cmt != SanitizeString(cmt, SAFE_CHARS_UA_COMMENT))
+            return InitError(strprintf(_("User Agent comment (%s) contains unsafe characters."), cmt));
+        uacomments.push_back(cmt);
+    }
+
+    // format user agent, check total size
+    strSubVersion = FormatSubVersion(CLIENT_NAME, CLIENT_VERSION, uacomments);
+    if (strSubVersion.size() > MAX_SUBVERSION_LENGTH) {
+        return InitError(strprintf(_("Total length of network version string (%i) exceeds maximum length (%i). Reduce the number or size of uacomments."),
+            strSubVersion.size(), MAX_SUBVERSION_LENGTH));
+    }
+
     if (mapArgs.count("-onlynet")) {
         std::set<enum Network> nets;
         BOOST_FOREACH (std::string snet, mapMultiArgs["-onlynet"]) {
@@ -1246,7 +1268,7 @@ bool AppInit2(boost::thread_group& threadGroup, CScheduler& scheduler)
     SetLimited(NET_TOR);
     if (proxyArg != "" && proxyArg != "0") {
         CService proxyAddr;
-        if (!Lookup(proxyArg.c_str(), proxyAddr, 9069, fNameLookup)) {
+        if (!Lookup(proxyArg.c_str(), proxyAddr, 9050, fNameLookup)) {
             return InitError(strprintf(_("Lookup(): Invalid -proxy address or hostname: '%s'"), proxyArg));
         }
 
@@ -1270,7 +1292,7 @@ bool AppInit2(boost::thread_group& threadGroup, CScheduler& scheduler)
             SetLimited(NET_TOR); // set onions as unreachable
         } else {
             CService onionProxy;
-            if (!Lookup(onionArg.c_str(), onionProxy, 9069, fNameLookup)) {
+            if (!Lookup(onionArg.c_str(), onionProxy, 9050, fNameLookup)) {
                 return InitError(strprintf(_("Invalid -onion address or hostname: '%s'"), onionArg));
             }
             proxyType addrOnion = proxyType(onionProxy, proxyRandomize);
@@ -1334,8 +1356,8 @@ bool AppInit2(boost::thread_group& threadGroup, CScheduler& scheduler)
 
     // ********************************************************* Step 7: load block chain
 
-    //HOTCHAIN: Load Accumulator Checkpoints according to network (main/test/regtest)
-    //assert(AccumulatorCheckpoints::LoadCheckpoints(Params().NetworkIDString()));
+    //Hotchain: Load Accumulator Checkpoints according to network (main/test/regtest)
+    assert(AccumulatorCheckpoints::LoadCheckpoints(Params().NetworkIDString()));
 
     fReindex = GetBoolArg("-reindex", false);
 
@@ -1396,7 +1418,7 @@ bool AppInit2(boost::thread_group& threadGroup, CScheduler& scheduler)
                 delete zerocoinDB;
                 delete pSporkDB;
 
-                //HOTCHAIN specific: zerocoin and spork DB's
+                //Hotchain specific: zerocoin and spork DB's
                 zerocoinDB = new CZerocoinDB(0, false, fReindex);
                 pSporkDB = new CSporkDB(0, false, false);
 
@@ -1408,7 +1430,7 @@ bool AppInit2(boost::thread_group& threadGroup, CScheduler& scheduler)
                 if (fReindex)
                     pblocktree->WriteReindexing(true);
 
-                // HOTCHAIN: load previous sessions sporks if we have them.
+                // Hotchain: load previous sessions sporks if we have them.
                 uiInterface.InitMessage(_("Loading sporks..."));
                 LoadSporksFromDB();
 
@@ -1438,41 +1460,41 @@ bool AppInit2(boost::thread_group& threadGroup, CScheduler& scheduler)
                 }
 
                 // Populate list of invalid/fraudulent outpoints that are banned from the chain
-                //invalid_out::LoadOutpoints();
-                //invalid_out::LoadSerials();
+                invalid_out::LoadOutpoints();
+                invalid_out::LoadSerials();
 
                 // Drop all information from the zerocoinDB and repopulate
                 if (GetBoolArg("-reindexzerocoin", false)) {
-                    //if (chainActive.Height() > Params().Zerocoin_StartHeight()) {
+                    if (chainActive.Height() > Params().Zerocoin_StartHeight()) {
                         uiInterface.InitMessage(_("Reindexing zerocoin database..."));
                         std::string strError = ReindexZerocoinDB();
                         if (strError != "") {
                             strLoadError = strError;
                             break;
                         }
-                    //}
+                    }
                 }
 
                 // Recalculate money supply for blocks that are impacted by accounting issue after zerocoin activation
                 if (GetBoolArg("-reindexmoneysupply", false)) {
-                    //if (chainActive.Height() > Params().Zerocoin_StartHeight()) {
+                    if (chainActive.Height() > Params().Zerocoin_StartHeight()) {
                         RecalculateZHOTXMinted();
                         RecalculateZHOTXSpent();
-                    //}
-                    RecalculateHOTCHAINSupply(1);
+                    }
+                    RecalculateHOTXSupply(1);
                 }
 
                 // Force recalculation of accumulators.
                 if (GetBoolArg("-reindexaccumulators", false)) {
-                    //if (chainActive.Height() > Params().Zerocoin_StartHeight()) {
-                        CBlockIndex *pindex = chainActive.Genesis();
+                    if (chainActive.Height() > Params().Zerocoin_Block_V2_Start()) {
+                        CBlockIndex *pindex = chainActive[Params().Zerocoin_Block_V2_Start()];
                         while (pindex->nHeight < chainActive.Height()) {
                             if (!count(listAccCheckpointsNoDB.begin(), listAccCheckpointsNoDB.end(),
                                        pindex->nAccumulatorCheckpoint))
                                 listAccCheckpointsNoDB.emplace_back(pindex->nAccumulatorCheckpoint);
                             pindex = chainActive.Next(pindex);
                         }
-                        // HOTCHAIN: recalculate Accumulator Checkpoints that failed to database properly
+                        // Hotchain: recalculate Accumulator Checkpoints that failed to database properly
                         if (!listAccCheckpointsNoDB.empty()) {
                             uiInterface.InitMessage(_("Calculating missing accumulators..."));
                             LogPrintf("%s : finding missing checkpoints\n", __func__);
@@ -1481,7 +1503,7 @@ bool AppInit2(boost::thread_group& threadGroup, CScheduler& scheduler)
                             if (!ReindexAccumulators(listAccCheckpointsNoDB, strError))
                                 return InitError(strError);
                         }
-                    //}
+                    }
                 }
 
                 uiInterface.InitMessage(_("Verifying blocks..."));
@@ -1580,9 +1602,9 @@ bool AppInit2(boost::thread_group& threadGroup, CScheduler& scheduler)
                              " or address book entries might be missing or incorrect."));
                 InitWarning(msg);
             } else if (nLoadWalletRet == DB_TOO_NEW)
-                strErrors << _("Error loading wallet.dat: Wallet requires newer version of Hotchain Wallet") << "\n";
+                strErrors << _("Error loading wallet.dat: Wallet requires newer version of Hotchain Core") << "\n";
             else if (nLoadWalletRet == DB_NEED_REWRITE) {
-                strErrors << _("Wallet needed to be rewritten: restart Hotchain Wallet to complete") << "\n";
+                strErrors << _("Wallet needed to be rewritten: restart Hotchain Core to complete") << "\n";
                 LogPrintf("%s", strErrors.str());
                 return InitError(strErrors.str());
             } else
@@ -1804,7 +1826,7 @@ bool AppInit2(boost::thread_group& threadGroup, CScheduler& scheduler)
         BOOST_FOREACH (CMasternodeConfig::CMasternodeEntry mne, masternodeConfig.getEntries()) {
             LogPrintf("  %s %s\n", mne.getTxHash(), mne.getOutputIndex());
             mnTxHash.SetHex(mne.getTxHash());
-            COutPoint outpoint = COutPoint(mnTxHash, boost::lexical_cast<unsigned int>(mne.getOutputIndex()));
+            COutPoint outpoint = COutPoint(mnTxHash, (unsigned int) std::stoul(mne.getOutputIndex().c_str()));
             pwalletMain->LockCoin(outpoint);
         }
     }
@@ -1823,7 +1845,7 @@ bool AppInit2(boost::thread_group& threadGroup, CScheduler& scheduler)
     }
 
 // XX42 Remove/refactor code below. Until then provide safe defaults
-    nAnonymizeHOTCHAINAmount = 2;
+    nAnonymizeHotchainAmount = 2;
 
 //    nLiquidityProvider = GetArg("-liquidityprovider", 0); //0-100
 //    if (nLiquidityProvider != 0) {
@@ -1832,9 +1854,9 @@ bool AppInit2(boost::thread_group& threadGroup, CScheduler& scheduler)
 //        nZeromintPercentage = 99999;
 //    }
 //
-//    nAnonymizeHOTCHAINAmount = GetArg("-anonymizehotchainamount", 0);
-//    if (nAnonymizeHOTCHAINAmount > 999999) nAnonymizeHOTCHAINAmount = 999999;
-//    if (nAnonymizeHOTCHAINAmount < 2) nAnonymizeHOTCHAINAmount = 2;
+//    nAnonymizeHotchainAmount = GetArg("-anonymizehotchainamount", 0);
+//    if (nAnonymizeHotchainAmount > 999999) nAnonymizeHotchainAmount = 999999;
+//    if (nAnonymizeHotchainAmount < 2) nAnonymizeHotchainAmount = 2;
 
     fEnableSwiftTX = GetBoolArg("-enableswifttx", fEnableSwiftTX);
     nSwiftTXDepth = GetArg("-swifttxdepth", nSwiftTXDepth);
@@ -1848,7 +1870,7 @@ bool AppInit2(boost::thread_group& threadGroup, CScheduler& scheduler)
 
     LogPrintf("fLiteMode %d\n", fLiteMode);
     LogPrintf("nSwiftTXDepth %d\n", nSwiftTXDepth);
-    LogPrintf("Anonymize HOTCHAIN Amount %d\n", nAnonymizeHOTCHAINAmount);
+    LogPrintf("Anonymize Hotchain Amount %d\n", nAnonymizeHotchainAmount);
     LogPrintf("Budget Mode %s\n", strBudgetMode.c_str());
 
     /* Denominations
@@ -1857,8 +1879,8 @@ bool AppInit2(boost::thread_group& threadGroup, CScheduler& scheduler)
        is convertable to another.
 
        For example:
-       1HOTCHAIN+1000 == (.1HOTCHAIN+100)*10
-       10HOTCHAIN+10000 == (1HOTCHAIN+1000)*10
+       1HOTX+1000 == (.1HOTX+100)*10
+       10HOTX+10000 == (1HOTX+1000)*10
     */
     obfuScationDenominations.push_back((10000 * COIN) + 10000000);
     obfuScationDenominations.push_back((1000 * COIN) + 1000000);

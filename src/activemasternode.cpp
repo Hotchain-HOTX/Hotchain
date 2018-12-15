@@ -1,5 +1,5 @@
 // Copyright (c) 2014-2016 The Dash developers
-// Copyright (c) 2015-2018 The PIVX Developers 
+// Copyright (c) 2015-2018 The Hotchain developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -12,7 +12,7 @@
 #include "spork.h"
 
 //
-// Bootup the Masternode, look for a 10000 HOTCHAIN input and register on the network
+// Bootup the Masternode, look for a 10000 Hotchain input and register on the network
 //
 void CActiveMasternode::ManageStatus()
 {
@@ -68,20 +68,18 @@ void CActiveMasternode::ManageStatus()
         }
 
         // The service needs the correct default port to work properly
-        if (!CMasternodeBroadcast::CheckDefaultPort(strMasterNodeAddr, errorMessage, __func__))
+        if(!CMasternodeBroadcast::CheckDefaultPort(strMasterNodeAddr, errorMessage, "CActiveMasternode::ManageStatus()"))
             return;
 
-        LogPrintf("%s - Checking inbound connection to '%s'\n", service.ToString());
+        LogPrintf("CActiveMasternode::ManageStatus() - Checking inbound connection to '%s'\n", service.ToString());
 
-        SOCKET hSocket;
-        bool fConnected = ConnectSocket(service, hSocket, nConnectTimeout) && IsSelectableSocket(hSocket);
-        CloseSocket(hSocket);
-
-        if (!fConnected) {
+        CNode* pnode = ConnectNode((CAddress)service, NULL, false);
+        if (!pnode) {
             notCapableReason = "Could not connect to " + service.ToString();
-            LogPrintf("%s - not capable: %s\n", __func__);
+            LogPrintf("CActiveMasternode::ManageStatus() - not capable: %s\n", notCapableReason);
             return;
         }
+        pnode->Release();
 
         // Choose coins to use
         CPubKey pubKeyCollateralAddress;
@@ -206,7 +204,7 @@ bool CActiveMasternode::SendMasternodePing(std::string& errorMessage)
         std::vector<unsigned char> vchMasterNodeSignature;
         int64_t masterNodeSignatureTime = GetAdjustedTime();
 
-        std::string strMessage = service.ToString() + boost::lexical_cast<std::string>(masterNodeSignatureTime) + boost::lexical_cast<std::string>(false);
+        std::string strMessage = service.ToString() + std::to_string(masterNodeSignatureTime) + std::to_string(false);
 
         if (!obfuScationSigner.SignMessage(strMessage, retErrorMessage, vchMasterNodeSignature, keyMasternode)) {
             errorMessage = "dseep sign message failed: " + retErrorMessage;
@@ -313,7 +311,7 @@ bool CActiveMasternode::CreateBroadcast(CTxIn vin, CService service, CKey keyCol
     std::string vchPubKey(pubKeyCollateralAddress.begin(), pubKeyCollateralAddress.end());
     std::string vchPubKey2(pubKeyMasternode.begin(), pubKeyMasternode.end());
 
-    std::string strMessage = service.ToString() + boost::lexical_cast<std::string>(masterNodeSignatureTime) + vchPubKey + vchPubKey2 + boost::lexical_cast<std::string>(PROTOCOL_VERSION) + donationAddress + boost::lexical_cast<std::string>(donationPercantage);
+    std::string strMessage = service.ToString() + std::to_string(masterNodeSignatureTime) + vchPubKey + vchPubKey2 + std::to_string(PROTOCOL_VERSION) + donationAddress + std::to_string(donationPercantage);
 
     if (!obfuScationSigner.SignMessage(strMessage, retErrorMessage, vchMasterNodeSignature, keyCollateralAddress)) {
         errorMessage = "dsee sign message failed: " + retErrorMessage;
@@ -458,7 +456,7 @@ vector<COutput> CActiveMasternode::SelectCoinsMasternode()
 
     // Filter
     BOOST_FOREACH (const COutput& out, vCoins) {
-        if (CMasternode::IsDepositCoins(out.tx->vout[out.i].nValue)) { //exactly
+        if (out.tx->vout[out.i].nValue == 10000 * COIN) { //exactly
             filteredCoins.push_back(out);
         }
     }

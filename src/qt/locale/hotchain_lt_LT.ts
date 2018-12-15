@@ -62,12 +62,12 @@
         <translation>Gavimo adresai</translation>
     </message>
     <message>
-        <source>These are your HOTCHAIN addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Tai jūsų HOTCHAIN adresai mokėjimų išsiuntimams. Visada patikrinkite sumą ir gavėjo adresą prieš siųsdami monetas.</translation>
+        <source>These are your Hotchain addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Tai jūsų Hotchain adresai mokėjimų išsiuntimams. Visada patikrinkite sumą ir gavėjo adresą prieš siųsdami monetas.</translation>
     </message>
     <message>
-        <source>These are your HOTCHAIN addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Tai jūsų HOTCHAIN adresai mokėjimų gavimams. Rekomenduojama naudoti naują adresą kiekvienam pavedimui.</translation>
+        <source>These are your Hotchain addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Tai jūsų Hotchain adresai mokėjimų gavimams. Rekomenduojama naudoti naują adresą kiekvienam pavedimui.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -176,16 +176,16 @@
         <translation>Patvirtinkite piniginės užšifravimą.</translation>
     </message>
     <message>
-        <source>HOTCHAIN will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your HOTCHAINs from being stolen by malware infecting your computer.</source>
-        <translation>Dabar HOTCHAIN išsijungs, kad būtų užbaigtas šifravimo procesas. Atminkite, kad jūsų piniginės užšifravimas negali visiškai apsaugoti jūsų HOTCHAIN nuo kenkėjiškų programų, užkrėsto jūsų kompiuterio.</translation>
+        <source>Hotchain will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your HOTXs from being stolen by malware infecting your computer.</source>
+        <translation>Dabar Hotchain išsijungs, kad būtų užbaigtas šifravimo procesas. Atminkite, kad jūsų piniginės užšifravimas negali visiškai apsaugoti jūsų HOTX nuo kenkėjiškų programų, užkrėsto jūsų kompiuterio.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Ar tikrai norite užšifruoti savo piniginę?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR HOTCHAIN&lt;/b&gt;!</source>
-        <translation>Įspėjimas: jei užšifruosite savo piniginę ir prarasite slaptafrazę, jūs &lt;b&gt;PRARASITE VISUS SAVO HOTCHAIN&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR HOTX&lt;/b&gt;!</source>
+        <translation>Įspėjimas: jei užšifruosite savo piniginę ir prarasite slaptafrazę, jūs &lt;b&gt;PRARASITE VISUS SAVO HOTX&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -254,12 +254,12 @@
         <translation>Adresas:</translation>
     </message>
     <message>
-        <source>Enter a HOTCHAIN Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
+        <source>Enter a Hotchain Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
         <translation>Įveskite Hotchain adresą, kurį norėtumėte užšifruoti naudojant BIP 38. Vidiniame laukelyje įrašykite slaptą frazę. Paspauskite užšifruoti, jei norite gauti užšifruotą privatųjį raktą.</translation>
     </message>
     <message>
-        <source>The HOTCHAIN address to encrypt</source>
-        <translation>HOTCHAIN adresas, kurį norite užšifruoti</translation>
+        <source>The Hotchain address to encrypt</source>
+        <translation>Hotchain adresas, kurį norite užšifruoti</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -290,8 +290,8 @@
         <translation>Kopijuoti dabartinį parašą</translation>
     </message>
     <message>
-        <source>Encrypt the private key for this HOTCHAIN address</source>
-        <translation>Užšifruoti šio HOTCHAIN adreso privatų raktą</translation>
+        <source>Encrypt the private key for this Hotchain address</source>
+        <translation>Užšifruoti šio Hotchain adreso privatų raktą</translation>
     </message>
     <message>
         <source>Reset all fields</source>
@@ -645,12 +645,12 @@
         <translation>Skirtukų įrankių juosta</translation>
     </message>
     <message>
-        <source>Hotchain Wallet</source>
-        <translation>Hotchain Wallet</translation>
+        <source>Hotchain Core</source>
+        <translation>Hotchain Core</translation>
     </message>
     <message>
-        <source>Send coins to a HOTCHAIN address</source>
-        <translation>Siųsti monetas į HOTCHAIN adresą</translation>
+        <source>Send coins to a Hotchain address</source>
+        <translation>Siųsti monetas į Hotchain adresą</translation>
     </message>
     <message>
         <source>Request payments (generates QR codes and hotchain: URIs)</source>
@@ -669,24 +669,24 @@
         <translation>Naršyti masternod'us</translation>
     </message>
     <message>
-        <source>&amp;About Hotchain Wallet</source>
-        <translation>&amp;Apie Hotchain Wallet</translation>
+        <source>&amp;About Hotchain Core</source>
+        <translation>&amp;Apie Hotchain Core</translation>
     </message>
     <message>
-        <source>Show information about Hotchain Wallet</source>
-        <translation>Rodyti informaciją apie Hotchain Wallet</translation>
+        <source>Show information about Hotchain Core</source>
+        <translation>Rodyti informaciją apie Hotchain Core</translation>
     </message>
     <message>
-        <source>Modify configuration options for HOTCHAIN</source>
-        <translation>Keisti HOTCHAIN konfigūravimo parinktis</translation>
+        <source>Modify configuration options for Hotchain</source>
+        <translation>Keisti Hotchain konfigūravimo parinktis</translation>
     </message>
     <message>
-        <source>Sign messages with your HOTCHAIN addresses to prove you own them</source>
-        <translation>Pasirašykite pranešimus naudodami savo HOTCHAIN adresus, kad įrodytumėte, kad juos turite</translation>
+        <source>Sign messages with your Hotchain addresses to prove you own them</source>
+        <translation>Pasirašykite pranešimus naudodami savo Hotchain adresus, kad įrodytumėte, kad juos turite</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified HOTCHAIN addresses</source>
-        <translation>Patvirtinkite pranešimus, kad jie būtų pasirašyti su nurodytais HOTCHAIN adresais</translation>
+        <source>Verify messages to ensure they were signed with specified Hotchain addresses</source>
+        <translation>Patvirtinkite pranešimus, kad jie būtų pasirašyti su nurodytais Hotchain adresais</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -717,8 +717,8 @@
         <translation>Atidaryti Masternod'o konfigūracijos failą</translation>
     </message>
     <message>
-        <source>Open a HOTCHAIN: URI or payment request</source>
-        <translation>Atidaryti HOTCHAIN: URI arba mokėjimo prašymą</translation>
+        <source>Open a Hotchain: URI or payment request</source>
+        <translation>Atidaryti Hotchain: URI arba mokėjimo prašymą</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -729,16 +729,16 @@
         <translation>Blokų naršyklės langas</translation>
     </message>
     <message>
-        <source>Show the Hotchain Wallet help message to get a list with possible HOTCHAIN command-line options</source>
-        <translation>Rodyti Hotchain Wallet žinyną, kad gautumėte sąrašą su galimomis HOTCHAIN komandinės eilutės parinktimis</translation>
+        <source>Show the Hotchain Core help message to get a list with possible Hotchain command-line options</source>
+        <translation>Rodyti Hotchain Core žinyną, kad gautumėte sąrašą su galimomis Hotchain komandinės eilutės parinktimis</translation>
     </message>
     <message>
-        <source>Hotchain Wallet client</source>
-        <translation>Hotchain Wallet piniginė</translation>
+        <source>Hotchain Core client</source>
+        <translation>Hotchain Core piniginė</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to HOTCHAIN network</source>
-        <translation><numerusform>%n aktyvių prisijungimų HOTCHAIN tinkle ()</numerusform><numerusform>%n aktyvių prisijungimų HOTCHAIN tinkle ()</numerusform><numerusform>%n aktyvių prisijungimų HOTCHAIN tinkle ()</numerusform><numerusform>%n aktyvių prisijungimų HOTCHAIN tinkle ()</numerusform></translation>
+        <source>%n active connection(s) to Hotchain network</source>
+        <translation><numerusform>%n aktyvių prisijungimų Hotchain tinkle ()</numerusform><numerusform>%n aktyvių prisijungimų Hotchain tinkle ()</numerusform><numerusform>%n aktyvių prisijungimų Hotchain tinkle ()</numerusform><numerusform>%n aktyvių prisijungimų Hotchain tinkle ()</numerusform></translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -1122,8 +1122,8 @@ MultiSend: %1</translation>
         <translation>Ši etiketė taps raudona, jei gavėjas gaus sumą mažesnę už %1</translation>
     </message>
     <message>
-        <source>Can vary +/- %1 hotx per input.</source>
-        <translation>Gali skirtis +/- %1 hotx kiekvienoje įvestyje.</translation>
+        <source>Can vary +/- %1 uhotx per input.</source>
+        <translation>Gali skirtis +/- %1 uhotx kiekvienoje įvestyje.</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -1177,8 +1177,8 @@ MultiSend: %1</translation>
         <translation>Keisti siuntimo adresą</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid HOTCHAIN address.</source>
-        <translation>Įvestas adresas "%1" nėra galiojantis HOTCHAIN adresas.</translation>
+        <source>The entered address "%1" is not a valid Hotchain address.</source>
+        <translation>Įvestas adresas "%1" nėra galiojantis Hotchain adresas.</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -1223,16 +1223,16 @@ MultiSend: %1</translation>
         <translation>versija</translation>
     </message>
     <message>
-        <source>Hotchain Wallet</source>
-        <translation>Hotchain Wallet</translation>
+        <source>Hotchain Core</source>
+        <translation>Hotchain Core</translation>
     </message>
     <message>
         <source>(%1-bit)</source>
         <translation>(%1-bitai)</translation>
     </message>
     <message>
-        <source>About Hotchain Wallet</source>
-        <translation>Apie Hotchain Wallet</translation>
+        <source>About Hotchain Core</source>
+        <translation>Apie Hotchain Core</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -1278,16 +1278,16 @@ MultiSend: %1</translation>
         <translation>Sveiki</translation>
     </message>
     <message>
-        <source>Welcome to Hotchain Wallet.</source>
-        <translation>Sveiki atvykę į Hotchain Wallet</translation>
+        <source>Welcome to Hotchain Core.</source>
+        <translation>Sveiki atvykę į Hotchain Core</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where Hotchain Wallet will store its data.</source>
-        <translation>Kadangi programa paleista pirmą kartą, galite pasirinkti kur Hotchain Wallet saugos savo duomenis.</translation>
+        <source>As this is the first time the program is launched, you can choose where Hotchain Core will store its data.</source>
+        <translation>Kadangi programa paleista pirmą kartą, galite pasirinkti kur Hotchain Core saugos savo duomenis.</translation>
     </message>
     <message>
-        <source>Hotchain Wallet will download and store a copy of the HOTCHAIN block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>Hotchain Wallet atsisiųs ir saugos HOTCHAIN blockchain'o kopiją. Šiame kataloge bus saugomas ne mažesnis kaip %1GB duomenų kiekis, kuris laikui bėgant augs. Piniginė taip pat bus saugoma šiame kataloge.</translation>
+        <source>Hotchain Core will download and store a copy of the Hotchain block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>Hotchain Core atsisiųs ir saugos Hotchain blockchain'o kopiją. Šiame kataloge bus saugomas ne mažesnis kaip %1GB duomenų kiekis, kuris laikui bėgant augs. Piniginė taip pat bus saugoma šiame kataloge.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -1298,8 +1298,8 @@ MultiSend: %1</translation>
         <translation>Naudoti pasirinktą duomenų katalogą:</translation>
     </message>
     <message>
-        <source>Hotchain Wallet</source>
-        <translation>Hotchain Wallet</translation>
+        <source>Hotchain Core</source>
+        <translation>Hotchain Core</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -1440,12 +1440,12 @@ MultiSend: %1</translation>
         <translation>Įveskite adresą kuriam norite siųsti</translation>
     </message>
     <message>
-        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other HOTCHAIN addresses after it matures.
-To Add: enter percentage to give and HOTCHAIN address to add to the MultiSend vector.
+        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other Hotchain addresses after it matures.
+To Add: enter percentage to give and Hotchain address to add to the MultiSend vector.
 To Delete: Enter address to delete and press delete.
 MultiSend will not be activated unless you have clicked Activate</source>
-        <translation>MultiSend leidžia automatiškai išsiųsti iki 100% jūsų stake'inimo ar masternod'ų atlygio į kitus HOTCHAIN adresus.
-Norėdami pridėti: įveskite pateiktą procentą ir HOTCHAIN adresą, kurį norite pridėti prie MultiSend sąrašo.
+        <translation>MultiSend leidžia automatiškai išsiųsti iki 100% jūsų stake'inimo ar masternod'ų atlygio į kitus Hotchain adresus.
+Norėdami pridėti: įveskite pateiktą procentą ir Hotchain adresą, kurį norite pridėti prie MultiSend sąrašo.
 Norėdami ištrinti: įveskite adresą, kurį norite ištrinti, ir paspauskite ištrinti
 MultiSend nebus aktyvuotas, nebent paspausite "Įjungti"</translation>
     </message>
@@ -1651,8 +1651,8 @@ Patikrinkite adresą ir bandykite dar kartą.</translation>
         <translation>Adresas / Suma:</translation>
     </message>
     <message>
-        <source>Add destinations to send HOTCHAIN to</source>
-        <translation>Pridėkite vietas, kurioms norite siųsti HOTCHAIN</translation>
+        <source>Add destinations to send HOTX to</source>
+        <translation>Pridėkite vietas, kurioms norite siųsti HOTX</translation>
     </message>
     <message>
         <source>Add &amp;Destination</source>
@@ -1750,48 +1750,48 @@ Patikrinkite adresą ir bandykite dar kartą.</translation>
         <translation>Pasirinkite privatumo lygmenį.</translation>
     </message>
     <message>
-        <source>Use 2 separate masternodes to mix funds up to 10000 HOTCHAIN</source>
-        <translation>Naudokite 2 atskirus masternod'us, kad sumaišytumėte lėšas iki 10 000 HOTCHAIN</translation>
+        <source>Use 2 separate masternodes to mix funds up to 10000 HOTX</source>
+        <translation>Naudokite 2 atskirus masternod'us, kad sumaišytumėte lėšas iki 10 000 HOTX</translation>
     </message>
     <message>
-        <source>Use 8 separate masternodes to mix funds up to 10000 HOTCHAIN</source>
-        <translation>Naudokite 8 atskirus masternod'us, kad sumaišytumėte lėšas iki 10 000 HOTCHAIN</translation>
+        <source>Use 8 separate masternodes to mix funds up to 10000 HOTX</source>
+        <translation>Naudokite 8 atskirus masternod'us, kad sumaišytumėte lėšas iki 10 000 HOTX</translation>
     </message>
     <message>
         <source>Use 16 separate masternodes</source>
         <translation>Naudokite 16 atskirų masternod'ų</translation>
     </message>
     <message>
-        <source>This option is the quickest and will cost about ~0.025 HOTCHAIN to anonymize 10000 HOTCHAIN</source>
-        <translation>Ši parinktis yra greičiausia ir kainuos apie ~0.025 HOTCHAIN, kad anonimizuotų 10000 HOTCHAIN</translation>
+        <source>This option is the quickest and will cost about ~0.025 HOTX to anonymize 10000 HOTX</source>
+        <translation>Ši parinktis yra greičiausia ir kainuos apie ~0.025 HOTX, kad anonimizuotų 10000 HOTX</translation>
     </message>
     <message>
-        <source>This option is moderately fast and will cost about 0.05 HOTCHAIN to anonymize 10000 HOTCHAIN</source>
-        <translation>Ši parinktis yra vidutiniškai greita ir kainuoja apie 0,05 HOTCHAIN, kad anonimizuotų 10000 HOTCHAIN</translation>
+        <source>This option is moderately fast and will cost about 0.05 HOTX to anonymize 10000 HOTX</source>
+        <translation>Ši parinktis yra vidutiniškai greita ir kainuoja apie 0,05 HOTX, kad anonimizuotų 10000 HOTX</translation>
     </message>
     <message>
         <source>This is the slowest and most secure option. Using maximum anonymity will cost</source>
         <translation>Tai yra lėčiausias ir saugiausias variantas. Maksimalus anonimiškumas kainuos.</translation>
     </message>
     <message>
-        <source>0.1 HOTCHAIN per 10000 HOTCHAIN you anonymize.</source>
-        <translation>0.1 HOTCHAIN kas 1000 HOTCHAIN kuriuos anonimizuosite.</translation>
+        <source>0.1 HOTX per 10000 HOTX you anonymize.</source>
+        <translation>0.1 HOTX kas 1000 HOTX kuriuos anonimizuosite.</translation>
     </message>
     <message>
         <source>Obfuscation Configuration</source>
         <translation>Obfuscation Konfigūracija</translation>
     </message>
     <message>
-        <source>Obfuscation was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening HOTCHAIN's configuration screen.</source>
-        <translation>Obfuscation buvo sėkmingai nustatytas į paprastą (%1 ir 2 raundai). Bet kada galite tai pakeisti, atidarę HOTCHAIN konfigūracijos ekraną.</translation>
+        <source>Obfuscation was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening Hotchain's configuration screen.</source>
+        <translation>Obfuscation buvo sėkmingai nustatytas į paprastą (%1 ir 2 raundai). Bet kada galite tai pakeisti, atidarę Hotchain konfigūracijos ekraną.</translation>
     </message>
     <message>
-        <source>Obfuscation was successfully set to high (%1 and 8 rounds). You can change this at any time by opening HOTCHAIN's configuration screen.</source>
-        <translation>Obfuscation buvo sėkmingai nustatytas į aukštą (%1 ir 8 raundai). Bet kada galite tai pakeisti, atidarę HOTCHAIN konfigūracijos ekraną.</translation>
+        <source>Obfuscation was successfully set to high (%1 and 8 rounds). You can change this at any time by opening Hotchain's configuration screen.</source>
+        <translation>Obfuscation buvo sėkmingai nustatytas į aukštą (%1 ir 8 raundai). Bet kada galite tai pakeisti, atidarę Hotchain konfigūracijos ekraną.</translation>
     </message>
     <message>
-        <source>Obfuscation was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening HOTCHAIN's configuration screen.</source>
-        <translation>Obfuscation buvo sėkmingai nustatytas į maksimumą (%1 ir 16 raundai). Bet kada galite tai pakeisti, atidarę HOTCHAIN konfigūracijos ekraną.</translation>
+        <source>Obfuscation was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening Hotchain's configuration screen.</source>
+        <translation>Obfuscation buvo sėkmingai nustatytas į maksimumą (%1 ir 16 raundai). Bet kada galite tai pakeisti, atidarę Hotchain konfigūracijos ekraną.</translation>
     </message>
 </context>
 <context>
@@ -1844,12 +1844,12 @@ Patikrinkite adresą ir bandykite dar kartą.</translation>
         <translation>Ekspertas</translation>
     </message>
     <message>
-        <source>Automatically start HOTCHAIN after logging in to the system.</source>
-        <translation>Automatiškai paleisti HOTCHAIN prisijungus prie sistemos.</translation>
+        <source>Automatically start Hotchain after logging in to the system.</source>
+        <translation>Automatiškai paleisti Hotchain prisijungus prie sistemos.</translation>
     </message>
     <message>
-        <source>&amp;Start HOTCHAIN on system login</source>
-        <translation>&amp;Paleisti HOTCHAIN sistemai įsijungiant</translation>
+        <source>&amp;Start Hotchain on system login</source>
+        <translation>&amp;Paleisti Hotchain sistemai įsijungiant</translation>
     </message>
     <message>
         <source>Whether to show coin control features or not.</source>
@@ -1876,8 +1876,8 @@ Patikrinkite adresą ir bandykite dar kartą.</translation>
         <translation>&amp;Tinklas</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting HOTCHAIN.</source>
-        <translation>Čia galite nustatyti vartotojo sąsajos kalbą. Šis nustatymas įsigalios iš naujo paleidus "HOTCHAIN".</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting Hotchain.</source>
+        <translation>Čia galite nustatyti vartotojo sąsajos kalbą. Šis nustatymas įsigalios iš naujo paleidus "Hotchain".</translation>
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
@@ -1890,16 +1890,16 @@ https://www.transifex.com/hotchain-project/hotchain-project-translations</transl
         <translation>Įrašyti prievadą naudojant &amp;UPnP</translation>
     </message>
     <message>
-        <source>Enable automatic minting of HOTCHAIN units to zHOTX</source>
-        <translation>Įgalinti automatinį konvertavimą iš HOTCHAIN į zHOTX</translation>
+        <source>Enable automatic minting of HOTX units to zHOTX</source>
+        <translation>Įgalinti automatinį konvertavimą iš HOTX į zHOTX</translation>
     </message>
     <message>
         <source>Enable zHOTX Automint</source>
         <translation>Įgalinti zHOTX Automatinį nukaldinima</translation>
     </message>
     <message>
-        <source>Percentage of incoming HOTCHAIN which get automatically converted to zHOTX via Zerocoin Protocol (min: 10%)</source>
-        <translation>Procentas gauto HOTCHAIN, kuris automatiškai bus konvertuotas į zHOTX naudojant Zerocoin Protokolą (min: 10%)</translation>
+        <source>Percentage of incoming HOTX which get automatically converted to zHOTX via Zerocoin Protocol (min: 10%)</source>
+        <translation>Procentas gauto HOTX, kuris automatiškai bus konvertuotas į zHOTX naudojant Zerocoin Protokolą (min: 10%)</translation>
     </message>
     <message>
         <source>Percentage of autominted zHOTX</source>
@@ -1910,8 +1910,8 @@ https://www.transifex.com/hotchain-project/hotchain-project-translations</transl
         <translation>Pageidautinas zHOTX Automatinio Nukaldinimo Nominalas</translation>
     </message>
     <message>
-        <source>Connect to the HOTCHAIN network through a SOCKS5 proxy.</source>
-        <translation>Jungtis prie HOTCHAIN tinklo naudojant SOCKS5 tarpinį serverį.</translation>
+        <source>Connect to the Hotchain network through a SOCKS5 proxy.</source>
+        <translation>Jungtis prie Hotchain tinklo naudojant SOCKS5 tarpinį serverį.</translation>
     </message>
     <message>
         <source>Proxy &amp;IP:</source>
@@ -1926,8 +1926,8 @@ https://www.transifex.com/hotchain-project/hotchain-project-translations</transl
         <translation>&amp;Prievadas (angl. port):</translation>
     </message>
     <message>
-        <source>Port of the proxy (e.g. 9069)</source>
-        <translation>Proxy prievadas (pvz. 9069)</translation>
+        <source>Port of the proxy (e.g. 9050)</source>
+        <translation>Proxy prievadas (pvz. 9050)</translation>
     </message>
     <message>
         <source>&amp;Window</source>
@@ -2029,8 +2029,8 @@ https://www.transifex.com/hotchain-project/hotchain-project-translations</transl
         <translation>Bendras balansas, įskaitant visas nepasiekiamas monetas.</translation>
     </message>
     <message>
-        <source>HOTCHAIN Balance</source>
-        <translation>HOTCHAIN Balansas</translation>
+        <source>HOTX Balance</source>
+        <translation>HOTX Balansas</translation>
     </message>
     <message>
         <source>Pending:</source>
@@ -2053,8 +2053,8 @@ https://www.transifex.com/hotchain-project/hotchain-project-translations</transl
         <translation>Dabartinis bendras užrakintas balansas tik žiūrėjimo adresuose</translation>
     </message>
     <message>
-        <source>Your current HOTCHAIN balance, unconfirmed and immature transactions included</source>
-        <translation>Jūsų dabartinis HOTCHAIN balansas, įskaitant nepatvirtintus ir nesubrendusius sandorius</translation>
+        <source>Your current Hotchain balance, unconfirmed and immature transactions included</source>
+        <translation>Jūsų dabartinis Hotchain balansas, įskaitant nepatvirtintus ir nesubrendusius sandorius</translation>
     </message>
     <message>
         <source>zHOTX Balance</source>
@@ -2073,8 +2073,8 @@ Immature: confirmed, but less than 1 mint of the same denomination after it was 
 Nesubrendusios: patvirtintos, bet mažiau nei 1 konvertacijos to pačio nominalo po to, kai buvo konvertuotas.</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the HOTCHAIN network after a connection is established, but this process has not completed yet.</source>
-        <translation>Rodoma informacija gali būti pasenusi. Jūsų piniginė automatiškai sinchronizuojasi su HOTCHAIN tinklu po ryšio aktyvavimo, tačiau šis procesas dar nebaigtas.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Hotchain network after a connection is established, but this process has not completed yet.</source>
+        <translation>Rodoma informacija gali būti pasenusi. Jūsų piniginė automatiškai sinchronizuojasi su Hotchain tinklu po ryšio aktyvavimo, tačiau šis procesas dar nebaigtas.</translation>
     </message>
     <message>
         <source>OVERVIEW</source>
@@ -2117,8 +2117,8 @@ Nesubrendusios: patvirtintos, bet mažiau nei 1 konvertacijos to pačio nominalo
         <translation>Prienamas išleidimui:</translation>
     </message>
     <message>
-        <source>Locked HOTCHAIN or Masternode collaterals. These are excluded from zHOTX minting.</source>
-        <translation>Užrakinti HOTCHAIN arba Masternode užstatai. Jie yra neįtraukti į zHOTX kalimą.</translation>
+        <source>Locked HOTX or Masternode collaterals. These are excluded from zHOTX minting.</source>
+        <translation>Užrakinti HOTX arba Masternode užstatai. Jie yra neįtraukti į zHOTX kalimą.</translation>
     </message>
     <message>
         <source>Locked:</source>
@@ -2210,8 +2210,8 @@ Nesubrendusios: patvirtintos, bet mažiau nei 1 konvertacijos to pačio nominalo
         <translation>Zerocoin Veiksmai:</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the HOTCHAIN network after a connection is established, but this process has not completed yet.</source>
-        <translation>Rodoma informacija gali būti pasenusi. Jūsų piniginė automatiškai sinchronizuojasi su HOTCHAIN tinklu po ryšio aktyvavimo, tačiau šis procesas dar nebaigtas.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Hotchain network after a connection is established, but this process has not completed yet.</source>
+        <translation>Rodoma informacija gali būti pasenusi. Jūsų piniginė automatiškai sinchronizuojasi su Hotchain tinklu po ryšio aktyvavimo, tačiau šis procesas dar nebaigtas.</translation>
     </message>
     <message>
         <source>Mint Zerocoin</source>
@@ -2234,8 +2234,8 @@ Nesubrendusios: patvirtintos, bet mažiau nei 1 konvertacijos to pačio nominalo
         <translation>Prieinama Konvertavimui:</translation>
     </message>
     <message>
-        <source>0.000 000 00 HOTCHAIN</source>
-        <translation>0.000 000 00 HOTCHAIN</translation>
+        <source>0.000 000 00 HOTX</source>
+        <translation>0.000 000 00 HOTX</translation>
     </message>
     <message>
         <source>Reset</source>
@@ -2651,8 +2651,8 @@ Nesubrendusios: patvirtintos, bet mažiau nei 1 konvertacijos tos pačio nominal
         <translation>Suma</translation>
     </message>
     <message>
-        <source>Enter a HOTCHAIN address (e.g. %1)</source>
-        <translation>Įveskite HOTCHAIN adresą (pvz. %1)</translation>
+        <source>Enter a Hotchain address (e.g. %1)</source>
+        <translation>Įveskite Hotchain adresą (pvz. %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -2829,8 +2829,8 @@ Nesubrendusios: patvirtintos, bet mažiau nei 1 konvertacijos tos pačio nominal
         <translation>Iš:</translation>
     </message>
     <message>
-        <source>Welcome to the HOTCHAIN RPC console.</source>
-        <translation>Sveiki atvykę į HOTCHAIN RPC konsolę.</translation>
+        <source>Welcome to the Hotchain RPC console.</source>
+        <translation>Sveiki atvykę į Hotchain RPC konsolę.</translation>
     </message>
     <message>
         <source>never</source>
@@ -3001,8 +3001,8 @@ Nesubrendusios: patvirtintos, bet mažiau nei 1 konvertacijos tos pačio nominal
         <translation>Pasirinktinio pakeitimo adresas</translation>
     </message>
     <message>
-        <source>0 HOTCHAIN</source>
-        <translation>0 HOTCHAIN</translation>
+        <source>0 HOTX</source>
+        <translation>0 HOTX</translation>
     </message>
     <message>
         <source>Transaction Fee:</source>
@@ -3158,8 +3158,8 @@ Nesubrendusios: patvirtintos, bet mažiau nei 1 konvertacijos tos pačio nominal
 <context>
     <name>SignVerifyMessageDialog</name>
     <message>
-        <source>The HOTCHAIN address to sign the message with</source>
-        <translation>HOTCHAIN adresas, kuriuo pasirašyti žinute</translation>
+        <source>The Hotchain address to sign the message with</source>
+        <translation>Hotchain adresas, kuriuo pasirašyti žinute</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -3182,16 +3182,16 @@ Nesubrendusios: patvirtintos, bet mažiau nei 1 konvertacijos tos pačio nominal
         <translation>Kopijuoti dabartinį parašą</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this HOTCHAIN address</source>
-        <translation>Pažymėkite žinutę, kad įrodytumėte, jog jūs šio HOTCHAIN adreso savininkas</translation>
+        <source>Sign the message to prove you own this Hotchain address</source>
+        <translation>Pažymėkite žinutę, kad įrodytumėte, jog jūs šio Hotchain adreso savininkas</translation>
     </message>
     <message>
-        <source>The HOTCHAIN address the message was signed with</source>
-        <translation>HOTCHAIN adresas, kurio buvo pasirašyta žinutė</translation>
+        <source>The Hotchain address the message was signed with</source>
+        <translation>Hotchain adresas, kurio buvo pasirašyta žinutė</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified HOTCHAIN address</source>
-        <translation>Patikrinkite pranešimą, kad jis būtų pasirašytas su nurodytu HOTCHAIN adresu</translation>
+        <source>Verify the message to ensure it was signed with the specified Hotchain address</source>
+        <translation>Patikrinkite pranešimą, kad jis būtų pasirašytas su nurodytu Hotchain adresu</translation>
     </message>
     <message>
         <source>Reset all sign message fields</source>
@@ -3229,8 +3229,8 @@ Nesubrendusios: patvirtintos, bet mažiau nei 1 konvertacijos tos pačio nominal
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Hotchain Wallet</source>
-        <translation>Hotchain Wallet</translation>
+        <source>Hotchain Core</source>
+        <translation>Hotchain Core</translation>
     </message>
     </context>
 <context>
@@ -3494,8 +3494,8 @@ Nesubrendusios: patvirtintos, bet mažiau nei 1 konvertacijos tos pačio nominal
         <translation>Klaida kraunant wallet.dat: Piniginė yra sugadinta</translation>
     </message>
     <message>
-        <source>Error loading wallet.dat: Wallet requires newer version of Hotchain Wallet</source>
-        <translation>Klaida kraunant wallet.dat: Piniginė reikalauja naujesnės Hotchain Wallet versijos</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of Hotchain Core</source>
+        <translation>Klaida kraunant wallet.dat: Piniginė reikalauja naujesnės Hotchain Core versijos</translation>
     </message>
     <message>
         <source>Error opening block database</source>
@@ -3726,8 +3726,8 @@ Nesubrendusios: patvirtintos, bet mažiau nei 1 konvertacijos tos pačio nominal
         <translation>Piniginė užrakinta.</translation>
     </message>
     <message>
-        <source>Wallet needed to be rewritten: restart Hotchain Wallet to complete</source>
-        <translation>Piniginę reikia perrašyti: paleiskite Hotchain Wallet iš naujo</translation>
+        <source>Wallet needed to be rewritten: restart Hotchain Core to complete</source>
+        <translation>Piniginę reikia perrašyti: paleiskite Hotchain Core iš naujo</translation>
     </message>
     <message>
         <source>Wallet options:</source>

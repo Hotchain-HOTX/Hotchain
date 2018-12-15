@@ -62,12 +62,12 @@
         <translation>Adreces de recepció</translation>
     </message>
     <message>
-        <source>These are your HOTCHAIN addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Aquestes són les teves adreces HOTCHAIN per fer enviar pagaments. Sempre comprova l'import i l'adreça de recepció abans d'enviar les monedes.</translation>
+        <source>These are your Hotchain addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Aquestes són les teves adreces Hotchain per fer enviar pagaments. Sempre comprova l'import i l'adreça de recepció abans d'enviar les monedes.</translation>
     </message>
     <message>
-        <source>These are your HOTCHAIN addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Aquestes són les teves adreces HOTCHAIN per rebre pagaments. Es recomana utilitzar noves adreces de recepció per cada transacció.</translation>
+        <source>These are your Hotchain addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Aquestes són les teves adreces Hotchain per rebre pagaments. Es recomana utilitzar noves adreces de recepció per cada transacció.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -168,16 +168,16 @@
         <translation>Confirma l'encriptació del moneder</translation>
     </message>
     <message>
-        <source>HOTCHAIN will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your HOTCHAINs from being stolen by malware infecting your computer.</source>
-        <translation>HOTCHAIN es tancarà per finalitzar el procés d'encriptació. Recorda que encriptant el teu moneder no protegeix els teus HOTCHAIN de ser robats si el teu ordinador està infectat amb programari maliciós.</translation>
+        <source>Hotchain will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your HOTXs from being stolen by malware infecting your computer.</source>
+        <translation>Hotchain es tancarà per finalitzar el procés d'encriptació. Recorda que encriptant el teu moneder no protegeix els teus HOTX de ser robats si el teu ordinador està infectat amb programari maliciós.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Estàs segur que vols encriptar el moneder?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR HOTCHAIN&lt;/b&gt;!</source>
-        <translation>Avís: Si encripteu el vostre moneder i perdeu la contrasenya, &lt;b&gt;PERDREU TOTS ELS VOSTRES HOTCHAINS&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR HOTX&lt;/b&gt;!</source>
+        <translation>Avís: Si encripteu el vostre moneder i perdeu la contrasenya, &lt;b&gt;PERDREU TOTS ELS VOSTRES HOTXS&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -421,12 +421,12 @@
         <translation>A&amp;juda</translation>
     </message>
     <message>
-        <source>Hotchain Wallet</source>
-        <translation>Hotchain Wallet</translation>
+        <source>Hotchain Core</source>
+        <translation>Hotchain Core</translation>
     </message>
     <message>
-        <source>Send coins to a HOTCHAIN address</source>
-        <translation>Envia monedes a una adreça HOTCHAIN</translation>
+        <source>Send coins to a Hotchain address</source>
+        <translation>Envia monedes a una adreça Hotchain</translation>
     </message>
     <message>
         <source>&amp;Privacy</source>
@@ -437,8 +437,8 @@
         <translation>&amp;Masternodes</translation>
     </message>
     <message>
-        <source>&amp;About Hotchain Wallet</source>
-        <translation>&amp;Sobre Hotchain Wallet</translation>
+        <source>&amp;About Hotchain Core</source>
+        <translation>&amp;Sobre Hotchain Core</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -461,8 +461,8 @@
         <translation>Obre el fitxer de configuració del Masternode</translation>
     </message>
     <message>
-        <source>Hotchain Wallet client</source>
-        <translation>Client Hotchain Wallet</translation>
+        <source>Hotchain Core client</source>
+        <translation>Client Hotchain core</translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -805,8 +805,8 @@
         <translation>Edita l'adreça d'enviament</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid HOTCHAIN address.</source>
-        <translation>L'adreça introduïda "%1" no és una adreça HOTCHAIN vàlida.</translation>
+        <source>The entered address "%1" is not a valid Hotchain address.</source>
+        <translation>L'adreça introduïda "%1" no és una adreça Hotchain vàlida.</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -851,16 +851,16 @@
         <translation>versió</translation>
     </message>
     <message>
-        <source>Hotchain Wallet</source>
-        <translation>Hotchain Wallet</translation>
+        <source>Hotchain Core</source>
+        <translation>Hotchain Core</translation>
     </message>
     <message>
         <source>(%1-bit)</source>
         <translation>(%1-bit)</translation>
     </message>
     <message>
-        <source>About Hotchain Wallet</source>
-        <translation>Sobre Hotchain Wallet</translation>
+        <source>About Hotchain Core</source>
+        <translation>Sobre Hotchain Core</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -906,12 +906,12 @@
         <translation>Benvingut</translation>
     </message>
     <message>
-        <source>Welcome to Hotchain Wallet.</source>
-        <translation>Benvingut a Hotchain Wallet.</translation>
+        <source>Welcome to Hotchain Core.</source>
+        <translation>Benvingut a Hotchain Core.</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where Hotchain Wallet will store its data.</source>
-        <translation>Al ser el primer cop que s'inicia el programa, pots escollir on es desaran les dades del Hotchain Wallet.</translation>
+        <source>As this is the first time the program is launched, you can choose where Hotchain Core will store its data.</source>
+        <translation>Al ser el primer cop que s'inicia el programa, pots escollir on es desaran les dades del Hotchain Core.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -922,8 +922,8 @@
         <translation>Usar una carpeta de dades personalitzada:</translation>
     </message>
     <message>
-        <source>Hotchain Wallet</source>
-        <translation>Hotchain Wallet</translation>
+        <source>Hotchain Core</source>
+        <translation>Hotchain Core</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -1148,24 +1148,24 @@
         <translation>Si us plau, selecciona un nivell de privacitat.</translation>
     </message>
     <message>
-        <source>Use 2 separate masternodes to mix funds up to 10000 HOTCHAIN</source>
-        <translation>Utilitza 2 masternodes diferents per mesclar fons de fins a 10000 HOTCHAIN</translation>
+        <source>Use 2 separate masternodes to mix funds up to 10000 HOTX</source>
+        <translation>Utilitza 2 masternodes diferents per mesclar fons de fins a 10000 HOTX</translation>
     </message>
     <message>
-        <source>Use 8 separate masternodes to mix funds up to 10000 HOTCHAIN</source>
-        <translation>Utilitza 8 masternodes diferents per mesclar fons de fins a 10000 HOTCHAIN</translation>
+        <source>Use 8 separate masternodes to mix funds up to 10000 HOTX</source>
+        <translation>Utilitza 8 masternodes diferents per mesclar fons de fins a 10000 HOTX</translation>
     </message>
     <message>
         <source>Use 16 separate masternodes</source>
         <translation>Utilitza 16 masternodes diferents</translation>
     </message>
     <message>
-        <source>This option is the quickest and will cost about ~0.025 HOTCHAIN to anonymize 10000 HOTCHAIN</source>
-        <translation>Aquesta opció és la més ràpida i té un cost d'uns ~0.025 HOTCHAIN per anonimitzar 10000 HOTCHAIN</translation>
+        <source>This option is the quickest and will cost about ~0.025 HOTX to anonymize 10000 HOTX</source>
+        <translation>Aquesta opció és la més ràpida i té un cost d'uns ~0.025 HOTX per anonimitzar 10000 HOTX</translation>
     </message>
     <message>
-        <source>This option is moderately fast and will cost about 0.05 HOTCHAIN to anonymize 10000 HOTCHAIN</source>
-        <translation>Aquesta opció és moderadament ràpida i té un cost d'uns 0.05 HOTCHAIN per anonimitzar 10000 HOTCHAIN</translation>
+        <source>This option is moderately fast and will cost about 0.05 HOTX to anonymize 10000 HOTX</source>
+        <translation>Aquesta opció és moderadament ràpida i té un cost d'uns 0.05 HOTX per anonimitzar 10000 HOTX</translation>
     </message>
     <message>
         <source>This is the slowest and most secure option. Using maximum anonymity will cost</source>
@@ -1214,8 +1214,8 @@
         <translation>Expert</translation>
     </message>
     <message>
-        <source>Automatically start HOTCHAIN after logging in to the system.</source>
-        <translation>Inicia HOTCHAIN automàticament després d'identificar-te en el sistema.</translation>
+        <source>Automatically start Hotchain after logging in to the system.</source>
+        <translation>Inicia Hotchain automàticament després d'identificar-te en el sistema.</translation>
     </message>
     <message>
         <source>Whether to show coin control features or not.</source>
@@ -1306,8 +1306,8 @@
         <translation>zHOTX</translation>
     </message>
     <message>
-        <source>0.000 000 00 HOTCHAIN</source>
-        <translation>0.000 000 00 HOTCHAIN</translation>
+        <source>0.000 000 00 HOTX</source>
+        <translation>0.000 000 00 HOTX</translation>
     </message>
     <message>
         <source>Reset</source>
@@ -1713,8 +1713,8 @@
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>Hotchain Wallet is shutting down...</source>
-        <translation>Hotchain Wallet s'està tancant...</translation>
+        <source>Hotchain Core is shutting down...</source>
+        <translation>Hotchain Core s'està tancant...</translation>
     </message>
     <message>
         <source>Do not shut down the computer until this window disappears.</source>
@@ -1779,8 +1779,8 @@
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Hotchain Wallet</source>
-        <translation>Hotchain Wallet</translation>
+        <source>Hotchain Core</source>
+        <translation>Hotchain Core</translation>
     </message>
     <message>
         <source>Version %1</source>

@@ -1,10 +1,10 @@
 (note: this is a temporary file, to be added-to by anybody, and moved to release-notes at release time)
 
-Hotchain Wallet version *version* is now available from:  <https://github.com/Hotchain-HOTX/Hotchain/releases>
+Hotchain Core version *version* is now available from:  <https://github.com/hotchain-project/hotchain/releases>
 
 This is a new major version release, including various bug fixes and performance improvements, as well as updated translations.
 
-Please report bugs using the issue tracker at github: <https://github.com/Hotchain-HOTX/Hotchain/issues>
+Please report bugs using the issue tracker at github: <https://github.com/hotchain-project/hotchain/issues>
 
 
 Mandatory Update
@@ -14,17 +14,17 @@ Mandatory Update
 How to Upgrade
 ==============
 
-If you are running an older version, shut it down. Wait until it has completely shut down (which might take a few minutes for older versions), then run the installer (on Windows) or just copy over /Applications/hotchain-Qt (on Mac) or hotchaind/hotchain-qt (on Linux).
+If you are running an older version, shut it down. Wait until it has completely shut down (which might take a few minutes for older versions), then run the installer (on Windows) or just copy over /Applications/Hotchain-Qt (on Mac) or hotchaind/hotchain-qt (on Linux).
 
 
 Compatibility
 ==============
 
-Hotchain Wallet is extensively tested on multiple operating systems using the Linux kernel, macOS 10.8+, and Windows 7 and later.
+Hotchain Core is extensively tested on multiple operating systems using the Linux kernel, macOS 10.8+, and Windows 7 and later.
 
 Microsoft ended support for Windows XP on [April 8th, 2014](https://www.microsoft.com/en-us/WindowsForBusiness/end-of-xp-support), No attempt is made to prevent installing or running the software on Windows XP, you can still do so at your own risk but be aware that there are known instabilities and issues. Please do not report issues about Windows XP to the issue tracker.
 
-Hotchain Wallet should also work on most other Unix-like systems but is not frequently tested on them.
+Hotchain Core should also work on most other Unix-like systems but is not frequently tested on them.
 
 ### :exclamation::exclamation::exclamation: MacOS 10.13 High Sierra :exclamation::exclamation::exclamation:
 

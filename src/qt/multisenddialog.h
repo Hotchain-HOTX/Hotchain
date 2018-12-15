@@ -1,9 +1,9 @@
-// Copyright (c) 2017 The PIVX Developers 
+// Copyright (c) 2017 The Hotchain developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef HOTCHAIN_QT_MULTISENDDIALOG_H
-#define HOTCHAIN_QT_MULTISENDDIALOG_H
+#ifndef HOTXX_QT_MULTISENDDIALOG_H
+#define HOTXX_QT_MULTISENDDIALOG_H
 
 #include <QDialog>
 
@@ -38,4 +38,4 @@ private:
     WalletModel* model;
 };
 
-#endif // HOTCHAIN_QT_MULTISENDDIALOG_H
+#endif // HOTXX_QT_MULTISENDDIALOG_H

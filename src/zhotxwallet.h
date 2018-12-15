@@ -1,10 +1,9 @@
-// Copyright (c) 2017-2018 The PIVX Developers
-// Copyright (c) 2018 Cryptopie 
+// Copyright (c) 2017-2018 The Hotchain developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef HOTCHAIN_ZHOTXWALLET_H
-#define HOTCHAIN_ZHOTXWALLET_H
+#ifndef HOTXX_ZHOTXWALLET_H
+#define HOTXX_ZHOTXWALLET_H
 
 #include <map>
 #include "libzerocoin/Coin.h"
@@ -46,4 +45,4 @@ private:
     uint512 GetZerocoinSeed(uint32_t n);
 };
 
-#endif //HOTCHAIN_ZHOTXWALLET_H
+#endif //HOTXX_ZHOTXWALLET_H

@@ -1,4 +1,4 @@
-// Copyright (c) 2018 The PIVX Developers 
+// Copyright (c) 2018 The Hotchain developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -21,10 +21,12 @@ void CheckBudgetValue(int nHeight, std::string strNetwork, CAmount nExpectedValu
 BOOST_AUTO_TEST_CASE(budget_value)
 {
     SelectParams(CBaseChainParams::TESTNET);
-    CheckBudgetValue(1, "testnet", 7300*COIN);
+    int nHeightTest = Params().Zerocoin_Block_V2_Start() + 1;
+    CheckBudgetValue(nHeightTest, "testnet", 7300*COIN);
 
     SelectParams(CBaseChainParams::MAIN);
-    CheckBudgetValue(1, "mainnet", 43200*COIN);
+    nHeightTest = Params().Zerocoin_Block_V2_Start() + 1;
+    CheckBudgetValue(nHeightTest, "mainnet", 43200*COIN);
 }
 
 BOOST_AUTO_TEST_SUITE_END()

@@ -1,5 +1,4 @@
-// Copyright (c) 2017-2018 The PIVX Developers
-// Copyright (c) 2018 Cryptopie 
+// Copyright (c) 2017-2018 The Hotchain developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -17,6 +16,16 @@ class WalletModel;
 namespace Ui {
 class ZHotxControlDialog;
 }
+
+class CZHotxControlWidgetItem : public QTreeWidgetItem
+{
+public:
+    explicit CZHotxControlWidgetItem(QTreeWidget *parent, int type = Type) : QTreeWidgetItem(parent, type) {}
+    explicit CZHotxControlWidgetItem(int type = Type) : QTreeWidgetItem(type) {}
+    explicit CZHotxControlWidgetItem(QTreeWidgetItem *parent, int type = Type) : QTreeWidgetItem(parent, type) {}
+
+    bool operator<(const QTreeWidgetItem &other) const;
+};
 
 class ZHotxControlDialog : public QDialog
 {
@@ -48,6 +57,7 @@ private:
         COLUMN_CONFIRMATIONS,
         COLUMN_ISSPENDABLE
     };
+    friend class CZHotxControlWidgetItem;
 
 private slots:
     void updateSelection(QTreeWidgetItem* item, int column);

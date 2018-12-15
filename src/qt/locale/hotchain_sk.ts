@@ -62,12 +62,12 @@
         <translation>Prijímacia adresa</translation>
     </message>
     <message>
-        <source>These are your HOTCHAIN addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Toto sú vaše HOTCHAIN adresy na odosielanie platieb. Pred odoslaním vždy skontrolujte výšku a adresu prijemcu.</translation>
+        <source>These are your Hotchain addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Toto sú vaše Hotchain adresy na odosielanie platieb. Pred odoslaním vždy skontrolujte výšku a adresu prijemcu.</translation>
     </message>
     <message>
-        <source>These are your HOTCHAIN addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Toto sú vaše HOTCHAIN adresy na prijímanie platieb. Pre každú transakciu sa odporúča použiť novú prijímaciu adresu.</translation>
+        <source>These are your Hotchain addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Toto sú vaše Hotchain adresy na prijímanie platieb. Pre každú transakciu sa odporúča použiť novú prijímaciu adresu.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -172,16 +172,16 @@
         <translation>Potvrďte šifrovanie peňaženky</translation>
     </message>
     <message>
-        <source>HOTCHAIN will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your HOTCHAINs from being stolen by malware infecting your computer.</source>
-        <translation>HOTCHAIN sa teraz ukončí, aby dokončil proces šifrovania. Nezabudnite, že šifrovanie peňaženky nemôže úplne ochrániť vaše HOTCHAIN pred odcudzením škodlivým softvérom, ktorý infikuje váš počítač.</translation>
+        <source>Hotchain will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your HOTXs from being stolen by malware infecting your computer.</source>
+        <translation>Hotchain sa teraz ukončí, aby dokončil proces šifrovania. Nezabudnite, že šifrovanie peňaženky nemôže úplne ochrániť vaše HOTX pred odcudzením škodlivým softvérom, ktorý infikuje váš počítač.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Naozaj chcete zašifrovať svoju peňaženku?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR HOTCHAIN&lt;/b&gt;!</source>
-        <translation>Upozornenie: Ak zašifrujete svoju peňaženku a stratíte svoju prístupovú frázu, &lt;b&gt; PRÍDETE O VŠETKY HOTCHAIN &lt;/ b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR HOTX&lt;/b&gt;!</source>
+        <translation>Upozornenie: Ak zašifrujete svoju peňaženku a stratíte svoju prístupovú frázu, &lt;b&gt; PRÍDETE O VŠETKY HOTX &lt;/ b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -569,12 +569,12 @@
         <translation>Panel nástrojov Záložky</translation>
     </message>
     <message>
-        <source>Hotchain Wallet</source>
-        <translation>Hotchain Wallet</translation>
+        <source>Hotchain Core</source>
+        <translation>Hotchain Core</translation>
     </message>
     <message>
-        <source>Send coins to a HOTCHAIN address</source>
-        <translation>Odoslať mince na adresu HOTCHAIN</translation>
+        <source>Send coins to a Hotchain address</source>
+        <translation>Odoslať mince na adresu Hotchain</translation>
     </message>
     <message>
         <source>Request payments (generates QR codes and hotchain: URIs)</source>
@@ -589,24 +589,24 @@
         <translation>Prezrieť masternody</translation>
     </message>
     <message>
-        <source>&amp;About Hotchain Wallet</source>
-        <translation>O Hotchain Wallet</translation>
+        <source>&amp;About Hotchain Core</source>
+        <translation>O Hotchain Core</translation>
     </message>
     <message>
-        <source>Show information about Hotchain Wallet</source>
-        <translation>Zobraziť informácie o Hotchain Wallet</translation>
+        <source>Show information about Hotchain Core</source>
+        <translation>Zobraziť informácie o Hotchain Core</translation>
     </message>
     <message>
-        <source>Modify configuration options for HOTCHAIN</source>
-        <translation>Zmeňte možnosti konfigurácie pre HOTCHAIN</translation>
+        <source>Modify configuration options for Hotchain</source>
+        <translation>Zmeňte možnosti konfigurácie pre Hotchain</translation>
     </message>
     <message>
-        <source>Sign messages with your HOTCHAIN addresses to prove you own them</source>
-        <translation>Podpíšte správy pomocou adresy HOTCHAIN, aby ste preukázali, že ich vlastníte</translation>
+        <source>Sign messages with your Hotchain addresses to prove you own them</source>
+        <translation>Podpíšte správy pomocou adresy Hotchain, aby ste preukázali, že ich vlastníte</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified HOTCHAIN addresses</source>
-        <translation>Overte správy, aby sa zabezpečilo, že boli podpísané zadanými HOTCHAIN adresami</translation>
+        <source>Verify messages to ensure they were signed with specified Hotchain addresses</source>
+        <translation>Overte správy, aby sa zabezpečilo, že boli podpísané zadanými Hotchain adresami</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -637,8 +637,8 @@
         <translation>Otvoriť konfiguračný súbor masternodu</translation>
     </message>
     <message>
-        <source>Open a HOTCHAIN: URI or payment request</source>
-        <translation>Otvorte HOTCHAIN: URI alebo žiadosť o platbu</translation>
+        <source>Open a Hotchain: URI or payment request</source>
+        <translation>Otvorte Hotchain: URI alebo žiadosť o platbu</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -649,12 +649,12 @@
         <translation>Okno blockchain prehliadača</translation>
     </message>
     <message>
-        <source>Show the Hotchain Wallet help message to get a list with possible HOTCHAIN command-line options</source>
-        <translation>Zobraziť pomocnú správu programu Hotchain Wallet a získajte zoznam možností príkazového riadka HOTCHAIN</translation>
+        <source>Show the Hotchain Core help message to get a list with possible Hotchain command-line options</source>
+        <translation>Zobraziť pomocnú správu programu Hotchain Core a získajte zoznam možností príkazového riadka Hotchain</translation>
     </message>
     <message>
-        <source>Hotchain Wallet client</source>
-        <translation>Hotchain Wallet klient</translation>
+        <source>Hotchain Core client</source>
+        <translation>Hotchain Core klient</translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -867,15 +867,15 @@ MultiSend: %1</translation>
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>Hotchain Wallet</source>
-        <translation>Hotchain Wallet</translation>
+        <source>Hotchain Core</source>
+        <translation>Hotchain Core</translation>
     </message>
     </context>
 <context>
     <name>Intro</name>
     <message>
-        <source>Hotchain Wallet</source>
-        <translation>Hotchain Wallet</translation>
+        <source>Hotchain Core</source>
+        <translation>Hotchain Core</translation>
     </message>
     <message>
         <source>Error</source>
@@ -1114,8 +1114,8 @@ MultiSend: %1</translation>
 <context>
     <name>SignVerifyMessageDialog</name>
     <message>
-        <source>The HOTCHAIN address to sign the message with</source>
-        <translation>Adresa HOTCHAIN, ktorou chcete správu podpísať</translation>
+        <source>The Hotchain address to sign the message with</source>
+        <translation>Adresa Hotchain, ktorou chcete správu podpísať</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -1138,16 +1138,16 @@ MultiSend: %1</translation>
         <translation>Skopírujte aktuálny podpis do schránky</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this HOTCHAIN address</source>
-        <translation>Podpíšte správu, aby ste preukázali, že ste vlastníkom tejto HOTCHAIN adresy</translation>
+        <source>Sign the message to prove you own this Hotchain address</source>
+        <translation>Podpíšte správu, aby ste preukázali, že ste vlastníkom tejto Hotchain adresy</translation>
     </message>
     <message>
-        <source>The HOTCHAIN address the message was signed with</source>
-        <translation>HOTCHAIN adresa, ktorou bola správa podpísaná</translation>
+        <source>The Hotchain address the message was signed with</source>
+        <translation>Hotchain adresa, ktorou bola správa podpísaná</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified HOTCHAIN address</source>
-        <translation>Skontrolujte správu, aby ste sa uistili, že bola podpísaná zadanou HOTCHAIN adresou</translation>
+        <source>Verify the message to ensure it was signed with the specified Hotchain address</source>
+        <translation>Skontrolujte správu, aby ste sa uistili, že bola podpísaná zadanou Hotchain adresou</translation>
     </message>
     <message>
         <source>Reset all sign message fields</source>
@@ -1185,8 +1185,8 @@ MultiSend: %1</translation>
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Hotchain Wallet</source>
-        <translation>Hotchain Wallet</translation>
+        <source>Hotchain Core</source>
+        <translation>Hotchain Core</translation>
     </message>
     </context>
 <context>

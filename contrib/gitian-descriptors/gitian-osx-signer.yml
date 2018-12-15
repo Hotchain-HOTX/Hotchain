@@ -7,7 +7,7 @@ architectures:
 packages:
 - "faketime"
 remotes:
-- "url": "https://github.com/Hotchain-HOTX/Hotchain-detached-sigs.git"
+- "url": "https://github.com/hotchain-project/hotchain-detached-sigs.git"
   "dir": "signature"
 files:
 - "hotchain-osx-unsigned.tar.gz"

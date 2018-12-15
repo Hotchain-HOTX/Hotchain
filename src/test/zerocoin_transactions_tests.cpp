@@ -1,5 +1,4 @@
-// Copyright (c) 2017-2018 The PIVX Developers
-// Copyright (c) 2018 Cryptopie 
+// Copyright (c) 2017-2018 The Hotchain developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -24,7 +23,7 @@ static CWallet cWallet("unlocked.dat");
 BOOST_AUTO_TEST_CASE(zerocoin_spend_test)
 {
     SelectParams(CBaseChainParams::MAIN);
-    ZerocoinParams *ZCParams = Params().Zerocoin_Params();
+    ZerocoinParams *ZCParams = Params().Zerocoin_Params(false);
     (void)ZCParams;
 
     bool fFirstRun;

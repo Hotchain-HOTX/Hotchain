@@ -1,11 +1,11 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
 // Copyright (c) 2009-2014 The Bitcoin developers
-// Copyright (c) 2016-2018 The PIVX Developers 
+// Copyright (c) 2016-2018 The Hotchain developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef HOTCHAIN_PUBKEY_H
-#define HOTCHAIN_PUBKEY_H
+#ifndef HOTXX_PUBKEY_H
+#define HOTXX_PUBKEY_H
 
 #include "hash.h"
 #include "serialize.h"
@@ -204,11 +204,6 @@ public:
         return std::vector<unsigned char>(vch, vch + size());
     }
 
-    std::string GetHex()
-    {
-        std::string my_std_string(reinterpret_cast<const char*>(vch), 65);
-        return my_std_string;
-    }
 };
 
 struct CExtPubKey {
@@ -268,4 +263,4 @@ public:
     ~ECCVerifyHandle();
 };
 
-#endif // HOTCHAIN_PUBKEY_H
+#endif // HOTXX_PUBKEY_H

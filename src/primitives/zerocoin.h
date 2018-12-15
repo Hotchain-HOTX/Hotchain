@@ -1,10 +1,9 @@
-// Copyright (c) 2017-2018 The PIVX Developers
-// Copyright (c) 2018 Cryptopie 
+// Copyright (c) 2017-2018 The Hotchain developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef HOTCHAIN_ZEROCOIN_H
-#define HOTCHAIN_ZEROCOIN_H
+#ifndef HOTXX_ZEROCOIN_H
+#define HOTXX_ZEROCOIN_H
 
 #include <amount.h>
 #include <limits.h>
@@ -248,4 +247,4 @@ public:
     int GetNeededSpends();
 };
 
-#endif //HOTCHAIN_ZEROCOIN_H
+#endif //HOTXX_ZEROCOIN_H

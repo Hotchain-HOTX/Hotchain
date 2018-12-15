@@ -62,12 +62,12 @@
         <translation>Endereços de recebimento</translation>
     </message>
     <message>
-        <source>These are your HOTCHAIN addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Esses são seus endereços HOTCHAIN para envio de pagamentos. Sempre verifique a quantia e os endereços de recebimento antes de enviar moedas.</translation>
+        <source>These are your Hotchain addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Esses são seus endereços Hotchain para envio de pagamentos. Sempre verifique a quantia e os endereços de recebimento antes de enviar moedas.</translation>
     </message>
     <message>
-        <source>These are your HOTCHAIN addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Esses são seus endereços HOTCHAIN para recebimento de pagamentos. É recomendado usar um novo endereço para cada transação.</translation>
+        <source>These are your Hotchain addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Esses são seus endereços Hotchain para recebimento de pagamentos. É recomendado usar um novo endereço para cada transação.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -176,16 +176,16 @@
         <translation>Confirmar criptografia de carteira</translation>
     </message>
     <message>
-        <source>HOTCHAIN will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your HOTCHAINs from being stolen by malware infecting your computer.</source>
-        <translation>HOTCHAIN vai fechar agora para finalizar o processo de criptografia. Lembre-se que encriptar sua carteira não pode proteger totalmente suas HOTCHAINs de serem roubadas por malwares infectando seu computador.</translation>
+        <source>Hotchain will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your HOTXs from being stolen by malware infecting your computer.</source>
+        <translation>Hotchain vai fechar agora para finalizar o processo de criptografia. Lembre-se que encriptar sua carteira não pode proteger totalmente suas HOTXs de serem roubadas por malwares infectando seu computador.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Você tem certeza que deseja criptografar sua carteira?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR HOTCHAIN&lt;/b&gt;!</source>
-        <translation>Aviso: se você criptografar sua carteira e perder sua senha você &lt;b&gt;PERDERÁ TODAS AS SUAS HOTCHAIN&lt;b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR HOTX&lt;/b&gt;!</source>
+        <translation>Aviso: se você criptografar sua carteira e perder sua senha você &lt;b&gt;PERDERÁ TODAS AS SUAS HOTX&lt;b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -254,7 +254,7 @@
         <translation>Endereço:</translation>
     </message>
     <message>
-        <source>Enter a HOTCHAIN Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
+        <source>Enter a Hotchain Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
         <translation>Insira um endereço que você deseja criptografar usando a BIP 38. Insira a palavra-chave na caixa do meio. Pressione criptografar para computar a chave privada criptografada.</translation>
     </message>
     <message>
@@ -613,12 +613,12 @@
         <translation>Ferramentas de abas</translation>
     </message>
     <message>
-        <source>Hotchain Wallet</source>
-        <translation>Hotchain Wallet</translation>
+        <source>Hotchain Core</source>
+        <translation>Hotchain Core</translation>
     </message>
     <message>
-        <source>Send coins to a HOTCHAIN address</source>
-        <translation>Enviar moedas para um endereço HOTCHAIN</translation>
+        <source>Send coins to a Hotchain address</source>
+        <translation>Enviar moedas para um endereço Hotchain</translation>
     </message>
     <message>
         <source>Request payments (generates QR codes and hotchain: URIs)</source>
@@ -637,24 +637,24 @@
         <translation>Procurar masternodes</translation>
     </message>
     <message>
-        <source>&amp;About Hotchain Wallet</source>
-        <translation>&amp;Sobre o Hotchain Wallet</translation>
+        <source>&amp;About Hotchain Core</source>
+        <translation>&amp;Sobre o Hotchain Core</translation>
     </message>
     <message>
-        <source>Show information about Hotchain Wallet</source>
-        <translation>Mostra informação sobre o Hotchain Wallet</translation>
+        <source>Show information about Hotchain Core</source>
+        <translation>Mostra informação sobre o Hotchain Core</translation>
     </message>
     <message>
-        <source>Modify configuration options for HOTCHAIN</source>
-        <translation>Modificar opções de configuração para HOTCHAIN</translation>
+        <source>Modify configuration options for Hotchain</source>
+        <translation>Modificar opções de configuração para Hotchain</translation>
     </message>
     <message>
-        <source>Sign messages with your HOTCHAIN addresses to prove you own them</source>
-        <translation>Assine mensagens com seus endereços HOTCHAIN para provar que você os detém</translation>
+        <source>Sign messages with your Hotchain addresses to prove you own them</source>
+        <translation>Assine mensagens com seus endereços Hotchain para provar que você os detém</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified HOTCHAIN addresses</source>
-        <translation>Verifique as mensagens para ter certeza que estão assinadas com os endereços HOTCHAIN especificados</translation>
+        <source>Verify messages to ensure they were signed with specified Hotchain addresses</source>
+        <translation>Verifique as mensagens para ter certeza que estão assinadas com os endereços Hotchain especificados</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -685,8 +685,8 @@
         <translation>Abrir arquivo de configuração de Masternode</translation>
     </message>
     <message>
-        <source>Open a HOTCHAIN: URI or payment request</source>
-        <translation>Abrir um HOTCHAIN: URI ou requisição de pagamento</translation>
+        <source>Open a Hotchain: URI or payment request</source>
+        <translation>Abrir um Hotchain: URI ou requisição de pagamento</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -697,12 +697,12 @@
         <translation>Janela de exploração de blocos</translation>
     </message>
     <message>
-        <source>Show the Hotchain Wallet help message to get a list with possible HOTCHAIN command-line options</source>
-        <translation>Mostra a ajuda da Hotchain Wallet para receber uma lista com possíveis opções de linha de comando HOTCHAIN</translation>
+        <source>Show the Hotchain Core help message to get a list with possible Hotchain command-line options</source>
+        <translation>Mostra a ajuda da Hotchain Core para receber uma lista com possíveis opções de linha de comando Hotchain</translation>
     </message>
     <message>
-        <source>Hotchain Wallet client</source>
-        <translation>Cliente Core HOTCHAIN</translation>
+        <source>Hotchain Core client</source>
+        <translation>Cliente Core Hotchain</translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -1118,8 +1118,8 @@ MultiSend: %1</translation>
         <translation>Editar endereço remetente</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid HOTCHAIN address.</source>
-        <translation>O endereço que você selecionou, "%1" , não é um endereço válido de HOTCHAIN</translation>
+        <source>The entered address "%1" is not a valid Hotchain address.</source>
+        <translation>O endereço que você selecionou, "%1" , não é um endereço válido de Hotchain</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -1164,16 +1164,16 @@ MultiSend: %1</translation>
         <translation>versão</translation>
     </message>
     <message>
-        <source>Hotchain Wallet</source>
-        <translation>Hotchain Wallet</translation>
+        <source>Hotchain Core</source>
+        <translation>Hotchain Core</translation>
     </message>
     <message>
         <source>(%1-bit)</source>
         <translation>(%1-bit)</translation>
     </message>
     <message>
-        <source>About Hotchain Wallet</source>
-        <translation>Sobre o Hotchain Wallet</translation>
+        <source>About Hotchain Core</source>
+        <translation>Sobre o Hotchain Core</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -1215,16 +1215,16 @@ MultiSend: %1</translation>
         <translation>Bem-vindo</translation>
     </message>
     <message>
-        <source>Welcome to Hotchain Wallet.</source>
-        <translation>Bem-vindo ao Hotchain Wallet.</translation>
+        <source>Welcome to Hotchain Core.</source>
+        <translation>Bem-vindo ao Hotchain Core.</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where Hotchain Wallet will store its data.</source>
-        <translation>Como essa é a primeira vez que o programa é utilizado, você pode escolher onde Hotchain Wallet vai armazenar os seus dados.</translation>
+        <source>As this is the first time the program is launched, you can choose where Hotchain Core will store its data.</source>
+        <translation>Como essa é a primeira vez que o programa é utilizado, você pode escolher onde Hotchain Core vai armazenar os seus dados.</translation>
     </message>
     <message>
-        <source>Hotchain Wallet will download and store a copy of the HOTCHAIN block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>Hotchain Wallet vai baixar e armazenar uma cópia da blockchain HOTCHAIN. Pelo menos %1GB de informação será armazenado neste diretório e irá aumentar com o tempo. A carteira também será armazenada neste diretório.</translation>
+        <source>Hotchain Core will download and store a copy of the Hotchain block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>Hotchain Core vai baixar e armazenar uma cópia da blockchain Hotchain. Pelo menos %1GB de informação será armazenado neste diretório e irá aumentar com o tempo. A carteira também será armazenada neste diretório.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -1235,8 +1235,8 @@ MultiSend: %1</translation>
         <translation>Usar um diretório personalizado de dados:</translation>
     </message>
     <message>
-        <source>Hotchain Wallet</source>
-        <translation>Hotchain Wallet</translation>
+        <source>Hotchain Core</source>
+        <translation>Hotchain Core</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -1574,48 +1574,48 @@ Favor verificar o endereço e tente novamente.</translation>
         <translation>Favor selecionar o nível de privacidade.</translation>
     </message>
     <message>
-        <source>Use 2 separate masternodes to mix funds up to 10000 HOTCHAIN</source>
-        <translation>Use 2 masternodes separados para embaralhar fundos até 10000 HOTCHAIN</translation>
+        <source>Use 2 separate masternodes to mix funds up to 10000 HOTX</source>
+        <translation>Use 2 masternodes separados para embaralhar fundos até 10000 HOTX</translation>
     </message>
     <message>
-        <source>Use 8 separate masternodes to mix funds up to 10000 HOTCHAIN</source>
-        <translation>Use 8 masternodes separados para embaralhar fundos até 10000 HOTCHAIN</translation>
+        <source>Use 8 separate masternodes to mix funds up to 10000 HOTX</source>
+        <translation>Use 8 masternodes separados para embaralhar fundos até 10000 HOTX</translation>
     </message>
     <message>
         <source>Use 16 separate masternodes</source>
         <translation>Use 16 masternodes separados</translation>
     </message>
     <message>
-        <source>This option is the quickest and will cost about ~0.025 HOTCHAIN to anonymize 10000 HOTCHAIN</source>
-        <translation>Está opção é a mais rápida e vai custar em torno de ~0.025 HOTCHAIN para anonimizar 10000 HOTCHAIN</translation>
+        <source>This option is the quickest and will cost about ~0.025 HOTX to anonymize 10000 HOTX</source>
+        <translation>Está opção é a mais rápida e vai custar em torno de ~0.025 HOTX para anonimizar 10000 HOTX</translation>
     </message>
     <message>
-        <source>This option is moderately fast and will cost about 0.05 HOTCHAIN to anonymize 10000 HOTCHAIN</source>
-        <translation>Está opção moderamente rápida e vai custar em torno de ~0.05 HOTCHAIN para anonimizar 10000 HOTCHAIN</translation>
+        <source>This option is moderately fast and will cost about 0.05 HOTX to anonymize 10000 HOTX</source>
+        <translation>Está opção moderamente rápida e vai custar em torno de ~0.05 HOTX para anonimizar 10000 HOTX</translation>
     </message>
     <message>
         <source>This is the slowest and most secure option. Using maximum anonymity will cost</source>
         <translation>Esta é a opção mais lenta e mais segura. Usando a anonimização máxima vai custar</translation>
     </message>
     <message>
-        <source>0.1 HOTCHAIN per 10000 HOTCHAIN you anonymize.</source>
-        <translation>0.1 HOTCHAIN por 10000 HOTCHAIN que deixar anônima.</translation>
+        <source>0.1 HOTX per 10000 HOTX you anonymize.</source>
+        <translation>0.1 HOTX por 10000 HOTX que deixar anônima.</translation>
     </message>
     <message>
         <source>Obfuscation Configuration</source>
         <translation>Configuração de ofuscação</translation>
     </message>
     <message>
-        <source>Obfuscation was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening HOTCHAIN's configuration screen.</source>
-        <translation>Ofuscação foi definida com sucesso para o básico (%1 e 2 rodadas) Você pode mudar isto a qualquer tempo ao abrir a configuração de tela HOTCHAIN's.</translation>
+        <source>Obfuscation was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening Hotchain's configuration screen.</source>
+        <translation>Ofuscação foi definida com sucesso para o básico (%1 e 2 rodadas) Você pode mudar isto a qualquer tempo ao abrir a configuração de tela Hotchain's.</translation>
     </message>
     <message>
-        <source>Obfuscation was successfully set to high (%1 and 8 rounds). You can change this at any time by opening HOTCHAIN's configuration screen.</source>
-        <translation>Ofuscação foi definida com sucesso para alto (%1 e 8 rodadas). Você pode mudar isto a qualquer tempo ao abrir a configuração de tela HOTCHAIN's.</translation>
+        <source>Obfuscation was successfully set to high (%1 and 8 rounds). You can change this at any time by opening Hotchain's configuration screen.</source>
+        <translation>Ofuscação foi definida com sucesso para alto (%1 e 8 rodadas). Você pode mudar isto a qualquer tempo ao abrir a configuração de tela Hotchain's.</translation>
     </message>
     <message>
-        <source>Obfuscation was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening HOTCHAIN's configuration screen.</source>
-        <translation>Ofuscação foi definida com sucesso para máxima (%1 e 16 rodadas). Você pode mudar isto a qualquer tempo ao abrir a configuração de tela HOTCHAIN's.</translation>
+        <source>Obfuscation was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening Hotchain's configuration screen.</source>
+        <translation>Ofuscação foi definida com sucesso para máxima (%1 e 16 rodadas). Você pode mudar isto a qualquer tempo ao abrir a configuração de tela Hotchain's.</translation>
     </message>
 </context>
 <context>
@@ -1668,8 +1668,8 @@ Favor verificar o endereço e tente novamente.</translation>
         <translation>C&amp;arteira</translation>
     </message>
     <message>
-        <source>Automatically open the HOTCHAIN client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Abrir automaticamente a porta do cliente HOTCHAIN no roteador. Isto somente funciona quando seu roteador suporta UPnP e este esteja habilitado.</translation>
+        <source>Automatically open the Hotchain client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Abrir automaticamente a porta do cliente Hotchain no roteador. Isto somente funciona quando seu roteador suporta UPnP e este esteja habilitado.</translation>
     </message>
     <message>
         <source>Accept connections from outside</source>
@@ -1688,12 +1688,12 @@ Favor verificar o endereço e tente novamente.</translation>
         <translation>Expert</translation>
     </message>
     <message>
-        <source>Automatically start HOTCHAIN after logging in to the system.</source>
-        <translation>Iniciar automaticamente HOTCHAIN depois de logar no sistema.</translation>
+        <source>Automatically start Hotchain after logging in to the system.</source>
+        <translation>Iniciar automaticamente Hotchain depois de logar no sistema.</translation>
     </message>
     <message>
-        <source>&amp;Start HOTCHAIN on system login</source>
-        <translation>&amp;Iniciar HOTCHAIN ao logar no sistema</translation>
+        <source>&amp;Start Hotchain on system login</source>
+        <translation>&amp;Iniciar Hotchain ao logar no sistema</translation>
     </message>
     <message>
         <source>Enable coin &amp;control features</source>
@@ -1708,8 +1708,8 @@ Favor verificar o endereço e tente novamente.</translation>
         <translation>&amp;Rede</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting HOTCHAIN.</source>
-        <translation>A linguagem da interface pode ser definida aqui. Está configuração terá efeito após reinício do HOTCHAIN.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting Hotchain.</source>
+        <translation>A linguagem da interface pode ser definida aqui. Está configuração terá efeito após reinício do Hotchain.</translation>
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
@@ -1718,8 +1718,8 @@ https://www.transifex.com/hotchain-project/hotchain-project-translations</source
 https://www.transifex.com/hotchain-project/hotchain-project-translations</translation>
     </message>
     <message>
-        <source>Connect to the HOTCHAIN network through a SOCKS5 proxy.</source>
-        <translation>Conectar à rede HOTCHAIN através de um proxy SOCKS5</translation>
+        <source>Connect to the Hotchain network through a SOCKS5 proxy.</source>
+        <translation>Conectar à rede Hotchain através de um proxy SOCKS5</translation>
     </message>
     <message>
         <source>Proxy &amp;IP:</source>
@@ -1734,8 +1734,8 @@ https://www.transifex.com/hotchain-project/hotchain-project-translations</transl
         <translation>&amp;Porta:</translation>
     </message>
     <message>
-        <source>Port of the proxy (e.g. 9069)</source>
-        <translation>Porta do proxy (e.g. 9069)</translation>
+        <source>Port of the proxy (e.g. 9050)</source>
+        <translation>Porta do proxy (e.g. 9050)</translation>
     </message>
     <message>
         <source>&amp;Window</source>
@@ -1853,8 +1853,8 @@ https://www.transifex.com/hotchain-project/hotchain-project-translations</transl
         <translation>Imaturo:</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the HOTCHAIN network after a connection is established, but this process has not completed yet.</source>
-        <translation>A informação mostrada pode estar desatualizada. A sua carteira se sincroniza automaticamente com a rede HOTCHAIN após estabelecer uma conexão, mas esse processo ainda não foi concluído.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Hotchain network after a connection is established, but this process has not completed yet.</source>
+        <translation>A informação mostrada pode estar desatualizada. A sua carteira se sincroniza automaticamente com a rede Hotchain após estabelecer uma conexão, mas esse processo ainda não foi concluído.</translation>
     </message>
     <message>
         <source>Unconfirmed transactions to watch-only addresses</source>
@@ -1950,8 +1950,8 @@ https://www.transifex.com/hotchain-project/hotchain-project-translations</transl
         <translation>Ações Zerocoin:</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the HOTCHAIN network after a connection is established, but this process has not completed yet.</source>
-        <translation>A informação mostrada pode estar desatualizada. A sua carteira se sincroniza automaticamente com a rede HOTCHAIN após estabelecer uma conexão, mas esse processo ainda não foi concluído.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Hotchain network after a connection is established, but this process has not completed yet.</source>
+        <translation>A informação mostrada pode estar desatualizada. A sua carteira se sincroniza automaticamente com a rede Hotchain após estabelecer uma conexão, mas esse processo ainda não foi concluído.</translation>
     </message>
     <message>
         <source>0</source>
@@ -1962,8 +1962,8 @@ https://www.transifex.com/hotchain-project/hotchain-project-translations</transl
         <translation>zHOTX</translation>
     </message>
     <message>
-        <source>0.000 000 00 HOTCHAIN</source>
-        <translation>0.000 000 00 HOTCHAIN</translation>
+        <source>0.000 000 00 HOTX</source>
+        <translation>0.000 000 00 HOTX</translation>
     </message>
     <message>
         <source>Reset</source>
@@ -1998,8 +1998,8 @@ https://www.transifex.com/hotchain-project/hotchain-project-translations</transl
         <translation>Pagar &amp;Para:</translation>
     </message>
     <message>
-        <source>The HOTCHAIN address to send the payment to. Creates local payment to yourself when empty.</source>
-        <translation>O endereço HOTCHAIN para enviar o pagamento. Cria um pagamento local para si mesmo quando vazio.</translation>
+        <source>The Hotchain address to send the payment to. Creates local payment to yourself when empty.</source>
+        <translation>O endereço Hotchain para enviar o pagamento. Cria um pagamento local para si mesmo quando vazio.</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2173,8 +2173,8 @@ https://www.transifex.com/hotchain-project/hotchain-project-translations</transl
         <translation>Quantidade</translation>
     </message>
     <message>
-        <source>Enter a HOTCHAIN address (e.g. %1)</source>
-        <translation>Insira um endereço HOTCHAIN (e.g. %1)</translation>
+        <source>Enter a Hotchain address (e.g. %1)</source>
+        <translation>Insira um endereço Hotchain (e.g. %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -2431,8 +2431,8 @@ https://www.transifex.com/hotchain-project/hotchain-project-translations</transl
         <translation>saída:</translation>
     </message>
     <message>
-        <source>Welcome to the HOTCHAIN RPC console.</source>
-        <translation>Bem-vindo ao console da HOTCHAIN RPC</translation>
+        <source>Welcome to the Hotchain RPC console.</source>
+        <translation>Bem-vindo ao console da Hotchain RPC</translation>
     </message>
     <message>
         <source>Do you want to continue?.&lt;br /&gt;</source>
@@ -2687,8 +2687,8 @@ https://www.transifex.com/hotchain-project/hotchain-project-translations</transl
         <translation>Tamanho UTXO:</translation>
     </message>
     <message>
-        <source>0 HOTCHAIN</source>
-        <translation>0 HOTCHAIN</translation>
+        <source>0 HOTX</source>
+        <translation>0 HOTX</translation>
     </message>
     <message>
         <source>Transaction Fee:</source>
@@ -2731,12 +2731,12 @@ https://www.transifex.com/hotchain-project/hotchain-project-translations</transl
         <translation>Tempo de confirmação:</translation>
     </message>
     <message>
-        <source>If the custom fee is set to 1000 uHOTCHAINs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uHOTCHAINs in fee,&lt;br /&gt;while "at least" pays 1000 uHOTCHAINs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>Se a taxa padrão estiver definida para 1000 uHOTCHAINs e a transação for somente de 250 bytes, então "por kilobyte" pagará somente 250 uHOTCHAINs em taxa,&lt;br /&gt; pagará pelo menos 1000 uHOTCHAINs. Para transações maiores que um kilobyte ambas pagam por kilobyte.</translation>
+        <source>If the custom fee is set to 1000 uHOTXs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uHOTXs in fee,&lt;br /&gt;while "at least" pays 1000 uHOTXs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <translation>Se a taxa padrão estiver definida para 1000 uHOTXs e a transação for somente de 250 bytes, então "por kilobyte" pagará somente 250 uHOTXs em taxa,&lt;br /&gt; pagará pelo menos 1000 uHOTXs. Para transações maiores que um kilobyte ambas pagam por kilobyte.</translation>
     </message>
     <message>
-        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for HOTCHAIN transactions than the network can process.</source>
-        <translation>Pagar a taxa mínima é aceitável desde que existe menos volume de transações que espaço nos blocos. &lt;br/&gt; Mas fique atento que isso pode acabar em uma transação que nunca será confirmada caso haja mais demanda por transações de HOTCHAIN do que a rede pode processar.</translation>
+        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for Hotchain transactions than the network can process.</source>
+        <translation>Pagar a taxa mínima é aceitável desde que existe menos volume de transações que espaço nos blocos. &lt;br/&gt; Mas fique atento que isso pode acabar em uma transação que nunca será confirmada caso haja mais demanda por transações de Hotchain do que a rede pode processar.</translation>
     </message>
     <message>
         <source>normal</source>
@@ -2783,8 +2783,8 @@ https://www.transifex.com/hotchain-project/hotchain-project-translations</transl
         <translation>Adicionar &amp;Recipiente</translation>
     </message>
     <message>
-        <source>Anonymized HOTCHAIN</source>
-        <translation>HOTCHAIN anonimizadas</translation>
+        <source>Anonymized HOTX</source>
+        <translation>HOTX anonimizadas</translation>
     </message>
     <message>
         <source>Balance:</source>
@@ -2819,8 +2819,8 @@ https://www.transifex.com/hotchain-project/hotchain-project-translations</transl
         <translation>Copiar troco</translation>
     </message>
     <message>
-        <source>Warning: Invalid HOTCHAIN address</source>
-        <translation>Aviso: endereço HOTCHAIN inválido</translation>
+        <source>Warning: Invalid Hotchain address</source>
+        <translation>Aviso: endereço Hotchain inválido</translation>
     </message>
     <message>
         <source>%1 to %2</source>
@@ -2906,8 +2906,8 @@ https://www.transifex.com/hotchain-project/hotchain-project-translations</transl
         <translation>Pagar &amp;Para:</translation>
     </message>
     <message>
-        <source>The HOTCHAIN address to send the payment to</source>
-        <translation>O endereço HOTCHAIN para enviar o pagamento</translation>
+        <source>The Hotchain address to send the payment to</source>
+        <translation>O endereço Hotchain para enviar o pagamento</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2969,8 +2969,8 @@ https://www.transifex.com/hotchain-project/hotchain-project-translations</transl
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>Hotchain Wallet is shutting down...</source>
-        <translation>Hotchain Wallet está desligando...</translation>
+        <source>Hotchain Core is shutting down...</source>
+        <translation>Hotchain Core está desligando...</translation>
     </message>
     <message>
         <source>Do not shut down the computer until this window disappears.</source>
@@ -2988,8 +2988,8 @@ https://www.transifex.com/hotchain-project/hotchain-project-translations</transl
         <translation>&amp;Assinar mensagem</translation>
     </message>
     <message>
-        <source>The HOTCHAIN address to sign the message with</source>
-        <translation>O endereço HOTCHAIN para assinar a mensagem</translation>
+        <source>The Hotchain address to sign the message with</source>
+        <translation>O endereço Hotchain para assinar a mensagem</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -3020,16 +3020,16 @@ https://www.transifex.com/hotchain-project/hotchain-project-translations</transl
         <translation>Copia a assinatura atual do sistema de transferência</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this HOTCHAIN address</source>
-        <translation>Assine a mensagem para provar que você possui este endereço HOTCHAIN</translation>
+        <source>Sign the message to prove you own this Hotchain address</source>
+        <translation>Assine a mensagem para provar que você possui este endereço Hotchain</translation>
     </message>
     <message>
-        <source>The HOTCHAIN address the message was signed with</source>
-        <translation>O endereço HOTCHAIN que assinou a mensagem</translation>
+        <source>The Hotchain address the message was signed with</source>
+        <translation>O endereço Hotchain que assinou a mensagem</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified HOTCHAIN address</source>
-        <translation>Verifique a mensagem para ter certeza que foi assinada com o endereço HOTCHAIN especificado.</translation>
+        <source>Verify the message to ensure it was signed with the specified Hotchain address</source>
+        <translation>Verifique a mensagem para ter certeza que foi assinada com o endereço Hotchain especificado.</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -3111,8 +3111,8 @@ https://www.transifex.com/hotchain-project/hotchain-project-translations</transl
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Hotchain Wallet</source>
-        <translation>Hotchain Wallet</translation>
+        <source>Hotchain Core</source>
+        <translation>Hotchain Core</translation>
     </message>
     <message>
         <source>Version %1</source>
@@ -3127,8 +3127,8 @@ https://www.transifex.com/hotchain-project/hotchain-project-translations</transl
         <translation>Os desenvolvedores do Dash Core</translation>
     </message>
     <message>
-        <source>The Hotchain Wallet developers</source>
-        <translation>Os desenvolvedores do Hotchain Wallet</translation>
+        <source>The Hotchain Core developers</source>
+        <translation>Os desenvolvedores do Hotchain Core</translation>
     </message>
     <message>
         <source>[testnet]</source>
@@ -3672,12 +3672,12 @@ https://www.transifex.com/hotchain-project/hotchain-project-translations</transl
         <translation>Executar o comando quando uma transação da carteira mudar (%s no cmd será substituído pela TxID)</translation>
     </message>
     <message>
-        <source>Fees (in HOTCHAIN/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
-        <translation>Taxas (em HOTCHAIN/Kb) menores que isso serão consideradas taxa zero para propagação (padrão: %s)</translation>
+        <source>Fees (in HOTX/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
+        <translation>Taxas (em HOTX/Kb) menores que isso serão consideradas taxa zero para propagação (padrão: %s)</translation>
     </message>
     <message>
-        <source>Fees (in HOTCHAIN/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
-        <translation>Taxas (em HOTCHAIN/Kb) menores que isso serão consideradas taxa zero para a criação da transação (padrão: %s)</translation>
+        <source>Fees (in HOTX/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
+        <translation>Taxas (em HOTX/Kb) menores que isso serão consideradas taxa zero para a criação da transação (padrão: %s)</translation>
     </message>
     <message>
         <source>In this mode -genproclimit controls how many blocks are generated immediately.</source>
@@ -3696,8 +3696,8 @@ https://www.transifex.com/hotchain-project/hotchain-project-translations</transl
         <translation>Define o tamanho máximo de transações de alta prioridade/taxa baixa em bytes (padrão: %d)</translation>
     </message>
     <message>
-        <source>Unable to locate enough funds for this transaction that are not equal 10000 HOTCHAIN.</source>
-        <translation>Incapaz de localizar fundos para esta transação que não são iguais a 10000 HOTCHAIN.</translation>
+        <source>Unable to locate enough funds for this transaction that are not equal 10000 HOTX.</source>
+        <translation>Incapaz de localizar fundos para esta transação que não são iguais a 10000 HOTX.</translation>
     </message>
     <message>
         <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: %s)</source>
@@ -3712,8 +3712,8 @@ https://www.transifex.com/hotchain-project/hotchain-project-translations</transl
         <translation>Aviso: -paytxfee está definido como muito alto! Está e a taxa de transação que você irá pagar se enviar uma transação.</translation>
     </message>
     <message>
-        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong Hotchain Wallet will not work properly.</source>
-        <translation>Aviso: Favor verificar se o horário e data de seu computador estão corretos! Se o seu relógio estiver errado o Core HOTCHAIN não vai funcionar corretamente.</translation>
+        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong Hotchain Core will not work properly.</source>
+        <translation>Aviso: Favor verificar se o horário e data de seu computador estão corretos! Se o seu relógio estiver errado o Core Hotchain não vai funcionar corretamente.</translation>
     </message>
     <message>
         <source>Warning: The network does not appear to fully agree! Some miners appear to be experiencing issues.</source>
@@ -3728,8 +3728,8 @@ https://www.transifex.com/hotchain-project/hotchain-project-translations</transl
         <translation>Você deve especificar uma masternodeprivkey na configuração. Favor verificar o manual para obter ajuda.</translation>
     </message>
     <message>
-        <source>(9069 could be used only on mainnet)</source>
-        <translation>(9069 could be used only on mainnet)</translation>
+        <source>(51472 could be used only on mainnet)</source>
+        <translation>(51472 could be used only on mainnet)</translation>
     </message>
     <message>
         <source>(default: %s)</source>
@@ -3740,8 +3740,8 @@ https://www.transifex.com/hotchain-project/hotchain-project-translations</transl
         <translation>(padrão: 1)</translation>
     </message>
     <message>
-        <source>(must be 9069 for mainnet)</source>
-        <translation>(deve ser 9069 para mainnet)</translation>
+        <source>(must be 51472 for mainnet)</source>
+        <translation>(deve ser 51472 para mainnet)</translation>
     </message>
     <message>
         <source>Accept connections from outside (default: 1 if no -proxy or -connect)</source>
@@ -3792,8 +3792,8 @@ https://www.transifex.com/hotchain-project/hotchain-project-translations</transl
         <translation>Todos os direitos reservados (C) 2014-%i aos Desenvolvedores do Dash Core</translation>
     </message>
     <message>
-        <source>Copyright (C) 2015-%i The Hotchain Wallet Developers</source>
-        <translation>Todos os direitos reservados (C) 2015-%i aos Desenvolvedores do Hotchain Wallet</translation>
+        <source>Copyright (C) 2015-%i The Hotchain Core Developers</source>
+        <translation>Todos os direitos reservados (C) 2015-%i aos Desenvolvedores do Hotchain Core</translation>
     </message>
     <message>
         <source>Corrupted block database detected</source>
@@ -3852,8 +3852,8 @@ https://www.transifex.com/hotchain-project/hotchain-project-translations</transl
         <translation>Erro no carregamento da wallet.dat: Carteira corrompida</translation>
     </message>
     <message>
-        <source>Error loading wallet.dat: Wallet requires newer version of Hotchain Wallet</source>
-        <translation>Erro ao carregar wallet.dat: A Carteira requer uma nova versão da Hotchain Wallet</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of Hotchain Core</source>
+        <translation>Erro ao carregar wallet.dat: A Carteira requer uma nova versão da Hotchain Core</translation>
     </message>
     <message>
         <source>Error opening block database</source>
@@ -3896,8 +3896,8 @@ https://www.transifex.com/hotchain-project/hotchain-project-translations</transl
         <translation>Falhou em ler o bloco</translation>
     </message>
     <message>
-        <source>Fee (in HOTCHAIN/kB) to add to transactions you send (default: %s)</source>
-        <translation>Taxa (em HOTCHAIN/kB) a adicionar em transações que você enviar (padrão: %s)</translation>
+        <source>Fee (in HOTX/kB) to add to transactions you send (default: %s)</source>
+        <translation>Taxa (em HOTX/kB) a adicionar em transações que você enviar (padrão: %s)</translation>
     </message>
     <message>
         <source>Finalizing transaction.</source>
@@ -4342,8 +4342,8 @@ https://www.transifex.com/hotchain-project/hotchain-project-translations</transl
         <translation>Carteira está travada.</translation>
     </message>
     <message>
-        <source>Wallet needed to be rewritten: restart Hotchain Wallet to complete</source>
-        <translation>A carteira precisa ser reescrita: reinicia o Hotchain Wallet para completar</translation>
+        <source>Wallet needed to be rewritten: restart Hotchain Core to complete</source>
+        <translation>A carteira precisa ser reescrita: reinicia o Hotchain Core para completar</translation>
     </message>
     <message>
         <source>Wallet options:</source>

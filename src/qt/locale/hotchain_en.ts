@@ -80,12 +80,12 @@
     </message>
     <message>
         <location line="+7"/>
-        <source>These are your HOTCHAIN addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <source>These are your Hotchain addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+4"/>
-        <source>These are your HOTCHAIN addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <source>These are your Hotchain addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -221,7 +221,7 @@
     </message>
     <message>
         <location line="+9"/>
-        <source>HOTCHAIN will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your HOTCHAINs from being stolen by malware infecting your computer.</source>
+        <source>Hotchain will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your HOTXs from being stolen by malware infecting your computer.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -231,7 +231,7 @@
     </message>
     <message>
         <location line="+0"/>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR HOTCHAIN&lt;/b&gt;!</source>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR HOTX&lt;/b&gt;!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -326,12 +326,12 @@
     </message>
     <message>
         <location line="-424"/>
-        <source>Enter a HOTCHAIN Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
+        <source>Enter a Hotchain Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+31"/>
-        <source>The HOTCHAIN address to encrypt</source>
+        <source>The Hotchain address to encrypt</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -375,7 +375,7 @@
     </message>
     <message>
         <location line="+18"/>
-        <source>Encrypt the private key for this HOTCHAIN address</source>
+        <source>Encrypt the private key for this Hotchain address</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -832,12 +832,12 @@
     <message>
         <location line="-446"/>
         <location line="+928"/>
-        <source>Hotchain Wallet</source>
+        <source>Hotchain Core</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="-726"/>
-        <source>Send coins to a HOTCHAIN address</source>
+        <source>Send coins to a Hotchain address</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -862,27 +862,27 @@
     </message>
     <message>
         <location line="+31"/>
-        <source>&amp;About Hotchain Wallet</source>
+        <source>&amp;About Hotchain Core</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Show information about Hotchain Wallet</source>
+        <source>Show information about Hotchain Core</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+10"/>
-        <source>Modify configuration options for HOTCHAIN</source>
+        <source>Modify configuration options for Hotchain</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+16"/>
-        <source>Sign messages with your HOTCHAIN addresses to prove you own them</source>
+        <source>Sign messages with your Hotchain addresses to prove you own them</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Verify messages to ensure they were signed with specified HOTCHAIN addresses</source>
+        <source>Verify messages to ensure they were signed with specified Hotchain addresses</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -922,7 +922,7 @@
     </message>
     <message>
         <location line="+17"/>
-        <source>Open a HOTCHAIN: URI or payment request</source>
+        <source>Open a Hotchain: URI or payment request</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -937,17 +937,17 @@
     </message>
     <message>
         <location line="+4"/>
-        <source>Show the Hotchain Wallet help message to get a list with possible HOTCHAIN command-line options</source>
+        <source>Show the Hotchain Core help message to get a list with possible Hotchain command-line options</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+233"/>
-        <source>Hotchain Wallet client</source>
+        <source>Hotchain Core client</source>
         <translation type="unfinished"></translation>
     </message>
     <message numerus="yes">
         <location line="+212"/>
-        <source>%n active connection(s) to HOTCHAIN network</source>
+        <source>%n active connection(s) to Hotchain network</source>
         <translation type="unfinished">
             <numerusform></numerusform>
             <numerusform></numerusform>
@@ -1453,7 +1453,7 @@ Address: %4
     </message>
     <message>
         <location line="+8"/>
-        <source>Can vary +/- %1 hotx per input.</source>
+        <source>Can vary +/- %1 uhotx per input.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1522,7 +1522,7 @@ Address: %4
     </message>
     <message>
         <location line="+67"/>
-        <source>The entered address &quot;%1&quot; is not a valid HOTCHAIN address.</source>
+        <source>The entered address &quot;%1&quot; is not a valid Hotchain address.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1578,7 +1578,7 @@ Address: %4
     </message>
     <message>
         <location line="+0"/>
-        <source>Hotchain Wallet</source>
+        <source>Hotchain Core</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1589,7 +1589,7 @@ Address: %4
     </message>
     <message>
         <location line="+4"/>
-        <source>About Hotchain Wallet</source>
+        <source>About Hotchain Core</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1647,17 +1647,17 @@ Address: %4
     </message>
     <message>
         <location line="+9"/>
-        <source>Welcome to Hotchain Wallet.</source>
+        <source>Welcome to Hotchain Core.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+26"/>
-        <source>As this is the first time the program is launched, you can choose where Hotchain Wallet will store its data.</source>
+        <source>As this is the first time the program is launched, you can choose where Hotchain Core will store its data.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+10"/>
-        <source>Hotchain Wallet will download and store a copy of the HOTCHAIN block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <source>Hotchain Core will download and store a copy of the Hotchain block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1672,7 +1672,7 @@ Address: %4
     </message>
     <message>
         <location filename="../intro.cpp" line="+77"/>
-        <source>Hotchain Wallet</source>
+        <source>Hotchain Core</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1848,8 +1848,8 @@ Address: %4
     </message>
     <message>
         <location line="-106"/>
-        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other HOTCHAIN addresses after it matures.
-To Add: enter percentage to give and HOTCHAIN address to add to the MultiSend vector.
+        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other Hotchain addresses after it matures.
+To Add: enter percentage to give and Hotchain address to add to the MultiSend vector.
 To Delete: Enter address to delete and press delete.
 MultiSend will not be activated unless you have clicked Activate</source>
         <translation type="unfinished"></translation>
@@ -2125,7 +2125,7 @@ Please be patient after clicking import.</source>
     </message>
     <message>
         <location line="+13"/>
-        <source>Add destinations to send HOTCHAIN to</source>
+        <source>Add destinations to send HOTX to</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2248,12 +2248,12 @@ Please be patient after clicking import.</source>
     </message>
     <message>
         <location line="+13"/>
-        <source>Use 2 separate masternodes to mix funds up to 10000 HOTCHAIN</source>
+        <source>Use 2 separate masternodes to mix funds up to 10000 HOTX</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+13"/>
-        <source>Use 8 separate masternodes to mix funds up to 10000 HOTCHAIN</source>
+        <source>Use 8 separate masternodes to mix funds up to 10000 HOTX</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2263,12 +2263,12 @@ Please be patient after clicking import.</source>
     </message>
     <message>
         <location line="+13"/>
-        <source>This option is the quickest and will cost about ~0.025 HOTCHAIN to anonymize 10000 HOTCHAIN</source>
+        <source>This option is the quickest and will cost about ~0.025 HOTX to anonymize 10000 HOTX</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+13"/>
-        <source>This option is moderately fast and will cost about 0.05 HOTCHAIN to anonymize 10000 HOTCHAIN</source>
+        <source>This option is moderately fast and will cost about 0.05 HOTX to anonymize 10000 HOTX</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2278,7 +2278,7 @@ Please be patient after clicking import.</source>
     </message>
     <message>
         <location line="+13"/>
-        <source>0.1 HOTCHAIN per 10000 HOTCHAIN you anonymize.</source>
+        <source>0.1 HOTX per 10000 HOTX you anonymize.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2290,17 +2290,17 @@ Please be patient after clicking import.</source>
     </message>
     <message>
         <location line="-27"/>
-        <source>Obfuscation was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening HOTCHAIN&apos;s configuration screen.</source>
+        <source>Obfuscation was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening Hotchain&apos;s configuration screen.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+14"/>
-        <source>Obfuscation was successfully set to high (%1 and 8 rounds). You can change this at any time by opening HOTCHAIN&apos;s configuration screen.</source>
+        <source>Obfuscation was successfully set to high (%1 and 8 rounds). You can change this at any time by opening Hotchain&apos;s configuration screen.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+14"/>
-        <source>Obfuscation was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening HOTCHAIN&apos;s configuration screen.</source>
+        <source>Obfuscation was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening Hotchain&apos;s configuration screen.</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -2376,7 +2376,7 @@ Please be patient after clicking import.</source>
     </message>
     <message>
         <location line="+33"/>
-        <source>Automatically open the HOTCHAIN client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <source>Automatically open the Hotchain client port on the router. This only works when your router supports UPnP and it is enabled.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2401,12 +2401,12 @@ Please be patient after clicking import.</source>
     </message>
     <message>
         <location line="-210"/>
-        <source>Automatically start HOTCHAIN after logging in to the system.</source>
+        <source>Automatically start Hotchain after logging in to the system.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>&amp;Start HOTCHAIN on system login</source>
+        <source>&amp;Start Hotchain on system login</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2441,7 +2441,7 @@ Please be patient after clicking import.</source>
     </message>
     <message>
         <location line="+192"/>
-        <source>The user interface language can be set here. This setting will take effect after restarting HOTCHAIN.</source>
+        <source>The user interface language can be set here. This setting will take effect after restarting Hotchain.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2457,7 +2457,7 @@ https://www.transifex.com/hotchain-project/hotchain-project-translations</source
     </message>
     <message>
         <location line="-169"/>
-        <source>Enable automatic minting of HOTCHAIN units to zHOTX</source>
+        <source>Enable automatic minting of HOTX units to zHOTX</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2467,7 +2467,7 @@ https://www.transifex.com/hotchain-project/hotchain-project-translations</source
     </message>
     <message>
         <location line="+9"/>
-        <source>Percentage of incoming HOTCHAIN which get automatically converted to zHOTX via Zerocoin Protocol (min: 10%)</source>
+        <source>Percentage of incoming HOTX which get automatically converted to zHOTX via Zerocoin Protocol (min: 10%)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2478,7 +2478,7 @@ https://www.transifex.com/hotchain-project/hotchain-project-translations</source
     <message>
         <location line="+30"/>
         <location line="+16"/>
-        <source>Wait with automatic conversion to Zerocoin until enough HOTCHAIN for this denomination is available</source>
+        <source>Wait with automatic conversion to Zerocoin until enough HOTX for this denomination is available</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2493,7 +2493,7 @@ https://www.transifex.com/hotchain-project/hotchain-project-translations</source
     </message>
     <message>
         <location line="+98"/>
-        <source>Connect to the HOTCHAIN network through a SOCKS5 proxy.</source>
+        <source>Connect to the Hotchain network through a SOCKS5 proxy.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2513,8 +2513,8 @@ https://www.transifex.com/hotchain-project/hotchain-project-translations</source
     </message>
     <message>
         <location line="+25"/>
-        <source>Port of the proxy (e.g. 9069)</source>
-        <translation>Port of the proxy (e.g. 9069)</translation>
+        <source>Port of the proxy (e.g. 9050)</source>
+        <translation>Port of the proxy (e.g. 9050)</translation>
     </message>
     <message>
         <location line="+36"/>
@@ -2692,7 +2692,7 @@ https://www.transifex.com/hotchain-project/hotchain-project-translations</source
     </message>
     <message>
         <location line="+71"/>
-        <source>HOTCHAIN Balance</source>
+        <source>HOTX Balance</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2724,7 +2724,7 @@ https://www.transifex.com/hotchain-project/hotchain-project-translations</source
     <message>
         <location line="+16"/>
         <location line="+19"/>
-        <source>Your current HOTCHAIN balance, unconfirmed and immature transactions included</source>
+        <source>Your current Hotchain balance, unconfirmed and immature transactions included</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2751,7 +2751,7 @@ Immature: confirmed, but less than 1 mint of the same denomination after it was 
     <message>
         <location line="-725"/>
         <location line="+852"/>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the HOTCHAIN network after a connection is established, but this process has not completed yet.</source>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Hotchain network after a connection is established, but this process has not completed yet.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2809,7 +2809,7 @@ Immature: confirmed, but less than 1 mint of the same denomination after it was 
     <message>
         <location line="+191"/>
         <location line="+19"/>
-        <source>Locked HOTCHAIN or Masternode collaterals. These are excluded from zHOTX minting.</source>
+        <source>Locked HOTX or Masternode collaterals. These are excluded from zHOTX minting.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2904,7 +2904,7 @@ To enable AutoMint change &apos;enablezeromint=0&apos; to &apos;enablezeromint=1
     </message>
     <message>
         <location line="+114"/>
-        <source>URI cannot be parsed! This can be caused by an invalid HOTCHAIN address or malformed URI parameters.</source>
+        <source>URI cannot be parsed! This can be caused by an invalid Hotchain address or malformed URI parameters.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3012,7 +3012,7 @@ To enable AutoMint change &apos;enablezeromint=0&apos; to &apos;enablezeromint=1
     </message>
     <message>
         <location line="+10"/>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the HOTCHAIN network after a connection is established, but this process has not completed yet.</source>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Hotchain network after a connection is established, but this process has not completed yet.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3047,7 +3047,7 @@ To enable AutoMint change &apos;enablezeromint=0&apos; to &apos;enablezeromint=1
     </message>
     <message>
         <location line="+19"/>
-        <source>0.000 000 00 HOTCHAIN</source>
+        <source>0.000 000 00 HOTX</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3188,7 +3188,7 @@ zHOTX are mature when they have more than 20 confirmations AND more than 2 mints
     </message>
     <message>
         <location line="+27"/>
-        <source>The HOTCHAIN address to send the payment to. Creates local payment to yourself when empty.</source>
+        <source>The Hotchain address to send the payment to. Creates local payment to yourself when empty.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3801,7 +3801,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     <message numerus="yes">
         <location line="+336"/>
         <source>PrivacyDialog</source>
-        <comment>Enter an amount of HOTCHAIN to convert to zHOTX</comment>
+        <comment>Enter an amount of HOTX to convert to zHOTX</comment>
         <translation type="unfinished">
             <numerusform></numerusform>
             <numerusform></numerusform>
@@ -3857,7 +3857,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location filename="../guiutil.cpp" line="+113"/>
-        <source>Enter a HOTCHAIN address (e.g. %1)</source>
+        <source>Enter a Hotchain address (e.g. %1)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4060,7 +4060,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+79"/>
-        <source>Open the HOTCHAIN debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <source>Open the Hotchain debug log file from the current data directory. This can take a few seconds for large log files.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4332,7 +4332,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="-36"/>
-        <source>Welcome to the HOTCHAIN RPC console.</source>
+        <source>Welcome to the Hotchain RPC console.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4496,7 +4496,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="-37"/>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the HOTCHAIN network.</source>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Hotchain network.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4506,7 +4506,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+124"/>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the HOTCHAIN network.</source>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the Hotchain network.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4794,7 +4794,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+7"/>
-        <source>0 HOTCHAIN</source>
+        <source>0 HOTX</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4864,18 +4864,18 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+907"/>
-        <source>If the custom fee is set to 1000 uHOTCHAINs and the transaction is only 250 bytes, then &quot;per kilobyte&quot; only pays 250 uHOTCHAINs in fee,&lt;br /&gt;while &quot;at least&quot; pays 1000 uHOTCHAINs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <source>If the custom fee is set to 1000 uHOTXs and the transaction is only 250 bytes, then &quot;per kilobyte&quot; only pays 250 uHOTXs in fee,&lt;br /&gt;while &quot;at least&quot; pays 1000 uHOTXs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+16"/>
-        <source>If the custom fee is set to 1000 uHOTCHAINs and the transaction is only 250 bytes, then &quot;per kilobyte&quot; only pays 250 uHOTCHAINs in fee,&lt;br /&gt;while &quot;total at least&quot; pays 1000 uHOTCHAINs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <source>If the custom fee is set to 1000 uHOTXs and the transaction is only 250 bytes, then &quot;per kilobyte&quot; only pays 250 uHOTXs in fee,&lt;br /&gt;while &quot;total at least&quot; pays 1000 uHOTXs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+33"/>
         <location line="+13"/>
-        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for HOTCHAIN transactions than the network can process.</source>
+        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for Hotchain transactions than the network can process.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4935,7 +4935,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+35"/>
-        <source>Anonymized HOTCHAIN</source>
+        <source>Anonymized HOTX</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4995,7 +4995,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+629"/>
-        <source>Warning: Invalid HOTCHAIN address</source>
+        <source>Warning: Invalid Hotchain address</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5129,7 +5129,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+18"/>
-        <source>The HOTCHAIN address to send the payment to</source>
+        <source>The Hotchain address to send the payment to</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5183,7 +5183,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+10"/>
-        <source>A message that was attached to the HOTCHAIN: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the HOTCHAIN network.</source>
+        <source>A message that was attached to the Hotchain: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Hotchain network.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5218,7 +5218,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     <name>ShutdownWindow</name>
     <message>
         <location filename="../utilitydialog.cpp" line="+75"/>
-        <source>Hotchain Wallet is shutting down...</source>
+        <source>Hotchain Core is shutting down...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5246,7 +5246,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+15"/>
-        <source>The HOTCHAIN address to sign the message with</source>
+        <source>The Hotchain address to sign the message with</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5288,17 +5288,17 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+18"/>
-        <source>Sign the message to prove you own this HOTCHAIN address</source>
+        <source>Sign the message to prove you own this Hotchain address</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+103"/>
-        <source>The HOTCHAIN address the message was signed with</source>
+        <source>The Hotchain address the message was signed with</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+34"/>
-        <source>Verify the message to ensure it was signed with the specified HOTCHAIN address</source>
+        <source>Verify the message to ensure it was signed with the specified Hotchain address</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5413,7 +5413,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     <name>SplashScreen</name>
     <message>
         <location filename="../splashscreen.cpp" line="+36"/>
-        <source>Hotchain Wallet</source>
+        <source>Hotchain Core</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5433,7 +5433,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+1"/>
-        <source>The Hotchain Wallet developers</source>
+        <source>The Hotchain Core developers</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5810,7 +5810,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+7"/>
-        <source>HOTCHAIN Stake</source>
+        <source>HOTX Stake</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5840,7 +5840,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+4"/>
-        <source>Converted HOTCHAIN to zHOTX</source>
+        <source>Converted HOTX to zHOTX</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5850,7 +5850,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+2"/>
-        <source>Received HOTCHAIN from zHOTX</source>
+        <source>Received HOTX from zHOTX</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5860,7 +5860,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+2"/>
-        <source>Converted zHOTX to HOTCHAIN</source>
+        <source>Converted zHOTX to HOTX</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -6134,7 +6134,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="-280"/>
-        <source>Received HOTCHAIN from zHOTX</source>
+        <source>Received HOTX from zHOTX</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -6186,7 +6186,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     <message>
         <location line="-18"/>
         <location line="+9"/>
-        <source>SwiftX doesn&apos;t support sending values that high yet. Transactions are currently limited to %1 HOTCHAIN.</source>
+        <source>SwiftX doesn&apos;t support sending values that high yet. Transactions are currently limited to %1 HOTX.</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -6291,7 +6291,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+2"/>
-        <source>Cannot obtain a lock on data directory %s. Hotchain Wallet is probably already running.</source>
+        <source>Cannot obtain a lock on data directory %s. Hotchain Core is probably already running.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -6331,7 +6331,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+3"/>
-        <source>Enable or disable staking functionality for HOTCHAIN inputs (0-1, default: %u)</source>
+        <source>Enable or disable staking functionality for HOTX inputs (0-1, default: %u)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -6381,12 +6381,12 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+8"/>
-        <source>Fees (in HOTCHAIN/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
+        <source>Fees (in HOTX/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Fees (in HOTCHAIN/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
+        <source>Fees (in HOTX/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -6511,7 +6511,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+4"/>
-        <source>Unable to bind to %s on this computer. Hotchain Wallet is probably already running.</source>
+        <source>Unable to bind to %s on this computer. Hotchain Core is probably already running.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -6521,12 +6521,12 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+2"/>
-        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 HOTCHAIN.</source>
+        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 HOTX.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Unable to locate enough funds for this transaction that are not equal 10000 HOTCHAIN.</source>
+        <source>Unable to locate enough funds for this transaction that are not equal 10000 HOTX.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -6546,7 +6546,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+3"/>
-        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Hotchain Wallet will not work properly.</source>
+        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Hotchain Core will not work properly.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -6586,8 +6586,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+3"/>
-        <source>(9069 could be used only on mainnet)</source>
-        <translation type="unfinished">(9069 could be used only on mainnet)</translation>
+        <source>(51472 could be used only on mainnet)</source>
+        <translation type="unfinished">(51472 could be used only on mainnet)</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -6601,7 +6601,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+1"/>
-        <source>(must be 9069 for mainnet)</source>
+        <source>(must be 51472 for mainnet)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -6736,7 +6736,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+1"/>
-        <source>Copyright (C) 2015-%i The Hotchain Wallet Developers</source>
+        <source>Copyright (C) 2015-%i The Hotchain Core Developers</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -6846,7 +6846,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+1"/>
-        <source>Error loading wallet.dat: Wallet requires newer version of Hotchain Wallet</source>
+        <source>Error loading wallet.dat: Wallet requires newer version of Hotchain Core</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -6926,7 +6926,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+4"/>
-        <source>Fee (in HOTCHAIN/kB) to add to transactions you send (default: %s)</source>
+        <source>Fee (in HOTX/kB) to add to transactions you send (default: %s)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -7001,7 +7001,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+1"/>
-        <source>Initialization sanity check failed. Hotchain Wallet is shutting down.</source>
+        <source>Initialization sanity check failed. Hotchain Core is shutting down.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -7091,7 +7091,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+9"/>
-        <source>Reindex the HOTCHAIN and zHOTX money supply statistics</source>
+        <source>Reindex the HOTX and zHOTX money supply statistics</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -7138,7 +7138,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+38"/>
-        <source>Disable all HOTCHAIN specific functionality (Masternodes, Zerocoin, SwiftX, Budgeting) (0-1, default: %u)</source>
+        <source>Disable all Hotchain specific functionality (Masternodes, Zerocoin, SwiftX, Budgeting) (0-1, default: %u)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -8028,7 +8028,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+1"/>
-        <source>Wallet needed to be rewritten: restart Hotchain Wallet to complete</source>
+        <source>Wallet needed to be rewritten: restart Hotchain Core to complete</source>
         <translation type="unfinished"></translation>
     </message>
     <message>

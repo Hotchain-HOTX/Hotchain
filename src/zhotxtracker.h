@@ -1,9 +1,9 @@
-// Copyright (c) 2018 The PIVX Developers 
+// Copyright (c) 2018 The Hotchain developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef HOTCHAIN_ZHOTXTRACKER_H
-#define HOTCHAIN_ZHOTXTRACKER_H
+#ifndef HOTXX_ZHOTXTRACKER_H
+#define HOTXX_ZHOTXTRACKER_H
 
 #include "primitives/zerocoin.h"
 #include <list>
@@ -48,4 +48,4 @@ public:
     void Clear();
 };
 
-#endif //HOTCHAIN_ZHOTXTRACKER_H
+#endif //HOTXX_ZHOTXTRACKER_H

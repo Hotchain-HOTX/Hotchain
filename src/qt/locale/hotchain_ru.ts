@@ -62,12 +62,12 @@
         <translation>Адреса получения</translation>
     </message>
     <message>
-        <source>These are your HOTCHAIN addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Это ваши HOTCHAIN-адреса для отправки платежей. Перед отправкой монет всегда проверяйте сумму и адрес получателя.</translation>
+        <source>These are your Hotchain addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Это ваши Hotchain-адреса для отправки платежей. Перед отправкой монет всегда проверяйте сумму и адрес получателя.</translation>
     </message>
     <message>
-        <source>These are your HOTCHAIN addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Это ваши HOTCHAIN-адреса для получения платежей. Для каждой транзакции рекомендуется использовать новый адрес получения.</translation>
+        <source>These are your Hotchain addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Это ваши Hotchain-адреса для получения платежей. Для каждой транзакции рекомендуется использовать новый адрес получения.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -176,16 +176,16 @@
         <translation>Подтверждение шифрования кошелька</translation>
     </message>
     <message>
-        <source>HOTCHAIN will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your HOTCHAINs from being stolen by malware infecting your computer.</source>
-        <translation>HOTCHAIN сейчас закроется, чтобы завершить процесс шифрования. Помните, что шифрование вашего кошелька не может полностью защитить ваши HOTCHAIN от кражи с использованием вредоносного ПО.</translation>
+        <source>Hotchain will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your HOTXs from being stolen by malware infecting your computer.</source>
+        <translation>Hotchain сейчас закроется, чтобы завершить процесс шифрования. Помните, что шифрование вашего кошелька не может полностью защитить ваши Hotchain от кражи с использованием вредоносного ПО.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Вы действительно хотите зашифровать свой кошелек?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR HOTCHAIN&lt;/b&gt;!</source>
-        <translation>Внимание: если вы зашифруете свой кошелёк и потеряете от него пароль, то вы &lt;b&gt;ПОТЕРЯЕТЕ ВСЕ СВОИ HOTCHAIN&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR HOTX&lt;/b&gt;!</source>
+        <translation>Внимание: если вы зашифруете свой кошелёк и потеряете от него пароль, то вы &lt;b&gt;ПОТЕРЯЕТЕ ВСЕ СВОИ HOTX&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -254,12 +254,12 @@
         <translation>Адрес:</translation>
     </message>
     <message>
-        <source>Enter a HOTCHAIN Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
-        <translation>Введите HOTCHAIN адрес, которым вы хотите зашифровать, используя BIP 38. Введите пароль в среднем поле. Нажмите "Зашифровать", чтобы создать зашиврованный секретный ключ.</translation>
+        <source>Enter a Hotchain Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
+        <translation>Введите Hotchain адрес, которым вы хотите зашифровать, используя BIP 38. Введите пароль в среднем поле. Нажмите "Зашифровать", чтобы создать зашиврованный секретный ключ.</translation>
     </message>
     <message>
-        <source>The HOTCHAIN address to encrypt</source>
-        <translation>Адрес HOTCHAIN для зашифровки</translation>
+        <source>The Hotchain address to encrypt</source>
+        <translation>Адрес Hotchain для зашифровки</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -290,8 +290,8 @@
         <translation>Копировать текущую подпись в системный буфер обмена</translation>
     </message>
     <message>
-        <source>Encrypt the private key for this HOTCHAIN address</source>
-        <translation>Зашифровать личные ключи для этого HOTCHAIN адреса </translation>
+        <source>Encrypt the private key for this Hotchain address</source>
+        <translation>Зашифровать личные ключи для этого Hotchain адреса </translation>
     </message>
     <message>
         <source>Reset all fields</source>
@@ -645,16 +645,16 @@
         <translation>Панель вкладок</translation>
     </message>
     <message>
-        <source>Hotchain Wallet</source>
-        <translation>Hotchain Wallet</translation>
+        <source>Hotchain Core</source>
+        <translation>Hotchain Core</translation>
     </message>
     <message>
-        <source>Send coins to a HOTCHAIN address</source>
-        <translation>Отправить монеты на HOTCHAIN адрес</translation>
+        <source>Send coins to a Hotchain address</source>
+        <translation>Отправить монеты на Hotchain адрес</translation>
     </message>
     <message>
         <source>Request payments (generates QR codes and hotchain: URIs)</source>
-        <translation>Запросить платежи (генерирует QR-код и HOTCHAIN: URI)</translation>
+        <translation>Запросить платежи (генерирует QR-код и Hotchain: URI)</translation>
     </message>
     <message>
         <source>&amp;Privacy</source>
@@ -669,24 +669,24 @@
         <translation>Обзор мастернод</translation>
     </message>
     <message>
-        <source>&amp;About Hotchain Wallet</source>
-        <translation>&amp;О Hotchain Wallet</translation>
+        <source>&amp;About Hotchain Core</source>
+        <translation>&amp;О Hotchain Core</translation>
     </message>
     <message>
-        <source>Show information about Hotchain Wallet</source>
-        <translation>Показать информацию о Hotchain Wallet</translation>
+        <source>Show information about Hotchain Core</source>
+        <translation>Показать информацию о Hotchain Core</translation>
     </message>
     <message>
-        <source>Modify configuration options for HOTCHAIN</source>
-        <translation>Изменение параметров конфигурации HOTCHAIN</translation>
+        <source>Modify configuration options for Hotchain</source>
+        <translation>Изменение параметров конфигурации Hotchain</translation>
     </message>
     <message>
-        <source>Sign messages with your HOTCHAIN addresses to prove you own them</source>
-        <translation>Подписывайте сообщения вашими HOTCHAIN адресами, чтобы доказать, что вы их владелец</translation>
+        <source>Sign messages with your Hotchain addresses to prove you own them</source>
+        <translation>Подписывайте сообщения вашими Hotchain адресами, чтобы доказать, что вы их владелец</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified HOTCHAIN addresses</source>
-        <translation>Проверте сообщения, чтобы убедиться, что они были подписаны указанным HOTCHAIN адресом </translation>
+        <source>Verify messages to ensure they were signed with specified Hotchain addresses</source>
+        <translation>Проверте сообщения, чтобы убедиться, что они были подписаны указанным Hotchain адресом </translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -717,8 +717,8 @@
         <translation>Открыть файл настроек мастернод</translation>
     </message>
     <message>
-        <source>Open a HOTCHAIN: URI or payment request</source>
-        <translation>Открыть HOTCHAIN: URI или запрос платежа</translation>
+        <source>Open a Hotchain: URI or payment request</source>
+        <translation>Открыть Hotchain: URI или запрос платежа</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -729,16 +729,16 @@
         <translation>Окно обзора блока</translation>
     </message>
     <message>
-        <source>Show the Hotchain Wallet help message to get a list with possible HOTCHAIN command-line options</source>
-        <translation>Смотрите помощь к программе, чтобы получить документацию ко всем возможным опциям комманды HOTCHAIN</translation>
+        <source>Show the Hotchain Core help message to get a list with possible Hotchain command-line options</source>
+        <translation>Смотрите помощь к программе, чтобы получить документацию ко всем возможным опциям комманды Hotchain</translation>
     </message>
     <message>
-        <source>Hotchain Wallet client</source>
-        <translation>Клиент Hotchain Wallet</translation>
+        <source>Hotchain Core client</source>
+        <translation>Клиент Hotchain Core</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to HOTCHAIN network</source>
-        <translation><numerusform>%n активных подключений к сети HOTCHAIN</numerusform><numerusform>%n активных подключений к сети HOTCHAIN</numerusform><numerusform>%n активных подключений к сети HOTCHAIN</numerusform><numerusform>%n активных подключений к сети HOTCHAIN</numerusform></translation>
+        <source>%n active connection(s) to Hotchain network</source>
+        <translation><numerusform>%n активных подключений к сети Hotchain</numerusform><numerusform>%n активных подключений к сети Hotchain</numerusform><numerusform>%n активных подключений к сети Hotchain</numerusform><numerusform>%n активных подключений к сети Hotchain</numerusform></translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -1130,8 +1130,8 @@ MultiSend: %1</translation>
         <translation>Этот маркер становится красным если получаемая адресатом сумма меньше, чем %1</translation>
     </message>
     <message>
-        <source>Can vary +/- %1 hotx per input.</source>
-        <translation>Может вариироваться +/- %1 hotx при вводе</translation>
+        <source>Can vary +/- %1 uhotx per input.</source>
+        <translation>Может вариироваться +/- %1 uhotx при вводе</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -1185,8 +1185,8 @@ MultiSend: %1</translation>
         <translation>Изменить адрес отправки</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid HOTCHAIN address.</source>
-        <translation>Введенный адрес "%1" не является HOTCHAIN адресом.</translation>
+        <source>The entered address "%1" is not a valid Hotchain address.</source>
+        <translation>Введенный адрес "%1" не является Hotchain адресом.</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -1231,16 +1231,16 @@ MultiSend: %1</translation>
         <translation>версия</translation>
     </message>
     <message>
-        <source>Hotchain Wallet</source>
-        <translation>Hotchain Wallet</translation>
+        <source>Hotchain Core</source>
+        <translation>Hotchain Core</translation>
     </message>
     <message>
         <source>(%1-bit)</source>
         <translation>(%1-бит)</translation>
     </message>
     <message>
-        <source>About Hotchain Wallet</source>
-        <translation>О Hotchain Wallet</translation>
+        <source>About Hotchain Core</source>
+        <translation>О Hotchain Core</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -1286,16 +1286,16 @@ MultiSend: %1</translation>
         <translation>Добро пожаловать</translation>
     </message>
     <message>
-        <source>Welcome to Hotchain Wallet.</source>
-        <translation>Добро пожаловать в Hotchain Wallet.</translation>
+        <source>Welcome to Hotchain Core.</source>
+        <translation>Добро пожаловать в Hotchain Core.</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where Hotchain Wallet will store its data.</source>
-        <translation>Поскольку это первый запуск программы, вы можете выбрать, где будут храниться данные Hotchain Wallet.</translation>
+        <source>As this is the first time the program is launched, you can choose where Hotchain Core will store its data.</source>
+        <translation>Поскольку это первый запуск программы, вы можете выбрать, где будут храниться данные Hotchain Core.</translation>
     </message>
     <message>
-        <source>Hotchain Wallet will download and store a copy of the HOTCHAIN block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>Hotchain Wallet загрузит и сохранит копию цепочки блоков HOTCHAIN. Каталог будет занимать около %1GB и со временем размер будет увеличиваться. Кроме того, в этом каталоге будет храниться кошелек.</translation>
+        <source>Hotchain Core will download and store a copy of the Hotchain block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>Hotchain Core загрузит и сохранит копию цепочки блоков Hotchain. Каталог будет занимать около %1GB и со временем размер будет увеличиваться. Кроме того, в этом каталоге будет храниться кошелек.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -1306,8 +1306,8 @@ MultiSend: %1</translation>
         <translation>Использовать другой каталог данных:</translation>
     </message>
     <message>
-        <source>Hotchain Wallet</source>
-        <translation>Hotchain Wallet</translation>
+        <source>Hotchain Core</source>
+        <translation>Hotchain Core</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -1448,12 +1448,12 @@ MultiSend: %1</translation>
         <translation>Введите адрес для отправки</translation>
     </message>
     <message>
-        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other HOTCHAIN addresses after it matures.
-To Add: enter percentage to give and HOTCHAIN address to add to the MultiSend vector.
+        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other Hotchain addresses after it matures.
+To Add: enter percentage to give and Hotchain address to add to the MultiSend vector.
 To Delete: Enter address to delete and press delete.
 MultiSend will not be activated unless you have clicked Activate</source>
-        <translation>MultiSend позволяет вам автоматически отправлять до 100% вознаграждения за мастерноды и хранение, после их созревания, на другие HOTCHAIN адреса.
-Для добавления: введите передаваемый процент и HOTCHAIN адрес для добавления к вектору MultiSend.
+        <translation>MultiSend позволяет вам автоматически отправлять до 100% вознаграждения за мастерноды и хранение, после их созревания, на другие Hotchain адреса.
+Для добавления: введите передаваемый процент и Hotchain адрес для добавления к вектору MultiSend.
 Для удаления: введите удаляемый адрес и нажмите удалить.
 MultiSend будет неактивен до тех пор, пока вы не нажмете Включить</translation>
     </message>
@@ -1681,8 +1681,8 @@ Please be patient after clicking import.</source>
         <translation>Адрес/ Сумма:</translation>
     </message>
     <message>
-        <source>Add destinations to send HOTCHAIN to</source>
-        <translation>Добавить назначение куда отправить HOTCHAIN</translation>
+        <source>Add destinations to send HOTX to</source>
+        <translation>Добавить назначение куда отправить HOTX</translation>
     </message>
     <message>
         <source>Add &amp;Destination</source>
@@ -1780,48 +1780,48 @@ Please be patient after clicking import.</source>
         <translation>Выберите уровень конфиденциальности.</translation>
     </message>
     <message>
-        <source>Use 2 separate masternodes to mix funds up to 10000 HOTCHAIN</source>
-        <translation>Используйте 2 разные мастерноды для смешивания средств до 10000 HOTCHAIN</translation>
+        <source>Use 2 separate masternodes to mix funds up to 10000 HOTX</source>
+        <translation>Используйте 2 разные мастерноды для смешивания средств до 10000 HOTX</translation>
     </message>
     <message>
-        <source>Use 8 separate masternodes to mix funds up to 10000 HOTCHAIN</source>
-        <translation>Используйте 8 разных мастернод для смешивания средств до 10000 HOTCHAIN</translation>
+        <source>Use 8 separate masternodes to mix funds up to 10000 HOTX</source>
+        <translation>Используйте 8 разных мастернод для смешивания средств до 10000 HOTX</translation>
     </message>
     <message>
         <source>Use 16 separate masternodes</source>
         <translation>Используйте 16 разных мастернод</translation>
     </message>
     <message>
-        <source>This option is the quickest and will cost about ~0.025 HOTCHAIN to anonymize 10000 HOTCHAIN</source>
-        <translation>Этот вариант является самым быстрым и будет стоить порядка ~0.025 HOTCHAIN для анонимизации 10000 HOTCHAIN</translation>
+        <source>This option is the quickest and will cost about ~0.025 HOTX to anonymize 10000 HOTX</source>
+        <translation>Этот вариант является самым быстрым и будет стоить порядка ~0.025 HOTX для анонимизации 10000 HOTX</translation>
     </message>
     <message>
-        <source>This option is moderately fast and will cost about 0.05 HOTCHAIN to anonymize 10000 HOTCHAIN</source>
-        <translation>Это средний по скорости вариант и он будет стоить около 0.05 HOTCHAIN для анонимизации 10000 HOTCHAIN</translation>
+        <source>This option is moderately fast and will cost about 0.05 HOTX to anonymize 10000 HOTX</source>
+        <translation>Это средний по скорости вариант и он будет стоить около 0.05 HOTX для анонимизации 10000 HOTX</translation>
     </message>
     <message>
         <source>This is the slowest and most secure option. Using maximum anonymity will cost</source>
         <translation>Это самый медленный и безопасный вариант. Максимальная анонимность стоит</translation>
     </message>
     <message>
-        <source>0.1 HOTCHAIN per 10000 HOTCHAIN you anonymize.</source>
-        <translation>0.1 HOTCHAIN за 10000 HOTCHAIN которые вы собираетесь анонимизировать.</translation>
+        <source>0.1 HOTX per 10000 HOTX you anonymize.</source>
+        <translation>0.1 HOTX за 10000 HOTX которые вы собираетесь анонимизировать.</translation>
     </message>
     <message>
         <source>Obfuscation Configuration</source>
         <translation>Настройка Перемешивания</translation>
     </message>
     <message>
-        <source>Obfuscation was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening HOTCHAIN's configuration screen.</source>
-        <translation>Перемешивание было успешно выставлено на стандартные значения (%1 и 2 цикла). Вы в любой момент можете это изменить, открыв окно настройки HOTCHAIN.</translation>
+        <source>Obfuscation was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening Hotchain's configuration screen.</source>
+        <translation>Перемешивание было успешно выставлено на стандартные значения (%1 и 2 цикла). Вы в любой момент можете это изменить, открыв окно настройки Hotchain.</translation>
     </message>
     <message>
-        <source>Obfuscation was successfully set to high (%1 and 8 rounds). You can change this at any time by opening HOTCHAIN's configuration screen.</source>
-        <translation>Перемешивание было успешно выбрано как высокое (%1 и 8 циклов). Вы в любой момент можете это изменить, открыв окно настройки HOTCHAIN.</translation>
+        <source>Obfuscation was successfully set to high (%1 and 8 rounds). You can change this at any time by opening Hotchain's configuration screen.</source>
+        <translation>Перемешивание было успешно выбрано как высокое (%1 и 8 циклов). Вы в любой момент можете это изменить, открыв окно настройки Hotchain.</translation>
     </message>
     <message>
-        <source>Obfuscation was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening HOTCHAIN's configuration screen.</source>
-        <translation>Перемешивание было успешно выставлено на максимальное (%1 и 16 циклов). Вы в любой момент можете это изменить, открыв окно настройки HOTCHAIN.</translation>
+        <source>Obfuscation was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening Hotchain's configuration screen.</source>
+        <translation>Перемешивание было успешно выставлено на максимальное (%1 и 16 циклов). Вы в любой момент можете это изменить, открыв окно настройки Hotchain.</translation>
     </message>
 </context>
 <context>
@@ -1882,8 +1882,8 @@ Please be patient after clicking import.</source>
         <translation>Отключив проведение неподтвержденных изменений все изменения о транзакции &lt;br/&gt;не будут использованы пока транзакция не получит хотя бы одно подтверждение.&lt;br/&gt;Также это влияет на расчет вашего баланса.</translation>
     </message>
     <message>
-        <source>Automatically open the HOTCHAIN client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Автоматически открыть клиентский порт HOTCHAIN через роутер. Ваш роутер должен поддерживать UPnP, а сам сервис должен быть включен.</translation>
+        <source>Automatically open the Hotchain client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Автоматически открыть клиентский порт Hotchain через роутер. Ваш роутер должен поддерживать UPnP, а сам сервис должен быть включен.</translation>
     </message>
     <message>
         <source>Accept connections from outside</source>
@@ -1902,12 +1902,12 @@ Please be patient after clicking import.</source>
         <translation>Эксперт</translation>
     </message>
     <message>
-        <source>Automatically start HOTCHAIN after logging in to the system.</source>
-        <translation>Автоматически запускать HOTCHAIN после входа в систему.</translation>
+        <source>Automatically start Hotchain after logging in to the system.</source>
+        <translation>Автоматически запускать Hotchain после входа в систему.</translation>
     </message>
     <message>
-        <source>&amp;Start HOTCHAIN on system login</source>
-        <translation>&amp;Запускать HOTCHAIN при входе в систему</translation>
+        <source>&amp;Start Hotchain on system login</source>
+        <translation>&amp;Запускать Hotchain при входе в систему</translation>
     </message>
     <message>
         <source>Whether to show coin control features or not.</source>
@@ -1934,8 +1934,8 @@ Please be patient after clicking import.</source>
         <translation>&amp;Сеть</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting HOTCHAIN.</source>
-        <translation>Здесь можно выставить язык интерфейса. Изменения вступят в силу после перезапуска HOTCHAIN.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting Hotchain.</source>
+        <translation>Здесь можно выставить язык интерфейса. Изменения вступят в силу после перезапуска Hotchain.</translation>
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
@@ -1948,24 +1948,24 @@ https://www.transifex.com/hotchain-project/hotchain-project-translations</transl
         <translation>Карта порта, использующего &amp;UPnP</translation>
     </message>
     <message>
-        <source>Enable automatic minting of HOTCHAIN units to zHOTX</source>
-        <translation>Невозможно автоматически отчеканить единицы HOTCHAIN для zHOTX</translation>
+        <source>Enable automatic minting of HOTX units to zHOTX</source>
+        <translation>Невозможно автоматически отчеканить единицы HOTX для zHOTX</translation>
     </message>
     <message>
         <source>Enable zHOTX Automint</source>
         <translation>Невозможно авточеканка  zHOTX</translation>
     </message>
     <message>
-        <source>Percentage of incoming HOTCHAIN which get automatically converted to zHOTX via Zerocoin Protocol (min: 10%)</source>
-        <translation>Процент приходящих HOTCHAIN, которые автоматически конвертируются в zHOTX благодаря Zerocoin протоколу (min: 10%)</translation>
+        <source>Percentage of incoming HOTX which get automatically converted to zHOTX via Zerocoin Protocol (min: 10%)</source>
+        <translation>Процент приходящих HOTX, которые автоматически конвертируются в zHOTX благодаря Zerocoin протоколу (min: 10%)</translation>
     </message>
     <message>
         <source>Percentage of autominted zHOTX</source>
         <translation>Процент  авточеканненых zHOTX</translation>
     </message>
     <message>
-        <source>Wait with automatic conversion to Zerocoin until enough HOTCHAIN for this denomination is available</source>
-        <translation>Подождите с автоматическим преобразованием в Zerocoin, пока не будет достаточно HOTCHAIN для этой номинации.</translation>
+        <source>Wait with automatic conversion to Zerocoin until enough HOTX for this denomination is available</source>
+        <translation>Подождите с автоматическим преобразованием в Zerocoin, пока не будет достаточно HOTX для этой номинации.</translation>
     </message>
     <message>
         <source>Preferred Automint zHOTX Denomination</source>
@@ -1976,8 +1976,8 @@ https://www.transifex.com/hotchain-project/hotchain-project-translations</transl
         <translation>Порог разделения доли:</translation>
     </message>
     <message>
-        <source>Connect to the HOTCHAIN network through a SOCKS5 proxy.</source>
-        <translation>Подключиться к сети HOTCHAIN через SOCKS5 прокси.</translation>
+        <source>Connect to the Hotchain network through a SOCKS5 proxy.</source>
+        <translation>Подключиться к сети Hotchain через SOCKS5 прокси.</translation>
     </message>
     <message>
         <source>Proxy &amp;IP:</source>
@@ -1992,8 +1992,8 @@ https://www.transifex.com/hotchain-project/hotchain-project-translations</transl
         <translation>&amp;Порт</translation>
     </message>
     <message>
-        <source>Port of the proxy (e.g. 9069)</source>
-        <translation>Порт прокси сервера (например: 9069)</translation>
+        <source>Port of the proxy (e.g. 9050)</source>
+        <translation>Порт прокси сервера (например: 9050)</translation>
     </message>
     <message>
         <source>&amp;Window</source>
@@ -2131,8 +2131,8 @@ https://www.transifex.com/hotchain-project/hotchain-project-translations</transl
         <translation>Общий баланс включая все не доступные монеты</translation>
     </message>
     <message>
-        <source>HOTCHAIN Balance</source>
-        <translation>Баланс HOTCHAIN</translation>
+        <source>HOTX Balance</source>
+        <translation>Баланс HOTX</translation>
     </message>
     <message>
         <source>Pending:</source>
@@ -2155,8 +2155,8 @@ https://www.transifex.com/hotchain-project/hotchain-project-translations</transl
         <translation>Текущий заблокированый баланс всех наблюдаемых адресов</translation>
     </message>
     <message>
-        <source>Your current HOTCHAIN balance, unconfirmed and immature transactions included</source>
-        <translation>Ваш текущий HOTCHAIN  баланс, включая неподтвержденные и незрелые транзакции</translation>
+        <source>Your current Hotchain balance, unconfirmed and immature transactions included</source>
+        <translation>Ваш текущий HOTXX  баланс, включая неподтвержденные и незрелые транзакции</translation>
     </message>
     <message>
         <source>zHOTX Balance</source>
@@ -2174,8 +2174,8 @@ Immature: confirmed, but less than 1 mint of the same denomination after it was 
 Незрелый: подтвержден, но менее 1 чеканок того же наименования после того, как он был отчеканен</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the HOTCHAIN network after a connection is established, but this process has not completed yet.</source>
-        <translation>Возможно отображаемая информация устарела. Ваш кошелек автоматически синхронизируется с сетью HOTCHAIN после установки соединения, но этот процесс еще не завершен. </translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Hotchain network after a connection is established, but this process has not completed yet.</source>
+        <translation>Возможно отображаемая информация устарела. Ваш кошелек автоматически синхронизируется с сетью Hotchain после установки соединения, но этот процесс еще не завершен. </translation>
     </message>
     <message>
         <source>OVERVIEW</source>
@@ -2218,8 +2218,8 @@ Immature: confirmed, but less than 1 mint of the same denomination after it was 
         <translation>Расходуемый:</translation>
     </message>
     <message>
-        <source>Locked HOTCHAIN or Masternode collaterals. These are excluded from zHOTX minting.</source>
-        <translation>Заблокированно дополнительное обеспечение HOTCHAIN или Masternode. Они исключены из чеканки zHOTX.</translation>
+        <source>Locked HOTX or Masternode collaterals. These are excluded from zHOTX minting.</source>
+        <translation>Заблокированно дополнительное обеспечение HOTX или Masternode. Они исключены из чеканки zHOTX.</translation>
     </message>
     <message>
         <source>Locked:</source>
@@ -2291,8 +2291,8 @@ To enable AutoMint change 'enablezeromint=0' to 'enablezeromint=1' in hotchain.c
         <translation>Не удалось запустить hotchain: обработчик click-to-pay </translation>
     </message>
     <message>
-        <source>URI cannot be parsed! This can be caused by an invalid HOTCHAIN address or malformed URI parameters.</source>
-        <translation>URI не интерпретируется! Причиной этому может быть неверный HOTCHAIN адрес или неверные параметеры URI.</translation>
+        <source>URI cannot be parsed! This can be caused by an invalid Hotchain address or malformed URI parameters.</source>
+        <translation>URI не интерпретируется! Причиной этому может быть неверный Hotchain адрес или неверные параметеры URI.</translation>
     </message>
     <message>
         <source>Payment request file cannot be read! This can be caused by an invalid payment request file.</source>
@@ -2377,8 +2377,8 @@ To enable AutoMint change 'enablezeromint=0' to 'enablezeromint=1' in hotchain.c
         <translation>Действия Zerocoin </translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the HOTCHAIN network after a connection is established, but this process has not completed yet.</source>
-        <translation>Возможно отображаемая информация устарела. Ваш кошелек автоматически синхронизируется с сетью HOTCHAIN после установки соединения, но этот процесс еще не завершен. </translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Hotchain network after a connection is established, but this process has not completed yet.</source>
+        <translation>Возможно отображаемая информация устарела. Ваш кошелек автоматически синхронизируется с сетью Hotchain после установки соединения, но этот процесс еще не завершен. </translation>
     </message>
     <message>
         <source>Mint Zerocoin</source>
@@ -2401,8 +2401,8 @@ To enable AutoMint change 'enablezeromint=0' to 'enablezeromint=1' in hotchain.c
         <translation>Доступный для чеканки</translation>
     </message>
     <message>
-        <source>0.000 000 00 HOTCHAIN</source>
-        <translation>0.000 000 00 HOTCHAIN</translation>
+        <source>0.000 000 00 HOTX</source>
+        <translation>0.000 000 00 HOTX</translation>
     </message>
     <message>
         <source>Reset Zerocoin Wallet DB. Deletes transactions that did not make it into the blockchain.</source>
@@ -2501,8 +2501,8 @@ zHOTX are mature when they have more than 20 confirmations AND more than 2 mints
         <translation>Оплатить &amp;кому:</translation>
     </message>
     <message>
-        <source>The HOTCHAIN address to send the payment to. Creates local payment to yourself when empty.</source>
-        <translation>Адрес HOTCHAIN для отправки платежа. Создает локальный платеж себе, когда он пуст.</translation>
+        <source>The Hotchain address to send the payment to. Creates local payment to yourself when empty.</source>
+        <translation>Адрес Hotchain для отправки платежа. Создает локальный платеж себе, когда он пуст.</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2928,7 +2928,7 @@ Maximum allowed: </source>
     </message>
     <message>
         <source>Invalid Hotchain Address</source>
-        <translation>неправильный HOTCHAIN адрес</translation>
+        <translation>неправильный Hotchain адрес</translation>
     </message>
     <message>
         <source>Invalid Send Amount</source>
@@ -2986,7 +2986,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message numerus="yes">
         <source>PrivacyDialog</source>
-        <comment>Enter an amount of HOTCHAIN to convert to zHOTX</comment>
+        <comment>Enter an amount of HOTX to convert to zHOTX</comment>
         <translation><numerusform>PrivacyDialog</numerusform><numerusform>PrivacyDialog</numerusform><numerusform>PrivacyDialog</numerusform><numerusform>PrivacyDialog</numerusform></translation>
     </message>
     <message>
@@ -3029,8 +3029,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Сумма</translation>
     </message>
     <message>
-        <source>Enter a HOTCHAIN address (e.g. %1)</source>
-        <translation>Введите адрес HOTCHAIN (например %1)</translation>
+        <source>Enter a Hotchain address (e.g. %1)</source>
+        <translation>Введите адрес Hotchain (например %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -3167,8 +3167,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Блокчейн</translation>
     </message>
     <message>
-        <source>Open the HOTCHAIN debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Открыть протокол отладки HOTCHAIN. Это может занять некоторе время, если файл протокола очень большой.</translation>
+        <source>Open the Hotchain debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Открыть протокол отладки Hotchain. Это может занять некоторе время, если файл протокола очень большой.</translation>
     </message>
     <message>
         <source>Number of Masternodes</source>
@@ -3384,8 +3384,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Вывод:</translation>
     </message>
     <message>
-        <source>Welcome to the HOTCHAIN RPC console.</source>
-        <translation>Добро пожаловать в окружение HOTCHAIN RPC.</translation>
+        <source>Welcome to the Hotchain RPC console.</source>
+        <translation>Добро пожаловать в окружение Hotchain RPC.</translation>
     </message>
     <message>
         <source>&amp;Disconnect Node</source>
@@ -3511,16 +3511,16 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Дополнительный ярлык для связи с новым адресом приема.</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the HOTCHAIN network.</source>
-        <translation>Необязательное сообщение для присоединения к платежному запросу, которое будет отображаться при открытии запроса. Примечание. Сообщение не будет отправлено с оплатой через сеть HOTCHAIN.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Hotchain network.</source>
+        <translation>Необязательное сообщение для присоединения к платежному запросу, которое будет отображаться при открытии запроса. Примечание. Сообщение не будет отправлено с оплатой через сеть Hotchain.</translation>
     </message>
     <message>
         <source>RECEIVE</source>
         <translation>ПОЛУЧАТЬ</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the HOTCHAIN network.</source>
-        <translation>Необязательное сообщение для присоединения к платежному запросу, которое будет отображаться при открытии запроса. &lt;br&gt;Примечание. Сообщение не будет отправлено с оплатой через сеть HOTCHAIN.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the Hotchain network.</source>
+        <translation>Необязательное сообщение для присоединения к платежному запросу, которое будет отображаться при открытии запроса. &lt;br&gt;Примечание. Сообщение не будет отправлено с оплатой через сеть Hotchain.</translation>
     </message>
     <message>
         <source>Use this form to request payments. All fields are &lt;b&gt;optional&lt;/b&gt;.</source>
@@ -3748,8 +3748,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>UTXO Размер:</translation>
     </message>
     <message>
-        <source>0 HOTCHAIN</source>
-        <translation>0 HOTCHAIN</translation>
+        <source>0 HOTX</source>
+        <translation>0 HOTX</translation>
     </message>
     <message>
         <source>Transaction Fee:</source>
@@ -3804,16 +3804,16 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Монеты автоматически выбираются</translation>
     </message>
     <message>
-        <source>If the custom fee is set to 1000 uHOTCHAINs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uHOTCHAINs in fee,&lt;br /&gt;while "at least" pays 1000 uHOTCHAINs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>Если пользовательская плата установлена в 1000 uHOTCHAINs, а транзакция составляет всего 250 байт, тогда «за килобайт» платит только 250 uHOTCHAINs,&lt;br /&gt;а «по крайней мере» платит 1000 uHOTCHAIN. Для транзакций, превышающих килобайт, оплата за килобайт</translation>
+        <source>If the custom fee is set to 1000 uHOTXs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uHOTXs in fee,&lt;br /&gt;while "at least" pays 1000 uHOTXs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <translation>Если пользовательская плата установлена в 1000 uHOTXs, а транзакция составляет всего 250 байт, тогда «за килобайт» платит только 250 uHOTXs,&lt;br /&gt;а «по крайней мере» платит 1000 uHOTX. Для транзакций, превышающих килобайт, оплата за килобайт</translation>
     </message>
     <message>
-        <source>If the custom fee is set to 1000 uHOTCHAINs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uHOTCHAINs in fee,&lt;br /&gt;while "total at least" pays 1000 uHOTCHAINs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>Если пользовательская плата установлена в 1000 uHOTCHAINs, а транзакция составляет всего 250 байт, тогда «за килобайт» платит только 250 uHOTCHAINs,&lt;br /&gt;а «по крайней мере» платит 1000 uHOTCHAIN. Для транзакций, превышающих килобайт, оплата за килобайт</translation>
+        <source>If the custom fee is set to 1000 uHOTXs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uHOTXs in fee,&lt;br /&gt;while "total at least" pays 1000 uHOTXs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <translation>Если пользовательская плата установлена в 1000 uHOTXs, а транзакция составляет всего 250 байт, тогда «за килобайт» платит только 250 uHOTXs,&lt;br /&gt;а «по крайней мере» платит 1000 uHOTX. Для транзакций, превышающих килобайт, оплата за килобайт</translation>
     </message>
     <message>
-        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for HOTCHAIN transactions than the network can process.</source>
-        <translation>Платить только минимальную плату просто отлично, если в блоке меньше объема транзакции, чем места в блоке.&lt;br /&gt; Но имейте в виду, что это может закончиться никогда не подтверждающей транзакцией, если будет больше спроса на транзакции HOTCHAIN, чем сеть может обрабатывать.</translation>
+        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for Hotchain transactions than the network can process.</source>
+        <translation>Платить только минимальную плату просто отлично, если в блоке меньше объема транзакции, чем места в блоке.&lt;br /&gt; Но имейте в виду, что это может закончиться никогда не подтверждающей транзакцией, если будет больше спроса на транзакции Hotchain, чем сеть может обрабатывать.</translation>
     </message>
     <message>
         <source>normal</source>
@@ -3860,8 +3860,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Добавить &amp;Получателя</translation>
     </message>
     <message>
-        <source>Anonymized HOTCHAIN</source>
-        <translation>Анонимный HOTCHAIN</translation>
+        <source>Anonymized HOTX</source>
+        <translation>Анонимный HOTX</translation>
     </message>
     <message>
         <source>Balance:</source>
@@ -3908,8 +3908,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Инструмент разделения блоков не работает с несколькими адресами. Попробуй еще раз.</translation>
     </message>
     <message>
-        <source>Warning: Invalid HOTCHAIN address</source>
-        <translation>Предупреждение: неправильный HOTCHAIN адрес</translation>
+        <source>Warning: Invalid Hotchain address</source>
+        <translation>Предупреждение: неправильный Hotchain адрес</translation>
     </message>
     <message>
         <source>%1 to %2</source>
@@ -4011,8 +4011,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Оплатить &amp;кому:</translation>
     </message>
     <message>
-        <source>The HOTCHAIN address to send the payment to</source>
-        <translation>Адрес HOTCHAIN для отправки платежа</translation>
+        <source>The Hotchain address to send the payment to</source>
+        <translation>Адрес Hotchain для отправки платежа</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -4051,8 +4051,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Сообщение:</translation>
     </message>
     <message>
-        <source>A message that was attached to the HOTCHAIN: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the HOTCHAIN network.</source>
-        <translation>Сообщение, которое было прикреплено к URI HOTCHAIN: URI, который будет сохранен с транзакцией для вашей справки. Примечание. Это сообщение не будет отправлено через сеть HOTCHAIN.</translation>
+        <source>A message that was attached to the Hotchain: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Hotchain network.</source>
+        <translation>Сообщение, которое было прикреплено к URI Hotchain: URI, который будет сохранен с транзакцией для вашей справки. Примечание. Это сообщение не будет отправлено через сеть Hotchain.</translation>
     </message>
     <message>
         <source>This is an unverified payment request.</source>
@@ -4078,8 +4078,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>Hotchain Wallet is shutting down...</source>
-        <translation>Hotchain Wallet выключается...</translation>
+        <source>Hotchain Core is shutting down...</source>
+        <translation>Hotchain Core выключается...</translation>
     </message>
     <message>
         <source>Do not shut down the computer until this window disappears.</source>
@@ -4101,8 +4101,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Вы можете подписывать сообщения с вашими адресами, чтобы доказать, что вы ими владеете. Будьте осторожны, чтобы не подписывать ничего неопределенного, поскольку фишинг-атаки могут попытаться обмануть вас, подписав вашу личность на них. Подпишите только полные подробные заявления, с которыми вы согласны.</translation>
     </message>
     <message>
-        <source>The HOTCHAIN address to sign the message with</source>
-        <translation>Адрес HOTCHAIN для подписи сообщения с помощью</translation>
+        <source>The Hotchain address to sign the message with</source>
+        <translation>Адрес Hotchain для подписи сообщения с помощью</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -4133,16 +4133,16 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Копировать текущую подпись в системный буфер обмена</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this HOTCHAIN address</source>
-        <translation>Подпишите сообщение, чтобы подтвердить свой адрес HOTCHAIN</translation>
+        <source>Sign the message to prove you own this Hotchain address</source>
+        <translation>Подпишите сообщение, чтобы подтвердить свой адрес Hotchain</translation>
     </message>
     <message>
-        <source>The HOTCHAIN address the message was signed with</source>
-        <translation>Адрес HOTCHAIN, которым подписано сообщение</translation>
+        <source>The Hotchain address the message was signed with</source>
+        <translation>Адрес Hotchain, которым подписано сообщение</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified HOTCHAIN address</source>
-        <translation>Проверте сообщение, чтобы убедиться, что оно было подписано указанным HOTCHAIN адресом </translation>
+        <source>Verify the message to ensure it was signed with the specified Hotchain address</source>
+        <translation>Проверте сообщение, чтобы убедиться, что оно было подписано указанным Hotchain адресом </translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -4228,8 +4228,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Hotchain Wallet</source>
-        <translation>Hotchain Wallet</translation>
+        <source>Hotchain Core</source>
+        <translation>Hotchain Core</translation>
     </message>
     <message>
         <source>Version %1</source>
@@ -4244,8 +4244,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Разработчики Dash Core</translation>
     </message>
     <message>
-        <source>The Hotchain Wallet developers</source>
-        <translation>Разработчики Hotchain Wallet</translation>
+        <source>The Hotchain Core developers</source>
+        <translation>Разработчики Hotchain Core</translation>
     </message>
     <message>
         <source>[testnet]</source>
@@ -4524,8 +4524,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Получено через обфускацию</translation>
     </message>
     <message>
-        <source>HOTCHAIN Stake</source>
-        <translation>Доля HOTCHAIN</translation>
+        <source>HOTX Stake</source>
+        <translation>Доля HOTX</translation>
     </message>
     <message>
         <source>zHOTX Stake</source>
@@ -4548,24 +4548,24 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Обфускация Создание конфессий</translation>
     </message>
     <message>
-        <source>Converted HOTCHAIN to zHOTX</source>
-        <translation>Преобразованный HOTCHAIN в zHOTX</translation>
+        <source>Converted HOTX to zHOTX</source>
+        <translation>Преобразованный HOTX в zHOTX</translation>
     </message>
     <message>
         <source>Spent zHOTX</source>
         <translation>потраченный zHOTX</translation>
     </message>
     <message>
-        <source>Received HOTCHAIN from zHOTX</source>
-        <translation>Полученный HOTCHAIN от zHOTX</translation>
+        <source>Received HOTX from zHOTX</source>
+        <translation>Полученный HOTX от zHOTX</translation>
     </message>
     <message>
         <source>Minted Change as zHOTX from zHOTX Spend</source>
         <translation>созданная  замена  zHOTX из потраенного zHOTX </translation>
     </message>
     <message>
-        <source>Converted zHOTX to HOTCHAIN</source>
-        <translation>Преобразованный zHOTX to HOTCHAIN</translation>
+        <source>Converted zHOTX to HOTX</source>
+        <translation>Преобразованный zHOTX to HOTX</translation>
     </message>
     <message>
         <source>Anonymous (zHOTX Transaction)</source>
@@ -4783,8 +4783,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Экспортирование произошло успешно</translation>
     </message>
     <message>
-        <source>Received HOTCHAIN from zHOTX</source>
-        <translation>Полученный HOTCHAIN от zHOTX</translation>
+        <source>Received HOTX from zHOTX</source>
+        <translation>Полученный HOTX от zHOTX</translation>
     </message>
     <message>
         <source>Zerocoin Spend, Change in zHOTX</source>
@@ -4824,8 +4824,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Отправить Монеты</translation>
     </message>
     <message>
-        <source>SwiftX doesn't support sending values that high yet. Transactions are currently limited to %1 HOTCHAIN.</source>
-        <translation>SwiftX не поддерживает отправку значений, которые еще высоки. В настоящее время транзакции ограничены %1 HOTCHAIN.</translation>
+        <source>SwiftX doesn't support sending values that high yet. Transactions are currently limited to %1 HOTX.</source>
+        <translation>SwiftX не поддерживает отправку значений, которые еще высоки. В настоящее время транзакции ограничены %1 HOTX.</translation>
     </message>
 </context>
 <context>
@@ -4909,8 +4909,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Расчетная контрольная точка  не является тем, что регистрируется блочным индексом</translation>
     </message>
     <message>
-        <source>Cannot obtain a lock on data directory %s. Hotchain Wallet is probably already running.</source>
-        <translation>Не удается получить блокировку в каталоге данных %s. Hotchain Wallet, вероятно, уже запущен.</translation>
+        <source>Cannot obtain a lock on data directory %s. Hotchain Core is probably already running.</source>
+        <translation>Не удается получить блокировку в каталоге данных %s. Hotchain Core, вероятно, уже запущен.</translation>
     </message>
     <message>
         <source>Change automatic finalized budget voting behavior. mode=auto: Vote for only exact finalized budget match to my generated budget. (string, default: auto)</source>
@@ -4941,8 +4941,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Включить автоматическое резервное копирование кошелька, запускаемое после каждого чеканки zHOTX (0-1, по умолчанию: %u)</translation>
     </message>
     <message>
-        <source>Enable or disable staking functionality for HOTCHAIN inputs (0-1, default: %u)</source>
-        <translation>Включение или отключение функций разбивки для входов HOTCHAIN (0-1, по умолчанию: %u)</translation>
+        <source>Enable or disable staking functionality for HOTX inputs (0-1, default: %u)</source>
+        <translation>Включение или отключение функций разбивки для входов HOTX (0-1, по умолчанию: %u)</translation>
     </message>
     <message>
         <source>Enable or disable staking functionality for zHOTX inputs (0-1, default: %u)</source>
@@ -4981,12 +4981,12 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Выполнить команду, когда лучший блок изменяется (%s в cmd заменяется блочным хэшем)</translation>
     </message>
     <message>
-        <source>Fees (in HOTCHAIN/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
-        <translation>Тарифы (в HOTCHAIN / Kb), меньшие, чем это, считаются нулевой комиссией за ретрансляцию (по умолчанию: %s)</translation>
+        <source>Fees (in HOTX/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
+        <translation>Тарифы (в HOTX / Kb), меньшие, чем это, считаются нулевой комиссией за ретрансляцию (по умолчанию: %s)</translation>
     </message>
     <message>
-        <source>Fees (in HOTCHAIN/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
-        <translation>Плата (в HOTCHAIN / Kb) меньше этого считается нулевой комиссией за создание транзакции (по умолчанию: %s)</translation>
+        <source>Fees (in HOTX/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
+        <translation>Плата (в HOTX / Kb) меньше этого считается нулевой комиссией за создание транзакции (по умолчанию: %s)</translation>
     </message>
     <message>
         <source>Flush database activity from memory pool to disk log every &lt;n&gt; megabytes (default: %u)</source>
@@ -5085,20 +5085,20 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Этот продукт включает программное обеспечение, разработанное OpenSSL Project для использования в OpenSSL Toolkit &lt;https://www.openssl.org/&gt; и криптографическом программном обеспечении, написанном Эриком Яном и программным обеспечением UPnP, написанным Томасом Бернардом.</translation>
     </message>
     <message>
-        <source>Unable to bind to %s on this computer. Hotchain Wallet is probably already running.</source>
-        <translation>Не удалось привязать к %s на этом компьютере. Hotchain Wallet, вероятно, уже запущен.</translation>
+        <source>Unable to bind to %s on this computer. Hotchain Core is probably already running.</source>
+        <translation>Не удалось привязать к %s на этом компьютере. Hotchain Core, вероятно, уже запущен.</translation>
     </message>
     <message>
         <source>Unable to locate enough Obfuscation denominated funds for this transaction.</source>
         <translation>Не удалось найти достаточное количество средств, предназначенных для обфускации, для этой транзакции.</translation>
     </message>
     <message>
-        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 HOTCHAIN.</source>
-        <translation>Невозможно найти достаточное количество средств, не предназначенных для обфускации, для этой транзакции, которые не равны 10000 HOTCHAIN.</translation>
+        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 HOTX.</source>
+        <translation>Невозможно найти достаточное количество средств, не предназначенных для обфускации, для этой транзакции, которые не равны 10000 HOTX.</translation>
     </message>
     <message>
-        <source>Unable to locate enough funds for this transaction that are not equal 10000 HOTCHAIN.</source>
-        <translation>Не удалось найти достаточное количество средств для этой транзакции, которые не равны 10000 HOTCHAIN.</translation>
+        <source>Unable to locate enough funds for this transaction that are not equal 10000 HOTX.</source>
+        <translation>Не удалось найти достаточное количество средств для этой транзакции, которые не равны 10000 HOTX.</translation>
     </message>
     <message>
         <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: %s)</source>
@@ -5113,8 +5113,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Предупреждение: -paytxfee установлен очень высоко! Это комиссия за транзакцию, которую вы заплатите, если вы отправляете транзакцию.</translation>
     </message>
     <message>
-        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong Hotchain Wallet will not work properly.</source>
-        <translation>Внимание: проверьте правильность даты и времени вашего компьютера! Если ваши часы ошибочны, Hotchain Wallet не будет работать должным образом.</translation>
+        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong Hotchain Core will not work properly.</source>
+        <translation>Внимание: проверьте правильность даты и времени вашего компьютера! Если ваши часы ошибочны, Hotchain Core не будет работать должным образом.</translation>
     </message>
     <message>
         <source>Warning: The network does not appear to fully agree! Some miners appear to be experiencing issues.</source>
@@ -5145,8 +5145,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Вы должны указать в  строке приложенный ключ. Пожалуйста, обратитесь к документации для получения справки</translation>
     </message>
     <message>
-        <source>(9069 could be used only on mainnet)</source>
-        <translation>(9069 можно использовать только в сети)</translation>
+        <source>(51472 could be used only on mainnet)</source>
+        <translation>(51472 можно использовать только в сети)</translation>
     </message>
     <message>
         <source>(default: %s)</source>
@@ -5157,8 +5157,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>(неуплата: 1)</translation>
     </message>
     <message>
-        <source>(must be 9069 for mainnet)</source>
-        <translation>(должен быть 9069 для mainet)</translation>
+        <source>(must be 51472 for mainnet)</source>
+        <translation>(должен быть 51472 для mainet)</translation>
     </message>
     <message>
         <source>Accept command line and JSON-RPC commands</source>
@@ -5265,8 +5265,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Copyright (C) 2014-%i Разработчики Dash Core</translation>
     </message>
     <message>
-        <source>Copyright (C) 2015-%i The Hotchain Wallet Developers</source>
-        <translation>Copyright (C) 2015-%i Разработчики Hotchain Wallet</translation>
+        <source>Copyright (C) 2015-%i The Hotchain Core Developers</source>
+        <translation>Copyright (C) 2015-%i Разработчики Hotchain Core</translation>
     </message>
     <message>
         <source>Corrupted block database detected</source>
@@ -5353,8 +5353,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Ошибка при загрузке wallet.dat: Кошелек поврежден</translation>
     </message>
     <message>
-        <source>Error loading wallet.dat: Wallet requires newer version of Hotchain Wallet</source>
-        <translation>Ошибка загрузки wallet.dat: Кошелек требует более новой версии Hotchain Wallet</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of Hotchain Core</source>
+        <translation>Ошибка загрузки wallet.dat: Кошелек требует более новой версии Hotchain Core</translation>
     </message>
     <message>
         <source>Error opening block database</source>
@@ -5409,8 +5409,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Не удалось прочитать блок</translation>
     </message>
     <message>
-        <source>Fee (in HOTCHAIN/kB) to add to transactions you send (default: %s)</source>
-        <translation>Плата (в HOTCHAIN / kB) для добавления к транзакциям, которые вы отправляете (по умолчанию: %s)</translation>
+        <source>Fee (in HOTX/kB) to add to transactions you send (default: %s)</source>
+        <translation>Плата (в HOTX / kB) для добавления к транзакциям, которые вы отправляете (по умолчанию: %s)</translation>
     </message>
     <message>
         <source>Finalizing transaction.</source>
@@ -5469,8 +5469,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Информация</translation>
     </message>
     <message>
-        <source>Initialization sanity check failed. Hotchain Wallet is shutting down.</source>
-        <translation>Инициализация проверки работоспособности не удалась. Hotchain Wallet отключается.</translation>
+        <source>Initialization sanity check failed. Hotchain Core is shutting down.</source>
+        <translation>Инициализация проверки работоспособности не удалась. Hotchain Core отключается.</translation>
     </message>
     <message>
         <source>Input is not valid.</source>
@@ -5541,8 +5541,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Процент автоматически отчеканенного Zerocoin (1-100, по умолчанию: %u)</translation>
     </message>
     <message>
-        <source>Reindex the HOTCHAIN and zHOTX money supply statistics</source>
-        <translation>Reindex статистика денежной массы HOTCHAIN и zHOTX</translation>
+        <source>Reindex the HOTX and zHOTX money supply statistics</source>
+        <translation>Reindex статистика денежной массы HOTX и zHOTX</translation>
     </message>
     <message>
         <source>Reindexing zerocoin database...</source>
@@ -5581,8 +5581,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
 </translation>
     </message>
     <message>
-        <source>Disable all HOTCHAIN specific functionality (Masternodes, Zerocoin, SwiftX, Budgeting) (0-1, default: %u)</source>
-        <translation>Отключите все специфические функции HOTCHAIN (Masternodes, Zerocoin, SwiftX, Бюджетирование) (0-1, по умолчанию: %u)</translation>
+        <source>Disable all Hotchain specific functionality (Masternodes, Zerocoin, SwiftX, Budgeting) (0-1, default: %u)</source>
+        <translation>Отключите все специфические функции Hotchain (Masternodes, Zerocoin, SwiftX, Бюджетирование) (0-1, по умолчанию: %u)</translation>
     </message>
     <message>
         <source>Enable SwiftX, show confirmations for locked transactions (bool, default: %s)</source>
@@ -6293,8 +6293,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Кошелек заблокирован.</translation>
     </message>
     <message>
-        <source>Wallet needed to be rewritten: restart Hotchain Wallet to complete</source>
-        <translation>Кошелек необходимо переписать: перезапустите Hotchain Wallet, чтобы завершить</translation>
+        <source>Wallet needed to be rewritten: restart Hotchain Core to complete</source>
+        <translation>Кошелек необходимо переписать: перезапустите Hotchain Core, чтобы завершить</translation>
     </message>
     <message>
         <source>Wallet options:</source>

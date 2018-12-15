@@ -1,5 +1,4 @@
-// Copyright (c) 2017-2018 The PIVX Developers
-// Copyright (c) 2018 Cryptopie 
+// Copyright (c) 2017-2018 The Hotchain developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -479,7 +478,7 @@ void BlockExplorer::showEvent(QShowEvent*)
 
         if (!GetBoolArg("-txindex", true)) {
             QString Warning = tr("Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (hotchain.conf).");
-            QMessageBox::warning(this, "Hotchain Wallet Blockchain Explorer", Warning, QMessageBox::Ok);
+            QMessageBox::warning(this, "Hotchain Core Blockchain Explorer", Warning, QMessageBox::Ok);
         }
     }
 }

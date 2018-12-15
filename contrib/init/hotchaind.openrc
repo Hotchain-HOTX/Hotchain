@@ -16,8 +16,8 @@ BITCOIND_USER=${BITCOIND_USER:-hotchain}
 BITCOIND_GROUP=${BITCOIND_GROUP:-hotchain}
 BITCOIND_BIN=${BITCOIND_BIN:-/usr/bin/hotchaind}
 
-name="Hotchain Wallet Daemon"
-description="HOTCHAIN crypto-currency p2p network daemon"
+name="Hotchain Core Daemon"
+description="Hotchain crypto-currency p2p network daemon"
 
 command="/usr/bin/hotchaind"
 command_args="-pid=\"${BITCOIND_PIDFILE}\" \
@@ -78,7 +78,7 @@ checkconfig()
 		eerror "It is also recommended that you also set alertnotify so you are "
 		eerror "notified of problems:"
 		eerror ""
-		eerror "ie: alertnotify=echo %%s | mail -s \"HOTCHAIN Alert\"" \
+		eerror "ie: alertnotify=echo %%s | mail -s \"Hotchain Alert\"" \
 			"admin@foo.com"
 		eerror ""
 		return 1

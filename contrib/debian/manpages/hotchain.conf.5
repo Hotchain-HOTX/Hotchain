@@ -1,4 +1,4 @@
-.TH HOTCHAIN.CONF "5" "January 2011" "hotchain.conf 3.19"
+.TH HOTX.CONF "5" "January 2011" "hotchain.conf 3.19"
 .SH NAME
 hotchain.conf \- hotchain configuration file
 .SH SYNOPSIS
@@ -15,13 +15,13 @@ hotchain.conf should be located in $HOME/.hotchain
 \fBtestnet=\fR[\fI'1'\fR|\fI'0'\fR]
 Enable or disable run on the test network instead of the real *hotchain* network.
 .TP
-\fBproxy=\fR\fI'127.0.0.1:9069'\fR
+\fBproxy=\fR\fI'127.0.0.1:9050'\fR
 Connect via a socks4 proxy.
 .TP
-\fBaddnode=\fR\fI'10.0.0.2:9069'\fR
+\fBaddnode=\fR\fI'10.0.0.2:51472'\fR
 Use as many *addnode=* settings as you like to connect to specific peers.
 .TP
-\fBconnect=\fR\fI'10.0.0.1:9069'\fR
+\fBconnect=\fR\fI'10.0.0.1:51472'\fR
 Use as many *connect=* settings as you like to connect ONLY to specific peers.
 .TP
 \fRmaxconnections=\fR\fI'value'\fR
@@ -40,7 +40,7 @@ You must set *rpcpassword* to secure the JSON-RPC api.
 \fBrpcallowip=\fR\fI'192.168.1.*'\fR
 By default, only RPC connections from localhost are allowed. Specify as many *rpcallowip=* settings as you like to allow connections from other hosts (and you may use * as a wildcard character).
 .TP
-\fBrpcport=\fR\fI'6990'\fR
+\fBrpcport=\fR\fI'51473'\fR
 Listen for RPC connections on this TCP port.
 .TP
 \fBrpcconnect=\fR\fI'127.0.0.1'\fR
@@ -49,16 +49,16 @@ You can use *hotchain* or *hotchaind(1)* to send commands to *hotchain*/*hotchai
 .SH MISCELLANEOUS OPTIONS
 .TP
 \fBgen=\fR[\fI'0'\fR|\fI'1'\fR]
-Enable or disable attempt to generate HOTCHAINs.
+Enable or disable attempt to generate HOTXs.
 .TP
 \fB4way=\fR[\fI'0'\fR|\fI'1'\fR]
-Enable or disable use SSE instructions to try to generate HOTCHAINs faster.
+Enable or disable use SSE instructions to try to generate HOTXs faster.
 .TP
 \fBkeypool=\fR\fI'100'\fR
 Pre-generate this many public/private key pairs, so wallet backups will be valid for both prior transactions and several dozen future transactions.
 .TP
 \fBpaytxfee=\fR\fI'0.00'\fR
-Pay an optional transaction fee every time you send HOTCHAINs. Transactions with fees are more likely than free transactions to be included in generated blocks, so may be validated sooner.
+Pay an optional transaction fee every time you send HOTXs. Transactions with fees are more likely than free transactions to be included in generated blocks, so may be validated sooner.
 .TP
 \fBallowreceivebyip=\fR\fI'1'\fR
 Allow direct connections for the 'pay via IP address' feature.

@@ -1,5 +1,5 @@
 [Unit]
-Description=HOTCHAIN's distributed currency daemon
+Description=Hotchain's distributed currency daemon
 After=network.target
 
 [Service]

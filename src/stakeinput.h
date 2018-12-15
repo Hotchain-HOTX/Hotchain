@@ -1,10 +1,9 @@
-// Copyright (c) 2017-2018 The PIVX Developers
-// Copyright (c) 2018 Cryptopie 
+// Copyright (c) 2017-2018 The Hotchain developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef HOTCHAIN_STAKEINPUT_H
-#define HOTCHAIN_STAKEINPUT_H
+#ifndef HOTXX_STAKEINPUT_H
+#define HOTXX_STAKEINPUT_H
 
 class CKeyStore;
 class CWallet;
@@ -88,4 +87,4 @@ public:
 };
 
 
-#endif //HOTCHAIN_STAKEINPUT_H
+#endif //HOTXX_STAKEINPUT_H

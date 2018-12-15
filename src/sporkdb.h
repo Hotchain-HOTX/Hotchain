@@ -1,9 +1,9 @@
-// Copyright (c) 2017 The PIVX Developers 
+// Copyright (c) 2017 The Hotchain developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef HOTCHAIN_CSPORKDB_H
-#define HOTCHAIN_CSPORKDB_H
+#ifndef HOTXX_CSPORKDB_H
+#define HOTXX_CSPORKDB_H
 
 #include <boost/filesystem/path.hpp>
 #include "leveldbwrapper.h"
@@ -25,4 +25,4 @@ public:
 };
 
 
-#endif //HOTCHAIN_CSPORKDB_H
+#endif //HOTXX_CSPORKDB_H

@@ -1,19 +1,19 @@
-Hotchain Wallet version 3.0.5 is now available from:
+Hotchain Core version 3.0.5 is now available from:
 
-  <https://github.com/Hotchain-HOTX/Hotchain/releases>
+  <https://github.com/hotchain-project/hotchain/releases>
 
 This is a new minor-revision version release, including various bug fixes and
 performance improvements, as well as updated translations.
 
 Please report bugs using the issue tracker at github:
 
-  <https://github.com/Hotchain-HOTX/Hotchain/issues>
+  <https://github.com/hotchain-project/hotchain/issues>
 
 
 Mandatory Update
 ==============
 
-Hotchain Wallet v3.0.5 is a mandatory update for all users. This release contains various updates/fixes pertaining to the zHOTX protocol, supply tracking, block transmission and relaying, as well as usability and quality-of-life updates to the GUI. Users are required to update before block `908000` which is when the accumulators will be refactored. Shortly after that block, zHOTX transactions will be enabled. **When zHOTX is enabled, autominting will also be enabled.** If you would like to disable automatic conversion of 10% of your HOTCHAIN balance to zHOTX, then you will need to add `enablezeromint=0` to your `hotchain.conf` file. For information about where to find your hotchain.conf you can visit this link from [HOTCHAIN Support](https://hotchain.freshdesk.com/support/solutions/articles/30000004664-where-are-my-wallet-dat-blockchain-and-configuration-conf-files-located-).
+Hotchain Core v3.0.5 is a mandatory update for all users. This release contains various updates/fixes pertaining to the zHOTX protocol, supply tracking, block transmission and relaying, as well as usability and quality-of-life updates to the GUI. Users are required to update before block `908000` which is when the accumulators will be refactored. Shortly after that block, zHOTX transactions will be enabled. **When zHOTX is enabled, autominting will also be enabled.** If you would like to disable automatic conversion of 10% of your HOTX balance to zHOTX, then you will need to add `enablezeromint=0` to your `hotchain.conf` file. For information about where to find your hotchain.conf you can visit this link from [Hotchain Support](https://hotchain.freshdesk.com/support/solutions/articles/30000004664-where-are-my-wallet-dat-blockchain-and-configuration-conf-files-located-).
 
 Users will have a grace period to update their clients before versions prior to this release are no longer allowed to connect to this (and future) version(s).
 
@@ -21,13 +21,13 @@ Users will have a grace period to update their clients before versions prior to 
 How to Upgrade
 ==============
 
-If you are running an older version, shut it down. Wait until it has completely shut down (which might take a few minutes for older versions), then run the installer (on Windows) or just copy over /Applications/hotchain-Qt (on Mac) or hotchaind/hotchain-qt (on Linux).
+If you are running an older version, shut it down. Wait until it has completely shut down (which might take a few minutes for older versions), then run the installer (on Windows) or just copy over /Applications/Hotchain-Qt (on Mac) or hotchaind/hotchain-qt (on Linux).
 
 
 Compatibility
 ==============
 
-Hotchain Wallet is extensively tested on multiple operating systems using
+Hotchain Core is extensively tested on multiple operating systems using
 the Linux kernel, macOS 10.8+, and Windows Vista and later.
 
 Microsoft ended support for Windows XP on [April 8th, 2014](https://www.microsoft.com/en-us/WindowsForBusiness/end-of-xp-support),
@@ -35,7 +35,7 @@ No attempt is made to prevent installing or running the software on Windows XP, 
 can still do so at your own risk but be aware that there are known instabilities and issues.
 Please do not report issues about Windows XP to the issue tracker.
 
-Hotchain Wallet should also work on most other Unix-like systems but is not
+Hotchain Core should also work on most other Unix-like systems but is not
 frequently tested on them.
 
 ### :exclamation::exclamation::exclamation: MacOS 10.13 High Sierra :exclamation::exclamation::exclamation:
@@ -52,15 +52,15 @@ The zHOTX accumulator code has undergone a major refactor. Accumulators are one 
 
 libzerocoin Exploit Fix
 ---------------------
-zHOTX relies on a 3rd party library called libzerocoin. All currencies that utilize the zerocoin protocol use libzerocoin, and many of those currencies have been exposed to an exploit which allowed for the creation of multiple zero-knowledge spending proofs for one single zerocoin mint. The PIVX Developers  were able properly identify the exploit, track down any fraudulent spending proofs, link the fraudulent spending proofs with their one valid proof that they were mutated from, and remove any mints from the accumulators that were derived from the invalid spends. 
+zHOTX relies on a 3rd party library called libzerocoin. All currencies that utilize the zerocoin protocol use libzerocoin, and many of those currencies have been exposed to an exploit which allowed for the creation of multiple zero-knowledge spending proofs for one single zerocoin mint. The Hotchain developers were able properly identify the exploit, track down any fraudulent spending proofs, link the fraudulent spending proofs with their one valid proof that they were mutated from, and remove any mints from the accumulators that were derived from the invalid spends. 
 
 zHOTX Maintenance Mode Spork
 ---------------------
-Handling the above noted libzerocoin exploit required the HOTCHAIN team to immediately release a patched wallet to as many users as possible which rejected bad spends and also disabled all zHOTX transactions in general. The process of releasing a patched wallet in such a small time frame is frustrating and difficult for all members of the HOTCHAIN team and especially users of HOTCHAIN. The PIVX Developers  have added a new spork which allows for zHOTX transacting to be turned on/off without having to release a patched wallet. This will allow much smoother operation if any problems occur in the future, and should also allow exchanges and 3rd party services to continue to operate even if zHOTX is in maintenance mode.
+Handling the above noted libzerocoin exploit required the Hotchain team to immediately release a patched wallet to as many users as possible which rejected bad spends and also disabled all zHOTX transactions in general. The process of releasing a patched wallet in such a small time frame is frustrating and difficult for all members of the Hotchain team and especially users of Hotchain. The Hotchain developers have added a new spork which allows for zHOTX transacting to be turned on/off without having to release a patched wallet. This will allow much smoother operation if any problems occur in the future, and should also allow exchanges and 3rd party services to continue to operate even if zHOTX is in maintenance mode.
 
 Money Supply Indexing
 ---------------------
-The exploit in libzerocoin threw off some of the wallet's internal money supply calculations for both the zHOTX supply and the HOTCHAIN supply. User's wallet's will automatically recalculate the supply on block `908001`. User's also have the ability to recalculate supply using the startup flag `reindexmoneysupply`.
+The exploit in libzerocoin threw off some of the wallet's internal money supply calculations for both the zHOTX supply and the HOTX supply. User's wallet's will automatically recalculate the supply on block `908001`. User's also have the ability to recalculate supply using the startup flag `reindexmoneysupply`.
 
 More Extensive Tracking of zHOTX Supply Through RPC
 ---------------------

@@ -1,5 +1,5 @@
 // Copyright (c) 2014 The Bitcoin developers
-// Copyright (c) 2017 The PIVX Developers 
+// Copyright (c) 2017 The Hotchain developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -26,10 +26,12 @@ public:
     };
 
     const std::string& DataDir() const { return strDataDir; }
+    int RPCPort() const { return nRPCPort; }
 
 protected:
     CBaseChainParams() {}
 
+    int nRPCPort;
     std::string strDataDir;
     Network networkID;
 };

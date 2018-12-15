@@ -1,5 +1,5 @@
 // Copyright (c) 2014-2015 The Dash developers
-// Copyright (c) 2015-2018 The PIVX Developers 
+// Copyright (c) 2015-2018 The Hotchain developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -14,7 +14,6 @@
 #include "net.h"
 #include "sync.h"
 #include "util.h"
-#include <boost/lexical_cast.hpp>
 
 using namespace std;
 
@@ -38,7 +37,7 @@ enum class TrxValidationStatus {
     VoteThreshold    /** If not enough masternodes have voted on a finalized budget */
 };
 
-static const CAmount PROPOSAL_FEE_TX = (5000 * COIN);
+static const CAmount PROPOSAL_FEE_TX = (50 * COIN);
 static const CAmount BUDGET_FEE_TX_OLD = (50 * COIN);
 static const CAmount BUDGET_FEE_TX = (5 * COIN);
 static const int64_t BUDGET_VOTE_UPDATE_MIN = 60 * 60;

@@ -62,12 +62,12 @@
         <translation>Indirizzi di ricezione</translation>
     </message>
     <message>
-        <source>These are your HOTCHAIN addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Questi sono gli indirizzi HOTCHAIN per l'invio di pagamenti. Controlla sempre l'importo e l'indirizzo di ricezione prima di inviare valuta.</translation>
+        <source>These are your Hotchain addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Questi sono gli indirizzi Hotchain per l'invio di pagamenti. Controlla sempre l'importo e l'indirizzo di ricezione prima di inviare valuta.</translation>
     </message>
     <message>
-        <source>These are your HOTCHAIN addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Questi sono gli indirizzi HOTCHAIN per la ricezione di pagamenti. Si raccomanda di utilizzare un indirizzo diverso per ogni transazione.</translation>
+        <source>These are your Hotchain addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Questi sono gli indirizzi Hotchain per la ricezione di pagamenti. Si raccomanda di utilizzare un indirizzo diverso per ogni transazione.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -176,16 +176,16 @@
         <translation>Conferma cifratura portafoglio</translation>
     </message>
     <message>
-        <source>HOTCHAIN will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your HOTCHAINs from being stolen by malware infecting your computer.</source>
-        <translation>HOTCHAIN verrà ora chiuso per completare il processo di cifratura. Ricorda che crittografare il tuo portafoglio non protegge completamente i tuoi HOTCHAIN dal furto da parte di software malevoli che potrebbero infettare il tuo computer.</translation>
+        <source>Hotchain will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your HOTXs from being stolen by malware infecting your computer.</source>
+        <translation>Hotchain verrà ora chiuso per completare il processo di cifratura. Ricorda che crittografare il tuo portafoglio non protegge completamente i tuoi HOTX dal furto da parte di software malevoli che potrebbero infettare il tuo computer.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Confermi di voler crittografare il portafoglio?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR HOTCHAIN&lt;/b&gt;!</source>
-        <translation>Attenzione: Se crittografi il portafoglio e poi perdi la parola d'ordine, &lt;b&gt;PERDERAI TUTTI I TUOI HOTCHAIN&lt;7b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR HOTX&lt;/b&gt;!</source>
+        <translation>Attenzione: Se crittografi il portafoglio e poi perdi la parola d'ordine, &lt;b&gt;PERDERAI TUTTI I TUOI HOTX&lt;7b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -254,12 +254,12 @@
         <translation>Indirizzo:</translation>
     </message>
     <message>
-        <source>Enter a HOTCHAIN Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
-        <translation>Inserire un indirizzo HOTCHAIN da crittografare utilizzando BIP 38. Inserire una password nel campo centrale. Cliccare su "cripta" per generare la chiave privata crittografata.</translation>
+        <source>Enter a Hotchain Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
+        <translation>Inserire un indirizzo Hotchain da crittografare utilizzando BIP 38. Inserire una password nel campo centrale. Cliccare su "cripta" per generare la chiave privata crittografata.</translation>
     </message>
     <message>
-        <source>The HOTCHAIN address to encrypt</source>
-        <translation>Indirizzo HOTCHAIN da crittografare</translation>
+        <source>The Hotchain address to encrypt</source>
+        <translation>Indirizzo Hotchain da crittografare</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -290,8 +290,8 @@
         <translation>Copiare la firma corrente negli Appunti di sistema</translation>
     </message>
     <message>
-        <source>Encrypt the private key for this HOTCHAIN address</source>
-        <translation>Crittografa la chiave privata per questo indirizzo HOTCHAIN</translation>
+        <source>Encrypt the private key for this Hotchain address</source>
+        <translation>Crittografa la chiave privata per questo indirizzo Hotchain</translation>
     </message>
     <message>
         <source>Reset all fields</source>
@@ -645,12 +645,12 @@
         <translation>Schede degli strumenti</translation>
     </message>
     <message>
-        <source>Hotchain Wallet</source>
-        <translation>Hotchain Wallet</translation>
+        <source>Hotchain Core</source>
+        <translation>Hotchain Core</translation>
     </message>
     <message>
-        <source>Send coins to a HOTCHAIN address</source>
-        <translation>Invia valuta all'indirizzo HOTCHAIN</translation>
+        <source>Send coins to a Hotchain address</source>
+        <translation>Invia valuta all'indirizzo Hotchain</translation>
     </message>
     <message>
         <source>Request payments (generates QR codes and hotchain: URIs)</source>
@@ -669,24 +669,24 @@
         <translation>Esplora i masternodes</translation>
     </message>
     <message>
-        <source>&amp;About Hotchain Wallet</source>
-        <translation>&amp;Informazioni Hotchain Wallet</translation>
+        <source>&amp;About Hotchain Core</source>
+        <translation>&amp;Informazioni Hotchain Core</translation>
     </message>
     <message>
-        <source>Show information about Hotchain Wallet</source>
-        <translation>Visualizza informazioni su Hotchain Wallet</translation>
+        <source>Show information about Hotchain Core</source>
+        <translation>Visualizza informazioni su Hotchain Core</translation>
     </message>
     <message>
-        <source>Modify configuration options for HOTCHAIN</source>
-        <translation>Modifica le opzioni di configurazione per HOTCHAIN</translation>
+        <source>Modify configuration options for Hotchain</source>
+        <translation>Modifica le opzioni di configurazione per Hotchain</translation>
     </message>
     <message>
-        <source>Sign messages with your HOTCHAIN addresses to prove you own them</source>
-        <translation>Firma i messaggi con i tuoi indirizzi HOTCHAIN per dimostrare di essere il proprietario </translation>
+        <source>Sign messages with your Hotchain addresses to prove you own them</source>
+        <translation>Firma i messaggi con i tuoi indirizzi Hotchain per dimostrare di essere il proprietario </translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified HOTCHAIN addresses</source>
-        <translation>Verifica i messaggi per assicurarsi che siano stati firmati con indirizzi HOTCHAIN specifici</translation>
+        <source>Verify messages to ensure they were signed with specified Hotchain addresses</source>
+        <translation>Verifica i messaggi per assicurarsi che siano stati firmati con indirizzi Hotchain specifici</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -717,8 +717,8 @@
         <translation>Apri file di configurazione del Masternodo</translation>
     </message>
     <message>
-        <source>Open a HOTCHAIN: URI or payment request</source>
-        <translation>Apri un HOTCHAIN: URI o richiesta di pagamento</translation>
+        <source>Open a Hotchain: URI or payment request</source>
+        <translation>Apri un Hotchain: URI o richiesta di pagamento</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -729,16 +729,16 @@
         <translation>Finestra Block Explorer</translation>
     </message>
     <message>
-        <source>Show the Hotchain Wallet help message to get a list with possible HOTCHAIN command-line options</source>
-        <translation>Mostra il messaggio di aiuto Hotchain Wallet per ottenere un elenco con le possibili opzioni di riga di comando HOTCHAIN</translation>
+        <source>Show the Hotchain Core help message to get a list with possible Hotchain command-line options</source>
+        <translation>Mostra il messaggio di aiuto Hotchain Core per ottenere un elenco con le possibili opzioni di riga di comando Hotchain</translation>
     </message>
     <message>
-        <source>Hotchain Wallet client</source>
-        <translation>Hotchain Wallet</translation>
+        <source>Hotchain Core client</source>
+        <translation>Hotchain Core</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to HOTCHAIN network</source>
-        <translation><numerusform>%n connessione attiva alla rete HOTCHAINIX</numerusform><numerusform>%n connessioni attive alla rete HOTCHAINIX</numerusform></translation>
+        <source>%n active connection(s) to Hotchain network</source>
+        <translation><numerusform>%n connessione attiva alla rete HOTXIX</numerusform><numerusform>%n connessioni attive alla rete HOTXIX</numerusform></translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -1126,8 +1126,8 @@ MultiSend: %1</translation>
         <translation>Questa etichetta diventa rossa se uno dei destinatari riceve un importo inferiore a %1.</translation>
     </message>
     <message>
-        <source>Can vary +/- %1 hotx per input.</source>
-        <translation>Può variare di +/- %1 uHOTCHAIN per input.</translation>
+        <source>Can vary +/- %1 uhotx per input.</source>
+        <translation>Può variare di +/- %1 uHOTX per input.</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -1173,8 +1173,8 @@ MultiSend: %1</translation>
         <translation>Modifica indirizzo di invio</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid HOTCHAIN address.</source>
-        <translation>L'indirizzo inserito "%1" non è un indirizzo HOTCHAIN valido.</translation>
+        <source>The entered address "%1" is not a valid Hotchain address.</source>
+        <translation>L'indirizzo inserito "%1" non è un indirizzo Hotchain valido.</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -1219,16 +1219,16 @@ MultiSend: %1</translation>
         <translation>versione</translation>
     </message>
     <message>
-        <source>Hotchain Wallet</source>
-        <translation>Hotchain Wallet</translation>
+        <source>Hotchain Core</source>
+        <translation>Hotchain Core</translation>
     </message>
     <message>
         <source>(%1-bit)</source>
         <translation>(%1-bit)</translation>
     </message>
     <message>
-        <source>About Hotchain Wallet</source>
-        <translation>Informazioni su Hotchain Wallet</translation>
+        <source>About Hotchain Core</source>
+        <translation>Informazioni su Hotchain Core</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -1274,16 +1274,16 @@ MultiSend: %1</translation>
         <translation>Benvenuto</translation>
     </message>
     <message>
-        <source>Welcome to Hotchain Wallet.</source>
-        <translation>Benvenuto in HOTCHAINIX Core.</translation>
+        <source>Welcome to Hotchain Core.</source>
+        <translation>Benvenuto in HOTXIX Core.</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where Hotchain Wallet will store its data.</source>
-        <translation>Essendo il primo avvio dell'applicazione, puoi scegliere dove Hotchain Wallet salverà i propri dati.</translation>
+        <source>As this is the first time the program is launched, you can choose where Hotchain Core will store its data.</source>
+        <translation>Essendo il primo avvio dell'applicazione, puoi scegliere dove Hotchain Core salverà i propri dati.</translation>
     </message>
     <message>
-        <source>Hotchain Wallet will download and store a copy of the HOTCHAIN block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>Hotchain Wallet scaricherà e salverà una copia della blockchain HOTCHAIN. Verranno salvati almeno %1GB di dati in questa cartella, che cresceranno nel tempo. In questa cartella verrà salvato anche il portafoglio.</translation>
+        <source>Hotchain Core will download and store a copy of the Hotchain block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>Hotchain Core scaricherà e salverà una copia della blockchain Hotchain. Verranno salvati almeno %1GB di dati in questa cartella, che cresceranno nel tempo. In questa cartella verrà salvato anche il portafoglio.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -1294,8 +1294,8 @@ MultiSend: %1</translation>
         <translation>Utilizza una cartella dati personalizzata:</translation>
     </message>
     <message>
-        <source>Hotchain Wallet</source>
-        <translation>Hotchain Wallet</translation>
+        <source>Hotchain Core</source>
+        <translation>Hotchain Core</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -1436,12 +1436,12 @@ MultiSend: %1</translation>
         <translation>Inserire indirizzo destinatario</translation>
     </message>
     <message>
-        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other HOTCHAIN addresses after it matures.
-To Add: enter percentage to give and HOTCHAIN address to add to the MultiSend vector.
+        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other Hotchain addresses after it matures.
+To Add: enter percentage to give and Hotchain address to add to the MultiSend vector.
 To Delete: Enter address to delete and press delete.
 MultiSend will not be activated unless you have clicked Activate</source>
-        <translation>MultiSend ti permette di inviare automaticamente ad una lista di indirizzi HOTCHAIN fino al 100% delle ricompense di stake o masternodi, dopo che queste sono mature.
-Per Aggiunger: inserisci la percentuale da inviare e l'indirizzo HOTCHAIN da aggiungere al vettore MultiSend.
+        <translation>MultiSend ti permette di inviare automaticamente ad una lista di indirizzi Hotchain fino al 100% delle ricompense di stake o masternodi, dopo che queste sono mature.
+Per Aggiunger: inserisci la percentuale da inviare e l'indirizzo Hotchain da aggiungere al vettore MultiSend.
 Per Eliminare: Inserisci l'indirizzo da eliminare e premi elimina.
 MultiSend non verrà attivato a meno che tu non prema su Attiva</translation>
     </message>
@@ -1671,12 +1671,12 @@ Per favore controlla l'indirizzo e riprova nuovamente.</translation>
         <translation>Configura Offuscamento</translation>
     </message>
     <message>
-        <source>Use 2 separate masternodes to mix funds up to 10000 HOTCHAIN</source>
-        <translation>Usa 2 masternodi diversi per mescolare fino a 10000 HOTCHAIN</translation>
+        <source>Use 2 separate masternodes to mix funds up to 10000 HOTX</source>
+        <translation>Usa 2 masternodi diversi per mescolare fino a 10000 HOTX</translation>
     </message>
     <message>
-        <source>Use 8 separate masternodes to mix funds up to 10000 HOTCHAIN</source>
-        <translation>Usa 8 masternodi diversi per mixare fino a 10000 HOTCHAIN</translation>
+        <source>Use 8 separate masternodes to mix funds up to 10000 HOTX</source>
+        <translation>Usa 8 masternodi diversi per mixare fino a 10000 HOTX</translation>
     </message>
     <message>
         <source>Use 16 separate masternodes</source>
@@ -1713,16 +1713,16 @@ Per favore controlla l'indirizzo e riprova nuovamente.</translation>
         <translation>Mappa la porta utilizzando &amp;UPnP</translation>
     </message>
     <message>
-        <source>Enable automatic minting of HOTCHAIN units to zHOTX</source>
-        <translation>Attiva il conio automatico di unità HOTCHAIN in zHOTX</translation>
+        <source>Enable automatic minting of HOTX units to zHOTX</source>
+        <translation>Attiva il conio automatico di unità HOTX in zHOTX</translation>
     </message>
     <message>
         <source>Enable zHOTX Automint</source>
         <translation>Attiva Conio automatico zHOTX</translation>
     </message>
     <message>
-        <source>Percentage of incoming HOTCHAIN which get automatically converted to zHOTX via Zerocoin Protocol (min: 10%)</source>
-        <translation>Percentuale di HOTCHAIN in entrata che viene automaticamente convertita in zHOTX attraverso il protocollo Zerocoin (min: 10%)</translation>
+        <source>Percentage of incoming HOTX which get automatically converted to zHOTX via Zerocoin Protocol (min: 10%)</source>
+        <translation>Percentuale di HOTX in entrata che viene automaticamente convertita in zHOTX attraverso il protocollo Zerocoin (min: 10%)</translation>
     </message>
     <message>
         <source>Percentage of autominted zHOTX</source>
@@ -1792,8 +1792,8 @@ Per favore controlla l'indirizzo e riprova nuovamente.</translation>
         <translation>Saldo totale, inclusi tutte le monete non disponibili.</translation>
     </message>
     <message>
-        <source>HOTCHAIN Balance</source>
-        <translation>Bilancio HOTCHAIN</translation>
+        <source>HOTX Balance</source>
+        <translation>Bilancio HOTX</translation>
     </message>
     <message>
         <source>Immature:</source>
@@ -1804,8 +1804,8 @@ Per favore controlla l'indirizzo e riprova nuovamente.</translation>
         <translation>Saldo corrente bloccato in indirizzi sola-lettura.</translation>
     </message>
     <message>
-        <source>Your current HOTCHAIN balance, unconfirmed and immature transactions included</source>
-        <translation>Il tuo saldo HOTCHAIN corrente, incluse le transazioni non confermate e non mature</translation>
+        <source>Your current Hotchain balance, unconfirmed and immature transactions included</source>
+        <translation>Il tuo saldo Hotchain corrente, incluse le transazioni non confermate e non mature</translation>
     </message>
     <message>
         <source>zHOTX Balance</source>
@@ -1846,8 +1846,8 @@ Questi zHOTX sono spendibili.</translation>
         <translation>Spendibili:</translation>
     </message>
     <message>
-        <source>Locked HOTCHAIN or Masternode collaterals. These are excluded from zHOTX minting.</source>
-        <translation>HOTCHAIN bloccati o collaterali Masternodo. Questi sono esclusi dal conio di zHOTX.</translation>
+        <source>Locked HOTX or Masternode collaterals. These are excluded from zHOTX minting.</source>
+        <translation>HOTX bloccati o collaterali Masternodo. Questi sono esclusi dal conio di zHOTX.</translation>
     </message>
     <message>
         <source>Locked:</source>
@@ -1937,8 +1937,8 @@ Per attivare il Conio automatico cambiare 'enablezeromint=0' in 'enablezeromint=
         <translation>zHOTX</translation>
     </message>
     <message>
-        <source>0.000 000 00 HOTCHAIN</source>
-        <translation>0.000 000 00 HOTCHAIN</translation>
+        <source>0.000 000 00 HOTX</source>
+        <translation>0.000 000 00 HOTX</translation>
     </message>
     <message>
         <source>Reset</source>
@@ -1962,7 +1962,7 @@ Per attivare il Conio automatico cambiare 'enablezeromint=0' in 'enablezeromint=
     </message>
     <message>
         <source>Enter an amount of Hotx to convert to zHOTX</source>
-        <translation>Immetti un importo di HOTCHAIN da convertire in zHOTX</translation>
+        <translation>Immetti un importo di HOTX da convertire in zHOTX</translation>
     </message>
     <message>
         <source>zHOTX Control</source>
@@ -2483,8 +2483,8 @@ Per cambiare la percentuale (riavvio non necessario):
 <context>
     <name>SignVerifyMessageDialog</name>
     <message>
-        <source>The HOTCHAIN address to sign the message with</source>
-        <translation>L'indirizzo HOTCHAIN per firmare il messaggio con</translation>
+        <source>The Hotchain address to sign the message with</source>
+        <translation>L'indirizzo Hotchain per firmare il messaggio con</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2507,16 +2507,16 @@ Per cambiare la percentuale (riavvio non necessario):
         <translation>Copiare la firma corrente negli Appunti di sistema</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this HOTCHAIN address</source>
-        <translation>Firmare il messaggio per dimostrare di possedere questo indirizzo HOTCHAIN</translation>
+        <source>Sign the message to prove you own this Hotchain address</source>
+        <translation>Firmare il messaggio per dimostrare di possedere questo indirizzo Hotchain</translation>
     </message>
     <message>
-        <source>The HOTCHAIN address the message was signed with</source>
-        <translation>L'indirizzo HOTCHAIN con cui è stato firmato il messaggio</translation>
+        <source>The Hotchain address the message was signed with</source>
+        <translation>L'indirizzo Hotchain con cui è stato firmato il messaggio</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified HOTCHAIN address</source>
-        <translation>Verificare il messaggio per assicurarsi che sia stato firmato con l'indirizzo HOTCHAIN specificato </translation>
+        <source>Verify the message to ensure it was signed with the specified Hotchain address</source>
+        <translation>Verificare il messaggio per assicurarsi che sia stato firmato con l'indirizzo Hotchain specificato </translation>
     </message>
     <message>
         <source>Reset all sign message fields</source>
@@ -2554,8 +2554,8 @@ Per cambiare la percentuale (riavvio non necessario):
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Hotchain Wallet</source>
-        <translation>Hotchain Wallet</translation>
+        <source>Hotchain Core</source>
+        <translation>Hotchain Core</translation>
     </message>
     </context>
 <context>

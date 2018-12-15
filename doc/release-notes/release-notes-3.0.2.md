@@ -1,30 +1,30 @@
-Hotchain Wallet version 3.0.2 is now available from:
+Hotchain Core version 3.0.2 is now available from:
 
-  <https://github.com/Hotchain-HOTX/Hotchain/releases>
+  <https://github.com/hotchain-project/hotchain/releases>
 
 This is a new minor-revision version release, including various bug fixes and
 performance improvements, as well as updated translations.
 
 Please report bugs using the issue tracker at github:
 
-  <https://github.com/Hotchain-HOTX/Hotchain/issues>
+  <https://github.com/hotchain-project/hotchain/issues>
 
 Recommended Update
 ==============
 
-Hotchain Wallet v3.0.2 is a recommended, semi-mandatory update for all users. This release contains transaction creation bug fixes for zHOTX spends, automint calculation adjustments, and other various updates/fixes.
+Hotchain Core v3.0.2 is a recommended, semi-mandatory update for all users. This release contains transaction creation bug fixes for zHOTX spends, automint calculation adjustments, and other various updates/fixes.
 
 zHOTX spending requires this update.
 
 How to Upgrade
 ==============
 
-If you are running an older version, shut it down. Wait until it has completely shut down (which might take a few minutes for older versions), then run the installer (on Windows) or just copy over /Applications/hotchain-Qt (on Mac) or hotchaind/hotchain-qt (on Linux).
+If you are running an older version, shut it down. Wait until it has completely shut down (which might take a few minutes for older versions), then run the installer (on Windows) or just copy over /Applications/Hotchain-Qt (on Mac) or hotchaind/hotchain-qt (on Linux).
 
 Compatibility
 ==============
 
-Hotchain Wallet is extensively tested on multiple operating systems using
+Hotchain Core is extensively tested on multiple operating systems using
 the Linux kernel, macOS 10.8+, and Windows Vista and later.
 
 Microsoft ended support for Windows XP on [April 8th, 2014](https://www.microsoft.com/en-us/WindowsForBusiness/end-of-xp-support),
@@ -32,7 +32,7 @@ No attempt is made to prevent installing or running the software on Windows XP, 
 can still do so at your own risk but be aware that there are known instabilities and issues.
 Please do not report issues about Windows XP to the issue tracker.
 
-Hotchain Wallet should also work on most other Unix-like systems but is not
+Hotchain Core should also work on most other Unix-like systems but is not
 frequently tested on them.
 
 ### :exclamation::exclamation::exclamation: MacOS 10.13 High Sierra :exclamation::exclamation::exclamation:
@@ -71,7 +71,7 @@ Due to the aforementioned issue with zHOTX spending, users may find that their a
 
 RPC Changes
 ---------------------
-The `bip38decrypt` command has had it's parameter order changed to be more consistent with it's counterpart. The command now expects the HOTCHAIN address as it's first parameter and the passphrase as it's second parameter.
+The `bip38decrypt` command has had it's parameter order changed to be more consistent with it's counterpart. The command now expects the Hotchain address as it's first parameter and the passphrase as it's second parameter.
 
 Bip38 Compatibility With 3rd Party Tools
 ---------------------

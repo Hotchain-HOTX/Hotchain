@@ -1,14 +1,14 @@
-.TH hotchaind "1" "February 2017" "hotchaind 2.1.4.1"
+.TH HOTXD "1" "February 2017" "hotchaind 2.1.4.1"
 .SH NAME
-HOTCHAIN \- peer-to-peer network based digital currency
+Hotchain \- peer-to-peer network based digital currency
 .SH SYNOPSIS
 hotchaind [options] <command> [params]
 .TP
 hotchaind [options] help <command> \- Get help for a command
 .SH DESCRIPTION
-This  manual page documents the hotchaind program. HOTCHAIN is a peer-to-peer digital currency. Peer-to-peer (P2P) means that there is no central authority to issue new money or keep track of transactions. Instead, these tasks are managed collectively by the nodes of the network. Advantages:
+This  manual page documents the hotchaind program. Hotchain is a peer-to-peer digital currency. Peer-to-peer (P2P) means that there is no central authority to issue new money or keep track of transactions. Instead, these tasks are managed collectively by the nodes of the network. Advantages:
 
-HOTCHAIN can be sent easily through the Internet, without having to trust middlemen. Transactions are designed to be irreversible. Be safe from instability caused by fractional reserve banking and central banks. The limited inflation of the HOTCHAIN system’s money supply is distributed evenly (by CPU power) throughout the network, not monopolized by banks.
+Hotchain can be sent easily through the Internet, without having to trust middlemen. Transactions are designed to be irreversible. Be safe from instability caused by fractional reserve banking and central banks. The limited inflation of the Hotchain system’s money supply is distributed evenly (by CPU power) throughout the network, not monopolized by banks.
 
 .SH OPTIONS
 .TP
@@ -98,7 +98,7 @@ Returns the number of connections to other nodes.
 Returns the proof-of-work difficulty as a multiple of the minimum difficulty.
 .TP
 \fBgetgenerate\fR
-Returns boolean true if server is trying to generate HOTCHAIN, false otherwise.
+Returns boolean true if server is trying to generate HOTX, false otherwise.
 .TP
 \fBsetgenerate 'generate' ['genproclimit']\fR
 Generation is limited to ['genproclimit'] processors, \-1 is unlimited.
@@ -169,7 +169,7 @@ Returns a list of the last ['count'] transactions for 'account' \- for all accou
 Moves funds between accounts.
 .TP
 \fBsendfrom* <'account'> <'hotchainaddress'> <'amount'> ['minconf=1'] ['comment'] ['comment-to']\fR
-Sends amount from account's balance to 'hotchainaddress'. This method will fail if there is less than amount HOTCHAIN with ['minconf'] confirmations in the account's balance (unless account is the empty-string-named default account; it behaves like the *sendtoaddress* method). Returns transaction ID on success.
+Sends amount from account's balance to 'hotchainaddress'. This method will fail if there is less than amount HOTX with ['minconf'] confirmations in the account's balance (unless account is the empty-string-named default account; it behaves like the *sendtoaddress* method). Returns transaction ID on success.
 .TP
 \fBsendtoaddress 'hotchainaddress' 'amount' ['comment'] ['comment-to']\fR
 Sends amount from the server's available balance to 'hotchainaddress'. amount is a real and is rounded to the nearest 0.01. Returns transaction id on success.
@@ -178,7 +178,7 @@ Sends amount from the server's available balance to 'hotchainaddress'. amount is
 Stops the hotchain server.
 .TP
 \fBvalidateaddress 'hotchainaddress'\fR
-Checks that 'hotchainaddress' looks like a proper HOTCHAIN address. Returns an object containing:
+Checks that 'hotchainaddress' looks like a proper Hotchain address. Returns an object containing:
 
     "isvalid" : true or false.
     "ismine"  : true if the address is in the server's wallet.
