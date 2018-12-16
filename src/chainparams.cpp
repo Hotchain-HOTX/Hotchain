@@ -52,7 +52,7 @@ static void convertSeed6(std::vector<CAddress>& vSeedsOut, const SeedSpec6* data
 // + Contains no strange transactions
 static Checkpoints::MapCheckpoints mapCheckpoints =
     boost::assign::map_list_of
-	( 0, uint256("0x000007cc5cc9b865157817742539218f877b6e39ae83d2b0f4d6b953ec2364e1"));
+	( 0, uint256("d35f846d043dc9696240dccc898707c9ac250e638cd1736b89d89f553a9bbb23"));
 static const Checkpoints::CCheckpointData data = {
     &mapCheckpoints,
 	1541259177, // * UNIX timestamp of last checkpoint block
@@ -168,15 +168,15 @@ public:
         genesis.nNonce = 22486641;
 
         hashGenesisBlock = genesis.GetHash();
-        assert(hashGenesisBlock == uint256("0x000007cc5cc9b865157817742539218f877b6e39ae83d2b0f4d6b953ec2364e1"));
-        assert(genesis.hashMerkleRoot == uint256("0xcdce2aaba7508325f8c28bf93cdd766b9bcb7e72607d9e5a95129537187074b0"));
+        assert(hashGenesisBlock == uint256("d35f846d043dc9696240dccc898707c9ac250e638cd1736b89d89f553a9bbb23"));
+        assert(genesis.hashMerkleRoot == uint256("59914c4d802c7cd3912cce67ca2fb4d495ffa8587d9dd75309b444105e04aff6"));
 		
-	vSeeds.push_back(CDNSSeedData("node1.hotchain.com", "node1.hotchain.com"));         // Primary DNS Seeder
-	vSeeds.push_back(CDNSSeedData("node2.hotchain.com", "node2.hotchain.com"));         // Single node address
-	vSeeds.push_back(CDNSSeedData("node3.hotchain.com", "node3.hotchain.com"));         // Single node address
-	vSeeds.push_back(CDNSSeedData("node4.hotchain.com", "node4.hotchain.com"));         // Single node address
-	vSeeds.push_back(CDNSSeedData("node5.hotchain.com", "node5.hotchain.com"));         // Single node address
-	vSeeds.push_back(CDNSSeedData("node6.hotchain.com", "node6.hotchain.com"));         // Single node address
+	vSeeds.push_back(CDNSSeedData("node1.hotchain.me", "node1.hotchain.me"));         // Primary DNS Seeder
+	vSeeds.push_back(CDNSSeedData("node2.hotchain.me", "node2.hotchain.me"));         // Single node address
+	vSeeds.push_back(CDNSSeedData("node3.hotchain.me", "node3.hotchain.me"));         // Single node address
+	vSeeds.push_back(CDNSSeedData("node4.hotchain.me", "node4.hotchain.me"));         // Single node address
+	vSeeds.push_back(CDNSSeedData("node5.hotchain.me", "node5.hotchain.me"));         // Single node address
+	vSeeds.push_back(CDNSSeedData("node6.hotchain.me", "node6.hotchain.me"));         // Single node address
 
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 100); // Hotchain's wallet address starts with a X
@@ -199,9 +199,8 @@ public:
         fHeadersFirstSyncingActive = false;
 
         nPoolMaxTransactions = 3;
-        strSporkKey = "04d5cac4800494827f62438d4d5bdaefdc9b51e70c007e0e6ec1c980b4786e29e4a72b2b630dc90bf4260bc7d7b756bb5d1d11ea1a604667ef282c2bebb48ae9b8";
+        strSporkKey = "04c280424d76d9ea1bd218d95d5286fef8e1686a3296fdcbf6a0003bfd2a1882756e56e709e88fae85010b0904dd11cdc0f3f0741f97ac87d49f7e97ad5db3b6ca";
 		strObfuscationPoolDummyAddress = "hG1YnZZZ1TkWWWU78uhVenYnVRDFfTf3hS";
-        strObfuscationPoolDummyAddress = "D87q2gC9j6nNrnzCsg4aY6bHMLsT9nUhEw";
         nStartMasternodePayments = 1403728576; //Wed, 25 Jun 2014 20:36:16 GMT
 
         /** Zerocoin */
@@ -218,7 +217,7 @@ public:
         nDefaultSecurityLevel = 100; //full security level for accumulators
         nZerocoinHeaderVersion = 4; //Block headers must be this version once zerocoin is active
         nZerocoinRequiredStakeDepth = 200; //The required confirmations for a zhotx to be stakable
-        //nStakeMinAge = 60 * 60; //The number of seconds that a utxo must be old before it can qualify for staking
+       // nStakeMinAge = 60 * 60; //The number of seconds that a utxo must be old before it can qualify for staking
         nBudget_Fee_Confirmations = 6; // Number of confirmations for the finalization fee
     }
 
@@ -343,7 +342,7 @@ public:
 
         hashGenesisBlock = genesis.GetHash();
         nDefaultPort = 51476;
-        assert(hashGenesisBlock == uint256("0x4f023a2120d9127b21bbad01724fdb79b519f593f2a85b60d3d79160ec5f29df"));
+        //assert(hashGenesisBlock == uint256("d35f846d043dc9696240dccc898707c9ac250e638cd1736b89d89f553a9bbb23"));
 
         vFixedSeeds.clear(); //! Testnet mode doesn't have any fixed seeds.
         vSeeds.clear();      //! Testnet mode doesn't have any DNS seeds.

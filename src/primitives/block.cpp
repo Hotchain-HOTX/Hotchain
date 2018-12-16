@@ -16,10 +16,10 @@
 uint256 CBlockHeader::GetHash() const
 {
 	
-	if(nVersion < 4)
+	//if(nVersion < 4)
         return XEVAN(BEGIN(nVersion), END(nNonce));
 	
-    return HashQuark(BEGIN(nVersion), END(nAccumulatorCheckpoint));
+    //return HashQuark(BEGIN(nVersion), END(nAccumulatorCheckpoint));
 }
 
 uint256 CBlock::BuildMerkleTree(bool* fMutated) const
@@ -119,9 +119,9 @@ uint256 CBlock::CheckMerkleBranch(uint256 hash, const std::vector<uint256>& vMer
 std::string CBlock::ToString() const
 {
     std::stringstream s;
-    s << strprintf("CBlock(hash=%s, ver=%d, hashPrevBlock=%s, hashMerkleRoot=%s, nTime=%u, nBits=%08x, nNonce=%u, vtx=%u)\n",
+    s << strprintf("CBlock(hash=%s  -  %s, ver=%d, hashPrevBlock=%s, hashMerkleRoot=%s, nTime=%u, nBits=%08x, nNonce=%u, vtx=%u)\n",
         GetHash().ToString(),
-        nVersion,
+		GetHash().ToStringReverseEndian(),        nVersion,
         hashPrevBlock.ToString(),
         hashMerkleRoot.ToString(),
         nTime, nBits, nNonce,

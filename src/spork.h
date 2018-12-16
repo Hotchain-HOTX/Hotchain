@@ -86,10 +86,10 @@ public:
     uint256 GetHash()
     {
 		uint256 n;
-		if(nVersion < 4)
+		//if(nVersion < 4)
 			n = XEVAN(BEGIN(nSporkID), END(nTimeSigned));
-		else
-			n = HashQuark(BEGIN(nSporkID), END(nTimeSigned));
+		/*else
+			n = HashQuark(BEGIN(nSporkID), END(nTimeSigned));*/
         return n;
     }
 
