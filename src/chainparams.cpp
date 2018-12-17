@@ -126,6 +126,7 @@ public:
         nMasternodeCountDrift = 20;
         nMaxMoneyOut = 60000000 * COIN;
 
+	nZerocoinStartTime = 1547708640;
         /** Height or Time Based Activations **/
         nLastPOWBlock = 2000;
        /* nModifierUpdateBlock = 615800;
