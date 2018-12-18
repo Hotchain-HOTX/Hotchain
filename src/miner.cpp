@@ -450,7 +450,10 @@ CBlockTemplate* CreateNewBlock(const CScript& scriptPubKeyIn, CWallet* pwallet, 
 
         //Calculate the accumulator checkpoint only if the previous cached checkpoint need to be updated
         uint256 nCheckpoint;
-        uint256 hashBlockLastAccumulated = chainActive[nHeight - (nHeight % 10) - 10]->GetBlockHash();
+       	int heightOfBlockLastAccumulated = nHeight - (nHeight % 10) - 10;
+        uint256 hashBlockLastAccumulated = (heightOfBlockLastAccumulated > 0) 
+            ? chainActive[heightOfBlockLastAccumulated]->GetBlockHash() 
+            : chainActive.Genesis()->GetBlockHash();
         if (nHeight >= pCheckpointCache.first || pCheckpointCache.second.first != hashBlockLastAccumulated) {
             //For the period before v2 activation, zHOTX will be disabled and previous block's checkpoint is all that will be needed
             pCheckpointCache.second.second = pindexPrev->nAccumulatorCheckpoint;

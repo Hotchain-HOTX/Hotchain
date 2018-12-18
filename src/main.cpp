@@ -1083,7 +1083,7 @@ bool CheckTransaction(const CTransaction& tx, bool fZerocoinActive, bool fReject
     }
 
     if (tx.IsCoinBase()) {
-        if (tx.vin[0].scriptSig.size() < 2 || tx.vin[0].scriptSig.size() > 150)
+        if ((tx.vin[0].scriptSig.size() < 2  && chainActive.Height() > 0) || tx.vin[0].scriptSig.size() > 150)
             return state.DoS(100, error("CheckTransaction() : coinbase script size=%d", tx.vin[0].scriptSig.size()),
                 REJECT_INVALID, "bad-cb-length");
     } else if (fZerocoinActive && tx.IsZerocoinSpend()) {
@@ -2896,9 +2896,9 @@ bool ConnectBlock(const CBlock& block, CValidationState& state, CBlockIndex* pin
     // Now that the whole chain is irreversibly beyond that time it is applied to all blocks except the
     // two in the chain that violate it. This prevents exploiting the issue against nodes in their
     // initial block download.
-    bool fEnforceBIP30 = (!pindex->phashBlock) || // Enforce on CreateNewBlock invocations which don't have a hash.
-                         !((pindex->nHeight == 91842 && pindex->GetBlockHash() == uint256("0x00000000000a4d0a398161ffc163c503763b1f4360639393e0e4c8e300e0caec")) ||
-                             (pindex->nHeight == 91880 && pindex->GetBlockHash() == uint256("0x00000000000743f190a18c5577a3c2d2a1f610ae9601ac046a38084ccb7cd721")));
+    bool fEnforceBIP30 = (!pindex->phashBlock);// || // Enforce on CreateNewBlock invocations which don't have a hash.
+                        // !((pindex->nHeight == 91842 && pindex->GetBlockHash() == uint256("0x00000000000a4d0a398161ffc163c503763b1f4360639393e0e4c8e300e0caec")) ||
+                        //     (pindex->nHeight == 91880 && pindex->GetBlockHash() == uint256("0x00000000000743f190a18c5577a3c2d2a1f610ae9601ac046a38084ccb7cd721")));
     if (fEnforceBIP30) {
         BOOST_FOREACH (const CTransaction& tx, block.vtx) {
             const CCoins* coins = view.AccessCoins(tx.GetHash());
@@ -3044,11 +3044,11 @@ bool ConnectBlock(const CBlock& block, CValidationState& state, CBlockIndex* pin
     }
 
     //A one-time event where money supply counts were off and recalculated on a certain block.
-    if (pindex->nHeight == Params().Zerocoin_Block_RecalculateAccumulators() + 1) {
+  /*  if (pindex->nHeight == Params().Zerocoin_Block_RecalculateAccumulators() + 1) {
         RecalculateZHOTXMinted();
         RecalculateZHOTXSpent();
         RecalculateHOTXSupply(Params().Zerocoin_StartHeight());
-    }
+    }*/
 
     //Track zHOTX money supply in the block index
     if (!UpdateZHOTXSupply(block, pindex, fJustCheck))
