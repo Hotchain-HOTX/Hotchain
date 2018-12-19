@@ -1083,7 +1083,7 @@ bool CheckTransaction(const CTransaction& tx, bool fZerocoinActive, bool fReject
     }
 
     if (tx.IsCoinBase()) {
-        if ((tx.vin[0].scriptSig.size() < 2  && chainActive.Height() > 0) || tx.vin[0].scriptSig.size() > 150)
+        if ((tx.vin[0].scriptSig.size() < 2  && chainActive.Height() > Params().LAST_POW_BLOCK() + 1) || tx.vin[0].scriptSig.size() > 150)
             return state.DoS(100, error("CheckTransaction() : coinbase script size=%d", tx.vin[0].scriptSig.size()),
                 REJECT_INVALID, "bad-cb-length");
     } else if (fZerocoinActive && tx.IsZerocoinSpend()) {
