@@ -738,7 +738,7 @@
     </message>
     <message numerus="yes">
         <source>%n active connection(s) to Hotchain network</source>
-        <translation><numerusform>%n connessione attiva alla rete HOTXIX</numerusform><numerusform>%n connessioni attive alla rete HOTXIX</numerusform></translation>
+        <translation><numerusform>%n connessione attiva alla rete HOTX</numerusform><numerusform>%n connessioni attive alla rete HOTX</numerusform></translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -1275,7 +1275,7 @@ MultiSend: %1</translation>
     </message>
     <message>
         <source>Welcome to Hotchain Core.</source>
-        <translation>Benvenuto in HOTXIX Core.</translation>
+        <translation>Benvenuto in HOTX Core.</translation>
     </message>
     <message>
         <source>As this is the first time the program is launched, you can choose where Hotchain Core will store its data.</source>

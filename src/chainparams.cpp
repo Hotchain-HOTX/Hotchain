@@ -112,7 +112,7 @@ public:
         pchMessageStart[2] = 0x54;
         pchMessageStart[3] = 0x58;
         vAlertPubKey = ParseHex("042f3012e5ba221dd4a82155de9dc464f186e5e0b4fc0f4ae9048f5b5362993ec0b5295dddaf49ce962389830e97d9e3ceedcde0dcb440eaf675af4c1e924d6346");
-        nDefaultPort = 51472;
+        nDefaultPort = 9069;
         bnProofOfWorkLimit = ~uint256(0) >> 20; // Hotchain starting difficulty is 1 / 2^12
         nSubsidyHalvingInterval = 210000;
         nMaxReorganizationDepth = 100;
@@ -130,7 +130,7 @@ public:
         nZerocoinStartHeight = 8000;
         nBlockZerocoinV2 = 8001; //!> The block that zerocoin v2 becomes active - roughly Tuesday, May 8, 2018 4:00:00 AM GMT
         /** Height or Time Based Activations **/
-        nLastPOWBlock = 2000;
+        nLastPOWBlock = 120;
        /* nModifierUpdateBlock = 615800;
         nZerocoinStartTime = 1508214600; // October 17, 2017 4:30:00 AM
         nBlockEnforceSerialRange = 895400; //Enforce serial range starting this block
