@@ -662,11 +662,11 @@
     </message>
     <message>
         <source>&amp;About Hotchain Core</source>
-        <translation>Pıvx core Hakkında</translation>
+        <translation>Hotchain core Hakkında</translation>
     </message>
     <message>
         <source>Show information about Hotchain Core</source>
-        <translation>Pıvx Core hakkında bilgi göster</translation>
+        <translation>Hotchain Core hakkında bilgi göster</translation>
     </message>
     <message>
         <source>Modify configuration options for Hotchain</source>

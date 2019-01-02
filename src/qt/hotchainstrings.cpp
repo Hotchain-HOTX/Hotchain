@@ -235,10 +235,10 @@ QT_TRANSLATE_NOOP("hotchain-core", ""
 QT_TRANSLATE_NOOP("hotchain-core", ""
 "You must specify a masternodeprivkey in the configuration. Please see "
 "documentation for help."),
-QT_TRANSLATE_NOOP("hotchain-core", "(51472 could be used only on mainnet)"),
+QT_TRANSLATE_NOOP("hotchain-core", "(9069 could be used only on mainnet)"),
 QT_TRANSLATE_NOOP("hotchain-core", "(default: %s)"),
 QT_TRANSLATE_NOOP("hotchain-core", "(default: 1)"),
-QT_TRANSLATE_NOOP("hotchain-core", "(must be 51472 for mainnet)"),
+QT_TRANSLATE_NOOP("hotchain-core", "(must be 9069 for mainnet)"),
 QT_TRANSLATE_NOOP("hotchain-core", "<category> can be:"),
 QT_TRANSLATE_NOOP("hotchain-core", "Accept command line and JSON-RPC commands"),
 QT_TRANSLATE_NOOP("hotchain-core", "Accept connections from outside (default: 1 if no -proxy or -connect)"),
