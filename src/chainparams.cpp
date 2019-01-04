@@ -116,8 +116,8 @@ public:
         bnProofOfWorkLimit = ~uint256(0) >> 2; // Hotchain starting difficulty is 1 / 2^12
         nSubsidyHalvingInterval = 210000;
         nMaxReorganizationDepth = 100;
-        nEnforceBlockUpgradeMajority = 750;
-        nRejectBlockOutdatedMajority = 950;
+        nEnforceBlockUpgradeMajority = 2050;
+        nRejectBlockOutdatedMajority = 2250;
         nToCheckBlockUpgradeMajority = 1000;
         nMinerThreads = 0;
         nTargetTimespan = 1 * 60; // Hotchain: 1 day
