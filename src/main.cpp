@@ -2175,7 +2175,7 @@ void CheckForkWarningConditionsOnNewFork(CBlockIndex* pindexNewForkTip)
 // Requires cs_main.
 void Misbehaving(NodeId pnode, int howmuch)
 {
-    if(chainActive.Height() <= Params().LAST_POW_BLOCK())
+    if(chainActive.Height() <= Params().LAST_POW_BLOCK() || chainActive.Height() <= 4000)
         return;
     if (howmuch == 0)
         return;
