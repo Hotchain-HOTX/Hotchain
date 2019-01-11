@@ -438,6 +438,10 @@ CBlockTemplate* CreateNewBlock(const CScript& scriptPubKeyIn, CWallet* pwallet, 
         if (!fProofOfStake) {
             pblock->vtx[0] = txNew;
             pblock->vtx[0].vout[0].nValue = GetBlockValue(pindexPrev->nHeight);
+            CMasternode* winningNode = mnodeman.GetCurrentMasterNode(1);
+            if (winningNode) {
+                pblock->vtx[0].vout[0].nValue += GetMasternodePayment(pindexPrev->nHeight, GetBlockValue(pindexPrev->nHeight), 0, fZHOTXStake);
+            }
             pblocktemplate->vTxFees[0] = -nFees;
         }
 
