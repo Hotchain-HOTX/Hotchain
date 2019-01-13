@@ -1865,6 +1865,9 @@ CAmount GetSeeSaw(const CAmount& blockValue, int nMasternodeCount, int nHeight)
     CAmount ret = 0;
     if (mNodeCoins == 0) {
         ret = 0;
+    }
+    else if (nHeight < Params().LAST_POW_BLOCK()) {
+        ret = 0;
     } else if (nHeight <= 325000) {
         if (mNodeCoins <= (nMoneySupply * .05) && mNodeCoins > 0) {
             ret = blockValue * .85;
@@ -2079,8 +2082,8 @@ CAmount GetSeeSaw(const CAmount& blockValue, int nMasternodeCount, int nHeight)
 
 int64_t GetMasternodePayment(int nHeight, int64_t blockValue, int nMasternodeCount, bool isZHOTXStake)
 {
-    if (nHeight <= 200)
-        return 1;
+    if (nHeight <= Params().LAST_POW_BLOCK())
+        return 0;
     return blockValue * 0.85;
 }
 
