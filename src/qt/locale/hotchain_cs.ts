@@ -62,12 +62,12 @@
         <translation>Adresy pro přijetí peněz</translation>
     </message>
     <message>
-        <source>These are your HOTCHAIN addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Toto jsou Vaše HOTCHAIN adresy pro poslání platby. Vždy si překontrolujte množství peněz a cílovou adresu než platbu odešlete.</translation>
+        <source>These are your Hotchain addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Toto jsou Vaše Hotchain adresy pro poslání platby. Vždy si překontrolujte množství peněz a cílovou adresu než platbu odešlete.</translation>
     </message>
     <message>
-        <source>These are your HOTCHAIN addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Toto jsou Vaše HOTCHAIN adresy pro přijetí plateb. Je doporučeno použít novou adresu pro každou novou transakci.</translation>
+        <source>These are your Hotchain addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Toto jsou Vaše Hotchain adresy pro přijetí plateb. Je doporučeno použít novou adresu pro každou novou transakci.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -172,16 +172,16 @@
         <translation>Potvrdit zašifrování peněženky</translation>
     </message>
     <message>
-        <source>HOTCHAIN will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your HOTCHAINs from being stolen by malware infecting your computer.</source>
-        <translation>HOTCHAIN se teď zavře pro dokončení šifrovacího procesu. Prosím, vemte na vědomí, že zašifrování Vaší peněženky plně neochrání Vaše HOTCHAINy před krádží, pokud je Váš počítač infikován malwarem.</translation>
+        <source>Hotchain will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your HOTXs from being stolen by malware infecting your computer.</source>
+        <translation>Hotchain se teď zavře pro dokončení šifrovacího procesu. Prosím, vemte na vědomí, že zašifrování Vaší peněženky plně neochrání Vaše HOTXy před krádží, pokud je Váš počítač infikován malwarem.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Opravdu chcete zašifrovat Vaši peněženku?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR HOTCHAIN&lt;/b&gt;!</source>
-        <translation>Varování: Pokud zašifrujete svou peněženku a ztratíte frázové heslo, tak &lt;b&gt;ZTRATÍTE VŠECHNY VAŠE HOTCHAINy&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR HOTX&lt;/b&gt;!</source>
+        <translation>Varování: Pokud zašifrujete svou peněženku a ztratíte frázové heslo, tak &lt;b&gt;ZTRATÍTE VŠECHNY VAŠE HOTXy&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -605,8 +605,8 @@
         <translation>Hotchain Wallet</translation>
     </message>
     <message>
-        <source>Send coins to a HOTCHAIN address</source>
-        <translation>Odeslat platbuna HOTCHAIN adresu</translation>
+        <source>Send coins to a Hotchain address</source>
+        <translation>Odeslat platbuna Hotchain adresu</translation>
     </message>
     <message>
         <source>Request payments (generates QR codes and hotchain: URIs)</source>
@@ -633,16 +633,16 @@
         <translation>Zobraz informace o Hotchain Wallet</translation>
     </message>
     <message>
-        <source>Modify configuration options for HOTCHAIN</source>
-        <translation>Upravit možnosti konfigurace pro HOTCHAIN</translation>
+        <source>Modify configuration options for Hotchain</source>
+        <translation>Upravit možnosti konfigurace pro Hotchain</translation>
     </message>
     <message>
-        <source>Sign messages with your HOTCHAIN addresses to prove you own them</source>
-        <translation>Podepsat zprávy Vaší HOTCHAIN adresou pro prokázaní, že jste jejich vlastníkem</translation>
+        <source>Sign messages with your Hotchain addresses to prove you own them</source>
+        <translation>Podepsat zprávy Vaší Hotchain adresou pro prokázaní, že jste jejich vlastníkem</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified HOTCHAIN addresses</source>
-        <translation>Ověřit zprávy k zajištění, že bylypodepsány vybranými HOTCHAIN adresami</translation>
+        <source>Verify messages to ensure they were signed with specified Hotchain addresses</source>
+        <translation>Ověřit zprávy k zajištění, že bylypodepsány vybranými Hotchain adresami</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -673,8 +673,8 @@
         <translation>Otevřít Masternodový konfigurační soubor</translation>
     </message>
     <message>
-        <source>Open a HOTCHAIN: URI or payment request</source>
-        <translation>Otevřít HOTCHAIN: URI nebo platební žádost</translation>
+        <source>Open a Hotchain: URI or payment request</source>
+        <translation>Otevřít Hotchain: URI nebo platební žádost</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -685,8 +685,8 @@
         <translation>Okno blokového průzkumníka</translation>
     </message>
     <message>
-        <source>Show the Hotchain Wallet help message to get a list with possible HOTCHAIN command-line options</source>
-        <translation>Zobrazit Hotchain Wallet pomocnou zpráv pro získání seznamu možných parametrů HOTCHAIN pro příkazy do příkazové řádky</translation>
+        <source>Show the Hotchain Wallet help message to get a list with possible Hotchain command-line options</source>
+        <translation>Zobrazit Hotchain Wallet pomocnou zpráv pro získání seznamu možných parametrů Hotchain pro příkazy do příkazové řádky</translation>
     </message>
     <message>
         <source>Hotchain Wallet client</source>
@@ -1081,8 +1081,8 @@ MultiSend: %1</translation>
         <translation>Upravit adresu k odeslání platby</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid HOTCHAIN address.</source>
-        <translation>Zadaná adresa "%1" není validní HOTCHAIN adresa.</translation>
+        <source>The entered address "%1" is not a valid Hotchain address.</source>
+        <translation>Zadaná adresa "%1" není validní Hotchain adresa.</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -1174,8 +1174,8 @@ MultiSend: %1</translation>
         <translation>Při prvním spuštění programu si můžete vybrat, kam bude Hotchain Wallet ukládat svá data.</translation>
     </message>
     <message>
-        <source>Hotchain Wallet will download and store a copy of the HOTCHAIN block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>Hotchain Wallet stáhne a uloží kopii HOTCHAIN blockchainu. Nejméně %1GB dat bude do této složky uloženo a v průběhu času bude ukládat další data. Peněženka bude v této složce uložena také.</translation>
+        <source>Hotchain Wallet will download and store a copy of the Hotchain block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>Hotchain Wallet stáhne a uloží kopii Hotchain blockchainu. Nejméně %1GB dat bude do této složky uloženo a v průběhu času bude ukládat další data. Peněženka bude v této složce uložena také.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -1468,24 +1468,24 @@ Prosím zkontrolujte adresu a zkuste to znovu.</translation>
         <translation>Vyberte úrpvěň ochrany soukromí</translation>
     </message>
     <message>
-        <source>Use 2 separate masternodes to mix funds up to 10000 HOTCHAIN</source>
-        <translation>Použí 2 oddělené masternody k promíchání prostředků až do 10000 HOTCHAIN</translation>
+        <source>Use 2 separate masternodes to mix funds up to 10000 HOTX</source>
+        <translation>Použí 2 oddělené masternody k promíchání prostředků až do 10000 HOTX</translation>
     </message>
     <message>
         <source>Use 16 separate masternodes</source>
         <translation>Použít 16 oddělených masternodů</translation>
     </message>
     <message>
-        <source>This option is the quickest and will cost about ~0.025 HOTCHAIN to anonymize 10000 HOTCHAIN</source>
-        <translation>Tato možnost je nejrychleší a bude stát zhruba ~0.025 HOTCHAIN pro anonymizaci 10000 HOTCHAIN</translation>
+        <source>This option is the quickest and will cost about ~0.025 HOTX to anonymize 10000 HOTX</source>
+        <translation>Tato možnost je nejrychleší a bude stát zhruba ~0.025 HOTX pro anonymizaci 10000 HOTX</translation>
     </message>
     <message>
         <source>This is the slowest and most secure option. Using maximum anonymity will cost</source>
         <translation>Toto je nejpomalejší a nejvíce bezpečná volba. Použití maximalní anonymity bude stát</translation>
     </message>
     <message>
-        <source>0.1 HOTCHAIN per 10000 HOTCHAIN you anonymize.</source>
-        <translation>0.1 HOTCHAIN za 10000 HOTCHAIN anonymizujete.</translation>
+        <source>0.1 HOTX per 10000 HOTX you anonymize.</source>
+        <translation>0.1 HOTX za 10000 HOTX anonymizujete.</translation>
     </message>
     <message>
         <source>Obfuscation Configuration</source>
@@ -1550,12 +1550,12 @@ Prosím zkontrolujte adresu a zkuste to znovu.</translation>
         <translation>Expert</translation>
     </message>
     <message>
-        <source>Automatically start HOTCHAIN after logging in to the system.</source>
-        <translation>Automaticky spustit HOTCHAIN po přihlášení do systému</translation>
+        <source>Automatically start Hotchain after logging in to the system.</source>
+        <translation>Automaticky spustit Hotchain po přihlášení do systému</translation>
     </message>
     <message>
-        <source>&amp;Start HOTCHAIN on system login</source>
-        <translation>&amp;Spusti HOTCHAIN při přihlášení do systému</translation>
+        <source>&amp;Start Hotchain on system login</source>
+        <translation>&amp;Spusti Hotchain při přihlášení do systému</translation>
     </message>
     <message>
         <source>Show Masternodes Tab</source>
@@ -1578,8 +1578,8 @@ Prosím zkontrolujte adresu a zkuste to znovu.</translation>
         <translation>&amp;Port</translation>
     </message>
     <message>
-        <source>Port of the proxy (e.g. 9069)</source>
-        <translation>Port proxy (například 9069)</translation>
+        <source>Port of the proxy (e.g. 9050)</source>
+        <translation>Port proxy (například 9050)</translation>
     </message>
     <message>
         <source>&amp;Window</source>
@@ -2087,8 +2087,8 @@ Prosím zkontrolujte adresu a zkuste to znovu.</translation>
         <translation>Změna:</translation>
     </message>
     <message>
-        <source>0 HOTCHAIN</source>
-        <translation>0 HOTCHAIN</translation>
+        <source>0 HOTX</source>
+        <translation>0 HOTX</translation>
     </message>
     <message>
         <source>Transaction Fee:</source>
@@ -2212,8 +2212,8 @@ Prosím zkontrolujte adresu a zkuste to znovu.</translation>
 <context>
     <name>SignVerifyMessageDialog</name>
     <message>
-        <source>The HOTCHAIN address to sign the message with</source>
-        <translation>HOTCHAIN adresa pro podepsání zprávy</translation>
+        <source>The Hotchain address to sign the message with</source>
+        <translation>Hotchain adresa pro podepsání zprávy</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2240,16 +2240,16 @@ Prosím zkontrolujte adresu a zkuste to znovu.</translation>
         <translation>Kopírovat aktuální podpis do systémové mezipaměti</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this HOTCHAIN address</source>
-        <translation>Podepsat zprávu k prokázání, že vlastníte tuto HOTCHAIN adresu</translation>
+        <source>Sign the message to prove you own this Hotchain address</source>
+        <translation>Podepsat zprávu k prokázání, že vlastníte tuto Hotchain adresu</translation>
     </message>
     <message>
-        <source>The HOTCHAIN address the message was signed with</source>
-        <translation>HOTCHAIN adresa zprávy byla podpsána</translation>
+        <source>The Hotchain address the message was signed with</source>
+        <translation>Hotchain adresa zprávy byla podpsána</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified HOTCHAIN address</source>
-        <translation>Verifikujte zprávu pro ujištění, že byla podepsána zmíněnou HOTCHAIN adresou</translation>
+        <source>Verify the message to ensure it was signed with the specified Hotchain address</source>
+        <translation>Verifikujte zprávu pro ujištění, že byla podepsána zmíněnou Hotchain adresou</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>

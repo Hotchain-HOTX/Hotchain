@@ -1,6 +1,6 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
 // Copyright (c) 2009-2014 The Bitcoin developers
-// Copyright (c) 2015-2017 The PIVX Developers 
+// Copyright (c) 2015-2017 The Hotchain developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -16,10 +16,10 @@
 uint256 CBlockHeader::GetHash() const
 {
 	
-	if(nVersion < 4)
+	//if(nVersion < 4)
         return XEVAN(BEGIN(nVersion), END(nNonce));
 	
-    return HashQuark(BEGIN(nVersion), END(nAccumulatorCheckpoint));
+    //return HashQuark(BEGIN(nVersion), END(nAccumulatorCheckpoint));
 }
 
 uint256 CBlock::BuildMerkleTree(bool* fMutated) const
@@ -119,8 +119,9 @@ uint256 CBlock::CheckMerkleBranch(uint256 hash, const std::vector<uint256>& vMer
 std::string CBlock::ToString() const
 {
     std::stringstream s;
-    s << strprintf("CBlock(hash=%s, ver=%d, hashPrevBlock=%s, hashMerkleRoot=%s, nTime=%u, nBits=%08x, nNonce=%u, vtx=%u)\n",
+    s << strprintf("CBlock(hash=%s  -  %s, ver=%d, hashPrevBlock=%s, hashMerkleRoot=%s, nTime=%u, nBits=%08x, nNonce=%u, vtx=%u)\n",
         GetHash().ToString(),
+		GetHash().ToStringReverseEndian(),
         nVersion,
         hashPrevBlock.ToString(),
         hashMerkleRoot.ToString(),

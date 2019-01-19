@@ -1,7 +1,7 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
-// Copyright (c) 2015-2018 The PIVX Developers 
+// Copyright (c) 2015-2018 The Hotchain developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -24,7 +24,6 @@
 #include <boost/date_time/posix_time/posix_time.hpp>
 #include <openssl/bio.h>
 #include <openssl/buffer.h>
-#include <openssl/crypto.h> // for OPENSSL_cleanse()
 #include <openssl/evp.h>
 
 
@@ -105,7 +104,7 @@ std::string to_internal(const std::string&);
 
 using namespace std;
 
-// HOTCHAIN only features
+// Hotchain only features
 // Masternode
 bool fMasterNode = false;
 string strMasterNodePrivKey = "";
@@ -120,7 +119,7 @@ int nZeromintPercentage = 10;
 int nPreferredDenom = 0;
 const int64_t AUTOMINT_DELAY = (60 * 5); // Wait at least 5 minutes until Automint starts
 
-int nAnonymizeHOTCHAINAmount = 1000;
+int nAnonymizeHotchainAmount = 1000;
 int nLiquidityProvider = 0;
 /** Spork enforcement enabled time */
 int64_t enforceMasternodePaymentsTime = 4085657524;
@@ -237,7 +236,7 @@ bool LogAcceptCategory(const char* category)
             const vector<string>& categories = mapMultiArgs["-debug"];
             ptrCategory.reset(new set<string>(categories.begin(), categories.end()));
             // thread_specific_ptr automatically deletes the set when the thread ends.
-            // "hotchain" is a composite category enabling all HOTCHAIN-related debug output
+            // "hotchain" is a composite category enabling all Hotchain-related debug output
             if (ptrCategory->count(string("hotchain"))) {
                 ptrCategory->insert(string("obfuscation"));
                 ptrCategory->insert(string("swiftx"));
@@ -403,7 +402,7 @@ static std::string FormatException(std::exception* pex, const char* pszThread)
     char pszModule[MAX_PATH] = "";
     GetModuleFileNameA(NULL, pszModule, sizeof(pszModule));
 #else
-    const char* pszModule = "hotchaincore";
+    const char* pszModule = "hotchain";
 #endif
     if (pex)
         return strprintf(
@@ -424,13 +423,13 @@ void PrintExceptionContinue(std::exception* pex, const char* pszThread)
 boost::filesystem::path GetDefaultDataDir()
 {
     namespace fs = boost::filesystem;
-// Windows < Vista: C:\Documents and Settings\Username\Application Data\HOTCHAINCORE
-// Windows >= Vista: C:\Users\Username\AppData\Roaming\HOTCHAINCORE
-// Mac: ~/Library/Application Support/HOTCHAINCORE
-// Unix: ~/.hotchaincore
+// Windows < Vista: C:\Documents and Settings\Username\Application Data\Hotchain
+// Windows >= Vista: C:\Users\Username\AppData\Roaming\Hotchain
+// Mac: ~/Library/Application Support/Hotchain
+// Unix: ~/.hotchain
 #ifdef WIN32
     // Windows
-    return GetSpecialFolderPath(CSIDL_APPDATA) / "HOTCHAINCORE";
+    return GetSpecialFolderPath(CSIDL_APPDATA) / "Hotchain";
 #else
     fs::path pathRet;
     char* pszHome = getenv("HOME");
@@ -442,10 +441,10 @@ boost::filesystem::path GetDefaultDataDir()
     // Mac
     pathRet /= "Library/Application Support";
     TryCreateDirectory(pathRet);
-    return pathRet / "HOTCHAINCORE";
+    return pathRet / "Hotchain";
 #else
     // Unix
-    return pathRet / ".hotchaincore";
+    return pathRet / ".hotchain";
 #endif
 #endif
 }

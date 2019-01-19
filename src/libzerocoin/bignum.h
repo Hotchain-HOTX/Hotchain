@@ -1,18 +1,18 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
 // Copyright (c) 2009-2012 The Bitcoin developers
-// Copyright (c) 2017-2018 The PIVX Developers
-// Copyright (c) 2018 Cryptopie 
+// Copyright (c) 2017-2018 The Hotchain developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 #ifndef BITCOIN_BIGNUM_H
 #define BITCOIN_BIGNUM_H
 
 #if defined HAVE_CONFIG_H
-#include "hotchain-config.h"
+#include "config/hotchain-config.h"
 #endif
 
 #include <stdexcept>
 #include <vector>
+#include <limits.h>
 #if defined(USE_NUM_GMP)
 #include <gmp.h>
 #endif
@@ -95,19 +95,17 @@ public:
     }
 
     //CBigNum(char n) is not portable.  Use 'signed char' or 'unsigned char'.
-    CBigNum(signed char n)      { bn = BN_new(); if (n >= 0) setulong(n); else setint64(n); }
-    CBigNum(short n)            { bn = BN_new(); if (n >= 0) setulong(n); else setint64(n); }
-    CBigNum(int n)              { bn = BN_new(); if (n >= 0) setulong(n); else setint64(n); }
-    CBigNum(long n)             { bn = BN_new(); if (n >= 0) setulong(n); else setint64(n); }
-#ifdef __APPLE__
-    CBigNum(int64_t n)            { bn = BN_new(); setint64(n); }
-#endif
-    CBigNum(unsigned char n)    { bn = BN_new(); setulong(n); }
-    CBigNum(unsigned short n)   { bn = BN_new(); setulong(n); }
-    CBigNum(unsigned int n)     { bn = BN_new(); setulong(n); }
-    CBigNum(unsigned long n)    { bn = BN_new(); setulong(n); }
-  //  CBigNum(uint64_t n)           { bn = BN_new(); setuint64(n); }
-    explicit CBigNum(uint256 n) { bn = BN_new(); setuint256(n); }
+    CBigNum(signed char n)        { bn = BN_new(); if (n >= 0) setulong(n); else setint64(n); }
+    CBigNum(short n)              { bn = BN_new(); if (n >= 0) setulong(n); else setint64(n); }
+    CBigNum(int n)                { bn = BN_new(); if (n >= 0) setulong(n); else setint64(n); }
+    CBigNum(long n)               { bn = BN_new(); if (n >= 0) setulong(n); else setint64(n); }
+    CBigNum(long long n)          { bn = BN_new(); setint64(n); }
+    CBigNum(unsigned char n)      { bn = BN_new(); setulong(n); }
+    CBigNum(unsigned short n)     { bn = BN_new(); setulong(n); }
+    CBigNum(unsigned int n)       { bn = BN_new(); setulong(n); }
+    CBigNum(unsigned long n)      { bn = BN_new(); setulong(n); }
+    CBigNum(unsigned long long n) { bn = BN_new(); setuint64(n); }
+    explicit CBigNum(uint256 n)   { bn = BN_new(); setuint256(n); }
 
     explicit CBigNum(const std::vector<unsigned char>& vch)
     {
@@ -182,7 +180,7 @@ public:
 
         if (sn < (int64_t)0)
         {
-            // Since the minimum signed integer cannot be represented as positive so long as its type is signed, 
+            // Since the minimum signed integer cannot be represented as positive so long as its type is signed,
             // and it's not well-defined what happens if you make it unsigned before negating it,
             // we instead increment the negative integer by 1, convert it, then increment the (now positive) unsigned integer by 1 to compensate
             n = -(sn + 1);

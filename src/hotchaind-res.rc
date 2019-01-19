@@ -16,8 +16,8 @@ BEGIN
     BEGIN
         BLOCK "040904E4" // U.S. English - multilingual (hex)
         BEGIN
-            VALUE "CompanyName",        "HOTCHAIN"
-            VALUE "FileDescription",    "hotchaind (OSS daemon/client for HOTCHAIN)"
+            VALUE "CompanyName",        "Hotchain"
+            VALUE "FileDescription",    "hotchaind (OSS daemon/client for Hotchain)"
             VALUE "FileVersion",        VER_FILEVERSION_STR
             VALUE "InternalName",       "hotchaind"
             VALUE "LegalCopyright",     COPYRIGHT_STR

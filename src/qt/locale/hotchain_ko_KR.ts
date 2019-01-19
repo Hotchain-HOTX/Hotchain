@@ -62,12 +62,12 @@
         <translation>받을 주소</translation>
     </message>
     <message>
-        <source>These are your HOTCHAIN addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>이 주소들은 송금할 HOTCHAIN 주소입니다. 송금하기 전 항상 금액과 주소를 확인해주세요.</translation>
+        <source>These are your Hotchain addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>이 주소들은 송금할 Hotchain 주소입니다. 송금하기 전 항상 금액과 주소를 확인해주세요.</translation>
     </message>
     <message>
-        <source>These are your HOTCHAIN addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>이 주소들은 입금 받을 HOTCHAIN 주소입니다. 매 거래마다 새로운 입금 주소를 사용하는 것이 좋습니다.</translation>
+        <source>These are your Hotchain addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>이 주소들은 입금 받을 Hotchain 주소입니다. 매 거래마다 새로운 입금 주소를 사용하는 것이 좋습니다.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -176,16 +176,16 @@
         <translation>지갑 암호화 확인</translation>
     </message>
     <message>
-        <source>HOTCHAIN will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your HOTCHAINs from being stolen by malware infecting your computer.</source>
-        <translation>HOTCHAIN는 이제 암호화 프로세스를 마치기 위해 닫힐것입니다. 지갑을 암호화하더라도 맬웨어로 인한 HOTCHAINs 의 도난당하는 것을 완벽하게 보호 할 수는 없습니다.</translation>
+        <source>Hotchain will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your HOTXs from being stolen by malware infecting your computer.</source>
+        <translation>HOTXX는 이제 암호화 프로세스를 마치기 위해 닫힐것입니다. 지갑을 암호화하더라도 맬웨어로 인한 HOTXs 의 도난당하는 것을 완벽하게 보호 할 수는 없습니다.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>지갑을 암호화 하시겠습니까?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR HOTCHAIN&lt;/b&gt;!</source>
-        <translation>경고: 지갑 암호화 후 암호를 분실하게 되면 &lt;b&gt;모든 HOTCHAIN를 잃게 됩니다&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR HOTX&lt;/b&gt;!</source>
+        <translation>경고: 지갑 암호화 후 암호를 분실하게 되면 &lt;b&gt;모든 HOTX를 잃게 됩니다&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -254,12 +254,12 @@
         <translation>주소:</translation>
     </message>
     <message>
-        <source>Enter a HOTCHAIN Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
-        <translation>BIP 38 알고리즘으로 암호화할 HOTCHAIN 지갑 주소를 입력. 중간박스에 암호구절 입력. 암호화된 개인키를 계산하시려면 암호화 클릭</translation>
+        <source>Enter a Hotchain Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
+        <translation>BIP 38 알고리즘으로 암호화할 Hotchain 지갑 주소를 입력. 중간박스에 암호구절 입력. 암호화된 개인키를 계산하시려면 암호화 클릭</translation>
     </message>
     <message>
-        <source>The HOTCHAIN address to encrypt</source>
-        <translation>암호화할 HOTCHAIN 주소</translation>
+        <source>The Hotchain address to encrypt</source>
+        <translation>암호화할 Hotchain 주소</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -290,8 +290,8 @@
         <translation>현재 서명을 시스템 클립 보드에 복사</translation>
     </message>
     <message>
-        <source>Encrypt the private key for this HOTCHAIN address</source>
-        <translation>이 HOTCHAIN 주소의 개인키 암호화</translation>
+        <source>Encrypt the private key for this Hotchain address</source>
+        <translation>이 Hotchain 주소의 개인키 암호화</translation>
     </message>
     <message>
         <source>Reset all fields</source>
@@ -649,8 +649,8 @@
         <translation>Hotchain Wallet</translation>
     </message>
     <message>
-        <source>Send coins to a HOTCHAIN address</source>
-        <translation>HOTCHAIN 주소로 입금하기</translation>
+        <source>Send coins to a Hotchain address</source>
+        <translation>Hotchain 주소로 입금하기</translation>
     </message>
     <message>
         <source>Request payments (generates QR codes and hotchain: URIs)</source>
@@ -677,16 +677,16 @@
         <translation>Hotchain Wallet에 대한 정보 표시</translation>
     </message>
     <message>
-        <source>Modify configuration options for HOTCHAIN</source>
-        <translation>HOTCHAIN에 대한 구성 옵션 수정</translation>
+        <source>Modify configuration options for Hotchain</source>
+        <translation>HOTXX에 대한 구성 옵션 수정</translation>
     </message>
     <message>
-        <source>Sign messages with your HOTCHAIN addresses to prove you own them</source>
-        <translation>HOTCHAIN 주소로 메시지에 서명하여 소유하고 있음을 증명하십시오.</translation>
+        <source>Sign messages with your Hotchain addresses to prove you own them</source>
+        <translation>Hotchain 주소로 메시지에 서명하여 소유하고 있음을 증명하십시오.</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified HOTCHAIN addresses</source>
-        <translation>메시지가 지정된 HOTCHAIN 주소로 서명되었는지 확인합니다.</translation>
+        <source>Verify messages to ensure they were signed with specified Hotchain addresses</source>
+        <translation>메시지가 지정된 Hotchain 주소로 서명되었는지 확인합니다.</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -717,8 +717,8 @@
         <translation>마스터노드 구성 파일 열기</translation>
     </message>
     <message>
-        <source>Open a HOTCHAIN: URI or payment request</source>
-        <translation>HOTCHAIN: URI 또는 ​​결제 요청 열기</translation>
+        <source>Open a Hotchain: URI or payment request</source>
+        <translation>Hotchain: URI 또는 ​​결제 요청 열기</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -729,16 +729,16 @@
         <translation>블록 탐색 창</translation>
     </message>
     <message>
-        <source>Show the Hotchain Wallet help message to get a list with possible HOTCHAIN command-line options</source>
-        <translation>Hotchain Wallet 도움말 메세지를 표시하여 사용 가능한 HOTCHAIN 명령행 옵션 목록 표시</translation>
+        <source>Show the Hotchain Wallet help message to get a list with possible Hotchain command-line options</source>
+        <translation>Hotchain Wallet 도움말 메세지를 표시하여 사용 가능한 Hotchain 명령행 옵션 목록 표시</translation>
     </message>
     <message>
         <source>Hotchain Wallet client</source>
         <translation>Hotchain Wallet 클라이언트</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to HOTCHAIN network</source>
-        <translation><numerusform>%n 개의 HOTCHAIN 네트웍에 연결됨</numerusform></translation>
+        <source>%n active connection(s) to Hotchain network</source>
+        <translation><numerusform>%n 개의 Hotchain 네트웍에 연결됨</numerusform></translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -1130,8 +1130,8 @@ Address: %4
         <translation>받는 사람이 %1 보다 작은 금액을 받으면 라벨이 빨간색으로 변경됩니다.</translation>
     </message>
     <message>
-        <source>Can vary +/- %1 hotx per input.</source>
-        <translation>Can vary +/- %1 hotx per input.</translation>
+        <source>Can vary +/- %1 uhotx per input.</source>
+        <translation>Can vary +/- %1 uhotx per input.</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -1185,8 +1185,8 @@ Address: %4
         <translation>보내는 주소 수정</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid HOTCHAIN address.</source>
-        <translation>입력된 주소 "%1"는 올바른 HOTCHAIN 주소가 아닙니다.</translation>
+        <source>The entered address "%1" is not a valid Hotchain address.</source>
+        <translation>입력된 주소 "%1"는 올바른 Hotchain 주소가 아닙니다.</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -1294,8 +1294,8 @@ Address: %4
         <translation>이 프로그램이 처음 실행되었으므로 Hotchain Wallet가 데이터를 저장할 위치를 선택할 수 있습니다.</translation>
     </message>
     <message>
-        <source>Hotchain Wallet will download and store a copy of the HOTCHAIN block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>Hotchain Wallet는 HOTCHAIN 블록체인을 다운로드하여 저장합니다. 최소 %1GB의 데이터가 디렉토리에 저장되며 시간이 지날수록 증가합니다. 또한 지갑도 해당 디렉토리에 저장됩니다.</translation>
+        <source>Hotchain Wallet will download and store a copy of the Hotchain block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>Hotchain Wallet는 Hotchain 블록체인을 다운로드하여 저장합니다. 최소 %1GB의 데이터가 디렉토리에 저장되며 시간이 지날수록 증가합니다. 또한 지갑도 해당 디렉토리에 저장됩니다.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -1448,12 +1448,12 @@ Address: %4
         <translation>보낼 주소 입력</translation>
     </message>
     <message>
-        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other HOTCHAIN addresses after it matures.
-To Add: enter percentage to give and HOTCHAIN address to add to the MultiSend vector.
+        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other Hotchain addresses after it matures.
+To Add: enter percentage to give and Hotchain address to add to the MultiSend vector.
 To Delete: Enter address to delete and press delete.
 MultiSend will not be activated unless you have clicked Activate</source>
-        <translation>다중전송을 사용하면 성취 한 뒤 다른 HOTCHAIN 주소 목록에 최대 100% 스테이크 또는 마스터노드 보상을 자동으로 보낼 수 있습니다.
-추가하려면 : 부여 할 백분율과 다중전송 벡터에 추가 할 HOTCHAIN 주소를 입력하십시오.
+        <translation>다중전송을 사용하면 성취 한 뒤 다른 Hotchain 주소 목록에 최대 100% 스테이크 또는 마스터노드 보상을 자동으로 보낼 수 있습니다.
+추가하려면 : 부여 할 백분율과 다중전송 벡터에 추가 할 Hotchain 주소를 입력하십시오.
 삭제하려면 삭제할 주소를 입력하고 삭제를 누릅니다.
 활성화를 클릭하지 않으면 다중전송이 활성화되지 않습니다.</translation>
     </message>
@@ -1681,8 +1681,8 @@ Please be patient after clicking import.</source>
         <translation>주소 / 금액:</translation>
     </message>
     <message>
-        <source>Add destinations to send HOTCHAIN to</source>
-        <translation>HOTCHAIN를 보낼 목적지 추가</translation>
+        <source>Add destinations to send HOTX to</source>
+        <translation>HOTX를 보낼 목적지 추가</translation>
     </message>
     <message>
         <source>Add &amp;Destination</source>
@@ -1780,48 +1780,48 @@ Please be patient after clicking import.</source>
         <translation>익명화 레벨을 선택해주세요.</translation>
     </message>
     <message>
-        <source>Use 2 separate masternodes to mix funds up to 10000 HOTCHAIN</source>
-        <translation>2개의 개별 마스터노드를 이용하여 최대 10000 HOTCHAIN 를 섞을 수 있습니다.</translation>
+        <source>Use 2 separate masternodes to mix funds up to 10000 HOTX</source>
+        <translation>2개의 개별 마스터노드를 이용하여 최대 10000 HOTX 를 섞을 수 있습니다.</translation>
     </message>
     <message>
-        <source>Use 8 separate masternodes to mix funds up to 10000 HOTCHAIN</source>
-        <translation>8개의 개별 마스터노드를 이용하여 최대 10000 HOTCHAIN 를 섞을 수 있습니다.</translation>
+        <source>Use 8 separate masternodes to mix funds up to 10000 HOTX</source>
+        <translation>8개의 개별 마스터노드를 이용하여 최대 10000 HOTX 를 섞을 수 있습니다.</translation>
     </message>
     <message>
         <source>Use 16 separate masternodes</source>
         <translation>16개의 개별 마스터노드를 사용</translation>
     </message>
     <message>
-        <source>This option is the quickest and will cost about ~0.025 HOTCHAIN to anonymize 10000 HOTCHAIN</source>
-        <translation>이 옵션은 가장 빠르게 전송되며 10000 HOTCHAIN 익명화에 약 ~0.025 HOTCHAIN의 비용이 들어갑니다.</translation>
+        <source>This option is the quickest and will cost about ~0.025 HOTX to anonymize 10000 HOTX</source>
+        <translation>이 옵션은 가장 빠르게 전송되며 10000 HOTX 익명화에 약 ~0.025 HOTX의 비용이 들어갑니다.</translation>
     </message>
     <message>
-        <source>This option is moderately fast and will cost about 0.05 HOTCHAIN to anonymize 10000 HOTCHAIN</source>
-        <translation>이 옵션은 중간 정도의 속도로 전송되며 10000 HOTCHAIN 익명화에 약 0.05 HOTCHAIN의 비용이 들어갑니다.</translation>
+        <source>This option is moderately fast and will cost about 0.05 HOTX to anonymize 10000 HOTX</source>
+        <translation>이 옵션은 중간 정도의 속도로 전송되며 10000 HOTX 익명화에 약 0.05 HOTX의 비용이 들어갑니다.</translation>
     </message>
     <message>
         <source>This is the slowest and most secure option. Using maximum anonymity will cost</source>
         <translation>이것은 가장 느리고 안전한 옵션입니다. 최고 익명성을 사용하면 비용이 발생합니다.</translation>
     </message>
     <message>
-        <source>0.1 HOTCHAIN per 10000 HOTCHAIN you anonymize.</source>
-        <translation>10000 HOTCHAIN 익명화에 0.1 HOTCHAIN 가 듭니다.</translation>
+        <source>0.1 HOTX per 10000 HOTX you anonymize.</source>
+        <translation>10000 HOTX 익명화에 0.1 HOTX 가 듭니다.</translation>
     </message>
     <message>
         <source>Obfuscation Configuration</source>
         <translation>난독화 구성</translation>
     </message>
     <message>
-        <source>Obfuscation was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening HOTCHAIN's configuration screen.</source>
-        <translation>난독화가 성공적으로 높게 설정되었습니다.(%1 및 2 rounds) HOTCHAIN의 설정 화면을 열어 언제든지 다시 변경할 수 있습니다.</translation>
+        <source>Obfuscation was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening Hotchain's configuration screen.</source>
+        <translation>난독화가 성공적으로 높게 설정되었습니다.(%1 및 2 rounds) HOTXX의 설정 화면을 열어 언제든지 다시 변경할 수 있습니다.</translation>
     </message>
     <message>
-        <source>Obfuscation was successfully set to high (%1 and 8 rounds). You can change this at any time by opening HOTCHAIN's configuration screen.</source>
-        <translation>난독화가 성공적으로 높게 설정되었습니다.(%1 및 8 rounds) HOTCHAIN의 설정 화면을 열어 언제든지 다시 변경할 수 있습니다.</translation>
+        <source>Obfuscation was successfully set to high (%1 and 8 rounds). You can change this at any time by opening Hotchain's configuration screen.</source>
+        <translation>난독화가 성공적으로 높게 설정되었습니다.(%1 및 8 rounds) HOTXX의 설정 화면을 열어 언제든지 다시 변경할 수 있습니다.</translation>
     </message>
     <message>
-        <source>Obfuscation was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening HOTCHAIN's configuration screen.</source>
-        <translation>난독화가 성공적으로 높게 설정되었습니다.(%1 및 16 rounds) HOTCHAIN의 설정 화면을 열어 언제든지 다시 변경할 수 있습니다.</translation>
+        <source>Obfuscation was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening Hotchain's configuration screen.</source>
+        <translation>난독화가 성공적으로 높게 설정되었습니다.(%1 및 16 rounds) HOTXX의 설정 화면을 열어 언제든지 다시 변경할 수 있습니다.</translation>
     </message>
 </context>
 <context>
@@ -1882,8 +1882,8 @@ Please be patient after clicking import.</source>
         <translation>확인되지 않은 변경사항을 사용하지 않도록 설정하면 해당 트랜잭션에 하나 이상의 컨펌이 진행되야&lt;br/&gt;트랜잭션에 변경사항을 적용할 수 있습니다.&lt;br/&gt;또한 이것은 잔액 계산 방식에도 영향을 줍니다.</translation>
     </message>
     <message>
-        <source>Automatically open the HOTCHAIN client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>라우터에서 HOTCHAIN 클라이언트 포트를 자동으로 엽니다. 이 기능은 라우터가 UPnP를 지원하고 활성화 된 경우에만 사용할 수 있습니다.</translation>
+        <source>Automatically open the Hotchain client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>라우터에서 Hotchain 클라이언트 포트를 자동으로 엽니다. 이 기능은 라우터가 UPnP를 지원하고 활성화 된 경우에만 사용할 수 있습니다.</translation>
     </message>
     <message>
         <source>Accept connections from outside</source>
@@ -1902,12 +1902,12 @@ Please be patient after clicking import.</source>
         <translation>전문적</translation>
     </message>
     <message>
-        <source>Automatically start HOTCHAIN after logging in to the system.</source>
-        <translation>시스템 로그인 후 HOTCHAIN을 자동으로 시작합니다.</translation>
+        <source>Automatically start Hotchain after logging in to the system.</source>
+        <translation>시스템 로그인 후 HOTXX을 자동으로 시작합니다.</translation>
     </message>
     <message>
-        <source>&amp;Start HOTCHAIN on system login</source>
-        <translation>&amp;시스템 로그인시 HOTCHAIN 시작</translation>
+        <source>&amp;Start Hotchain on system login</source>
+        <translation>&amp;시스템 로그인시 Hotchain 시작</translation>
     </message>
     <message>
         <source>Whether to show coin control features or not.</source>
@@ -1934,8 +1934,8 @@ Please be patient after clicking import.</source>
         <translation>&amp;네트워크</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting HOTCHAIN.</source>
-        <translation>사용자 인터페이스 언어를 설정할 수 있습니다. 이 설정은 HOTCHAIN을 다시 시작한 후에 적용됩니다.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting Hotchain.</source>
+        <translation>사용자 인터페이스 언어를 설정할 수 있습니다. 이 설정은 HOTXX을 다시 시작한 후에 적용됩니다.</translation>
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
@@ -1948,24 +1948,24 @@ https://www.transifex.com/hotchain-project/hotchain-project-translations</transl
         <translation>&amp;UPnp를 사용하여 포트 매핑</translation>
     </message>
     <message>
-        <source>Enable automatic minting of HOTCHAIN units to zHOTX</source>
-        <translation>보상받은 HOTCHAIN를 zHOTX로 자동변환 활성화</translation>
+        <source>Enable automatic minting of HOTX units to zHOTX</source>
+        <translation>보상받은 HOTX를 zHOTX로 자동변환 활성화</translation>
     </message>
     <message>
         <source>Enable zHOTX Automint</source>
         <translation>zHOTX 자동생성 활성화</translation>
     </message>
     <message>
-        <source>Percentage of incoming HOTCHAIN which get automatically converted to zHOTX via Zerocoin Protocol (min: 10%)</source>
-        <translation>HOTCHAIN수신시 자동변환 zHOTX 비율 (최소값:10%)</translation>
+        <source>Percentage of incoming HOTX which get automatically converted to zHOTX via Zerocoin Protocol (min: 10%)</source>
+        <translation>HOTX수신시 자동변환 zHOTX 비율 (최소값:10%)</translation>
     </message>
     <message>
         <source>Percentage of autominted zHOTX</source>
         <translation>자동 변환되는 zHOTX 비율</translation>
     </message>
     <message>
-        <source>Wait with automatic conversion to Zerocoin until enough HOTCHAIN for this denomination is available</source>
-        <translation>이 디노미네이션의 HOTCHAIN가 충분해질 때까지 Zerocoin으로 자동전환은 보류됩니다.</translation>
+        <source>Wait with automatic conversion to Zerocoin until enough HOTX for this denomination is available</source>
+        <translation>이 디노미네이션의 HOTX가 충분해질 때까지 Zerocoin으로 자동전환은 보류됩니다.</translation>
     </message>
     <message>
         <source>Preferred Automint zHOTX Denomination</source>
@@ -1976,8 +1976,8 @@ https://www.transifex.com/hotchain-project/hotchain-project-translations</transl
         <translation>Stake split threshold:</translation>
     </message>
     <message>
-        <source>Connect to the HOTCHAIN network through a SOCKS5 proxy.</source>
-        <translation>SOCKS5 프록시를 통해 HOTCHAIN 네트워크에 연결해주세요.</translation>
+        <source>Connect to the Hotchain network through a SOCKS5 proxy.</source>
+        <translation>SOCKS5 프록시를 통해 Hotchain 네트워크에 연결해주세요.</translation>
     </message>
     <message>
         <source>Proxy &amp;IP:</source>
@@ -1992,8 +1992,8 @@ https://www.transifex.com/hotchain-project/hotchain-project-translations</transl
         <translation>&amp;포트:</translation>
     </message>
     <message>
-        <source>Port of the proxy (e.g. 9069)</source>
-        <translation>프록시 포트 (예: 9069)</translation>
+        <source>Port of the proxy (e.g. 9050)</source>
+        <translation>프록시 포트 (예: 9050)</translation>
     </message>
     <message>
         <source>&amp;Window</source>
@@ -2131,8 +2131,8 @@ https://www.transifex.com/hotchain-project/hotchain-project-translations</transl
         <translation>전체 잔액, (현재 전송이 불가능한 코인 포함)</translation>
     </message>
     <message>
-        <source>HOTCHAIN Balance</source>
-        <translation>HOTCHAIN 잔액</translation>
+        <source>HOTX Balance</source>
+        <translation>HOTX 잔액</translation>
     </message>
     <message>
         <source>Pending:</source>
@@ -2155,8 +2155,8 @@ https://www.transifex.com/hotchain-project/hotchain-project-translations</transl
         <translation>현재 보기전용 주소의 잠긴 잔액 </translation>
     </message>
     <message>
-        <source>Your current HOTCHAIN balance, unconfirmed and immature transactions included</source>
-        <translation>현재 HOTCHAIN 잔액, 미확정, 생성중인 코인 포함</translation>
+        <source>Your current Hotchain balance, unconfirmed and immature transactions included</source>
+        <translation>현재 Hotchain 잔액, 미확정, 생성중인 코인 포함</translation>
     </message>
     <message>
         <source>zHOTX Balance</source>
@@ -2175,8 +2175,8 @@ Immature: confirmed, but less than 1 mint of the same denomination after it was 
 미성숙 : 확인되었지만 발행 된 후 같은 종파 1 개 미만</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the HOTCHAIN network after a connection is established, but this process has not completed yet.</source>
-        <translation>표시된 정보가 오래되었을 수 있습니다. 연결이 완료되면 지갑이 HOTCHAIN 네트워크와 자동으로 동기화될 예정이지만, 아직 해당 프로세스가 완료되지 않았습니다.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Hotchain network after a connection is established, but this process has not completed yet.</source>
+        <translation>표시된 정보가 오래되었을 수 있습니다. 연결이 완료되면 지갑이 Hotchain 네트워크와 자동으로 동기화될 예정이지만, 아직 해당 프로세스가 완료되지 않았습니다.</translation>
     </message>
     <message>
         <source>OVERVIEW</source>
@@ -2219,8 +2219,8 @@ Immature: confirmed, but less than 1 mint of the same denomination after it was 
         <translation>출금 가능 액수:</translation>
     </message>
     <message>
-        <source>Locked HOTCHAIN or Masternode collaterals. These are excluded from zHOTX minting.</source>
-        <translation>잠금 HOTCHAIN 또는 Masternode collaterals. 이들은 zHOTX minting에서 제외됩니다.</translation>
+        <source>Locked HOTX or Masternode collaterals. These are excluded from zHOTX minting.</source>
+        <translation>잠금 HOTX 또는 Masternode collaterals. 이들은 zHOTX minting에서 제외됩니다.</translation>
     </message>
     <message>
         <source>Locked:</source>
@@ -2261,7 +2261,7 @@ If AutoMint is enabled this percentage will settle around the configured AutoMin
         <source>AutoMint is currently disabled.
 To enable AutoMint change 'enablezeromint=0' to 'enablezeromint=1' in hotchain.conf</source>
         <translation>자동 저장 기능이 현재 사용 중지되었습니다 .
-자동 변환을 사용하려면 pieotx.conf에서 'enablezeromint = 0'에서 'enablezeromint = 1'로 변경하십시오.</translation>
+자동 변환을 사용하려면 hotxotx.conf에서 'enablezeromint = 0'에서 'enablezeromint = 1'로 변경하십시오.</translation>
     </message>
 </context>
 <context>
@@ -2288,11 +2288,11 @@ To enable AutoMint change 'enablezeromint=0' to 'enablezeromint=1' in hotchain.c
     </message>
     <message>
         <source>Cannot start hotchain: click-to-pay handler</source>
-        <translation>HOTCHAIN을 시작할 수 없습니다: 결제하기 위한 클릭 처리</translation>
+        <translation>HOTXX을 시작할 수 없습니다: 결제하기 위한 클릭 처리</translation>
     </message>
     <message>
-        <source>URI cannot be parsed! This can be caused by an invalid HOTCHAIN address or malformed URI parameters.</source>
-        <translation>URI를 분석할 수 없습니다! 이는 잘못된 HOTCHAIN 주소 또는 URI 매개변수 손상으로 인해 발생할 수 있습니다.</translation>
+        <source>URI cannot be parsed! This can be caused by an invalid Hotchain address or malformed URI parameters.</source>
+        <translation>URI를 분석할 수 없습니다! 이는 잘못된 Hotchain 주소 또는 URI 매개변수 손상으로 인해 발생할 수 있습니다.</translation>
     </message>
     <message>
         <source>Payment request file cannot be read! This can be caused by an invalid payment request file.</source>
@@ -2377,8 +2377,8 @@ To enable AutoMint change 'enablezeromint=0' to 'enablezeromint=1' in hotchain.c
         <translation>제로코인 관리:</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the HOTCHAIN network after a connection is established, but this process has not completed yet.</source>
-        <translation>표시된 정보가 오래되었을 수 있습니다. 연결이 완료되면 지갑이 HOTCHAIN 네트워크와 자동으로 동기화될 예정이지만, 아직 해당 프로세스가 완료되지 않았습니다.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Hotchain network after a connection is established, but this process has not completed yet.</source>
+        <translation>표시된 정보가 오래되었을 수 있습니다. 연결이 완료되면 지갑이 Hotchain 네트워크와 자동으로 동기화될 예정이지만, 아직 해당 프로세스가 완료되지 않았습니다.</translation>
     </message>
     <message>
         <source>Mint Zerocoin</source>
@@ -2401,8 +2401,8 @@ To enable AutoMint change 'enablezeromint=0' to 'enablezeromint=1' in hotchain.c
         <translation>생성 가능한 수량:</translation>
     </message>
     <message>
-        <source>0.000 000 00 HOTCHAIN</source>
-        <translation>0.000 000 00 HOTCHAIN</translation>
+        <source>0.000 000 00 HOTX</source>
+        <translation>0.000 000 00 HOTX</translation>
     </message>
     <message>
         <source>Reset Zerocoin Wallet DB. Deletes transactions that did not make it into the blockchain.</source>
@@ -2442,7 +2442,7 @@ To enable AutoMint change 'enablezeromint=0' to 'enablezeromint=1' in hotchain.c
     </message>
     <message>
         <source>Enter an amount of Hotx to convert to zHOTX</source>
-        <translation>zHOTX로 변환할 HOTCHAIN 수량을 입력하세요.</translation>
+        <translation>zHOTX로 변환할 HOTX 수량을 입력하세요.</translation>
     </message>
     <message>
         <source>zHOTX Control</source>
@@ -2501,8 +2501,8 @@ zHOTX는 성명서가 20 개 이상 있고 명칭이 동일하지 않은 2 개 �
         <translation>지불 &amp;대상:</translation>
     </message>
     <message>
-        <source>The HOTCHAIN address to send the payment to. Creates local payment to yourself when empty.</source>
-        <translation>HOTCHAIN를 전송할 HOTCHAIN 주소입니다. 비어있을 때 자신에게 지불할 주소를 생성합니다.</translation>
+        <source>The Hotchain address to send the payment to. Creates local payment to yourself when empty.</source>
+        <translation>HOTX를 전송할 Hotchain 주소입니다. 비어있을 때 자신에게 지불할 주소를 생성합니다.</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2930,7 +2930,7 @@ Maximum allowed: </source>
     </message>
     <message>
         <source>Invalid Hotchain Address</source>
-        <translation>잘못된 HOTCHAIN 주소</translation>
+        <translation>잘못된 Hotchain 주소</translation>
     </message>
     <message>
         <source>Invalid Send Amount</source>
@@ -2987,7 +2987,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message numerus="yes">
         <source>PrivacyDialog</source>
-        <comment>Enter an amount of HOTCHAIN to convert to zHOTX</comment>
+        <comment>Enter an amount of HOTX to convert to zHOTX</comment>
         <translation><numerusform>PrivacyDialog</numerusform></translation>
     </message>
     <message>
@@ -3030,8 +3030,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>금액</translation>
     </message>
     <message>
-        <source>Enter a HOTCHAIN address (e.g. %1)</source>
-        <translation>HOTCHAIN 주소를 입력하세요 (예 %1)</translation>
+        <source>Enter a Hotchain address (e.g. %1)</source>
+        <translation>Hotchain 주소를 입력하세요 (예 %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -3168,8 +3168,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>블록체인</translation>
     </message>
     <message>
-        <source>Open the HOTCHAIN debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>현재 데이터 디렉토리에서 HOTCHAIN 디버그 로그 파일을 엽니다. 로그 파일이 클 경우, 약간의 시간이 걸릴 수 있습니다.</translation>
+        <source>Open the Hotchain debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>현재 데이터 디렉토리에서 Hotchain 디버그 로그 파일을 엽니다. 로그 파일이 클 경우, 약간의 시간이 걸릴 수 있습니다.</translation>
     </message>
     <message>
         <source>Number of Masternodes</source>
@@ -3385,8 +3385,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>출력:</translation>
     </message>
     <message>
-        <source>Welcome to the HOTCHAIN RPC console.</source>
-        <translation>HOTCHAIN RPC 콘솔에 오신 것을 환영합니다.</translation>
+        <source>Welcome to the Hotchain RPC console.</source>
+        <translation>Hotchain RPC 콘솔에 오신 것을 환영합니다.</translation>
     </message>
     <message>
         <source>&amp;Disconnect Node</source>
@@ -3512,16 +3512,16 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>새로운 수신 주소와 연결할 선택적 라벨.</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the HOTCHAIN network.</source>
-        <translation>요청이 열릴 때 표시되는 결제 요청에 첨부할 선택적 메세지 입니다. 참고: HOTCHAIN 네트워크를 통한 결제는 메세지가 전송되지 않습니다.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Hotchain network.</source>
+        <translation>요청이 열릴 때 표시되는 결제 요청에 첨부할 선택적 메세지 입니다. 참고: Hotchain 네트워크를 통한 결제는 메세지가 전송되지 않습니다.</translation>
     </message>
     <message>
         <source>RECEIVE</source>
         <translation>받기</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the HOTCHAIN network.</source>
-        <translation>요청이 열릴 때 표시되는 결제 요청에 첨부할 선택적 메세지 입니다.&lt;br&gt;참고: HOTCHAIN 네트워크를 통한 결제는 메세지가 전송되지 않습니다.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the Hotchain network.</source>
+        <translation>요청이 열릴 때 표시되는 결제 요청에 첨부할 선택적 메세지 입니다.&lt;br&gt;참고: Hotchain 네트워크를 통한 결제는 메세지가 전송되지 않습니다.</translation>
     </message>
     <message>
         <source>Use this form to request payments. All fields are &lt;b&gt;optional&lt;/b&gt;.</source>
@@ -3749,8 +3749,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>UTXO 크기:</translation>
     </message>
     <message>
-        <source>0 HOTCHAIN</source>
-        <translation>0 HOTCHAIN</translation>
+        <source>0 HOTX</source>
+        <translation>0 HOTX</translation>
     </message>
     <message>
         <source>Transaction Fee:</source>
@@ -3805,16 +3805,16 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>자동으로 선택됩니다.</translation>
     </message>
     <message>
-        <source>If the custom fee is set to 1000 uHOTCHAINs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uHOTCHAINs in fee,&lt;br /&gt;while "at least" pays 1000 uHOTCHAINs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>트랜잭션이 250바이트 인 경우 사용자 지정 수수료가 1000 uHOTCHAINs로 설정되고,&lt;br /&gt;1000 uHOTCHAINs 안에는 최소 "킬로바이트당" 250 uHOTCHAINs 만 지불합니다. 1 킬로바이트보다 큰 트랜잭션의 경우 모두 킬로바이트 단위로 지불합니다.</translation>
+        <source>If the custom fee is set to 1000 uHOTXs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uHOTXs in fee,&lt;br /&gt;while "at least" pays 1000 uHOTXs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <translation>트랜잭션이 250바이트 인 경우 사용자 지정 수수료가 1000 uHOTXs로 설정되고,&lt;br /&gt;1000 uHOTXs 안에는 최소 "킬로바이트당" 250 uHOTXs 만 지불합니다. 1 킬로바이트보다 큰 트랜잭션의 경우 모두 킬로바이트 단위로 지불합니다.</translation>
     </message>
     <message>
-        <source>If the custom fee is set to 1000 uHOTCHAINs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uHOTCHAINs in fee,&lt;br /&gt;while "total at least" pays 1000 uHOTCHAINs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>트랜잭션이 250바이트 인 경우 사용자 지정 수수료가 1000 uHOTCHAINs로 설정되고,&lt;br /&gt;1000 uHOTCHAINs 안에는 전체에서 최소 "킬로바이트당" 250 uHOTCHAINs 만 지불합니다. 1 킬로바이트보다 큰 트랜잭션의 경우 모두 킬로바이트 단위로 지불합니다.</translation>
+        <source>If the custom fee is set to 1000 uHOTXs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uHOTXs in fee,&lt;br /&gt;while "total at least" pays 1000 uHOTXs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <translation>트랜잭션이 250바이트 인 경우 사용자 지정 수수료가 1000 uHOTXs로 설정되고,&lt;br /&gt;1000 uHOTXs 안에는 전체에서 최소 "킬로바이트당" 250 uHOTXs 만 지불합니다. 1 킬로바이트보다 큰 트랜잭션의 경우 모두 킬로바이트 단위로 지불합니다.</translation>
     </message>
     <message>
-        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for HOTCHAIN transactions than the network can process.</source>
-        <translation>블록의 공간보다 트랜잭션량이 적으면 최소 수수료만 지불하면 됩니다.&lt;br /&gt;하지만 HOTCHAIN 트랜잭션 수가 많으면 미확인된 트랜잭션로 네트워크가 처리할 수도 있습니다.</translation>
+        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for Hotchain transactions than the network can process.</source>
+        <translation>블록의 공간보다 트랜잭션량이 적으면 최소 수수료만 지불하면 됩니다.&lt;br /&gt;하지만 Hotchain 트랜잭션 수가 많으면 미확인된 트랜잭션로 네트워크가 처리할 수도 있습니다.</translation>
     </message>
     <message>
         <source>normal</source>
@@ -3861,8 +3861,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>&amp;받는 사람 추가</translation>
     </message>
     <message>
-        <source>Anonymized HOTCHAIN</source>
-        <translation>익명화된 HOTCHAIN</translation>
+        <source>Anonymized HOTX</source>
+        <translation>익명화된 HOTX</translation>
     </message>
     <message>
         <source>Balance:</source>
@@ -3909,8 +3909,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>분할 블록 도구는 여러 주소에서 작동하지 않습니다. 다시 시도하십시오.</translation>
     </message>
     <message>
-        <source>Warning: Invalid HOTCHAIN address</source>
-        <translation>경고: 잘못된 HOTCHAIN 주소</translation>
+        <source>Warning: Invalid Hotchain address</source>
+        <translation>경고: 잘못된 Hotchain 주소</translation>
     </message>
     <message>
         <source>%1 to %2</source>
@@ -4012,8 +4012,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>지불 &amp;대상:</translation>
     </message>
     <message>
-        <source>The HOTCHAIN address to send the payment to</source>
-        <translation>보낼 HOTCHAIN 주소</translation>
+        <source>The Hotchain address to send the payment to</source>
+        <translation>보낼 Hotchain 주소</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -4052,8 +4052,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>메세지:</translation>
     </message>
     <message>
-        <source>A message that was attached to the HOTCHAIN: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the HOTCHAIN network.</source>
-        <translation>참조용으로 트랜잭션과 함께 기록되는 HOTCHAIN : URI에 첨부된 메세지입니다. 참고: 이 메세지는 HOTCHAIN 네트워크를 통해 전송되지 않습니다.</translation>
+        <source>A message that was attached to the Hotchain: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Hotchain network.</source>
+        <translation>참조용으로 트랜잭션과 함께 기록되는 Hotchain : URI에 첨부된 메세지입니다. 참고: 이 메세지는 Hotchain 네트워크를 통해 전송되지 않습니다.</translation>
     </message>
     <message>
         <source>This is an unverified payment request.</source>
@@ -4102,8 +4102,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>자신의 주소로 메세지에 서명할 수 있습니다. 피싱 공격으로 사용자를 속일 수 있으므로 서명에 주의해주세요. 동의하는 바에 한하여 서명하십시오.</translation>
     </message>
     <message>
-        <source>The HOTCHAIN address to sign the message with</source>
-        <translation>메세지를 서명하기 위한 HOTCHAIN 주소</translation>
+        <source>The Hotchain address to sign the message with</source>
+        <translation>메세지를 서명하기 위한 Hotchain 주소</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -4134,16 +4134,16 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>현재 서명을 시스템 클립 보드에 복사</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this HOTCHAIN address</source>
-        <translation>이 HOTCHAIN 주소를 소유하고 있다는 것을 증명하기 위해 메세지에 서명하십시오</translation>
+        <source>Sign the message to prove you own this Hotchain address</source>
+        <translation>이 Hotchain 주소를 소유하고 있다는 것을 증명하기 위해 메세지에 서명하십시오</translation>
     </message>
     <message>
-        <source>The HOTCHAIN address the message was signed with</source>
-        <translation>메세지에 서명된 HOTCHAIN 주소</translation>
+        <source>The Hotchain address the message was signed with</source>
+        <translation>메세지에 서명된 Hotchain 주소</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified HOTCHAIN address</source>
-        <translation>메세지가 지정된 HOTCHAIN 주소로 서명되었는지 확인해주세요</translation>
+        <source>Verify the message to ensure it was signed with the specified Hotchain address</source>
+        <translation>메세지가 지정된 Hotchain 주소로 서명되었는지 확인해주세요</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -4526,8 +4526,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>난독화를 통해 수신 됨</translation>
     </message>
     <message>
-        <source>HOTCHAIN Stake</source>
-        <translation>HOTCHAIN stake</translation>
+        <source>HOTX Stake</source>
+        <translation>HOTX stake</translation>
     </message>
     <message>
         <source>zHOTX Stake</source>
@@ -4550,24 +4550,24 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>난독화 표시 만들기</translation>
     </message>
     <message>
-        <source>Converted HOTCHAIN to zHOTX</source>
-        <translation>HOTCHAIN를 zHOTX로 변환</translation>
+        <source>Converted HOTX to zHOTX</source>
+        <translation>HOTX를 zHOTX로 변환</translation>
     </message>
     <message>
         <source>Spent zHOTX</source>
         <translation>zHOTX 사용</translation>
     </message>
     <message>
-        <source>Received HOTCHAIN from zHOTX</source>
-        <translation>zHOTX를 HOTCHAIN로 받음</translation>
+        <source>Received HOTX from zHOTX</source>
+        <translation>zHOTX를 HOTX로 받음</translation>
     </message>
     <message>
         <source>Minted Change as zHOTX from zHOTX Spend</source>
         <translation>zHOTX 전송후 남은 zHOTX로 잔돈 생성</translation>
     </message>
     <message>
-        <source>Converted zHOTX to HOTCHAIN</source>
-        <translation>zHOTX를 HOTCHAIN로 변환</translation>
+        <source>Converted zHOTX to HOTX</source>
+        <translation>zHOTX를 HOTX로 변환</translation>
     </message>
     <message>
         <source>Anonymous (zHOTX Transaction)</source>
@@ -4785,8 +4785,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>내보내기 성공</translation>
     </message>
     <message>
-        <source>Received HOTCHAIN from zHOTX</source>
-        <translation>zHOTX를 HOTCHAIN로 받음</translation>
+        <source>Received HOTX from zHOTX</source>
+        <translation>zHOTX를 HOTX로 받음</translation>
     </message>
     <message>
         <source>Zerocoin Spend, Change in zHOTX</source>
@@ -4826,8 +4826,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>코인 전송 </translation>
     </message>
     <message>
-        <source>SwiftX doesn't support sending values that high yet. Transactions are currently limited to %1 HOTCHAIN.</source>
-        <translation>SwiftTX는 아직 높은 값을 전송하는 것을 지원하지 않습니다. 트랜잭션은 현재 %1 HOTCHAIN로 제한됩니다.</translation>
+        <source>SwiftX doesn't support sending values that high yet. Transactions are currently limited to %1 HOTX.</source>
+        <translation>SwiftTX는 아직 높은 값을 전송하는 것을 지원하지 않습니다. 트랜잭션은 현재 %1 HOTX로 제한됩니다.</translation>
     </message>
 </context>
 <context>
@@ -4943,8 +4943,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Enable automatic wallet backups triggered after each zHOTX minting (0-1, default: %u)</translation>
     </message>
     <message>
-        <source>Enable or disable staking functionality for HOTCHAIN inputs (0-1, default: %u)</source>
-        <translation>Enable or disable staking functionality for HOTCHAIN inputs (0-1, default: %u)</translation>
+        <source>Enable or disable staking functionality for HOTX inputs (0-1, default: %u)</source>
+        <translation>Enable or disable staking functionality for HOTX inputs (0-1, default: %u)</translation>
     </message>
     <message>
         <source>Enable or disable staking functionality for zHOTX inputs (0-1, default: %u)</source>
@@ -4983,12 +4983,12 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>최고 블록이 변경될 경우 명령을 실행하십시오 (명령 내 %s 는 블록 해시로 대체 되었습니다)</translation>
     </message>
     <message>
-        <source>Fees (in HOTCHAIN/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
-        <translation>이것보다 작은 수수료 (HOTCHAIN/Kb)는 중계 수수료가 없는 것으로 간주됩니다 (기본값: %s)</translation>
+        <source>Fees (in HOTX/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
+        <translation>이것보다 작은 수수료 (HOTX/Kb)는 중계 수수료가 없는 것으로 간주됩니다 (기본값: %s)</translation>
     </message>
     <message>
-        <source>Fees (in HOTCHAIN/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
-        <translation>이것보다 작은 수수료 (HOTCHAIN/Kb)는 트랜잭션 생성 수수료가 없는 것으로 간주됩니다 (기본값: %s)</translation>
+        <source>Fees (in HOTX/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
+        <translation>이것보다 작은 수수료 (HOTX/Kb)는 트랜잭션 생성 수수료가 없는 것으로 간주됩니다 (기본값: %s)</translation>
     </message>
     <message>
         <source>Flush database activity from memory pool to disk log every &lt;n&gt; megabytes (default: %u)</source>
@@ -5095,12 +5095,12 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>이 트랜잭션를 위해 난독화 표기된 충분한 금액을 찾을 수 없습니다.</translation>
     </message>
     <message>
-        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 HOTCHAIN.</source>
-        <translation>이 트랜잭션를 위해 난독화 표기가 안된 충분한 금액을 찾을 수 없습니다. 10000 HOTCHAIN과 일치하지 않음.</translation>
+        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 HOTX.</source>
+        <translation>이 트랜잭션를 위해 난독화 표기가 안된 충분한 금액을 찾을 수 없습니다. 10000 HOTX과 일치하지 않음.</translation>
     </message>
     <message>
-        <source>Unable to locate enough funds for this transaction that are not equal 10000 HOTCHAIN.</source>
-        <translation>트랜잭션에 대한 충분한 금액을 찾을 수 없습니다. 10000 HOTCHAIN와 같지 않음</translation>
+        <source>Unable to locate enough funds for this transaction that are not equal 10000 HOTX.</source>
+        <translation>트랜잭션에 대한 충분한 금액을 찾을 수 없습니다. 10000 HOTX와 같지 않음</translation>
     </message>
     <message>
         <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: %s)</source>
@@ -5116,7 +5116,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong Hotchain Wallet will not work properly.</source>
-        <translation>경고: 컴퓨터의 날짜와 시간이 올바르게 설정되어 있는지 확인해 주세요! 만일 시계가 잘못되어 있다면 HOTCHAIN 코어는 정상적으로 작동하지 않을 수 있습니다.</translation>
+        <translation>경고: 컴퓨터의 날짜와 시간이 올바르게 설정되어 있는지 확인해 주세요! 만일 시계가 잘못되어 있다면 Hotchain 코어는 정상적으로 작동하지 않을 수 있습니다.</translation>
     </message>
     <message>
         <source>Warning: The network does not appear to fully agree! Some miners appear to be experiencing issues.</source>
@@ -5356,7 +5356,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <source>Error loading wallet.dat: Wallet requires newer version of Hotchain Wallet</source>
-        <translation>wallet.dat를 로드하는 중 오류가 발생했습니다. 지갑에 최신 버전의 HOTCHAIN 코어가 필요합니다.</translation>
+        <translation>wallet.dat를 로드하는 중 오류가 발생했습니다. 지갑에 최신 버전의 Hotchain 코어가 필요합니다.</translation>
     </message>
     <message>
         <source>Error opening block database</source>
@@ -5411,8 +5411,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>블록을 받아오는데 실패했습니다.</translation>
     </message>
     <message>
-        <source>Fee (in HOTCHAIN/kB) to add to transactions you send (default: %s)</source>
-        <translation>당신이 보내는 트랜잭션에 추가 할 수수료 (HOTCHAIN/kB) (기본값: %s)</translation>
+        <source>Fee (in HOTX/kB) to add to transactions you send (default: %s)</source>
+        <translation>당신이 보내는 트랜잭션에 추가 할 수수료 (HOTX/kB) (기본값: %s)</translation>
     </message>
     <message>
         <source>Finalizing transaction.</source>
@@ -5543,8 +5543,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>자동생성 zHOTX 비율  (1-100, default: %u)</translation>
     </message>
     <message>
-        <source>Reindex the HOTCHAIN and zHOTX money supply statistics</source>
-        <translation>HOTCHAIN 및 zHOTX 공급량 다시 색인</translation>
+        <source>Reindex the HOTX and zHOTX money supply statistics</source>
+        <translation>HOTX 및 zHOTX 공급량 다시 색인</translation>
     </message>
     <message>
         <source>Reindexing zerocoin database...</source>
@@ -5583,8 +5583,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
 </translation>
     </message>
     <message>
-        <source>Disable all HOTCHAIN specific functionality (Masternodes, Zerocoin, SwiftX, Budgeting) (0-1, default: %u)</source>
-        <translation>HOTCHAIN의 모든 특정 기능들을 비활성화합니다(마스터노드, 난독화, SwiftTX, Budgeting) (0-1, 기본값: %u)</translation>
+        <source>Disable all Hotchain specific functionality (Masternodes, Zerocoin, SwiftX, Budgeting) (0-1, default: %u)</source>
+        <translation>HOTXX의 모든 특정 기능들을 비활성화합니다(마스터노드, 난독화, SwiftTX, Budgeting) (0-1, 기본값: %u)</translation>
     </message>
     <message>
         <source>Enable SwiftX, show confirmations for locked transactions (bool, default: %s)</source>
@@ -6296,7 +6296,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <source>Wallet needed to be rewritten: restart Hotchain Wallet to complete</source>
-        <translation>지갑을 다시 작성해야 합니다: 완료하려면 HOTCHAIN 코어를 재시작해야 합니다</translation>
+        <translation>지갑을 다시 작성해야 합니다: 완료하려면 Hotchain 코어를 재시작해야 합니다</translation>
     </message>
     <message>
         <source>Wallet options:</source>

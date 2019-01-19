@@ -19,7 +19,7 @@ zHOTX spending requires this update.
 How to Upgrade
 ==============
 
-If you are running an older version, shut it down. Wait until it has completely shut down (which might take a few minutes for older versions), then run the installer (on Windows) or just copy over /Applications/hotchain-Qt (on Mac) or hotchaind/hotchain-qt (on Linux).
+If you are running an older version, shut it down. Wait until it has completely shut down (which might take a few minutes for older versions), then run the installer (on Windows) or just copy over /Applications/Hotchain-Qt (on Mac) or hotchaind/hotchain-qt (on Linux).
 
 Compatibility
 ==============
@@ -71,7 +71,7 @@ Due to the aforementioned issue with zHOTX spending, users may find that their a
 
 RPC Changes
 ---------------------
-The `bip38decrypt` command has had it's parameter order changed to be more consistent with it's counterpart. The command now expects the HOTCHAIN address as it's first parameter and the passphrase as it's second parameter.
+The `bip38decrypt` command has had it's parameter order changed to be more consistent with it's counterpart. The command now expects the Hotchain address as it's first parameter and the passphrase as it's second parameter.
 
 Bip38 Compatibility With 3rd Party Tools
 ---------------------

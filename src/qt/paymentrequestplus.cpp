@@ -1,5 +1,5 @@
 // Copyright (c) 2011-2014 The Bitcoin developers
-// Copyright (c) 2017 The PIVX Developers 
+// Copyright (c) 2017 The Hotchain developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -12,7 +12,6 @@
 
 #include <stdexcept>
 
-#include <openssl/x509.h>
 #include <openssl/x509_vfy.h>
 
 #include <QDateTime>

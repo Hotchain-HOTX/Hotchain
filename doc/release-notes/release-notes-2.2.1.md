@@ -1,4 +1,4 @@
-Hotchain Wallet version 2.2.1 is now available from:
+Hotchain Wallet version 1.0.0 is now available from:
 
   <https://github.com/Hotchain-HOTX/Hotchain/releases>
 
@@ -45,7 +45,7 @@ blockchain.
 Additional progress has been made to prevent the wallet crashes that are causing
 the corrupted databases, for example removing the Trading Window (explained below)
 and fixing several other minor memory leaks that were inherited from the version
-of Bitcoin that HOTCHAIN was forked from.
+of Bitcoin that Hotchain was forked from.
 
 RPC Changes
 -----------

@@ -1,8 +1,7 @@
 // Copyright (c) 2010 Satoshi Nakamoto
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
-// Copyright (c) 2015-2018 The PIVX Developers 
-// Copyright (c) 2018-2018 Cryptopie 
+// Copyright (c) 2015-2018 The Hotchain developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -53,7 +52,7 @@ static void convertSeed6(std::vector<CAddress>& vSeedsOut, const SeedSpec6* data
 // + Contains no strange transactions
 static Checkpoints::MapCheckpoints mapCheckpoints =
     boost::assign::map_list_of
-	( 0, uint256("0x000007cc5cc9b865157817742539218f877b6e39ae83d2b0f4d6b953ec2364e1"));
+	( 0, uint256("d35f846d043dc9696240dccc898707c9ac250e638cd1736b89d89f553a9bbb23"));
 static const Checkpoints::CCheckpointData data = {
     &mapCheckpoints,
 	1541259177, // * UNIX timestamp of last checkpoint block
@@ -78,13 +77,20 @@ static const Checkpoints::CCheckpointData dataRegtest = {
     0,
     100};
 
-libzerocoin::ZerocoinParams* CChainParams::Zerocoin_Params() const
+libzerocoin::ZerocoinParams* CChainParams::Zerocoin_Params(bool useModulusV1) const
 {
     assert(this);
+    static CBigNum bnHexModulus = 0;
+    if (!bnHexModulus)
+        bnHexModulus.SetHex(zerocoinModulus);
+    static libzerocoin::ZerocoinParams ZCParamsHex = libzerocoin::ZerocoinParams(bnHexModulus);
     static CBigNum bnDecModulus = 0;
     if (!bnDecModulus)
         bnDecModulus.SetDec(zerocoinModulus);
     static libzerocoin::ZerocoinParams ZCParamsDec = libzerocoin::ZerocoinParams(bnDecModulus);
+
+    if (useModulusV1)
+        return &ZCParamsHex;
 
     return &ZCParamsDec;
 }
@@ -106,9 +112,8 @@ public:
         pchMessageStart[2] = 0x54;
         pchMessageStart[3] = 0x58;
         vAlertPubKey = ParseHex("042f3012e5ba221dd4a82155de9dc464f186e5e0b4fc0f4ae9048f5b5362993ec0b5295dddaf49ce962389830e97d9e3ceedcde0dcb440eaf675af4c1e924d6346");
-        nP2pPort = 9069;
-        nRpcPort = 6990;
-        bnProofOfWorkLimit = ~uint256(0) >> 20; // HOTCHAIN starting difficulty is 1 / 2^12
+        nDefaultPort = 9069;
+        bnProofOfWorkLimit = ~uint256(0) >> 20; // Hotchain starting difficulty is 1 / 2^12
         nSubsidyHalvingInterval = 210000;
         nMaxReorganizationDepth = 100;
         nEnforceBlockUpgradeMajority = 750;
@@ -121,31 +126,38 @@ public:
         nMasternodeCountDrift = 20;
         nMaxMoneyOut = 60000000 * COIN;
 
+        nZerocoinStartTime = 1547814260;
+        nZerocoinStartHeight = 500;
+        nBlockZerocoinV2 = 501; //!> The block that zerocoin v2 becomes active - roughly Tuesday, May 8, 2018 4:00:00 AM GMT
         /** Height or Time Based Activations **/
-        nLastPoWBlock = 200;
-        //nModifierUpdateBlock = 1;
-        //nZerocoinStartHeight = 863787;
-        //nZerocoinStartTime = 1508214600; // October 17, 2017 4:30:00 AM
-        //nBlockEnforceSerialRange = 895400; //Enforce serial range starting this block
-        //nBlockRecalculateAccumulators = 908000; //Trigger a recalculation of accumulators
-        //nBlockFirstFraudulent = 891737; //First block that bad serials emerged
-        //nBlockLastGoodCheckpoint = 891730; //Last valid accumulator checkpoint
-        //nBlockEnforceInvalidUTXO = 902850; //Start enforcing the invalid UTXO's
-        //nInvalidAmountFiltered = 268200*COIN; //Amount of invalid coins filtered through exchanges, that should be considered valid
-        //nBlockZerocoinV2 = 1153160; //!> The block that zerocoin v2 becomes active - roughly Tuesday, May 8, 2018 4:00:00 AM GMT
-        //nEnforceNewSporkKey = 1525158000; //!> Sporks signed after (GMT): Tuesday, May 1, 2018 7:00:00 AM GMT must use the new spork key
-        //nRejectOldSporkKey = 1527811200; //!> Fully reject old spork key after (GMT): Friday, June 1, 2018 12:00:00 AM
-
+        nLastPOWBlock = 200;
+       /* nModifierUpdateBlock = 615800;
+        nZerocoinStartTime = 1508214600; // October 17, 2017 4:30:00 AM
+        nBlockEnforceSerialRange = 895400; //Enforce serial range starting this block
+        nBlockRecalculateAccumulators = 908000; //Trigger a recalculation of accumulators
+        nBlockFirstFraudulent = 891737; //First block that bad serials emerged
+        nBlockLastGoodCheckpoint = 891730; //Last valid accumulator checkpoint
+        nBlockEnforceInvalidUTXO = 902850; //Start enforcing the invalid UTXO's
+        nInvalidAmountFiltered = 268200*COIN; //Amount of invalid coins filtered through exchanges, that should be considered valid
+        nEnforceNewSporkKey = 1525158000; //!> Sporks signed after (GMT): Tuesday, May 1, 2018 7:00:00 AM GMT must use the new spork key
+        nRejectOldSporkKey = 1527811200; //!> Fully reject old spork key after (GMT): Friday, June 1, 2018 12:00:00 AM
+*/
         /**
          * Build the genesis block. Note that the output of the genesis coinbase cannot
          * be spent as it did not originally exist in the database.
+         *
+         * CBlock(hash=00000ffd590b14, ver=1, hashPrevBlock=00000000000000, hashMerkleRoot=e0028e, nTime=1390095618, nBits=1e0ffff0, nNonce=28917698, vtx=1)
+         *   CTransaction(hash=e0028e, ver=1, vin.size=1, vout.size=1, nLockTime=0)
+         *     CTxIn(COutPoint(000000, -1), coinbase 04ffff001d01044c5957697265642030392f4a616e2f3230313420546865204772616e64204578706572696d656e7420476f6573204c6976653a204f76657273746f636b2e636f6d204973204e6f7720416363657074696e6720426974636f696e73)
+         *     CTxOut(nValue=50.00000000, scriptPubKey=0xA9037BAC7050C479B121CF)
+         *   vMerkleTree: e0028e
          */
         const char* pszTimestamp = "BBC News - Sounds of the youth? BBC radio app targets next generation.....OCT-2018-Remapper";
         CMutableTransaction txNew;
         txNew.vin.resize(1);
         txNew.vout.resize(1);
         txNew.vin[0].scriptSig = CScript() << 486604799 << CScriptNum(4) << vector<unsigned char>((const unsigned char*)pszTimestamp, (const unsigned char*)pszTimestamp + strlen(pszTimestamp));
-        txNew.vout[0].nValue = 0 * COIN;
+        txNew.vout[0].nValue = 250 * COIN;
         txNew.vout[0].scriptPubKey = CScript() << ParseHex("04197474ec3625a558fc38da5ddf384a1dd238cc8d02aea83c6b2596bea593e8e246c4c21ddefd4367d57a1ddabc214f9a7865d2d286fb6c047f43097405200ead") << OP_CHECKSIG;
         genesis.vtx.push_back(txNew);
         genesis.hashPrevBlock = 0;
@@ -157,15 +169,15 @@ public:
         genesis.nNonce = 22486641;
 
         hashGenesisBlock = genesis.GetHash();
-        assert(hashGenesisBlock == uint256("0x000007cc5cc9b865157817742539218f877b6e39ae83d2b0f4d6b953ec2364e1"));
-        assert(genesis.hashMerkleRoot == uint256("0xcdce2aaba7508325f8c28bf93cdd766b9bcb7e72607d9e5a95129537187074b0"));
+        assert(hashGenesisBlock == uint256("d35f846d043dc9696240dccc898707c9ac250e638cd1736b89d89f553a9bbb23"));
+        assert(genesis.hashMerkleRoot == uint256("59914c4d802c7cd3912cce67ca2fb4d495ffa8587d9dd75309b444105e04aff6"));
 		
-	vSeeds.push_back(CDNSSeedData("node1.hotchain.me", "node1.hotchain.me"));         // Primary DNS Seeder
-	vSeeds.push_back(CDNSSeedData("node2.hotchain.me", "node2.hotchain.me"));         // Single node address
-	vSeeds.push_back(CDNSSeedData("node3.hotchain.me", "node3.hotchain.me"));         // Single node address
-	vSeeds.push_back(CDNSSeedData("node4.hotchain.me", "node4.hotchain.me"));         // Single node address
-	vSeeds.push_back(CDNSSeedData("node5.hotchain.me", "node5.hotchain.me"));         // Single node address
-	vSeeds.push_back(CDNSSeedData("node6.hotchain.me", "node6.hotchain.me"));         // Single node address
+        vSeeds.push_back(CDNSSeedData("node1.hotchain.me", "node1.hotchain.me"));         // Primary DNS Seeder
+        vSeeds.push_back(CDNSSeedData("node2.hotchain.me", "node2.hotchain.me"));         // Single node address
+        vSeeds.push_back(CDNSSeedData("node3.hotchain.me", "node3.hotchain.me"));         // Single node address
+        vSeeds.push_back(CDNSSeedData("node4.hotchain.me", "node4.hotchain.me"));         // Single node address
+        vSeeds.push_back(CDNSSeedData("node5.hotchain.me", "node5.hotchain.me"));         // Single node address
+        vSeeds.push_back(CDNSSeedData("node6.hotchain.me", "node6.hotchain.me"));         // Single node address
 
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 100); // Hotchain's wallet address starts with a X
@@ -189,8 +201,8 @@ public:
 
         nPoolMaxTransactions = 3;
         strSporkKey = "04c280424d76d9ea1bd218d95d5286fef8e1686a3296fdcbf6a0003bfd2a1882756e56e709e88fae85010b0904dd11cdc0f3f0741f97ac87d49f7e97ad5db3b6ca";
-		strObfuscationPoolDummyAddress = "hG1YnZZZ1TkWWWU78uhVenYnVRDFfTf3hS";
-        //nStartMasternodePayments = 1529268033; //Wed, 25 Jun 2014 20:36:16 GMT
+		strObfuscationPoolDummyAddress = "hWQhYziqvYbRW6iutAeChDkjajNbevHgmh";
+        nStartMasternodePayments = 1403728576; //Wed, 25 Jun 2014 20:36:16 GMT
 
         /** Zerocoin */
         zerocoinModulus = "25195908475657893494027183240048398571429282126204032027777137836043662020707595556264018525880784"
@@ -206,7 +218,7 @@ public:
         nDefaultSecurityLevel = 100; //full security level for accumulators
         nZerocoinHeaderVersion = 4; //Block headers must be this version once zerocoin is active
         nZerocoinRequiredStakeDepth = 200; //The required confirmations for a zhotx to be stakable
-        nStakeMinAge = 60 * 60; //The number of seconds that a utxo must be old before it can qualify for staking
+       // nStakeMinAge = 60 * 60; //The number of seconds that a utxo must be old before it can qualify for staking
         nBudget_Fee_Confirmations = 6; // Number of confirmations for the finalization fee
     }
 
@@ -232,30 +244,29 @@ public:
         pchMessageStart[2] = 0x11;
         pchMessageStart[3] = 0x34;
         vAlertPubKey = ParseHex("0435c877fa14069a89ab3cb4660ecd80e7c77db360ea9892b7893e8b6a0feac4fd90d39feacfe172504d5d2cdc192cfa428086ea29c71905ec4307e2c450406d6d");
-        nP2pPort = 10500;
-		nRpcPort = 11000;
+        nDefaultPort = 51474;
         nEnforceBlockUpgradeMajority = 51;
         nRejectBlockOutdatedMajority = 75;
         nToCheckBlockUpgradeMajority = 100;
         nMinerThreads = 0;
         nTargetTimespan = 1 * 60; // Hotchain: 1 day
         nTargetSpacing = 1 * 60;  // Hotchain: 1 minute
-        nLastPoWBlock = 200;
-        nMaturity = 10;
-        nMasternodeCountDrift = 20;
-        //nModifierUpdateBlock = 51197; //approx Mon, 17 Apr 2017 04:00:00 GMT
-        nMaxMoneyOut = 60000000 * COIN;
-        //nZerocoinStartHeight = 201576;
-        //nZerocoinStartTime = 1501776000;
-        //nBlockEnforceSerialRange = 1; //Enforce serial range starting this block
-        //nBlockRecalculateAccumulators = 9908000; //Trigger a recalculation of accumulators
-        //nBlockFirstFraudulent = 9891737; //First block that bad serials emerged
-        //nBlockLastGoodCheckpoint = 9891730; //Last valid accumulator checkpoint
-        //nBlockEnforceInvalidUTXO = 9902850; //Start enforcing the invalid UTXO's
-        //nInvalidAmountFiltered = 0; //Amount of invalid coins filtered through exchanges, that should be considered valid
-        //nBlockZerocoinV2 = 444020; //!> The block that zerocoin v2 becomes active
-        //nEnforceNewSporkKey = 1521604800; //!> Sporks signed after Wednesday, March 21, 2018 4:00:00 AM GMT must use the new spork key
-        //nRejectOldSporkKey = 1522454400; //!> Reject old spork key after Saturday, March 31, 2018 12:00:00 AM GMT
+        nLastPOWBlock = 200;
+        nMaturity = 15;
+        nMasternodeCountDrift = 4;
+        nModifierUpdateBlock = 51197; //approx Mon, 17 Apr 2017 04:00:00 GMT
+        nMaxMoneyOut = 43199500 * COIN;
+        nZerocoinStartHeight = 201576;
+        nZerocoinStartTime = 1501776000;
+        nBlockEnforceSerialRange = 1; //Enforce serial range starting this block
+        nBlockRecalculateAccumulators = 9908000; //Trigger a recalculation of accumulators
+        nBlockFirstFraudulent = 9891737; //First block that bad serials emerged
+        nBlockLastGoodCheckpoint = 9891730; //Last valid accumulator checkpoint
+        nBlockEnforceInvalidUTXO = 9902850; //Start enforcing the invalid UTXO's
+        nInvalidAmountFiltered = 0; //Amount of invalid coins filtered through exchanges, that should be considered valid
+        nBlockZerocoinV2 = 444020; //!> The block that zerocoin v2 becomes active
+        nEnforceNewSporkKey = 1521604800; //!> Sporks signed after Wednesday, March 21, 2018 4:00:00 AM GMT must use the new spork key
+        nRejectOldSporkKey = 1522454400; //!> Reject old spork key after Saturday, March 31, 2018 12:00:00 AM GMT
 
         //! Modify the testnet genesis block so the timestamp is valid for a later start.
         genesis.nTime = 1515616140;
@@ -266,9 +277,9 @@ public:
 
         vFixedSeeds.clear();
         vSeeds.clear();
-        //vSeeds.push_back(CDNSSeedData("testnet.hotchain.me", "testnet.hotchain.me"));         // Single node address
-        //vSeeds.push_back(CDNSSeedData("testnet1.hotchain.me", "testnet1.hotchain.me"));       // Single node address
-        //vSeeds.push_back(CDNSSeedData("testnet2.hotchain.me", "testnet2.hotchain.me"));       // Single node address
+        //vSeeds.push_back(CDNSSeedData("testnet.sc2.io", "testnet.sc2.io"));         // Single node address
+        //vSeeds.push_back(CDNSSeedData("testnet1.sc2.io", "testnet1.sc2.io"));       // Single node address
+        //vSeeds.push_back(CDNSSeedData("testnet.securecloudcoincoin.org", "testnet.securecloudcoincoin.org"));       // Single node address
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 17); // Testnet hotchain addresses start with '7'
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 18);  // Testnet hotchain script addresses start with '8'
@@ -292,7 +303,7 @@ public:
         nPoolMaxTransactions = 2;
         strSporkKey = "04d5cac4800494827f62438d4d5bdaefdc9b51e70c007e0e6ec1c980b4786e29e4a72b2b630dc90bf4260bc7d7b756bb5d1d11ea1a604667ef282c2bebb48ae9b8";
         strObfuscationPoolDummyAddress = "y57cqfGRkekRyDRNeJiLtYVEbvhXrNbmox";
-        //nStartMasternodePayments = 1420837558; //Fri, 09 Jan 2015 21:05:58 GMT
+        nStartMasternodePayments = 1420837558; //Fri, 09 Jan 2015 21:05:58 GMT
         nBudget_Fee_Confirmations = 3; // Number of confirmations for the finalization fee. We have to make this very short
                                        // here because we only have a 8 block finalization window on testnet
     }
@@ -323,16 +334,16 @@ public:
         nRejectBlockOutdatedMajority = 950;
         nToCheckBlockUpgradeMajority = 1000;
         nMinerThreads = 1;
-        nTargetTimespan = 24 * 60 * 60; // HOTCHAIN: 1 day
-        nTargetSpacing = 1 * 60;        // HOTCHAIN: 1 minutes
+        nTargetTimespan = 24 * 60 * 60; // Hotchain: 1 day
+        nTargetSpacing = 1 * 60;        // Hotchain: 1 minutes
         bnProofOfWorkLimit = ~uint256(0) >> 1;
-        genesis.nTime = 1515524400;
-        genesis.nBits = 0x1e0ffff0;
-        genesis.nNonce = 732084;
+        genesis.nTime = 1454124731;
+        genesis.nBits = 0x207fffff;
+        genesis.nNonce = 12345;
 
         hashGenesisBlock = genesis.GetHash();
-        nP2pPort = 51476;
-       // assert(hashGenesisBlock == uint256("0x4f023a2120d9127b21bbad01724fdb79b519f593f2a85b60d3d79160ec5f29df"));
+        nDefaultPort = 51476;
+        //assert(hashGenesisBlock == uint256("d35f846d043dc9696240dccc898707c9ac250e638cd1736b89d89f553a9bbb23"));
 
         vFixedSeeds.clear(); //! Testnet mode doesn't have any fixed seeds.
         vSeeds.clear();      //! Testnet mode doesn't have any DNS seeds.
@@ -361,7 +372,7 @@ public:
     {
         networkID = CBaseChainParams::UNITTEST;
         strNetworkID = "unittest";
-        nP2pPort = 51478;
+        nDefaultPort = 51478;
         vFixedSeeds.clear(); //! Unit test mode doesn't have any fixed seeds.
         vSeeds.clear();      //! Unit test mode doesn't have any DNS seeds.
 
@@ -384,7 +395,7 @@ public:
     virtual void setToCheckBlockUpgradeMajority(int anToCheckBlockUpgradeMajority) { nToCheckBlockUpgradeMajority = anToCheckBlockUpgradeMajority; }
     virtual void setDefaultConsistencyChecks(bool afDefaultConsistencyChecks) { fDefaultConsistencyChecks = afDefaultConsistencyChecks; }
     virtual void setAllowMinDifficultyBlocks(bool afAllowMinDifficultyBlocks) { fAllowMinDifficultyBlocks = afAllowMinDifficultyBlocks; }
-    
+    virtual void setSkipProofOfWorkCheck(bool afSkipProofOfWorkCheck) { fSkipProofOfWorkCheck = afSkipProofOfWorkCheck; }
 };
 static CUnitTestParams unitTestParams;
 

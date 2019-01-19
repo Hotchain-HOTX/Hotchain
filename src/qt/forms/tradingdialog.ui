@@ -181,7 +181,7 @@
       <string>Asks</string>
      </property>
     </widget>
-    <widget class="QLabel" name="HOTCHAINSupply">
+    <widget class="QLabel" name="HOTXSupply">
      <property name="geometry">
       <rect>
        <x>540</x>
@@ -197,7 +197,7 @@
       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
      </property>
     </widget>
-    <widget class="QLabel" name="hotchaindemand">
+    <widget class="QLabel" name="HOTXDemand">
      <property name="geometry">
       <rect>
        <x>160</x>
@@ -432,7 +432,7 @@
     <attribute name="title">
      <string>Buy</string>
     </attribute>
-    <widget class="QPushButton" name="BuyHOTCHAIN">
+    <widget class="QPushButton" name="BuyHOTX">
      <property name="geometry">
       <rect>
        <x>30</x>
@@ -442,7 +442,7 @@
       </rect>
      </property>
      <property name="text">
-      <string>Buy HOTCHAIN</string>
+      <string>Buy HOTX</string>
      </property>
      <property name="icon">
       <iconset resource="../hotchain.qrc">
@@ -512,7 +512,7 @@
       </rect>
      </property>
      <property name="text">
-      <string>HOTCHAIN</string>
+      <string>HOTX</string>
      </property>
     </widget>
     <widget class="QLabel" name="label_5">
@@ -1704,10 +1704,10 @@
       </rect>
      </property>
      <property name="text">
-      <string>HOTCHAIN</string>
+      <string>HOTX</string>
      </property>
     </widget>
-    <widget class="QLineEdit" name="UnitsInputHOTCHAIN">
+    <widget class="QLineEdit" name="UnitsInputHOTX">
      <property name="geometry">
       <rect>
        <x>310</x>
@@ -1741,7 +1741,7 @@
       </font>
      </property>
     </widget>
-    <widget class="QPushButton" name="SellHOTCHAINBTN">
+    <widget class="QPushButton" name="SellHOTXBTN">
      <property name="geometry">
       <rect>
        <x>30</x>
@@ -1751,7 +1751,7 @@
       </rect>
      </property>
      <property name="text">
-      <string>Sell HOTCHAIN</string>
+      <string>Sell HOTX</string>
      </property>
      <property name="icon">
       <iconset resource="../hotchain">
@@ -1777,12 +1777,12 @@
          </font>
         </property>
         <property name="text">
-         <string>HOTCHAIN Available:</string>
+         <string>HOTX Available:</string>
         </property>
        </widget>
       </item>
       <item>
-       <widget class="QLabel" name="HOTCHAINAvailableLabel">
+       <widget class="QLabel" name="HOTXAvailableLabel">
         <property name="palette">
          <palette>
           <active>
@@ -2213,7 +2213,7 @@
        </widget>
       </item>
       <item>
-       <widget class="QLabel" name="labelHOTCHAIN">
+       <widget class="QLabel" name="labelHOTX">
         <property name="font">
          <font>
           <weight>75</weight>
@@ -2221,7 +2221,7 @@
          </font>
         </property>
         <property name="text">
-         <string>HOTCHAIN</string>
+         <string>HOTX</string>
         </property>
        </widget>
       </item>
@@ -2733,7 +2733,7 @@
       <string>TextLabel</string>
      </property>
     </widget>
-    <widget class="QLabel" name="HOTCHAINBalanceLabel">
+    <widget class="QLabel" name="HOTXBalanceLabel">
      <property name="geometry">
       <rect>
        <x>150</x>
@@ -2762,7 +2762,7 @@
       </font>
      </property>
      <property name="text">
-      <string>HOTCHAIN Balance:</string>
+      <string>HOTX Balance:</string>
      </property>
     </widget>
     <widget class="QLabel" name="label_12">
@@ -2784,7 +2784,7 @@
       <string>BTC Balance:</string>
      </property>
     </widget>
-    <widget class="QLabel" name="HOTCHAINAvailableLabel_2">
+    <widget class="QLabel" name="HOTXAvailableLabel_2">
      <property name="geometry">
       <rect>
        <x>150</x>
@@ -2835,7 +2835,7 @@
       <string>HOTX Pending:</string>
      </property>
     </widget>
-    <widget class="QLabel" name="HOTCHAINPendingLabel">
+    <widget class="QLabel" name="HOTXPendingLabel">
      <property name="geometry">
       <rect>
        <x>150</x>
@@ -2941,7 +2941,7 @@
       </rect>
      </property>
      <property name="text">
-      <string>Generate HOTX Deposit Address</string>
+      <string>Generate Hotchain Deposit Address</string>
      </property>
      <property name="icon">
       <iconset resource="../hotchain.qrc">
@@ -3155,7 +3155,7 @@
        <string notr="true">border: 1px solid #61696c;margin-left:4px;</string>
       </property>
      </widget>
-     <widget class="QPushButton" name="btnConvertHOTCHAIN">
+     <widget class="QPushButton" name="btnConvertHotchain">
       <property name="geometry">
        <rect>
         <x>260</x>

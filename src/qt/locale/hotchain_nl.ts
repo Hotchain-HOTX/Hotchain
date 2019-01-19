@@ -62,12 +62,12 @@
         <translation>Ontvangstadressen</translation>
     </message>
     <message>
-        <source>These are your HOTCHAIN addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Dit zijn uw HOTCHAIN adressen om betalingen mee te verzenden. Controleer altijd zowel het bedrag als het ontvangstadres voor het verzenden van geld.</translation>
+        <source>These are your Hotchain addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Dit zijn uw Hotchain adressen om betalingen mee te verzenden. Controleer altijd zowel het bedrag als het ontvangstadres voor het verzenden van geld.</translation>
     </message>
     <message>
-        <source>These are your HOTCHAIN addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Dit zijn uw HOTCHAIN adressen waarop betalingen kunnen worden ontvangen. Het wordt aangeraden om een nieuw ontvangstadres voor elke transactie te gebruiken.</translation>
+        <source>These are your Hotchain addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Dit zijn uw Hotchain adressen waarop betalingen kunnen worden ontvangen. Het wordt aangeraden om een nieuw ontvangstadres voor elke transactie te gebruiken.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -176,16 +176,16 @@
         <translation>Bevestig versleuteling van de portemonnee</translation>
     </message>
     <message>
-        <source>HOTCHAIN will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your HOTCHAINs from being stolen by malware infecting your computer.</source>
-        <translation>HOTCHAIN zal nu afsluiten om het versleutelingsproces te voltooien. Onthoud dat het versleutelen van uw portemonnee u niet volledig kan beschermen tegen malware infecties op uw computer die uw HOTCHAIN's kunnen stelen.</translation>
+        <source>Hotchain will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your HOTXs from being stolen by malware infecting your computer.</source>
+        <translation>Hotchain zal nu afsluiten om het versleutelingsproces te voltooien. Onthoud dat het versleutelen van uw portemonnee u niet volledig kan beschermen tegen malware infecties op uw computer die uw HOTX's kunnen stelen.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Weet u zeker dat u uw portemonnee wilt versleutelen?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR HOTCHAIN&lt;/b&gt;!</source>
-        <translation>Waarschuwing: Als u uw portemonnee versleutelt en uw wachtwoord vergeet, zult u &lt;b&gt;AL UW HOTCHAIN VERLIEZEN&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR HOTX&lt;/b&gt;!</source>
+        <translation>Waarschuwing: Als u uw portemonnee versleutelt en uw wachtwoord vergeet, zult u &lt;b&gt;AL UW HOTX VERLIEZEN&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -254,12 +254,12 @@
         <translation>Adres:</translation>
     </message>
     <message>
-        <source>Enter a HOTCHAIN Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
-        <translation>Voer een HOTCHAIN adres in dat u wilt coderen met BIP 38. Voer een wachtwoordzin in in het middelste vak. Druk op versleutelen om de versleutelde privé sleutel te berekenen.</translation>
+        <source>Enter a Hotchain Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
+        <translation>Voer een Hotchain adres in dat u wilt coderen met BIP 38. Voer een wachtwoordzin in in het middelste vak. Druk op versleutelen om de versleutelde privé sleutel te berekenen.</translation>
     </message>
     <message>
-        <source>The HOTCHAIN address to encrypt</source>
-        <translation>Het HOTCHAIN adres om te versleutelen</translation>
+        <source>The Hotchain address to encrypt</source>
+        <translation>Het Hotchain adres om te versleutelen</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -290,8 +290,8 @@
         <translation>Kopieer de huidige handtekening naar het systeemklembord</translation>
     </message>
     <message>
-        <source>Encrypt the private key for this HOTCHAIN address</source>
-        <translation>Versleutel de privé sleutel voor dit HOTCHAIN adres</translation>
+        <source>Encrypt the private key for this Hotchain address</source>
+        <translation>Versleutel de privé sleutel voor dit Hotchain adres</translation>
     </message>
     <message>
         <source>Reset all fields</source>
@@ -649,12 +649,12 @@
         <translation>Hotchain Wallet</translation>
     </message>
     <message>
-        <source>Send coins to a HOTCHAIN address</source>
-        <translation>Verstuur munten naar een HOTCHAIN adres</translation>
+        <source>Send coins to a Hotchain address</source>
+        <translation>Verstuur munten naar een Hotchain adres</translation>
     </message>
     <message>
         <source>Request payments (generates QR codes and hotchain: URIs)</source>
-        <translation>Vraag betaling aan (genereert QR codes en HOTCHAIN: URI's)</translation>
+        <translation>Vraag betaling aan (genereert QR codes en Hotchain: URI's)</translation>
     </message>
     <message>
         <source>&amp;Privacy</source>
@@ -674,19 +674,19 @@
     </message>
     <message>
         <source>Show information about Hotchain Wallet</source>
-        <translation>Toon informatie over HOTCHAIN Kern</translation>
+        <translation>Toon informatie over Hotchain Kern</translation>
     </message>
     <message>
-        <source>Modify configuration options for HOTCHAIN</source>
-        <translation>Wijzig HOTCHAIN configuratie opties</translation>
+        <source>Modify configuration options for Hotchain</source>
+        <translation>Wijzig Hotchain configuratie opties</translation>
     </message>
     <message>
-        <source>Sign messages with your HOTCHAIN addresses to prove you own them</source>
-        <translation>Onderteken berichten met uw HOTCHAIN adressen om te bewijzen dat deze adressen in uw bezit zijn</translation>
+        <source>Sign messages with your Hotchain addresses to prove you own them</source>
+        <translation>Onderteken berichten met uw Hotchain adressen om te bewijzen dat deze adressen in uw bezit zijn</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified HOTCHAIN addresses</source>
-        <translation>Controleer berichten om te verzekeren dat deze ondertekend zijn met de gespecificeerde HOTCHAIN adressen</translation>
+        <source>Verify messages to ensure they were signed with specified Hotchain addresses</source>
+        <translation>Controleer berichten om te verzekeren dat deze ondertekend zijn met de gespecificeerde Hotchain adressen</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -717,8 +717,8 @@
         <translation>Open Masternode configuratiebestand</translation>
     </message>
     <message>
-        <source>Open a HOTCHAIN: URI or payment request</source>
-        <translation>Open een HOTCHAIN: URI of betaalverzoek</translation>
+        <source>Open a Hotchain: URI or payment request</source>
+        <translation>Open een Hotchain: URI of betaalverzoek</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -729,16 +729,16 @@
         <translation>Block verkenner venster</translation>
     </message>
     <message>
-        <source>Show the Hotchain Wallet help message to get a list with possible HOTCHAIN command-line options</source>
-        <translation>Toon het Hotchain Wallet help bericht om een ​​lijst te krijgen met mogelijke HOTCHAIN command line opties</translation>
+        <source>Show the Hotchain Wallet help message to get a list with possible Hotchain command-line options</source>
+        <translation>Toon het Hotchain Wallet help bericht om een ​​lijst te krijgen met mogelijke Hotchain command line opties</translation>
     </message>
     <message>
         <source>Hotchain Wallet client</source>
         <translation>Hotchain Wallet client</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to HOTCHAIN network</source>
-        <translation><numerusform>%n actieve verbindingen met het HOTCHAIN netwerk</numerusform><numerusform>%n actieve connectie(s) naar HOTCHAIN netwerk</numerusform></translation>
+        <source>%n active connection(s) to Hotchain network</source>
+        <translation><numerusform>%n actieve verbindingen met het Hotchain netwerk</numerusform><numerusform>%n actieve connectie(s) naar Hotchain netwerk</numerusform></translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -1130,8 +1130,8 @@ MultiSend: %1</translation>
         <translation>Dit label wordt rood, als een ontvanger een hoeveelheid kleiner dan %1 ontvangt.</translation>
     </message>
     <message>
-        <source>Can vary +/- %1 hotx per input.</source>
-        <translation>Kan +/-%1 hotx per invoer variëren.</translation>
+        <source>Can vary +/- %1 uhotx per input.</source>
+        <translation>Kan +/-%1 uhotx per invoer variëren.</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -1185,8 +1185,8 @@ MultiSend: %1</translation>
         <translation>Wijzig verzend adres</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid HOTCHAIN address.</source>
-        <translation>Het ingevoerde adres: "%1" is geen geldig HOTCHAIN adres.</translation>
+        <source>The entered address "%1" is not a valid Hotchain address.</source>
+        <translation>Het ingevoerde adres: "%1" is geen geldig Hotchain adres.</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -1294,8 +1294,8 @@ MultiSend: %1</translation>
         <translation>Aangezien dit de eerste keer is dat het programma is gestart, kun je kiezen waar Hotchain Wallet zijn data opslaat.</translation>
     </message>
     <message>
-        <source>Hotchain Wallet will download and store a copy of the HOTCHAIN block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>Hotchain Wallet zal een kopie van de HOTCHAIN blockchain downloaden en opslaan. Tenminste %1GB aan data zal worden opgeslagen in deze map en het zal over de tijd groeien. De portemonnee zal ook in deze map worden opgeslagen.</translation>
+        <source>Hotchain Wallet will download and store a copy of the Hotchain block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>Hotchain Wallet zal een kopie van de Hotchain blockchain downloaden en opslaan. Tenminste %1GB aan data zal worden opgeslagen in deze map en het zal over de tijd groeien. De portemonnee zal ook in deze map worden opgeslagen.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -1448,12 +1448,12 @@ MultiSend: %1</translation>
         <translation>Vul het adres in om naar te verzenden</translation>
     </message>
     <message>
-        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other HOTCHAIN addresses after it matures.
-To Add: enter percentage to give and HOTCHAIN address to add to the MultiSend vector.
+        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other Hotchain addresses after it matures.
+To Add: enter percentage to give and Hotchain address to add to the MultiSend vector.
 To Delete: Enter address to delete and press delete.
 MultiSend will not be activated unless you have clicked Activate</source>
-        <translation>MultiSend stelt je in staat om automatisch tot 100% van uw stake of masternode beloning automatisch te verzenden naar een lijst van andere HOTCHAIN adressen nadat het volwassen is. 
-Toevoegen: voer het te geven percentage in en HOTCHAIN adres om toe te voegen aan de MultiSend vector.
+        <translation>MultiSend stelt je in staat om automatisch tot 100% van uw stake of masternode beloning automatisch te verzenden naar een lijst van andere Hotchain adressen nadat het volwassen is. 
+Toevoegen: voer het te geven percentage in en Hotchain adres om toe te voegen aan de MultiSend vector.
 Verwijderen: Voer adres in om te verwijderen en druk op delete.
 MultiSend zal niet worden geactiveerd tenzij je op Activeer hebt geklikt</translation>
     </message>
@@ -1681,8 +1681,8 @@ Waas alsjeblieft geduldig nadat u op importeren hebt geklikt.</translation>
         <translation>Adres / Bedrag:</translation>
     </message>
     <message>
-        <source>Add destinations to send HOTCHAIN to</source>
-        <translation>Voeg bestemmingen toe om HOTCHAIN naar te verzenden</translation>
+        <source>Add destinations to send HOTX to</source>
+        <translation>Voeg bestemmingen toe om HOTX naar te verzenden</translation>
     </message>
     <message>
         <source>Add &amp;Destination</source>
@@ -1780,48 +1780,48 @@ Waas alsjeblieft geduldig nadat u op importeren hebt geklikt.</translation>
         <translation>Selecteer de privacy level.</translation>
     </message>
     <message>
-        <source>Use 2 separate masternodes to mix funds up to 10000 HOTCHAIN</source>
-        <translation>Gebruik 2 aparte masternodes om fondsen te mixen tot 10000 HOTCHAIN</translation>
+        <source>Use 2 separate masternodes to mix funds up to 10000 HOTX</source>
+        <translation>Gebruik 2 aparte masternodes om fondsen te mixen tot 10000 HOTX</translation>
     </message>
     <message>
-        <source>Use 8 separate masternodes to mix funds up to 10000 HOTCHAIN</source>
-        <translation>Gebruik 8 aparte masternodes om fondsen te mixen tot 10000 HOTCHAIN</translation>
+        <source>Use 8 separate masternodes to mix funds up to 10000 HOTX</source>
+        <translation>Gebruik 8 aparte masternodes om fondsen te mixen tot 10000 HOTX</translation>
     </message>
     <message>
         <source>Use 16 separate masternodes</source>
         <translation>Gebruik 16 aparte masternodes</translation>
     </message>
     <message>
-        <source>This option is the quickest and will cost about ~0.025 HOTCHAIN to anonymize 10000 HOTCHAIN</source>
-        <translation>Deze optie is het snelst en kost ongeveer ~0,025 HOTCHAIN om 10000 HOTCHAIN te anonimiseren</translation>
+        <source>This option is the quickest and will cost about ~0.025 HOTX to anonymize 10000 HOTX</source>
+        <translation>Deze optie is het snelst en kost ongeveer ~0,025 HOTX om 10000 HOTX te anonimiseren</translation>
     </message>
     <message>
-        <source>This option is moderately fast and will cost about 0.05 HOTCHAIN to anonymize 10000 HOTCHAIN</source>
-        <translation>Deze optie is gematigd snel en kost ongeveer 0,05 HOTCHAIN om 10000 HOTCHAIN te anonimiseren</translation>
+        <source>This option is moderately fast and will cost about 0.05 HOTX to anonymize 10000 HOTX</source>
+        <translation>Deze optie is gematigd snel en kost ongeveer 0,05 HOTX om 10000 HOTX te anonimiseren</translation>
     </message>
     <message>
         <source>This is the slowest and most secure option. Using maximum anonymity will cost</source>
         <translation>Dit is de langzaamste en veiligste optie. Het gebruik van maximale anonimiteit kost</translation>
     </message>
     <message>
-        <source>0.1 HOTCHAIN per 10000 HOTCHAIN you anonymize.</source>
-        <translation>je anonimiseert 0,1 HOTCHAIN per 10000 HOTCHAIN.</translation>
+        <source>0.1 HOTX per 10000 HOTX you anonymize.</source>
+        <translation>je anonimiseert 0,1 HOTX per 10000 HOTX.</translation>
     </message>
     <message>
         <source>Obfuscation Configuration</source>
         <translation>Verduistering configuratie</translation>
     </message>
     <message>
-        <source>Obfuscation was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening HOTCHAIN's configuration screen.</source>
-        <translation>Verduistering is succesvol ingesteld op basic (%1 en 2 rondes). Je kunt dit op elk gewenst moment wijzigen door het configuratiescherm van HOTCHAIN te openen.</translation>
+        <source>Obfuscation was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening Hotchain's configuration screen.</source>
+        <translation>Verduistering is succesvol ingesteld op basic (%1 en 2 rondes). Je kunt dit op elk gewenst moment wijzigen door het configuratiescherm van Hotchain te openen.</translation>
     </message>
     <message>
-        <source>Obfuscation was successfully set to high (%1 and 8 rounds). You can change this at any time by opening HOTCHAIN's configuration screen.</source>
-        <translation>Verduistering is succesvol ingesteld op hoog (%1 en 8 rondes). U kunt dit op elk gewenst moment wijzigen door het configuratiescherm van HOTCHAIN te openen.</translation>
+        <source>Obfuscation was successfully set to high (%1 and 8 rounds). You can change this at any time by opening Hotchain's configuration screen.</source>
+        <translation>Verduistering is succesvol ingesteld op hoog (%1 en 8 rondes). U kunt dit op elk gewenst moment wijzigen door het configuratiescherm van Hotchain te openen.</translation>
     </message>
     <message>
-        <source>Obfuscation was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening HOTCHAIN's configuration screen.</source>
-        <translation>Verduistering is succesvol ingesteld op hoog (%1 en 16 rondes). U kunt dit op elk gewenst moment wijzigen door het configuratiescherm van HOTCHAIN te openen.</translation>
+        <source>Obfuscation was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening Hotchain's configuration screen.</source>
+        <translation>Verduistering is succesvol ingesteld op hoog (%1 en 16 rondes). U kunt dit op elk gewenst moment wijzigen door het configuratiescherm van Hotchain te openen.</translation>
     </message>
 </context>
 <context>
@@ -1882,8 +1882,8 @@ Waas alsjeblieft geduldig nadat u op importeren hebt geklikt.</translation>
         <translation>Als je de uitgaven van onbevestigde wijzigingen uitschakelt, de wijziging van een transactie&lt;br/&gt;kan niet worden gebruikt tot die transactie tenminste één bevestiging heeft.&lt;br/&gt;Dit beïnvloedt ook hoe uw saldo is berekend.</translation>
     </message>
     <message>
-        <source>Automatically open the HOTCHAIN client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Open de HOTCHAIN client poort automatisch op de router. Dit werkt alleen als je router UPnP ondersteunt en het is ingeschakeld.</translation>
+        <source>Automatically open the Hotchain client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Open de Hotchain client poort automatisch op de router. Dit werkt alleen als je router UPnP ondersteunt en het is ingeschakeld.</translation>
     </message>
     <message>
         <source>Accept connections from outside</source>
@@ -1902,12 +1902,12 @@ Waas alsjeblieft geduldig nadat u op importeren hebt geklikt.</translation>
         <translation>Expert</translation>
     </message>
     <message>
-        <source>Automatically start HOTCHAIN after logging in to the system.</source>
-        <translation>HOTCHAIN automatisch opstarten na inloggen op het systeem.</translation>
+        <source>Automatically start Hotchain after logging in to the system.</source>
+        <translation>Hotchain automatisch opstarten na inloggen op het systeem.</translation>
     </message>
     <message>
-        <source>&amp;Start HOTCHAIN on system login</source>
-        <translation>&amp;HOTCHAIN starten bij systeemlogin</translation>
+        <source>&amp;Start Hotchain on system login</source>
+        <translation>&amp;Hotchain starten bij systeemlogin</translation>
     </message>
     <message>
         <source>Whether to show coin control features or not.</source>
@@ -1934,8 +1934,8 @@ Waas alsjeblieft geduldig nadat u op importeren hebt geklikt.</translation>
         <translation>&amp;Netwerk</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting HOTCHAIN.</source>
-        <translation>De gebruikersinterface taal kan hier ingesteld worden. Deze instelling zal uitgevoerd na herstart van HOTCHAIN.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting Hotchain.</source>
+        <translation>De gebruikersinterface taal kan hier ingesteld worden. Deze instelling zal uitgevoerd na herstart van Hotchain.</translation>
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
@@ -1948,24 +1948,24 @@ https://www.transifex.com/hotchain-project/hotchain-project-translations</transl
         <translation>Map poort gebruikt &amp;UPnP</translation>
     </message>
     <message>
-        <source>Enable automatic minting of HOTCHAIN units to zHOTX</source>
-        <translation>Schakel automatisch slaan van HOTCHAIN-eenheden in op zHOTX</translation>
+        <source>Enable automatic minting of HOTX units to zHOTX</source>
+        <translation>Schakel automatisch slaan van HOTX-eenheden in op zHOTX</translation>
     </message>
     <message>
         <source>Enable zHOTX Automint</source>
         <translation>Schakel zHOTX Automint in</translation>
     </message>
     <message>
-        <source>Percentage of incoming HOTCHAIN which get automatically converted to zHOTX via Zerocoin Protocol (min: 10%)</source>
-        <translation>Percentage inkomende HOTCHAIN die automatisch wordt omgezet naar zHOTX via Zerocoin Protocol (min: 10%)</translation>
+        <source>Percentage of incoming HOTX which get automatically converted to zHOTX via Zerocoin Protocol (min: 10%)</source>
+        <translation>Percentage inkomende HOTX die automatisch wordt omgezet naar zHOTX via Zerocoin Protocol (min: 10%)</translation>
     </message>
     <message>
         <source>Percentage of autominted zHOTX</source>
         <translation>Percentage autominted zHOTX</translation>
     </message>
     <message>
-        <source>Wait with automatic conversion to Zerocoin until enough HOTCHAIN for this denomination is available</source>
-        <translation>Wacht met automatische omzetting naar Zerocoin totdat er genoeg HOTCHAIN voor deze denominatie beschikbaar is</translation>
+        <source>Wait with automatic conversion to Zerocoin until enough HOTX for this denomination is available</source>
+        <translation>Wacht met automatische omzetting naar Zerocoin totdat er genoeg HOTX voor deze denominatie beschikbaar is</translation>
     </message>
     <message>
         <source>Preferred Automint zHOTX Denomination</source>
@@ -1976,8 +1976,8 @@ https://www.transifex.com/hotchain-project/hotchain-project-translations</transl
         <translation>Inzet splitdrempel:</translation>
     </message>
     <message>
-        <source>Connect to the HOTCHAIN network through a SOCKS5 proxy.</source>
-        <translation>Maak verbinding met het HOTCHAIN netwerk via een SOCKS5 proxy.</translation>
+        <source>Connect to the Hotchain network through a SOCKS5 proxy.</source>
+        <translation>Maak verbinding met het Hotchain netwerk via een SOCKS5 proxy.</translation>
     </message>
     <message>
         <source>Proxy &amp;IP:</source>
@@ -1992,8 +1992,8 @@ https://www.transifex.com/hotchain-project/hotchain-project-translations</transl
         <translation>&amp;Poort:</translation>
     </message>
     <message>
-        <source>Port of the proxy (e.g. 9069)</source>
-        <translation>Proxy-poort (v.b. 9069)</translation>
+        <source>Port of the proxy (e.g. 9050)</source>
+        <translation>Proxy-poort (v.b. 9050)</translation>
     </message>
     <message>
         <source>&amp;Window</source>
@@ -2131,8 +2131,8 @@ https://www.transifex.com/hotchain-project/hotchain-project-translations</transl
         <translation>Totaal saldo, inclusief alle niet-beschikbare munten.</translation>
     </message>
     <message>
-        <source>HOTCHAIN Balance</source>
-        <translation>HOTCHAIN Saldi</translation>
+        <source>HOTX Balance</source>
+        <translation>HOTX Saldi</translation>
     </message>
     <message>
         <source>Pending:</source>
@@ -2155,8 +2155,8 @@ https://www.transifex.com/hotchain-project/hotchain-project-translations</transl
         <translation>Huidige vergrendelde balans in alleen-lezen-adressen</translation>
     </message>
     <message>
-        <source>Your current HOTCHAIN balance, unconfirmed and immature transactions included</source>
-        <translation>Uw huidige HOTCHAIN-saldo, onbevestigde en onvolgroeide transacties inbegrepen</translation>
+        <source>Your current Hotchain balance, unconfirmed and immature transactions included</source>
+        <translation>Uw huidige Hotchain-saldo, onbevestigde en onvolgroeide transacties inbegrepen</translation>
     </message>
     <message>
         <source>zHOTX Balance</source>
@@ -2175,8 +2175,8 @@ Immature: confirmed, but less than 1 mint of the same denomination after it was 
 Onvolwassen: bevestigd, maar minder dan 1 mint van dezelfde denominatie nadat het gemint was.</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the HOTCHAIN network after a connection is established, but this process has not completed yet.</source>
-        <translation>De weergegeven informatie kan verouderd zijn. Je portemonnee synchroniseert automatisch met het HOTCHAIN netwerk nadat een verbinding is opgezet, maar dit proces is nog niet afgerond.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Hotchain network after a connection is established, but this process has not completed yet.</source>
+        <translation>De weergegeven informatie kan verouderd zijn. Je portemonnee synchroniseert automatisch met het Hotchain netwerk nadat een verbinding is opgezet, maar dit proces is nog niet afgerond.</translation>
     </message>
     <message>
         <source>OVERVIEW</source>
@@ -2219,8 +2219,8 @@ Onvolwassen: bevestigd, maar minder dan 1 mint van dezelfde denominatie nadat he
         <translation>Uitgeefbaar:</translation>
     </message>
     <message>
-        <source>Locked HOTCHAIN or Masternode collaterals. These are excluded from zHOTX minting.</source>
-        <translation>Vergrendelde HOTCHAIN of Masternode onderpanden. Deze zijn uitgesloten van de zHOTX muntage.</translation>
+        <source>Locked HOTX or Masternode collaterals. These are excluded from zHOTX minting.</source>
+        <translation>Vergrendelde HOTX of Masternode onderpanden. Deze zijn uitgesloten van de zHOTX muntage.</translation>
     </message>
     <message>
         <source>Locked:</source>
@@ -2292,8 +2292,8 @@ Om AutoMint in te schakelend verander je 'enablezeromint=0' naar 'enablezeromint
         <translation>Kan hotchain niet starten: click-to-pay handler</translation>
     </message>
     <message>
-        <source>URI cannot be parsed! This can be caused by an invalid HOTCHAIN address or malformed URI parameters.</source>
-        <translation>URL kan niet ontleed worden! Dit kan worden veroorzaakt door een ongeldig HOTCHAIN adres of misvormde URL parameters.</translation>
+        <source>URI cannot be parsed! This can be caused by an invalid Hotchain address or malformed URI parameters.</source>
+        <translation>URL kan niet ontleed worden! Dit kan worden veroorzaakt door een ongeldig Hotchain adres of misvormde URL parameters.</translation>
     </message>
     <message>
         <source>Payment request file cannot be read! This can be caused by an invalid payment request file.</source>
@@ -2378,8 +2378,8 @@ Om AutoMint in te schakelend verander je 'enablezeromint=0' naar 'enablezeromint
         <translation>Zerocoin Acties:</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the HOTCHAIN network after a connection is established, but this process has not completed yet.</source>
-        <translation>De weergegeven informatie kan verouderd zijn. Je portemonnee synchroniseert automatisch met het HOTCHAIN netwerk nadat een verbinding is opgezet, maar dit proces is nog niet afgerond.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Hotchain network after a connection is established, but this process has not completed yet.</source>
+        <translation>De weergegeven informatie kan verouderd zijn. Je portemonnee synchroniseert automatisch met het Hotchain netwerk nadat een verbinding is opgezet, maar dit proces is nog niet afgerond.</translation>
     </message>
     <message>
         <source>Mint Zerocoin</source>
@@ -2402,8 +2402,8 @@ Om AutoMint in te schakelend verander je 'enablezeromint=0' naar 'enablezeromint
         <translation>Beschikbaar voor minting:</translation>
     </message>
     <message>
-        <source>0.000 000 00 HOTCHAIN</source>
-        <translation>0.000 000 00 HOTCHAIN</translation>
+        <source>0.000 000 00 HOTX</source>
+        <translation>0.000 000 00 HOTX</translation>
     </message>
     <message>
         <source>Reset Zerocoin Wallet DB. Deletes transactions that did not make it into the blockchain.</source>
@@ -2443,7 +2443,7 @@ Om AutoMint in te schakelend verander je 'enablezeromint=0' naar 'enablezeromint
     </message>
     <message>
         <source>Enter an amount of Hotx to convert to zHOTX</source>
-        <translation>Vul het aantal HOTCHAIN in om te converteren naar zHOTX</translation>
+        <translation>Vul het aantal HOTX in om te converteren naar zHOTX</translation>
     </message>
     <message>
         <source>zHOTX Control</source>
@@ -2502,8 +2502,8 @@ zHotx zijn volwassen wanneer zij meer dan 20 bevestigingen hebben EN meer dan 2 
         <translation>Betaal &amp;Naar:</translation>
     </message>
     <message>
-        <source>The HOTCHAIN address to send the payment to. Creates local payment to yourself when empty.</source>
-        <translation>Het HOTCHAIN adres om de betaling naar te verzenden. Maakt lokale betaling aan jezelf als je leeg bent.</translation>
+        <source>The Hotchain address to send the payment to. Creates local payment to yourself when empty.</source>
+        <translation>Het Hotchain adres om de betaling naar te verzenden. Maakt lokale betaling aan jezelf als je leeg bent.</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2988,7 +2988,7 @@ Ofwel het munten van hogere denominaties (dus minder invoer nodig) of het te bes
     </message>
     <message numerus="yes">
         <source>PrivacyDialog</source>
-        <comment>Enter an amount of HOTCHAIN to convert to zHOTX</comment>
+        <comment>Enter an amount of HOTX to convert to zHOTX</comment>
         <translation><numerusform>PrivacyDialoog</numerusform><numerusform>PrivacyDialog</numerusform></translation>
     </message>
     <message>
@@ -3031,8 +3031,8 @@ Ofwel het munten van hogere denominaties (dus minder invoer nodig) of het te bes
         <translation>Hoeveelheid</translation>
     </message>
     <message>
-        <source>Enter a HOTCHAIN address (e.g. %1)</source>
-        <translation>Voer een HOTCHAIN adres in (b.v. %1)</translation>
+        <source>Enter a Hotchain address (e.g. %1)</source>
+        <translation>Voer een Hotchain adres in (b.v. %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -3169,8 +3169,8 @@ Ofwel het munten van hogere denominaties (dus minder invoer nodig) of het te bes
         <translation>Blockchain</translation>
     </message>
     <message>
-        <source>Open the HOTCHAIN debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Open het HOTCHAIN debug log bestand uit de huidige data directory. Dit kan enkele seconden duren voor grote logbestanden.</translation>
+        <source>Open the Hotchain debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Open het Hotchain debug log bestand uit de huidige data directory. Dit kan enkele seconden duren voor grote logbestanden.</translation>
     </message>
     <message>
         <source>Number of Masternodes</source>
@@ -3385,8 +3385,8 @@ Ofwel het munten van hogere denominaties (dus minder invoer nodig) of het te bes
         <translation>Uit:</translation>
     </message>
     <message>
-        <source>Welcome to the HOTCHAIN RPC console.</source>
-        <translation>Welkom bij de HOTCHAIN RPC console.</translation>
+        <source>Welcome to the Hotchain RPC console.</source>
+        <translation>Welkom bij de Hotchain RPC console.</translation>
     </message>
     <message>
         <source>&amp;Disconnect Node</source>
@@ -3512,16 +3512,16 @@ Ofwel het munten van hogere denominaties (dus minder invoer nodig) of het te bes
         <translation>Een optioneel label om te associëren met het nieuwe ontvangstadres.</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the HOTCHAIN network.</source>
-        <translation>Een optioneel bericht dat aan het betalingsverzoek wordt gehecht, dat wordt weergegeven wanneer het verzoek wordt geopend. Opmerking: het bericht wordt niet verzonden met de betaling via het HOTCHAIN netwerk.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Hotchain network.</source>
+        <translation>Een optioneel bericht dat aan het betalingsverzoek wordt gehecht, dat wordt weergegeven wanneer het verzoek wordt geopend. Opmerking: het bericht wordt niet verzonden met de betaling via het Hotchain netwerk.</translation>
     </message>
     <message>
         <source>RECEIVE</source>
         <translation>ontvangen</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the HOTCHAIN network.</source>
-        <translation>Een optioneel bericht dat aan het betalingsverzoek wordt gehecht, dat wordt weergegeven wanneer het verzoek wordt geopend.&lt;br&gt;Opmerking: het bericht wordt niet verzonden met de betaling via het HOTCHAIN netwerk.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the Hotchain network.</source>
+        <translation>Een optioneel bericht dat aan het betalingsverzoek wordt gehecht, dat wordt weergegeven wanneer het verzoek wordt geopend.&lt;br&gt;Opmerking: het bericht wordt niet verzonden met de betaling via het Hotchain netwerk.</translation>
     </message>
     <message>
         <source>Use this form to request payments. All fields are &lt;b&gt;optional&lt;/b&gt;.</source>
@@ -3749,8 +3749,8 @@ Ofwel het munten van hogere denominaties (dus minder invoer nodig) of het te bes
         <translation>UTXO grootte:</translation>
     </message>
     <message>
-        <source>0 HOTCHAIN</source>
-        <translation>0 HOTCHAIN</translation>
+        <source>0 HOTX</source>
+        <translation>0 HOTX</translation>
     </message>
     <message>
         <source>Transaction Fee:</source>
@@ -3805,16 +3805,16 @@ Ofwel het munten van hogere denominaties (dus minder invoer nodig) of het te bes
         <translation>Munten automatisch geselecteerd</translation>
     </message>
     <message>
-        <source>If the custom fee is set to 1000 uHOTCHAINs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uHOTCHAINs in fee,&lt;br /&gt;while "at least" pays 1000 uHOTCHAINs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>Als de aangepaste vergoeding is ingesteld op 1000 uHOTCHAINs en de transactie is slechts 250 bytes, dan betaalt per kilobyte alleen 250 uHOTCHAIN's in vergoeding,&lt;br /&gt;terwijl "minstens" 1000 uHOTCHAIN's betaalt. Voor transacties die groter zijn dan een kilobyte, betalen beiden per kilobyte.</translation>
+        <source>If the custom fee is set to 1000 uHOTXs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uHOTXs in fee,&lt;br /&gt;while "at least" pays 1000 uHOTXs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <translation>Als de aangepaste vergoeding is ingesteld op 1000 uHOTXs en de transactie is slechts 250 bytes, dan betaalt per kilobyte alleen 250 uHOTX's in vergoeding,&lt;br /&gt;terwijl "minstens" 1000 uHOTX's betaalt. Voor transacties die groter zijn dan een kilobyte, betalen beiden per kilobyte.</translation>
     </message>
     <message>
-        <source>If the custom fee is set to 1000 uHOTCHAINs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uHOTCHAINs in fee,&lt;br /&gt;while "total at least" pays 1000 uHOTCHAINs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>Als de aangepaste vergoeding is ingesteld op 1000 uHOTCHAINs en de transactie is slechts 250 bytes, dan betaalt per kilobyte alleen 250 uHOTCHAIN's in vergoeding,&lt;br /&gt;terwijl "totaal minstens" 1000 uHOTCHAIN's betaalt. Voor transacties die groter zijn dan een kilobyte, betalen beiden per kilobyte.</translation>
+        <source>If the custom fee is set to 1000 uHOTXs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uHOTXs in fee,&lt;br /&gt;while "total at least" pays 1000 uHOTXs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <translation>Als de aangepaste vergoeding is ingesteld op 1000 uHOTXs en de transactie is slechts 250 bytes, dan betaalt per kilobyte alleen 250 uHOTX's in vergoeding,&lt;br /&gt;terwijl "totaal minstens" 1000 uHOTX's betaalt. Voor transacties die groter zijn dan een kilobyte, betalen beiden per kilobyte.</translation>
     </message>
     <message>
-        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for HOTCHAIN transactions than the network can process.</source>
-        <translation>Alleen de minimale vergoeding betalen is prima, zolang er minder transactie volume is dan ruimte in de blokken. &lt;br /&gt;Maar wees ervan bewust dat dit kan leiden tot een nooit bevestigende transactie wanneer er meer vraag is naar HOTCHAIN transacties dan het netwerk kan verwerken.</translation>
+        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for Hotchain transactions than the network can process.</source>
+        <translation>Alleen de minimale vergoeding betalen is prima, zolang er minder transactie volume is dan ruimte in de blokken. &lt;br /&gt;Maar wees ervan bewust dat dit kan leiden tot een nooit bevestigende transactie wanneer er meer vraag is naar Hotchain transacties dan het netwerk kan verwerken.</translation>
     </message>
     <message>
         <source>normal</source>
@@ -3861,8 +3861,8 @@ Ofwel het munten van hogere denominaties (dus minder invoer nodig) of het te bes
         <translation>Voeg &amp;ontvanger toe</translation>
     </message>
     <message>
-        <source>Anonymized HOTCHAIN</source>
-        <translation>Geanonimiseerde HOTCHAIN</translation>
+        <source>Anonymized HOTX</source>
+        <translation>Geanonimiseerde HOTX</translation>
     </message>
     <message>
         <source>Balance:</source>
@@ -3909,8 +3909,8 @@ Ofwel het munten van hogere denominaties (dus minder invoer nodig) of het te bes
         <translation>Het split block tool werkt niet met meerdere adressen. Probeer het nog eens.</translation>
     </message>
     <message>
-        <source>Warning: Invalid HOTCHAIN address</source>
-        <translation>Waarschuwing: Ongeldig HOTCHAIN adres</translation>
+        <source>Warning: Invalid Hotchain address</source>
+        <translation>Waarschuwing: Ongeldig Hotchain adres</translation>
     </message>
     <message>
         <source>%1 to %2</source>
@@ -4012,8 +4012,8 @@ Ofwel het munten van hogere denominaties (dus minder invoer nodig) of het te bes
         <translation>Betaal &amp;Naar:</translation>
     </message>
     <message>
-        <source>The HOTCHAIN address to send the payment to</source>
-        <translation>Het HOTCHAIN adres om de betaling naar te verzenden</translation>
+        <source>The Hotchain address to send the payment to</source>
+        <translation>Het Hotchain adres om de betaling naar te verzenden</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -4052,8 +4052,8 @@ Ofwel het munten van hogere denominaties (dus minder invoer nodig) of het te bes
         <translation>Bericht:</translation>
     </message>
     <message>
-        <source>A message that was attached to the HOTCHAIN: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the HOTCHAIN network.</source>
-        <translation>Een bericht dat is gehecht aan de HOTCHAIN: URI die bij de transactie wordt opgeslagen voor uw referentie. Opmerking: dit bericht wordt niet verzonden via het HOTCHAIN netwerk.</translation>
+        <source>A message that was attached to the Hotchain: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Hotchain network.</source>
+        <translation>Een bericht dat is gehecht aan de Hotchain: URI die bij de transactie wordt opgeslagen voor uw referentie. Opmerking: dit bericht wordt niet verzonden via het Hotchain netwerk.</translation>
     </message>
     <message>
         <source>This is an unverified payment request.</source>
@@ -4102,8 +4102,8 @@ Ofwel het munten van hogere denominaties (dus minder invoer nodig) of het te bes
         <translation>Je kunt berichten met je adressen ondertekenen om te bewijzen dat je ze bezit. Wees voorzichtig om niets vaags te ondertekenen, omdat phishing aanvallen je misschien kunnen proberen om je identiteit over te geven. Teken alleen volledig gedetailleerde verklaringen aan waar je mee akkoord gaat.</translation>
     </message>
     <message>
-        <source>The HOTCHAIN address to sign the message with</source>
-        <translation>Het HOTCHAIN adres om het bericht met te ondertekenen</translation>
+        <source>The Hotchain address to sign the message with</source>
+        <translation>Het Hotchain adres om het bericht met te ondertekenen</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -4134,16 +4134,16 @@ Ofwel het munten van hogere denominaties (dus minder invoer nodig) of het te bes
         <translation>Kopieer de huidige handtekening naar het systeemklembord</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this HOTCHAIN address</source>
-        <translation>Onderteken het bericht om te bewijzen dat u het HOTCHAIN adres bezit</translation>
+        <source>Sign the message to prove you own this Hotchain address</source>
+        <translation>Onderteken het bericht om te bewijzen dat u het Hotchain adres bezit</translation>
     </message>
     <message>
-        <source>The HOTCHAIN address the message was signed with</source>
-        <translation>Het HOTCHAIN adres waarmee het bericht was ondertekend</translation>
+        <source>The Hotchain address the message was signed with</source>
+        <translation>Het Hotchain adres waarmee het bericht was ondertekend</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified HOTCHAIN address</source>
-        <translation>Controleer een bericht om te verifiëren dat het ondertekend is door het gespecificeerde HOTCHAIN adres</translation>
+        <source>Verify the message to ensure it was signed with the specified Hotchain address</source>
+        <translation>Controleer een bericht om te verifiëren dat het ondertekend is door het gespecificeerde Hotchain adres</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -4230,7 +4230,7 @@ Ofwel het munten van hogere denominaties (dus minder invoer nodig) of het te bes
     <name>SplashScreen</name>
     <message>
         <source>Hotchain Wallet</source>
-        <translation>HOTCHAIN Kern</translation>
+        <translation>Hotchain Kern</translation>
     </message>
     <message>
         <source>Version %1</source>
@@ -4246,7 +4246,7 @@ Ofwel het munten van hogere denominaties (dus minder invoer nodig) of het te bes
     </message>
     <message>
         <source>The Hotchain Wallet developers</source>
-        <translation>De HOTCHAIN Kernontwikkelaars</translation>
+        <translation>De Hotchain Kernontwikkelaars</translation>
     </message>
     <message>
         <source>[testnet]</source>
@@ -4525,8 +4525,8 @@ Ofwel het munten van hogere denominaties (dus minder invoer nodig) of het te bes
         <translation>Verkregen via verduistering</translation>
     </message>
     <message>
-        <source>HOTCHAIN Stake</source>
-        <translation>HOTCHAIN Stake</translation>
+        <source>HOTX Stake</source>
+        <translation>HOTX Stake</translation>
     </message>
     <message>
         <source>zHOTX Stake</source>
@@ -4549,24 +4549,24 @@ Ofwel het munten van hogere denominaties (dus minder invoer nodig) of het te bes
         <translation>Verduistering creëert denominaties</translation>
     </message>
     <message>
-        <source>Converted HOTCHAIN to zHOTX</source>
-        <translation>Geconverteerde HOTCHAIN naar zHOTX</translation>
+        <source>Converted HOTX to zHOTX</source>
+        <translation>Geconverteerde HOTX naar zHOTX</translation>
     </message>
     <message>
         <source>Spent zHOTX</source>
         <translation>Bestede zHOTX</translation>
     </message>
     <message>
-        <source>Received HOTCHAIN from zHOTX</source>
-        <translation>Ontvangen HOTCHAIN van zHOTX</translation>
+        <source>Received HOTX from zHOTX</source>
+        <translation>Ontvangen HOTX van zHOTX</translation>
     </message>
     <message>
         <source>Minted Change as zHOTX from zHOTX Spend</source>
         <translation>Gemint wisselgeld als zHOTX van bestede zHOTX</translation>
     </message>
     <message>
-        <source>Converted zHOTX to HOTCHAIN</source>
-        <translation>Geconverteerde zHOTX naar HOTCHAIN</translation>
+        <source>Converted zHOTX to HOTX</source>
+        <translation>Geconverteerde zHOTX naar HOTX</translation>
     </message>
     <message>
         <source>Anonymous (zHOTX Transaction)</source>
@@ -4784,8 +4784,8 @@ Ofwel het munten van hogere denominaties (dus minder invoer nodig) of het te bes
         <translation>Exporteren succesvol</translation>
     </message>
     <message>
-        <source>Received HOTCHAIN from zHOTX</source>
-        <translation>Ontvangen HOTCHAIN van zHOTX</translation>
+        <source>Received HOTX from zHOTX</source>
+        <translation>Ontvangen HOTX van zHOTX</translation>
     </message>
     <message>
         <source>Zerocoin Spend, Change in zHOTX</source>
@@ -4825,8 +4825,8 @@ Ofwel het munten van hogere denominaties (dus minder invoer nodig) of het te bes
         <translation>Verzend Munten</translation>
     </message>
     <message>
-        <source>SwiftX doesn't support sending values that high yet. Transactions are currently limited to %1 HOTCHAIN.</source>
-        <translation>SwiftTX ondersteunt geen verzendwaarden die zo hoog zijn. Transacties zijn momenteel beperkt tot %1 HOTCHAIN.</translation>
+        <source>SwiftX doesn't support sending values that high yet. Transactions are currently limited to %1 HOTX.</source>
+        <translation>SwiftTX ondersteunt geen verzendwaarden die zo hoog zijn. Transacties zijn momenteel beperkt tot %1 HOTX.</translation>
     </message>
 </context>
 <context>
@@ -4942,8 +4942,8 @@ Ofwel het munten van hogere denominaties (dus minder invoer nodig) of het te bes
         <translation>Schakel automatische portemonnee back-ups in geactiveerd na elke geminte zHOTX (0-1, standaard: %u)</translation>
     </message>
     <message>
-        <source>Enable or disable staking functionality for HOTCHAIN inputs (0-1, default: %u)</source>
-        <translation>In- of uitschakelen staking functionaliteit voor HOTCHAIN inputs (0-1, standaard: %u)</translation>
+        <source>Enable or disable staking functionality for HOTX inputs (0-1, default: %u)</source>
+        <translation>In- of uitschakelen staking functionaliteit voor HOTX inputs (0-1, standaard: %u)</translation>
     </message>
     <message>
         <source>Enable or disable staking functionality for zHOTX inputs (0-1, default: %u)</source>
@@ -4982,12 +4982,12 @@ Ofwel het munten van hogere denominaties (dus minder invoer nodig) of het te bes
         <translation>Uitvoeren commando wanneer het beste blok verandert (%s in cmd is vervangen door block hash)</translation>
     </message>
     <message>
-        <source>Fees (in HOTCHAIN/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
-        <translation>Kosten (in HOTCHAIN/Kb) kleiner dan dit worden beschouwd als zero fee voor heruitzending (standaard: %s)</translation>
+        <source>Fees (in HOTX/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
+        <translation>Kosten (in HOTX/Kb) kleiner dan dit worden beschouwd als zero fee voor heruitzending (standaard: %s)</translation>
     </message>
     <message>
-        <source>Fees (in HOTCHAIN/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
-        <translation>Kosten (in HOTCHAIN/Kb) kleiner dan dit worden beschouwd als zero fee voor transactie verrichting (standaard: %s)</translation>
+        <source>Fees (in HOTX/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
+        <translation>Kosten (in HOTX/Kb) kleiner dan dit worden beschouwd als zero fee voor transactie verrichting (standaard: %s)</translation>
     </message>
     <message>
         <source>Flush database activity from memory pool to disk log every &lt;n&gt; megabytes (default: %u)</source>
@@ -5094,12 +5094,12 @@ Ofwel het munten van hogere denominaties (dus minder invoer nodig) of het te bes
         <translation>Kan niet genoeg verduistering gedenomineerde fondsen voor deze transactie vinden.</translation>
     </message>
     <message>
-        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 HOTCHAIN.</source>
-        <translation>Kan niet genoeg verduistering niet gedenomineerde fondsen voor deze transactie vinden die niet gelijk zijn aan 10000 HOTCHAIN.</translation>
+        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 HOTX.</source>
+        <translation>Kan niet genoeg verduistering niet gedenomineerde fondsen voor deze transactie vinden die niet gelijk zijn aan 10000 HOTX.</translation>
     </message>
     <message>
-        <source>Unable to locate enough funds for this transaction that are not equal 10000 HOTCHAIN.</source>
-        <translation>Kan niet genoeg fondsen voor deze transactie vinden die niet gelijk zijn aan 10000 HOTCHAIN.</translation>
+        <source>Unable to locate enough funds for this transaction that are not equal 10000 HOTX.</source>
+        <translation>Kan niet genoeg fondsen voor deze transactie vinden die niet gelijk zijn aan 10000 HOTX.</translation>
     </message>
     <message>
         <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: %s)</source>
@@ -5267,7 +5267,7 @@ Ofwel het munten van hogere denominaties (dus minder invoer nodig) of het te bes
     </message>
     <message>
         <source>Copyright (C) 2015-%i The Hotchain Wallet Developers</source>
-        <translation>Copyright (C) 2015-%i The HOTCHAIN Kernontwikkelaars</translation>
+        <translation>Copyright (C) 2015-%i The Hotchain Kernontwikkelaars</translation>
     </message>
     <message>
         <source>Corrupted block database detected</source>
@@ -5410,8 +5410,8 @@ Ofwel het munten van hogere denominaties (dus minder invoer nodig) of het te bes
         <translation>Mislukt om block te lezen</translation>
     </message>
     <message>
-        <source>Fee (in HOTCHAIN/kB) to add to transactions you send (default: %s)</source>
-        <translation>Fee (in HOTCHAIN/kB) om toe te voegen aan transacties die je verzendt (standaard: %s)</translation>
+        <source>Fee (in HOTX/kB) to add to transactions you send (default: %s)</source>
+        <translation>Fee (in HOTX/kB) om toe te voegen aan transacties die je verzendt (standaard: %s)</translation>
     </message>
     <message>
         <source>Finalizing transaction.</source>
@@ -5542,8 +5542,8 @@ Ofwel het munten van hogere denominaties (dus minder invoer nodig) of het te bes
         <translation>Percentage automatisch geminte Zerocoin (10-100, standaard: %u)</translation>
     </message>
     <message>
-        <source>Reindex the HOTCHAIN and zHOTX money supply statistics</source>
-        <translation>Indexeer de HOTCHAIN- en zHOTX-geldvoorraadstatistieken opnieuw</translation>
+        <source>Reindex the HOTX and zHOTX money supply statistics</source>
+        <translation>Indexeer de HOTX- en zHOTX-geldvoorraadstatistieken opnieuw</translation>
     </message>
     <message>
         <source>Reindexing zerocoin database...</source>
@@ -5582,8 +5582,8 @@ Ofwel het munten van hogere denominaties (dus minder invoer nodig) of het te bes
 </translation>
     </message>
     <message>
-        <source>Disable all HOTCHAIN specific functionality (Masternodes, Zerocoin, SwiftX, Budgeting) (0-1, default: %u)</source>
-        <translation>Schakel alle specifieke HOTCHAIN functionaliteit uit (Masternodes, Zerocoin, SwiftTX, Budgeting) (0-1, standaard: %u)</translation>
+        <source>Disable all Hotchain specific functionality (Masternodes, Zerocoin, SwiftX, Budgeting) (0-1, default: %u)</source>
+        <translation>Schakel alle specifieke Hotchain functionaliteit uit (Masternodes, Zerocoin, SwiftTX, Budgeting) (0-1, standaard: %u)</translation>
     </message>
     <message>
         <source>Enable SwiftX, show confirmations for locked transactions (bool, default: %s)</source>

@@ -62,12 +62,12 @@
         <translation>Adrese za primanje</translation>
     </message>
     <message>
-        <source>These are your HOTCHAIN addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>To su vaše HOTCHAIN adrese za slanje plaćanja. Uvijek provjerite iznos i adresu primatelja prije slanja novca.</translation>
+        <source>These are your Hotchain addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>To su vaše Hotchain adrese za slanje plaćanja. Uvijek provjerite iznos i adresu primatelja prije slanja novca.</translation>
     </message>
     <message>
-        <source>These are your HOTCHAIN addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>To su vaše HOTCHAIN adrese za primanje uplata. Preporuča se upotreba nove adrese primanja za svaku transakciju.</translation>
+        <source>These are your Hotchain addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>To su vaše Hotchain adrese za primanje uplata. Preporuča se upotreba nove adrese primanja za svaku transakciju.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -172,16 +172,16 @@
         <translation>Potvrdite šifriranje novčanika</translation>
     </message>
     <message>
-        <source>HOTCHAIN will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your HOTCHAINs from being stolen by malware infecting your computer.</source>
-        <translation>HOTCHAIN se sada zatvara kako bi dovršio proces šifriranja. Ne zaboravite da šifriranje vašeg novčanika ne može u potpunosti zaštititi vaše HOTCHAIN od krađe zlonamjernog softvera koji zarazi vaše računalo.</translation>
+        <source>Hotchain will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your HOTXs from being stolen by malware infecting your computer.</source>
+        <translation>Hotchain se sada zatvara kako bi dovršio proces šifriranja. Ne zaboravite da šifriranje vašeg novčanika ne može u potpunosti zaštititi vaše HOTX od krađe zlonamjernog softvera koji zarazi vaše računalo.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Jeste li sigurni da želite šifrirati svoj novčanik?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR HOTCHAIN&lt;/b&gt;!</source>
-        <translation>Upozorenje: Ako šifrirate svoj novčanik i izgubite vašu zaporku, vi ćete1 IZGUBITI ĆE TE SAV VAŠ HOTCHAIN1!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR HOTX&lt;/b&gt;!</source>
+        <translation>Upozorenje: Ako šifrirate svoj novčanik i izgubite vašu zaporku, vi ćete1 IZGUBITI ĆE TE SAV VAŠ HOTX1!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -605,8 +605,8 @@
         <translation>Hotchain Wallet</translation>
     </message>
     <message>
-        <source>Send coins to a HOTCHAIN address</source>
-        <translation>Pošaljite kovanice na HOTCHAIN adresu</translation>
+        <source>Send coins to a Hotchain address</source>
+        <translation>Pošaljite kovanice na Hotchain adresu</translation>
     </message>
     <message>
         <source>Request payments (generates QR codes and hotchain: URIs)</source>
@@ -633,16 +633,16 @@
         <translation>Prikaz informacija o Hotchain Walletu</translation>
     </message>
     <message>
-        <source>Modify configuration options for HOTCHAIN</source>
-        <translation>Izmijenite opcije konfiguracije za HOTCHAIN</translation>
+        <source>Modify configuration options for Hotchain</source>
+        <translation>Izmijenite opcije konfiguracije za Hotchain</translation>
     </message>
     <message>
-        <source>Sign messages with your HOTCHAIN addresses to prove you own them</source>
-        <translation>Potpišite poruke s vašim HOTCHAIN adresama kako biste dokazali da ih posjedujete</translation>
+        <source>Sign messages with your Hotchain addresses to prove you own them</source>
+        <translation>Potpišite poruke s vašim Hotchain adresama kako biste dokazali da ih posjedujete</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified HOTCHAIN addresses</source>
-        <translation>Potvrdite poruke kako biste bili sigurni da su potpisani s određenim HOTCHAIN adresama</translation>
+        <source>Verify messages to ensure they were signed with specified Hotchain addresses</source>
+        <translation>Potvrdite poruke kako biste bili sigurni da su potpisani s određenim Hotchain adresama</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -1045,8 +1045,8 @@
         <translation>ne</translation>
     </message>
     <message>
-        <source>0 HOTCHAIN</source>
-        <translation>0 HOTCHAIN</translation>
+        <source>0 HOTX</source>
+        <translation>0 HOTX</translation>
     </message>
     <message>
         <source>Confirmation time:</source>
@@ -1118,8 +1118,8 @@
 <context>
     <name>SignVerifyMessageDialog</name>
     <message>
-        <source>The HOTCHAIN address to sign the message with</source>
-        <translation>HOTCHAIN adresa za potpisivanje poruke s</translation>
+        <source>The Hotchain address to sign the message with</source>
+        <translation>Hotchain adresa za potpisivanje poruke s</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -1142,16 +1142,16 @@
         <translation>Kopirajte trenutačni potpis u međuspremnik sustava</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this HOTCHAIN address</source>
-        <translation>Potpišite poruku da biste dokazali da ste vlasnik ove HOTCHAIN adrese</translation>
+        <source>Sign the message to prove you own this Hotchain address</source>
+        <translation>Potpišite poruku da biste dokazali da ste vlasnik ove Hotchain adrese</translation>
     </message>
     <message>
-        <source>The HOTCHAIN address the message was signed with</source>
-        <translation>HOTCHAIN adresa s kojom je potpisana poruka</translation>
+        <source>The Hotchain address the message was signed with</source>
+        <translation>Hotchain adresa s kojom je potpisana poruka</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified HOTCHAIN address</source>
-        <translation>Potvrdite poruku kako biste bili sigurni da je potpisan s navedenom HOTCHAIN adresom</translation>
+        <source>Verify the message to ensure it was signed with the specified Hotchain address</source>
+        <translation>Potvrdite poruku kako biste bili sigurni da je potpisan s navedenom Hotchain adresom</translation>
     </message>
     <message>
         <source>Reset all sign message fields</source>

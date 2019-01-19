@@ -237,7 +237,7 @@ echo ${COMMIT}
 if [[ $setup = true ]]
 then
     sudo apt-get install ruby apache2 git apt-cacher-ng python-vm-builder qemu-kvm qemu-utils
-    git clone https://github.com/Hotchain-HOTX/Hotchain/gitian.sigs.git
+    git clone https://github.com/hotchain-project/gitian.sigs.git
     git clone https://github.com/Hotchain-HOTX/Hotchain-detached-sigs.git
     git clone https://github.com/devrandom/gitian-builder.git
     pushd ./gitian-builder

@@ -1,6 +1,6 @@
 UNIX BUILD NOTES
 ====================
-Some notes on how to build HOTCHAIN in Unix.
+Some notes on how to build Hotchain in Unix.
 
 Note
 ---------------------
@@ -85,7 +85,7 @@ Optional:
 Dependencies for the GUI: Ubuntu & Debian
 -----------------------------------------
 
-If you want to build hotchain-Qt, make sure that the required packages for Qt development
+If you want to build Hotchain-Qt, make sure that the required packages for Qt development
 are installed. Qt 5 is necessary to build the GUI.
 If both Qt 4 and Qt 5 are installed, Qt 5 will be used.
 To build without GUI pass `--without-gui`.
@@ -168,7 +168,7 @@ If you need to build Boost yourself:
 
 Security
 --------
-To help make your HOTCHAIN installation more secure by making certain attacks impossible to
+To help make your Hotchain installation more secure by making certain attacks impossible to
 exploit even if a vulnerability is found, binaries are hardened by default.
 This can be disabled with:
 
@@ -190,7 +190,7 @@ Hardening enables the following features:
     On an Amd64 processor where a library was not compiled with -fPIC, this will cause an error
     such as: "relocation R_X86_64_32 against `......' can not be used when making a shared object;"
 
-    To test that you have built HOTX executable, install scanelf, part of paxutils, and use:
+    To test that you have built PIE executable, install scanelf, part of paxutils, and use:
 
     	scanelf -e ./hotchaind
 

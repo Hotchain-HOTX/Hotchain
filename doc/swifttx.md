@@ -11,9 +11,9 @@ When a "Transaction Lock" occurs the hash of the related transaction is broadcas
 * `zmqpubrawtxlock`: publishes the raw transaction when locked via SwiftX
 * `zmqpubhashtxlock`: publishes the transaction hash when locked via SwiftX
 
-This mechanism has been integrated into Bitcore-Node-HOTCHAIN which allows for notification to be broadcast through Insight API in one of two ways:
-* WebSocket: [https://github.com/Hotchain-HOTX/Hotchain/insight-api-hotchain#web-socket-api](https://github.com/Hotchain-HOTX/Hotchain/insight-api-hotchain#web-socket-api) 
-* API: [https://github.com/Hotchain-HOTX/Hotchain/insight-api-hotchain#swifttx-transactions](https://github.com/Hotchain-HOTX/Hotchain/insight-api-hotchain#swifttx-transactions) 
+This mechanism has been integrated into Bitcore-Node-Hotchain which allows for notification to be broadcast through Insight API in one of two ways:
+* WebSocket: [https://github.com/Hotchain-Project/insight-api-hotchain#web-socket-api](https://github.com/Hotchain-Project/insight-api-hotchain#web-socket-api) 
+* API: [https://github.com/Hotchain-Project/insight-api-hotchain#swifttx-transactions](https://github.com/Hotchain-Project/insight-api-hotchain#swifttx-transactions) 
 
 ####Command line option
 

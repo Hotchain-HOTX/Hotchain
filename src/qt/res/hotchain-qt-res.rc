@@ -19,8 +19,8 @@ BEGIN
     BEGIN
         BLOCK "040904E4" // U.S. English - multilingual (hex)
         BEGIN
-            VALUE "CompanyName",        "HOTCHAIN"
-            VALUE "FileDescription",    "Hotchain Wallet (OSS GUI client for HOTCHAIN)"
+            VALUE "CompanyName",        "Hotchain"
+            VALUE "FileDescription",    "Hotchain Wallet (OSS GUI client for Hotchain)"
             VALUE "FileVersion",        VER_FILEVERSION_STR
             VALUE "InternalName",       "hotchain-qt"
             VALUE "LegalCopyright",     COPYRIGHT_STR

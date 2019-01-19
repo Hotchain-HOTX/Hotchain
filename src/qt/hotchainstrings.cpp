@@ -50,7 +50,7 @@ QT_TRANSLATE_NOOP("hotchain-core", ""
 "Delete all zerocoin spends and mints that have been recorded to the "
 "blockchain database and reindex them (0-1, default: %u)"),
 QT_TRANSLATE_NOOP("hotchain-core", ""
-"Disable all HOTCHAIN specific functionality (Masternodes, Zerocoin, SwiftX, "
+"Disable all Hotchain specific functionality (Masternodes, Zerocoin, SwiftX, "
 "Budgeting) (0-1, default: %u)"),
 QT_TRANSLATE_NOOP("hotchain-core", ""
 "Distributed under the MIT software license, see the accompanying file "
@@ -61,7 +61,7 @@ QT_TRANSLATE_NOOP("hotchain-core", ""
 "Enable automatic wallet backups triggered after each zHOTX minting (0-1, "
 "default: %u)"),
 QT_TRANSLATE_NOOP("hotchain-core", ""
-"Enable or disable staking functionality for HOTCHAIN inputs (0-1, default: %u)"),
+"Enable or disable staking functionality for HOTX inputs (0-1, default: %u)"),
 QT_TRANSLATE_NOOP("hotchain-core", ""
 "Enable or disable staking functionality for zHOTX inputs (0-1, default: %u)"),
 QT_TRANSLATE_NOOP("hotchain-core", ""
@@ -192,6 +192,9 @@ QT_TRANSLATE_NOOP("hotchain-core", ""
 "the OpenSSL Toolkit <https://www.openssl.org/> and cryptographic software "
 "written by Eric Young and UPnP software written by Thomas Bernard."),
 QT_TRANSLATE_NOOP("hotchain-core", ""
+"Total length of network version string (%i) exceeds maximum length (%i). "
+"Reduce the number or size of uacomments."),
+QT_TRANSLATE_NOOP("hotchain-core", ""
 "Unable to bind to %s on this computer. Hotchain Wallet is probably already running."),
 QT_TRANSLATE_NOOP("hotchain-core", ""
 "Unable to locate enough Obfuscation denominated funds for this transaction."),
@@ -200,7 +203,7 @@ QT_TRANSLATE_NOOP("hotchain-core", ""
 "transaction that are not equal 10000 HOTX."),
 QT_TRANSLATE_NOOP("hotchain-core", ""
 "Unable to locate enough funds for this transaction that are not equal 10000 "
-"HOTCHAIN."),
+"HOTX."),
 QT_TRANSLATE_NOOP("hotchain-core", ""
 "Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: "
 "%s)"),
@@ -247,6 +250,7 @@ QT_TRANSLATE_NOOP("hotchain-core", "Add a node to connect to and attempt to keep
 QT_TRANSLATE_NOOP("hotchain-core", "Allow DNS lookups for -addnode, -seednode and -connect"),
 QT_TRANSLATE_NOOP("hotchain-core", "Already have that input."),
 QT_TRANSLATE_NOOP("hotchain-core", "Always query for peer addresses via DNS lookup (default: %u)"),
+QT_TRANSLATE_NOOP("hotchain-core", "Append comment to the user agent string"),
 QT_TRANSLATE_NOOP("hotchain-core", "Attempt to force blockchain corruption recovery"),
 QT_TRANSLATE_NOOP("hotchain-core", "Attempt to recover private keys from a corrupt wallet.dat"),
 QT_TRANSLATE_NOOP("hotchain-core", "Automatically create Tor hidden service (default: %d)"),
@@ -321,7 +325,7 @@ QT_TRANSLATE_NOOP("hotchain-core", "Failed to read block"),
 QT_TRANSLATE_NOOP("hotchain-core", "Failed to select a zerocoin"),
 QT_TRANSLATE_NOOP("hotchain-core", "Failed to wipe zerocoinDB"),
 QT_TRANSLATE_NOOP("hotchain-core", "Failed to write coin serial number into wallet"),
-QT_TRANSLATE_NOOP("hotchain-core", "Fee (in HOTCHAIN/kB) to add to transactions you send (default: %s)"),
+QT_TRANSLATE_NOOP("hotchain-core", "Fee (in HOTX/kB) to add to transactions you send (default: %s)"),
 QT_TRANSLATE_NOOP("hotchain-core", "Finalizing transaction."),
 QT_TRANSLATE_NOOP("hotchain-core", "Force safe mode (default: %u)"),
 QT_TRANSLATE_NOOP("hotchain-core", "Found enough users, signing ( waiting %s )"),
@@ -410,7 +414,7 @@ QT_TRANSLATE_NOOP("hotchain-core", "Randomly drop 1 of every <n> network message
 QT_TRANSLATE_NOOP("hotchain-core", "Randomly fuzz 1 of every <n> network messages"),
 QT_TRANSLATE_NOOP("hotchain-core", "Rebuild block chain index from current blk000??.dat files"),
 QT_TRANSLATE_NOOP("hotchain-core", "Receive and display P2P network alerts (default: %u)"),
-QT_TRANSLATE_NOOP("hotchain-core", "Reindex the HOTCHAIN and zHOTX money supply statistics"),
+QT_TRANSLATE_NOOP("hotchain-core", "Reindex the HOTX and zHOTX money supply statistics"),
 QT_TRANSLATE_NOOP("hotchain-core", "Reindex the accumulator database"),
 QT_TRANSLATE_NOOP("hotchain-core", "Reindexing zerocoin database..."),
 QT_TRANSLATE_NOOP("hotchain-core", "Reindexing zerocoin failed"),
@@ -498,6 +502,7 @@ QT_TRANSLATE_NOOP("hotchain-core", "Use UPnP to map the listening port (default:
 QT_TRANSLATE_NOOP("hotchain-core", "Use UPnP to map the listening port (default: 1 when listening)"),
 QT_TRANSLATE_NOOP("hotchain-core", "Use a custom max chain reorganization depth (default: %u)"),
 QT_TRANSLATE_NOOP("hotchain-core", "Use the test network"),
+QT_TRANSLATE_NOOP("hotchain-core", "User Agent comment (%s) contains unsafe characters."),
 QT_TRANSLATE_NOOP("hotchain-core", "Username for JSON-RPC connections"),
 QT_TRANSLATE_NOOP("hotchain-core", "Value is below the smallest available denomination (= 1) of zHOTX"),
 QT_TRANSLATE_NOOP("hotchain-core", "Value more than Obfuscation pool maximum allows."),

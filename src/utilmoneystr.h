@@ -18,9 +18,4 @@ std::string FormatMoney(const CAmount& n, bool fPlus = false);
 bool ParseMoney(const std::string& str, CAmount& nRet);
 bool ParseMoney(const char* pszIn, CAmount& nRet);
 
-static inline void ltrim(std::string &s) {
-    s.erase(s.begin(), std::find_if(s.begin(), s.end(),
-            std::not1(std::ptr_fun<int, int>(std::isspace))));
-}
-
 #endif // BITCOIN_UTILMONEYSTR_H

@@ -1,5 +1,4 @@
-// Copyright (c) 2017-2018 The PIVX Developers
-// Copyright (c) 2018 Cryptopie 
+// Copyright (c) 2017-2018 The Hotchain developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -26,6 +25,7 @@ struct CMintMeta
     bool isUsed;
     bool isArchived;
     bool isDeterministic;
+    bool isSeedCorrect;
 
     bool operator <(const CMintMeta& a) const;
 };

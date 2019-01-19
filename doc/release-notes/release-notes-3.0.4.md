@@ -21,7 +21,7 @@ Users will have a grace period to update their clients before versions prior to 
 How to Upgrade
 ==============
 
-If you are running an older version, shut it down. Wait until it has completely shut down (which might take a few minutes for older versions), then run the installer (on Windows) or just copy over /Applications/hotchain-Qt (on Mac) or hotchaind/hotchain-qt (on Linux).
+If you are running an older version, shut it down. Wait until it has completely shut down (which might take a few minutes for older versions), then run the installer (on Windows) or just copy over /Applications/Hotchain-Qt (on Mac) or hotchaind/hotchain-qt (on Linux).
 
 
 Compatibility
@@ -105,7 +105,7 @@ git merge commit are mentioned.
 - #307 `dbd801d` Remove hard-coded GIT_ARCHIVE define (Jon Spock)
 - #314 `f1c830a` Fix issue causing crash when hotchaind --help was invoked (Jon Spock)
 - #326 `8b6a13e` Combine 2 LogPrintf statement to reduce debug.log clutter (Jon Spock)
-- #328 `a6c18c8` [Main] HOTCHAIN not responding on user quitting app (Aaron Langford)
+- #328 `a6c18c8` [Main] Hotchain not responding on user quitting app (Aaron Langford)
 
 
 Credits

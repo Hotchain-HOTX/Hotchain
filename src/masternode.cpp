@@ -1,5 +1,5 @@
 // Copyright (c) 2014-2015 The Dash developers
-// Copyright (c) 2015-2018 The PIVX Developers 
+// Copyright (c) 2015-2018 The Hotchain developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -9,7 +9,6 @@
 #include "obfuscation.h"
 #include "sync.h"
 #include "util.h"
-#include <boost/lexical_cast.hpp>
 
 // keep track of the scanning errors I've seen
 map<uint256, int> mapSeenMasternodeScanningErrors;
@@ -66,7 +65,6 @@ CMasternode::CMasternode()
     pubKeyMasternode = CPubKey();
     sig = std::vector<unsigned char>();
     activeState = MASTERNODE_ENABLED;
-    deposit = 0 * COIN;
     sigTime = GetAdjustedTime();
     lastPing = CMasternodePing();
     cacheInputAge = 0;
@@ -92,7 +90,6 @@ CMasternode::CMasternode(const CMasternode& other)
     pubKeyMasternode = other.pubKeyMasternode;
     sig = other.sig;
     activeState = other.activeState;
-    deposit = other.deposit;
     sigTime = other.sigTime;
     lastPing = other.lastPing;
     cacheInputAge = other.cacheInputAge;
@@ -117,15 +114,6 @@ CMasternode::CMasternode(const CMasternodeBroadcast& mnb)
     pubKeyCollateralAddress = mnb.pubKeyCollateralAddress;
     pubKeyMasternode = mnb.pubKeyMasternode;
     sig = mnb.sig;
-
-    if(IsDepositCoins(mnb.vin, deposit))
-        activeState = MASTERNODE_ENABLED;
-    else
-    {
-        deposit = 0u;
-        activeState = MASTERNODE_REMOVE;
-    }
-
     activeState = MASTERNODE_ENABLED;
     sigTime = mnb.sigTime;
     lastPing = mnb.lastPing;
@@ -225,19 +213,11 @@ void CMasternode::Check(bool forceCheck)
     }
 
     if (!unitTest) {
-       /* CMutableTransaction tx = CMutableTransaction();
-        CTxOut vout = CTxOut(MASTERNODE_ACCEPTABLE_INPUTS_CHECK_AMOUNT * COIN, obfuScationPool.collateralPubKey);
+        CValidationState state;
+        CMutableTransaction tx = CMutableTransaction();
+        CTxOut vout = CTxOut(9999.99 * COIN, obfuScationPool.collateralPubKey);
         tx.vin.push_back(vin);
         tx.vout.push_back(vout);
-*/
-        CMutableTransaction tx;
-
-        CValidationState state = CMasternodeMan::GetInputCheckingTx(vin, tx);
-
-        if(!state.IsValid()) {
-            activeState = MASTERNODE_VIN_SPENT;
-            return;
-        }
 
         {
             TRY_LOCK(cs_main, lockMain);
@@ -347,52 +327,6 @@ bool CMasternode::IsValidNetAddr()
     // should probably be a bit smarter if one day we start to implement tests for this
     return Params().NetworkID() == CBaseChainParams::REGTEST ||
            (IsReachable(addr) && addr.IsRoutable());
-}
-
-unsigned CMasternode::Level(CAmount vin_val, int blockHeight)
-{
-    
-      switch(vin_val) {
-          case 1000 * COIN: return 1;
-      }
-   
-
-    return 0;
-}
-
-unsigned CMasternode::Level(const CTxIn& vin, int blockHeight)
-{
-    CAmount vin_val;
-
-    if(!IsDepositCoins(vin, vin_val))
-        return LevelValue::UNSPECIFIED;
-
-    return Level(vin_val, blockHeight);
-}
-
-bool CMasternode::IsDepositCoins(CAmount vin_val)
-{
-    return Level(vin_val, chainActive.Height());
-}
-
-bool CMasternode::IsDepositCoins(const CTxIn& vin, CAmount& vin_val)
-{
-    CTransaction prevout_tx;
-    uint256      hashBlock = 0;
-
-    bool vin_valid =  GetTransaction(vin.prevout.hash, prevout_tx, hashBlock, true)
-                   && (vin.prevout.n < prevout_tx.vout.size());
-
-    if(!vin_valid)
-        return false;
-
-    CAmount vin_amount = prevout_tx.vout[vin.prevout.n].nValue;
-
-    if(!IsDepositCoins(vin_amount))
-        return false;
-
-    vin_val = vin_amount;
-    return true;
 }
 
 CMasternodeBroadcast::CMasternodeBroadcast()
@@ -529,11 +463,11 @@ bool CMasternodeBroadcast::Create(CTxIn txin, CService service, CKey keyCollater
 bool CMasternodeBroadcast::CheckDefaultPort(std::string strService, std::string& strErrorRet, std::string strContext)
 {
     CService service = CService(strService);
-    int nP2pPort = Params().GetP2PPort();
+    int nDefaultPort = Params().GetDefaultPort();
 
-    if (service.GetPort() != nP2pPort) {
+    if (service.GetPort() != nDefaultPort) {
         strErrorRet = strprintf("Invalid port %u for masternode %s, only %d is supported on %s-net.",
-                                        service.GetPort(), strService, nP2pPort, Params().NetworkIDString());
+                                        service.GetPort(), strService, nDefaultPort, Params().NetworkIDString());
         LogPrint("masternode", "%s - %s\n", strContext, strErrorRet);
         return false;
     }
@@ -649,21 +583,11 @@ bool CMasternodeBroadcast::CheckInputsAndAdd(int& nDoS)
             mnodeman.Remove(pmn->vin);
     }
 
-/*
+    CValidationState state;
     CMutableTransaction tx = CMutableTransaction();
-    CTxOut vout = CTxOut(MASTERNODE_ACCEPTABLE_INPUTS_CHECK_AMOUNT * COIN, obfuScationPool.collateralPubKey);
+    CTxOut vout = CTxOut(9999.99 * COIN, obfuScationPool.collateralPubKey);
     tx.vin.push_back(vin);
     tx.vout.push_back(vout);
-*/
-
-    CMutableTransaction tx;
-
-    CValidationState state = CMasternodeMan::GetInputCheckingTx(vin, tx);
-
-    if(!state.IsValid()) {
-        state.IsInvalid(nDoS);
-        return false;
-    }
 
     {
         TRY_LOCK(cs_main, lockMain);
@@ -692,13 +616,13 @@ bool CMasternodeBroadcast::CheckInputsAndAdd(int& nDoS)
     }
 
     // verify that sig time is legit in past
-    // should be at least not earlier than block when 1000 HOTCHAIN tx got MASTERNODE_MIN_CONFIRMATIONS
+    // should be at least not earlier than block when 1000 HOTX tx got MASTERNODE_MIN_CONFIRMATIONS
     uint256 hashBlock = 0;
     CTransaction tx2;
     GetTransaction(vin.prevout.hash, tx2, hashBlock, true);
     BlockMap::iterator mi = mapBlockIndex.find(hashBlock);
     if (mi != mapBlockIndex.end() && (*mi).second) {
-        CBlockIndex* pMNIndex = (*mi).second;                                                        // block for 1000 HOTCHAIN tx -> 1 confirmation
+        CBlockIndex* pMNIndex = (*mi).second;                                                        // block for 1000 Hotchain tx -> 1 confirmation
         CBlockIndex* pConfIndex = chainActive[pMNIndex->nHeight + MASTERNODE_MIN_CONFIRMATIONS - 1]; // block where tx got MASTERNODE_MIN_CONFIRMATIONS
         if (pConfIndex->GetBlockTime() > sigTime) {
             LogPrint("masternode","mnb - Bad sigTime %d for Masternode %s (%i conf block is at %d)\n",
@@ -736,9 +660,9 @@ bool CMasternodeBroadcast::Sign(CKey& keyCollateralAddress)
     sigTime = GetAdjustedTime();
 
     std::string strMessage;
-    //if(chainActive.Height() < Params().Zerocoin_Block_V2_Start())
-    //	strMessage = GetOldStrMessage();
-    //else
+    if(chainActive.Height() < Params().Zerocoin_Block_V2_Start())
+    	strMessage = GetOldStrMessage();
+    else
     	strMessage = GetNewStrMessage();
 
     if (!obfuScationSigner.SignMessage(strMessage, errorMessage, sig, keyCollateralAddress))
@@ -768,7 +692,7 @@ std::string CMasternodeBroadcast::GetOldStrMessage()
 
     std::string vchPubKey(pubKeyCollateralAddress.begin(), pubKeyCollateralAddress.end());
     std::string vchPubKey2(pubKeyMasternode.begin(), pubKeyMasternode.end());
-    strMessage = addr.ToString() + boost::lexical_cast<std::string>(sigTime) + vchPubKey + vchPubKey2 + boost::lexical_cast<std::string>(protocolVersion);
+    strMessage = addr.ToString() + std::to_string(sigTime) + vchPubKey + vchPubKey2 + std::to_string(protocolVersion);
 
     return strMessage;
 }
@@ -777,7 +701,7 @@ std:: string CMasternodeBroadcast::GetNewStrMessage()
 {
     std::string strMessage;
 
-    strMessage = addr.ToString() + boost::lexical_cast<std::string>(sigTime) + pubKeyCollateralAddress.GetID().ToString() + pubKeyMasternode.GetID().ToString() + boost::lexical_cast<std::string>(protocolVersion);
+    strMessage = addr.ToString() + std::to_string(sigTime) + pubKeyCollateralAddress.GetID().ToString() + pubKeyMasternode.GetID().ToString() + std::to_string(protocolVersion);
 
     return strMessage;
 }
@@ -805,7 +729,7 @@ bool CMasternodePing::Sign(CKey& keyMasternode, CPubKey& pubKeyMasternode)
     std::string strMasterNodeSignMessage;
 
     sigTime = GetAdjustedTime();
-    std::string strMessage = vin.ToString() + blockHash.ToString() + boost::lexical_cast<std::string>(sigTime);
+    std::string strMessage = vin.ToString() + blockHash.ToString() + std::to_string(sigTime);
 
     if (!obfuScationSigner.SignMessage(strMessage, errorMessage, vchSig, keyMasternode)) {
         LogPrint("masternode","CMasternodePing::Sign() - Error: %s\n", errorMessage);
@@ -820,8 +744,9 @@ bool CMasternodePing::Sign(CKey& keyMasternode, CPubKey& pubKeyMasternode)
     return true;
 }
 
-bool CMasternodePing::VerifySignature(CPubKey& pubKeyMasternode, int &nDos) {
-	std::string strMessage = vin.ToString() + blockHash.ToString() + boost::lexical_cast<std::string>(sigTime);
+bool CMasternodePing::VerifySignature(CPubKey& pubKeyMasternode, int &nDos)
+{
+    std::string strMessage = vin.ToString() + blockHash.ToString() + std::to_string(sigTime);
 	std::string errorMessage = "";
 
 	if(!obfuScationSigner.VerifyMessage(pubKeyMasternode, vchSig, strMessage, errorMessage)){

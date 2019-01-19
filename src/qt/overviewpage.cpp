@@ -1,6 +1,6 @@
 // Copyright (c) 2011-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
-// Copyright (c) 2015-2018 The PIVX Developers 
+// Copyright (c) 2015-2018 The Hotchain developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -147,7 +147,7 @@ OverviewPage::~OverviewPage()
     delete ui;
 }
 
-void OverviewPage::getPercentage(CAmount nUnlockedBalance, CAmount nZerocoinBalance, QString& sHOTCHAINPercentage, QString& szHOTXPercentage)
+void OverviewPage::getPercentage(CAmount nUnlockedBalance, CAmount nZerocoinBalance, QString& sHOTXPercentage, QString& szHOTXPercentage)
 {
     int nPrecision = 2;
     double dzPercentage = 0.0;
@@ -167,7 +167,7 @@ void OverviewPage::getPercentage(CAmount nUnlockedBalance, CAmount nZerocoinBala
     double dPercentage = 100.0 - dzPercentage;
 
     szHOTXPercentage = "(" + QLocale(QLocale::system()).toString(dzPercentage, 'f', nPrecision) + " %)";
-    sHOTCHAINPercentage = "(" + QLocale(QLocale::system()).toString(dPercentage, 'f', nPrecision) + " %)";
+    sHOTXPercentage = "(" + QLocale(QLocale::system()).toString(dPercentage, 'f', nPrecision) + " %)";
 
 }
 
@@ -192,12 +192,12 @@ void OverviewPage::setBalance(const CAmount& balance, const CAmount& unconfirmed
         nWatchOnlyLockedBalance = pwalletMain->GetLockedWatchOnlyBalance();
     }
 
-    // HOTCHAIN Balance
+    // HOTX Balance
     CAmount nTotalBalance = balance + unconfirmedBalance;
-    CAmount pieAvailableBalance = balance - immatureBalance - nLockedBalance;
+    CAmount hotxAvailableBalance = balance - immatureBalance - nLockedBalance;
     CAmount nUnlockedBalance = nTotalBalance - nLockedBalance;
 
-    // HOTCHAIN Watch-Only Balance
+    // HOTX Watch-Only Balance
     CAmount nTotalWatchBalance = watchOnlyBalance + watchUnconfBalance;
     CAmount nAvailableWatchBalance = watchOnlyBalance - watchImmatureBalance - nWatchOnlyLockedBalance;
 
@@ -209,11 +209,11 @@ void OverviewPage::setBalance(const CAmount& balance, const CAmount& unconfirmed
     QString sPercentage = "";
     getPercentage(nUnlockedBalance, zerocoinBalance, sPercentage, szPercentage);
     // Combined balances
-    CAmount availableTotalBalance = pieAvailableBalance + matureZerocoinBalance;
+    CAmount availableTotalBalance = hotxAvailableBalance + matureZerocoinBalance;
     CAmount sumTotalBalance = nTotalBalance + zerocoinBalance;
 
-    // HOTCHAIN labels
-    ui->labelBalance->setText(BitcoinUnits::floorHtmlWithUnit(nDisplayUnit, pieAvailableBalance, false, BitcoinUnits::separatorAlways));
+    // HOTX labels
+    ui->labelBalance->setText(BitcoinUnits::floorHtmlWithUnit(nDisplayUnit, hotxAvailableBalance, false, BitcoinUnits::separatorAlways));
     ui->labelUnconfirmed->setText(BitcoinUnits::floorHtmlWithUnit(nDisplayUnit, unconfirmedBalance, false, BitcoinUnits::separatorAlways));
     ui->labelImmature->setText(BitcoinUnits::floorHtmlWithUnit(nDisplayUnit, immatureBalance, false, BitcoinUnits::separatorAlways));
     ui->labelLockedBalance->setText(BitcoinUnits::floorHtmlWithUnit(nDisplayUnit, nLockedBalance, false, BitcoinUnits::separatorAlways));
@@ -262,33 +262,33 @@ void OverviewPage::setBalance(const CAmount& balance, const CAmount& unconfirmed
 
     bool showWatchOnly = nTotalWatchBalance != 0;
 
-    // HOTCHAIN Available
-    bool showHOTCHAINAvailable = settingShowAllBalances || pieAvailableBalance != nTotalBalance;
-    bool showWatchOnlyHOTCHAINAvailable = showHOTCHAINAvailable || nAvailableWatchBalance != nTotalWatchBalance;
-    ui->labelBalanceText->setVisible(showHOTCHAINAvailable || showWatchOnlyHOTCHAINAvailable);
-    ui->labelBalance->setVisible(showHOTCHAINAvailable || showWatchOnlyHOTCHAINAvailable);
-    ui->labelWatchAvailable->setVisible(showWatchOnlyHOTCHAINAvailable && showWatchOnly);
+    // HOTX Available
+    bool showHOTXAvailable = settingShowAllBalances || hotxAvailableBalance != nTotalBalance;
+    bool showWatchOnlyHOTXAvailable = showHOTXAvailable || nAvailableWatchBalance != nTotalWatchBalance;
+    ui->labelBalanceText->setVisible(showHOTXAvailable || showWatchOnlyHOTXAvailable);
+    ui->labelBalance->setVisible(showHOTXAvailable || showWatchOnlyHOTXAvailable);
+    ui->labelWatchAvailable->setVisible(showWatchOnlyHOTXAvailable && showWatchOnly);
 
-    // HOTCHAIN Pending
-    bool showHOTCHAINPending = settingShowAllBalances || unconfirmedBalance != 0;
-    bool showWatchOnlyHOTCHAINPending = showHOTCHAINPending || watchUnconfBalance != 0;
-    ui->labelPendingText->setVisible(showHOTCHAINPending || showWatchOnlyHOTCHAINPending);
-    ui->labelUnconfirmed->setVisible(showHOTCHAINPending || showWatchOnlyHOTCHAINPending);
-    ui->labelWatchPending->setVisible(showWatchOnlyHOTCHAINPending && showWatchOnly);
+    // HOTX Pending
+    bool showHOTXPending = settingShowAllBalances || unconfirmedBalance != 0;
+    bool showWatchOnlyHOTXPending = showHOTXPending || watchUnconfBalance != 0;
+    ui->labelPendingText->setVisible(showHOTXPending || showWatchOnlyHOTXPending);
+    ui->labelUnconfirmed->setVisible(showHOTXPending || showWatchOnlyHOTXPending);
+    ui->labelWatchPending->setVisible(showWatchOnlyHOTXPending && showWatchOnly);
 
-    // HOTCHAIN Immature
-    bool showHOTCHAINImmature = settingShowAllBalances || immatureBalance != 0;
-    bool showWatchOnlyImmature = showHOTCHAINImmature || watchImmatureBalance != 0;
-    ui->labelImmatureText->setVisible(showHOTCHAINImmature || showWatchOnlyImmature);
-    ui->labelImmature->setVisible(showHOTCHAINImmature || showWatchOnlyImmature); // for symmetry reasons also show immature label when the watch-only one is shown
+    // HOTX Immature
+    bool showHOTXImmature = settingShowAllBalances || immatureBalance != 0;
+    bool showWatchOnlyImmature = showHOTXImmature || watchImmatureBalance != 0;
+    ui->labelImmatureText->setVisible(showHOTXImmature || showWatchOnlyImmature);
+    ui->labelImmature->setVisible(showHOTXImmature || showWatchOnlyImmature); // for symmetry reasons also show immature label when the watch-only one is shown
     ui->labelWatchImmature->setVisible(showWatchOnlyImmature && showWatchOnly); // show watch-only immature balance
 
-    // HOTCHAIN Locked
-    bool showHOTCHAINLocked = settingShowAllBalances || nLockedBalance != 0;
-    bool showWatchOnlyHOTCHAINLocked = showHOTCHAINLocked || nWatchOnlyLockedBalance != 0;
-    ui->labelLockedBalanceText->setVisible(showHOTCHAINLocked || showWatchOnlyHOTCHAINLocked);
-    ui->labelLockedBalance->setVisible(showHOTCHAINLocked || showWatchOnlyHOTCHAINLocked);
-    ui->labelWatchLocked->setVisible(showWatchOnlyHOTCHAINLocked && showWatchOnly);
+    // HOTX Locked
+    bool showHOTXLocked = settingShowAllBalances || nLockedBalance != 0;
+    bool showWatchOnlyHOTXLocked = showHOTXLocked || nWatchOnlyLockedBalance != 0;
+    ui->labelLockedBalanceText->setVisible(showHOTXLocked || showWatchOnlyHOTXLocked);
+    ui->labelLockedBalance->setVisible(showHOTXLocked || showWatchOnlyHOTXLocked);
+    ui->labelWatchLocked->setVisible(showWatchOnlyHOTXLocked && showWatchOnly);
 
     // zHOTX
     bool showzHOTXAvailable = settingShowAllBalances || zerocoinBalance != matureZerocoinBalance;
@@ -370,13 +370,18 @@ void OverviewPage::setWalletModel(WalletModel* model)
 
         connect(model->getOptionsModel(), SIGNAL(displayUnitChanged(int)), this, SLOT(updateDisplayUnit()));
         connect(model->getOptionsModel(), SIGNAL(hideZeroBalancesChanged(bool)), this, SLOT(updateDisplayUnit()));
+        connect(model->getOptionsModel(), SIGNAL(hideOrphansChanged(bool)), this, SLOT(hideOrphans(bool)));
 
         updateWatchOnlyLabels(model->haveWatchOnly());
         connect(model, SIGNAL(notifyWatchonlyChanged(bool)), this, SLOT(updateWatchOnlyLabels(bool)));
     }
 
-    // update the display unit, to not use the default ("HOTCHAIN")
+    // update the display unit, to not use the default ("HOTX")
     updateDisplayUnit();
+
+    // Hide orphans
+    QSettings settings;
+    hideOrphans(settings.value("fHideOrphans", false).toBool());
 }
 
 void OverviewPage::updateDisplayUnit()
@@ -404,4 +409,10 @@ void OverviewPage::showOutOfSyncWarning(bool fShow)
 {
     ui->labelWalletStatus->setVisible(fShow);
     ui->labelTransactionsStatus->setVisible(fShow);
+}
+
+void OverviewPage::hideOrphans(bool fHide)
+{
+    if (filter)
+        filter->setHideOrphans(fHide);
 }

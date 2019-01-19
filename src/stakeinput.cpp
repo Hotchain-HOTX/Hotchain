@@ -1,13 +1,11 @@
-// Copyright (c) 2017-2018 The PIVX Developers
-// Copyright (c) 2018 Cryptopie 
+// Copyright (c) 2017-2018 The Hotchain developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #include "accumulators.h"
 #include "chain.h"
-#include "denomination_functions.h"
-#include "main.h"
 #include "primitives/deterministicmint.h"
+#include "main.h"
 #include "stakeinput.h"
 #include "wallet.h"
 
@@ -57,7 +55,7 @@ CBlockIndex* CZHotxStake::GetIndexFrom()
     else
         nHeightChecksum = GetChecksumHeightFromSpend();
 
-    if (nHeightChecksum > chainActive.Height()) {
+    if (nHeightChecksum < Params().Zerocoin_StartHeight() || nHeightChecksum > chainActive.Height()) {
         pindexFrom = nullptr;
     } else {
         //note that this will be a nullptr if the height DNE
@@ -126,7 +124,6 @@ bool CZHotxStake::CreateTxOuts(CWallet* pwallet, vector<CTxOut>& vout, CAmount n
 {
     //Create an output returning the zHOTX that was staked
     CTxOut outReward;
-    unsigned mnlevel = 0u;
     libzerocoin::CoinDenomination denomStaked = libzerocoin::AmountToZerocoinDenomination(this->GetValue());
     CDeterministicMint dMint;
     if (!pwallet->CreateZHOTXOutPut(denomStaked, outReward, dMint))
@@ -137,32 +134,15 @@ bool CZHotxStake::CreateTxOuts(CWallet* pwallet, vector<CTxOut>& vout, CAmount n
     if (!pwallet->DatabaseMint(dMint))
         return error("%s: failed to database the staked zHOTX", __func__);
 
-    //Now, we need to find out what the masternode reward will be for this block
-    CAmount masternodeReward = GetMasternodePayment(chainActive.Height(), mnlevel, nTotal, 0, true);
-    CAmount zHotxToMint = nTotal - masternodeReward;
+    for (unsigned int i = 0; i < 3; i++) {
+        CTxOut out;
+        CDeterministicMint dMintReward;
+        if (!pwallet->CreateZHOTXOutPut(libzerocoin::CoinDenomination::ZQ_ONE, out, dMintReward))
+            return error("%s: failed to create zHOTX output", __func__);
+        vout.emplace_back(out);
 
-    LogPrintf("%s: Total=%d Masternode=%d Staker=%d\r\n", __func__, (nTotal / COIN), (masternodeReward / COIN), (zHotxToMint / COIN));   
-
-    std::map<libzerocoin::CoinDenomination, int> mintMap = calculateOutputs(zHotxToMint);
-    std::map<libzerocoin::CoinDenomination, int>::iterator it = mintMap.begin();
-    while (it != mintMap.end()) {
-        libzerocoin::CoinDenomination denom = it->first;
-        int numberToMint = it->second;
-        while (numberToMint > 0) {
-            CTxOut out;
-            CDeterministicMint dMintReward;
-            
-            if (!pwallet->CreateZHOTXOutPut(denom, out, dMintReward))
-                return error("%s: failed to create zHOTX output", __func__);
-            
-            vout.emplace_back(out);
-
-            if (!pwallet->DatabaseMint(dMintReward))
-                return error("%s: failed to database mint reward", __func__);
-            
-            --numberToMint;
-        }
-        it++;
+        if (!pwallet->DatabaseMint(dMintReward))
+            return error("%s: failed to database mint reward", __func__);
     }
 
     return true;
@@ -184,7 +164,7 @@ bool CZHotxStake::MarkSpent(CWallet *pwallet, const uint256& txid)
     return true;
 }
 
-//!HOTCHAIN Stake
+//!HOTX Stake
 bool CHotxStake::SetInput(CTransaction txPrev, unsigned int n)
 {
     this->txFrom = txPrev;
@@ -252,7 +232,7 @@ bool CHotxStake::GetModifier(uint64_t& nStakeModifier)
     if (!pindexFrom)
         return error("%s: failed to get index from", __func__);
 
-    if (!GetKernelStakeModifier(pindexFrom->GetBlockHash(), nStakeModifier, nStakeModifierHeight, nStakeModifierTime))
+    if (!GetKernelStakeModifier(pindexFrom->GetBlockHash(), nStakeModifier, nStakeModifierHeight, nStakeModifierTime, false))
         return error("CheckStakeKernelHash(): failed to get kernel stake modifier \n");
 
     return true;
@@ -260,7 +240,7 @@ bool CHotxStake::GetModifier(uint64_t& nStakeModifier)
 
 CDataStream CHotxStake::GetUniqueness()
 {
-    //The unique identifier for a HOTCHAIN stake is the outpoint
+    //The unique identifier for a HOTX stake is the outpoint
     CDataStream ss(SER_NETWORK, 0);
     ss << nPosition << txFrom.GetHash();
     return ss;

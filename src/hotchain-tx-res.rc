@@ -16,8 +16,8 @@ BEGIN
     BEGIN
         BLOCK "040904E4" // U.S. English - multilingual (hex)
         BEGIN
-            VALUE "CompanyName",        "HOTCHAIN"
-            VALUE "FileDescription",    "hotchain-tx (CLI HOTCHAIN transaction editor utility)"
+            VALUE "CompanyName",        "Hotchain"
+            VALUE "FileDescription",    "hotchain-tx (CLI Hotchain transaction editor utility)"
             VALUE "FileVersion",        VER_FILEVERSION_STR
             VALUE "InternalName",       "hotchain-tx"
             VALUE "LegalCopyright",     COPYRIGHT_STR

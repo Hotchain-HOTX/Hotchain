@@ -16,14 +16,14 @@ env:
     - CCACHE_COMPRESS=1
     - MAKEJOBS=-j4
     - BASE_OUTDIR=$TRAVIS_BUILD_DIR/out
-    - BASE_PACKAGES="zlib1g-dev zip git build-essential libtool autotools-dev automake pkg-config libevent-dev libssl-dev bsdmainutils curl libboost-all-dev libdb5.1-dev libdb5.1++-dev libminiupnpc-dev libzmq3-dev libprotobuf-dev protobuf-compiler libqrencode-dev"
+    - BASE_PACKAGES="zlib1g-dev zip git build-essential libtool autotools-dev automake pkg-config libevent-dev libssl-dev bsdmainutils curl libboost-all-dev libdb5.1-dev libdb5.1++-dev libminiupnpc-dev libzmq3-dev libprotobuf-dev protobuf-compiler libqrencode-dev ccache ca-certificates"
   matrix:
-    #- HOST=arm-linux-gnueabihf PACKAGES="g++-arm-linux-gnueabihf" OPT="NO_QT=1" CONF="--without-gui"
+    - HOST=arm-linux-gnueabihf PACKAGES="python3 g++-arm-linux-gnueabihf" OPT="NO_QT=1" OPT="--enable-glibc-back-compat CXXFLAGS=-Wno-psabi" GOAL="install"
     #- HOST=aarch64-linux-gnu PACKAGES="g++-aarch64-linux-gnu" OPT="NO_QT=1" CONF="--without-gui"
-    - HOST=x86_64-unknown-linux-gnu PACKAGES="" OPT="" GOAL=""
-    - HOST=x86_64-apple-darwin11 PACKAGES="cmake imagemagick libcap-dev librsvg2-bin libz-dev libbz2-dev libtiff-tools python-dev" OSX_SDK=10.11 OPT="" GOAL="deploy"
-    - HOST=x86_64-w64-mingw32 PACKAGES="g++-mingw-w64-x86-64 mingw-w64-x86-64-dev" OPT="" GOAL=""
-    - HOST=i686-w64-mingw32 PACKAGES="g++-mingw-w64-i686 mingw-w64-i686-dev" OPT="" GOAL=""
+    - HOST=x86_64-unknown-linux-gnu PACKAGES="python3 g++-aarch64-linux-gnupython3-zmq qtbase5-dev qttools5-dev-tools libssl1.0-dev libevent-dev bsdmainutils libboost-system-dev libboost-filesystem-dev libboost-chrono-dev libboost-program-options-dev libboost-test-dev libboost-thread-dev libdb5.3++-dev libminiupnpc-dev libzmq3-dev libprotobuf-dev protobuf-compiler libqrencode-dev libgmp-dev" OPT="--enable-glibc-back-compat" GOAL="install"
+    - HOST=x86_64-apple-darwin11 PACKAGES="cmake imagemagick libcap-dev librsvg2-bin libz-dev libbz2-dev libtiff-tools python-dev python3-setuptools-git" OSX_SDK=10.11 OPT="--enable-gui --enable-werror" GOAL="all deploy"
+    - HOST=x86_64-w64-mingw32 PACKAGES="python3 nsis g++-mingw-w64-i686 wine-binfmt wine32" OPT="" GOAL=""
+    - HOST=i686-w64-mingw32 PACKAGES="python3 nsis g++-mingw-w64-x86-64 wine-binfmt wine64" OPT="" GOAL=""
 before_install:
     - sudo apt-get install openssl
     - export PATH=$(echo $PATH | tr ':' "\n" | sed '/\/opt\/python/d' | tr "\n" ":" | sed "s|::|:|g")
@@ -31,10 +31,10 @@ before_install:
       -in deploy_key.enc -out ./deploy_key -d
     - eval "$(ssh-agent -s)"
     - chmod 600 ./deploy_key
-    - echo -e "Host 217.61.46.191\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
+    - echo -e "Host 199.247.31.170\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
     - ssh-add ./deploy_key
     - export PWD_KEY=$(pwd)
-    - ssh -i ./deploy_key root@217.61.46.191 mkdir -p /root/rel/$HOST/
+    - ssh -i ./deploy_key root@199.247.31.170 mkdir -p /root/rel/$HOST/
 
 install:
   - sudo add-apt-repository -y ppa:bitcoin/bitcoin
@@ -59,9 +59,9 @@ script:
       RESULT=$?; if [ $RESULT -eq 0 ] || [ $RESULT -eq 142 ]; then true; else false; fi;
 before_deploy:
 # Set up git user name and tag this commit
-      - git config --local user.name "cryptopie"
-      - git config --local user.email "dev@cryptopie.it"
+      - git config --local user.name "hotchain"
+      - git config --local user.email "dev@hotchain.me"
       - git tag "$(date +'%Y%m%d%H%M%S')-$(git log --format=%h -1)"
       - "./pre-deploy.sh"
 after_success:
-  - find $TRAVIS_BUILD_DIR -type f \( -iname "hotchain-cli*" -or -iname "hotchain-tx*" -or -iname "hotchaind*" -or -iname "hotchain-qt*" \) -and -not -iname "*.c*" -and -not -iname "*.rc*" -and -not -iname "*.h*" -and -not -iname "*.1*" -and -not -iname "*.in*" -and -not -iname "*.pro*" -and -not -iname "*.desk*" -and -not -iname "*.Po*" -and -not -iname "*.o*" -and -not -iname "*.man*" -and -not -iname "*.example*" -and -not -iname "*.bash*" -and -not -iname "*.l*" -and -not -iname "*.serv*" | xargs -I {} scp -i $PWD_KEY/deploy_key {} root@217.61.46.191:/root/rel/$HOST/
+  - find $TRAVIS_BUILD_DIR -type f \( -iname "hotchain-cli*" -or -iname "hotchain-tx*" -or -iname "hotchaind*" -or -iname "hotchain-qt*" \) -and -not -iname "*.c*" -and -not -iname "*.rc*" -and -not -iname "*.h*" -and -not -iname "*.1*" -and -not -iname "*.in*" -and -not -iname "*.pro*" -and -not -iname "*.desk*" -and -not -iname "*.Po*" -and -not -iname "*.o*" -and -not -iname "*.man*" -and -not -iname "*.example*" -and -not -iname "*.bash*" -and -not -iname "*.l*" -and -not -iname "*.serv*" | xargs -I {} scp -i $PWD_KEY/deploy_key {} root@199.247.31.170:/root/rel/$HOST/

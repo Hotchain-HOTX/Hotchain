@@ -62,12 +62,12 @@
         <translation>Vastaanottavat osoitteet</translation>
     </message>
     <message>
-        <source>These are your HOTCHAIN addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Nämä ovat sinun HOTCHAIN osoitteesi maksujen lähetystä varten. Tarkista aina määrä ja vastaanottava osoite ennen kolikoiden lähettämistä.</translation>
+        <source>These are your Hotchain addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Nämä ovat sinun Hotchain osoitteesi maksujen lähetystä varten. Tarkista aina määrä ja vastaanottava osoite ennen kolikoiden lähettämistä.</translation>
     </message>
     <message>
-        <source>These are your HOTCHAIN addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Nämä ovat sinun HOTCHAIN osoitteesi maksujen vastaanottamista varten. On suositeltavaa käyttää uutta vastaanottavaa osoitetta jokaiselle uudelle rahansiirrolle.</translation>
+        <source>These are your Hotchain addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Nämä ovat sinun Hotchain osoitteesi maksujen vastaanottamista varten. On suositeltavaa käyttää uutta vastaanottavaa osoitetta jokaiselle uudelle rahansiirrolle.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -172,16 +172,16 @@
         <translation>Vahvista lompakon salaus</translation>
     </message>
     <message>
-        <source>HOTCHAIN will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your HOTCHAINs from being stolen by malware infecting your computer.</source>
-        <translation>HOTCHAIN sulkeutuu salausprosessin ajaksi. Muista, että lompakon salaus ei voi täysin suojella HOTCHAINien varkaudelta, jos tietokoneesi sisältää haittaohjelmia.</translation>
+        <source>Hotchain will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your HOTXs from being stolen by malware infecting your computer.</source>
+        <translation>Hotchain sulkeutuu salausprosessin ajaksi. Muista, että lompakon salaus ei voi täysin suojella HOTXien varkaudelta, jos tietokoneesi sisältää haittaohjelmia.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Oletko varma että tahdot salata lompakkosi?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR HOTCHAIN&lt;/b&gt;!</source>
-        <translation>Varoitus: Jos salaat lompakkosi ja unohdat salausavaimesi, &lt;b&gt;menetät kaikki HOTCHAINisi&lt;/b&gt;</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR HOTX&lt;/b&gt;!</source>
+        <translation>Varoitus: Jos salaat lompakkosi ja unohdat salausavaimesi, &lt;b&gt;menetät kaikki HOTXisi&lt;/b&gt;</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -566,11 +566,11 @@
     </message>
     <message>
         <source>Hotchain Wallet</source>
-        <translation>HOTCHAIN Ydin</translation>
+        <translation>Hotchain Ydin</translation>
     </message>
     <message>
-        <source>Send coins to a HOTCHAIN address</source>
-        <translation>Lähetä kolikkoja HOTCHAIN osoitteeseen</translation>
+        <source>Send coins to a Hotchain address</source>
+        <translation>Lähetä kolikkoja Hotchain osoitteeseen</translation>
     </message>
     <message>
         <source>Request payments (generates QR codes and hotchain: URIs)</source>
@@ -590,19 +590,19 @@
     </message>
     <message>
         <source>Show information about Hotchain Wallet</source>
-        <translation>Näytä tietoja HOTCHAIN Ytimestä</translation>
+        <translation>Näytä tietoja Hotchain Ytimestä</translation>
     </message>
     <message>
-        <source>Modify configuration options for HOTCHAIN</source>
-        <translation>Muokkaa konfiguraatio vaihtoehtoja HOTCHAIN:lle</translation>
+        <source>Modify configuration options for Hotchain</source>
+        <translation>Muokkaa konfiguraatio vaihtoehtoja Hotchain:lle</translation>
     </message>
     <message>
-        <source>Sign messages with your HOTCHAIN addresses to prove you own them</source>
+        <source>Sign messages with your Hotchain addresses to prove you own them</source>
         <translation>Allekirjoita viestejä todistaaksesi, että omistat ne.</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified HOTCHAIN addresses</source>
-        <translation>Vahvista viestit varmistaaksesi, että ne allekirjoitettiin tietyllä HOTCHAIN osoiteella.</translation>
+        <source>Verify messages to ensure they were signed with specified Hotchain addresses</source>
+        <translation>Vahvista viestit varmistaaksesi, että ne allekirjoitettiin tietyllä Hotchain osoiteella.</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -633,8 +633,8 @@
         <translation>Avaa Masternode konfiguraatiotiedosto</translation>
     </message>
     <message>
-        <source>Open a HOTCHAIN: URI or payment request</source>
-        <translation>Avaa HOTCHAIN: URI tai pyydä maksua</translation>
+        <source>Open a Hotchain: URI or payment request</source>
+        <translation>Avaa Hotchain: URI tai pyydä maksua</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -645,12 +645,12 @@
         <translation>Lohkon tutkija näkymä</translation>
     </message>
     <message>
-        <source>Show the Hotchain Wallet help message to get a list with possible HOTCHAIN command-line options</source>
-        <translation>Näytä HOTCHAIN Ydin apuviesti saadaksesi lista mahdollisista HOTCHAIN komentolinja komennoista.</translation>
+        <source>Show the Hotchain Wallet help message to get a list with possible Hotchain command-line options</source>
+        <translation>Näytä Hotchain Ydin apuviesti saadaksesi lista mahdollisista Hotchain komentolinja komennoista.</translation>
     </message>
     <message>
         <source>Hotchain Wallet client</source>
-        <translation>HOTCHAIN Ydin asiakasohjelma</translation>
+        <translation>Hotchain Ydin asiakasohjelma</translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -909,7 +909,7 @@
     <name>HelpMessageDialog</name>
     <message>
         <source>Hotchain Wallet</source>
-        <translation>HOTCHAIN Ydin</translation>
+        <translation>Hotchain Ydin</translation>
     </message>
     <message>
         <source>Usage:</source>
@@ -928,11 +928,11 @@
     </message>
     <message>
         <source>Welcome to Hotchain Wallet.</source>
-        <translation>Tervetuloa HOTCHAIN Ytimeen.</translation>
+        <translation>Tervetuloa Hotchain Ytimeen.</translation>
     </message>
     <message>
         <source>Hotchain Wallet</source>
-        <translation>HOTCHAIN Ydin</translation>
+        <translation>Hotchain Ydin</translation>
     </message>
     <message>
         <source>Error</source>
@@ -1128,32 +1128,32 @@ Please check the address and try again.</source>
         <translation>Valitse yksityisyyden taso.</translation>
     </message>
     <message>
-        <source>Use 2 separate masternodes to mix funds up to 10000 HOTCHAIN</source>
-        <translation>Käytä 2 erillistä masternodea sekoittaaksesi enintään 10000 HOTCHAIN</translation>
+        <source>Use 2 separate masternodes to mix funds up to 10000 HOTX</source>
+        <translation>Käytä 2 erillistä masternodea sekoittaaksesi enintään 10000 Hotchain</translation>
     </message>
     <message>
-        <source>Use 8 separate masternodes to mix funds up to 10000 HOTCHAIN</source>
-        <translation>Käytä 8 erillistä masternodea sekoittaaksesi enintään 10000 HOTCHAIN</translation>
+        <source>Use 8 separate masternodes to mix funds up to 10000 HOTX</source>
+        <translation>Käytä 8 erillistä masternodea sekoittaaksesi enintään 10000 Hotchain</translation>
     </message>
     <message>
         <source>Use 16 separate masternodes</source>
         <translation>Käytä 16 erillistä masternodea</translation>
     </message>
     <message>
-        <source>This option is the quickest and will cost about ~0.025 HOTCHAIN to anonymize 10000 HOTCHAIN</source>
-        <translation>Tämä vaihtoehto on nopein ja maksaa noin ~0.025 HOTCHAIN anonymoidaksesi 10000 HOTCHAIN</translation>
+        <source>This option is the quickest and will cost about ~0.025 HOTX to anonymize 10000 HOTX</source>
+        <translation>Tämä vaihtoehto on nopein ja maksaa noin ~0.025 HOTX anonymoidaksesi 10000 Hotchain</translation>
     </message>
     <message>
-        <source>This option is moderately fast and will cost about 0.05 HOTCHAIN to anonymize 10000 HOTCHAIN</source>
-        <translation>Tämä vaihtoehto on suhteellisen nopea ja maksaa 0.05 HOTCHAIN anonymoidaksesi 10000 HOTCHAIN</translation>
+        <source>This option is moderately fast and will cost about 0.05 HOTX to anonymize 10000 HOTX</source>
+        <translation>Tämä vaihtoehto on suhteellisen nopea ja maksaa 0.05 Hotchain anonymoidaksesi 10000 Hotchain</translation>
     </message>
     <message>
         <source>This is the slowest and most secure option. Using maximum anonymity will cost</source>
         <translation>Tämä on hitain ja turvallisin vaihtoehto. Täydesti anonymisoiminen ei maksa mitään.</translation>
     </message>
     <message>
-        <source>0.1 HOTCHAIN per 10000 HOTCHAIN you anonymize.</source>
-        <translation>0.1 per 10000 HOTCHAIN, jotka anonymisoit.</translation>
+        <source>0.1 HOTX per 10000 HOTX you anonymize.</source>
+        <translation>0.1 per 10000 Hotchain, jotka anonymisoit.</translation>
     </message>
     <message>
         <source>Obfuscation Configuration</source>
@@ -1202,12 +1202,12 @@ Please check the address and try again.</source>
         <translation>Ekspertti</translation>
     </message>
     <message>
-        <source>Automatically start HOTCHAIN after logging in to the system.</source>
-        <translation>Automaattisesti käynnistä HOTCHAIN kun kirjaudut sisään.</translation>
+        <source>Automatically start Hotchain after logging in to the system.</source>
+        <translation>Automaattisesti käynnistä Hotchain kun kirjaudut sisään.</translation>
     </message>
     <message>
-        <source>&amp;Start HOTCHAIN on system login</source>
-        <translation>&amp;Aloita HOTCHAIN järjestelmän kirjautumisessa</translation>
+        <source>&amp;Start Hotchain on system login</source>
+        <translation>&amp;Aloita Hotchain järjestelmän kirjautumisessa</translation>
     </message>
     <message>
         <source>Enable coin &amp;control features</source>
@@ -1226,12 +1226,12 @@ Please check the address and try again.</source>
         <translation>&amp;Verkko</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting HOTCHAIN.</source>
+        <source>The user interface language can be set here. This setting will take effect after restarting Hotchain.</source>
         <translation>Käyttöliittymän kielen voi säätää täällä. Tämä asetus tulee voimaan uudelleenkäynnistettyäsi lompakon.</translation>
     </message>
     <message>
-        <source>Connect to the HOTCHAIN network through a SOCKS5 proxy.</source>
-        <translation>Yhdistä HOTCHAIN verkkoon SOCKS5 proxyn kautta</translation>
+        <source>Connect to the Hotchain network through a SOCKS5 proxy.</source>
+        <translation>Yhdistä Hotchain verkkoon SOCKS5 proxyn kautta</translation>
     </message>
     <message>
         <source>Proxy &amp;IP:</source>
@@ -1246,8 +1246,8 @@ Please check the address and try again.</source>
         <translation>&amp;Portti:</translation>
     </message>
     <message>
-        <source>Port of the proxy (e.g. 9069)</source>
-        <translation>Proxyn portti (esim. 9069)</translation>
+        <source>Port of the proxy (e.g. 9050)</source>
+        <translation>Proxyn portti (esim. 9050)</translation>
     </message>
     <message>
         <source>&amp;Window</source>
@@ -1535,8 +1535,8 @@ Please check the address and try again.</source>
         <translation>Lohko ketju</translation>
     </message>
     <message>
-        <source>Open the HOTCHAIN debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Avaa HOTCHAIN debug loki nykyisestä sijainnista. Tämä voi kestää muutaman sekunnin suurille lokeille</translation>
+        <source>Open the Hotchain debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Avaa Hotchain debug loki nykyisestä sijainnista. Tämä voi kestää muutaman sekunnin suurille lokeille</translation>
     </message>
     <message>
         <source>Number of Masternodes</source>
@@ -1647,8 +1647,8 @@ Please check the address and try again.</source>
         <translation>Ulos:</translation>
     </message>
     <message>
-        <source>Welcome to the HOTCHAIN RPC console.</source>
-        <translation>Tervetuloa HOTCHAIN RPC konsoliin.</translation>
+        <source>Welcome to the Hotchain RPC console.</source>
+        <translation>Tervetuloa Hotchain RPC konsoliin.</translation>
     </message>
     <message>
         <source>never</source>
@@ -1686,12 +1686,12 @@ Please check the address and try again.</source>
         <translation>Vaihtoehtoinen nimike uudelle vastaanottavalle osoitteelle</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the HOTCHAIN network.</source>
-        <translation>Vaihtoehtoinen viesti joka liitetään maksupyyntöön, joka näytetään kun pyyntö avataan. Huomio: Viestiä ei lähetetä maksun mukana HOTCHAIN verkolle.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Hotchain network.</source>
+        <translation>Vaihtoehtoinen viesti joka liitetään maksupyyntöön, joka näytetään kun pyyntö avataan. Huomio: Viestiä ei lähetetä maksun mukana Hotchain verkolle.</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the HOTCHAIN network.</source>
-        <translation>Vaihtoehtoinen viesti, joka liitetään maksupyyntöö, joka näytetään kun pyyntö avataan. &lt;br&gt; Huomio: Tätä viestiä ei lähetetä maksun mukana HOTCHAIN  verkolle.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the Hotchain network.</source>
+        <translation>Vaihtoehtoinen viesti, joka liitetään maksupyyntöö, joka näytetään kun pyyntö avataan. &lt;br&gt; Huomio: Tätä viestiä ei lähetetä maksun mukana Hotchain  verkolle.</translation>
     </message>
     <message>
         <source>Use this form to request payments. All fields are &lt;b&gt;optional&lt;/b&gt;.</source>
@@ -1887,8 +1887,8 @@ Please check the address and try again.</source>
         <translation>Muutos:</translation>
     </message>
     <message>
-        <source>0 HOTCHAIN</source>
-        <translation>0 HOTCHAIN</translation>
+        <source>0 HOTX</source>
+        <translation>0 HOTX</translation>
     </message>
     <message>
         <source>Choose...</source>
@@ -1963,8 +1963,8 @@ Please check the address and try again.</source>
         <translation>Kopioi taksa</translation>
     </message>
     <message>
-        <source>Warning: Invalid HOTCHAIN address</source>
-        <translation>Varoitus: Virheellinen HOTCHAIN osoite</translation>
+        <source>Warning: Invalid Hotchain address</source>
+        <translation>Varoitus: Virheellinen Hotchain osoite</translation>
     </message>
     <message>
         <source>Are you sure you want to send?</source>
@@ -2014,8 +2014,8 @@ Please check the address and try again.</source>
         <translation>Tämä on normaali maksu.</translation>
     </message>
     <message>
-        <source>The HOTCHAIN address to send the payment to</source>
-        <translation>HOTCHAIN osoite johon maksu lähetetään</translation>
+        <source>The Hotchain address to send the payment to</source>
+        <translation>Hotchain osoite johon maksu lähetetään</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2076,8 +2076,8 @@ Please check the address and try again.</source>
         <translation>Voit allekirjoittaa viestejä osoitteillasi todistaaksesi, että omistat ne. Ole varovainen ettet allekirjoita mitään kummallista, sillä kalasteluyritykset saattavat yrittää huijata sinut luovuttamaan tietoja. Allekirjoita vain täysin yksityiskohtaisia sanomia, jotka hyväksyt.</translation>
     </message>
     <message>
-        <source>The HOTCHAIN address to sign the message with</source>
-        <translation>HOTCHAIN osoite, jolla viesti allekirjoitetaan</translation>
+        <source>The Hotchain address to sign the message with</source>
+        <translation>Hotchain osoite, jolla viesti allekirjoitetaan</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2108,16 +2108,16 @@ Please check the address and try again.</source>
         <translation>Kopioi nykyinen allekirjoitus järjestelmän leikepöydälle</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this HOTCHAIN address</source>
-        <translation>Allekirjoita viesti todistaaksesi, että omistat tämän HOTCHAIN osoitteen</translation>
+        <source>Sign the message to prove you own this Hotchain address</source>
+        <translation>Allekirjoita viesti todistaaksesi, että omistat tämän Hotchain osoitteen</translation>
     </message>
     <message>
-        <source>The HOTCHAIN address the message was signed with</source>
-        <translation>HOTCHAIN osoite, jolla viesti allekirjoitettiin</translation>
+        <source>The Hotchain address the message was signed with</source>
+        <translation>Hotchain osoite, jolla viesti allekirjoitettiin</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified HOTCHAIN address</source>
-        <translation>Vahvista että viesti on allekirjoitettu kyseessä olevalla HOTCHAIN osoitteella.</translation>
+        <source>Verify the message to ensure it was signed with the specified Hotchain address</source>
+        <translation>Vahvista että viesti on allekirjoitettu kyseessä olevalla Hotchain osoitteella.</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -2200,7 +2200,7 @@ Please check the address and try again.</source>
     <name>SplashScreen</name>
     <message>
         <source>Hotchain Wallet</source>
-        <translation>HOTCHAIN Ydin</translation>
+        <translation>Hotchain Ydin</translation>
     </message>
     <message>
         <source>Version %1</source>

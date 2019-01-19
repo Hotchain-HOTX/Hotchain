@@ -1,5 +1,4 @@
-// Copyright (c) 2017-2018 The PIVX Developers
-// Copyright (c) 2018 Cryptopie 
+// Copyright (c) 2017-2018 The Hotchain developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -233,7 +232,7 @@ void CzHOTXWallet::SyncWithChain(bool fGenerateMintPool)
                     if (!out.scriptPubKey.IsZerocoinMint())
                         continue;
 
-                    PublicCoin pubcoin(Params().Zerocoin_Params());
+                    PublicCoin pubcoin(Params().Zerocoin_Params(false));
                     CValidationState state;
                     if (!TxOutToPublicCoin(out, pubcoin, state)) {
                         LogPrintf("%s : failed to get mint from txout for %s!\n", __func__, pMint.first.GetHex());
@@ -346,14 +345,14 @@ bool CzHOTXWallet::SetMintSeen(const CBigNum& bnValue, const int& nHeight, const
 // Check if the value of the commitment meets requirements
 bool IsValidCoinValue(const CBigNum& bnValue)
 {
-    return bnValue >= Params().Zerocoin_Params()->accumulatorParams.minCoinValue &&
-    bnValue <= Params().Zerocoin_Params()->accumulatorParams.maxCoinValue &&
+    return bnValue >= Params().Zerocoin_Params(false)->accumulatorParams.minCoinValue &&
+    bnValue <= Params().Zerocoin_Params(false)->accumulatorParams.maxCoinValue &&
     bnValue.isPrime();
 }
 
 void CzHOTXWallet::SeedToZHOTX(const uint512& seedZerocoin, CBigNum& bnValue, CBigNum& bnSerial, CBigNum& bnRandomness, CKey& key)
 {
-    ZerocoinParams* params = Params().Zerocoin_Params();
+    ZerocoinParams* params = Params().Zerocoin_Params(false);
 
     //convert state seed into a seed for the private key
     uint256 nSeedPrivKey = seedZerocoin.trim256();
@@ -433,7 +432,7 @@ void CzHOTXWallet::GenerateMint(const uint32_t& nCount, const CoinDenomination d
     CBigNum bnRandomness;
     CKey key;
     SeedToZHOTX(seedZerocoin, bnValue, bnSerial, bnRandomness, key);
-    coin = PrivateCoin(Params().Zerocoin_Params(), denom, bnSerial, bnRandomness);
+    coin = PrivateCoin(Params().Zerocoin_Params(false), denom, bnSerial, bnRandomness);
     coin.setPrivKey(key.GetPrivKey());
     coin.setVersion(PrivateCoin::CURRENT_VERSION);
 
@@ -454,7 +453,7 @@ bool CzHOTXWallet::RegenerateMint(const CDeterministicMint& dMint, CZerocoinMint
         return error("%s: master seed does not match!\ndmint:\n %s \nhashSeed: %s\nseed: %s", __func__, dMint.ToString(), hashSeed.GetHex(), seedMaster.GetHex());
 
     //Generate the coin
-    PrivateCoin coin(Params().Zerocoin_Params(), dMint.GetDenomination(), false);
+    PrivateCoin coin(Params().Zerocoin_Params(false), dMint.GetDenomination(), false);
     CDeterministicMint dMintDummy;
     GenerateMint(dMint.GetCount(), dMint.GetDenomination(), coin, dMintDummy);
 
