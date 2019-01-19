@@ -254,7 +254,7 @@ bool GetKernelStakeModifier(uint256 hashBlockFrom, uint64_t& nStakeModifier, int
     const CBlockIndex* pindex = pindexFrom;
     CBlockIndex* pindexNext = chainActive[pindexFrom->nHeight + 1];
 
-    LogPrintf("kernelstake details: pfrom=%s size=%s \n", pindex->ToString(), std::to_string(nStakeModifierNew).c_str());
+    LogPrintf("kernelstake details: pfrom=%s size=%s \n", pindex->ToString(), std::to_string(hashBlockFrom).c_str());
     // loop to find the stake modifier later by a selection interval
     while (nStakeModifierTime < pindexFrom->GetBlockTime() + nStakeModifierSelectionInterval) {
         if (!pindexNext) {
