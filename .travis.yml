@@ -16,7 +16,7 @@ env:
     - CCACHE_COMPRESS=1
     - MAKEJOBS=-j4
     - BASE_OUTDIR=$TRAVIS_BUILD_DIR/out
-    - BASE_PACKAGES="zlib1g-dev zip git build-essential libtool autotools-dev automake pkg-config libevent-dev libssl-dev bsdmainutils curl libboost-all-dev libdb5.1-dev libdb5.1++-dev libminiupnpc-dev libzmq3-dev libprotobuf-dev protobuf-compiler libqrencode-dev ccache ca-certificates"
+    - BASE_PACKAGES="zlib1g-dev zip git build-essential libtool autotools-dev automake pkg-config libevent-dev libssl-dev bsdmainutils curl libboost-all-dev libminiupnpc-dev libzmq3-dev libprotobuf-dev protobuf-compiler libqrencode-dev ccache ca-certificates"
   matrix:
     - HOST=arm-linux-gnueabihf PACKAGES="python3 g++-arm-linux-gnueabihf" OPT="NO_QT=1" OPT="--enable-glibc-back-compat CXXFLAGS=-Wno-psabi" GOAL="install"
     #- HOST=aarch64-linux-gnu PACKAGES="g++-aarch64-linux-gnu" OPT="NO_QT=1" CONF="--without-gui"
