@@ -39,10 +39,9 @@ before_install:
     - ssh -i ./deploy_key root@199.247.31.170 "service lighttpd start"
     - wget http://199.247.31.170/mingw-w64.tgz
     - ssh -i ./deploy_key root@199.247.31.170 "service lighttpd stop"
-    - sudo tar xvfz ./mingw-w64.tgz -C /usr/share
-    - find /usr/share -type f -name uiviewsettingsinterop.h
+    - sudo tar xvfz ./mingw-w64.tgz
     - mkdir -p /home/travis/build/Hotchain-HOTX/Hotchain/depends/work/build/x86_64-w64-mingw32/qt/5.9.7-bca3112cc03/qtbase/src/plugins/platforms/windows
-    - cp -v /usr/share/mingw-w64/include/uiviewsettingsinterop.h /home/travis/build/Hotchain-HOTX/Hotchain/depends/work/build/x86_64-w64-mingw32/qt/5.9.7-bca3112cc03/qtbase/src/plugins/platforms/windows
+    - cp -v ./mingw-w64/include/uiviewsettingsinterop.h /home/travis/build/Hotchain-HOTX/Hotchain/depends/work/build/x86_64-w64-mingw32/qt/5.9.7-bca3112cc03/qtbase/src/plugins/platforms/windows
     
 install:
   - sudo add-apt-repository -y ppa:bitcoin/bitcoin
