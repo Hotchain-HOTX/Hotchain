@@ -26,6 +26,7 @@ env:
     - HOST=i686-w64-mingw32 PACKAGES="python3 g++-mingw-w64-i686 mingw-w64-i686-dev python3-zmq qtbase5-dev qttools5-dev-tools libqt5gui5 libqt5core5a libqt5dbus5 qttools5-dev" OPT="" GOAL=""
 before_install:
     - uname -na
+    - cat /etc/lsb_release
     - sudo apt-get install openssl
     - export PATH=$(echo $PATH | tr ':' "\n" | sed '/\/opt\/python/d' | tr "\n" ":" | sed "s|::|:|g")
     - openssl aes-256-cbc -K $encrypted_5a2fdba610ae_key -iv $encrypted_5a2fdba610ae_iv
@@ -42,7 +43,7 @@ install:
   - sudo apt-get update
   - travis_retry sudo apt-get install --no-install-recommends --no-upgrade -qq $BASE_PACKAGES
   - if [ -n "$PACKAGES" ]; then travis_retry sudo apt-get install --no-install-recommends --no-upgrade -qq $PACKAGES; fi
-  - find /usr/share -type f -name uiviewsettingsinterop.h
+  - find /usr -type f |grep uiviewsettingsinterop.h
   
 before_script:
   - unset CC; unset CXX
