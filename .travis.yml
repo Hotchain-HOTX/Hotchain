@@ -43,7 +43,7 @@ install:
   - sudo apt-get update
   - travis_retry sudo apt-get install --no-install-recommends --no-upgrade -qq $BASE_PACKAGES
   - if [ -n "$PACKAGES" ]; then travis_retry sudo apt-get install --no-install-recommends --no-upgrade -qq $PACKAGES; fi
-  - find /usr -type f |grep uiviewsettingsinterop.h
+  - find /usr -type f -name uiviewsettingsinterop.h
   
 before_script:
   - unset CC; unset CXX
