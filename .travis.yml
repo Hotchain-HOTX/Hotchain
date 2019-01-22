@@ -19,11 +19,11 @@ env:
     - BASE_PACKAGES="zlib1g-dev zip git build-essential libtool autotools-dev automake autoconf pkg-config libevent-dev libssl-dev bsdmainutils curl libboost-all-dev libminiupnpc-dev libzmq3-dev libprotobuf-dev protobuf-compiler libqrencode-dev ccache ca-certificates libdb4.8-dev libdb4.8++-dev"
   matrix:
     - HOST=arm-linux-gnueabihf PACKAGES="python3 g++-arm-linux-gnueabihf" OPT="NO_QT=1" CONF="--without-gui"
-    #- HOST=aarch64-linux-gnu PACKAGES="g++-aarch64-linux-gnu" OPT="NO_QT=1" CONF="--without-gui"
+    - HOST=aarch64-linux-gnu PACKAGES="g++-aarch64-linux-gnu" OPT="NO_QT=1" CONF="--without-gui"
     - HOST=x86_64-unknown-linux-gnu PACKAGES="python3 g++-aarch64-linux-gnu python3-zmq qtbase5-dev qttools5-dev-tools libevent-dev bsdmainutils libboost-system-dev libboost-filesystem-dev libboost-chrono-dev libboost-program-options-dev libboost-test-dev libboost-thread-dev libdb5.3++-dev libminiupnpc-dev libzmq3-dev libprotobuf-dev protobuf-compiler libqrencode-dev libgmp-dev" OPT="" GOAL="install"
     - HOST=x86_64-apple-darwin11 PACKAGES="cmake imagemagick libcap-dev librsvg2-bin libz-dev libbz2-dev libtiff-tools python-dev python3-setuptools-git" OSX_SDK=10.11 OPT="" GOAL="all deploy"
-    - HOST=x86_64-w64-mingw32 PACKAGES="python3 g++-mingw-w64-x86-64 mingw-w64-x86-64-dev libqt5gui5 libqt5core5a libqt5dbus5 qttools5-dev" OPT="" GOAL=""
-    - HOST=i686-w64-mingw32 PACKAGES="python3 g++-mingw-w64-i686 mingw-w64-i686-dev libqt5gui5 libqt5core5a libqt5dbus5 qttools5-dev" OPT="" GOAL=""
+    - HOST=x86_64-w64-mingw32 PACKAGES="python3 g++-mingw-w64-x86-64 mingw-w64-x86-64-dev python3-zmq qtbase5-dev qttools5-dev-tools libqt5gui5 libqt5core5a libqt5dbus5 qttools5-dev" OPT="" GOAL=""
+    - HOST=i686-w64-mingw32 PACKAGES="python3 g++-mingw-w64-i686 mingw-w64-i686-dev python3-zmq qtbase5-dev qttools5-dev-tools libqt5gui5 libqt5core5a libqt5dbus5 qttools5-dev" OPT="" GOAL=""
 before_install:
     - sudo apt-get install openssl
     - export PATH=$(echo $PATH | tr ':' "\n" | sed '/\/opt\/python/d' | tr "\n" ":" | sed "s|::|:|g")
