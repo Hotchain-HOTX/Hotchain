@@ -127,7 +127,7 @@ public:
         nMasternodeCountDrift = 20;
         nMaxMoneyOut = 60000000 * COIN;
 
-        nZerocoinStartTime = 1548622305;
+        nZerocoinStartTime = 1547814260;
         nZerocoinStartHeight = 250;
         nBlockZerocoinV2 = 870000; //!> The block that zerocoin v2 becomes active - roughly Tuesday, May 8, 2018 4:00:00 AM GMT
         /** Height or Time Based Activations **/
