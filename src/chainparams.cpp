@@ -129,7 +129,7 @@ public:
 
         nZerocoinStartTime = 1548622305;
         nZerocoinStartHeight = 500;
-        nBlockZerocoinV2 = 150000; //!> The block that zerocoin v2 becomes active - roughly Tuesday, May 8, 2018 4:00:00 AM GMT
+        nBlockZerocoinV2 = 870000; //!> The block that zerocoin v2 becomes active - roughly Tuesday, May 8, 2018 4:00:00 AM GMT
         /** Height or Time Based Activations **/
         nLastPOWBlock = 200;
        /* nModifierUpdateBlock = 615800;
