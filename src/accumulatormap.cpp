@@ -60,6 +60,17 @@ void AccumulatorMap::Load(const AccumulatorCheckpoints::Checkpoint& checkpoint)
          mapAccumulators.at(it.first)->setValue(it.second);
 }
 
+bool AccumulatorMap::Init()
+{
+    for (auto& denom : zerocoinDenomList) {
+
+        CBigNum bnValue();
+
+        mapAccumulators.at(denom)->setValue(bnValue);
+    }
+    return true;
+}
+
 //Add a zerocoin to the accumulator of its denomination.
 bool AccumulatorMap::Accumulate(const PublicCoin& pubCoin, bool fSkipValidation)
 {
