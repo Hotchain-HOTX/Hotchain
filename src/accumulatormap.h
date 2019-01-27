@@ -19,7 +19,6 @@ private:
 public:
     explicit AccumulatorMap(libzerocoin::ZerocoinParams* params);
     bool Load(uint256 nCheckpoint);
-    bool Init();
     void Load(const AccumulatorCheckpoints::Checkpoint& checkpoint);
     bool Accumulate(const libzerocoin::PublicCoin& pubCoin, bool fSkipValidation = false);
     CBigNum GetValue(libzerocoin::CoinDenomination denom);
