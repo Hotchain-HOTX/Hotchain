@@ -64,7 +64,7 @@ bool AccumulatorMap::Init()
 {
     for (auto& denom : zerocoinDenomList) {
 
-        CBigNum bnValue(0);
+        CBigNum bnValue();
 
         mapAccumulators.at(denom)->setValue(bnValue);
     }
