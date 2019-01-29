@@ -210,10 +210,8 @@ bool InitializeAccumulators(const int nHeight, int& nHeightCheckpoint, Accumulat
             //Load hard coded checkpointed value
             AccumulatorCheckpoints::Checkpoint checkpoint = AccumulatorCheckpoints::GetClosestCheckpoint(nHeight,
                                                                                                          nHeightCheckpoint);
-             if (nHeightCheckpoint < 0){
-                LogPrintf("%s: failed to load hard-checkpoint for block %s Init it!", __func__, nHeight);
-                return mapAccumulators.Init();
-            }
+            if (nHeightCheckpoint < 0)
+                return error("%s: failed to load hard-checkpoint for block %s", __func__, nHeight);
 
             mapAccumulators.Load(checkpoint);
             return true;
