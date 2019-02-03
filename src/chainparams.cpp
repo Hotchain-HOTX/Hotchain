@@ -53,22 +53,11 @@ static void convertSeed6(std::vector<CAddress>& vSeedsOut, const SeedSpec6* data
 // + Contains no strange transactions
 static Checkpoints::MapCheckpoints mapCheckpoints =
     boost::assign::map_list_of
-	( 0, uint256("d35f846d043dc9696240dccc898707c9ac250e638cd1736b89d89f553a9bbb23"))
-	(20, uint256("0x0000085374066ec2f4a23b5e0780900f08c83593ef2c5b0e0e2ef5678c832eee"))
-    (50, uint256("0x0000020ae8f4f1955267c48f5a9d443a82c741ef1891fb8cdde2c3d435619309"))
-    (75, uint256("0x000001e6b67c9168e28acc4cbb2a962c64b5b13261cee42c3ebd6afbc046dca6"))
-    (100, uint256("0x0000010d7872fde515efe18af3912e8562d310cec57f7cb6304896df2eb0fcae"));
-/* 	(200, uint256("0x000000e94c8509aa3e889b84023a3473290aa01d458a9d9a7fcc6e69ec08d7e6"))
-	(500, uint256("0x7ccf461a4a6d5044128b15c069f864c3443816521dddd99586fa87c5f5b55024"))
-	(750, uint256("0xbda110db6d52a34fc4778e16b49ec472e728769b74b3ec4ffed89dab110bf6b5"))
-	(850, uint256("0xcf35edb4ee3d1addc78cfcdd4ff147d09939e30922de0e5d92e18f8aa067bc3b"))
-	(925, uint256("0x95040e7aa8201c11eddff0347f128c1983abbd2f7d51abd8791c5fb467b924cb"))
-	(975, uint256("0x71480135493e5ae98be38bbd330ecc5892e1a01eb7b8d6bd1199c5499453844c")); */
-	
+	( 0, uint256("d35f846d043dc9696240dccc898707c9ac250e638cd1736b89d89f553a9bbb23"));
 static const Checkpoints::CCheckpointData data = {
     &mapCheckpoints,
-	1549062551, // * UNIX timestamp of last checkpoint block
-    102,    // * total number of transactions between genesis and last checkpoint
+	1541259177, // * UNIX timestamp of last checkpoint block
+    0,    // * total number of transactions between genesis and last checkpoint
                 //   (the tx=... number in the SetBestChain debug.log lines)
     2000        // * estimated number of transactions per day after checkpoint
 };
@@ -146,7 +135,7 @@ public:
        /* nModifierUpdateBlock = 615800;
         nZerocoinStartTime = 1508214600; // October 17, 2017 4:30:00 AM
         nBlockEnforceSerialRange = 895400; //Enforce serial range starting this block
-*/      nBlockRecalculateAccumulators = 990; //Trigger a recalculation of accumulators
+*/      nBlockRecalculateAccumulators = 750; //Trigger a recalculation of accumulators
 /*      nBlockFirstFraudulent = 891737; //First block that bad serials emerged
         nBlockLastGoodCheckpoint = 891730; //Last valid accumulator checkpoint
         nBlockEnforceInvalidUTXO = 902850; //Start enforcing the invalid UTXO's
