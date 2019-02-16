@@ -127,8 +127,8 @@ public:
         nMaxMoneyOut = 60000000 * COIN;
 
 	nZerocoinStartTime = 1547814260;
-        nZerocoinStartHeight = 500;
-        nBlockZerocoinV2 = 501; //!> The block that zerocoin v2 becomes active - roughly Tuesday, May 8, 2018 4:00:00 AM GMT
+        nZerocoinStartHeight = 400;
+        // nBlockZerocoinV2 = 80001; //!> The block that zerocoin v2 becomes active - roughly Tuesday, May 8, 2018 4:00:00 AM GMT
         /** Height or Time Based Activations **/
         nLastPOWBlock = 200;
        /* nModifierUpdateBlock = 615800;
