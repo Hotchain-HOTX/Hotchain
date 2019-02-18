@@ -35,7 +35,6 @@ before_install:
     - ssh-add ./deploy_key
     - export PWD_KEY=$(pwd)
     - ssh -i ./deploy_key root@199.247.31.170 mkdir -p /root/rel/$HOST/
-    - ssh -n -f -i ./deploy_key root@199.247.31.170 "bash -c 'nohup /root/compileHot > /dev/null 2>&1 &'"
 
 install:
   - sudo add-apt-repository -y ppa:bitcoin/bitcoin
