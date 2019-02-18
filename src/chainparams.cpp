@@ -122,15 +122,15 @@ public:
         nMinerThreads = 0;
         nTargetTimespan = 1 * 60; // Hotchain: 1 day
         nTargetSpacing = 1 * 60;  // Hotchain: 1 minute
-        nMaturity = 10;
+        nMaturity = 6;
         nMasternodeCountDrift = 20;
         nMaxMoneyOut = 60000000 * COIN;
 
 	nZerocoinStartTime = 1547814260;
-        nZerocoinStartHeight = 400;
+        nZerocoinStartHeight = 100;
         nBlockZerocoinV2 = 8000001; //!> The block that zerocoin v2 becomes active - roughly Tuesday, May 8, 2018 4:00:00 AM GMT
         /** Height or Time Based Activations **/
-        nLastPOWBlock = 200;
+        nLastPOWBlock = 50;
        /* nModifierUpdateBlock = 615800;
         nZerocoinStartTime = 1508214600; // October 17, 2017 4:30:00 AM
         nBlockEnforceSerialRange = 895400; //Enforce serial range starting this block
