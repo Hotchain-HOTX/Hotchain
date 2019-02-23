@@ -1,6 +1,7 @@
 // Copyright (c) 2011-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2018 The PIVX Developers 
+// Copyright (c) 2019 The Hotchain Developers 
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -55,7 +56,7 @@ static const int MAX_URI_LENGTH = 255;
 
 #define QAPP_ORG_NAME "HOTCHAIN"
 #define QAPP_ORG_DOMAIN "hotchain.me"
-#define QAPP_APP_NAME_DEFAULT "hotchain-Qt"
-#define QAPP_APP_NAME_TESTNET "hotchain-Qt-testnet"
+#define QAPP_APP_NAME_DEFAULT "HOTCHAIN-Qt"
+#define QAPP_APP_NAME_TESTNET "HOTCHAIN-Qt-testnet"
 
 #endif // BITCOIN_QT_GUICONSTANTS_H

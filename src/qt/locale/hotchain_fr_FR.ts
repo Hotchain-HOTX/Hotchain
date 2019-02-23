@@ -645,8 +645,8 @@
         <translation>Onglets de la barre d'outils</translation>
     </message>
     <message>
-        <source>Hotchain Wallet</source>
-        <translation>Hotchain Wallet</translation>
+        <source>Hotchain</source>
+        <translation>Hotchain</translation>
     </message>
     <message>
         <source>Send coins to a HOTCHAIN address</source>
@@ -669,12 +669,12 @@
         <translation>Afficher les masternodes</translation>
     </message>
     <message>
-        <source>&amp;About Hotchain Wallet</source>
-        <translation>A &amp;propos de Hotchain Wallet</translation>
+        <source>&amp;About Hotchain</source>
+        <translation>A &amp;propos de Hotchain</translation>
     </message>
     <message>
-        <source>Show information about Hotchain Wallet</source>
-        <translation>Afficher les information concernant Hotchain Wallet</translation>
+        <source>Show information about Hotchain</source>
+        <translation>Afficher les information concernant Hotchain</translation>
     </message>
     <message>
         <source>Modify configuration options for HOTCHAIN</source>
@@ -729,12 +729,12 @@
         <translation>Fenêtre de Explorateur de Bloc</translation>
     </message>
     <message>
-        <source>Show the Hotchain Wallet help message to get a list with possible HOTCHAIN command-line options</source>
-        <translation>Afficher les message d'aide de Hotchain Wallet pour avoir les options pour ligne de commande</translation>
+        <source>Show the Hotchain help message to get a list with possible HOTCHAIN command-line options</source>
+        <translation>Afficher les message d'aide de Hotchain pour avoir les options pour ligne de commande</translation>
     </message>
     <message>
-        <source>Hotchain Wallet client</source>
-        <translation>Hotchain Wallet client</translation>
+        <source>Hotchain client</source>
+        <translation>Hotchain client</translation>
     </message>
     <message numerus="yes">
         <source>%n active connection(s) to HOTCHAIN network</source>
@@ -1114,8 +1114,8 @@ Adresse : %4
         <translation>Ce label devient rouge si l'un des destinataires reçoit un montant inférieur à %1.</translation>
     </message>
     <message>
-        <source>Can vary +/- %1 hotx per input.</source>
-        <translation>Peut varier de +/- %1 hotx par entrée.</translation>
+        <source>Can vary +/- %1 uhotx per input.</source>
+        <translation>Peut varier de +/- %1 uhotx par entrée.</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -1211,16 +1211,16 @@ Adresse : %4
         <translation>version</translation>
     </message>
     <message>
-        <source>Hotchain Wallet</source>
-        <translation>Hotchain Wallet</translation>
+        <source>Hotchain</source>
+        <translation>Hotchain</translation>
     </message>
     <message>
         <source>(%1-bit)</source>
         <translation>(%1-bit)</translation>
     </message>
     <message>
-        <source>About Hotchain Wallet</source>
-        <translation>A propos de Hotchain Wallet</translation>
+        <source>About Hotchain</source>
+        <translation>A propos de Hotchain</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -1262,12 +1262,12 @@ Adresse : %4
         <translation>Bienvenu</translation>
     </message>
     <message>
-        <source>Welcome to Hotchain Wallet.</source>
-        <translation>Bienvenue à Hotchain Wallet</translation>
+        <source>Welcome to Hotchain.</source>
+        <translation>Bienvenue à Hotchain</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where Hotchain Wallet will store its data.</source>
-        <translation>Comme c'est la première fois que le programme est lancé, vous pouvez choisir où Hotchain Wallet va stocker ses données.</translation>
+        <source>As this is the first time the program is launched, you can choose where Hotchain will store its data.</source>
+        <translation>Comme c'est la première fois que le programme est lancé, vous pouvez choisir où Hotchain va stocker ses données.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -1278,8 +1278,8 @@ Adresse : %4
         <translation>Utiliser un répertoire spécifique de données </translation>
     </message>
     <message>
-        <source>Hotchain Wallet</source>
-        <translation>Hotchain Wallet</translation>
+        <source>Hotchain</source>
+        <translation>Hotchain</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -1892,7 +1892,7 @@ https://www.transifex.com/hotchain-project/hotchain-project-translations</transl
     </message>
     <message>
         <source>Enable zHOTX Automint</source>
-        <translation>Activé ZHOTX Auto-monnayage</translation>
+        <translation>Activé zHOTX Auto-monnayage</translation>
     </message>
     <message>
         <source>Percentage of incoming HOTCHAIN which get automatically converted to zHOTX via Zerocoin Protocol (min: 10%)</source>
@@ -2411,7 +2411,7 @@ Pour activer Auto-monnayage, changez 'enablezeromint = 0' en 'enablezeromint = 1
         <source>Available (mature and spendable) zHOTX for spending
 
 zHOTX are mature when they have more than 20 confirmations AND more than 2 mints of the same denomination after them were minted</source>
-        <translation>ZHOTX disponible (mature et utilisable) pour les dépenses
+        <translation>zHOTX disponible (mature et utilisable) pour les dépenses
 
 Les zHOTX sont matures lorsqu'elles ont plus de 20 confirmations ET plus de 2 monnayent de même dénomination après ils était monnayer</translation>
     </message>
@@ -4080,8 +4080,8 @@ Soit monnayer des dénominations plus élevées (moins d'intrants sont nécessai
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Hotchain Wallet</source>
-        <translation>Hotchain Wallet</translation>
+        <source>Hotchain</source>
+        <translation>Hotchain</translation>
     </message>
     </context>
 <context>
@@ -4388,7 +4388,7 @@ Soit monnayer des dénominations plus élevées (moins d'intrants sont nécessai
     </message>
 </context>
 <context>
-    <name>ZHotxControlDialog</name>
+    <name>zHotxControlDialog</name>
     <message>
         <source>Quantity</source>
         <translation>Quantité </translation>
@@ -4461,8 +4461,8 @@ Soit monnayer des dénominations plus élevées (moins d'intrants sont nécessai
         <translation>Erreur de chargement du fichier wallet.dat: Portefeuille corrompu</translation>
     </message>
     <message>
-        <source>Error loading wallet.dat: Wallet requires newer version of Hotchain Wallet</source>
-        <translation>Erreur de chargement du fichier wallet.dat: Le portefeuille nécessite une version plus récente du Hotchain Wallet</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of Hotchain</source>
+        <translation>Erreur de chargement du fichier wallet.dat: Le portefeuille nécessite une version plus récente du Hotchain</translation>
     </message>
     <message>
         <source>Error opening block database</source>
@@ -5053,8 +5053,8 @@ Soit monnayer des dénominations plus élevées (moins d'intrants sont nécessai
         <translation>Le portefeuille est vérouillé.</translation>
     </message>
     <message>
-        <source>Wallet needed to be rewritten: restart Hotchain Wallet to complete</source>
-        <translation>Le portefeuille doit être réécrit: redémarrez Hotchain Wallet pour terminer</translation>
+        <source>Wallet needed to be rewritten: restart Hotchain to complete</source>
+        <translation>Le portefeuille doit être réécrit: redémarrez Hotchain pour terminer</translation>
     </message>
     <message>
         <source>Wallet options:</source>

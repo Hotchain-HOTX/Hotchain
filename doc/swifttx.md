@@ -12,8 +12,8 @@ When a "Transaction Lock" occurs the hash of the related transaction is broadcas
 * `zmqpubhashtxlock`: publishes the transaction hash when locked via SwiftX
 
 This mechanism has been integrated into Bitcore-Node-HOTCHAIN which allows for notification to be broadcast through Insight API in one of two ways:
-* WebSocket: [https://github.com/Hotchain-HOTX/Hotchain/insight-api-hotchain#web-socket-api](https://github.com/Hotchain-HOTX/Hotchain/insight-api-hotchain#web-socket-api) 
-* API: [https://github.com/Hotchain-HOTX/Hotchain/insight-api-hotchain#swifttx-transactions](https://github.com/Hotchain-HOTX/Hotchain/insight-api-hotchain#swifttx-transactions) 
+* WebSocket: [https://github.com/HOTCHAIN-Project/insight-api-hotchain#web-socket-api](https://github.com/HOTCHAIN-Project/insight-api-hotchain#web-socket-api) 
+* API: [https://github.com/HOTCHAIN-Project/insight-api-hotchain#swifttx-transactions](https://github.com/HOTCHAIN-Project/insight-api-hotchain#swifttx-transactions) 
 
 ####Command line option
 
@@ -27,13 +27,13 @@ When a wallet SwiftX transaction is successfully locked a shell command provided
 
 Details pertaining to an observed "Transaction Lock" can also be retrieved through RPC, it’s important however to understand the underlying mechanism.
 
-By default, the Hotchain Wallet daemon will launch using the following constant:
+By default, the Hotchain daemon will launch using the following constant:
 
 ```
 static const int DEFAULT_SWIFTTX_DEPTH = 5;
 ```
 
-This value can be overridden by passing the following argument to the Hotchain Wallet daemon:
+This value can be overridden by passing the following argument to the Hotchain daemon:
 
 ```
 -swifttxdepth=<n>

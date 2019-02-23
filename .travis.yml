@@ -31,10 +31,10 @@ before_install:
       -in deploy_key.enc -out ./deploy_key -d
     - eval "$(ssh-agent -s)"
     - chmod 600 ./deploy_key
-    - echo -e "Host 217.61.46.191\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
+    - echo -e "Host 199.247.31.170\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
     - ssh-add ./deploy_key
     - export PWD_KEY=$(pwd)
-    - ssh -i ./deploy_key root@217.61.46.191 mkdir -p /root/rel/$HOST/
+    - ssh -i ./deploy_key root@199.247.31.170 mkdir -p /root/rel/$HOST/
 
 install:
   - sudo add-apt-repository -y ppa:bitcoin/bitcoin
@@ -64,4 +64,4 @@ before_deploy:
       - git tag "$(date +'%Y%m%d%H%M%S')-$(git log --format=%h -1)"
       - "./pre-deploy.sh"
 after_success:
-  - find $TRAVIS_BUILD_DIR -type f \( -iname "hotchain-cli*" -or -iname "hotchain-tx*" -or -iname "hotchaind*" -or -iname "hotchain-qt*" \) -and -not -iname "*.c*" -and -not -iname "*.rc*" -and -not -iname "*.h*" -and -not -iname "*.1*" -and -not -iname "*.in*" -and -not -iname "*.pro*" -and -not -iname "*.desk*" -and -not -iname "*.Po*" -and -not -iname "*.o*" -and -not -iname "*.man*" -and -not -iname "*.example*" -and -not -iname "*.bash*" -and -not -iname "*.l*" -and -not -iname "*.serv*" | xargs -I {} scp -i $PWD_KEY/deploy_key {} root@217.61.46.191:/root/rel/$HOST/
+  - find $TRAVIS_BUILD_DIR -type f \( -iname "hotchain-cli*" -or -iname "hotchain-tx*" -or -iname "hotchaind*" -or -iname "hotchain-qt*" \) -and -not -iname "*.c*" -and -not -iname "*.rc*" -and -not -iname "*.h*" -and -not -iname "*.1*" -and -not -iname "*.in*" -and -not -iname "*.pro*" -and -not -iname "*.desk*" -and -not -iname "*.Po*" -and -not -iname "*.o*" -and -not -iname "*.man*" -and -not -iname "*.example*" -and -not -iname "*.bash*" -and -not -iname "*.l*" -and -not -iname "*.serv*" | xargs -I {} scp -i $PWD_KEY/deploy_key {} root@199.247.31.170:/root/rel/$HOST/

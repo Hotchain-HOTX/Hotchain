@@ -1,9 +1,10 @@
 // Copyright (c) 2018 The PIVX Developers 
+// Copyright (c) 2019 The Hotchain Developers 
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef HOTCHAIN_ZHOTXCHAIN_H
-#define HOTCHAIN_ZHOTXCHAIN_H
+#ifndef HOTCHAIN_zHOTXCHAIN_H
+#define HOTCHAIN_zHOTXCHAIN_H
 
 #include "libzerocoin/Coin.h"
 #include "libzerocoin/Denominations.h"
@@ -38,4 +39,4 @@ bool TxOutToPublicCoin(const CTxOut& txout, libzerocoin::PublicCoin& pubCoin, CV
 std::list<libzerocoin::CoinDenomination> ZerocoinSpendListFromBlock(const CBlock& block);
 
 
-#endif //HOTCHAIN_ZHOTXCHAIN_H
+#endif //HOTCHAIN_zHOTXCHAIN_H

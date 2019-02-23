@@ -1,5 +1,5 @@
 // Copyright (c) 2017-2018 The PIVX Developers
-// Copyright (c) 2018 Cryptopie 
+// Copyright (c) 2018 The Hotchain Developers 
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -303,17 +303,17 @@ void PrivacyDialog::on_pushButtonSpendzHOTX_clicked()
     sendzHOTX();
 }
 
-void PrivacyDialog::on_pushButtonZHotxControl_clicked()
+void PrivacyDialog::on_pushButtonzHotxControl_clicked()
 {
     if (!walletModel || !walletModel->getOptionsModel())
         return;
 
-    ZHotxControlDialog* zHotxControl = new ZHotxControlDialog(this);
+    zHotxControlDialog* zHotxControl = new zHotxControlDialog(this);
     zHotxControl->setModel(walletModel);
     zHotxControl->exec();
 }
 
-void PrivacyDialog::setZHotxControlLabels(int64_t nAmount, int nQuantity)
+void PrivacyDialog::setzHotxControlLabels(int64_t nAmount, int nQuantity)
 {
     ui->labelzHotxSelected_int->setText(QString::number(nAmount));
     ui->labelQuantitySelected_int->setText(QString::number(nQuantity));
@@ -424,8 +424,8 @@ void PrivacyDialog::sendzHOTX()
     // use mints from zHOTX selector if applicable
     vector<CMintMeta> vMintsToFetch;
     vector<CZerocoinMint> vMintsSelected;
-    if (!ZHotxControlDialog::setSelectedMints.empty()) {
-        vMintsToFetch = ZHotxControlDialog::GetSelectedMints();
+    if (!zHotxControlDialog::setSelectedMints.empty()) {
+        vMintsToFetch = zHotxControlDialog::GetSelectedMints();
 
         for (auto& meta : vMintsToFetch) {
             if (meta.nVersion < libzerocoin::PrivateCoin::PUBKEY_VERSION) {
@@ -462,7 +462,7 @@ void PrivacyDialog::sendzHOTX()
 
     // Display errors during spend
     if (!fSuccess) {
-        if (receipt.GetStatus() == ZHOTX_SPEND_V1_SEC_LEVEL) {
+        if (receipt.GetStatus() == zHOTX_SPEND_V1_SEC_LEVEL) {
             QMessageBox::warning(this, tr("Spend Zerocoin"), tr("Version 1 zHOTX require a security level of 100 to successfully spend."), QMessageBox::Ok, QMessageBox::Ok);
             ui->TEMintStatus->setPlainText(tr("Failed to spend zHOTX"));
             ui->TEMintStatus->repaint();
@@ -497,7 +497,7 @@ void PrivacyDialog::sendzHOTX()
     }
 
     // Clear zhotx selector in case it was used
-    ZHotxControlDialog::setSelectedMints.clear();
+    zHotxControlDialog::setSelectedMints.clear();
     ui->labelzHotxSelected_int->setText(QString("0"));
     ui->labelQuantitySelected_int->setText(QString("0"));
 

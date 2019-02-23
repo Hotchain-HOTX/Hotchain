@@ -10,7 +10,7 @@
  * @license    This project is released under the MIT license.
  **/
 // Copyright (c) 2017-2018 The PIVX Developers
-// Copyright (c) 2018 Cryptopie 
+// Copyright (c) 2018 The Hotchain Developers 
 
 #include "CoinSpend.h"
 #include <iostream>
@@ -151,6 +151,16 @@ CBigNum CoinSpend::CalculateValidSerial(ZerocoinParams* params)
     CBigNum bnSerial = coinSerialNumber;
     bnSerial = bnSerial.mul_mod(CBigNum(1),params->coinCommitmentGroup.groupOrder);
     return bnSerial;
+}
+
+std::vector<unsigned char> CoinSpend::ParseSerial(CDataStream& s) {
+    unsigned int nSize = ReadCompactSize(s);
+    s.movePos(nSize);
+    nSize = ReadCompactSize(s);
+    s.movePos(nSize);
+    CBigNum coinSerialNumber;
+    s >> coinSerialNumber;
+    return coinSerialNumber.getvch();
 }
 
 } /* namespace libzerocoin */

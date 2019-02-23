@@ -2,6 +2,7 @@
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2018 The PIVX Developers 
+// Copyright (c) 2019 The Hotchain Developers 
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -48,6 +49,7 @@ static const CRPCConvertParam vRPCConvertParams[] =
         {"listreceivedbyaccount", 2},
         {"getbalance", 1},
         {"getbalance", 2},
+        {"getextendedbalance", 0},
         {"getblockhash", 0},
         {"move", 2},
         {"move", 3},
@@ -122,6 +124,7 @@ static const CRPCConvertParam vRPCConvertParams[] =
         {"autocombinerewards", 1},
         {"getzerocoinbalance", 0},
         {"listmintedzerocoins", 0},
+        {"listmintedzerocoins", 1},
         {"listspentzerocoins", 0},
         {"listzerocoinamounts", 0},
         {"mintzerocoin", 0},
@@ -130,6 +133,7 @@ static const CRPCConvertParam vRPCConvertParams[] =
         {"spendzerocoin", 1},
         {"spendzerocoin", 2},
         {"spendzerocoin", 3},
+        {"spendzerocoinmints", 0},
         {"importzerocoins", 0},
         {"exportzerocoins", 0},
         {"exportzerocoins", 1},
@@ -141,6 +145,12 @@ static const CRPCConvertParam vRPCConvertParams[] =
         {"searchdzhotx", 1},
         {"searchdzhotx", 2},
         {"getaccumulatorvalues", 0},
+        {"getaccumulatorwitness",2},
+        {"getmintsvalues", 2},
+        {"enableautomintaddress", 0},
+        {"getmintsinblocks", 0},
+        {"getmintsinblocks", 1},
+        {"getmintsinblocks", 2},
         {"getfeeinfo", 0}
     };
 

@@ -1,5 +1,5 @@
 // Copyright (c) 2017-2018 The PIVX Developers
-// Copyright (c) 2018 Cryptopie 
+// Copyright (c) 2018 The Hotchain Developers 
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -11,7 +11,7 @@
 #include "stakeinput.h"
 #include "wallet.h"
 
-CZHotxStake::CZHotxStake(const libzerocoin::CoinSpend& spend)
+CzHotxStake::CzHotxStake(const libzerocoin::CoinSpend& spend)
 {
     this->nChecksum = spend.getAccumulatorChecksum();
     this->denom = spend.getDenomination();
@@ -21,7 +21,7 @@ CZHotxStake::CZHotxStake(const libzerocoin::CoinSpend& spend)
     fMint = false;
 }
 
-int CZHotxStake::GetChecksumHeightFromMint()
+int CzHotxStake::GetChecksumHeightFromMint()
 {
     int nHeightChecksum = chainActive.Height() - Params().Zerocoin_RequiredStakeDepth();
 
@@ -32,12 +32,12 @@ int CZHotxStake::GetChecksumHeightFromMint()
     return GetChecksumHeight(nChecksum, denom);
 }
 
-int CZHotxStake::GetChecksumHeightFromSpend()
+int CzHotxStake::GetChecksumHeightFromSpend()
 {
     return GetChecksumHeight(nChecksum, denom);
 }
 
-uint32_t CZHotxStake::GetChecksum()
+uint32_t CzHotxStake::GetChecksum()
 {
     return nChecksum;
 }
@@ -45,7 +45,7 @@ uint32_t CZHotxStake::GetChecksum()
 // The zHOTX block index is the first appearance of the accumulator checksum that was used in the spend
 // note that this also means when staking that this checksum should be from a block that is beyond 60 minutes old and
 // 100 blocks deep.
-CBlockIndex* CZHotxStake::GetIndexFrom()
+CBlockIndex* CzHotxStake::GetIndexFrom()
 {
     if (pindexFrom)
         return pindexFrom;
@@ -67,13 +67,13 @@ CBlockIndex* CZHotxStake::GetIndexFrom()
     return pindexFrom;
 }
 
-CAmount CZHotxStake::GetValue()
+CAmount CzHotxStake::GetValue()
 {
     return denom * COIN;
 }
 
 //Use the first accumulator checkpoint that occurs 60 minutes after the block being staked from
-bool CZHotxStake::GetModifier(uint64_t& nStakeModifier)
+bool CzHotxStake::GetModifier(uint64_t& nStakeModifier)
 {
     CBlockIndex* pindex = GetIndexFrom();
     if (!pindex)
@@ -93,7 +93,7 @@ bool CZHotxStake::GetModifier(uint64_t& nStakeModifier)
     }
 }
 
-CDataStream CZHotxStake::GetUniqueness()
+CDataStream CzHotxStake::GetUniqueness()
 {
     //The unique identifier for a zHOTX is a hash of the serial
     CDataStream ss(SER_GETHASH, 0);
@@ -101,7 +101,7 @@ CDataStream CZHotxStake::GetUniqueness()
     return ss;
 }
 
-bool CZHotxStake::CreateTxIn(CWallet* pwallet, CTxIn& txIn, uint256 hashTxOut)
+bool CzHotxStake::CreateTxIn(CWallet* pwallet, CTxIn& txIn, uint256 hashTxOut)
 {
     CBlockIndex* pindexCheckpoint = GetIndexFrom();
     if (!pindexCheckpoint)
@@ -122,14 +122,13 @@ bool CZHotxStake::CreateTxIn(CWallet* pwallet, CTxIn& txIn, uint256 hashTxOut)
     return true;
 }
 
-bool CZHotxStake::CreateTxOuts(CWallet* pwallet, vector<CTxOut>& vout, CAmount nTotal)
+bool CzHotxStake::CreateTxOuts(CWallet* pwallet, vector<CTxOut>& vout, CAmount nTotal)
 {
     //Create an output returning the zHOTX that was staked
     CTxOut outReward;
-    unsigned mnlevel = 0u;
     libzerocoin::CoinDenomination denomStaked = libzerocoin::AmountToZerocoinDenomination(this->GetValue());
     CDeterministicMint dMint;
-    if (!pwallet->CreateZHOTXOutPut(denomStaked, outReward, dMint))
+    if (!pwallet->CreatezHOTXOutPut(denomStaked, outReward, dMint))
         return error("%s: failed to create zHOTX output", __func__);
     vout.emplace_back(outReward);
 
@@ -138,7 +137,7 @@ bool CZHotxStake::CreateTxOuts(CWallet* pwallet, vector<CTxOut>& vout, CAmount n
         return error("%s: failed to database the staked zHOTX", __func__);
 
     //Now, we need to find out what the masternode reward will be for this block
-    CAmount masternodeReward = GetMasternodePayment(chainActive.Height(), mnlevel, nTotal, 0, true);
+    CAmount masternodeReward = GetMasternodePayment(chainActive.Height(), nTotal, 0, true);
     CAmount zHotxToMint = nTotal - masternodeReward;
 
     LogPrintf("%s: Total=%d Masternode=%d Staker=%d\r\n", __func__, (nTotal / COIN), (masternodeReward / COIN), (zHotxToMint / COIN));   
@@ -152,7 +151,7 @@ bool CZHotxStake::CreateTxOuts(CWallet* pwallet, vector<CTxOut>& vout, CAmount n
             CTxOut out;
             CDeterministicMint dMintReward;
             
-            if (!pwallet->CreateZHOTXOutPut(denom, out, dMintReward))
+            if (!pwallet->CreatezHOTXOutPut(denom, out, dMintReward))
                 return error("%s: failed to create zHOTX output", __func__);
             
             vout.emplace_back(out);
@@ -168,12 +167,12 @@ bool CZHotxStake::CreateTxOuts(CWallet* pwallet, vector<CTxOut>& vout, CAmount n
     return true;
 }
 
-bool CZHotxStake::GetTxFrom(CTransaction& tx)
+bool CzHotxStake::GetTxFrom(CTransaction& tx)
 {
     return false;
 }
 
-bool CZHotxStake::MarkSpent(CWallet *pwallet, const uint256& txid)
+bool CzHotxStake::MarkSpent(CWallet *pwallet, const uint256& txid)
 {
     CzHOTXTracker* zhotxTracker = pwallet->zhotxTracker.get();
     CMintMeta meta;

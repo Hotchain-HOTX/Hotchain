@@ -601,8 +601,8 @@
         <translation>Nástrojová lišta záložek</translation>
     </message>
     <message>
-        <source>Hotchain Wallet</source>
-        <translation>Hotchain Wallet</translation>
+        <source>Hotchain</source>
+        <translation>Hotchain</translation>
     </message>
     <message>
         <source>Send coins to a HOTCHAIN address</source>
@@ -625,12 +625,12 @@
         <translation>Procházet masternody</translation>
     </message>
     <message>
-        <source>&amp;About Hotchain Wallet</source>
-        <translation>&amp;O Hotchain Wallet</translation>
+        <source>&amp;About Hotchain</source>
+        <translation>&amp;O Hotchain</translation>
     </message>
     <message>
-        <source>Show information about Hotchain Wallet</source>
-        <translation>Zobraz informace o Hotchain Wallet</translation>
+        <source>Show information about Hotchain</source>
+        <translation>Zobraz informace o Hotchain</translation>
     </message>
     <message>
         <source>Modify configuration options for HOTCHAIN</source>
@@ -685,12 +685,12 @@
         <translation>Okno blokového průzkumníka</translation>
     </message>
     <message>
-        <source>Show the Hotchain Wallet help message to get a list with possible HOTCHAIN command-line options</source>
-        <translation>Zobrazit Hotchain Wallet pomocnou zpráv pro získání seznamu možných parametrů HOTCHAIN pro příkazy do příkazové řádky</translation>
+        <source>Show the Hotchain help message to get a list with possible HOTCHAIN command-line options</source>
+        <translation>Zobrazit Hotchain pomocnou zpráv pro získání seznamu možných parametrů HOTCHAIN pro příkazy do příkazové řádky</translation>
     </message>
     <message>
-        <source>Hotchain Wallet client</source>
-        <translation>Hotchain Wallet klient</translation>
+        <source>Hotchain client</source>
+        <translation>Hotchain klient</translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -1127,12 +1127,12 @@ MultiSend: %1</translation>
         <translation>verze</translation>
     </message>
     <message>
-        <source>Hotchain Wallet</source>
-        <translation>Hotchain Wallet</translation>
+        <source>Hotchain</source>
+        <translation>Hotchain</translation>
     </message>
     <message>
-        <source>About Hotchain Wallet</source>
-        <translation>O Hotchain Wallet</translation>
+        <source>About Hotchain</source>
+        <translation>O Hotchain</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -1166,16 +1166,16 @@ MultiSend: %1</translation>
         <translation>Vítejte</translation>
     </message>
     <message>
-        <source>Welcome to Hotchain Wallet.</source>
-        <translation>Vítejte v Hotchain Wallet.</translation>
+        <source>Welcome to Hotchain.</source>
+        <translation>Vítejte v Hotchain.</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where Hotchain Wallet will store its data.</source>
-        <translation>Při prvním spuštění programu si můžete vybrat, kam bude Hotchain Wallet ukládat svá data.</translation>
+        <source>As this is the first time the program is launched, you can choose where Hotchain will store its data.</source>
+        <translation>Při prvním spuštění programu si můžete vybrat, kam bude Hotchain ukládat svá data.</translation>
     </message>
     <message>
-        <source>Hotchain Wallet will download and store a copy of the HOTCHAIN block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>Hotchain Wallet stáhne a uloží kopii HOTCHAIN blockchainu. Nejméně %1GB dat bude do této složky uloženo a v průběhu času bude ukládat další data. Peněženka bude v této složce uložena také.</translation>
+        <source>Hotchain will download and store a copy of the HOTCHAIN block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>Hotchain stáhne a uloží kopii HOTCHAIN blockchainu. Nejméně %1GB dat bude do této složky uloženo a v průběhu času bude ukládat další data. Peněženka bude v této složce uložena také.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -1186,8 +1186,8 @@ MultiSend: %1</translation>
         <translation>Použít vlastní složku pro data</translation>
     </message>
     <message>
-        <source>Hotchain Wallet</source>
-        <translation>Hotchain Wallet</translation>
+        <source>Hotchain</source>
+        <translation>Hotchain</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -2291,8 +2291,8 @@ Prosím zkontrolujte adresu a zkuste to znovu.</translation>
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Hotchain Wallet</source>
-        <translation>Hotchain Wallet</translation>
+        <source>Hotchain</source>
+        <translation>Hotchain</translation>
     </message>
     </context>
 <context>
@@ -2395,7 +2395,7 @@ Prosím zkontrolujte adresu a zkuste to znovu.</translation>
     </message>
     </context>
 <context>
-    <name>ZHotxControlDialog</name>
+    <name>zHotxControlDialog</name>
     <message>
         <source>0</source>
         <translation>0</translation>

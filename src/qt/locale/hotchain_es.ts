@@ -645,8 +645,8 @@
         <translation>Herramienta de pestañas</translation>
     </message>
     <message>
-        <source>Hotchain Wallet</source>
-        <translation>Hotchain Wallet</translation>
+        <source>Hotchain</source>
+        <translation>Hotchain</translation>
     </message>
     <message>
         <source>Send coins to a HOTCHAIN address</source>
@@ -669,12 +669,12 @@
         <translation>Explorar masternodes</translation>
     </message>
     <message>
-        <source>&amp;About Hotchain Wallet</source>
-        <translation>&amp;Sobre Hotchain Wallet</translation>
+        <source>&amp;About Hotchain</source>
+        <translation>&amp;Sobre Hotchain</translation>
     </message>
     <message>
-        <source>Show information about Hotchain Wallet</source>
-        <translation>Mostrar información sobre Hotchain Wallet</translation>
+        <source>Show information about Hotchain</source>
+        <translation>Mostrar información sobre Hotchain</translation>
     </message>
     <message>
         <source>Modify configuration options for HOTCHAIN</source>
@@ -729,12 +729,12 @@
         <translation>Ventana del explorador de bloques</translation>
     </message>
     <message>
-        <source>Show the Hotchain Wallet help message to get a list with possible HOTCHAIN command-line options</source>
-        <translation>Mostrar la ayuda de Hotchain Wallet para obtener una lista de posibles opciones en línea de comandos</translation>
+        <source>Show the Hotchain help message to get a list with possible HOTCHAIN command-line options</source>
+        <translation>Mostrar la ayuda de Hotchain para obtener una lista de posibles opciones en línea de comandos</translation>
     </message>
     <message>
-        <source>Hotchain Wallet client</source>
-        <translation>Cliente Hotchain Wallet</translation>
+        <source>Hotchain client</source>
+        <translation>Cliente Hotchain</translation>
     </message>
     <message numerus="yes">
         <source>%n active connection(s) to HOTCHAIN network</source>
@@ -1130,8 +1130,8 @@ MultiEnvío: %1</translation>
         <translation>Esta etiqueta se vuelve roja, si algún destinatario recibe una cantidad menor que %1.</translation>
     </message>
     <message>
-        <source>Can vary +/- %1 hotx per input.</source>
-        <translation>Puede variar +/- %1 hotx por entrada.</translation>
+        <source>Can vary +/- %1 uhotx per input.</source>
+        <translation>Puede variar +/- %1 uhotx por entrada.</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -1231,16 +1231,16 @@ MultiEnvío: %1</translation>
         <translation>versión</translation>
     </message>
     <message>
-        <source>Hotchain Wallet</source>
-        <translation>Hotchain Wallet</translation>
+        <source>Hotchain</source>
+        <translation>Hotchain</translation>
     </message>
     <message>
         <source>(%1-bit)</source>
         <translation>(%1-bit)</translation>
     </message>
     <message>
-        <source>About Hotchain Wallet</source>
-        <translation>Acerca de Hotchain Wallet</translation>
+        <source>About Hotchain</source>
+        <translation>Acerca de Hotchain</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -1286,16 +1286,16 @@ MultiEnvío: %1</translation>
         <translation>Bienvenido/a</translation>
     </message>
     <message>
-        <source>Welcome to Hotchain Wallet.</source>
-        <translation>Bienvenido/a a Hotchain Wallet.</translation>
+        <source>Welcome to Hotchain.</source>
+        <translation>Bienvenido/a a Hotchain.</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where Hotchain Wallet will store its data.</source>
-        <translation>Al ser la primera vez que se inicia el programa, usted puede elegir dónde guardará Hotchain Wallet sus datos.</translation>
+        <source>As this is the first time the program is launched, you can choose where Hotchain will store its data.</source>
+        <translation>Al ser la primera vez que se inicia el programa, usted puede elegir dónde guardará Hotchain sus datos.</translation>
     </message>
     <message>
-        <source>Hotchain Wallet will download and store a copy of the HOTCHAIN block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>Hotchain Wallet descargará y guardará una copia de la cadena de bloques HOTCHAIN. Por lo menos %1GB de datos serán guardados en esta carpeta, y crecerá con el tiempo. El monedero también se guardará en esta carpeta.</translation>
+        <source>Hotchain will download and store a copy of the HOTCHAIN block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>Hotchain descargará y guardará una copia de la cadena de bloques HOTCHAIN. Por lo menos %1GB de datos serán guardados en esta carpeta, y crecerá con el tiempo. El monedero también se guardará en esta carpeta.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -1306,8 +1306,8 @@ MultiEnvío: %1</translation>
         <translation>Usar una carpeta de datos personalizada:</translation>
     </message>
     <message>
-        <source>Hotchain Wallet</source>
-        <translation>Hotchain Wallet</translation>
+        <source>Hotchain</source>
+        <translation>Hotchain</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -4079,7 +4079,7 @@ O mint las denominaciones más altas (por lo tanto, se necesitan menos datos) o 
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>Hotchain Wallet is shutting down...</source>
+        <source>Hotchain is shutting down...</source>
         <translation>El programa HOTCHAIN se está cerrando...</translation>
     </message>
     <message>
@@ -4229,8 +4229,8 @@ O mint las denominaciones más altas (por lo tanto, se necesitan menos datos) o 
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Hotchain Wallet</source>
-        <translation>Hotchain Wallet</translation>
+        <source>Hotchain</source>
+        <translation>Hotchain</translation>
     </message>
     <message>
         <source>Version %1</source>
@@ -4245,8 +4245,8 @@ O mint las denominaciones más altas (por lo tanto, se necesitan menos datos) o 
         <translation>Los desarrolladores de Dash Core</translation>
     </message>
     <message>
-        <source>The Hotchain Wallet developers</source>
-        <translation>Los desarrolladores de Hotchain Wallet</translation>
+        <source>The Hotchain developers</source>
+        <translation>Los desarrolladores de Hotchain</translation>
     </message>
     <message>
         <source>[testnet]</source>
@@ -4857,7 +4857,7 @@ O mint las denominaciones más altas (por lo tanto, se necesitan menos datos) o 
     </message>
 </context>
 <context>
-    <name>ZHotxControlDialog</name>
+    <name>zHotxControlDialog</name>
     <message>
         <source>Select zHOTX to Spend</source>
         <translation>Selecciona zHOTX para Gastar</translation>
@@ -4910,8 +4910,8 @@ O mint las denominaciones más altas (por lo tanto, se necesitan menos datos) o 
         <translation>El punto de chequeo del acumulador que hemos calculado no coincide con lo guardado en el índice de bloques</translation>
     </message>
     <message>
-        <source>Cannot obtain a lock on data directory %s. Hotchain Wallet is probably already running.</source>
-        <translation>No se puede obtener un bloqueo sobre el directorio de datos %s. Hotchain Wallet esta probablemente en ejecución.</translation>
+        <source>Cannot obtain a lock on data directory %s. Hotchain is probably already running.</source>
+        <translation>No se puede obtener un bloqueo sobre el directorio de datos %s. Hotchain esta probablemente en ejecución.</translation>
     </message>
     <message>
         <source>Change automatic finalized budget voting behavior. mode=auto: Vote for only exact finalized budget match to my generated budget. (string, default: auto)</source>
@@ -5086,8 +5086,8 @@ O mint las denominaciones más altas (por lo tanto, se necesitan menos datos) o 
         <translation>Este producto incluye software desarrollado por el Proyecto OpenSSL para uso en OpenSSL Toolkit &lt;https://www.openssl.org/&gt; y software de cifrado escrito por Eric Young y software de UPnP escrito por Thomas Bernard.</translation>
     </message>
     <message>
-        <source>Unable to bind to %s on this computer. Hotchain Wallet is probably already running.</source>
-        <translation>Imposible conectar a %s en esta computadora. Es probable que Hotchain Wallet ya este corriendo.</translation>
+        <source>Unable to bind to %s on this computer. Hotchain is probably already running.</source>
+        <translation>Imposible conectar a %s en esta computadora. Es probable que Hotchain ya este corriendo.</translation>
     </message>
     <message>
         <source>Unable to locate enough Obfuscation denominated funds for this transaction.</source>
@@ -5114,8 +5114,8 @@ O mint las denominaciones más altas (por lo tanto, se necesitan menos datos) o 
         <translation>Advertencia: -paytxfee esta muy alta! Esta es la comisión de transacción que pagarás si envías una transacción.</translation>
     </message>
     <message>
-        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong Hotchain Wallet will not work properly.</source>
-        <translation>Advertencia: Por favor verifique que la fecha y hora de su computadora sean correctas! Si su reloj esta fuera de hora Hotchain Wallet no funcionará adecuadamente.</translation>
+        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong Hotchain will not work properly.</source>
+        <translation>Advertencia: Por favor verifique que la fecha y hora de su computadora sean correctas! Si su reloj esta fuera de hora Hotchain no funcionará adecuadamente.</translation>
     </message>
     <message>
         <source>Warning: The network does not appear to fully agree! Some miners appear to be experiencing issues.</source>
@@ -5266,8 +5266,8 @@ O mint las denominaciones más altas (por lo tanto, se necesitan menos datos) o 
         <translation>Copyright (C) 2014-%i The Dash Core Developers</translation>
     </message>
     <message>
-        <source>Copyright (C) 2015-%i The Hotchain Wallet Developers</source>
-        <translation>Copyright (C) 2015-%i The Hotchain Wallet Developers</translation>
+        <source>Copyright (C) 2015-%i The Hotchain Developers</source>
+        <translation>Copyright (C) 2015-%i The Hotchain Developers</translation>
     </message>
     <message>
         <source>Corrupted block database detected</source>
@@ -5354,8 +5354,8 @@ O mint las denominaciones más altas (por lo tanto, se necesitan menos datos) o 
         <translation>Error al cargar wallet.dat: Monedero dañado</translation>
     </message>
     <message>
-        <source>Error loading wallet.dat: Wallet requires newer version of Hotchain Wallet</source>
-        <translation>Error al cargar wallet.dat: El monedero requiere una nueva versión del Hotchain Wallet</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of Hotchain</source>
+        <translation>Error al cargar wallet.dat: El monedero requiere una nueva versión del Hotchain</translation>
     </message>
     <message>
         <source>Error opening block database</source>
@@ -5470,8 +5470,8 @@ O mint las denominaciones más altas (por lo tanto, se necesitan menos datos) o 
         <translation>Información</translation>
     </message>
     <message>
-        <source>Initialization sanity check failed. Hotchain Wallet is shutting down.</source>
-        <translation>La prueba de salud de inicialización ha fallado. Hotchain Wallet se cerrará.</translation>
+        <source>Initialization sanity check failed. Hotchain is shutting down.</source>
+        <translation>La prueba de salud de inicialización ha fallado. Hotchain se cerrará.</translation>
     </message>
     <message>
         <source>Input is not valid.</source>
@@ -6294,8 +6294,8 @@ O mint las denominaciones más altas (por lo tanto, se necesitan menos datos) o 
         <translation>Monedero bloqueado.</translation>
     </message>
     <message>
-        <source>Wallet needed to be rewritten: restart Hotchain Wallet to complete</source>
-        <translation>El Monedero necesita ser reescrito: reinicie Hotchain Wallet para completar</translation>
+        <source>Wallet needed to be rewritten: restart Hotchain to complete</source>
+        <translation>El Monedero necesita ser reescrito: reinicie Hotchain para completar</translation>
     </message>
     <message>
         <source>Wallet options:</source>

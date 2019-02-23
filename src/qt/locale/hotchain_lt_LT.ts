@@ -645,8 +645,8 @@
         <translation>Skirtukų įrankių juosta</translation>
     </message>
     <message>
-        <source>Hotchain Wallet</source>
-        <translation>Hotchain Wallet</translation>
+        <source>Hotchain</source>
+        <translation>Hotchain</translation>
     </message>
     <message>
         <source>Send coins to a HOTCHAIN address</source>
@@ -669,12 +669,12 @@
         <translation>Naršyti masternod'us</translation>
     </message>
     <message>
-        <source>&amp;About Hotchain Wallet</source>
-        <translation>&amp;Apie Hotchain Wallet</translation>
+        <source>&amp;About Hotchain</source>
+        <translation>&amp;Apie Hotchain</translation>
     </message>
     <message>
-        <source>Show information about Hotchain Wallet</source>
-        <translation>Rodyti informaciją apie Hotchain Wallet</translation>
+        <source>Show information about Hotchain</source>
+        <translation>Rodyti informaciją apie Hotchain</translation>
     </message>
     <message>
         <source>Modify configuration options for HOTCHAIN</source>
@@ -729,12 +729,12 @@
         <translation>Blokų naršyklės langas</translation>
     </message>
     <message>
-        <source>Show the Hotchain Wallet help message to get a list with possible HOTCHAIN command-line options</source>
-        <translation>Rodyti Hotchain Wallet žinyną, kad gautumėte sąrašą su galimomis HOTCHAIN komandinės eilutės parinktimis</translation>
+        <source>Show the Hotchain help message to get a list with possible HOTCHAIN command-line options</source>
+        <translation>Rodyti Hotchain žinyną, kad gautumėte sąrašą su galimomis HOTCHAIN komandinės eilutės parinktimis</translation>
     </message>
     <message>
-        <source>Hotchain Wallet client</source>
-        <translation>Hotchain Wallet piniginė</translation>
+        <source>Hotchain client</source>
+        <translation>Hotchain piniginė</translation>
     </message>
     <message numerus="yes">
         <source>%n active connection(s) to HOTCHAIN network</source>
@@ -1122,8 +1122,8 @@ MultiSend: %1</translation>
         <translation>Ši etiketė taps raudona, jei gavėjas gaus sumą mažesnę už %1</translation>
     </message>
     <message>
-        <source>Can vary +/- %1 hotx per input.</source>
-        <translation>Gali skirtis +/- %1 hotx kiekvienoje įvestyje.</translation>
+        <source>Can vary +/- %1 uhotx per input.</source>
+        <translation>Gali skirtis +/- %1 uhotx kiekvienoje įvestyje.</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -1223,16 +1223,16 @@ MultiSend: %1</translation>
         <translation>versija</translation>
     </message>
     <message>
-        <source>Hotchain Wallet</source>
-        <translation>Hotchain Wallet</translation>
+        <source>Hotchain</source>
+        <translation>Hotchain</translation>
     </message>
     <message>
         <source>(%1-bit)</source>
         <translation>(%1-bitai)</translation>
     </message>
     <message>
-        <source>About Hotchain Wallet</source>
-        <translation>Apie Hotchain Wallet</translation>
+        <source>About Hotchain</source>
+        <translation>Apie Hotchain</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -1278,16 +1278,16 @@ MultiSend: %1</translation>
         <translation>Sveiki</translation>
     </message>
     <message>
-        <source>Welcome to Hotchain Wallet.</source>
-        <translation>Sveiki atvykę į Hotchain Wallet</translation>
+        <source>Welcome to Hotchain.</source>
+        <translation>Sveiki atvykę į Hotchain</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where Hotchain Wallet will store its data.</source>
-        <translation>Kadangi programa paleista pirmą kartą, galite pasirinkti kur Hotchain Wallet saugos savo duomenis.</translation>
+        <source>As this is the first time the program is launched, you can choose where Hotchain will store its data.</source>
+        <translation>Kadangi programa paleista pirmą kartą, galite pasirinkti kur Hotchain saugos savo duomenis.</translation>
     </message>
     <message>
-        <source>Hotchain Wallet will download and store a copy of the HOTCHAIN block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>Hotchain Wallet atsisiųs ir saugos HOTCHAIN blockchain'o kopiją. Šiame kataloge bus saugomas ne mažesnis kaip %1GB duomenų kiekis, kuris laikui bėgant augs. Piniginė taip pat bus saugoma šiame kataloge.</translation>
+        <source>Hotchain will download and store a copy of the HOTCHAIN block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>Hotchain atsisiųs ir saugos HOTCHAIN blockchain'o kopiją. Šiame kataloge bus saugomas ne mažesnis kaip %1GB duomenų kiekis, kuris laikui bėgant augs. Piniginė taip pat bus saugoma šiame kataloge.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -1298,8 +1298,8 @@ MultiSend: %1</translation>
         <translation>Naudoti pasirinktą duomenų katalogą:</translation>
     </message>
     <message>
-        <source>Hotchain Wallet</source>
-        <translation>Hotchain Wallet</translation>
+        <source>Hotchain</source>
+        <translation>Hotchain</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -3229,8 +3229,8 @@ Nesubrendusios: patvirtintos, bet mažiau nei 1 konvertacijos tos pačio nominal
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Hotchain Wallet</source>
-        <translation>Hotchain Wallet</translation>
+        <source>Hotchain</source>
+        <translation>Hotchain</translation>
     </message>
     </context>
 <context>
@@ -3449,7 +3449,7 @@ Nesubrendusios: patvirtintos, bet mažiau nei 1 konvertacijos tos pačio nominal
     </message>
     </context>
 <context>
-    <name>ZHotxControlDialog</name>
+    <name>zHotxControlDialog</name>
     <message>
         <source>0</source>
         <translation>0</translation>
@@ -3494,8 +3494,8 @@ Nesubrendusios: patvirtintos, bet mažiau nei 1 konvertacijos tos pačio nominal
         <translation>Klaida kraunant wallet.dat: Piniginė yra sugadinta</translation>
     </message>
     <message>
-        <source>Error loading wallet.dat: Wallet requires newer version of Hotchain Wallet</source>
-        <translation>Klaida kraunant wallet.dat: Piniginė reikalauja naujesnės Hotchain Wallet versijos</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of Hotchain</source>
+        <translation>Klaida kraunant wallet.dat: Piniginė reikalauja naujesnės Hotchain versijos</translation>
     </message>
     <message>
         <source>Error opening block database</source>
@@ -3726,8 +3726,8 @@ Nesubrendusios: patvirtintos, bet mažiau nei 1 konvertacijos tos pačio nominal
         <translation>Piniginė užrakinta.</translation>
     </message>
     <message>
-        <source>Wallet needed to be rewritten: restart Hotchain Wallet to complete</source>
-        <translation>Piniginę reikia perrašyti: paleiskite Hotchain Wallet iš naujo</translation>
+        <source>Wallet needed to be rewritten: restart Hotchain to complete</source>
+        <translation>Piniginę reikia perrašyti: paleiskite Hotchain iš naujo</translation>
     </message>
     <message>
         <source>Wallet options:</source>

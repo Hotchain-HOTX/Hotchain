@@ -509,7 +509,7 @@
         <translation>&amp;Pomoc</translation>
     </message>
     <message>
-        <source>Hotchain Wallet</source>
+        <source>Hotchain</source>
         <translation>&amp;Rdzeń HOTCHAIN</translation>
     </message>
     <message>
@@ -529,11 +529,11 @@
         <translation>Przeglądaj masternodes</translation>
     </message>
     <message>
-        <source>&amp;About Hotchain Wallet</source>
+        <source>&amp;About Hotchain</source>
         <translation>&amp;O rdzeniu bitcoina</translation>
     </message>
     <message>
-        <source>Show information about Hotchain Wallet</source>
+        <source>Show information about Hotchain</source>
         <translation>Pokaż informacje o rdzeniu bitcoina</translation>
     </message>
     <message>
@@ -585,11 +585,11 @@
         <translation>Okno eksplorera bloków</translation>
     </message>
     <message>
-        <source>Show the Hotchain Wallet help message to get a list with possible HOTCHAIN command-line options</source>
+        <source>Show the Hotchain help message to get a list with possible HOTCHAIN command-line options</source>
         <translation>Pokaż wiadomość pomocy rdzenia HOTCHAIN, aby dostać listę możliwych opcji HOTCHAIN command-line</translation>
     </message>
     <message>
-        <source>Hotchain Wallet client</source>
+        <source>Hotchain client</source>
         <translation>Rdzeń HOTCHAIN klient</translation>
     </message>
     <message>
@@ -899,7 +899,7 @@ MultiWysyłlka: %1</translation>
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>Hotchain Wallet</source>
+        <source>Hotchain</source>
         <translation>&amp;Rdzeń HOTCHAIN</translation>
     </message>
     </context>
@@ -914,7 +914,7 @@ MultiWysyłlka: %1</translation>
         <translation>Użyj niestandardowej ścieżki danych</translation>
     </message>
     <message>
-        <source>Hotchain Wallet</source>
+        <source>Hotchain</source>
         <translation>&amp;Rdzeń HOTCHAIN</translation>
     </message>
     <message>
@@ -1929,7 +1929,7 @@ https://www.transifex.com/hotchain-project/hotchain-project-translations </trans
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Hotchain Wallet</source>
+        <source>Hotchain</source>
         <translation>&amp;Rdzeń HOTCHAIN</translation>
     </message>
     </context>
@@ -2021,7 +2021,7 @@ https://www.transifex.com/hotchain-project/hotchain-project-translations </trans
     </message>
     </context>
 <context>
-    <name>ZHotxControlDialog</name>
+    <name>zHotxControlDialog</name>
     <message>
         <source>0</source>
         <translation>0</translation>

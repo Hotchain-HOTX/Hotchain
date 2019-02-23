@@ -1,5 +1,6 @@
 // Copyright (c) 2012-2013 The Bitcoin Core developers
 // Copyright (c) 2017 The PIVX Developers 
+// Copyright (c) 2019 The Hotchain Developers 
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -188,7 +189,7 @@ BOOST_AUTO_TEST_CASE(rpc_ban)
 
     UniValue r;
     BOOST_CHECK_NO_THROW(r = CallRPC(string("setban 127.0.0.0 add")));
-    BOOST_CHECK_THROW(r = CallRPC(string("setban 127.0.0.0:9069")), runtime_error); //portnumber for setban not allowed
+    BOOST_CHECK_THROW(r = CallRPC(string("setban 127.0.0.0:8334")), runtime_error); //portnumber for setban not allowed
     BOOST_CHECK_NO_THROW(r = CallRPC(string("listbanned")));
     UniValue ar = r.get_array();
     UniValue o1 = ar[0].get_obj();

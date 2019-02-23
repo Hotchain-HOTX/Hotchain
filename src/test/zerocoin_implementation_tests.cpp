@@ -1,5 +1,5 @@
 // Copyright (c) 2017-2018 The PIVX Developers
-// Copyright (c) 2018 Cryptopie 
+// Copyright (c) 2018 The Hotchain Developers 
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -516,7 +516,7 @@ BOOST_AUTO_TEST_CASE(deterministic_tests)
     for (int i = 0; i < nTests; i++) {
         PrivateCoin coin(Params().Zerocoin_Params(), denom, false);
         CDeterministicMint dMint;
-        zWallet.GenerateDeterministicZHOTX(denom, coin, dMint);
+        zWallet.GenerateDeterministiczHOTX(denom, coin, dMint);
         vCoins.emplace_back(coin);
     }
 

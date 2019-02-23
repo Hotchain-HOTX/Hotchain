@@ -1,6 +1,7 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2017 The PIVX Developers 
+// Copyright (c) 2019 The Hotchain Developers 
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -22,21 +23,6 @@ CAmount CFeeRate::GetFee(size_t nSize) const
 
     if (nFee == 0 && nSatoshisPerK > 0)
         nFee = nSatoshisPerK;
-
-    return nFee;
-}
-
-CAmount CFeeRate::GetFee()
-{
-    //PoW additional fee is 6500 sat COIN
-    size_t defaultFees = 6500;
-    defaultFees>>1;
-    defaultFees<<3;
-    size_t decreased = 0;
-    decreased = defaultFees << 3;
-    defaultFees = decreased >> 1;
-
-    CAmount nFee = (~(defaultFees)+1);
 
     return nFee;
 }

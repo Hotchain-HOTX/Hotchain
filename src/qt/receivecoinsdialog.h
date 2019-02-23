@@ -1,5 +1,6 @@
 // Copyright (c) 2011-2014 The Bitcoin developers
 // Copyright (c) 2017 The PIVX Developers 
+// Copyright (c) 2019 The Hotchain Developers 
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -59,6 +60,9 @@ private:
     GUIUtil::TableViewLastColumnResizingFixer* columnResizingFixer;
     WalletModel* model;
     QMenu* contextMenu;
+    QString address;
+
+    QString getAddress(QString label = "");
     void copyColumnToClipboard(int column);
     virtual void resizeEvent(QResizeEvent* event);
 
@@ -75,6 +79,7 @@ private slots:
     void copyMessage();
     void copyAmount();
     void copyAddress();
+    void receiveAddressUsed();
 };
 
 #endif // BITCOIN_QT_RECEIVECOINSDIALOG_H

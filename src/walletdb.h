@@ -1,6 +1,7 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
 // Copyright (c) 2009-2013 The Bitcoin developers
 // Copyright (c) 2016-2018 The PIVX Developers 
+// Copyright (c) 2019 The Hotchain Developers 
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -24,6 +25,7 @@
 
 class CAccount;
 class CAccountingEntry;
+class CBitcoinAddress;
 struct CBlockLocator;
 class CKeyPool;
 class CMasterKey;
@@ -101,6 +103,9 @@ public:
     bool WriteCryptedKey(const CPubKey& vchPubKey, const std::vector<unsigned char>& vchCryptedSecret, const CKeyMetadata& keyMeta);
     bool WriteMasterKey(unsigned int nID, const CMasterKey& kMasterKey);
 
+    bool WriteAutoConvertKey(const CBitcoinAddress& btcAddress);
+    void LoadAutoConvertKeys(std::set<CBitcoinAddress>& setAddresses);
+
     bool WriteCScript(const uint160& hash, const CScript& redeemScript);
 
     bool WriteWatchOnly(const CScript& script);
@@ -175,14 +180,14 @@ public:
     bool ReadZerocoinSpendSerialEntry(const CBigNum& bnSerial);
     bool WriteCurrentSeedHash(const uint256& hashSeed);
     bool ReadCurrentSeedHash(uint256& hashSeed);
-    bool WriteZHOTXSeed(const uint256& hashSeed, const vector<unsigned char>& seed);
-    bool ReadZHOTXSeed(const uint256& hashSeed, vector<unsigned char>& seed);
-    bool ReadZHOTXSeed_deprecated(uint256& seed);
-    bool EraseZHOTXSeed();
-    bool EraseZHOTXSeed_deprecated();
+    bool WritezHOTXSeed(const uint256& hashSeed, const vector<unsigned char>& seed);
+    bool ReadzHOTXSeed(const uint256& hashSeed, vector<unsigned char>& seed);
+    bool ReadzHOTXSeed_deprecated(uint256& seed);
+    bool ErasezHOTXSeed();
+    bool ErasezHOTXSeed_deprecated();
 
-    bool WriteZHOTXCount(const uint32_t& nCount);
-    bool ReadZHOTXCount(uint32_t& nCount);
+    bool WritezHOTXCount(const uint32_t& nCount);
+    bool ReadzHOTXCount(uint32_t& nCount);
     std::map<uint256, std::vector<pair<uint256, uint32_t> > > MapMintPool();
     bool WriteMintPoolPair(const uint256& hashMasterSeed, const uint256& hashPubcoin, const uint32_t& nCount);
 

@@ -2,6 +2,7 @@
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2018 The PIVX Developers 
+// Copyright (c) 2019 The Hotchain Developers 
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -69,6 +70,60 @@ bool CWalletDB::EraseTx(uint256 hash)
     nWalletDBUpdated++;
     return Erase(std::make_pair(std::string("tx"), hash));
 }
+
+bool CWalletDB::WriteAutoConvertKey(const CBitcoinAddress& btcAddress)
+{
+    CKeyID keyID;
+    if (!btcAddress.GetKeyID(keyID))
+        return false;
+    return Write(std::make_pair(std::string("automint"), keyID), btcAddress.ToString());
+}
+
+void CWalletDB::LoadAutoConvertKeys(std::set<CBitcoinAddress>& setAddresses)
+{
+    setAddresses.clear();
+    Dbc* pcursor = GetCursor();
+    if (!pcursor)
+        throw runtime_error(std::string(__func__)+" : cannot create DB cursor");
+    unsigned int fFlags = DB_SET_RANGE;
+    for (;;)
+    {
+        // Read next record
+        CDataStream ssKey(SER_DISK, CLIENT_VERSION);
+        if (fFlags == DB_SET_RANGE)
+            ssKey << make_pair(string("automint"), CKeyID());
+        CDataStream ssValue(SER_DISK, CLIENT_VERSION);
+        int ret = ReadAtCursor(pcursor, ssKey, ssValue, fFlags);
+        fFlags = DB_NEXT;
+        if (ret == DB_NOTFOUND)
+            break;
+        else if (ret != 0)
+        {
+            pcursor->close();
+            throw runtime_error(std::string(__func__)+" : error scanning DB");
+        }
+
+        // Unserialize
+        std::string strType;
+        try {
+            ssKey >> strType;
+        } catch(...) {
+            break;
+        }
+        if (strType != "automint")
+            break;
+
+        CKeyID keyID;
+        ssKey >> keyID;
+
+        std::string strAddress;
+        ssValue >> strAddress;
+        setAddresses.emplace(strAddress);
+    }
+
+    pcursor->close();
+}
+
 
 bool CWalletDB::WriteKey(const CPubKey& vchPubKey, const CPrivKey& vchPrivKey, const CKeyMetadata& keyMeta)
 {
@@ -1269,7 +1324,7 @@ bool CWalletDB::ReadCurrentSeedHash(uint256& hashSeed)
     return Read(string("seedhash"), hashSeed);
 }
 
-bool CWalletDB::WriteZHOTXSeed(const uint256& hashSeed, const vector<unsigned char>& seed)
+bool CWalletDB::WritezHOTXSeed(const uint256& hashSeed, const vector<unsigned char>& seed)
 {
     if (!WriteCurrentSeedHash(hashSeed))
         return error("%s: failed to write current seed hash", __func__);
@@ -1277,13 +1332,13 @@ bool CWalletDB::WriteZHOTXSeed(const uint256& hashSeed, const vector<unsigned ch
     return Write(make_pair(string("dzs"), hashSeed), seed);
 }
 
-bool CWalletDB::EraseZHOTXSeed()
+bool CWalletDB::ErasezHOTXSeed()
 {
     uint256 hash;
     if(!ReadCurrentSeedHash(hash)){
         return error("Failed to read a current seed hash");
     }
-    if(!WriteZHOTXSeed(hash, ToByteVector(base_uint<256>(0) << 256))) {
+    if(!WritezHOTXSeed(hash, ToByteVector(base_uint<256>(0) << 256))) {
         return error("Failed to write empty seed to wallet");
     }
     if(!WriteCurrentSeedHash(0)) {
@@ -1293,27 +1348,27 @@ bool CWalletDB::EraseZHOTXSeed()
     return true;
 }
 
-bool CWalletDB::EraseZHOTXSeed_deprecated()
+bool CWalletDB::ErasezHOTXSeed_deprecated()
 {
     return Erase(string("dzs"));
 }
 
-bool CWalletDB::ReadZHOTXSeed(const uint256& hashSeed, vector<unsigned char>& seed)
+bool CWalletDB::ReadzHOTXSeed(const uint256& hashSeed, vector<unsigned char>& seed)
 {
     return Read(make_pair(string("dzs"), hashSeed), seed);
 }
 
-bool CWalletDB::ReadZHOTXSeed_deprecated(uint256& seed)
+bool CWalletDB::ReadzHOTXSeed_deprecated(uint256& seed)
 {
     return Read(string("dzs"), seed);
 }
 
-bool CWalletDB::WriteZHOTXCount(const uint32_t& nCount)
+bool CWalletDB::WritezHOTXCount(const uint32_t& nCount)
 {
     return Write(string("dzc"), nCount);
 }
 
-bool CWalletDB::ReadZHOTXCount(uint32_t& nCount)
+bool CWalletDB::ReadzHOTXCount(uint32_t& nCount)
 {
     return Read(string("dzc"), nCount);
 }

@@ -10,7 +10,7 @@
  * @license    This project is released under the MIT license.
  **/
 // Copyright (c) 2017-2018 The PIVX Developers
-// Copyright (c) 2018 Cryptopie 
+// Copyright (c) 2018 The Hotchain Developers 
 #ifndef ACCUMULATOR_H_
 #define ACCUMULATOR_H_
 
@@ -134,6 +134,7 @@ public:
      * @return the value of the witness
      */
     const CBigNum& getValue() const;
+    const PublicCoin& getPublicCoin() const;
     void resetValue(const Accumulator& checkpoint, const PublicCoin coin);
 
     /** Checks that this is a witness to the accumulation of coin

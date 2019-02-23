@@ -901,7 +901,7 @@
     </message>
     </context>
 <context>
-    <name>ZHotxControlDialog</name>
+    <name>zHotxControlDialog</name>
     </context>
 <context>
     <name>hotchain-core</name>
@@ -1250,8 +1250,8 @@
         <translation>Carteira esta bloqueada.</translation>
     </message>
     <message>
-        <source>Wallet needed to be rewritten: restart Hotchain Wallet to complete</source>
-        <translation>Carteira precisa ser reescrita: reinicie o Hotchain Wallet para completar.</translation>
+        <source>Wallet needed to be rewritten: restart Hotchain to complete</source>
+        <translation>Carteira precisa ser reescrita: reinicie o Hotchain para completar.</translation>
     </message>
     <message>
         <source>Wallet options:</source>

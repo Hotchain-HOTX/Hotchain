@@ -601,8 +601,8 @@
         <translation>Alatna traka kartica</translation>
     </message>
     <message>
-        <source>Hotchain Wallet</source>
-        <translation>Hotchain Wallet</translation>
+        <source>Hotchain</source>
+        <translation>Hotchain</translation>
     </message>
     <message>
         <source>Send coins to a HOTCHAIN address</source>
@@ -625,12 +625,12 @@
         <translation>Pregledajte masternode</translation>
     </message>
     <message>
-        <source>&amp;About Hotchain Wallet</source>
-        <translation>&amp; O Hotchain Walletu</translation>
+        <source>&amp;About Hotchain</source>
+        <translation>&amp; O Hotchainu</translation>
     </message>
     <message>
-        <source>Show information about Hotchain Wallet</source>
-        <translation>Prikaz informacija o Hotchain Walletu</translation>
+        <source>Show information about Hotchain</source>
+        <translation>Prikaz informacija o Hotchainu</translation>
     </message>
     <message>
         <source>Modify configuration options for HOTCHAIN</source>
@@ -653,8 +653,8 @@
         <translation>Šifriranje i dešifriranje privatnih ključeva pomoću zaporke</translation>
     </message>
     <message>
-        <source>Hotchain Wallet client</source>
-        <translation>Hotchain Wallet klijent</translation>
+        <source>Hotchain client</source>
+        <translation>Hotchain klijent</translation>
     </message>
     <message>
         <source>Error</source>
@@ -751,15 +751,15 @@
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>Hotchain Wallet</source>
-        <translation>Hotchain Wallet</translation>
+        <source>Hotchain</source>
+        <translation>Hotchain</translation>
     </message>
     </context>
 <context>
     <name>Intro</name>
     <message>
-        <source>Hotchain Wallet</source>
-        <translation>Hotchain Wallet</translation>
+        <source>Hotchain</source>
+        <translation>Hotchain</translation>
     </message>
     <message>
         <source>Error</source>
@@ -1111,8 +1111,8 @@
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>Hotchain Wallet is shutting down...</source>
-        <translation>Hotchain Wallet se gasi...</translation>
+        <source>Hotchain is shutting down...</source>
+        <translation>Hotchain se gasi...</translation>
     </message>
     </context>
 <context>
@@ -1197,8 +1197,8 @@
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Hotchain Wallet</source>
-        <translation>Hotchain Wallet</translation>
+        <source>Hotchain</source>
+        <translation>Hotchain</translation>
     </message>
     <message>
         <source>Version %1</source>
@@ -1345,7 +1345,7 @@
     </message>
     </context>
 <context>
-    <name>ZHotxControlDialog</name>
+    <name>zHotxControlDialog</name>
     <message>
         <source>0</source>
         <translation>0</translation>

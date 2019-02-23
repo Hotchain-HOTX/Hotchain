@@ -645,7 +645,7 @@
         <translation>flik vertygsrad</translation>
     </message>
     <message>
-        <source>Hotchain Wallet</source>
+        <source>Hotchain</source>
         <translation>HOTCHAIN Kärna</translation>
     </message>
     <message>
@@ -669,11 +669,11 @@
         <translation>Utforska masternoder</translation>
     </message>
     <message>
-        <source>&amp;About Hotchain Wallet</source>
+        <source>&amp;About Hotchain</source>
         <translation>Om HOTCHAIN Kärnan</translation>
     </message>
     <message>
-        <source>Show information about Hotchain Wallet</source>
+        <source>Show information about Hotchain</source>
         <translation>Visa information om HOTCHAIN Kärnan</translation>
     </message>
     <message>
@@ -729,11 +729,11 @@
         <translation>Blockera utforskarfönstret</translation>
     </message>
     <message>
-        <source>Show the Hotchain Wallet help message to get a list with possible HOTCHAIN command-line options</source>
-        <translation>Visa Hotchain Wallet hjälp meddelande för att få en lista med möjliga HOTCHAIN kommandorad alternativ</translation>
+        <source>Show the Hotchain help message to get a list with possible HOTCHAIN command-line options</source>
+        <translation>Visa Hotchain hjälp meddelande för att få en lista med möjliga HOTCHAIN kommandorad alternativ</translation>
     </message>
     <message>
-        <source>Hotchain Wallet client</source>
+        <source>Hotchain client</source>
         <translation>HOTCHAIN kärn klient</translation>
     </message>
     <message numerus="yes">
@@ -1130,8 +1130,8 @@ MultiSend: %1</translation>
         <translation>Den här etiketten blir röd, ifall någon mottagare får en mängd som är mindre än %1.</translation>
     </message>
     <message>
-        <source>Can vary +/- %1 hotx per input.</source>
-        <translation>Kan variera med +/- %1 hotx per inmatning.</translation>
+        <source>Can vary +/- %1 uhotx per input.</source>
+        <translation>Kan variera med +/- %1 uhotx per inmatning.</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -1231,7 +1231,7 @@ MultiSend: %1</translation>
         <translation>version</translation>
     </message>
     <message>
-        <source>Hotchain Wallet</source>
+        <source>Hotchain</source>
         <translation>HOTCHAIN Kärna</translation>
     </message>
     <message>
@@ -1239,7 +1239,7 @@ MultiSend: %1</translation>
         <translation>(%1-bit)</translation>
     </message>
     <message>
-        <source>About Hotchain Wallet</source>
+        <source>About Hotchain</source>
         <translation>Om HOTCHAIN Kärna</translation>
     </message>
     <message>
@@ -1286,15 +1286,15 @@ MultiSend: %1</translation>
         <translation>Välkommen</translation>
     </message>
     <message>
-        <source>Welcome to Hotchain Wallet.</source>
-        <translation>Välkommen till Hotchain Wallet.</translation>
+        <source>Welcome to Hotchain.</source>
+        <translation>Välkommen till Hotchain.</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where Hotchain Wallet will store its data.</source>
-        <translation>Eftersom detta är första gången programmet körs så kan du välja var Hotchain Wallet ska spara sin data.</translation>
+        <source>As this is the first time the program is launched, you can choose where Hotchain will store its data.</source>
+        <translation>Eftersom detta är första gången programmet körs så kan du välja var Hotchain ska spara sin data.</translation>
     </message>
     <message>
-        <source>Hotchain Wallet will download and store a copy of the HOTCHAIN block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <source>Hotchain will download and store a copy of the HOTCHAIN block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
         <translation>HOTCHAIN Kärnan kommer ladda ner och spara en kopia av HOTCHAIN block chain. Minst %1GB data kommer sparas i denna katalog och den kommer växa med tiden. Plånboken kommer också sparas i denna katalog.</translation>
     </message>
     <message>
@@ -1306,8 +1306,8 @@ MultiSend: %1</translation>
         <translation>Använd en skräddarsydd data katalog</translation>
     </message>
     <message>
-        <source>Hotchain Wallet</source>
-        <translation>Hotchain Wallet</translation>
+        <source>Hotchain</source>
+        <translation>Hotchain</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -3995,8 +3995,8 @@ Minta antingen högre valörer (så att färre inputs behövs) eller spendera mi
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>Hotchain Wallet is shutting down...</source>
-        <translation>Hotchain Wallet stängs ner...</translation>
+        <source>Hotchain is shutting down...</source>
+        <translation>Hotchain stängs ner...</translation>
     </message>
     <message>
         <source>Do not shut down the computer until this window disappears.</source>
@@ -4145,8 +4145,8 @@ Minta antingen högre valörer (så att färre inputs behövs) eller spendera mi
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Hotchain Wallet</source>
-        <translation>Hotchain Wallet</translation>
+        <source>Hotchain</source>
+        <translation>Hotchain</translation>
     </message>
     <message>
         <source>Version %1</source>
@@ -4161,8 +4161,8 @@ Minta antingen högre valörer (så att färre inputs behövs) eller spendera mi
         <translation>Dash Core utvecklarna</translation>
     </message>
     <message>
-        <source>The Hotchain Wallet developers</source>
-        <translation>Hotchain Wallet utvecklarna</translation>
+        <source>The Hotchain developers</source>
+        <translation>Hotchain utvecklarna</translation>
     </message>
     <message>
         <source>[testnet]</source>
@@ -4773,7 +4773,7 @@ Minta antingen högre valörer (så att färre inputs behövs) eller spendera mi
     </message>
 </context>
 <context>
-    <name>ZHotxControlDialog</name>
+    <name>zHotxControlDialog</name>
     <message>
         <source>Select zHOTX to Spend</source>
         <translation>Välj zHOTX att Spendera</translation>
@@ -4826,7 +4826,7 @@ Minta antingen högre valörer (så att färre inputs behövs) eller spendera mi
         <translation>Beräknade ackumulator kontrollstation är inte vad som sparats av block index</translation>
     </message>
     <message>
-        <source>Cannot obtain a lock on data directory %s. Hotchain Wallet is probably already running.</source>
+        <source>Cannot obtain a lock on data directory %s. Hotchain is probably already running.</source>
         <translation>Kan ej låsa in på data katalog %s. HOTCHAIN Kärna körs förmodligen redan.</translation>
     </message>
     <message>
@@ -5002,8 +5002,8 @@ Minta antingen högre valörer (så att färre inputs behövs) eller spendera mi
         <translation>Denna produkt inkluderar mjukvara utvecklad av OpenSSL Projektet för användning i OpenSSL Toolkit &lt;https://www.openssl.org/&gt; och kryptografisk mjukvara skriven av Eric Young och UPnP mjukvara skriven av Thomas Bernard.</translation>
     </message>
     <message>
-        <source>Unable to bind to %s on this computer. Hotchain Wallet is probably already running.</source>
-        <translation>Kan inte binda till %s på denna dator. Hotchain Wallet körs förmodligen redan.</translation>
+        <source>Unable to bind to %s on this computer. Hotchain is probably already running.</source>
+        <translation>Kan inte binda till %s på denna dator. Hotchain körs förmodligen redan.</translation>
     </message>
     <message>
         <source>Unable to locate enough Obfuscation denominated funds for this transaction.</source>
@@ -5030,8 +5030,8 @@ Minta antingen högre valörer (så att färre inputs behövs) eller spendera mi
         <translation>Varning: -maxtxfee är sätt väldigt högt! Detta är transaktionsavgiften du kommer betala om du skickar en transaktion.</translation>
     </message>
     <message>
-        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong Hotchain Wallet will not work properly.</source>
-        <translation>Varning: Var vänlig kontrollera att din dators tid och datum är korrekt! Om din klocka är fel så kommer Hotchain Wallet inte att fungera korrekt.</translation>
+        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong Hotchain will not work properly.</source>
+        <translation>Varning: Var vänlig kontrollera att din dators tid och datum är korrekt! Om din klocka är fel så kommer Hotchain inte att fungera korrekt.</translation>
     </message>
     <message>
         <source>Warning: The network does not appear to fully agree! Some miners appear to be experiencing issues.</source>
@@ -5182,8 +5182,8 @@ Minta antingen högre valörer (så att färre inputs behövs) eller spendera mi
         <translation>Copyright (C) 2014-%i The Dash Core Developers</translation>
     </message>
     <message>
-        <source>Copyright (C) 2015-%i The Hotchain Wallet Developers</source>
-        <translation>Copyright (C) 2015-%i The Hotchain Wallet Developers</translation>
+        <source>Copyright (C) 2015-%i The Hotchain Developers</source>
+        <translation>Copyright (C) 2015-%i The Hotchain Developers</translation>
     </message>
     <message>
         <source>Corrupted block database detected</source>
@@ -5270,7 +5270,7 @@ Minta antingen högre valörer (så att färre inputs behövs) eller spendera mi
         <translation>Fel vid laddning av wallet.dat: Plånbok korrupterad</translation>
     </message>
     <message>
-        <source>Error loading wallet.dat: Wallet requires newer version of Hotchain Wallet</source>
+        <source>Error loading wallet.dat: Wallet requires newer version of Hotchain</source>
         <translation>Fel vid laddning av wallet.dat: Plånbok  kräver nyare HOTCHAIN Kärna version</translation>
     </message>
     <message>
@@ -5386,7 +5386,7 @@ Minta antingen högre valörer (så att färre inputs behövs) eller spendera mi
         <translation>Information</translation>
     </message>
     <message>
-        <source>Initialization sanity check failed. Hotchain Wallet is shutting down.</source>
+        <source>Initialization sanity check failed. Hotchain is shutting down.</source>
         <translation>Initierings renlighetscheck misslyckades. HOTCHAIN Kärna stängs ner.</translation>
     </message>
     <message>
@@ -6210,7 +6210,7 @@ Minta antingen högre valörer (så att färre inputs behövs) eller spendera mi
         <translation>Plånboken är låst.</translation>
     </message>
     <message>
-        <source>Wallet needed to be rewritten: restart Hotchain Wallet to complete</source>
+        <source>Wallet needed to be rewritten: restart Hotchain to complete</source>
         <translation>Plånbok behöver skrivas om: starta om HOTCHAIN Kärna för att göra klart</translation>
     </message>
     <message>

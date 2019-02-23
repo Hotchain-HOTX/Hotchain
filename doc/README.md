@@ -1,9 +1,9 @@
-Hotchain Wallet
+Hotchain
 =====================
 
 Setup
 ---------------------
-[Hotchain Wallet](http://hotchain.me/wallet) is the original HOTCHAIN client and it builds the backbone of the network. However, it downloads and stores the entire history of HOTCHAIN transactions; depending on the speed of your computer and network connection, the synchronization process can take anywhere from a few hours to a day or more. Thankfully you only have to do this once.
+[Hotchain](http://hotchain.me/wallet) is the original HOTCHAIN client and it builds the backbone of the network. However, it downloads and stores the entire history of HOTCHAIN transactions; depending on the speed of your computer and network connection, the synchronization process can take anywhere from a few hours to a day or more. Thankfully you only have to do this once.
 
 Running
 ---------------------
@@ -22,7 +22,7 @@ Unpack the files into a directory, and then run hotchain-qt.exe.
 
 ### OSX
 
-Drag hotchain-Qt to your applications folder, and then run hotchain-Qt.
+Drag HOTCHAIN-Qt to your applications folder, and then run HOTCHAIN-Qt.
 
 ### Need Help?
 
@@ -42,16 +42,22 @@ The following are developer notes on how to build HOTCHAIN on your native platfo
 
 Development
 ---------------------
-The Hotchain repo's [root README](https://github.com/Hotchain-HOTX/Hotchain/blob/master/README.md) contains relevant information on the development process and automated testing.
+The Hotchain repo's [root README](https://github.com/HOTCHAIN-Project/HOTCHAIN/blob/master/README.md) contains relevant information on the development process and automated testing.
 
 - [Developer Notes](developer-notes.md)
 - [Multiwallet Qt Development](multiwallet-qt.md)
 - [Release Notes](release-notes.md)
 - [Release Process](release-process.md)
+- [Source Code Documentation (External Link)](https://dev.visucore.com/bitcoin/doxygen/) ***TODO***
 - [Translation Process](translation_process.md)
 - [Unit Tests](unit-tests.md)
 - [Unauthenticated REST Interface](REST-interface.md)
 - [Dnsseed Policy](dnsseed-policy.md)
+
+### Resources
+
+* Discuss on the [BitcoinTalk](https://bitcointalk.org/index.php?topic=1262920.0) or the [HOTCHAIN](http://forum.hotchain.me/) forum.
+* Join the [HOTCHAIN-Dev](https://hotchain-dev.slack.com/) Slack group ([Sign-Up](https://hotchain-dev.herokuapp.com/)).
 
 ### Miscellaneous
 - [Assets Attribution](assets-attribution.md)

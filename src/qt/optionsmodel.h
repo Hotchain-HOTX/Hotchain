@@ -1,6 +1,6 @@
 // Copyright (c) 2011-2013 The Bitcoin developers
 // Copyright (c) 2017-2018 The PIVX Developers
-// Copyright (c) 2018 Cryptopie 
+// Copyright (c) 2018 The Hotchain Developers 
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -46,10 +46,12 @@ public:
         DatabaseCache,       // int
         SpendZeroConfChange, // bool
         ZeromintEnable,      // bool
+        ZeromintAddresses,   // bool
         ZeromintPercentage,  // int
         ZeromintPrefDenom,   // int
         HideZeroBalances,    // bool
-        AnonymizeHOTCHAINAmount, //int
+        HideOrphans,    // bool
+        AnonymizeHotchainAmount, //int
         ShowMasternodesTab,  // bool
         Listen,              // bool
         StakeSplitThreshold, // int
@@ -90,6 +92,7 @@ private:
     QString strThirdPartyTxUrls;
     bool fCoinControlFeatures;
     bool fHideZeroBalances;
+    bool fHideOrphans;
     /* settings that were overriden by command-line */
     QString strOverriddenByCommandLine;
 
@@ -99,11 +102,13 @@ private:
 signals:
     void displayUnitChanged(int unit);
     void zeromintEnableChanged(bool);
+    void zeromintAddressesChanged(bool);
     void zeromintPercentageChanged(int);
     void preferredDenomChanged(int);
-    void anonymizeHOTCHAINAmountChanged(int);
+    void anonymizeHotchainAmountChanged(int);
     void coinControlFeaturesChanged(bool);
     void hideZeroBalancesChanged(bool);
+    void hideOrphansChanged(bool);
 };
 
 #endif // BITCOIN_QT_OPTIONSMODEL_H

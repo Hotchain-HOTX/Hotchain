@@ -1,5 +1,6 @@
 // Copyright (c) 2014-2016 The Dash developers
 // Copyright (c) 2016-2018 The PIVX Developers 
+// Copyright (c) 2019 The Hotchain Developers 
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -15,7 +16,6 @@
 
 #include "obfuscation.h"
 #include "protocol.h"
-#include <boost/lexical_cast.hpp>
 
 using namespace std;
 using namespace boost;
@@ -47,7 +47,7 @@ using namespace boost;
 #define SPORK_3_SWIFTTX_BLOCK_FILTERING_DEFAULT 1424217600        //2015-2-18
 #define SPORK_5_MAX_VALUE_DEFAULT 1000                            //1000 HOTCHAIN
 #define SPORK_7_MASTERNODE_SCANNING_DEFAULT 978307200             //2001-1-1
-#define SPORK_8_MASTERNODE_PAYMENT_ENFORCEMENT_DEFAULT 0          //ON
+#define SPORK_8_MASTERNODE_PAYMENT_ENFORCEMENT_DEFAULT 4070908800 //OFF
 #define SPORK_9_MASTERNODE_BUDGET_ENFORCEMENT_DEFAULT 4070908800  //OFF
 #define SPORK_10_MASTERNODE_PAY_UPDATED_NODES_DEFAULT 4070908800  //OFF
 //#define SPORK_11_LOCK_INVALID_UTXO_DEFAULT 4070908800             //OFF - NOTE: this is block height not time!
@@ -81,15 +81,10 @@ public:
     int nSporkID;
     int64_t nValue;
     int64_t nTimeSigned;
-	int nVersion;
 
     uint256 GetHash()
     {
-		uint256 n;
-		if(nVersion < 4)
-			n = XEVAN(BEGIN(nSporkID), END(nTimeSigned));
-		else
-			n = HashQuark(BEGIN(nSporkID), END(nTimeSigned));
+        uint256 n = HashQuark(BEGIN(nSporkID), END(nTimeSigned));
         return n;
     }
 

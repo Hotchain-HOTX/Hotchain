@@ -1,6 +1,6 @@
 // Copyright (c) 2011-2013 The Bitcoin developers
 // Copyright (c) 2017-2018 The PIVX Developers
-// Copyright (c) 2018 Cryptopie 
+// Copyright (c) 2018 The Hotchain Developers 
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -190,6 +190,8 @@ void OptionsDialog::setMapper()
     mapper->addMapping(ui->databaseCache, OptionsModel::DatabaseCache);
     // Zeromint Enabled
     mapper->addMapping(ui->checkBoxZeromintEnable, OptionsModel::ZeromintEnable);
+    // Zeromint Addresses
+    mapper->addMapping(ui->checkBoxZeromintAddresses, OptionsModel::ZeromintAddresses);
     // Zerocoin mint percentage
     mapper->addMapping(ui->zeromintPercentage, OptionsModel::ZeromintPercentage);
     // Zerocoin preferred denomination
@@ -222,6 +224,7 @@ void OptionsDialog::setMapper()
     mapper->addMapping(ui->unit, OptionsModel::DisplayUnit);
     mapper->addMapping(ui->thirdPartyTxUrls, OptionsModel::ThirdPartyTxUrls);
     mapper->addMapping(ui->checkBoxHideZeroBalances, OptionsModel::HideZeroBalances);
+    mapper->addMapping(ui->checkBoxHideOrphans, OptionsModel::HideOrphans);
 
     /* Masternode Tab */
     mapper->addMapping(ui->showMasternodesTab, OptionsModel::ShowMasternodesTab);
@@ -334,4 +337,9 @@ bool OptionsDialog::eventFilter(QObject* object, QEvent* event)
         }
     }
     return QDialog::eventFilter(object, event);
+}
+
+void OptionsDialog::setCurrentIndex(int index)
+{
+    ui->tabWidget->setCurrentIndex(index);
 }

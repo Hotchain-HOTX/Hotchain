@@ -1,6 +1,6 @@
 // Copyright (c) 2011-2013 The Bitcoin developers
 // Copyright (c) 2017-2018 The PIVX Developers
-// Copyright (c) 2018 Cryptopie 
+// Copyright (c) 2018 The Hotchain Developers 
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -100,7 +100,7 @@ TransactionView::TransactionView(QWidget* parent) : QWidget(parent), model(0), t
 
     typeWidget->addItem(tr("To yourself"), TransactionFilterProxy::TYPE(TransactionRecord::SendToSelf));
     typeWidget->addItem(tr("Mined"), TransactionFilterProxy::TYPE(TransactionRecord::Generated));
-    typeWidget->addItem(tr("Minted"), TransactionFilterProxy::TYPE(TransactionRecord::StakeMint) | TransactionFilterProxy::TYPE(TransactionRecord::StakeZHOTX));
+    typeWidget->addItem(tr("Minted"), TransactionFilterProxy::TYPE(TransactionRecord::StakeMint) | TransactionFilterProxy::TYPE(TransactionRecord::StakezHOTX));
     typeWidget->addItem(tr("Masternode Reward"), TransactionFilterProxy::TYPE(TransactionRecord::MNReward));
     typeWidget->addItem(tr("Received HOTX from zHOTX"), TransactionFilterProxy::TYPE(TransactionRecord::RecvFromZerocoinSpend));
     typeWidget->addItem(tr("Zerocoin Mint"), TransactionFilterProxy::TYPE(TransactionRecord::ZerocoinMint));
@@ -237,6 +237,7 @@ void TransactionView::setModel(WalletModel* model)
                     mapperThirdPartyTxUrls->setMapping(thirdPartyTxUrlAction, listUrls[i].trimmed());
                 }
             }
+            connect(model->getOptionsModel(), SIGNAL(hideOrphansChanged(bool)), this, SLOT(hideOrphans(bool)));
         }
 
         // show/hide column Watch-only
@@ -248,6 +249,9 @@ void TransactionView::setModel(WalletModel* model)
         // Update transaction list with persisted settings
         chooseType(settings.value("transactionType").toInt());
         chooseDate(settings.value("transactionDate").toInt());
+
+        // Hide orphans
+        hideOrphans(settings.value("fHideOrphans", false).toBool());
     }
 }
 
@@ -312,6 +316,13 @@ void TransactionView::chooseType(int idx)
     // Persist settings
     QSettings settings;
     settings.setValue("transactionType", idx);
+}
+
+void TransactionView::hideOrphans(bool fHide)
+{
+    if (!transactionProxyModel)
+        return;
+    transactionProxyModel->setHideOrphans(fHide);
 }
 
 void TransactionView::chooseWatchonly(int idx)

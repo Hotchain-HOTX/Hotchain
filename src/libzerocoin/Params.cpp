@@ -10,6 +10,7 @@
 * @license    This project is released under the MIT license.
 **/
 // Copyright (c) 2017 The PIVX Developers 
+// Copyright (c) 2019 The Hotchain Developers 
 
 #include "Params.h"
 #include "ParamGeneration.h"

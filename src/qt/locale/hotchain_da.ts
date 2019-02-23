@@ -645,7 +645,7 @@
         <translation>Værktøjslinier</translation>
     </message>
     <message>
-        <source>Hotchain Wallet</source>
+        <source>Hotchain</source>
         <translation>HOTCHAIN kerne</translation>
     </message>
     <message>
@@ -669,11 +669,11 @@
         <translation>Vis masternoder</translation>
     </message>
     <message>
-        <source>&amp;About Hotchain Wallet</source>
+        <source>&amp;About Hotchain</source>
         <translation>&amp;Om HOTCHAIN kerne</translation>
     </message>
     <message>
-        <source>Show information about Hotchain Wallet</source>
+        <source>Show information about Hotchain</source>
         <translation>Vis information om HOTCHAIN kerne</translation>
     </message>
     <message>
@@ -729,11 +729,11 @@
         <translation>Blockexplorer vindue</translation>
     </message>
     <message>
-        <source>Show the Hotchain Wallet help message to get a list with possible HOTCHAIN command-line options</source>
+        <source>Show the Hotchain help message to get a list with possible HOTCHAIN command-line options</source>
         <translation>Vis hjelpetekster fra HOTCHAIN kernen for at få en liste med mulige HOTCHAIN kommandolinie-startparametre</translation>
     </message>
     <message>
-        <source>Hotchain Wallet client</source>
+        <source>Hotchain client</source>
         <translation>HOTCHAIN kerneklient</translation>
     </message>
     <message numerus="yes">
@@ -1130,8 +1130,8 @@ Adresse: %4
         <translation>Denne tekstmarkør bliver rød, hvis en modtageradresse modtager et beløb mindre end %1.</translation>
     </message>
     <message>
-        <source>Can vary +/- %1 hotx per input.</source>
-        <translation>Kan variere +/- %1 opie pr input.</translation>
+        <source>Can vary +/- %1 uhotx per input.</source>
+        <translation>Kan variere +/- %1 ohotx pr input.</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -1231,7 +1231,7 @@ Adresse: %4
         <translation>version</translation>
     </message>
     <message>
-        <source>Hotchain Wallet</source>
+        <source>Hotchain</source>
         <translation>HOTCHAIN kerne</translation>
     </message>
     <message>
@@ -1239,7 +1239,7 @@ Adresse: %4
         <translation>(%1-bit)</translation>
     </message>
     <message>
-        <source>About Hotchain Wallet</source>
+        <source>About Hotchain</source>
         <translation>om HOTCHAIN kerne</translation>
     </message>
     <message>
@@ -1286,15 +1286,15 @@ Adresse: %4
         <translation>Velkommen</translation>
     </message>
     <message>
-        <source>Welcome to Hotchain Wallet.</source>
+        <source>Welcome to Hotchain.</source>
         <translation>Velkommen til HOTCHAIN kerne</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where Hotchain Wallet will store its data.</source>
+        <source>As this is the first time the program is launched, you can choose where Hotchain will store its data.</source>
         <translation>Da det er første gang programmet startes, kan De vælge hvor HOTCHAIN kernen skal lagre sine data</translation>
     </message>
     <message>
-        <source>Hotchain Wallet will download and store a copy of the HOTCHAIN block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <source>Hotchain will download and store a copy of the HOTCHAIN block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
         <translation>HOTCHAIN kernen vil nu hente og gemme en kopi af HOTCHAIN blockchain. Der skal være mindst %1GB ledigt på lagermediet, og behovet vil stige efterhånden som tiden går. Selve tegnebogen vil også blive gemt her.</translation>
     </message>
     <message>
@@ -1306,7 +1306,7 @@ Adresse: %4
         <translation>Anvend en mappe valgt af brugeren</translation>
     </message>
     <message>
-        <source>Hotchain Wallet</source>
+        <source>Hotchain</source>
         <translation>HOTCHAIN kerne</translation>
     </message>
     <message>
@@ -4078,7 +4078,7 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>Hotchain Wallet is shutting down...</source>
+        <source>Hotchain is shutting down...</source>
         <translation>HOTCHAIN kernen lukker ned</translation>
     </message>
     <message>
@@ -4228,7 +4228,7 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Hotchain Wallet</source>
+        <source>Hotchain</source>
         <translation>HOTCHAIN kerne</translation>
     </message>
     <message>
@@ -4244,7 +4244,7 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
         <translation>DASH "core" udviklerne</translation>
     </message>
     <message>
-        <source>The Hotchain Wallet developers</source>
+        <source>The Hotchain developers</source>
         <translation>HOTCHAIN "core" udviklerne</translation>
     </message>
     <message>
@@ -4856,7 +4856,7 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
     </message>
 </context>
 <context>
-    <name>ZHotxControlDialog</name>
+    <name>zHotxControlDialog</name>
     <message>
         <source>Select zHOTX to Spend</source>
         <translation>Vælg zHOTX for at bruge</translation>
@@ -4909,8 +4909,8 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
         <translation>Beregnet akkumulator kontrolpunkt er ikke det, der er registreret af blok indeks</translation>
     </message>
     <message>
-        <source>Cannot obtain a lock on data directory %s. Hotchain Wallet is probably already running.</source>
-        <translation>Kan ikke låse datamappen %s. Hotchain Wallet kører sandsynligvis allerede.</translation>
+        <source>Cannot obtain a lock on data directory %s. Hotchain is probably already running.</source>
+        <translation>Kan ikke låse datamappen %s. Hotchain kører sandsynligvis allerede.</translation>
     </message>
     <message>
         <source>Change automatic finalized budget voting behavior. mode=auto: Vote for only exact finalized budget match to my generated budget. (string, default: auto)</source>
@@ -5086,7 +5086,7 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
         <translation>Dette produkt anvender software udviklet i OpenSSL projektet til brug i OpenSSL værktøjssættet &lt;https://www.openssl.org/&gt; og kryptosoftware skrevet afEric Young og UPnP software skrevet af Thomas Bernard.</translation>
     </message>
     <message>
-        <source>Unable to bind to %s on this computer. Hotchain Wallet is probably already running.</source>
+        <source>Unable to bind to %s on this computer. Hotchain is probably already running.</source>
         <translation>Det var ikke muligt at forbinde %s på denne computer. HOTCHAIN kører sandsynligvis allerede.</translation>
     </message>
     <message>
@@ -5114,8 +5114,8 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
         <translation>Advarsel! -paytxfee er sat meget højt. Det er dette gebyr De kommer til at betale for transaktionen, hvis De gennemfører. </translation>
     </message>
     <message>
-        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong Hotchain Wallet will not work properly.</source>
-        <translation>Advarsel! Kontroller at computerens dato og tid er korrekt indstillet. Hvis tiden ikke er rigtig, vil Hotchain Wallet ikke fungere ordentligt.</translation>
+        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong Hotchain will not work properly.</source>
+        <translation>Advarsel! Kontroller at computerens dato og tid er korrekt indstillet. Hvis tiden ikke er rigtig, vil Hotchain ikke fungere ordentligt.</translation>
     </message>
     <message>
         <source>Warning: The network does not appear to fully agree! Some miners appear to be experiencing issues.</source>
@@ -5266,8 +5266,8 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
         <translation>Copyright (C) 2014-%i The Dash Core Developers </translation>
     </message>
     <message>
-        <source>Copyright (C) 2015-%i The Hotchain Wallet Developers</source>
-        <translation>Copyright (C) 2015-%i The Hotchain Wallet Developers</translation>
+        <source>Copyright (C) 2015-%i The Hotchain Developers</source>
+        <translation>Copyright (C) 2015-%i The Hotchain Developers</translation>
     </message>
     <message>
         <source>Corrupted block database detected</source>
@@ -5354,8 +5354,8 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
         <translation>Fejl ved indlæsning af wallet.dat: Tegnebogen er beskadiget</translation>
     </message>
     <message>
-        <source>Error loading wallet.dat: Wallet requires newer version of Hotchain Wallet</source>
-        <translation>Fejl ved indlæsning af wallet.dat: Tegnebogen kræver en nyere version af Hotchain Wallet</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of Hotchain</source>
+        <translation>Fejl ved indlæsning af wallet.dat: Tegnebogen kræver en nyere version af Hotchain</translation>
     </message>
     <message>
         <source>Error opening block database</source>
@@ -5470,8 +5470,8 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
         <translation>Info:</translation>
     </message>
     <message>
-        <source>Initialization sanity check failed. Hotchain Wallet is shutting down.</source>
-        <translation>Initiering af sanitetskontrollen fejlede. Hotchain Wallet lukker ned. </translation>
+        <source>Initialization sanity check failed. Hotchain is shutting down.</source>
+        <translation>Initiering af sanitetskontrollen fejlede. Hotchain lukker ned. </translation>
     </message>
     <message>
         <source>Input is not valid.</source>
@@ -6294,8 +6294,8 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
         <translation>Tegnebogen er låst</translation>
     </message>
     <message>
-        <source>Wallet needed to be rewritten: restart Hotchain Wallet to complete</source>
-        <translation>Tegnebogen måtte genskrives. Genstart Hotchain Wallet for at gøre færdig</translation>
+        <source>Wallet needed to be rewritten: restart Hotchain to complete</source>
+        <translation>Tegnebogen måtte genskrives. Genstart Hotchain for at gøre færdig</translation>
     </message>
     <message>
         <source>Wallet options:</source>

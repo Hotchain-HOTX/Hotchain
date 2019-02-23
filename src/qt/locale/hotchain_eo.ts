@@ -645,7 +645,7 @@
         <translation>Iloj langeto</translation>
     </message>
     <message>
-        <source>Hotchain Wallet</source>
+        <source>Hotchain</source>
         <translation>HOTCHAIN kerno</translation>
     </message>
     <message>
@@ -669,11 +669,11 @@
         <translation>Foliumi mastro-nodo</translation>
     </message>
     <message>
-        <source>&amp;About Hotchain Wallet</source>
+        <source>&amp;About Hotchain</source>
         <translation>&amp;Pri HOTCHAIN Kerno</translation>
     </message>
     <message>
-        <source>Show information about Hotchain Wallet</source>
+        <source>Show information about Hotchain</source>
         <translation>Montri informon pri HOTCHAIN Kerno</translation>
     </message>
     <message>
@@ -729,11 +729,11 @@
         <translation>Bloko esplorilo fenestro</translation>
     </message>
     <message>
-        <source>Show the Hotchain Wallet help message to get a list with possible HOTCHAIN command-line options</source>
+        <source>Show the Hotchain help message to get a list with possible HOTCHAIN command-line options</source>
         <translation>Montri la HOTCHAIN Kore help-mesaĝo por havi liston de havebla HOTCHAIN komandlinion opciojn</translation>
     </message>
     <message>
-        <source>Hotchain Wallet client</source>
+        <source>Hotchain client</source>
         <translation>HOTCHAIN Kerno kliento</translation>
     </message>
     <message numerus="yes">
@@ -1122,8 +1122,8 @@ Muktisendi: %1</translation>
         <translation>Ĉi tiun etikedo ruĝiĝas se iu ajna ricevanto ricevas totalo pli malgranda ol %1.</translation>
     </message>
     <message>
-        <source>Can vary +/- %1 hotx per input.</source>
-        <translation>Povas varii +/- %1 hotx per enigo.</translation>
+        <source>Can vary +/- %1 uhotx per input.</source>
+        <translation>Povas varii +/- %1 uhotx per enigo.</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -1223,7 +1223,7 @@ Muktisendi: %1</translation>
         <translation>versio</translation>
     </message>
     <message>
-        <source>Hotchain Wallet</source>
+        <source>Hotchain</source>
         <translation>HOTCHAIN kerno</translation>
     </message>
     <message>
@@ -1231,7 +1231,7 @@ Muktisendi: %1</translation>
         <translation>(%1-bajto)</translation>
     </message>
     <message>
-        <source>About Hotchain Wallet</source>
+        <source>About Hotchain</source>
         <translation>Pri HOTCHAIN Kerno</translation>
     </message>
     <message>
@@ -1274,15 +1274,15 @@ Muktisendi: %1</translation>
         <translation>Bonvenon</translation>
     </message>
     <message>
-        <source>Welcome to Hotchain Wallet.</source>
+        <source>Welcome to Hotchain.</source>
         <translation>Bonvenon al la HOTCHAIN Kerno.</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where Hotchain Wallet will store its data.</source>
+        <source>As this is the first time the program is launched, you can choose where Hotchain will store its data.</source>
         <translation>Ĉar estas la unuan fojon ke la programo estas lanĉita, vi povas elekti kie HOTCHAIN kernk storigis sian datumojn. </translation>
     </message>
     <message>
-        <source>Hotchain Wallet will download and store a copy of the HOTCHAIN block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <source>Hotchain will download and store a copy of the HOTCHAIN block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
         <translation>HOTCHAIN kerno elŝutos kaj konservi kopion de la HOTCHAIN blokĉeno. Almenaŭ %1GB datumoj stokitos en ĉi tiun dosierujo, kaj ĝi kresko kun la tempo. Monujo stokitos en ĉi tiun dosierujo.</translation>
     </message>
     <message>
@@ -1294,7 +1294,7 @@ Muktisendi: %1</translation>
         <translation>Uzi kutimon datumojn dosierujo:</translation>
     </message>
     <message>
-        <source>Hotchain Wallet</source>
+        <source>Hotchain</source>
         <translation>HOTCHAIN kerno</translation>
     </message>
     <message>
@@ -1849,7 +1849,7 @@ Nematura: konfirmita, sed malpli ol 1 minto el la samo nomado post ĝin estis mi
     </message>
     <message>
         <source>Payment request file cannot be read! This can be caused by an invalid payment request file.</source>
-        <translation>Pago peto dosiero ne povas estas legi! Ĉi tio pieas esti kauzita por nevalida pago peto dosiero.</translation>
+        <translation>Pago peto dosiero ne povas estas legi! Ĉi tio hotxas esti kauzita por nevalida pago peto dosiero.</translation>
     </message>
     <message>
         <source>Payment request rejected</source>
@@ -2407,7 +2407,7 @@ Nematura: konfirmita, sed malpli ol 1 minto el la samo nomado post ĝin estis mi
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>Hotchain Wallet is shutting down...</source>
+        <source>Hotchain is shutting down...</source>
         <translation>HOTCHAIN kerno fermanta...</translation>
     </message>
     </context>
@@ -2461,7 +2461,7 @@ Nematura: konfirmita, sed malpli ol 1 minto el la samo nomado post ĝin estis mi
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Hotchain Wallet</source>
+        <source>Hotchain</source>
         <translation>HOTCHAIN kerno</translation>
     </message>
     <message>
@@ -2473,7 +2473,7 @@ Nematura: konfirmita, sed malpli ol 1 minto el la samo nomado post ĝin estis mi
         <translation>La Dash kerno programistoj</translation>
     </message>
     <message>
-        <source>The Hotchain Wallet developers</source>
+        <source>The Hotchain developers</source>
         <translation>La HOTCHAIN kerno programistoj</translation>
     </message>
     </context>
@@ -2649,7 +2649,7 @@ Nematura: konfirmita, sed malpli ol 1 minto el la samo nomado post ĝin estis mi
     </message>
     </context>
 <context>
-    <name>ZHotxControlDialog</name>
+    <name>zHotxControlDialog</name>
     <message>
         <source>0</source>
         <translation>0</translation>

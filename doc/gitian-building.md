@@ -96,7 +96,7 @@ After creating the VM, we need to configure it.
   - Name: `SSH`
   - Protocol: `TCP`
   - Leave Host IP empty
-  - Host Port: `9069`
+  - Host Port: `22222`
   - Leave Guest IP empty
   - Guest Port: `22`
 
@@ -198,16 +198,16 @@ Connecting to the VM
 ----------------------
 
 After the VM has booted you can connect to it using SSH, and files can be copied from and to the VM using a SFTP utility.
-Connect to `localhost`, port `9069` (or the port configured when installing the VM).
+Connect to `localhost`, port `22222` (or the port configured when installing the VM).
 On Windows you can use putty[1] and WinSCP[2].
 
 For example to connect as `root` from a Linux command prompt use
 
-    $ ssh root@localhost -p 9069
-    The authenticity of host '[localhost]:9069 ([127.0.0.1]:9069)' can't be established.
+    $ ssh root@localhost -p 22222
+    The authenticity of host '[localhost]:22222 ([127.0.0.1]:22222)' can't be established.
     ECDSA key fingerprint is 8e:71:f9:5b:62:46:de:44:01:da:fb:5f:34:b5:f2:18.
     Are you sure you want to continue connecting (yes/no)? yes
-    Warning: Permanently added '[localhost]:9069' (ECDSA) to the list of known hosts.
+    Warning: Permanently added '[localhost]:22222' (ECDSA) to the list of known hosts.
     root@localhost's password: (enter root password configured during install)
     Linux debian 3.2.0-4-amd64 #1 SMP Debian 3.2.54-2 x86_64
     root@debian:~#
@@ -282,7 +282,7 @@ Clone the git repositories for hotchain and gitian and then checkout the hotchai
 ```bash
 git clone https://github.com/devrandom/gitian-builder.git
 git clone https://github.com/hotchain-crypto/hotchain.git
-cd hotchain
+cd hotx
 git checkout v${VERSION}
 cd ..
 ```

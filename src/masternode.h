@@ -1,5 +1,6 @@
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2018 The PIVX Developers 
+// Copyright (c) 2019 The Hotchain Developers 
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -124,12 +125,6 @@ public:
         MASTERNODE_POS_ERROR
     };
 
-    enum LevelValue : unsigned {
-        UNSPECIFIED = 0u,
-        MIN = 1u,
-        MAX = 1u,
-    };
-
     CTxIn vin;
     CService addr;
     CPubKey pubKeyCollateralAddress;
@@ -138,7 +133,6 @@ public:
     CPubKey pubKeyMasternode1;
     std::vector<unsigned char> sig;
     int activeState;
-    CAmount deposit;
     int64_t sigTime; //mnb message time
     int cacheInputAge;
     int cacheInputAgeBlock;
@@ -153,12 +147,6 @@ public:
 
     int64_t nLastDsee;  // temporary, do not save. Remove after migration to v12
     int64_t nLastDseep; // temporary, do not save. Remove after migration to v12
-
-    static unsigned Level(CAmount vin_val, int blockHeight);
-    static unsigned Level(const CTxIn& vin, int blockHeight);
-
-    static bool IsDepositCoins(CAmount);
-    static bool IsDepositCoins(const CTxIn& vin, CAmount& vin_val);
 
     CMasternode();
     CMasternode(const CMasternode& other);
@@ -178,7 +166,6 @@ public:
         swap(first.pubKeyMasternode, second.pubKeyMasternode);
         swap(first.sig, second.sig);
         swap(first.activeState, second.activeState);
-        swap(first.deposit, second.deposit);
         swap(first.sigTime, second.sigTime);
         swap(first.lastPing, second.lastPing);
         swap(first.cacheInputAge, second.cacheInputAge);
@@ -222,7 +209,6 @@ public:
         READWRITE(sigTime);
         READWRITE(protocolVersion);
         READWRITE(activeState);
-        READWRITE(deposit);
         READWRITE(lastPing);
         READWRITE(cacheInputAge);
         READWRITE(cacheInputAgeBlock);
@@ -294,11 +280,6 @@ public:
         if (activeState == CMasternode::MASTERNODE_POS_ERROR) strStatus = "POS_ERROR";
 
         return strStatus;
-    }
-
-    unsigned Level()
-    {
-        return Level(deposit, chainActive.Height());
     }
 
     int64_t GetLastPaid();

@@ -1,10 +1,10 @@
 // Copyright (c) 2017-2018 The PIVX Developers
-// Copyright (c) 2018 Cryptopie 
+// Copyright (c) 2018 The Hotchain Developers 
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef ZHOTXCONTROLDIALOG_H
-#define ZHOTXCONTROLDIALOG_H
+#ifndef zHOTXCONTROLDIALOG_H
+#define zHOTXCONTROLDIALOG_H
 
 #include <QDialog>
 #include <QTreeWidgetItem>
@@ -15,16 +15,26 @@ class CZerocoinMint;
 class WalletModel;
 
 namespace Ui {
-class ZHotxControlDialog;
+class zHotxControlDialog;
 }
 
-class ZHotxControlDialog : public QDialog
+class CzHotxControlWidgetItem : public QTreeWidgetItem
+{
+public:
+    explicit CzHotxControlWidgetItem(QTreeWidget *parent, int type = Type) : QTreeWidgetItem(parent, type) {}
+    explicit CzHotxControlWidgetItem(int type = Type) : QTreeWidgetItem(type) {}
+    explicit CzHotxControlWidgetItem(QTreeWidgetItem *parent, int type = Type) : QTreeWidgetItem(parent, type) {}
+
+    bool operator<(const QTreeWidgetItem &other) const;
+};
+
+class zHotxControlDialog : public QDialog
 {
     Q_OBJECT
 
 public:
-    explicit ZHotxControlDialog(QWidget *parent);
-    ~ZHotxControlDialog();
+    explicit zHotxControlDialog(QWidget *parent);
+    ~zHotxControlDialog();
 
     void setModel(WalletModel* model);
 
@@ -33,7 +43,7 @@ public:
     static std::vector<CMintMeta> GetSelectedMints();
 
 private:
-    Ui::ZHotxControlDialog *ui;
+    Ui::zHotxControlDialog *ui;
     WalletModel* model;
     PrivacyDialog* privacyDialog;
 
@@ -48,10 +58,11 @@ private:
         COLUMN_CONFIRMATIONS,
         COLUMN_ISSPENDABLE
     };
+    friend class CzHotxControlWidgetItem;
 
 private slots:
     void updateSelection(QTreeWidgetItem* item, int column);
     void ButtonAllClicked();
 };
 
-#endif // ZHOTXCONTROLDIALOG_H
+#endif // zHOTXCONTROLDIALOG_H

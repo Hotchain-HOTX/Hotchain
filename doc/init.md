@@ -89,7 +89,7 @@ use old versions of Upstart and do not supply the start-stop-daemon uitility.
 Copy hotchaind.init to /etc/init.d/hotchaind. Test by running "service hotchaind start".
 
 Using this script, you can adjust the path and flags to the hotchaind program by
-setting the hotchaind and FLAGS environment variables in the file
+setting the HOTCHAIND and FLAGS environment variables in the file
 /etc/sysconfig/hotchaind. You can also use the DAEMONOPTS environment variable here.
 
 5. Auto-respawn

@@ -24,7 +24,7 @@ from bitcoinrpc.authproxy import AuthServiceProxy, JSONRPCException
 from util import *
 
 def p2p_port(n):
-    return 11000 + n + os.getpid()%999
+    return 16990 + n + os.getpid()%999
 def rpc_port(n):
     return 12000 + n + os.getpid()%999
 

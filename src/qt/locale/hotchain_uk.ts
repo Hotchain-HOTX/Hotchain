@@ -373,7 +373,7 @@
     </message>
     </context>
 <context>
-    <name>ZHotxControlDialog</name>
+    <name>zHotxControlDialog</name>
     </context>
 <context>
     <name>hotchain-core</name>

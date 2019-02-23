@@ -23,8 +23,8 @@ Build-Depends: debhelper,
  libprotobuf-dev, protobuf-compiler
 Standards-Version: 3.9.2
 Homepage: http://www.hotchain.me
-Vcs-Git: git://github.com/Hotchain-HOTX/Hotchain.git
-Vcs-Browser: http://github.com/Hotchain-HOTX/Hotchain
+Vcs-Git: git://github.com/HOTCHAIN-Project/HOTCHAIN.git
+Vcs-Browser: http://github.com/HOTCHAIN-Project/HOTCHAIN
 
 Package: hotchaind
 Architecture: any

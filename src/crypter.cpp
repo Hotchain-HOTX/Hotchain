@@ -1,6 +1,6 @@
 // Copyright (c) 2009-2013 The Bitcoin developers
 // Copyright (c) 2017-2018 The PIVX Developers
-// Copyright (c) 2018 Cryptopie 
+// Copyright (c) 2018 The Hotchain Developers 
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -28,8 +28,8 @@ bool CCrypter::SetKeyFromPassphrase(const SecureString& strKeyData, const std::v
             (unsigned char*)&strKeyData[0], strKeyData.size(), nRounds, chKey, chIV);
 
     if (i != (int)WALLET_CRYPTO_KEY_SIZE) {
-        OPENSSL_cleanse(chKey, sizeof(chKey));
-        OPENSSL_cleanse(chIV, sizeof(chIV));
+        memory_cleanse(chKey, sizeof(chKey));
+        memory_cleanse(chIV, sizeof(chIV));
         return false;
     }
 
@@ -391,7 +391,7 @@ bool CCryptoKeyStore::AddDeterministicSeed(const uint256& seed)
             //attempt encrypt
             if (EncryptSecret(vMasterKey, kmSeed, hashSeed, vchSeedSecret)) {
                 //write to wallet with hashSeed as unique key
-                if (db.WriteZHOTXSeed(hashSeed, vchSeedSecret)) {
+                if (db.WritezHOTXSeed(hashSeed, vchSeedSecret)) {
                     return true;
                 }
             }
@@ -399,7 +399,7 @@ bool CCryptoKeyStore::AddDeterministicSeed(const uint256& seed)
         }
         strErr = "save since wallet is locked";
     } else { //wallet not encrypted
-        if (db.WriteZHOTXSeed(hashSeed, ToByteVector(seed))) {
+        if (db.WritezHOTXSeed(hashSeed, ToByteVector(seed))) {
             return true;
         }
         strErr = "save zhotxseed to wallet";
@@ -419,7 +419,7 @@ bool CCryptoKeyStore::GetDeterministicSeed(const uint256& hashSeed, uint256& see
 
             vector<unsigned char> vchCryptedSeed;
             //read encrypted seed
-            if (db.ReadZHOTXSeed(hashSeed, vchCryptedSeed)) {
+            if (db.ReadzHOTXSeed(hashSeed, vchCryptedSeed)) {
                 uint256 seedRetrieved = uint256(ReverseEndianString(HexStr(vchCryptedSeed)));
                 //this checks if the hash of the seed we just read matches the hash given, meaning it is not encrypted
                 //the use case for this is when not crypted, seed is set, then password set, the seed not yet crypted in memory
@@ -440,7 +440,7 @@ bool CCryptoKeyStore::GetDeterministicSeed(const uint256& hashSeed, uint256& see
     } else {
         vector<unsigned char> vchSeed;
         // wallet not crypted
-        if (db.ReadZHOTXSeed(hashSeed, vchSeed)) {
+        if (db.ReadzHOTXSeed(hashSeed, vchSeed)) {
             seedOut = uint256(ReverseEndianString(HexStr(vchSeed)));
             return true;
         }

@@ -1,15 +1,19 @@
 # Hotchain
 
-Anonymous, lucrative and HOT! The Hotchain ecosystem is based on a privacy focused cryptocurrency and a secure adult entertainment platform. You can be a spectator, a performer or an investor. Join us and become an Hotchain Superstar!
+[![Build Status](https://travis-ci.org/Hotchain-HOTX/Hotchain.svg?branch=master)](https://travis-ci.org/Hotchain-HOTX/Hotchain)  [![GitHub version](https://badge.fury.io/gh/Hotchain-HOTX%2FHotchain.svg)](https://badge.fury.io/gh/Hotchain-HOTX%2FHotchain) [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/Hotchain-HOTX/Hotchain/issues) 
+
+
+
+HOTX is a forefront cryptocurrency forked from the latest PIVX codebase. It is the currency of the Hotchain ecosystem, an adult entertainment decentralized ecosystem meant to help users of online adult services to stay 100% anonymous.
 
 
 # Specifications :
 
-  - Proof of Stake with MN
-  - Zerocoin v2 with staking 
+  - Proof of Stake with Masternodes
+  - Zerocoin v2 with staking
   - Instant Transactions via SwiftTx
   - 60sec block time
-  - 10k for Masternodes
+  - 20000 HOTX for Masternodes
 
 
 Mainnet Ports :
@@ -17,15 +21,14 @@ Mainnet Ports :
   - RPC 6990
 
 Testnet Ports :
-  - P2P 10500
-  - RPC 11000
+  - P2P 19069
+  - RPC 16990
 
-A total of 60M HOTX were premined.
-
+A total of 4.26M HOTX were premined at [block 1](https://explorer.hotchain.me/block/1)
 
 ### Block Rewards
 
-Find out more about our block reward and percentages on our [website](https://www.hotchain.me) .
+Find out more about our block reward structure on our [website](https://www.hotchain.me)
 
 License
 ----

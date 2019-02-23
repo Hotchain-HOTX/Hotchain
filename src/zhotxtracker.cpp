@@ -1,4 +1,5 @@
 // Copyright (c) 2018 The PIVX Developers 
+// Copyright (c) 2019 The Hotchain Developers 
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -133,7 +134,7 @@ CAmount CzHOTXTracker::GetBalance(bool fConfirmedOnly, bool fUnconfirmedOnly) co
     }
 
     {
-        //LOCK(cs_pietracker);
+        //LOCK(cs_hotxtracker);
         // Get Unused coins
         for (auto& it : mapSerialHashes) {
             CMintMeta meta = it.second;

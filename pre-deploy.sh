@@ -10,6 +10,12 @@ if [[ $HOST = "i686-w64-mingw32" ]]; then
   ARCHIVE_NAME="windows-x86.zip"
 elif [[ $HOST = "x86_64-w64-mingw32" ]]; then
     ARCHIVE_NAME="windows-x64.zip"
+elif [[ $HOST = "arm-linux-gnueabihf" ]]; then
+    ARCHIVE_NAME="arm-x86.tar.gz"
+    ARCHIVE_CMD="tar -czf"
+elif [[ $HOST = "aarch64-linux-gnu" ]]; then
+    ARCHIVE_NAME="arm-x64.tar.gz"
+    ARCHIVE_CMD="tar -czf"
 elif [[ $HOST = "x86_64-unknown-linux-gnu" ]]; then
     if [[ $DEP_OPTS = "NO_WALLET=1" ]]; then    
         ARCHIVE_NAME="linux-x64-no-wallet.tar.gz"

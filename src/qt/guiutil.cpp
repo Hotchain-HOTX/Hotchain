@@ -1,6 +1,7 @@
 // Copyright (c) 2011-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2018 The PIVX Developers 
+// Copyright (c) 2019 The Hotchain Developers 
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -901,6 +902,9 @@ QString formatServicesStr(quint64 mask)
             case NODE_BLOOM:
             case NODE_BLOOM_WITHOUT_MN:
                 strList.append(QObject::tr("BLOOM"));
+                break;
+            case NODE_BLOOM_LIGHT_ZC:
+                strList.append(QObject::tr("ZK_BLOOM"));
                 break;
             default:
                 strList.append(QString("%1[%2]").arg(QObject::tr("UNKNOWN")).arg(check));

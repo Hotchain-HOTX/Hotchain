@@ -645,8 +645,8 @@
         <translation>탭 도구 모음</translation>
     </message>
     <message>
-        <source>Hotchain Wallet</source>
-        <translation>Hotchain Wallet</translation>
+        <source>Hotchain</source>
+        <translation>Hotchain</translation>
     </message>
     <message>
         <source>Send coins to a HOTCHAIN address</source>
@@ -669,12 +669,12 @@
         <translation>마스터노드 검색</translation>
     </message>
     <message>
-        <source>&amp;About Hotchain Wallet</source>
-        <translation>Hotchain Wallet &amp;정보</translation>
+        <source>&amp;About Hotchain</source>
+        <translation>Hotchain &amp;정보</translation>
     </message>
     <message>
-        <source>Show information about Hotchain Wallet</source>
-        <translation>Hotchain Wallet에 대한 정보 표시</translation>
+        <source>Show information about Hotchain</source>
+        <translation>Hotchain에 대한 정보 표시</translation>
     </message>
     <message>
         <source>Modify configuration options for HOTCHAIN</source>
@@ -729,12 +729,12 @@
         <translation>블록 탐색 창</translation>
     </message>
     <message>
-        <source>Show the Hotchain Wallet help message to get a list with possible HOTCHAIN command-line options</source>
-        <translation>Hotchain Wallet 도움말 메세지를 표시하여 사용 가능한 HOTCHAIN 명령행 옵션 목록 표시</translation>
+        <source>Show the Hotchain help message to get a list with possible HOTCHAIN command-line options</source>
+        <translation>Hotchain 도움말 메세지를 표시하여 사용 가능한 HOTCHAIN 명령행 옵션 목록 표시</translation>
     </message>
     <message>
-        <source>Hotchain Wallet client</source>
-        <translation>Hotchain Wallet 클라이언트</translation>
+        <source>Hotchain client</source>
+        <translation>Hotchain 클라이언트</translation>
     </message>
     <message numerus="yes">
         <source>%n active connection(s) to HOTCHAIN network</source>
@@ -1130,8 +1130,8 @@ Address: %4
         <translation>받는 사람이 %1 보다 작은 금액을 받으면 라벨이 빨간색으로 변경됩니다.</translation>
     </message>
     <message>
-        <source>Can vary +/- %1 hotx per input.</source>
-        <translation>Can vary +/- %1 hotx per input.</translation>
+        <source>Can vary +/- %1 uhotx per input.</source>
+        <translation>Can vary +/- %1 uhotx per input.</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -1231,16 +1231,16 @@ Address: %4
         <translation>버전</translation>
     </message>
     <message>
-        <source>Hotchain Wallet</source>
-        <translation>Hotchain Wallet</translation>
+        <source>Hotchain</source>
+        <translation>Hotchain</translation>
     </message>
     <message>
         <source>(%1-bit)</source>
         <translation>(%1-bit)</translation>
     </message>
     <message>
-        <source>About Hotchain Wallet</source>
-        <translation>Hotchain Wallet 정보</translation>
+        <source>About Hotchain</source>
+        <translation>Hotchain 정보</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -1286,16 +1286,16 @@ Address: %4
         <translation>환영합니다</translation>
     </message>
     <message>
-        <source>Welcome to Hotchain Wallet.</source>
-        <translation>Hotchain Wallet에 오신 것을 환영합니다.</translation>
+        <source>Welcome to Hotchain.</source>
+        <translation>Hotchain에 오신 것을 환영합니다.</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where Hotchain Wallet will store its data.</source>
-        <translation>이 프로그램이 처음 실행되었으므로 Hotchain Wallet가 데이터를 저장할 위치를 선택할 수 있습니다.</translation>
+        <source>As this is the first time the program is launched, you can choose where Hotchain will store its data.</source>
+        <translation>이 프로그램이 처음 실행되었으므로 Hotchain가 데이터를 저장할 위치를 선택할 수 있습니다.</translation>
     </message>
     <message>
-        <source>Hotchain Wallet will download and store a copy of the HOTCHAIN block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>Hotchain Wallet는 HOTCHAIN 블록체인을 다운로드하여 저장합니다. 최소 %1GB의 데이터가 디렉토리에 저장되며 시간이 지날수록 증가합니다. 또한 지갑도 해당 디렉토리에 저장됩니다.</translation>
+        <source>Hotchain will download and store a copy of the HOTCHAIN block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>Hotchain는 HOTCHAIN 블록체인을 다운로드하여 저장합니다. 최소 %1GB의 데이터가 디렉토리에 저장되며 시간이 지날수록 증가합니다. 또한 지갑도 해당 디렉토리에 저장됩니다.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -1306,8 +1306,8 @@ Address: %4
         <translation>사용자 지정 데이터 디렉토리 사용:</translation>
     </message>
     <message>
-        <source>Hotchain Wallet</source>
-        <translation>Hotchain Wallet</translation>
+        <source>Hotchain</source>
+        <translation>Hotchain</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -2261,7 +2261,7 @@ If AutoMint is enabled this percentage will settle around the configured AutoMin
         <source>AutoMint is currently disabled.
 To enable AutoMint change 'enablezeromint=0' to 'enablezeromint=1' in hotchain.conf</source>
         <translation>자동 저장 기능이 현재 사용 중지되었습니다 .
-자동 변환을 사용하려면 pieotx.conf에서 'enablezeromint = 0'에서 'enablezeromint = 1'로 변경하십시오.</translation>
+자동 변환을 사용하려면 hotxotx.conf에서 'enablezeromint = 0'에서 'enablezeromint = 1'로 변경하십시오.</translation>
     </message>
 </context>
 <context>
@@ -4079,8 +4079,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>Hotchain Wallet is shutting down...</source>
-        <translation>Hotchain Wallet가 종료됩니다...</translation>
+        <source>Hotchain is shutting down...</source>
+        <translation>Hotchain가 종료됩니다...</translation>
     </message>
     <message>
         <source>Do not shut down the computer until this window disappears.</source>
@@ -4229,8 +4229,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Hotchain Wallet</source>
-        <translation>Hotchain Wallet</translation>
+        <source>Hotchain</source>
+        <translation>Hotchain</translation>
     </message>
     <message>
         <source>Version %1</source>
@@ -4245,8 +4245,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Dash Core 개발자</translation>
     </message>
     <message>
-        <source>The Hotchain Wallet developers</source>
-        <translation>Hotchain Wallet 개발자</translation>
+        <source>The Hotchain developers</source>
+        <translation>Hotchain 개발자</translation>
     </message>
     <message>
         <source>[testnet]</source>
@@ -4858,7 +4858,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
 </context>
 <context>
-    <name>ZHotxControlDialog</name>
+    <name>zHotxControlDialog</name>
     <message>
         <source>Select zHOTX to Spend</source>
         <translation>사용할 zHOTX 선택</translation>
@@ -4911,8 +4911,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>계산된 누산기 체크포인트는 블록 인덱스에 의해 기록되는 것이 아닙니다.</translation>
     </message>
     <message>
-        <source>Cannot obtain a lock on data directory %s. Hotchain Wallet is probably already running.</source>
-        <translation>        &lt;translation&gt;잠겨진 데이터 디렉토리 %s 를 가져올 수 없습니다. Hotchain Wallet는 이미 실행 중입니다.</translation>
+        <source>Cannot obtain a lock on data directory %s. Hotchain is probably already running.</source>
+        <translation>        &lt;translation&gt;잠겨진 데이터 디렉토리 %s 를 가져올 수 없습니다. Hotchain는 이미 실행 중입니다.</translation>
     </message>
     <message>
         <source>Change automatic finalized budget voting behavior. mode=auto: Vote for only exact finalized budget match to my generated budget. (string, default: auto)</source>
@@ -5087,8 +5087,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>이 제품은 OpenSSL이 개발한 Open SSL 툴킷 &lt;https://www.openssl.org/&gt; 에서 사용하기 위한 프로젝트 소프트웨어, Eric Young이 개발한 암호화 소프트웨어, Thomas Bernard가 개발한 UPnP 소프트웨어가 포함되어 있습니다.</translation>
     </message>
     <message>
-        <source>Unable to bind to %s on this computer. Hotchain Wallet is probably already running.</source>
-        <translation>이 컴퓨터를 %s 로 지정하는것은 불가능합니다. Hotchain Wallet는 이미 실행 중입니다.</translation>
+        <source>Unable to bind to %s on this computer. Hotchain is probably already running.</source>
+        <translation>이 컴퓨터를 %s 로 지정하는것은 불가능합니다. Hotchain는 이미 실행 중입니다.</translation>
     </message>
     <message>
         <source>Unable to locate enough Obfuscation denominated funds for this transaction.</source>
@@ -5115,7 +5115,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>경고 : -paytxfee가 매우 높게 설정되었습니다! 이것은 전송할 경우 지불 할 트랜잭션 수수료입니다.</translation>
     </message>
     <message>
-        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong Hotchain Wallet will not work properly.</source>
+        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong Hotchain will not work properly.</source>
         <translation>경고: 컴퓨터의 날짜와 시간이 올바르게 설정되어 있는지 확인해 주세요! 만일 시계가 잘못되어 있다면 HOTCHAIN 코어는 정상적으로 작동하지 않을 수 있습니다.</translation>
     </message>
     <message>
@@ -5267,8 +5267,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Copyright (C) 2014-%i The Dash Core 개발자들</translation>
     </message>
     <message>
-        <source>Copyright (C) 2015-%i The Hotchain Wallet Developers</source>
-        <translation>Copyright (C) 2015-%i The Hotchain Wallet 개발자</translation>
+        <source>Copyright (C) 2015-%i The Hotchain Developers</source>
+        <translation>Copyright (C) 2015-%i The Hotchain 개발자</translation>
     </message>
     <message>
         <source>Corrupted block database detected</source>
@@ -5355,7 +5355,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>wallet.dat을 불러오는 중 오류가 발생했습니다: 지갑 손상됨</translation>
     </message>
     <message>
-        <source>Error loading wallet.dat: Wallet requires newer version of Hotchain Wallet</source>
+        <source>Error loading wallet.dat: Wallet requires newer version of Hotchain</source>
         <translation>wallet.dat를 로드하는 중 오류가 발생했습니다. 지갑에 최신 버전의 HOTCHAIN 코어가 필요합니다.</translation>
     </message>
     <message>
@@ -5471,8 +5471,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>정보</translation>
     </message>
     <message>
-        <source>Initialization sanity check failed. Hotchain Wallet is shutting down.</source>
-        <translation>초기화 정확성 검사에 실패 했습니다. Hotchain Wallet가 종료됩니다.</translation>
+        <source>Initialization sanity check failed. Hotchain is shutting down.</source>
+        <translation>초기화 정확성 검사에 실패 했습니다. Hotchain가 종료됩니다.</translation>
     </message>
     <message>
         <source>Input is not valid.</source>
@@ -6295,7 +6295,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>지갑이 잠겼습니다.</translation>
     </message>
     <message>
-        <source>Wallet needed to be rewritten: restart Hotchain Wallet to complete</source>
+        <source>Wallet needed to be rewritten: restart Hotchain to complete</source>
         <translation>지갑을 다시 작성해야 합니다: 완료하려면 HOTCHAIN 코어를 재시작해야 합니다</translation>
     </message>
     <message>

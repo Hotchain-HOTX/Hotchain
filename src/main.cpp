@@ -2,6 +2,7 @@
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2018 The PIVX Developers 
+// Copyright (c) 2019 The Hotchain Developers 
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -43,8 +44,9 @@
 #include <boost/algorithm/string/replace.hpp>
 #include <boost/filesystem.hpp>
 #include <boost/filesystem/fstream.hpp>
-#include <boost/lexical_cast.hpp>
 #include <boost/thread.hpp>
+#include <atomic>
+#include <queue>
 
 using namespace boost;
 using namespace std;
@@ -80,7 +82,7 @@ unsigned int nCoinCacheSize = 5000;
 bool fAlerts = DEFAULT_ALERTS;
 int64_t nReserveBalance = 0;
 
-/** Fees smaller than this (in hotx) are considered zero fee (for relaying and mining)
+/** Fees smaller than this (in uhotx) are considered zero fee (for relaying and mining)
  * We are ~100 times smaller then bitcoin now (2015-06-23), set minRelayTxFee only 10 times higher
  * so it's still 10 times lower comparing to bitcoin.
  */
@@ -97,6 +99,8 @@ map<uint256, set<uint256> > mapOrphanTransactionsByPrev;
 map<uint256, int64_t> mapRejectedBlocks;
 map<uint256, int64_t> mapZerocoinspends; //txid, time received
 
+/***/
+CLightWorker lightWorker;
 
 void EraseOrphansFor(NodeId peer);
 
@@ -197,7 +201,84 @@ struct CBlockReject {
     uint256 hashBlock;
 };
 
-/**
+
+class CNodeBlocks
+{
+public:
+    CNodeBlocks():
+            maxSize(0),
+            maxAvg(0)
+    {
+        maxSize = GetArg("-blockspamfiltermaxsize", DEFAULT_BLOCK_SPAM_FILTER_MAX_SIZE);
+        maxAvg = GetArg("-blockspamfiltermaxavg", DEFAULT_BLOCK_SPAM_FILTER_MAX_AVG);
+    }
+
+    bool onBlockReceived(int nHeight) {
+        if(nHeight > 0 && maxSize && maxAvg) {
+            addPoint(nHeight);
+            return true;
+        }
+        return false;
+    }
+
+    bool updateState(CValidationState& state, bool ret)
+    {
+        // No Blocks
+        size_t size = points.size();
+        if(size == 0)
+            return ret;
+
+        // Compute the number of the received blocks
+        size_t nBlocks = 0;
+        for(auto point : points)
+        {
+            nBlocks += point.second;
+        }
+
+        // Compute the average value per height
+        double nAvgValue = (double)nBlocks / size;
+
+        // Ban the node if try to spam
+        bool banNode = (nAvgValue >= 1.5 * maxAvg && size >= maxAvg) ||
+                       (nAvgValue >= maxAvg && nBlocks >= maxSize) ||
+                       (nBlocks >= maxSize * 3);
+        if(banNode)
+        {
+            // Clear the points and ban the node
+            points.clear();
+            return state.DoS(100, error("block-spam ban node for sending spam"));
+        }
+
+        return ret;
+    }
+
+private:
+    void addPoint(int height)
+    {
+        // Remove the last element in the list
+        if(points.size() == maxSize)
+        {
+            points.erase(points.begin());
+        }
+
+        // Add the point to the list
+        int occurrence = 0;
+        auto mi = points.find(height);
+        if (mi != points.end())
+            occurrence = (*mi).second;
+        occurrence++;
+        points[height] = occurrence;
+    }
+
+private:
+    std::map<int,int> points;
+    size_t maxSize;
+    size_t maxAvg;
+};
+
+
+
+ /**
  * Maintain validation-specific state about nodes, protected by cs_main, instead
  * by CNode's own locks. This simplifies asynchronous operation, where
  * processing of incoming data is done after the ProcessMessage call returns,
@@ -230,6 +311,8 @@ struct CNodeState {
     int nBlocksInFlight;
     //! Whether we consider this a preferred download peer.
     bool fPreferredDownload;
+
+    CNodeBlocks nodeBlocks;
 
     CNodeState()
     {
@@ -1025,15 +1108,12 @@ bool CheckTransaction(const CTransaction& tx, CValidationState& state)
     CAmount nValueOut = 0;
     int nZCSpendCount = 0;
     BOOST_FOREACH (const CTxOut& txout, tx.vout) {
-LogPrintf("CheckTransaction() %d\n", txout.nValue);
-
         if (txout.IsEmpty() && !tx.IsCoinBase() && !tx.IsCoinStake())
             return state.DoS(100, error("CheckTransaction(): txout empty for user transaction"));
 
-        if (txout.nValue < 0){
+        if (txout.nValue < 0)
             return state.DoS(100, error("CheckTransaction() : txout.nValue negative"),
                 REJECT_INVALID, "bad-txns-vout-negative");
-}
         if (txout.nValue > Params().MaxMoneyOut())
             return state.DoS(100, error("CheckTransaction() : txout.nValue too high"),
                 REJECT_INVALID, "bad-txns-vout-toolarge");
@@ -1368,6 +1448,9 @@ bool AcceptToMemoryPool(CTxMemPool& pool, CValidationState& state, const CTransa
                 hash.ToString(),
                 nFees, ::minRelayTxFee.GetFee(nSize) * 10000);
 
+
+        bool fCLTVHasMajority = CBlockIndex::IsSuperMajority(5, chainActive.Tip(), Params().EnforceBlockUpgradeMajority());
+
         // Check against previous transactions
         // This is done last to help prevent CPU exhaustion denial-of-service attacks.
         if (!CheckInputs(tx, state, view, true, STANDARD_SCRIPT_VERIFY_FLAGS, true)) {
@@ -1562,6 +1645,8 @@ bool AcceptableInputs(CTxMemPool& pool, CValidationState& state, const CTransact
                 hash.ToString(),
                 nFees, ::minRelayTxFee.GetFee(nSize) * 10000);
 
+        bool fCLTVHasMajority = CBlockIndex::IsSuperMajority(5, chainActive.Tip(), Params().EnforceBlockUpgradeMajority());
+
         // Check against previous transactions
         // This is done last to help prevent CPU exhaustion denial-of-service attacks.
         if (!CheckInputs(tx, state, view, false, STANDARD_SCRIPT_VERIFY_FLAGS, true)) {
@@ -1730,15 +1815,17 @@ int64_t GetBlockValue(int nHeight)
     
     if (nHeight == 0) {
         nSubsidy = 4266666 * COIN;
-    } else if (nHeight < 278 && nHeight >= 0) {
-        nSubsidy = 5 * COIN;
-    } else if (nHeight < 18080 && nHeight >= 278) {
-        nSubsidy = 0.12 * COIN;
-    } else if (nHeight < 26720 && nHeight >= 18080) {
+    } else if (nHeight < 20 && nHeight >= 0) {
+        nSubsidy = 5000 * COIN;
+	} else if (nHeight < 500 && nHeight >= 20) {
+        nSubsidy = 100 * COIN;
+    } else if (nHeight < 15000 && nHeight >= 500) {
+        nSubsidy = 10 * COIN;
+    } else if (nHeight < 40000 && nHeight >= 15000) {
         nSubsidy = 0.235 * COIN;
-    } else if (nHeight < 42560 && nHeight >= 26720) {
+    } else if (nHeight < 60000 && nHeight >= 40000) {
         nSubsidy = 0.35 * COIN;
-    } else if (nHeight < 75360 && nHeight >= 42560) {
+    } else if (nHeight < 75360 && nHeight >= 60000) {
         nSubsidy = 0.59 * COIN;
     } else if (nHeight < 145790 && nHeight >= 75360) {
         nSubsidy = 4.75 * COIN;
@@ -1786,15 +1873,20 @@ int64_t GetBlockValue(int nHeight)
         nSubsidy = 0.66 * COIN;
     } else {
         nSubsidy = 0.5 * COIN;
-    }
+}
     return nSubsidy;
 }
 
-int64_t GetMasternodePayment(int nHeight, unsigned mnlevel, int64_t blockValue, int nMasternodeCount, bool isZHotxStake)
+int64_t GetMasternodePayment(int nHeight, int64_t blockValue, int nMasternodeCount, bool iszHotxStake)
 {
-    if (nHeight <= 200)
-        return 1;
-    return blockValue * 0.85;
+    if(!iszHotxStake){
+        return blockValue * 0.85; 
+    } else {
+        int64_t nPayment = blockValue * 0.75;
+        nPayment += (COIN / 2);
+        nPayment -= (nPayment % COIN);
+        return nPayment;
+    } 
 }
 
 bool IsInitialBlockDownload()
@@ -2307,7 +2399,7 @@ void ThreadScriptCheck()
     scriptcheckqueue.Thread();
 }
 
-void RecalculateZHOTXMinted()
+void RecalculatezHOTXMinted()
 {
     CBlockIndex* pindex = chainActive.Genesis();
     int nHeightEnd = chainActive.Height();
@@ -2334,7 +2426,7 @@ void RecalculateZHOTXMinted()
     }
 }
 
-void RecalculateZHOTXSpent()
+void RecalculatezHOTXSpent()
 {
     CBlockIndex* pindex = chainActive.Genesis();
     while (true) {
@@ -2481,7 +2573,7 @@ bool ReindexAccumulators(list<uint256>& listMissingCheckpoints, string& strError
     return true;
 }
 
-bool UpdateZHOTXSupply(const CBlock& block, CBlockIndex* pindex)
+bool UpdatezHOTXSupply(const CBlock& block, CBlockIndex* pindex)
 {
     std::list<CZerocoinMint> listMints;
     //bool fFilterInvalid = pindex->nHeight >= Params().Zerocoin_Block_RecalculateAccumulators();
@@ -2580,6 +2672,12 @@ bool ConnectBlock(
             REJECT_INVALID, "PoW-ended");
 
     bool fScriptChecks = pindex->nHeight >= Checkpoints::GetTotalBlocksEstimate();
+
+    // If scripts won't be checked anyways, don't bother seeing if CLTV is activated
+    bool fCLTVHasMajority = false;
+    if (fScriptChecks && pindex->pprev) {
+        fCLTVHasMajority = CBlockIndex::IsSuperMajority(5, pindex->pprev, Params().EnforceBlockUpgradeMajority());
+    }
 
     // Do not allow blocks that contain transactions which 'overwrite' older transactions,
     // unless those are already completely spent.
@@ -2727,7 +2825,7 @@ bool ConnectBlock(
     }
 
     //Track zHOTX money supply in the block index
-    if (!UpdateZHOTXSupply(block, pindex))
+    if (!UpdatezHOTXSupply(block, pindex))
         return state.DoS(100, error("%s: Failed to calculate new zHOTX supply for block=%s height=%d", __func__, block.GetHash().GetHex(), pindex->nHeight), REJECT_INVALID);
 
     // track money supply and mint amount info
@@ -3510,7 +3608,7 @@ CBlockIndex* AddToBlockIndex(const CBlock& block)
         pindexNew->SetStakeModifier(nStakeModifier, fGeneratedStakeModifier);
         pindexNew->nStakeModifierChecksum = GetStakeModifierChecksum(pindexNew);
         if (!CheckStakeModifierCheckpoints(pindexNew->nHeight, pindexNew->nStakeModifierChecksum))
-            LogPrintf("AddToBlockIndex() : Rejected by stake modifier checkpoint height=%d, modifier=%s \n", pindexNew->nHeight, boost::lexical_cast<std::string>(nStakeModifier));
+            LogPrintf("AddToBlockIndex() : Rejected by stake modifier checkpoint height=%d, modifier=%s \n", pindexNew->nHeight, std::to_string(nStakeModifier));
     }
     pindexNew->nChainWork = (pindexNew->pprev ? pindexNew->pprev->nChainWork : 0) + GetBlockProof(*pindexNew);
     pindexNew->RaiseValidity(BLOCK_VALID_TREE);
@@ -4008,7 +4106,7 @@ bool ContextualCheckZerocoinStake(int nHeight, CStakeInput* stake)
     // if (nHeight < Params().Zerocoin_StartHeight())
     //     return error("%s: zHOTX stake block is less than allowed start height", __func__);
 
-    if (CZHotxStake* zHOTX = dynamic_cast<CZHotxStake*>(stake)) {
+    if (CzHotxStake* zHOTX = dynamic_cast<CzHotxStake*>(stake)) {
         CBlockIndex* pindexFrom = zHOTX->GetIndexFrom();
         if (!pindexFrom)
             return error("%s: failed to get index associated with zHOTX stake checksum", __func__);
@@ -4060,7 +4158,9 @@ bool AcceptBlock(CBlock& block, CValidationState& state, CBlockIndex** ppindex, 
     if (block.GetHash() != Params().HashGenesisBlock() && !CheckWork(block, pindexPrev))
         return false;
 
+    bool isPoS = false;
     if (block.IsProofOfStake()) {
+        isPoS = true;
         uint256 hashProofOfStake = 0;
         unique_ptr<CStakeInput> stake;
 
@@ -4070,7 +4170,7 @@ bool AcceptBlock(CBlock& block, CValidationState& state, CBlockIndex** ppindex, 
         if (!stake)
             return error("%s: null stake ptr", __func__);
 
-        if (stake->IsZHOTX() && !ContextualCheckZerocoinStake(pindexPrev->nHeight, stake.get()))
+        if (stake->IszHOTX() && !ContextualCheckZerocoinStake(pindexPrev->nHeight, stake.get()))
             return state.DoS(100, error("%s: staked zHOTX fails context checks", __func__));
 
         uint256 hash = block.GetHash();
@@ -4096,6 +4196,44 @@ bool AcceptBlock(CBlock& block, CValidationState& state, CBlockIndex** ppindex, 
     }
 
     int nHeight = pindex->nHeight;
+
+
+    if (isPoS) {
+        LOCK(cs_main);
+
+        // Check whether is a fork or not
+        if (pindexPrev != nullptr && !chainActive.Contains(pindexPrev)) {
+
+            // Start at the block we're adding on to
+            CBlockIndex *prev = pindexPrev;
+            CTransaction &stakeTxIn = block.vtx[1];
+            CBlock bl;
+            // Go backwards on the forked chain up to the split
+            do {
+                if(!ReadBlockFromDisk(bl, prev))
+                    // Previous block not on disk
+                    return error("%s: previous block %s not on disk", __func__, prev->GetBlockHash().GetHex());
+
+
+                // Loop through every input from said block
+                for (CTransaction t : bl.vtx) {
+                    for (CTxIn in: t.vin) {
+                        // Loop through every input of the staking tx
+                        for (CTxIn stakeIn : stakeTxIn.vin) {
+                            // if it's already spent
+                            if (stakeIn.prevout == in.prevout) {
+                                // reject the block
+                                return state.DoS(100,
+                                                 error("%s: input already spent on a previous block", __func__));
+                            }
+                        }
+                    }
+                }
+                prev = prev->pprev;
+
+            } while (!chainActive.Contains(prev));
+        }
+    }
 
     // Write block to history file
     try {
@@ -4227,9 +4365,26 @@ bool ProcessNewBlock(CValidationState& state, CNode* pfrom, CBlock* pblock, CDis
         if (pindex && pfrom) {
             mapBlockSource[pindex->GetBlockHash()] = pfrom->GetId();
         }
-        CheckBlockIndex();
-        if (!ret)
+        CheckBlockIndex ();
+        if (!ret) {
+            // Check spamming
+            if(GetBoolArg("-blockspamfilter", DEFAULT_BLOCK_SPAM_FILTER)) {
+                CNodeState *nodestate = State(pfrom->GetId());
+                nodestate->nodeBlocks.onBlockReceived(pindex->nHeight);
+                bool nodeStatus = true;
+                // UpdateState will return false if the node is attacking us or update the score and return true.
+                nodeStatus = nodestate->nodeBlocks.updateState(state, nodeStatus);
+                int nDoS = 0;
+                if (state.IsInvalid(nDoS)) {
+                    if (nDoS > 0)
+                        Misbehaving(pfrom->GetId(), nDoS);
+                    nodeStatus = false;
+                }
+                if(!nodeStatus)
+                    return error("%s : AcceptBlock FAILED - block spam protection", __func__);
+            }
             return error("%s : AcceptBlock FAILED", __func__);
+        }
     }
 
     if (!ActivateBestChain(state, pblock, checked))
@@ -4274,22 +4429,14 @@ bool TestBlockValidity(CValidationState& state, const CBlock& block, CBlockIndex
     indexDummy.nHeight = pindexPrev->nHeight + 1;
 
     // NOTE: CheckBlockHeader is called by CheckBlock
-    if (!ContextualCheckBlockHeader(block, state, pindexPrev)) {
-        LogPrint("Error: ContextualCheckBlockHeader %s - %s", block.GetHash().GetHex().c_str(), __func__);
+    if (!ContextualCheckBlockHeader(block, state, pindexPrev))
         return false;
-    }
-    if (!CheckBlock(block, state, fCheckPOW, fCheckMerkleRoot)) {
-        LogPrint("Error: CheckBlock %s - %s", block.GetHash().GetHex().c_str(), __func__);
+    if (!CheckBlock(block, state, fCheckPOW, fCheckMerkleRoot))
         return false;
-    }
-    if (!ContextualCheckBlock(block, state, pindexPrev)) {
-        LogPrint("Error: ContextualCheckBlock %s - %s", block.GetHash().GetHex().c_str(), __func__);
+    if (!ContextualCheckBlock(block, state, pindexPrev))
         return false;
-    }
-    if (!ConnectBlock(block, state, &indexDummy, viewNew, true)) {
-        LogPrint("Error: ConnectBlock %s - %s", block.GetHash().GetHex().c_str(), __func__);
+    if (!ConnectBlock(block, state, &indexDummy, viewNew, true))
         return false;
-    }
     assert(state.IsValid());
 
     return true;
@@ -4943,6 +5090,7 @@ bool static AlreadyHave(const CInv& inv)
     }
     case MSG_DSTX:
         return mapObfuscationBroadcastTxes.count(inv.hash);
+    case MSG_PUBCOINS:
     case MSG_BLOCK:
         return mapBlockIndex.count(inv.hash);
     case MSG_TXLOCK_REQUEST:
@@ -5093,6 +5241,49 @@ void static ProcessGetData(CNode* pfrom)
                         pushed = true;
                     }
                 }
+
+                if(nLocalServices & NODE_BLOOM_LIGHT_ZC) {
+                    if (!pushed && inv.type == MSG_PUBCOINS) {
+                        //std::cout << "asking for pubcoins, requested block hash: " << inv.hash.GetHex() << std::endl;
+
+                        bool send = false;
+                        BlockMap::iterator mi = mapBlockIndex.find(inv.hash);
+                        if (mi != mapBlockIndex.end()) {
+                            if (chainActive.Contains(mi->second)) {
+                                send = true;
+                            } else {
+                                // To prevent fingerprinting attacks, only send blocks outside of the active
+                                // chain if they are valid, and no more than a max reorg depth than the best header
+                                // chain we know about.
+                                send = mi->second->IsValid(BLOCK_VALID_SCRIPTS) && (pindexBestHeader != NULL) &&
+                                       (chainActive.Height() - mi->second->nHeight < Params().MaxReorganizationDepth());
+                                if (!send) {
+                                    LogPrintf(
+                                            "ProcessGetData(): ignoring request from peer=%i for old block that isn't in the main chain\n",
+                                            pfrom->GetId());
+                                }
+                            }
+                        }
+                        // Don't send not-validated blocks
+                        if (send && (mi->second->nStatus & BLOCK_HAVE_DATA)) {
+                            try {
+                                list<libzerocoin::PublicCoin> pubcoins = GetPubcoinFromBlock((*mi).second);
+                                CDataStream ss(SER_NETWORK, PROTOCOL_VERSION);
+                                ss.reserve(2000);
+                                ss << inv.hash.Get32();
+                                ss << pubcoins.size();
+                                for (const libzerocoin::PublicCoin &pubcoin : pubcoins) {
+                                    ss << pubcoin.getValue();
+                                }
+                                pfrom->PushMessage("pubcoins", ss);
+                                pushed = true;
+                            } catch (std::exception &e) {
+                                PrintExceptionContinue(&e, "ProcessMessages()");
+                            }
+                        }
+                    }
+                }
+
                 if (!pushed && inv.type == MSG_TXLOCK_VOTE) {
                     if (mapTxLockVote.count(inv.hash)) {
                         CDataStream ss(SER_NETWORK, PROTOCOL_VERSION);
@@ -5272,7 +5463,7 @@ bool static ProcessMessage(CNode* pfrom, string strCommand, CDataStream& vRecv, 
         if (!vRecv.empty())
             vRecv >> addrFrom >> nNonce;
         if (!vRecv.empty()) {
-            vRecv >> LIMITED_STRING(pfrom->strSubVer, 256);
+            vRecv >> LIMITED_STRING(pfrom->strSubVer, MAX_SUBVERSION_LENGTH);
             pfrom->cleanSubVer = SanitizeString(pfrom->strSubVer);
         }
         if (!vRecv.empty())
@@ -5604,7 +5795,7 @@ bool static ProcessMessage(CNode* pfrom, string strCommand, CDataStream& vRecv, 
                     return true;
                 }
 
-                std::string strMessage = tx.GetHash().ToString() + boost::lexical_cast<std::string>(sigTime);
+                std::string strMessage = tx.GetHash().ToString() + std::to_string(sigTime);
 
                 std::string errorMessage = "";
                 if (!obfuScationSigner.VerifyMessage(pmn->pubKeyMasternode, vchSig, strMessage, errorMessage)) {
@@ -5839,6 +6030,59 @@ bool static ProcessMessage(CNode* pfrom, string strCommand, CDataStream& vRecv, 
         }
     }
 
+    else if (strCommand == "accvalue"){
+        if(nLocalServices & NODE_BLOOM_LIGHT_ZC) {
+            try {
+                int height;
+                libzerocoin::CoinDenomination den;
+                vRecv >> height;
+                vRecv >> den;
+                CBigNum bnAccValue = 0;
+                //std::cout << "asking for checkpoint value in height: " << height << ", den: " << den << std::endl;
+                if (!GetAccumulatorValue(height, den, bnAccValue)) {
+                    LogPrint("zhotx", "peer misbehaving for request an invalid acc checkpoint \n", __func__);
+                    Misbehaving(pfrom->GetId(), 50);
+                } else {
+                    //std::cout << "Sending acc value, with checksum: " << GetChecksum(bnAccValue) << " for "
+                    //          << bnAccValue.GetDec() << std::endl;
+                    CDataStream ss(SER_NETWORK, PROTOCOL_VERSION);
+                    ss << bnAccValue;
+                    ss << height;
+                    pfrom->PushMessage("accvalueresponse", ss);
+                }
+            } catch (std::exception &e) {
+                // TODO: Response with an error?
+                PrintExceptionContinue(&e, "ProcessMessages()");
+            }
+        }
+    }
+
+    else if (strCommand == "genwit") {
+        if(nLocalServices & NODE_BLOOM_LIGHT_ZC) {
+            try {
+                CGenWit gen;
+                vRecv >> gen;
+                gen.setPfrom(pfrom);
+                if (gen.isValid(chainActive.Height())) {
+                    if (!lightWorker.addWitWork(gen)) {
+                        LogPrint("zhotx", "%s : add genwit request failed \n", __func__);
+                        CDataStream ss(SER_NETWORK, PROTOCOL_VERSION);
+                        // Invalid request only returns the message without a result.
+                        ss << gen.getRequestNum();
+                        pfrom->PushMessage("pubcoins", ss);
+                    }
+                } else {
+                    CDataStream ss(SER_NETWORK, PROTOCOL_VERSION);
+                    // Invalid request only returns the message without a result.
+                    ss << gen.getRequestNum();
+                    pfrom->PushMessage("pubcoins", ss);
+                }
+            } catch (std::exception &e) {
+                // TODO: Response with an error?
+                PrintExceptionContinue(&e, "ProcessMessages()");
+            }
+        }
+    }
 
     // This asymmetric behavior for inbound and outbound connections was introduced
     // to prevent a fingerprinting attack: an attacker can send specific fake addresses

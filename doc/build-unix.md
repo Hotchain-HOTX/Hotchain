@@ -52,7 +52,7 @@ System requirements
 --------------------
 
 C++ compilers are memory-hungry. It is recommended to have at least 1 GB of
-memory available when compiling Hotchain Wallet. With 512MB of memory or less
+memory available when compiling Hotchain. With 512MB of memory or less
 compilation will take much longer due to swap thrashing.
 
 Dependency Build Instructions: Ubuntu & Debian
@@ -85,7 +85,7 @@ Optional:
 Dependencies for the GUI: Ubuntu & Debian
 -----------------------------------------
 
-If you want to build hotchain-Qt, make sure that the required packages for Qt development
+If you want to build HOTCHAIN-Qt, make sure that the required packages for Qt development
 are installed. Qt 5 is necessary to build the GUI.
 If both Qt 4 and Qt 5 are installed, Qt 5 will be used.
 To build without GUI pass `--without-gui`.
@@ -150,7 +150,7 @@ cd db-4.8.30.NC/build_unix/
 ../dist/configure --enable-cxx --disable-shared --with-pic --prefix=$BDB_PREFIX
 make install
 
-# Configure Hotchain Wallet to use our own-built instance of BDB
+# Configure Hotchain to use our own-built instance of BDB
 cd $HOTCHAIN_ROOT
 ./configure (other args...) LDFLAGS="-L${BDB_PREFIX}/lib/" CPPFLAGS="-I${BDB_PREFIX}/include/"
 ```
@@ -190,7 +190,7 @@ Hardening enables the following features:
     On an Amd64 processor where a library was not compiled with -fPIC, this will cause an error
     such as: "relocation R_X86_64_32 against `......' can not be used when making a shared object;"
 
-    To test that you have built HOTX executable, install scanelf, part of paxutils, and use:
+    To test that you have built PIE executable, install scanelf, part of paxutils, and use:
 
     	scanelf -e ./hotchaind
 

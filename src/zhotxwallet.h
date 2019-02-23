@@ -1,10 +1,10 @@
 // Copyright (c) 2017-2018 The PIVX Developers
-// Copyright (c) 2018 Cryptopie 
+// Copyright (c) 2018 The Hotchain Developers 
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef HOTCHAIN_ZHOTXWALLET_H
-#define HOTCHAIN_ZHOTXWALLET_H
+#ifndef HOTCHAIN_zHOTXWALLET_H
+#define HOTCHAIN_zHOTXWALLET_H
 
 #include <map>
 #include "libzerocoin/Coin.h"
@@ -29,7 +29,7 @@ public:
     bool SetMasterSeed(const uint256& seedMaster, bool fResetCount = false);
     uint256 GetMasterSeed() { return seedMaster; }
     void SyncWithChain(bool fGenerateMintPool = true);
-    void GenerateDeterministicZHOTX(libzerocoin::CoinDenomination denom, libzerocoin::PrivateCoin& coin, CDeterministicMint& dMint, bool fGenerateOnly = false);
+    void GenerateDeterministiczHOTX(libzerocoin::CoinDenomination denom, libzerocoin::PrivateCoin& coin, CDeterministicMint& dMint, bool fGenerateOnly = false);
     void GenerateMint(const uint32_t& nCount, const libzerocoin::CoinDenomination denom, libzerocoin::PrivateCoin& coin, CDeterministicMint& dMint);
     void GetState(int& nCount, int& nLastGenerated);
     bool RegenerateMint(const CDeterministicMint& dMint, CZerocoinMint& mint);
@@ -40,10 +40,10 @@ public:
     bool IsInMintPool(const CBigNum& bnValue) { return mintPool.Has(bnValue); }
     void UpdateCount();
     void Lock();
-    void SeedToZHOTX(const uint512& seed, CBigNum& bnValue, CBigNum& bnSerial, CBigNum& bnRandomness, CKey& key);
+    void SeedTozHOTX(const uint512& seed, CBigNum& bnValue, CBigNum& bnSerial, CBigNum& bnRandomness, CKey& key);
 
 private:
     uint512 GetZerocoinSeed(uint32_t n);
 };
 
-#endif //HOTCHAIN_ZHOTXWALLET_H
+#endif //HOTCHAIN_zHOTXWALLET_H

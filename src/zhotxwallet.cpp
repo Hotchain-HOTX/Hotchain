@@ -1,5 +1,5 @@
 // Copyright (c) 2017-2018 The PIVX Developers
-// Copyright (c) 2018 Cryptopie 
+// Copyright (c) 2018 The Hotchain Developers 
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -25,12 +25,12 @@ CzHOTXWallet::CzHOTXWallet(std::string strWalletFile)
     //Check for old db version of storing zhotx seed
     if (fFirstRun) {
         uint256 seed;
-        if (walletdb.ReadZHOTXSeed_deprecated(seed)) {
+        if (walletdb.ReadzHOTXSeed_deprecated(seed)) {
             //Update to new format, erase old
             seedMaster = seed;
             hashSeed = Hash(seed.begin(), seed.end());
             if (pwalletMain->AddDeterministicSeed(seed)) {
-                if (walletdb.EraseZHOTXSeed_deprecated()) {
+                if (walletdb.ErasezHOTXSeed_deprecated()) {
                     LogPrintf("%s: Updated zHOTX seed databasing\n", __func__);
                     fFirstRun = false;
                 } else {
@@ -85,8 +85,8 @@ bool CzHOTXWallet::SetMasterSeed(const uint256& seedMaster, bool fResetCount)
     nCountLastUsed = 0;
 
     if (fResetCount)
-        walletdb.WriteZHOTXCount(nCountLastUsed);
-    else if (!walletdb.ReadZHOTXCount(nCountLastUsed))
+        walletdb.WritezHOTXCount(nCountLastUsed);
+    else if (!walletdb.ReadzHOTXCount(nCountLastUsed))
         nCountLastUsed = 0;
 
     mintPool.Reset();
@@ -147,7 +147,7 @@ void CzHOTXWallet::GenerateMintPool(uint32_t nCountStart, uint32_t nCountEnd)
         CBigNum bnSerial;
         CBigNum bnRandomness;
         CKey key;
-        SeedToZHOTX(seedZerocoin, bnValue, bnSerial, bnRandomness, key);
+        SeedTozHOTX(seedZerocoin, bnValue, bnSerial, bnRandomness, key);
 
         mintPool.Add(bnValue, i);
         CWalletDB(strWalletFile).WriteMintPoolPair(hashSeed, GetPubCoinHash(bnValue), i);
@@ -293,7 +293,7 @@ bool CzHOTXWallet::SetMintSeen(const CBigNum& bnValue, const int& nHeight, const
     CBigNum bnSerial;
     CBigNum bnRandomness;
     CKey key;
-    SeedToZHOTX(seedZerocoin, bnValueGen, bnSerial, bnRandomness, key);
+    SeedTozHOTX(seedZerocoin, bnValueGen, bnSerial, bnRandomness, key);
 
     //Sanity check
     if (bnValueGen != bnValue)
@@ -334,7 +334,7 @@ bool CzHOTXWallet::SetMintSeen(const CBigNum& bnValue, const int& nHeight, const
     if (nCountLastUsed < pMint.second) {
         CWalletDB walletdb(strWalletFile);
         nCountLastUsed = pMint.second;
-        walletdb.WriteZHOTXCount(nCountLastUsed);
+        walletdb.WritezHOTXCount(nCountLastUsed);
     }
 
     //remove from the pool
@@ -351,7 +351,7 @@ bool IsValidCoinValue(const CBigNum& bnValue)
     bnValue.isPrime();
 }
 
-void CzHOTXWallet::SeedToZHOTX(const uint512& seedZerocoin, CBigNum& bnValue, CBigNum& bnSerial, CBigNum& bnRandomness, CKey& key)
+void CzHOTXWallet::SeedTozHOTX(const uint512& seedZerocoin, CBigNum& bnValue, CBigNum& bnSerial, CBigNum& bnRandomness, CKey& key)
 {
     ZerocoinParams* params = Params().Zerocoin_Params();
 
@@ -412,10 +412,10 @@ void CzHOTXWallet::UpdateCount()
 {
     nCountLastUsed++;
     CWalletDB walletdb(strWalletFile);
-    walletdb.WriteZHOTXCount(nCountLastUsed);
+    walletdb.WritezHOTXCount(nCountLastUsed);
 }
 
-void CzHOTXWallet::GenerateDeterministicZHOTX(CoinDenomination denom, PrivateCoin& coin, CDeterministicMint& dMint, bool fGenerateOnly)
+void CzHOTXWallet::GenerateDeterministiczHOTX(CoinDenomination denom, PrivateCoin& coin, CDeterministicMint& dMint, bool fGenerateOnly)
 {
     GenerateMint(nCountLastUsed + 1, denom, coin, dMint);
     if (fGenerateOnly)
@@ -432,7 +432,7 @@ void CzHOTXWallet::GenerateMint(const uint32_t& nCount, const CoinDenomination d
     CBigNum bnSerial;
     CBigNum bnRandomness;
     CKey key;
-    SeedToZHOTX(seedZerocoin, bnValue, bnSerial, bnRandomness, key);
+    SeedTozHOTX(seedZerocoin, bnValue, bnSerial, bnRandomness, key);
     coin = PrivateCoin(Params().Zerocoin_Params(), denom, bnSerial, bnRandomness);
     coin.setPrivKey(key.GetPrivKey());
     coin.setVersion(PrivateCoin::CURRENT_VERSION);
