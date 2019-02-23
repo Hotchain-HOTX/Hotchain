@@ -1,4 +1,6 @@
 # Hotchain
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FHotchain-HOTX%2FHotchain.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2FHotchain-HOTX%2FHotchain?ref=badge_shield)
+
 
 Anonymous, lucrative and HOT! The Hotchain ecosystem is based on a privacy focused cryptocurrency and a secure adult entertainment platform. You can be a spectator, a performer or an investor. Join us and become an Hotchain Superstar!
 
@@ -58,3 +60,7 @@ MIT
    [PlOd]: <https://github.com/joemccann/dillinger/tree/master/plugins/onedrive/README.md>
    [PlMe]: <https://github.com/joemccann/dillinger/tree/master/plugins/medium/README.md>
    [PlGa]: <https://github.com/RahulHP/dillinger/blob/master/plugins/googleanalytics/README.md>
+
+
+## License
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FHotchain-HOTX%2FHotchain.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2FHotchain-HOTX%2FHotchain?ref=badge_large)
