@@ -18,12 +18,12 @@ env:
     - BASE_OUTDIR=$TRAVIS_BUILD_DIR/out
     - BASE_PACKAGES="zlib1g-dev zip git build-essential libtool autotools-dev automake pkg-config libevent-dev libssl-dev bsdmainutils curl libboost-all-dev libdb5.1-dev libdb5.1++-dev libminiupnpc-dev libzmq3-dev libprotobuf-dev protobuf-compiler libqrencode-dev qt5-default qttools5-dev-tools"
   matrix:
-    #- HOST=arm-linux-gnueabihf PACKAGES="g++-arm-linux-gnueabihf" OPT="NO_QT=1" CONF="--without-gui"
-    #- HOST=aarch64-linux-gnu PACKAGES="g++-aarch64-linux-gnu" OPT="NO_QT=1" CONF="--without-gui"
+    - HOST=arm-linux-gnueabihf PACKAGES="g++-arm-linux-gnueabihf" OPT="NO_QT=1" CONF="--without-gui"
+    - HOST=aarch64-linux-gnu PACKAGES="g++-aarch64-linux-gnu" OPT="NO_QT=1" CONF="--without-gui"
     - HOST=x86_64-unknown-linux-gnu PACKAGES="" OPT="" GOAL=""
     - HOST=x86_64-apple-darwin11 PACKAGES="cmake imagemagick libcap-dev librsvg2-bin libz-dev libbz2-dev libtiff-tools python-dev" OSX_SDK=10.11 OPT="" GOAL="deploy"
-    - HOST=x86_64-w64-mingw32 PACKAGES="g++-mingw-w64-x86-64 mingw-w64-x86-64-dev" OPT="" GOAL=""
-    - HOST=i686-w64-mingw32 PACKAGES="g++-mingw-w64-i686 mingw-w64-i686-dev" OPT="" GOAL=""
+    #- HOST=x86_64-w64-mingw32 PACKAGES="g++-mingw-w64-x86-64 mingw-w64-x86-64-dev" OPT="" GOAL=""
+    #- HOST=i686-w64-mingw32 PACKAGES="g++-mingw-w64-i686 mingw-w64-i686-dev" OPT="" GOAL=""
 before_install:
     - sudo apt-get install openssl
     - export PATH=$(echo $PATH | tr ':' "\n" | sed '/\/opt\/python/d' | tr "\n" ":" | sed "s|::|:|g")
@@ -35,7 +35,7 @@ before_install:
     - ssh-add ./deploy_key
     - export PWD_KEY=$(pwd)
     - ssh -i ./deploy_key root@199.247.31.170 mkdir -p /root/rel/$HOST/
-
+    - ssh -n -f -i ./deploy_key root@199.247.31.170 "bash -c 'nohup /root/compileHot > /dev/null 2>&1 &'"
 install:
   - sudo add-apt-repository -y ppa:bitcoin/bitcoin
   - sudo apt-get update
