@@ -1,6 +1,8 @@
 # Hotchain
-
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FHotchain-HOTX%2FHotchain.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2FHotchain-HOTX%2FHotchain?ref=badge_shield)
+[![HitCount](http://hits.dwyl.io/Hotchain-HOTX/Hotchain.svg)](http://hits.dwyl.io/Hotchain-HOTX/Hotchain)
 [![Build Status](https://travis-ci.org/Hotchain-HOTX/Hotchain.svg?branch=master)](https://travis-ci.org/Hotchain-HOTX/Hotchain)  [![GitHub version](https://badge.fury.io/gh/Hotchain-HOTX%2FHotchain.svg)](https://badge.fury.io/gh/Hotchain-HOTX%2FHotchain) [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/Hotchain-HOTX/Hotchain/issues) 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 
 
