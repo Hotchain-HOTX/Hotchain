@@ -2,7 +2,6 @@
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2018 The PIVX Developers 
-// Copyright (c) 2019 The Hotchain Developers 
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -39,7 +38,7 @@
 #include "util.h"
 #include "utilmoneystr.h"
 #include "validationinterface.h"
-#include "zhotxchain.h"
+#include "zhotxxchain.h"
 
 #ifdef ENABLE_WALLET
 #include "db.h"
@@ -420,7 +419,7 @@ std::string HelpMessage(HelpMessageMode mode)
     strUsage += HelpMessageOpt("-permitbaremultisig", strprintf(_("Relay non-P2SH multisig (default: %u)"), 1));
     strUsage += HelpMessageOpt("-peerbloomfilters", strprintf(_("Support filtering of blocks and transaction with bloom filters (default: %u)"), DEFAULT_PEERBLOOMFILTERS));
     strUsage += HelpMessageOpt("-peerbloomfilterszc", strprintf(_("Support the zerocoin light node protocol (default: %u)"), DEFAULT_PEERBLOOMFILTERS_ZC));
-    strUsage += HelpMessageOpt("-port=<port>", strprintf(_("Listen for connections on <port> (default: %u or testnet: %u)"), 51472, 51474));
+    strUsage += HelpMessageOpt("-port=<port>", strprintf(_("Listen for connections on <port> (default: %u or testnet: %u)"), 9050, 10500));
     strUsage += HelpMessageOpt("-proxy=<ip:port>", _("Connect through SOCKS5 proxy"));
     strUsage += HelpMessageOpt("-proxyrandomize", strprintf(_("Randomize credentials for every proxy connection. This enables Tor stream isolation (default: %u)"), 1));
     strUsage += HelpMessageOpt("-seednode=<ip>", _("Connect to a node to retrieve peer addresses, and disconnect"));
@@ -529,7 +528,7 @@ std::string HelpMessage(HelpMessageMode mode)
     strUsage += HelpMessageGroup(_("Staking options:"));
     strUsage += HelpMessageOpt("-staking=<n>", strprintf(_("Enable staking functionality (0-1, default: %u)"), 1));
     strUsage += HelpMessageOpt("-hotxstake=<n>", strprintf(_("Enable or disable staking functionality for HOTCHAIN inputs (0-1, default: %u)"), 1));
-    strUsage += HelpMessageOpt("-zhotxstake=<n>", strprintf(_("Enable or disable staking functionality for zHOTX inputs (0-1, default: %u)"), 1));
+    strUsage += HelpMessageOpt("-zhotxxstake=<n>", strprintf(_("Enable or disable staking functionality for zHOTX inputs (0-1, default: %u)"), 1));
     strUsage += HelpMessageOpt("-reservebalance=<amt>", _("Keep the specified amount available for spending at all times (default: 0)"));
     if (GetBoolArg("-help-debug", false)) {
         strUsage += HelpMessageOpt("-printstakemodifier", _("Display the stake modifier calculations in the debug.log file."));
@@ -542,7 +541,7 @@ std::string HelpMessage(HelpMessageMode mode)
     strUsage += HelpMessageOpt("-mnconf=<file>", strprintf(_("Specify masternode configuration file (default: %s)"), "masternode.conf"));
     strUsage += HelpMessageOpt("-mnconflock=<n>", strprintf(_("Lock masternodes from masternode configuration file (default: %u)"), 1));
     strUsage += HelpMessageOpt("-masternodeprivkey=<n>", _("Set the masternode private key"));
-    strUsage += HelpMessageOpt("-masternodeaddr=<n>", strprintf(_("Set external address:port to get to this masternode (example: %s)"), "128.127.106.235:9069"));
+    strUsage += HelpMessageOpt("-masternodeaddr=<n>", strprintf(_("Set external address:port to get to this masternode (example: %s)"), "128.127.106.235:9050"));
     strUsage += HelpMessageOpt("-budgetvotemode=<mode>", _("Change automatic finalized budget voting behavior. mode=auto: Vote for only exact finalized budget match to my generated budget. (string, default: auto)"));
 
     strUsage += HelpMessageGroup(_("Zerocoin options:"));
@@ -551,8 +550,8 @@ std::string HelpMessage(HelpMessageMode mode)
     strUsage += HelpMessageOpt("-enableautoconvertaddress=<n>", strprintf(_("Enable automatic Zerocoin minting from specific addresses (0-1, default: %u)"), DEFAULT_AUTOCONVERTADDRESS));
     strUsage += HelpMessageOpt("-zeromintpercentage=<n>", strprintf(_("Percentage of automatically minted Zerocoin  (1-100, default: %u)"), 10));
     strUsage += HelpMessageOpt("-preferredDenom=<n>", strprintf(_("Preferred Denomination for automatically minted Zerocoin  (1/5/10/50/100/500/1000/5000), 0 for no preference. default: %u)"), 0));
-    strUsage += HelpMessageOpt("-backupzhotx=<n>", strprintf(_("Enable automatic wallet backups triggered after each zHOTX minting (0-1, default: %u)"), 1));
-    strUsage += HelpMessageOpt("-zhotxbackuppath=<dir|file>", _("Specify custom backup path to add a copy of any automatic zHOTX backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen"));
+    strUsage += HelpMessageOpt("-backupzhotxx=<n>", strprintf(_("Enable automatic wallet backups triggered after each zHOTX minting (0-1, default: %u)"), 1));
+    strUsage += HelpMessageOpt("-zhotxxbackuppath=<dir|file>", _("Specify custom backup path to add a copy of any automatic zHOTX backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen"));
 #endif // ENABLE_WALLET
     strUsage += HelpMessageOpt("-reindexzerocoin=<n>", strprintf(_("Delete all zerocoin spends and mints that have been recorded to the blockchain database and reindex them (0-1, default: %u)"), 0));
 
@@ -582,7 +581,7 @@ std::string HelpMessage(HelpMessageMode mode)
     strUsage += HelpMessageOpt("-rpccookiefile=<loc>", _("Location of the auth cookie (default: data dir)"));
     strUsage += HelpMessageOpt("-rpcuser=<user>", _("Username for JSON-RPC connections"));
     strUsage += HelpMessageOpt("-rpcpassword=<pw>", _("Password for JSON-RPC connections"));
-    strUsage += HelpMessageOpt("-rpcport=<port>", strprintf(_("Listen for JSON-RPC connections on <port> (default: %u or testnet: %u)"), 6990, 16990));
+    strUsage += HelpMessageOpt("-rpcport=<port>", strprintf(_("Listen for JSON-RPC connections on <port> (default: %u or testnet: %u)"), 7050, 11000));
     strUsage += HelpMessageOpt("-rpcallowip=<ip>", _("Allow JSON-RPC connections from specified source. Valid for <ip> are a single IP (e.g. 1.2.3.4), a network/netmask (e.g. 1.2.3.4/255.255.255.0) or a network/CIDR (e.g. 1.2.3.4/24). This option can be specified multiple times"));
     strUsage += HelpMessageOpt("-rpcthreads=<n>", strprintf(_("Set the number of threads to service RPC calls (default: %d)"), DEFAULT_HTTP_THREADS));
     if (GetBoolArg("-help-debug", false)) {
@@ -605,7 +604,7 @@ std::string LicenseInfo()
            "\n" +
            FormatParagraph(strprintf(_("Copyright (C) 2015-%i The PIVX Core Developers"), COPYRIGHT_YEAR)) + "\n" +
            "\n" +
-           FormatParagraph(strprintf(_("Copyright (C) 2017-%i The Hotchain Developers"), COPYRIGHT_YEAR)) + "\n" +
+           FormatParagraph(strprintf(_("Copyright (C) 2017-%i The Hotchain Core Developers"), COPYRIGHT_YEAR)) + "\n" +
            "\n" +
            FormatParagraph(_("This is experimental software.")) + "\n" +
            "\n" +
@@ -1018,7 +1017,7 @@ bool AppInit2()
 
     // Sanity check
     if (!InitSanityCheck())
-        return InitError(_("Initialization sanity check failed. Hotchain is shutting down."));
+        return InitError(_("Initialization sanity check failed. Hotchain Core is shutting down."));
 
     std::string strDataDir = GetDataDir().string();
 #ifdef ENABLE_WALLET
@@ -1034,7 +1033,7 @@ bool AppInit2()
 
     // Wait maximum 10 seconds if an old wallet is still running. Avoids lockup during restart
     if (!lock.timed_lock(boost::get_system_time() + boost::posix_time::seconds(10)))
-        return InitError(strprintf(_("Cannot obtain a lock on data directory %s. Hotchain is probably already running."), strDataDir));
+        return InitError(strprintf(_("Cannot obtain a lock on data directory %s. Hotchain Core is probably already running."), strDataDir));
 
 #ifndef WIN32
     CreatePidFile(GetPidFile(), getpid());
@@ -1287,7 +1286,7 @@ bool AppInit2()
     SetLimited(NET_TOR);
     if (proxyArg != "" && proxyArg != "0") {
         CService proxyAddr;
-        if (!Lookup(proxyArg.c_str(), proxyAddr, 9069, fNameLookup)) {
+        if (!Lookup(proxyArg.c_str(), proxyAddr, 9050, fNameLookup)) {
             return InitError(strprintf(_("Lookup(): Invalid -proxy address or hostname: '%s'"), proxyArg));
         }
 
@@ -1311,7 +1310,7 @@ bool AppInit2()
             SetLimited(NET_TOR); // set onions as unreachable
         } else {
             CService onionProxy;
-            if (!Lookup(onionArg.c_str(), onionProxy, 9069, fNameLookup)) {
+            if (!Lookup(onionArg.c_str(), onionProxy, 9050, fNameLookup)) {
                 return InitError(strprintf(_("Invalid -onion address or hostname: '%s'"), onionArg));
             }
             proxyType addrOnion = proxyType(onionProxy, proxyRandomize);
@@ -1621,9 +1620,9 @@ bool AppInit2()
                              " or address book entries might be missing or incorrect."));
                 InitWarning(msg);
             } else if (nLoadWalletRet == DB_TOO_NEW)
-                strErrors << _("Error loading wallet.dat: Wallet requires newer version of Hotchain") << "\n";
+                strErrors << _("Error loading wallet.dat: Wallet requires newer version of Hotchain Core") << "\n";
             else if (nLoadWalletRet == DB_NEED_REWRITE) {
-                strErrors << _("Wallet needed to be rewritten: restart Hotchain to complete") << "\n";
+                strErrors << _("Wallet needed to be rewritten: restart Hotchain Core to complete") << "\n";
                 LogPrintf("%s", strErrors.str());
                 return InitError(strErrors.str());
             } else
@@ -1712,11 +1711,11 @@ bool AppInit2()
 
         pwalletMain->InitAutoConvertAddresses();
 
-        bool fEnablezHotxBackups = GetBoolArg("-backupzhotx", true);
+        bool fEnablezHotxBackups = GetBoolArg("-backupzhotxx", true);
         pwalletMain->setzHotxAutoBackups(fEnablezHotxBackups);
 
         //Load zerocoin mint hashes to memory
-        pwalletMain->zhotxTracker->Init();
+        pwalletMain->zhotxxTracker->Init();
         zwalletMain->LoadMintPoolFromDB();
         zwalletMain->SyncWithChain();
     }  // (!fDisableWallet)

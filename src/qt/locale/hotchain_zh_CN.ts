@@ -569,8 +569,8 @@
         <translation>标签工具栏</translation>
     </message>
     <message>
-        <source>Hotchain</source>
-        <translation>Hotchain</translation>
+        <source>Hotchain Core</source>
+        <translation>Hotchain Core</translation>
     </message>
     <message>
         <source>Send coins to a HOTCHAIN address</source>
@@ -593,11 +593,11 @@
         <translation>浏览主节点</translation>
     </message>
     <message>
-        <source>&amp;About Hotchain</source>
-        <translation>&amp;A关于Hotchain</translation>
+        <source>&amp;About Hotchain Core</source>
+        <translation>&amp;A关于HOTCHAIN Core</translation>
     </message>
     <message>
-        <source>Show information about Hotchain</source>
+        <source>Show information about Hotchain Core</source>
         <translation>显示HOTCHAIN  Core的相关信息</translation>
     </message>
     <message>
@@ -653,12 +653,12 @@
         <translation>区块浏览窗口</translation>
     </message>
     <message>
-        <source>Show the Hotchain help message to get a list with possible HOTCHAIN command-line options</source>
-        <translation>显示Hotchain帮助信息并获取HOTCHAIN命令行选项列表</translation>
+        <source>Show the Hotchain Core help message to get a list with possible HOTCHAIN command-line options</source>
+        <translation>显示HOTCHAIN Core帮助信息并获取HOTCHAIN命令行选项列表</translation>
     </message>
     <message>
-        <source>Hotchain client</source>
-        <translation>Hotchain 客户端</translation>
+        <source>Hotchain Core client</source>
+        <translation>Hotchain Core 客户端</translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -803,31 +803,31 @@ Address: %4
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>Hotchain</source>
-        <translation>Hotchain</translation>
+        <source>Hotchain Core</source>
+        <translation>Hotchain Core</translation>
     </message>
     <message>
-        <source>About Hotchain</source>
-        <translation>关于Hotchain</translation>
+        <source>About Hotchain Core</source>
+        <translation>关于HOTCHAIN Core</translation>
     </message>
     </context>
 <context>
     <name>Intro</name>
     <message>
-        <source>Welcome to Hotchain.</source>
-        <translation>欢迎使用 Hotchain</translation>
+        <source>Welcome to Hotchain Core.</source>
+        <translation>欢迎使用 Hotchain Core</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where Hotchain will store its data.</source>
-        <translation>由于这是该程序第一次启动，您可以选择存储Hotchain 数据的位置。</translation>
+        <source>As this is the first time the program is launched, you can choose where Hotchain Core will store its data.</source>
+        <translation>由于这是该程序第一次启动，您可以选择存储HOTCHAIN Core 数据的位置。</translation>
     </message>
     <message>
-        <source>Hotchain will download and store a copy of the HOTCHAIN block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>Hotchain将下载并存储HOTCHAIN区块链副本。 至少 %1 GB的数据将存储在此目录中，并且会随着时间的推移而增长。 钱包也将存储在此目录中。</translation>
+        <source>Hotchain Core will download and store a copy of the HOTCHAIN block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>HOTCHAIN Core将下载并存储HOTCHAIN区块链副本。 至少 %1 GB的数据将存储在此目录中，并且会随着时间的推移而增长。 钱包也将存储在此目录中。</translation>
     </message>
     <message>
-        <source>Hotchain</source>
-        <translation>Hotchain</translation>
+        <source>Hotchain Core</source>
+        <translation>Hotchain Core</translation>
     </message>
     <message>
         <source>Error</source>
@@ -1453,8 +1453,8 @@ Address: %4
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Hotchain</source>
-        <translation>Hotchain</translation>
+        <source>Hotchain Core</source>
+        <translation>Hotchain Core</translation>
     </message>
     </context>
 <context>
@@ -1542,8 +1542,8 @@ Address: %4
         <translation>在收到相关警报时执行命令，或者看到一个很长的分叉（cmd中的%s被消息替换）</translation>
     </message>
     <message>
-        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong Hotchain will not work properly.</source>
-        <translation>注意：请检查您的电脑的日期和时间是否正确！ 如果您的时间设置不正确，Hotchain将无法正常工作。</translation>
+        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong Hotchain Core will not work properly.</source>
+        <translation>注意：请检查您的电脑的日期和时间是否正确！ 如果您的时间设置不正确，HOTCHAIN Core将无法正常工作。</translation>
     </message>
     <message>
         <source>Warning: wallet.dat corrupt, data salvaged! Original wallet.dat saved as wallet.{timestamp}.bak in %s; if your balance or transactions are incorrect you should restore from a backup.</source>

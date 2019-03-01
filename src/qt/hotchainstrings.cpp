@@ -32,7 +32,7 @@ QT_TRANSLATE_NOOP("hotchain-core", ""
 QT_TRANSLATE_NOOP("hotchain-core", ""
 "Calculated accumulator checkpoint is not what is recorded by block index"),
 QT_TRANSLATE_NOOP("hotchain-core", ""
-"Cannot obtain a lock on data directory %s. Hotchain is probably already "
+"Cannot obtain a lock on data directory %s. HOTCHAIN Core is probably already "
 "running."),
 QT_TRANSLATE_NOOP("hotchain-core", ""
 "Change automatic finalized budget voting behavior. mode=auto: Vote for only "
@@ -195,7 +195,7 @@ QT_TRANSLATE_NOOP("hotchain-core", ""
 "Total length of network version string (%i) exceeds maximum length (%i). "
 "Reduce the number or size of uacomments."),
 QT_TRANSLATE_NOOP("hotchain-core", ""
-"Unable to bind to %s on this computer. Hotchain is probably already running."),
+"Unable to bind to %s on this computer. HOTCHAIN Core is probably already running."),
 QT_TRANSLATE_NOOP("hotchain-core", ""
 "Unable to locate enough Obfuscation denominated funds for this transaction."),
 QT_TRANSLATE_NOOP("hotchain-core", ""
@@ -215,7 +215,7 @@ QT_TRANSLATE_NOOP("hotchain-core", ""
 "pay if you send a transaction."),
 QT_TRANSLATE_NOOP("hotchain-core", ""
 "Warning: Please check that your computer's date and time are correct! If "
-"your clock is wrong Hotchain will not work properly."),
+"your clock is wrong HOTCHAIN Core will not work properly."),
 QT_TRANSLATE_NOOP("hotchain-core", ""
 "Warning: The network does not appear to fully agree! Some miners appear to "
 "be experiencing issues."),
@@ -272,7 +272,7 @@ QT_TRANSLATE_NOOP("hotchain-core", "Connect to a node to retrieve peer addresses
 QT_TRANSLATE_NOOP("hotchain-core", "Connection options:"),
 QT_TRANSLATE_NOOP("hotchain-core", "Copyright (C) 2009-%i The Bitcoin Core Developers"),
 QT_TRANSLATE_NOOP("hotchain-core", "Copyright (C) 2014-%i The Dash Core Developers"),
-QT_TRANSLATE_NOOP("hotchain-core", "Copyright (C) 2015-%i The Hotchain Developers"),
+QT_TRANSLATE_NOOP("hotchain-core", "Copyright (C) 2015-%i The HOTCHAIN Core Developers"),
 QT_TRANSLATE_NOOP("hotchain-core", "Corrupted block database detected"),
 QT_TRANSLATE_NOOP("hotchain-core", "Could not parse masternode.conf"),
 QT_TRANSLATE_NOOP("hotchain-core", "Debugging/Testing options:"),
@@ -301,7 +301,7 @@ QT_TRANSLATE_NOOP("hotchain-core", "Error initializing wallet database environme
 QT_TRANSLATE_NOOP("hotchain-core", "Error loading block database"),
 QT_TRANSLATE_NOOP("hotchain-core", "Error loading wallet.dat"),
 QT_TRANSLATE_NOOP("hotchain-core", "Error loading wallet.dat: Wallet corrupted"),
-QT_TRANSLATE_NOOP("hotchain-core", "Error loading wallet.dat: Wallet requires newer version of Hotchain"),
+QT_TRANSLATE_NOOP("hotchain-core", "Error loading wallet.dat: Wallet requires newer version of HOTCHAIN Core"),
 QT_TRANSLATE_NOOP("hotchain-core", "Error opening block database"),
 QT_TRANSLATE_NOOP("hotchain-core", "Error reading from database, shutting down."),
 QT_TRANSLATE_NOOP("hotchain-core", "Error recovering public key."),
@@ -340,7 +340,7 @@ QT_TRANSLATE_NOOP("hotchain-core", "Incompatible mode."),
 QT_TRANSLATE_NOOP("hotchain-core", "Incompatible version."),
 QT_TRANSLATE_NOOP("hotchain-core", "Incorrect or no genesis block found. Wrong datadir for network?"),
 QT_TRANSLATE_NOOP("hotchain-core", "Information"),
-QT_TRANSLATE_NOOP("hotchain-core", "Initialization sanity check failed. Hotchain is shutting down."),
+QT_TRANSLATE_NOOP("hotchain-core", "Initialization sanity check failed. HOTCHAIN Core is shutting down."),
 QT_TRANSLATE_NOOP("hotchain-core", "Input is not valid."),
 QT_TRANSLATE_NOOP("hotchain-core", "Insufficient funds"),
 QT_TRANSLATE_NOOP("hotchain-core", "Insufficient funds."),
@@ -511,7 +511,7 @@ QT_TRANSLATE_NOOP("hotchain-core", "Verifying wallet..."),
 QT_TRANSLATE_NOOP("hotchain-core", "Version 1 zHOTX require a security level of 100 to successfully spend."),
 QT_TRANSLATE_NOOP("hotchain-core", "Wallet %s resides outside data directory %s"),
 QT_TRANSLATE_NOOP("hotchain-core", "Wallet is locked."),
-QT_TRANSLATE_NOOP("hotchain-core", "Wallet needed to be rewritten: restart Hotchain to complete"),
+QT_TRANSLATE_NOOP("hotchain-core", "Wallet needed to be rewritten: restart HOTCHAIN Core to complete"),
 QT_TRANSLATE_NOOP("hotchain-core", "Wallet options:"),
 QT_TRANSLATE_NOOP("hotchain-core", "Wallet window title"),
 QT_TRANSLATE_NOOP("hotchain-core", "Warning"),

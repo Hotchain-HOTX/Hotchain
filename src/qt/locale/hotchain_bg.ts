@@ -645,7 +645,7 @@
         <translation>Колан с инструменти</translation>
     </message>
     <message>
-        <source>Hotchain</source>
+        <source>Hotchain Core</source>
         <translation>HOTCHAIN Ядро</translation>
     </message>
     <message>
@@ -669,11 +669,11 @@
         <translation>Разгледай мастърноудове</translation>
     </message>
     <message>
-        <source>&amp;About Hotchain</source>
+        <source>&amp;About Hotchain Core</source>
         <translation>&amp;Относно HOTCHAIN Ядрото</translation>
     </message>
     <message>
-        <source>Show information about Hotchain</source>
+        <source>Show information about Hotchain Core</source>
         <translation>Информациза за HOTCHAIN Ядрото</translation>
     </message>
     <message>
@@ -729,11 +729,11 @@
         <translation>Прозорец на блок сондата</translation>
     </message>
     <message>
-        <source>Show the Hotchain help message to get a list with possible HOTCHAIN command-line options</source>
+        <source>Show the Hotchain Core help message to get a list with possible HOTCHAIN command-line options</source>
         <translation>Разкрийте Помощ за HOTCHAIN Ядрото, за да видите списък с възможни писмени команди.</translation>
     </message>
     <message>
-        <source>Hotchain client</source>
+        <source>Hotchain Core client</source>
         <translation>Клиент HOTCHAIN Ядро</translation>
     </message>
     <message numerus="yes">
@@ -1227,7 +1227,7 @@ Address: %4
         <translation>версия</translation>
     </message>
     <message>
-        <source>Hotchain</source>
+        <source>Hotchain Core</source>
         <translation>HOTCHAIN Ядро</translation>
     </message>
     <message>
@@ -1235,7 +1235,7 @@ Address: %4
         <translation>(%1-bit)</translation>
     </message>
     <message>
-        <source>About Hotchain</source>
+        <source>About Hotchain Core</source>
         <translation>Относно HOTCHAIN Ядрото</translation>
     </message>
     <message>
@@ -1282,15 +1282,15 @@ Address: %4
         <translation>Привет</translation>
     </message>
     <message>
-        <source>Welcome to Hotchain.</source>
+        <source>Welcome to Hotchain Core.</source>
         <translation>Добре Дошли в HOTCHAIN Ядрото</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where Hotchain will store its data.</source>
+        <source>As this is the first time the program is launched, you can choose where Hotchain Core will store its data.</source>
         <translation>Тъй като това е първия път, в който стартирате програмата, имате възможността да изберете къде HOTCHAIN Ядрото ще съхранява своите данни.</translation>
     </message>
     <message>
-        <source>Hotchain will download and store a copy of the HOTCHAIN block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <source>Hotchain Core will download and store a copy of the HOTCHAIN block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
         <translation>HOTCHAIN Ядрото ще изтегли и запише копие на целия HOTCHAIN блокчейн. Поне %1 гигабайта ще бъдат съхранявани в тази папка, като тенденцията е файла да расте. Портфейла също ще бъде запазен в тази папка.</translation>
     </message>
     <message>
@@ -1302,7 +1302,7 @@ Address: %4
         <translation>Задай своя папка за данни:</translation>
     </message>
     <message>
-        <source>Hotchain</source>
+        <source>Hotchain Core</source>
         <translation>HOTCHAIN Ядро</translation>
     </message>
     <message>
@@ -1988,8 +1988,8 @@ https://www.transifex.com/hotchain-project/hotchain-project-translations</transl
         <translation>&amp;Порт:</translation>
     </message>
     <message>
-        <source>Port of the proxy (e.g. 9069)</source>
-        <translation>Порт за проксито (например 9069)</translation>
+        <source>Port of the proxy (e.g. 9050)</source>
+        <translation>Порт за проксито (например 9050)</translation>
     </message>
     <message>
         <source>&amp;Window</source>
@@ -4067,7 +4067,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>Hotchain is shutting down...</source>
+        <source>Hotchain Core is shutting down...</source>
         <translation>Изключване на HOTCHAIN Ядрото...</translation>
     </message>
     <message>
@@ -4217,7 +4217,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Hotchain</source>
+        <source>Hotchain Core</source>
         <translation>HOTCHAIN Ядро</translation>
     </message>
     <message>
@@ -4233,8 +4233,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Dash Core разработчици</translation>
     </message>
     <message>
-        <source>The Hotchain developers</source>
-        <translation>Hotchain разработчици</translation>
+        <source>The Hotchain Core developers</source>
+        <translation>Hotchain Core разработчици</translation>
     </message>
     <message>
         <source>[testnet]</source>
@@ -4898,7 +4898,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Изчисления чекпойнт на акумулатора не е същия като записания в блок индекса.</translation>
     </message>
     <message>
-        <source>Cannot obtain a lock on data directory %s. Hotchain is probably already running.</source>
+        <source>Cannot obtain a lock on data directory %s. Hotchain Core is probably already running.</source>
         <translation>Не може да заключи папката с данни %s. HOTCHAIN Портфейла вероятно вече е стартиран.</translation>
     </message>
     <message>
@@ -5070,7 +5070,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Този продукт включва софтуер разработен от OpenSSL Project &lt;https://www.openssl.org/&gt; и крипто софтуер написан от Ерик Юнг и UPnP софтуер от Томас Бернард.</translation>
     </message>
     <message>
-        <source>Unable to bind to %s on this computer. Hotchain is probably already running.</source>
+        <source>Unable to bind to %s on this computer. Hotchain Core is probably already running.</source>
         <translation>Не може да се прикачи към %s на този компютър. HOTCHAIN Портфейла вероятно вече е стартиран.</translation>
     </message>
     <message>
@@ -5098,7 +5098,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Внимание: -paytxfee е зададена твърде голяма! Това е преводната такса, която ще платите ако изпратите този превод.</translation>
     </message>
     <message>
-        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong Hotchain will not work properly.</source>
+        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong Hotchain Core will not work properly.</source>
         <translation>Внимание: Проверете дали датата и часа на компютъра са верни! Ако Вашият часовник греши, HOTCHAIN Портфейла няма да работи правилно.</translation>
     </message>
     <message>
@@ -5130,8 +5130,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Трябва да зададете masternodeprivkey в конфигурационния файл. Консултирайте се с документацията за повече помощ.</translation>
     </message>
     <message>
-        <source>(9069 could be used only on mainnet)</source>
-        <translation>(9069 може да се ползва само в mainnet)</translation>
+        <source>(9050 could be used only on mainnet)</source>
+        <translation>(9050 може да се ползва само в mainnet)</translation>
     </message>
     <message>
         <source>(default: %s)</source>
@@ -5142,8 +5142,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>(по подразбиране: 1)</translation>
     </message>
     <message>
-        <source>(must be 9069 for mainnet)</source>
-        <translation>(трябва да е 9069 за mainnet)</translation>
+        <source>(must be 9050 for mainnet)</source>
+        <translation>(трябва да е 9050 за mainnet)</translation>
     </message>
     <message>
         <source>Accept command line and JSON-RPC commands</source>
@@ -5250,8 +5250,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Всички права запазени (c) 2014-%i Dash Core разработчици</translation>
     </message>
     <message>
-        <source>Copyright (C) 2015-%i The Hotchain Developers</source>
-        <translation>Всички права запазени (c) 2015-%i Hotchain разработчици</translation>
+        <source>Copyright (C) 2015-%i The Hotchain Core Developers</source>
+        <translation>Всички права запазени (c) 2015-%i Hotchain Core разработчици</translation>
     </message>
     <message>
         <source>Corrupted block database detected</source>
@@ -5338,7 +5338,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Грешка в зареждането на wallet.dat: Портфейла е повреден</translation>
     </message>
     <message>
-        <source>Error loading wallet.dat: Wallet requires newer version of Hotchain</source>
+        <source>Error loading wallet.dat: Wallet requires newer version of Hotchain Core</source>
         <translation>Грешка в зареждането на wallet.dat: Портфейла изисква по-нова версия</translation>
     </message>
     <message>
@@ -5454,7 +5454,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Информация</translation>
     </message>
     <message>
-        <source>Initialization sanity check failed. Hotchain is shutting down.</source>
+        <source>Initialization sanity check failed. Hotchain Core is shutting down.</source>
         <translation>Стартирането на проверка на здравословното състояние на портфейла се провали. Изключваме Портфейла.</translation>
     </message>
     <message>
@@ -6278,7 +6278,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Портфейла е заключен.</translation>
     </message>
     <message>
-        <source>Wallet needed to be rewritten: restart Hotchain to complete</source>
+        <source>Wallet needed to be rewritten: restart Hotchain Core to complete</source>
         <translation>Портфейла трябва да се пренапише: рестартирайте програмата за завършване на процеса</translation>
     </message>
     <message>

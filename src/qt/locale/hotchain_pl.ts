@@ -509,7 +509,7 @@
         <translation>&amp;Pomoc</translation>
     </message>
     <message>
-        <source>Hotchain</source>
+        <source>Hotchain Core</source>
         <translation>&amp;Rdzeń HOTCHAIN</translation>
     </message>
     <message>
@@ -529,11 +529,11 @@
         <translation>Przeglądaj masternodes</translation>
     </message>
     <message>
-        <source>&amp;About Hotchain</source>
+        <source>&amp;About Hotchain Core</source>
         <translation>&amp;O rdzeniu bitcoina</translation>
     </message>
     <message>
-        <source>Show information about Hotchain</source>
+        <source>Show information about Hotchain Core</source>
         <translation>Pokaż informacje o rdzeniu bitcoina</translation>
     </message>
     <message>
@@ -585,11 +585,11 @@
         <translation>Okno eksplorera bloków</translation>
     </message>
     <message>
-        <source>Show the Hotchain help message to get a list with possible HOTCHAIN command-line options</source>
+        <source>Show the Hotchain Core help message to get a list with possible HOTCHAIN command-line options</source>
         <translation>Pokaż wiadomość pomocy rdzenia HOTCHAIN, aby dostać listę możliwych opcji HOTCHAIN command-line</translation>
     </message>
     <message>
-        <source>Hotchain client</source>
+        <source>Hotchain Core client</source>
         <translation>Rdzeń HOTCHAIN klient</translation>
     </message>
     <message>
@@ -899,7 +899,7 @@ MultiWysyłlka: %1</translation>
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>Hotchain</source>
+        <source>Hotchain Core</source>
         <translation>&amp;Rdzeń HOTCHAIN</translation>
     </message>
     </context>
@@ -914,7 +914,7 @@ MultiWysyłlka: %1</translation>
         <translation>Użyj niestandardowej ścieżki danych</translation>
     </message>
     <message>
-        <source>Hotchain</source>
+        <source>Hotchain Core</source>
         <translation>&amp;Rdzeń HOTCHAIN</translation>
     </message>
     <message>
@@ -1240,8 +1240,8 @@ https://www.transifex.com/hotchain-project/hotchain-project-translations </trans
         <translation>&amp;Port</translation>
     </message>
     <message>
-        <source>Port of the proxy (e.g. 9069)</source>
-        <translation>Port proxy (np. 9069)</translation>
+        <source>Port of the proxy (e.g. 9050)</source>
+        <translation>Port proxy (np. 9050)</translation>
     </message>
     <message>
         <source>&amp;Window</source>
@@ -1929,7 +1929,7 @@ https://www.transifex.com/hotchain-project/hotchain-project-translations </trans
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Hotchain</source>
+        <source>Hotchain Core</source>
         <translation>&amp;Rdzeń HOTCHAIN</translation>
     </message>
     </context>

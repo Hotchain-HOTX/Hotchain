@@ -2,7 +2,6 @@
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2018 The PIVX Developers 
-// Copyright (c) 2019 The Hotchain Developers 
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -125,12 +124,12 @@ UniValue blockToJSON(const CBlock& block, const CBlockIndex* blockindex, bool tx
 
     result.push_back(Pair("moneysupply",ValueFromAmount(blockindex->nMoneySupply)));
 
-    UniValue zhotxObj(UniValue::VOBJ);
+    UniValue zhotxxObj(UniValue::VOBJ);
     for (auto denom : libzerocoin::zerocoinDenomList) {
-        zhotxObj.push_back(Pair(to_string(denom), ValueFromAmount(blockindex->mapZerocoinSupply.at(denom) * (denom*COIN))));
+        zhotxxObj.push_back(Pair(to_string(denom), ValueFromAmount(blockindex->mapZerocoinSupply.at(denom) * (denom*COIN))));
     }
-    zhotxObj.push_back(Pair("total", ValueFromAmount(blockindex->GetZerocoinSupply())));
-    result.push_back(Pair("zHOTXsupply", zhotxObj));
+    zhotxxObj.push_back(Pair("total", ValueFromAmount(blockindex->GetZerocoinSupply())));
+    result.push_back(Pair("zHOTXsupply", zhotxxObj));
 
     return result;
 }
@@ -1100,6 +1099,8 @@ UniValue getmintsinblocks(const UniValue& params, bool fHelp) {
     int nBestHeight = chainActive.Height();
 
     int heightStart = params[0].get_int();
+    if (heightStart < Params().Zerocoin_StartHeight())
+        heightStart = Params().Zerocoin_StartHeight();
 
     int range = params[1].get_int();
     if (range < 1)

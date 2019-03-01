@@ -1,7 +1,6 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
 // Copyright (c) 2009-2013 The Bitcoin developers
 // Copyright (c) 2016-2018 The PIVX Developers 
-// Copyright (c) 2019 The Hotchain Developers 
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -15,7 +14,7 @@
 #include "primitives/zerocoin.h"
 #include "libzerocoin/Accumulator.h"
 #include "libzerocoin/Denominations.h"
-#include "zhotxtracker.h"
+#include "zhotxxtracker.h"
 
 #include <list>
 #include <stdint.h>

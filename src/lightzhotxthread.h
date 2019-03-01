@@ -43,21 +43,21 @@ public:
 
     bool addWitWork(CGenWit wit) {
         if (!isWorkerRunning) {
-            LogPrintf("%s not running trying to add wit work \n", "pivx-light-thread");
+            LogPrintf("%s not running trying to add wit work \n", "hotchain-light-thread");
             return false;
         }
         requestsQueue.push(wit);
         return true;
     }
 
-    void StartLightZhotxThread(boost::thread_group& threadGroup) {
-        LogPrintf("%s thread start\n", "pivx-light-thread");
+    void StartLightZhotxThread(boost::thread_group& threadGroup){
+        LogPrintf("%s thread start\n", "hotchain-light-thread");
         threadIns = boost::thread(boost::bind(&CLightWorker::ThreadLightzHOTXSimplified, this));
     }
 
-    void StopLightZhotxThread() {
+    void StopLightZhotxThread(){
         threadIns.interrupt();
-        LogPrintf("%s thread interrupted\n", "pivx-light-thread");
+        LogPrintf("%s thread interrupted\n", "hotchain-light-thread");
     }
 
 private:

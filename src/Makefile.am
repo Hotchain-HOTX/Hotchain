@@ -74,7 +74,7 @@ if BUILD_BITCOIN_UTILS
 endif
 
 .PHONY: FORCE check-symbols check-security
-# Hotchain #
+# hotchain core #
 BITCOIN_CORE_H = \
   activemasternode.h \
   accumulators.h \
@@ -176,12 +176,12 @@ BITCOIN_CORE_H = \
   wallet.h \
   wallet_ismine.h \
   walletdb.h \
-  zhotxchain.h \
-  zhotxtracker.h \
-  zhotxwallet.h \
+  zhotxxchain.h \
+  zhotxxtracker.h \
+  zhotxxwallet.h \
   genwit.h \
   concurrentqueue.h \
-  lightzhotxthread.h \
+  lightzhotxxthread.h \
   zmq/zmqabstractnotifier.h \
   zmq/zmqconfig.h \
   zmq/zmqnotificationinterface.h \
@@ -229,7 +229,7 @@ libbitcoin_server_a_SOURCES = \
   txdb.cpp \
   txmempool.cpp \
   validationinterface.cpp \
-  zhotxchain.cpp \
+  zhotxxchain.cpp \
   $(BITCOIN_CORE_H)
 
 if ENABLE_ZMQ
@@ -269,11 +269,11 @@ libbitcoin_wallet_a_SOURCES = \
   wallet.cpp \
   wallet_ismine.cpp \
   walletdb.cpp \
-  zhotxwallet.cpp \
-  zhotxtracker.cpp \
+  zhotxxwallet.cpp \
+  zhotxxtracker.cpp \
   stakeinput.cpp \
   genwit.cpp \
-  lightzhotxthread.cpp \
+  lightzhotxxthread.cpp \
   $(BITCOIN_CORE_H)
 
 # crypto primitives library

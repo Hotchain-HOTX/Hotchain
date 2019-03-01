@@ -645,8 +645,8 @@
         <translation>Skirtukų įrankių juosta</translation>
     </message>
     <message>
-        <source>Hotchain</source>
-        <translation>Hotchain</translation>
+        <source>Hotchain Core</source>
+        <translation>Hotchain Core</translation>
     </message>
     <message>
         <source>Send coins to a HOTCHAIN address</source>
@@ -669,12 +669,12 @@
         <translation>Naršyti masternod'us</translation>
     </message>
     <message>
-        <source>&amp;About Hotchain</source>
-        <translation>&amp;Apie Hotchain</translation>
+        <source>&amp;About Hotchain Core</source>
+        <translation>&amp;Apie Hotchain Core</translation>
     </message>
     <message>
-        <source>Show information about Hotchain</source>
-        <translation>Rodyti informaciją apie Hotchain</translation>
+        <source>Show information about Hotchain Core</source>
+        <translation>Rodyti informaciją apie Hotchain Core</translation>
     </message>
     <message>
         <source>Modify configuration options for HOTCHAIN</source>
@@ -729,12 +729,12 @@
         <translation>Blokų naršyklės langas</translation>
     </message>
     <message>
-        <source>Show the Hotchain help message to get a list with possible HOTCHAIN command-line options</source>
-        <translation>Rodyti Hotchain žinyną, kad gautumėte sąrašą su galimomis HOTCHAIN komandinės eilutės parinktimis</translation>
+        <source>Show the Hotchain Core help message to get a list with possible HOTCHAIN command-line options</source>
+        <translation>Rodyti Hotchain Core žinyną, kad gautumėte sąrašą su galimomis HOTCHAIN komandinės eilutės parinktimis</translation>
     </message>
     <message>
-        <source>Hotchain client</source>
-        <translation>Hotchain piniginė</translation>
+        <source>Hotchain Core client</source>
+        <translation>Hotchain Core piniginė</translation>
     </message>
     <message numerus="yes">
         <source>%n active connection(s) to HOTCHAIN network</source>
@@ -1223,16 +1223,16 @@ MultiSend: %1</translation>
         <translation>versija</translation>
     </message>
     <message>
-        <source>Hotchain</source>
-        <translation>Hotchain</translation>
+        <source>Hotchain Core</source>
+        <translation>Hotchain Core</translation>
     </message>
     <message>
         <source>(%1-bit)</source>
         <translation>(%1-bitai)</translation>
     </message>
     <message>
-        <source>About Hotchain</source>
-        <translation>Apie Hotchain</translation>
+        <source>About Hotchain Core</source>
+        <translation>Apie Hotchain Core</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -1278,16 +1278,16 @@ MultiSend: %1</translation>
         <translation>Sveiki</translation>
     </message>
     <message>
-        <source>Welcome to Hotchain.</source>
-        <translation>Sveiki atvykę į Hotchain</translation>
+        <source>Welcome to Hotchain Core.</source>
+        <translation>Sveiki atvykę į Hotchain Core</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where Hotchain will store its data.</source>
-        <translation>Kadangi programa paleista pirmą kartą, galite pasirinkti kur Hotchain saugos savo duomenis.</translation>
+        <source>As this is the first time the program is launched, you can choose where Hotchain Core will store its data.</source>
+        <translation>Kadangi programa paleista pirmą kartą, galite pasirinkti kur Hotchain Core saugos savo duomenis.</translation>
     </message>
     <message>
-        <source>Hotchain will download and store a copy of the HOTCHAIN block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>Hotchain atsisiųs ir saugos HOTCHAIN blockchain'o kopiją. Šiame kataloge bus saugomas ne mažesnis kaip %1GB duomenų kiekis, kuris laikui bėgant augs. Piniginė taip pat bus saugoma šiame kataloge.</translation>
+        <source>Hotchain Core will download and store a copy of the HOTCHAIN block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>Hotchain Core atsisiųs ir saugos HOTCHAIN blockchain'o kopiją. Šiame kataloge bus saugomas ne mažesnis kaip %1GB duomenų kiekis, kuris laikui bėgant augs. Piniginė taip pat bus saugoma šiame kataloge.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -1298,8 +1298,8 @@ MultiSend: %1</translation>
         <translation>Naudoti pasirinktą duomenų katalogą:</translation>
     </message>
     <message>
-        <source>Hotchain</source>
-        <translation>Hotchain</translation>
+        <source>Hotchain Core</source>
+        <translation>Hotchain Core</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -1926,8 +1926,8 @@ https://www.transifex.com/hotchain-project/hotchain-project-translations</transl
         <translation>&amp;Prievadas (angl. port):</translation>
     </message>
     <message>
-        <source>Port of the proxy (e.g. 9069)</source>
-        <translation>Proxy prievadas (pvz. 9069)</translation>
+        <source>Port of the proxy (e.g. 9050)</source>
+        <translation>Proxy prievadas (pvz. 9050)</translation>
     </message>
     <message>
         <source>&amp;Window</source>
@@ -3229,8 +3229,8 @@ Nesubrendusios: patvirtintos, bet mažiau nei 1 konvertacijos tos pačio nominal
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Hotchain</source>
-        <translation>Hotchain</translation>
+        <source>Hotchain Core</source>
+        <translation>Hotchain Core</translation>
     </message>
     </context>
 <context>
@@ -3494,8 +3494,8 @@ Nesubrendusios: patvirtintos, bet mažiau nei 1 konvertacijos tos pačio nominal
         <translation>Klaida kraunant wallet.dat: Piniginė yra sugadinta</translation>
     </message>
     <message>
-        <source>Error loading wallet.dat: Wallet requires newer version of Hotchain</source>
-        <translation>Klaida kraunant wallet.dat: Piniginė reikalauja naujesnės Hotchain versijos</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of Hotchain Core</source>
+        <translation>Klaida kraunant wallet.dat: Piniginė reikalauja naujesnės Hotchain Core versijos</translation>
     </message>
     <message>
         <source>Error opening block database</source>
@@ -3726,8 +3726,8 @@ Nesubrendusios: patvirtintos, bet mažiau nei 1 konvertacijos tos pačio nominal
         <translation>Piniginė užrakinta.</translation>
     </message>
     <message>
-        <source>Wallet needed to be rewritten: restart Hotchain to complete</source>
-        <translation>Piniginę reikia perrašyti: paleiskite Hotchain iš naujo</translation>
+        <source>Wallet needed to be rewritten: restart Hotchain Core to complete</source>
+        <translation>Piniginę reikia perrašyti: paleiskite Hotchain Core iš naujo</translation>
     </message>
     <message>
         <source>Wallet options:</source>

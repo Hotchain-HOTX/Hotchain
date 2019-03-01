@@ -10,7 +10,7 @@
  * @license    This project is released under the MIT license.
  **/
 // Copyright (c) 2017-2018 The PIVX Developers
-// Copyright (c) 2018 The Hotchain Developers 
+// Copyright (c) 2018 The HOTCHAIN Developers 
 
 #ifndef COINSPEND_H_
 #define COINSPEND_H_

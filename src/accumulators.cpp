@@ -1,5 +1,5 @@
 // Copyright (c) 2017-2018 The PIVX Developers
-// Copyright (c) 2018 The Hotchain Developers 
+// Copyright (c) 2018 The HOTCHAIN Developers 
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -10,7 +10,7 @@
 #include "txdb.h"
 #include "init.h"
 #include "spork.h"
-#include "zhotxchain.h"
+#include "zhotxxchain.h"
 
 using namespace libzerocoin;
 
@@ -422,7 +422,7 @@ bool GetAccumulatorValue(int& nHeight, const libzerocoin::CoinDenomination denom
 
     //Every situation except for about 20 blocks should use this method
     uint256 nCheckpointBeforeMint = chainActive[nHeight]->nAccumulatorCheckpoint;
-    if (nHeight > 20)
+    if (nHeight > Params().Zerocoin_Block_V2_Start() + 20) {
         return GetAccumulatorValueFromDB(nCheckpointBeforeMint, denom, bnAccValue);
     }
 
@@ -440,7 +440,7 @@ bool GetAccumulatorValue(int& nHeight, const libzerocoin::CoinDenomination denom
     // bnAccValue = checkpoint.at(denom);
 
     // return true;
-
+}
 
 /**
  * TODO: Why we are locking the wallet in this way?
@@ -476,7 +476,7 @@ std::list<CBlockIndex*> calculateAccumulatedBlocksFor(
 
     std::list<CBlockIndex*> blocksToInclude;
     int amountOfScannedBlocks = 0;
-    bool fDoubleCounted = false;
+    //bool fDoubleCounted = false;
     while (pindex) {
         if (pindex->nHeight != startHeight && pindex->pprev->nAccumulatorCheckpoint != pindex->nAccumulatorCheckpoint)
             ++nCheckpointsAdded;

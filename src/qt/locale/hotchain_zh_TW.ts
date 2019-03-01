@@ -557,8 +557,8 @@
         <translation>Tabs 工具列</translation>
     </message>
     <message>
-        <source>Hotchain</source>
-        <translation>Hotchain</translation>
+        <source>Hotchain Core</source>
+        <translation>Hotchain Core</translation>
     </message>
     <message>
         <source>Send coins to a HOTCHAIN address</source>
@@ -577,12 +577,12 @@
         <translation>瀏覽 Masternodes</translation>
     </message>
     <message>
-        <source>&amp;About Hotchain</source>
-        <translation>&amp;關於 Hotchain</translation>
+        <source>&amp;About Hotchain Core</source>
+        <translation>&amp;關於 Hotchain Core</translation>
     </message>
     <message>
-        <source>Show information about Hotchain</source>
-        <translation>顯示 Hotchain 相關資訊</translation>
+        <source>Show information about Hotchain Core</source>
+        <translation>顯示 Hotchain Core 相關資訊</translation>
     </message>
     <message>
         <source>Modify configuration options for HOTCHAIN</source>
@@ -637,12 +637,12 @@
         <translation>區塊鏈瀏覽視窗</translation>
     </message>
     <message>
-        <source>Show the Hotchain help message to get a list with possible HOTCHAIN command-line options</source>
-        <translation>顯示 Hotchain 幫助訊息以取得 HOTCHAIN 命令列表選項</translation>
+        <source>Show the Hotchain Core help message to get a list with possible HOTCHAIN command-line options</source>
+        <translation>顯示 Hotchain Core 幫助訊息以取得 HOTCHAIN 命令列表選項</translation>
     </message>
     <message>
-        <source>Hotchain client</source>
-        <translation>Hotchain 客戶端</translation>
+        <source>Hotchain Core client</source>
+        <translation>Hotchain Core 客戶端</translation>
     </message>
     </context>
 <context>
@@ -671,15 +671,15 @@
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>Hotchain</source>
-        <translation>Hotchain</translation>
+        <source>Hotchain Core</source>
+        <translation>Hotchain Core</translation>
     </message>
     </context>
 <context>
     <name>Intro</name>
     <message>
-        <source>Hotchain</source>
-        <translation>Hotchain</translation>
+        <source>Hotchain Core</source>
+        <translation>Hotchain Core</translation>
     </message>
     </context>
 <context>
@@ -893,8 +893,8 @@
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Hotchain</source>
-        <translation>Hotchain</translation>
+        <source>Hotchain Core</source>
+        <translation>Hotchain Core</translation>
     </message>
     </context>
 <context>

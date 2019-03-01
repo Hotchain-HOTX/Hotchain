@@ -645,8 +645,8 @@
         <translation>Schede degli strumenti</translation>
     </message>
     <message>
-        <source>Hotchain</source>
-        <translation>Hotchain</translation>
+        <source>Hotchain Core</source>
+        <translation>Hotchain Core</translation>
     </message>
     <message>
         <source>Send coins to a HOTCHAIN address</source>
@@ -658,7 +658,7 @@
     </message>
     <message>
         <source>&amp;Privacy</source>
-        <translation>&amp;Privacy</translation>
+        <translation>&amp;pRIVACY</translation>
     </message>
     <message>
         <source>&amp;Masternodes</source>
@@ -669,12 +669,12 @@
         <translation>Esplora i masternodes</translation>
     </message>
     <message>
-        <source>&amp;About Hotchain</source>
-        <translation>&amp;Informazioni Hotchain</translation>
+        <source>&amp;About Hotchain Core</source>
+        <translation>&amp;Informazioni Hotchain Core</translation>
     </message>
     <message>
-        <source>Show information about Hotchain</source>
-        <translation>Visualizza informazioni su Hotchain</translation>
+        <source>Show information about Hotchain Core</source>
+        <translation>Visualizza informazioni su Hotchain Core</translation>
     </message>
     <message>
         <source>Modify configuration options for HOTCHAIN</source>
@@ -729,12 +729,12 @@
         <translation>Finestra Block Explorer</translation>
     </message>
     <message>
-        <source>Show the Hotchain help message to get a list with possible HOTCHAIN command-line options</source>
-        <translation>Mostra il messaggio di aiuto Hotchain per ottenere un elenco con le possibili opzioni di riga di comando HOTCHAIN</translation>
+        <source>Show the Hotchain Core help message to get a list with possible HOTCHAIN command-line options</source>
+        <translation>Mostra il messaggio di aiuto Hotchain Core per ottenere un elenco con le possibili opzioni di riga di comando HOTCHAIN</translation>
     </message>
     <message>
-        <source>Hotchain client</source>
-        <translation>Hotchain</translation>
+        <source>Hotchain Core client</source>
+        <translation>Hotchain Core</translation>
     </message>
     <message numerus="yes">
         <source>%n active connection(s) to HOTCHAIN network</source>
@@ -1219,16 +1219,16 @@ MultiSend: %1</translation>
         <translation>versione</translation>
     </message>
     <message>
-        <source>Hotchain</source>
-        <translation>Hotchain</translation>
+        <source>Hotchain Core</source>
+        <translation>Hotchain Core</translation>
     </message>
     <message>
         <source>(%1-bit)</source>
         <translation>(%1-bit)</translation>
     </message>
     <message>
-        <source>About Hotchain</source>
-        <translation>Informazioni su Hotchain</translation>
+        <source>About Hotchain Core</source>
+        <translation>Informazioni su Hotchain Core</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -1274,16 +1274,16 @@ MultiSend: %1</translation>
         <translation>Benvenuto</translation>
     </message>
     <message>
-        <source>Welcome to Hotchain.</source>
-        <translation>Benvenuto in Hotchain.</translation>
+        <source>Welcome to Hotchain Core.</source>
+        <translation>Benvenuto in HOTCHAINIX Core.</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where Hotchain will store its data.</source>
-        <translation>Essendo il primo avvio dell'applicazione, puoi scegliere dove Hotchain salverà i propri dati.</translation>
+        <source>As this is the first time the program is launched, you can choose where Hotchain Core will store its data.</source>
+        <translation>Essendo il primo avvio dell'applicazione, puoi scegliere dove Hotchain Core salverà i propri dati.</translation>
     </message>
     <message>
-        <source>Hotchain will download and store a copy of the HOTCHAIN block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>Hotchain scaricherà e salverà una copia della blockchain HOTCHAIN. Verranno salvati almeno %1GB di dati in questa cartella, che cresceranno nel tempo. In questa cartella verrà salvato anche il portafoglio.</translation>
+        <source>Hotchain Core will download and store a copy of the HOTCHAIN block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>Hotchain Core scaricherà e salverà una copia della blockchain HOTCHAIN. Verranno salvati almeno %1GB di dati in questa cartella, che cresceranno nel tempo. In questa cartella verrà salvato anche il portafoglio.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -1294,8 +1294,8 @@ MultiSend: %1</translation>
         <translation>Utilizza una cartella dati personalizzata:</translation>
     </message>
     <message>
-        <source>Hotchain</source>
-        <translation>Hotchain</translation>
+        <source>Hotchain Core</source>
+        <translation>Hotchain Core</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -2554,8 +2554,8 @@ Per cambiare la percentuale (riavvio non necessario):
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Hotchain</source>
-        <translation>Hotchain</translation>
+        <source>Hotchain Core</source>
+        <translation>Hotchain Core</translation>
     </message>
     </context>
 <context>

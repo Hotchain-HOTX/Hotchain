@@ -2,7 +2,6 @@
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2018 The PIVX Developers 
-// Copyright (c) 2019 The Hotchain Developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -20,6 +19,31 @@
 using namespace std;
 using namespace boost::assign;
 
+struct SeedSpec6 {
+    uint8_t addr[16];
+    uint16_t port;
+};
+
+#include "chainparamsseeds.h"
+
+
+
+//! Convert the pnSeeds6 array into usable address objects.
+static void convertSeed6(std::vector<CAddress>& vSeedsOut, const SeedSpec6* data, unsigned int count)
+{
+    // It'll only connect to one or two seed nodes because once it connects,
+    // it'll get a pile of addresses with newer timestamps.
+    // Seed nodes are given a random 'last seen time' of between one and two
+    // weeks ago.
+    const int64_t nOneWeek = 7 * 24 * 60 * 60;
+    for (unsigned int i = 0; i < count; i++) {
+        struct in6_addr ip;
+        memcpy(&ip, data[i].addr, sizeof(ip));
+        CAddress addr(CService(ip, data[i].port));
+        addr.nTime = GetTime() - GetRand(nOneWeek) - nOneWeek;
+        vSeedsOut.push_back(addr);
+    }
+}
  static bool regenerate = false;
 
 //   What makes a good checkpoint block?
@@ -29,19 +53,19 @@ using namespace boost::assign;
 // + Contains no strange transactions
 static Checkpoints::MapCheckpoints mapCheckpoints =
     boost::assign::map_list_of
-    (0, uint256("0xf97b44c715a03828098bd90965a4435e972f612a2f07d7f30287c999257e82a2"))
-    (20, uint256("0x0000078b097880fef496b86cf8cdaa3eba9e11c8d4ae6c33ea1a132af184c299"))
-    (50, uint256("0x000000d3d3941d54578cbacccf887bc57c8cf3678fcf81559dc84451c1662c8c"))
-    (75, uint256("0x00000025aed031f0ede5692476334e3c7ade0edb98842cd086ae5c72760d2848"))
-    (100, uint256("0x00000050d59e6c9ae52925e87a1eee680723897a13011bbf0be421104a457f92"))
-    (150, uint256("0x00000002388b41d0d36cb3cc5634807c32d647d620e89e32e2b0dc44e0b05132"))
-    (200, uint256("0x0000002bec538c8e4b4c68a90f453f20aa648c29d046cc758aa3033c803006a7"))
-    (250, uint256("0x038ccc4cb05202991cda5a383b3f0d283b8a37c092735fcc9a82bacb1cb451ca"));
-
+    (0, uint256("0xf97b44c715a03828098bd90965a4435e972f612a2f07d7f30287c999257e82a2"));
+    // (20, uint256("0x0000078b097880fef496b86cf8cdaa3eba9e11c8d4ae6c33ea1a132af184c299"))
+    // (50, uint256("0x000000d3d3941d54578cbacccf887bc57c8cf3678fcf81559dc84451c1662c8c"))
+    // (75, uint256("0x00000025aed031f0ede5692476334e3c7ade0edb98842cd086ae5c72760d2848"))
+    // (100, uint256("0x00000050d59e6c9ae52925e87a1eee680723897a13011bbf0be421104a457f92"))
+    // (150, uint256("0x00000002388b41d0d36cb3cc5634807c32d647d620e89e32e2b0dc44e0b05132"))
+    // (200, uint256("0x0000002bec538c8e4b4c68a90f453f20aa648c29d046cc758aa3033c803006a7"))
+    // (250, uint256("0x038ccc4cb05202991cda5a383b3f0d283b8a37c092735fcc9a82bacb1cb451ca"))
+	
 static const Checkpoints::CCheckpointData data = {
     &mapCheckpoints,
     1550576664, // * UNIX timestamp of last checkpoint block
-    1120,    // * total number of transactions between genesis and last checkpoint
+    0,    // * total number of transactions between genesis and last checkpoint
                 //   (the tx=... number in the SetBestChain debug.log lines)
     2000        // * estimated number of transactions per day after checkpoint
 };
@@ -103,10 +127,22 @@ public:
         nTargetSpacing = 1 * 60;  // Hotchain: 1 minute
         nMaturity = 10;
         nMasternodeCountDrift = 20;
-        nMaxMoneyOut = 60000000 * COIN;
+        nMaxMoneyOut = 21000000 * COIN;
 
         /** Height or Time Based Activations **/
         nLastPoWBlock = 200;
+        //nModifierUpdateBlock = 1;
+        //nZerocoinStartHeight = 210;
+        //nZerocoinStartTime = 1550315311; 
+        //nBlockEnforceSerialRange = 895400; //Enforce serial range starting this block
+        //nBlockRecalculateAccumulators = 908000; //Trigger a recalculation of accumulators
+        //nBlockFirstFraudulent = 891737; //First block that bad serials emerged
+        //nBlockLastGoodCheckpoint = 210; //Last valid accumulator checkpoint
+        //nBlockEnforceInvalidUTXO = 902850; //Start enforcing the invalid UTXO's
+        //nInvalidAmountFiltered = 268200*COIN; //Amount of invalid coins filtered through exchanges, that should be considered valid
+        //nBlockZerocoinV2 = 210; //!> The block that zerocoin v2 becomes active - roughly Tuesday, May 8, 2018 4:00:00 AM GMT
+        //nEnforceNewSporkKey = 1525158000; //!> Sporks signed after (GMT): Tuesday, May 1, 2018 7:00:00 AM GMT must use the new spork key
+        //nRejectOldSporkKey = 1527811200; //!> Fully reject old spork key after (GMT): Friday, June 1, 2018 12:00:00 AM
 
         /**
          * Build the genesis block. Note that the output of the genesis coinbase cannot
@@ -153,10 +189,7 @@ public:
         }
 
 
-        
-	
-	
-	vSeeds.push_back(CDNSSeedData("node-01.hotchain.me", "node-01.hotchain.me"));
+		vSeeds.push_back(CDNSSeedData("node-01.hotchain.me", "node-01.hotchain.me"));
         vSeeds.push_back(CDNSSeedData("node-02.hotchain.me", "node-02.hotchain.me"));
         vSeeds.push_back(CDNSSeedData("node-03.hotchain.me", "node-03.hotchain.me"));
         vSeeds.push_back(CDNSSeedData("node-04.hotchain.me", "node-04.hotchain.me"));
@@ -201,7 +234,7 @@ public:
         nRequiredAccumulation = 1;
         nDefaultSecurityLevel = 100; //full security level for accumulators
         nZerocoinHeaderVersion = 4; //Block headers must be this version once zerocoin is active
-        nZerocoinRequiredStakeDepth = 200; //The required confirmations for a zhotx to be stakable
+        nZerocoinRequiredStakeDepth = 200; //The required confirmations for a zhotxx to be stakable
         nStakeMinAge = 60 * 60; //The number of seconds that a utxo must be old before it can qualify for staking
         nBudget_Fee_Confirmations = 6; // Number of confirmations for the finalization fee
     }

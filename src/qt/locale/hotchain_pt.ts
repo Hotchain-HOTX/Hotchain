@@ -1250,8 +1250,8 @@
         <translation>Carteira esta bloqueada.</translation>
     </message>
     <message>
-        <source>Wallet needed to be rewritten: restart Hotchain to complete</source>
-        <translation>Carteira precisa ser reescrita: reinicie o Hotchain para completar.</translation>
+        <source>Wallet needed to be rewritten: restart Hotchain Core to complete</source>
+        <translation>Carteira precisa ser reescrita: reinicie o Hotchain Core para completar.</translation>
     </message>
     <message>
         <source>Wallet options:</source>

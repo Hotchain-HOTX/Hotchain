@@ -2,7 +2,6 @@
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2018 The PIVX Developers 
-// Copyright (c) 2019 The Hotchain Developers 
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -41,7 +40,7 @@
 #include <vector>
 
 #include "libzerocoin/CoinSpend.h"
-#include "lightzhotxthread.h"
+#include "lightzhotxxthread.h"
 
 #include <boost/unordered_map.hpp>
 
@@ -351,7 +350,8 @@ void UpdateCoins(const CTransaction& tx, CValidationState& state, CCoinsViewCach
 bool CheckTransaction(const CTransaction& tx, CValidationState& state);
 bool CheckZerocoinMint(const uint256& txHash, const CTxOut& txout, CValidationState& state, bool fCheckOnly = false);
 bool CheckZerocoinSpend(const CTransaction& tx, bool fVerifySignature, CValidationState& state);
-bool ContextualCheckZerocoinSpend(const CTransaction& tx, const libzerocoin::CoinSpend& spend, CBlockIndex* pindex);
+bool ContextualCheckZerocoinSpend(const CTransaction& tx, const libzerocoin::CoinSpend& spend, CBlockIndex* pindex, const uint256& hashBlock);
+bool ContextualCheckZerocoinSpendNoSerialCheck(const CTransaction& tx, const libzerocoin::CoinSpend& spend, CBlockIndex* pindex, const uint256& hashBlock);
 bool IsTransactionInChain(const uint256& txId, int& nHeightTx, CTransaction& tx);
 bool IsTransactionInChain(const uint256& txId, int& nHeightTx);
 bool IsBlockHashInChain(const uint256& hashBlock);

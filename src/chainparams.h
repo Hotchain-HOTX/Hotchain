@@ -2,7 +2,6 @@
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2018 The PIVX Developers 
-// Copyright (c) 2019 The Hotchain Developers 
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -112,6 +111,10 @@ public:
     //int ModifierUpgradeBlock() const { return nModifierUpdateBlock; }
     int Last_PoW_Block() const { return nLastPoWBlock; }
     unsigned int Stake_Min_Age() const { return nStakeMinAge; }
+    int Zerocoin_StartHeight() const { return nZerocoinStartHeight; }
+    int Zerocoin_Block_V2_Start() const { return nBlockZerocoinV2; }
+    int Zerocoin_StartTime() const { return nZerocoinStartTime; }
+    int Zerocoin_Block_LastGoodCheckpoint() const { return nBlockLastGoodCheckpoint; }
 
 protected:
     CChainParams() {}
@@ -163,6 +166,10 @@ protected:
     int64_t nBudget_Fee_Confirmations;
     int nZerocoinRequiredStakeDepth;
     unsigned int nStakeMinAge;
+    int nZerocoinStartHeight;
+    int nZerocoinStartTime;
+    int nBlockZerocoinV2;
+    int nBlockLastGoodCheckpoint;
 };
 
 /**

@@ -1,10 +1,9 @@
 // Copyright (c) 2018 The PIVX Developers 
-// Copyright (c) 2019 The Hotchain Developers 
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #include <primitives/deterministicmint.h>
-#include "zhotxtracker.h"
+#include "zhotxxtracker.h"
 #include "util.h"
 #include "sync.h"
 #include "main.h"
@@ -441,7 +440,7 @@ std::set<CMintMeta> CzHOTXTracker::ListMints(bool fUnusedOnly, bool fMatureOnly,
         std::list<CDeterministicMint> listDeterministicDB = walletdb.ListDeterministicMints();
         for (auto& dMint : listDeterministicDB)
             Add(dMint);
-        LogPrint("zero", "%s: added %d dzhotx from DB\n", __func__, listDeterministicDB.size());
+        LogPrint("zero", "%s: added %d dzhotxx from DB\n", __func__, listDeterministicDB.size());
     }
 
     std::vector<CMintMeta> vOverWrite;

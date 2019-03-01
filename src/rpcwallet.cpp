@@ -2,7 +2,6 @@
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2018 The PIVX Developers 
-// Copyright (c) 2019 The Hotchain Developers 
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -18,7 +17,7 @@
 #include "utilmoneystr.h"
 #include "wallet.h"
 #include "walletdb.h"
-#include "zhotxchain.h"
+#include "zhotxxchain.h"
 
 #include <stdint.h>
 
@@ -766,48 +765,6 @@ UniValue getbalance(const UniValue& params, bool fHelp)
     CAmount nBalance = GetAccountBalance(strAccount, nMinDepth, filter);
 
     return ValueFromAmount(nBalance);
-}
-
-UniValue getextendedbalance(const UniValue& params, bool fHelp)
-{
-    if (fHelp || (params.size() > 0))
-        throw runtime_error(
-            "getextendedbalance\n"
-            "\nGet extended balance information.\n"
-            "\nResult:\n"
-            "{\n"
-            "  \"blocks\": \"xxx\", (string) The current block height\n"
-            "  \"balance\": \"xxx\", (string) The total HOTX balance\n"
-            "  \"balance_locked\": \"xxx\", (string) The locked HOTX balance\n"
-            "  \"balance_unlocked\": \"xxx\", (string) The unlocked HOTX balance\n"
-            "  \"balance_unconfirmed\": \"xxx\", (string) The unconfirmed HOTX balance\n"
-            "  \"balance_immature\": \"xxx\", (string) The immature HOTX balance\n"
-            "  \"zerocoin_balance\": \"xxx\", (string) The total zHOTX balance\n"
-            "  \"zerocoin_balance_mature\": \"xxx\", (string) The mature zHOTX balance\n"
-            "  \"zerocoin_balance_immature\": \"xxx\", (string) The immature zHOTX balance\n"
-            "  \"watchonly_balance\": \"xxx\", (string) The total watch-only HOTX balance\n"
-            "  \"watchonly_balance_unconfirmed\": \"xxx\", (string) The unconfirmed watch-only HOTX balance\n"
-            "  \"watchonly_balance_immature\": \"xxx\", (string) The immature watch-only HOTX balance\n"
-            "  \"watchonly_balance_locked\": \"xxx\", (string) The locked watch-only HOTX balance\n"
-            "}\n"
-            "\nExamples:\n" +
-            HelpExampleCli("getextendedbalance", "") + HelpExampleRpc("getextendedbalance", ""));
-    LOCK2(cs_main, pwalletMain->cs_wallet);
-    UniValue obj(UniValue::VOBJ);
-    obj.push_back(Pair("blocks", (int)chainActive.Height()));
-    obj.push_back(Pair("balance", ValueFromAmount(pwalletMain->GetBalance())));
-    obj.push_back(Pair("balance_locked", ValueFromAmount(pwalletMain->GetLockedCoins())));
-    obj.push_back(Pair("balance_unlocked", ValueFromAmount(pwalletMain->GetUnlockedCoins())));
-    obj.push_back(Pair("balance_unconfirmed", ValueFromAmount(pwalletMain->GetUnconfirmedBalance())));
-    obj.push_back(Pair("balance_immature", ValueFromAmount(pwalletMain->GetImmatureBalance())));
-    obj.push_back(Pair("zerocoin_balance", ValueFromAmount(pwalletMain->GetZerocoinBalance(false))));
-    obj.push_back(Pair("zerocoin_balance_mature", ValueFromAmount(pwalletMain->GetZerocoinBalance(true))));
-    obj.push_back(Pair("zerocoin_balance_immature", ValueFromAmount(pwalletMain->GetImmatureZerocoinBalance())));
-    obj.push_back(Pair("watchonly_balance", ValueFromAmount(pwalletMain->GetWatchOnlyBalance())));
-    obj.push_back(Pair("watchonly_balance_unconfirmed", ValueFromAmount(pwalletMain->GetUnconfirmedWatchOnlyBalance())));
-    obj.push_back(Pair("watchonly_balance_immature", ValueFromAmount(pwalletMain->GetImmatureWatchOnlyBalance())));
-    obj.push_back(Pair("watchonly_balance_locked", ValueFromAmount(pwalletMain->GetLockedWatchOnlyBalance())));
-    return obj;
 }
 
 UniValue getunconfirmedbalance(const UniValue &params, bool fHelp)
@@ -2649,7 +2606,7 @@ UniValue listmintedzerocoins(const UniValue& params, bool fHelp)
     EnsureWalletIsUnlocked(true);
 
     CWalletDB walletdb(pwalletMain->strWalletFile);
-    set<CMintMeta> setMints = pwalletMain->zhotxTracker->ListMints(true, fMatureOnly, true);
+    set<CMintMeta> setMints = pwalletMain->zhotxxTracker->ListMints(true, fMatureOnly, true);
 
     int nBestHeight = chainActive.Height();
 
@@ -2702,7 +2659,7 @@ UniValue listzerocoinamounts(const UniValue& params, bool fHelp)
     EnsureWalletIsUnlocked(true);
 
     CWalletDB walletdb(pwalletMain->strWalletFile);
-    set<CMintMeta> setMints = pwalletMain->zhotxTracker->ListMints(true, true, true);
+    set<CMintMeta> setMints = pwalletMain->zhotxxTracker->ListMints(true, true, true);
 
     std::map<libzerocoin::CoinDenomination, CAmount> spread;
     for (const auto& denom : libzerocoin::zerocoinDenomList)
@@ -3107,8 +3064,8 @@ UniValue resetmintzerocoin(const UniValue& params, bool fHelp)
     LOCK2(cs_main, pwalletMain->cs_wallet);
 
     CWalletDB walletdb(pwalletMain->strWalletFile);
-    CzHOTXTracker* zhotxTracker = pwalletMain->zhotxTracker.get();
-    set<CMintMeta> setMints = zhotxTracker->ListMints(false, false, true);
+    CzHOTXTracker* zhotxxTracker = pwalletMain->zhotxxTracker.get();
+    set<CMintMeta> setMints = zhotxxTracker->ListMints(false, false, true);
     vector<CMintMeta> vMintsToFind(setMints.begin(), setMints.end());
     vector<CMintMeta> vMintsMissing;
     vector<CMintMeta> vMintsToUpdate;
@@ -3119,14 +3076,14 @@ UniValue resetmintzerocoin(const UniValue& params, bool fHelp)
     // update the meta data of mints that were marked for updating
     UniValue arrUpdated(UniValue::VARR);
     for (CMintMeta meta : vMintsToUpdate) {
-        zhotxTracker->UpdateState(meta);
+        zhotxxTracker->UpdateState(meta);
         arrUpdated.push_back(meta.hashPubcoin.GetHex());
     }
 
     // delete any mints that were unable to be located on the blockchain
     UniValue arrDeleted(UniValue::VARR);
     for (CMintMeta mint : vMintsMissing) {
-        zhotxTracker->Archive(mint);
+        zhotxxTracker->Archive(mint);
         arrDeleted.push_back(mint.hashPubcoin.GetHex());
     }
 
@@ -3160,8 +3117,8 @@ UniValue resetspentzerocoin(const UniValue& params, bool fHelp)
     LOCK2(cs_main, pwalletMain->cs_wallet);
 
     CWalletDB walletdb(pwalletMain->strWalletFile);
-    CzHOTXTracker* zhotxTracker = pwalletMain->zhotxTracker.get();
-    set<CMintMeta> setMints = zhotxTracker->ListMints(false, false, false);
+    CzHOTXTracker* zhotxxTracker = pwalletMain->zhotxxTracker.get();
+    set<CMintMeta> setMints = zhotxxTracker->ListMints(false, false, false);
     list<CZerocoinSpend> listSpends = walletdb.ListSpentCoins();
     list<CZerocoinSpend> listUnconfirmedSpends;
 
@@ -3183,7 +3140,7 @@ UniValue resetspentzerocoin(const UniValue& params, bool fHelp)
     for (CZerocoinSpend spend : listUnconfirmedSpends) {
         for (auto& meta : setMints) {
             if (meta.hashSerial == GetSerialHash(spend.GetSerial())) {
-                zhotxTracker->SetPubcoinNotUsed(meta.hashPubcoin);
+                zhotxxTracker->SetPubcoinNotUsed(meta.hashPubcoin);
                 walletdb.EraseZerocoinSpendSerialEntry(spend.GetSerial());
                 RemoveSerialFromDB(spend.GetSerial());
                 UniValue obj(UniValue::VOBJ);
@@ -3297,8 +3254,8 @@ UniValue exportzerocoins(const UniValue& params, bool fHelp)
     if (params.size() == 2)
         denomination = libzerocoin::IntToZerocoinDenomination(params[1].get_int());
 
-    CzHOTXTracker* zhotxTracker = pwalletMain->zhotxTracker.get();
-    set<CMintMeta> setMints = zhotxTracker->ListMints(!fIncludeSpent, false, false);
+    CzHOTXTracker* zhotxxTracker = pwalletMain->zhotxxTracker.get();
+    set<CMintMeta> setMints = zhotxxTracker->ListMints(!fIncludeSpent, false, false);
 
     UniValue jsonList(UniValue::VARR);
     for (const CMintMeta& meta : setMints) {
@@ -3412,7 +3369,7 @@ UniValue importzerocoins(const UniValue& params, bool fHelp)
         CZerocoinMint mint(denom, bnValue, bnRandom, bnSerial, fUsed, nVersion, &privkey);
         mint.SetTxHash(txid);
         mint.SetHeight(nHeight);
-        pwalletMain->zhotxTracker->Add(mint, true);
+        pwalletMain->zhotxxTracker->Add(mint, true);
         count++;
         nValue += libzerocoin::ZerocoinDenominationToAmount(denom);
     }
@@ -3474,23 +3431,23 @@ UniValue reconsiderzerocoins(const UniValue& params, bool fHelp)
     return arrRet;
 }
 
-UniValue setzhotxseed(const UniValue& params, bool fHelp)
+UniValue setzhotxxseed(const UniValue& params, bool fHelp)
 {
     if(fHelp || params.size() != 1)
         throw runtime_error(
-            "setzhotxseed \"seed\"\n"
-            "\nSet the wallet's deterministic zhotx seed to a specific value.\n" +
+            "setzhotxxseed \"seed\"\n"
+            "\nSet the wallet's deterministic zhotxx seed to a specific value.\n" +
             HelpRequiringPassphrase() + "\n"
 
             "\nArguments:\n"
-            "1. \"seed\"        (string, required) The deterministic zhotx seed.\n"
+            "1. \"seed\"        (string, required) The deterministic zhotxx seed.\n"
 
             "\nResult\n"
             "\"success\" : b,  (boolean) Whether the seed was successfully set.\n"
 
             "\nExamples\n" +
-            HelpExampleCli("setzhotxseed", "63f793e7895dd30d99187b35fbfb314a5f91af0add9e0a4e5877036d1e392dd5") +
-            HelpExampleRpc("setzhotxseed", "63f793e7895dd30d99187b35fbfb314a5f91af0add9e0a4e5877036d1e392dd5"));
+            HelpExampleCli("setzhotxxseed", "63f793e7895dd30d99187b35fbfb314a5f91af0add9e0a4e5877036d1e392dd5") +
+            HelpExampleRpc("setzhotxxseed", "63f793e7895dd30d99187b35fbfb314a5f91af0add9e0a4e5877036d1e392dd5"));
 
     EnsureWalletIsUnlocked();
 
@@ -3508,11 +3465,11 @@ UniValue setzhotxseed(const UniValue& params, bool fHelp)
     return ret;
 }
 
-UniValue getzhotxseed(const UniValue& params, bool fHelp)
+UniValue getzhotxxseed(const UniValue& params, bool fHelp)
 {
     if(fHelp || !params.empty())
         throw runtime_error(
-            "getzhotxseed\n"
+            "getzhotxxseed\n"
             "\nCheck archived zHOTX list to see if any mints were added to the blockchain.\n" +
             HelpRequiringPassphrase() + "\n"
 
@@ -3520,7 +3477,7 @@ UniValue getzhotxseed(const UniValue& params, bool fHelp)
             "\"seed\" : s,  (string) The deterministic zHOTX seed.\n"
 
             "\nExamples\n" +
-            HelpExampleCli("getzhotxseed", "") + HelpExampleRpc("getzhotxseed", ""));
+            HelpExampleCli("getzhotxxseed", "") + HelpExampleRpc("getzhotxxseed", ""));
 
     EnsureWalletIsUnlocked();
 
@@ -3582,10 +3539,10 @@ UniValue generatemintlist(const UniValue& params, bool fHelp)
     return arrRet;
 }
 
-UniValue dzhotxstate(const UniValue& params, bool fHelp) {
+UniValue dzhotxxstate(const UniValue& params, bool fHelp) {
     if (fHelp || params.size() != 0)
         throw runtime_error(
-                "dzhotxstate\n"
+                "dzhotxxstate\n"
                         "\nThe current state of the mintpool of the deterministic zHOTX wallet.\n" +
                 HelpRequiringPassphrase() + "\n"
 
@@ -3596,7 +3553,7 @@ UniValue dzhotxstate(const UniValue& params, bool fHelp) {
     UniValue obj(UniValue::VOBJ);
     int nCount, nCountLastUsed;
     zwallet->GetState(nCount, nCountLastUsed);
-    obj.push_back(Pair("dzhotx_count", nCount));
+    obj.push_back(Pair("dzhotxx_count", nCount));
     obj.push_back(Pair("mintpool_count", nCountLastUsed));
 
     return obj;
@@ -3633,11 +3590,11 @@ void static SearchThread(CzHOTXWallet* zwallet, int nCountStart, int nCountEnd)
     }
 }
 
-UniValue searchdzhotx(const UniValue& params, bool fHelp)
+UniValue searchdzhotxx(const UniValue& params, bool fHelp)
 {
     if(fHelp || params.size() != 3)
         throw runtime_error(
-            "searchdzhotx\n"
+            "searchdzhotxx\n"
             "\nMake an extended search for deterministically generated zHOTX that have not yet been recognized by the wallet.\n" +
             HelpRequiringPassphrase() + "\n"
 
@@ -3647,7 +3604,7 @@ UniValue searchdzhotx(const UniValue& params, bool fHelp)
             "3. \"threads\"     (numeric) How many threads should this operation consume.\n"
 
             "\nExamples\n" +
-            HelpExampleCli("searchdzhotx", "1, 100, 2") + HelpExampleRpc("searchdzhotx", "1, 100, 2"));
+            HelpExampleCli("searchdzhotxx", "1, 100, 2") + HelpExampleRpc("searchdzhotxx", "1, 100, 2"));
 
     EnsureWalletIsUnlocked();
 
@@ -3663,7 +3620,7 @@ UniValue searchdzhotx(const UniValue& params, bool fHelp)
 
     CzHOTXWallet* zwallet = pwalletMain->zwalletMain;
 
-    boost::thread_group* dzhotxThreads = new boost::thread_group();
+    boost::thread_group* dzhotxxThreads = new boost::thread_group();
     int nRangePerThread = nRange / nThreads;
 
     int nPrevThreadEnd = nCount - 1;
@@ -3671,12 +3628,12 @@ UniValue searchdzhotx(const UniValue& params, bool fHelp)
         int nStart = nPrevThreadEnd + 1;;
         int nEnd = nStart + nRangePerThread;
         nPrevThreadEnd = nEnd;
-        dzhotxThreads->create_thread(boost::bind(&SearchThread, zwallet, nStart, nEnd));
+        dzhotxxThreads->create_thread(boost::bind(&SearchThread, zwallet, nStart, nEnd));
     }
 
-    dzhotxThreads->join_all();
+    dzhotxxThreads->join_all();
 
-    zwallet->RemoveMintsFromPool(pwalletMain->zhotxTracker->GetSerialHashes());
+    zwallet->RemoveMintsFromPool(pwalletMain->zhotxxTracker->GetSerialHashes());
     zwallet->SyncWithChain(false);
 
     //todo: better response
@@ -3710,7 +3667,7 @@ UniValue createautomintaddress(const UniValue& params, bool fHelp)
                 HelpRequiringPassphrase() + "\n"
 
                 "\nResult\n"
-                "\"address\"     (string) HOTCHAIN address for auto minting\n" +
+                "\"address\"     (string) Hotchain address for auto minting\n" +
                 HelpExampleCli("createautomintaddress", "") +
                 HelpExampleRpc("createautomintaddress", ""));
 

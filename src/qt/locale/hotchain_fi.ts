@@ -565,7 +565,7 @@
         <translation>&amp;Apua</translation>
     </message>
     <message>
-        <source>Hotchain</source>
+        <source>Hotchain Core</source>
         <translation>HOTCHAIN Ydin</translation>
     </message>
     <message>
@@ -585,11 +585,11 @@
         <translation>Selaa masternodeja</translation>
     </message>
     <message>
-        <source>&amp;About Hotchain</source>
-        <translation>Hotchain &amp;ytimestä</translation>
+        <source>&amp;About Hotchain Core</source>
+        <translation>Hotchain Core &amp;ytimestä</translation>
     </message>
     <message>
-        <source>Show information about Hotchain</source>
+        <source>Show information about Hotchain Core</source>
         <translation>Näytä tietoja HOTCHAIN Ytimestä</translation>
     </message>
     <message>
@@ -645,11 +645,11 @@
         <translation>Lohkon tutkija näkymä</translation>
     </message>
     <message>
-        <source>Show the Hotchain help message to get a list with possible HOTCHAIN command-line options</source>
+        <source>Show the Hotchain Core help message to get a list with possible HOTCHAIN command-line options</source>
         <translation>Näytä HOTCHAIN Ydin apuviesti saadaksesi lista mahdollisista HOTCHAIN komentolinja komennoista.</translation>
     </message>
     <message>
-        <source>Hotchain client</source>
+        <source>Hotchain Core client</source>
         <translation>HOTCHAIN Ydin asiakasohjelma</translation>
     </message>
     <message>
@@ -908,7 +908,7 @@
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>Hotchain</source>
+        <source>Hotchain Core</source>
         <translation>HOTCHAIN Ydin</translation>
     </message>
     <message>
@@ -927,11 +927,11 @@
         <translation>Tervetuloa</translation>
     </message>
     <message>
-        <source>Welcome to Hotchain.</source>
+        <source>Welcome to Hotchain Core.</source>
         <translation>Tervetuloa HOTCHAIN Ytimeen.</translation>
     </message>
     <message>
-        <source>Hotchain</source>
+        <source>Hotchain Core</source>
         <translation>HOTCHAIN Ydin</translation>
     </message>
     <message>
@@ -1246,8 +1246,8 @@ Please check the address and try again.</source>
         <translation>&amp;Portti:</translation>
     </message>
     <message>
-        <source>Port of the proxy (e.g. 9069)</source>
-        <translation>Proxyn portti (esim. 9069)</translation>
+        <source>Port of the proxy (e.g. 9050)</source>
+        <translation>Proxyn portti (esim. 9050)</translation>
     </message>
     <message>
         <source>&amp;Window</source>
@@ -2057,8 +2057,8 @@ Please check the address and try again.</source>
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>Hotchain is shutting down...</source>
-        <translation>Hotchain sammuu...</translation>
+        <source>Hotchain Core is shutting down...</source>
+        <translation>HOTCHAIN core sammuu...</translation>
     </message>
     <message>
         <source>Do not shut down the computer until this window disappears.</source>
@@ -2199,7 +2199,7 @@ Please check the address and try again.</source>
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Hotchain</source>
+        <source>Hotchain Core</source>
         <translation>HOTCHAIN Ydin</translation>
     </message>
     <message>
@@ -2215,8 +2215,8 @@ Please check the address and try again.</source>
         <translation>Dash Core kehittäjät</translation>
     </message>
     <message>
-        <source>The Hotchain developers</source>
-        <translation>Hotchain kehittäjät</translation>
+        <source>The Hotchain Core developers</source>
+        <translation>HOTCHAIN core kehittäjät</translation>
     </message>
     <message>
         <source>[testnet]</source>
@@ -2568,8 +2568,8 @@ Please check the address and try again.</source>
         <translation>Virhe ladattaessa wallet.dat tiedostoa: Lompakko korruptoitunut</translation>
     </message>
     <message>
-        <source>Error loading wallet.dat: Wallet requires newer version of Hotchain</source>
-        <translation>Virhe ladattaessa wallet.dat tiedostoa: Lompakko vaatii uudemman version Hotchainsta</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of Hotchain Core</source>
+        <translation>Virhe ladattaessa wallet.dat tiedostoa: Lompakko vaatii uudemman version HOTCHAIN Coresta</translation>
     </message>
     <message>
         <source>Error reading from database, shutting down.</source>

@@ -1,5 +1,5 @@
 // Copyright (c) 2017-2018 The PIVX Developers
-// Copyright (c) 2018 The Hotchain Developers 
+// Copyright (c) 2018 The HOTCHAIN Developers 
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -174,12 +174,12 @@ bool CzHotxStake::GetTxFrom(CTransaction& tx)
 
 bool CzHotxStake::MarkSpent(CWallet *pwallet, const uint256& txid)
 {
-    CzHOTXTracker* zhotxTracker = pwallet->zhotxTracker.get();
+    CzHOTXTracker* zhotxxTracker = pwallet->zhotxxTracker.get();
     CMintMeta meta;
-    if (!zhotxTracker->GetMetaFromStakeHash(hashSerial, meta))
+    if (!zhotxxTracker->GetMetaFromStakeHash(hashSerial, meta))
         return error("%s: tracker does not have serialhash", __func__);
 
-    zhotxTracker->SetPubcoinUsed(meta.hashPubcoin, txid);
+    zhotxxTracker->SetPubcoinUsed(meta.hashPubcoin, txid);
     return true;
 }
 

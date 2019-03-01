@@ -2,7 +2,6 @@
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2018 The PIVX Developers 
-// Copyright (c) 2019 The Hotchain Developers 
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -405,7 +404,6 @@ static const CRPCCommand vRPCCommands[] =
         {"wallet", "getaccount", &getaccount, true, false, true},
         {"wallet", "getaddressesbyaccount", &getaddressesbyaccount, true, false, true},
         {"wallet", "getbalance", &getbalance, false, false, true},
-        {"wallet", "getextendedbalance", &getextendedbalance, false, false, true},
         {"wallet", "getnewaddress", &getnewaddress, true, false, true},
         {"wallet", "getrawchangeaddress", &getrawchangeaddress, true, false, true},
         {"wallet", "getreceivedbyaccount", &getreceivedbyaccount, false, false, true},
@@ -456,11 +454,11 @@ static const CRPCCommand vRPCCommands[] =
         {"zerocoin", "exportzerocoins", &exportzerocoins, false, false, true},
         {"zerocoin", "reconsiderzerocoins", &reconsiderzerocoins, false, false, true},
         {"zerocoin", "getspentzerocoinamount", &getspentzerocoinamount, false, false, false},
-        {"zerocoin", "getzhotxseed", &getzhotxseed, false, false, true},
-        {"zerocoin", "setzhotxseed", &setzhotxseed, false, false, true},
+        {"zerocoin", "getzhotxxseed", &getzhotxxseed, false, false, true},
+        {"zerocoin", "setzhotxxseed", &setzhotxxseed, false, false, true},
         {"zerocoin", "generatemintlist", &generatemintlist, false, false, true},
-        {"zerocoin", "searchdzhotx", &searchdzhotx, false, false, true},
-        {"zerocoin", "dzhotxstate", &dzhotxstate, false, false, true}
+        {"zerocoin", "searchdzhotxx", &searchdzhotxx, false, false, true},
+        {"zerocoin", "dzhotxxstate", &dzhotxxstate, false, false, true}
 
 #endif // ENABLE_WALLET
 };
@@ -631,7 +629,7 @@ std::string HelpExampleRpc(string methodname, string args)
 {
     return "> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", "
            "\"method\": \"" +
-           methodname + "\", \"params\": [" + args + "] }' -H 'content-type: text/plain;' http://127.0.0.1:6990/\n";
+           methodname + "\", \"params\": [" + args + "] }' -H 'content-type: text/plain;' http://127.0.0.1:7050/\n";
 }
 
 void RPCSetTimerInterfaceIfUnset(RPCTimerInterface *iface)

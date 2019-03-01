@@ -1,6 +1,5 @@
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2018 The PIVX Developers 
-// Copyright (c) 2019 The Hotchain Developers 
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -216,7 +215,7 @@ void CMasternode::Check(bool forceCheck)
     if (!unitTest) {
         CValidationState state;
         CMutableTransaction tx = CMutableTransaction();
-        CTxOut vout = CTxOut(19999.99 * COIN, obfuScationPool.collateralPubKey);
+        CTxOut vout = CTxOut(999.99 * COIN, obfuScationPool.collateralPubKey);
         tx.vin.push_back(vin);
         tx.vout.push_back(vout);
 
@@ -527,8 +526,8 @@ bool CMasternodeBroadcast::CheckAndUpdate(int& nDos)
     }
 
     if (Params().NetworkID() == CBaseChainParams::MAIN) {
-        if (addr.GetPort() != 9069) return false;
-    } else if (addr.GetPort() == 9069)
+        if (addr.GetPort() != 9050) return false;
+    } else if (addr.GetPort() == 9050)
         return false;
 
     //search existing Masternode list, this is where we update existing Masternodes with new mnb broadcasts
@@ -586,7 +585,7 @@ bool CMasternodeBroadcast::CheckInputsAndAdd(int& nDoS)
 
     CValidationState state;
     CMutableTransaction tx = CMutableTransaction();
-    CTxOut vout = CTxOut(19999.99 * COIN, obfuScationPool.collateralPubKey);
+    CTxOut vout = CTxOut(999.99 * COIN, obfuScationPool.collateralPubKey);
     tx.vin.push_back(vin);
     tx.vout.push_back(vout);
 

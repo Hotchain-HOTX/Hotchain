@@ -1,10 +1,10 @@
 // Copyright (c) 2017-2018 The PIVX Developers
-// Copyright (c) 2018 The Hotchain Developers 
+// Copyright (c) 2018 The HOTCHAIN Developers 
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "zhotxcontroldialog.h"
-#include "ui_zhotxcontroldialog.h"
+#include "zhotxxcontroldialog.h"
+#include "ui_zhotxxcontroldialog.h"
 
 #include "accumulators.h"
 #include "main.h"

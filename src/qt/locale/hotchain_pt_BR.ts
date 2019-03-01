@@ -613,8 +613,8 @@
         <translation>Ferramentas de abas</translation>
     </message>
     <message>
-        <source>Hotchain</source>
-        <translation>Hotchain</translation>
+        <source>Hotchain Core</source>
+        <translation>Hotchain Core</translation>
     </message>
     <message>
         <source>Send coins to a HOTCHAIN address</source>
@@ -637,12 +637,12 @@
         <translation>Procurar masternodes</translation>
     </message>
     <message>
-        <source>&amp;About Hotchain</source>
-        <translation>&amp;Sobre o Hotchain</translation>
+        <source>&amp;About Hotchain Core</source>
+        <translation>&amp;Sobre o Hotchain Core</translation>
     </message>
     <message>
-        <source>Show information about Hotchain</source>
-        <translation>Mostra informação sobre o Hotchain</translation>
+        <source>Show information about Hotchain Core</source>
+        <translation>Mostra informação sobre o Hotchain Core</translation>
     </message>
     <message>
         <source>Modify configuration options for HOTCHAIN</source>
@@ -697,11 +697,11 @@
         <translation>Janela de exploração de blocos</translation>
     </message>
     <message>
-        <source>Show the Hotchain help message to get a list with possible HOTCHAIN command-line options</source>
-        <translation>Mostra a ajuda da Hotchain para receber uma lista com possíveis opções de linha de comando HOTCHAIN</translation>
+        <source>Show the Hotchain Core help message to get a list with possible HOTCHAIN command-line options</source>
+        <translation>Mostra a ajuda da Hotchain Core para receber uma lista com possíveis opções de linha de comando HOTCHAIN</translation>
     </message>
     <message>
-        <source>Hotchain client</source>
+        <source>Hotchain Core client</source>
         <translation>Cliente Core HOTCHAIN</translation>
     </message>
     <message>
@@ -1164,16 +1164,16 @@ MultiSend: %1</translation>
         <translation>versão</translation>
     </message>
     <message>
-        <source>Hotchain</source>
-        <translation>Hotchain</translation>
+        <source>Hotchain Core</source>
+        <translation>Hotchain Core</translation>
     </message>
     <message>
         <source>(%1-bit)</source>
         <translation>(%1-bit)</translation>
     </message>
     <message>
-        <source>About Hotchain</source>
-        <translation>Sobre o Hotchain</translation>
+        <source>About Hotchain Core</source>
+        <translation>Sobre o Hotchain Core</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -1215,16 +1215,16 @@ MultiSend: %1</translation>
         <translation>Bem-vindo</translation>
     </message>
     <message>
-        <source>Welcome to Hotchain.</source>
-        <translation>Bem-vindo ao Hotchain.</translation>
+        <source>Welcome to Hotchain Core.</source>
+        <translation>Bem-vindo ao Hotchain Core.</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where Hotchain will store its data.</source>
-        <translation>Como essa é a primeira vez que o programa é utilizado, você pode escolher onde Hotchain vai armazenar os seus dados.</translation>
+        <source>As this is the first time the program is launched, you can choose where Hotchain Core will store its data.</source>
+        <translation>Como essa é a primeira vez que o programa é utilizado, você pode escolher onde Hotchain Core vai armazenar os seus dados.</translation>
     </message>
     <message>
-        <source>Hotchain will download and store a copy of the HOTCHAIN block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>Hotchain vai baixar e armazenar uma cópia da blockchain HOTCHAIN. Pelo menos %1GB de informação será armazenado neste diretório e irá aumentar com o tempo. A carteira também será armazenada neste diretório.</translation>
+        <source>Hotchain Core will download and store a copy of the HOTCHAIN block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>Hotchain Core vai baixar e armazenar uma cópia da blockchain HOTCHAIN. Pelo menos %1GB de informação será armazenado neste diretório e irá aumentar com o tempo. A carteira também será armazenada neste diretório.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -1235,8 +1235,8 @@ MultiSend: %1</translation>
         <translation>Usar um diretório personalizado de dados:</translation>
     </message>
     <message>
-        <source>Hotchain</source>
-        <translation>Hotchain</translation>
+        <source>Hotchain Core</source>
+        <translation>Hotchain Core</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -1734,8 +1734,8 @@ https://www.transifex.com/hotchain-project/hotchain-project-translations</transl
         <translation>&amp;Porta:</translation>
     </message>
     <message>
-        <source>Port of the proxy (e.g. 9069)</source>
-        <translation>Porta do proxy (e.g. 9069)</translation>
+        <source>Port of the proxy (e.g. 9050)</source>
+        <translation>Porta do proxy (e.g. 9050)</translation>
     </message>
     <message>
         <source>&amp;Window</source>
@@ -2969,8 +2969,8 @@ https://www.transifex.com/hotchain-project/hotchain-project-translations</transl
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>Hotchain is shutting down...</source>
-        <translation>Hotchain está desligando...</translation>
+        <source>Hotchain Core is shutting down...</source>
+        <translation>Hotchain Core está desligando...</translation>
     </message>
     <message>
         <source>Do not shut down the computer until this window disappears.</source>
@@ -3111,8 +3111,8 @@ https://www.transifex.com/hotchain-project/hotchain-project-translations</transl
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Hotchain</source>
-        <translation>Hotchain</translation>
+        <source>Hotchain Core</source>
+        <translation>Hotchain Core</translation>
     </message>
     <message>
         <source>Version %1</source>
@@ -3127,8 +3127,8 @@ https://www.transifex.com/hotchain-project/hotchain-project-translations</transl
         <translation>Os desenvolvedores do Dash Core</translation>
     </message>
     <message>
-        <source>The Hotchain developers</source>
-        <translation>Os desenvolvedores do Hotchain</translation>
+        <source>The Hotchain Core developers</source>
+        <translation>Os desenvolvedores do Hotchain Core</translation>
     </message>
     <message>
         <source>[testnet]</source>
@@ -3712,7 +3712,7 @@ https://www.transifex.com/hotchain-project/hotchain-project-translations</transl
         <translation>Aviso: -paytxfee está definido como muito alto! Está e a taxa de transação que você irá pagar se enviar uma transação.</translation>
     </message>
     <message>
-        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong Hotchain will not work properly.</source>
+        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong Hotchain Core will not work properly.</source>
         <translation>Aviso: Favor verificar se o horário e data de seu computador estão corretos! Se o seu relógio estiver errado o Core HOTCHAIN não vai funcionar corretamente.</translation>
     </message>
     <message>
@@ -3728,8 +3728,8 @@ https://www.transifex.com/hotchain-project/hotchain-project-translations</transl
         <translation>Você deve especificar uma masternodeprivkey na configuração. Favor verificar o manual para obter ajuda.</translation>
     </message>
     <message>
-        <source>(9069 could be used only on mainnet)</source>
-        <translation>(9069 could be used only on mainnet)</translation>
+        <source>(9050 could be used only on mainnet)</source>
+        <translation>(9050 could be used only on mainnet)</translation>
     </message>
     <message>
         <source>(default: %s)</source>
@@ -3740,8 +3740,8 @@ https://www.transifex.com/hotchain-project/hotchain-project-translations</transl
         <translation>(padrão: 1)</translation>
     </message>
     <message>
-        <source>(must be 9069 for mainnet)</source>
-        <translation>(deve ser 9069 para mainnet)</translation>
+        <source>(must be 9050 for mainnet)</source>
+        <translation>(deve ser 9050 para mainnet)</translation>
     </message>
     <message>
         <source>Accept connections from outside (default: 1 if no -proxy or -connect)</source>
@@ -3792,8 +3792,8 @@ https://www.transifex.com/hotchain-project/hotchain-project-translations</transl
         <translation>Todos os direitos reservados (C) 2014-%i aos Desenvolvedores do Dash Core</translation>
     </message>
     <message>
-        <source>Copyright (C) 2015-%i The Hotchain Developers</source>
-        <translation>Todos os direitos reservados (C) 2015-%i aos Desenvolvedores do Hotchain</translation>
+        <source>Copyright (C) 2015-%i The Hotchain Core Developers</source>
+        <translation>Todos os direitos reservados (C) 2015-%i aos Desenvolvedores do Hotchain Core</translation>
     </message>
     <message>
         <source>Corrupted block database detected</source>
@@ -3852,8 +3852,8 @@ https://www.transifex.com/hotchain-project/hotchain-project-translations</transl
         <translation>Erro no carregamento da wallet.dat: Carteira corrompida</translation>
     </message>
     <message>
-        <source>Error loading wallet.dat: Wallet requires newer version of Hotchain</source>
-        <translation>Erro ao carregar wallet.dat: A Carteira requer uma nova versão da Hotchain</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of Hotchain Core</source>
+        <translation>Erro ao carregar wallet.dat: A Carteira requer uma nova versão da Hotchain Core</translation>
     </message>
     <message>
         <source>Error opening block database</source>
@@ -4342,8 +4342,8 @@ https://www.transifex.com/hotchain-project/hotchain-project-translations</transl
         <translation>Carteira está travada.</translation>
     </message>
     <message>
-        <source>Wallet needed to be rewritten: restart Hotchain to complete</source>
-        <translation>A carteira precisa ser reescrita: reinicia o Hotchain para completar</translation>
+        <source>Wallet needed to be rewritten: restart Hotchain Core to complete</source>
+        <translation>A carteira precisa ser reescrita: reinicia o Hotchain Core para completar</translation>
     </message>
     <message>
         <source>Wallet options:</source>

@@ -405,7 +405,7 @@
             </size>
            </property>
            <property name="toolTip">
-            <string>Port of the proxy (e.g. 9069)</string>
+            <string>Port of the proxy (e.g. 9050)</string>
            </property>
           </widget>
          </item>

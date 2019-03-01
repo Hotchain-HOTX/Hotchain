@@ -5,12 +5,12 @@
 //
 
 
-#include "lightzhotxthread.h"
+#include "lightzhotxxthread.h"
 #include "main.h"
 
 /****** Thread ********/
 void CLightWorker::ThreadLightzHOTXSimplified() {
-    RenameThread("hotx-light-thread");
+    RenameThread("hotxx-light-thread");
     isWorkerRunning = true;
     while (true) {
         try {
@@ -20,7 +20,7 @@ void CLightWorker::ThreadLightzHOTXSimplified() {
 
             // TODO: Future: join several similar requests into one calculation if the filter and denom match..
             CGenWit genWit = requestsQueue.pop();
-            LogPrintf("%s pop work for %s \n\n", "hotx-light-thread", genWit.toString());
+            LogPrintf("%s pop work for %s \n\n", "hotxx-light-thread", genWit.toString());
 
             libzerocoin::ZerocoinParams *params = Params().Zerocoin_Params();
             CBlockIndex *pIndex = chainActive[genWit.getStartingHeight()];
@@ -30,7 +30,7 @@ void CLightWorker::ThreadLightzHOTXSimplified() {
             } else {
                 LogPrintf("%s calculating work for %s \n\n", "hotx-light-thread", genWit.toString());
                 int blockHeight = pIndex->nHeight;
-                if (blockHeight = pIndex->nHeight) {
+                if (blockHeight >= Params().Zerocoin_Block_V2_Start()) {
 
                     // TODO: The protocol actually doesn't care about the Accumulator..
                     libzerocoin::Accumulator accumulator(params, genWit.getDen(), genWit.getAccWitValue());
@@ -96,7 +96,7 @@ void CLightWorker::ThreadLightzHOTXSimplified() {
             }
         } catch (std::exception& e) {
             //std::cout << "exception in light loop, closing it. " << e.what() << std::endl;
-            PrintExceptionContinue(&e, "lightzhotxthread");
+            PrintExceptionContinue(&e, "lightzhotxxthread");
             break;
         }
     }

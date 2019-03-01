@@ -1,5 +1,5 @@
 // Copyright (c) 2017-2018 The PIVX Developers
-// Copyright (c) 2018 The Hotchain Developers 
+// Copyright (c) 2018 The HOTCHAIN Developers 
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -30,7 +30,7 @@ public:
 
 // zHOTXStake can take two forms
 // 1) the stake candidate, which is a zcmint that is attempted to be staked
-// 2) a staked zhotx, which is a zcspend that has successfully staked
+// 2) a staked zhotxx, which is a zcspend that has successfully staked
 class CzHotxStake : public CStakeInput
 {
 private:

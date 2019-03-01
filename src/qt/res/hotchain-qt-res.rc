@@ -20,13 +20,13 @@ BEGIN
         BLOCK "040904E4" // U.S. English - multilingual (hex)
         BEGIN
             VALUE "CompanyName",        "HOTCHAIN"
-            VALUE "FileDescription",    "Hotchain (OSS GUI client for HOTCHAIN)"
+            VALUE "FileDescription",    "Hotchain Core (OSS GUI client for HOTCHAIN)"
             VALUE "FileVersion",        VER_FILEVERSION_STR
             VALUE "InternalName",       "hotchain-qt"
             VALUE "LegalCopyright",     COPYRIGHT_STR
             VALUE "LegalTrademarks1",   "Distributed under the MIT/X11 software license, see the accompanying file COPYING or http://www.opensource.org/licenses/mit-license.php."
             VALUE "OriginalFilename",   "hotchain-qt.exe"
-            VALUE "ProductName",        "Hotchain"
+            VALUE "ProductName",        "Hotchain Core"
             VALUE "ProductVersion",     VER_PRODUCTVERSION_STR
         END
     END

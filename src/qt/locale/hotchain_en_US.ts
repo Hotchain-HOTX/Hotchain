@@ -602,8 +602,8 @@
         <translation>Tabs toolbar</translation>
     </message>
     <message>
-        <source>Hotchain</source>
-        <translation>Hotchain</translation>
+        <source>Hotchain Core</source>
+        <translation>Hotchain Core</translation>
     </message>
     <message>
         <source>Send coins to a HOTCHAIN address</source>
@@ -622,12 +622,12 @@
         <translation>Browse masternodes</translation>
     </message>
     <message>
-        <source>&amp;About Hotchain</source>
-        <translation>&amp;About Hotchain</translation>
+        <source>&amp;About Hotchain Core</source>
+        <translation>&amp;About Hotchain Core</translation>
     </message>
     <message>
-        <source>Show information about Hotchain</source>
-        <translation>Show information about Hotchain</translation>
+        <source>Show information about Hotchain Core</source>
+        <translation>Show information about Hotchain Core</translation>
     </message>
     <message>
         <source>Modify configuration options for HOTCHAIN</source>
@@ -682,12 +682,12 @@
         <translation>Block explorer window</translation>
     </message>
     <message>
-        <source>Show the Hotchain help message to get a list with possible HOTCHAIN command-line options</source>
-        <translation>Show the Hotchain help message to get a list with possible HOTCHAIN command-line options</translation>
+        <source>Show the Hotchain Core help message to get a list with possible HOTCHAIN command-line options</source>
+        <translation>Show the Hotchain Core help message to get a list with possible HOTCHAIN command-line options</translation>
     </message>
     <message>
-        <source>Hotchain client</source>
-        <translation>Hotchain client</translation>
+        <source>Hotchain Core client</source>
+        <translation>Hotchain Core client</translation>
     </message>
     <message numerus="yes">
         <source>%n active connection(s) to HOTCHAIN network</source>
@@ -1184,16 +1184,16 @@ Address: %4
         <translation>version</translation>
     </message>
     <message>
-        <source>Hotchain</source>
-        <translation>Hotchain</translation>
+        <source>Hotchain Core</source>
+        <translation>Hotchain Core</translation>
     </message>
     <message>
         <source>(%1-bit)</source>
         <translation>(%1-bit)</translation>
     </message>
     <message>
-        <source>About Hotchain</source>
-        <translation>About Hotchain</translation>
+        <source>About Hotchain Core</source>
+        <translation>About Hotchain Core</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -1239,16 +1239,16 @@ Address: %4
         <translation>Welcome</translation>
     </message>
     <message>
-        <source>Welcome to Hotchain.</source>
-        <translation>Welcome to Hotchain.</translation>
+        <source>Welcome to Hotchain Core.</source>
+        <translation>Welcome to Hotchain Core.</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where Hotchain will store its data.</source>
-        <translation>As this is the first time the program is launched, you can choose where Hotchain will store its data.</translation>
+        <source>As this is the first time the program is launched, you can choose where Hotchain Core will store its data.</source>
+        <translation>As this is the first time the program is launched, you can choose where Hotchain Core will store its data.</translation>
     </message>
     <message>
-        <source>Hotchain will download and store a copy of the HOTCHAIN block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>Hotchain will download and store a copy of the HOTCHAIN block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</translation>
+        <source>Hotchain Core will download and store a copy of the HOTCHAIN block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>Hotchain Core will download and store a copy of the HOTCHAIN block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -1259,8 +1259,8 @@ Address: %4
         <translation>Use a custom data directory:</translation>
     </message>
     <message>
-        <source>Hotchain</source>
-        <translation>Hotchain</translation>
+        <source>Hotchain Core</source>
+        <translation>Hotchain Core</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -1744,8 +1744,8 @@ https://www.transifex.com/hotchain-project/hotchain-project-translations</transl
         <translation>&amp;Port:</translation>
     </message>
     <message>
-        <source>Port of the proxy (e.g. 9069)</source>
-        <translation>Port of the proxy (e.g. 9069)</translation>
+        <source>Port of the proxy (e.g. 9050)</source>
+        <translation>Port of the proxy (e.g. 9050)</translation>
     </message>
     <message>
         <source>&amp;Window</source>
@@ -3126,8 +3126,8 @@ https://www.transifex.com/hotchain-project/hotchain-project-translations</transl
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>Hotchain is shutting down...</source>
-        <translation>Hotchain is shutting down...</translation>
+        <source>Hotchain Core is shutting down...</source>
+        <translation>Hotchain Core is shutting down...</translation>
     </message>
     <message>
         <source>Do not shut down the computer until this window disappears.</source>
@@ -3276,8 +3276,8 @@ https://www.transifex.com/hotchain-project/hotchain-project-translations</transl
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Hotchain</source>
-        <translation>Hotchain</translation>
+        <source>Hotchain Core</source>
+        <translation>Hotchain Core</translation>
     </message>
     <message>
         <source>Version %1</source>
@@ -3292,8 +3292,8 @@ https://www.transifex.com/hotchain-project/hotchain-project-translations</transl
         <translation>The Dash Core developers</translation>
     </message>
     <message>
-        <source>The Hotchain developers</source>
-        <translation>The Hotchain developers</translation>
+        <source>The Hotchain Core developers</source>
+        <translation>The Hotchain Core developers</translation>
     </message>
     <message>
         <source>[testnet]</source>
@@ -3910,8 +3910,8 @@ https://www.transifex.com/hotchain-project/hotchain-project-translations</transl
         <translation>Bind to given address to listen for JSON-RPC connections. Use [host]:port notation for IPv6. This option can be specified multiple times (default: bind to all interfaces)</translation>
     </message>
     <message>
-        <source>Cannot obtain a lock on data directory %s. Hotchain is probably already running.</source>
-        <translation>Cannot obtain a lock on data directory %s. Hotchain is probably already running.</translation>
+        <source>Cannot obtain a lock on data directory %s. Hotchain Core is probably already running.</source>
+        <translation>Cannot obtain a lock on data directory %s. Hotchain Core is probably already running.</translation>
     </message>
     <message>
         <source>Change automatic finalized budget voting behavior. mode=auto: Vote for only exact finalized budget match to my generated budget. (string, default: auto)</source>
@@ -4106,8 +4106,8 @@ for example: alertnotify=echo %%s | mail -s "HOTCHAIN Alert" admin@foo.com
 </translation>
     </message>
     <message>
-        <source>Unable to bind to %s on this computer. Hotchain is probably already running.</source>
-        <translation>Unable to bind to %s on this computer. Hotchain is probably already running.</translation>
+        <source>Unable to bind to %s on this computer. Hotchain Core is probably already running.</source>
+        <translation>Unable to bind to %s on this computer. Hotchain Core is probably already running.</translation>
     </message>
     <message>
         <source>Unable to locate enough Obfuscation denominated funds for this transaction.</source>
@@ -4134,8 +4134,8 @@ for example: alertnotify=echo %%s | mail -s "HOTCHAIN Alert" admin@foo.com
         <translation>Warning: -paytxfee is set very high! This is the transaction fee you will pay if you send a transaction.</translation>
     </message>
     <message>
-        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong Hotchain will not work properly.</source>
-        <translation>Warning: Please check that your computer's date and time are correct! If your clock is wrong Hotchain will not work properly.</translation>
+        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong Hotchain Core will not work properly.</source>
+        <translation>Warning: Please check that your computer's date and time are correct! If your clock is wrong Hotchain Core will not work properly.</translation>
     </message>
     <message>
         <source>Warning: The network does not appear to fully agree! Some miners appear to be experiencing issues.</source>
@@ -4166,8 +4166,8 @@ for example: alertnotify=echo %%s | mail -s "HOTCHAIN Alert" admin@foo.com
         <translation>You must specify a masternodeprivkey in the configuration. Please see documentation for help.</translation>
     </message>
     <message>
-        <source>(9069 could be used only on mainnet)</source>
-        <translation>(9069 could be used only on mainnet)</translation>
+        <source>(9050 could be used only on mainnet)</source>
+        <translation>(9050 could be used only on mainnet)</translation>
     </message>
     <message>
         <source>(default: %s)</source>
@@ -4178,8 +4178,8 @@ for example: alertnotify=echo %%s | mail -s "HOTCHAIN Alert" admin@foo.com
         <translation>(default: 1)</translation>
     </message>
     <message>
-        <source>(must be 9069 for mainnet)</source>
-        <translation>(must be 9069 for mainnet)</translation>
+        <source>(must be 9050 for mainnet)</source>
+        <translation>(must be 9050 for mainnet)</translation>
     </message>
     <message>
         <source>Accept command line and JSON-RPC commands</source>
@@ -4282,8 +4282,8 @@ for example: alertnotify=echo %%s | mail -s "HOTCHAIN Alert" admin@foo.com
         <translation>Copyright (C) 2014-%i The Dash Core Developers</translation>
     </message>
     <message>
-        <source>Copyright (C) 2015-%i The Hotchain Developers</source>
-        <translation>Copyright (C) 2015-%i The Hotchain Developers</translation>
+        <source>Copyright (C) 2015-%i The Hotchain Core Developers</source>
+        <translation>Copyright (C) 2015-%i The Hotchain Core Developers</translation>
     </message>
     <message>
         <source>Corrupted block database detected</source>
@@ -4354,8 +4354,8 @@ for example: alertnotify=echo %%s | mail -s "HOTCHAIN Alert" admin@foo.com
         <translation>Error loading wallet.dat: Wallet corrupted</translation>
     </message>
     <message>
-        <source>Error loading wallet.dat: Wallet requires newer version of Hotchain</source>
-        <translation>Error loading wallet.dat: Wallet requires newer version of Hotchain</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of Hotchain Core</source>
+        <translation>Error loading wallet.dat: Wallet requires newer version of Hotchain Core</translation>
     </message>
     <message>
         <source>Error opening block database</source>
@@ -4466,8 +4466,8 @@ for example: alertnotify=echo %%s | mail -s "HOTCHAIN Alert" admin@foo.com
         <translation>Information</translation>
     </message>
     <message>
-        <source>Initialization sanity check failed. Hotchain is shutting down.</source>
-        <translation>Initialization sanity check failed. Hotchain is shutting down.</translation>
+        <source>Initialization sanity check failed. Hotchain Core is shutting down.</source>
+        <translation>Initialization sanity check failed. Hotchain Core is shutting down.</translation>
     </message>
     <message>
         <source>Input is not valid.</source>
@@ -5086,8 +5086,8 @@ for example: alertnotify=echo %%s | mail -s "HOTCHAIN Alert" admin@foo.com
         <translation>Wallet is locked.</translation>
     </message>
     <message>
-        <source>Wallet needed to be rewritten: restart Hotchain to complete</source>
-        <translation>Wallet needed to be rewritten: restart Hotchain to complete</translation>
+        <source>Wallet needed to be rewritten: restart Hotchain Core to complete</source>
+        <translation>Wallet needed to be rewritten: restart Hotchain Core to complete</translation>
     </message>
     <message>
         <source>Wallet options:</source>

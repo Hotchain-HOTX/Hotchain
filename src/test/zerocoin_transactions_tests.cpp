@@ -1,5 +1,5 @@
 // Copyright (c) 2017-2018 The PIVX Developers
-// Copyright (c) 2018 The Hotchain Developers 
+// Copyright (c) 2018 The HOTCHAIN Developers 
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -29,7 +29,7 @@ BOOST_AUTO_TEST_CASE(zerocoin_spend_test)
 
     bool fFirstRun;
     cWallet.LoadWallet(fFirstRun);
-    cWallet.zhotxTracker = unique_ptr<CzHOTXTracker>(new CzHOTXTracker(cWallet.strWalletFile));
+    cWallet.zhotxxTracker = unique_ptr<CzHOTXTracker>(new CzHOTXTracker(cWallet.strWalletFile));
     CMutableTransaction tx;
     CWalletTx* wtx = new CWalletTx(&cWallet, tx);
     bool fMintChange=true;

@@ -1,11 +1,11 @@
 // Copyright (c) 2017-2018 The PIVX Developers
-// Copyright (c) 2018 The Hotchain Developers 
+// Copyright (c) 2018 The HOTCHAIN Developers 
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #include "blocksignature.h"
 #include "main.h"
-#include "zhotxchain.h"
+#include "zhotxxchain.h"
 
 bool SignBlockWithKey(CBlock& block, const CKey& key)
 {

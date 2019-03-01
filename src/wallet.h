@@ -2,7 +2,6 @@
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2018 The PIVX Developers 
-// Copyright (c) 2019 The Hotchain Developers 
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -24,8 +23,8 @@
 #include "validationinterface.h"
 #include "wallet_ismine.h"
 #include "walletdb.h"
-#include "zhotxwallet.h"
-#include "zhotxtracker.h"
+#include "zhotxxwallet.h"
+#include "zhotxxtracker.h"
 
 #include <algorithm>
 #include <map>
@@ -224,7 +223,7 @@ public:
     bool DatabaseMint(CDeterministicMint& dMint);
     bool SetMintUnspent(const CBigNum& bnSerial);
     bool UpdateMint(const CBigNum& bnValue, const int& nHeight, const uint256& txid, const libzerocoin::CoinDenomination& denom);
-    string GetUniqueWalletBackupName(bool fzhotxAuto) const;
+    string GetUniqueWalletBackupName(bool fzhotxxAuto) const;
     void InitAutoConvertAddresses();
 
 
@@ -249,7 +248,7 @@ public:
     bool fWalletUnlockAnonymizeOnly;
     std::string strWalletFile;
     bool fBackupMints;
-    std::unique_ptr<CzHOTXTracker> zhotxTracker;
+    std::unique_ptr<CzHOTXTracker> zhotxxTracker;
 
     std::set<int64_t> setKeyPool;
     std::map<CKeyID, CKeyMetadata> mapKeyMetadata;
@@ -337,7 +336,7 @@ public:
     void setZWallet(CzHOTXWallet* zwallet)
     {
         zwalletMain = zwallet;
-        zhotxTracker = std::unique_ptr<CzHOTXTracker>(new CzHOTXTracker(strWalletFile));
+        zhotxxTracker = std::unique_ptr<CzHOTXTracker>(new CzHOTXTracker(strWalletFile));
     }
 
     CzHOTXWallet* getZWallet() { return zwalletMain; }

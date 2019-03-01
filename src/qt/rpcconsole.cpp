@@ -1,7 +1,6 @@
 // Copyright (c) 2011-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2018 The PIVX Developers 
-// Copyright (c) 2019 The Hotchain Developers 
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -290,7 +289,7 @@ RPCConsole::RPCConsole(QWidget* parent) : QDialog(parent, Qt::WindowSystemMenuHi
     ui->openSSLVersion->setText(SSLeay_version(SSLEAY_VERSION));
 #ifdef ENABLE_WALLET
     std::string strPathCustom = GetArg("-backuppath", "");
-    std::string strzHOTXPathCustom = GetArg("-zhotxbackuppath", "");
+    std::string strzHOTXPathCustom = GetArg("-zhotxxbackuppath", "");
     int nCustomBackupThreshold = GetArg("-custombackupthreshold", DEFAULT_CUSTOMBACKUPTHRESHOLD);
 
     if(!strPathCustom.empty()) {
@@ -300,9 +299,9 @@ RPCConsole::RPCConsole(QWidget* parent) : QDialog(parent, Qt::WindowSystemMenuHi
     }
 
     if(!strzHOTXPathCustom.empty()) {
-        ui->wallet_customzhotxbackuppath->setText(QString::fromStdString(strzHOTXPathCustom));
-        ui->wallet_customzhotxbackuppath_label->setVisible(true);
-        ui->wallet_customzhotxbackuppath->setVisible(true);
+        ui->wallet_customzhotxxbackuppath->setText(QString::fromStdString(strzHOTXPathCustom));
+        ui->wallet_customzhotxxbackuppath_label->setVisible(true);
+        ui->wallet_customzhotxxbackuppath->setVisible(true);
     }
 
     if((!strPathCustom.empty() || !strzHOTXPathCustom.empty()) && nCustomBackupThreshold > 0) {

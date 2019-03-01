@@ -1,6 +1,5 @@
 // Copyright (c) 2014-2016 The Dash developers
 // Copyright (c) 2015-2018 The PIVX Developers 
-// Copyright (c) 2019 The Hotchain Developers 
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -15,8 +14,8 @@
 #include "sync.h"
 #include "wallet.h"
 
-#define MASTERNODE_REQUIRED_AMOUNT                 20000
-#define MASTERNODE_ACCEPTABLE_INPUTS_CHECK_AMOUNT  19999.99
+#define MASTERNODE_REQUIRED_AMOUNT                 1000
+#define MASTERNODE_ACCEPTABLE_INPUTS_CHECK_AMOUNT  999.99
 
 #define ACTIVE_MASTERNODE_INITIAL 0 // initial state
 #define ACTIVE_MASTERNODE_SYNC_IN_PROCESS 1

@@ -16,7 +16,7 @@ HOTX is a forefront cryptocurrency forked from the latest PIVX codebase. It is t
   - Zerocoin v2 with staking
   - Instant Transactions via SwiftTx
   - 60sec block time
-  - 20000 HOTX for Masternodes
+  - 1000 HOTX for Masternodes
 
 
 Mainnet Ports :

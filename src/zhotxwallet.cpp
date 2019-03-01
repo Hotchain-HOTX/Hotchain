@@ -1,16 +1,16 @@
 // Copyright (c) 2017-2018 The PIVX Developers
-// Copyright (c) 2018 The Hotchain Developers 
+// Copyright (c) 2018 The HOTCHAIN Developers 
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "zhotxwallet.h"
+#include "zhotxxwallet.h"
 #include "main.h"
 #include "txdb.h"
 #include "walletdb.h"
 #include "init.h"
 #include "wallet.h"
 #include "primitives/deterministicmint.h"
-#include "zhotxchain.h"
+#include "zhotxxchain.h"
 
 using namespace libzerocoin;
 
@@ -22,7 +22,7 @@ CzHOTXWallet::CzHOTXWallet(std::string strWalletFile)
     uint256 hashSeed;
     bool fFirstRun = !walletdb.ReadCurrentSeedHash(hashSeed);
 
-    //Check for old db version of storing zhotx seed
+    //Check for old db version of storing zhotxx seed
     if (fFirstRun) {
         uint256 seed;
         if (walletdb.ReadzHOTXSeed_deprecated(seed)) {
@@ -34,7 +34,7 @@ CzHOTXWallet::CzHOTXWallet(std::string strWalletFile)
                     LogPrintf("%s: Updated zHOTX seed databasing\n", __func__);
                     fFirstRun = false;
                 } else {
-                    LogPrintf("%s: failed to remove old zhotx seed\n", __func__);
+                    LogPrintf("%s: failed to remove old zhotxx seed\n", __func__);
                 }
             }
         }
@@ -56,7 +56,7 @@ CzHOTXWallet::CzHOTXWallet(std::string strWalletFile)
         key.MakeNewKey(true);
         seed = key.GetPrivKey_256();
         seedMaster = seed;
-        LogPrintf("%s: first run of zhotx wallet detected, new seed generated. Seedhash=%s\n", __func__, Hash(seed.begin(), seed.end()).GetHex());
+        LogPrintf("%s: first run of zhotxx wallet detected, new seed generated. Seedhash=%s\n", __func__, Hash(seed.begin(), seed.end()).GetHex());
     } else if (!pwalletMain->GetDeterministicSeed(hashSeed, seed)) {
         LogPrintf("%s: failed to get deterministic seed for hashseed %s\n", __func__, hashSeed.GetHex());
         return;
@@ -204,7 +204,7 @@ void CzHOTXWallet::SyncWithChain(bool fGenerateMintPool)
             if (ShutdownRequested())
                 return;
 
-            if (pwalletMain->zhotxTracker->HasPubcoinHash(pMint.first)) {
+            if (pwalletMain->zhotxxTracker->HasPubcoinHash(pMint.first)) {
                 mintPool.Remove(pMint.first);
                 continue;
             }
@@ -327,8 +327,8 @@ bool CzHOTXWallet::SetMintSeen(const CBigNum& bnValue, const int& nHeight, const
         pwalletMain->AddToWallet(wtx);
     }
 
-    // Add to zhotxTracker which also adds to database
-    pwalletMain->zhotxTracker->Add(dMint, true);
+    // Add to zhotxxTracker which also adds to database
+    pwalletMain->zhotxxTracker->Add(dMint, true);
     
     //Update the count if it is less than the mint's count
     if (nCountLastUsed < pMint.second) {

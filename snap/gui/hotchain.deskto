@@ -1,0 +1,14 @@
+# http://standards.freedesktop.org/desktop-entry-spec/desktop-entry-spec-1.0.html
+
+[Desktop Entry]
+Type=Application
+Version=5.2.00
+Encoding=UTF-8
+Name=Hotchain-Qt
+Icon=${SNAP}/hotchain128.png
+MimeType=x-scheme-handler/hotchain;
+Exec=hotchain %u
+Terminal=false
+Categories=Office;Finance;Cryptocurrency;
+Comment=HOTCHAIN Core (by HOTCHAIN-Project)
+Keywords=internet;hotchain;main;qt;crypto;currency;snap;snapcraft;project;
