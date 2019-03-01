@@ -15,7 +15,7 @@
 #include "sendcoinsentry.h"
 #include "walletmodel.h"
 #include "coincontrol.h"
-#include "zhotxxcontroldialog.h"
+#include "zhotxcontroldialog.h"
 #include "spork.h"
 #include "askpassphrasedialog.h"
 
@@ -496,7 +496,7 @@ void PrivacyDialog::sendzHOTX()
             walletModel->updateAddressBookLabels(address.Get(), "(no label)", "send");
     }
 
-    // Clear zhotxx selector in case it was used
+    // Clear zhotx selector in case it was used
     zHotxControlDialog::setSelectedMints.clear();
     ui->labelzHotxSelected_int->setText(QString("0"));
     ui->labelQuantitySelected_int->setText(QString("0"));
@@ -652,7 +652,7 @@ void PrivacyDialog::setBalance(const CAmount& balance, const CAmount& unconfirme
         mapImmature.insert(make_pair(denom, 0));
     }
 
-    std::vector<CMintMeta> vMints = pwalletMain->zhotxxTracker->GetMints(false);
+    std::vector<CMintMeta> vMints = pwalletMain->zhotxTracker->GetMints(false);
     map<libzerocoin::CoinDenomination, int> mapMaturityHeights = GetMintMaturityHeight();
     for (auto& meta : vMints){
         // All denominations

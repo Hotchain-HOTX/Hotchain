@@ -6331,7 +6331,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
 <context>
     <name>zHotxControlDialog</name>
     <message>
-        <location filename="../forms/zhotxxcontroldialog.ui" line="+20"/>
+        <location filename="../forms/zhotxcontroldialog.ui" line="+20"/>
         <source>Select zHOTX to Spend</source>
         <translation type="unfinished"></translation>
     </message>

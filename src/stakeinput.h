@@ -30,7 +30,7 @@ public:
 
 // zHOTXStake can take two forms
 // 1) the stake candidate, which is a zcmint that is attempted to be staked
-// 2) a staked zhotxx, which is a zcspend that has successfully staked
+// 2) a staked zhotx, which is a zcspend that has successfully staked
 class CzHotxStake : public CStakeInput
 {
 private:

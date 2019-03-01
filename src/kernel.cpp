@@ -11,7 +11,7 @@
 #include "timedata.h"
 #include "util.h"
 #include "stakeinput.h"
-#include "zhotxxchain.h"
+#include "zhotxchain.h"
 
 using namespace std;
 

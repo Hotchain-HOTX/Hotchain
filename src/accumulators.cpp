@@ -10,7 +10,7 @@
 #include "txdb.h"
 #include "init.h"
 #include "spork.h"
-#include "zhotxxchain.h"
+#include "zhotxchain.h"
 
 using namespace libzerocoin;
 

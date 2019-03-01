@@ -15,8 +15,8 @@
 #include <iostream>
 #include <accumulators.h>
 #include "wallet.h"
-#include "zhotxxwallet.h"
-#include "zhotxxchain.h"
+#include "zhotxwallet.h"
+#include "zhotxchain.h"
 
 using namespace libzerocoin;
 

@@ -263,11 +263,11 @@ extern UniValue importzerocoins(const UniValue& params, bool fHelp);
 extern UniValue exportzerocoins(const UniValue& params, bool fHelp);
 extern UniValue reconsiderzerocoins(const UniValue& params, bool fHelp);
 extern UniValue getspentzerocoinamount(const UniValue& params, bool fHelp);
-extern UniValue setzhotxxseed(const UniValue& params, bool fHelp);
-extern UniValue getzhotxxseed(const UniValue& params, bool fHelp);
+extern UniValue setzhotxseed(const UniValue& params, bool fHelp);
+extern UniValue getzhotxseed(const UniValue& params, bool fHelp);
 extern UniValue generatemintlist(const UniValue& params, bool fHelp);
-extern UniValue searchdzhotxx(const UniValue& params, bool fHelp);
-extern UniValue dzhotxxstate(const UniValue& params, bool fHelp);
+extern UniValue searchdzhotx(const UniValue& params, bool fHelp);
+extern UniValue dzhotxstate(const UniValue& params, bool fHelp);
 extern UniValue enableautomintaddress(const UniValue& params, bool fHelp);
 extern UniValue createautomintaddress(const UniValue& params, bool fHelp);
 

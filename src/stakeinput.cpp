@@ -174,12 +174,12 @@ bool CzHotxStake::GetTxFrom(CTransaction& tx)
 
 bool CzHotxStake::MarkSpent(CWallet *pwallet, const uint256& txid)
 {
-    CzHOTXTracker* zhotxxTracker = pwallet->zhotxxTracker.get();
+    CzHOTXTracker* zhotxTracker = pwallet->zhotxTracker.get();
     CMintMeta meta;
-    if (!zhotxxTracker->GetMetaFromStakeHash(hashSerial, meta))
+    if (!zhotxTracker->GetMetaFromStakeHash(hashSerial, meta))
         return error("%s: tracker does not have serialhash", __func__);
 
-    zhotxxTracker->SetPubcoinUsed(meta.hashPubcoin, txid);
+    zhotxTracker->SetPubcoinUsed(meta.hashPubcoin, txid);
     return true;
 }
 

@@ -176,12 +176,12 @@ BITCOIN_CORE_H = \
   wallet.h \
   wallet_ismine.h \
   walletdb.h \
-  zhotxxchain.h \
-  zhotxxtracker.h \
-  zhotxxwallet.h \
+  zhotxchain.h \
+  zhotxtracker.h \
+  zhotxwallet.h \
   genwit.h \
   concurrentqueue.h \
-  lightzhotxxthread.h \
+  lightzhotxthread.h \
   zmq/zmqabstractnotifier.h \
   zmq/zmqconfig.h \
   zmq/zmqnotificationinterface.h \
@@ -229,7 +229,7 @@ libbitcoin_server_a_SOURCES = \
   txdb.cpp \
   txmempool.cpp \
   validationinterface.cpp \
-  zhotxxchain.cpp \
+  zhotxchain.cpp \
   $(BITCOIN_CORE_H)
 
 if ENABLE_ZMQ
@@ -269,11 +269,11 @@ libbitcoin_wallet_a_SOURCES = \
   wallet.cpp \
   wallet_ismine.cpp \
   walletdb.cpp \
-  zhotxxwallet.cpp \
-  zhotxxtracker.cpp \
+  zhotxwallet.cpp \
+  zhotxtracker.cpp \
   stakeinput.cpp \
   genwit.cpp \
-  lightzhotxxthread.cpp \
+  lightzhotxthread.cpp \
   $(BITCOIN_CORE_H)
 
 # crypto primitives library

@@ -11,4 +11,4 @@ Exec=hotchain.qt-testnet --testnet %u
 Terminal=false
 Categories=Office;Finance;
 Comment=Hotchain Core Regression Test (by Hotchain-Project)
-Keywords=internet;hotchain;testnet;qt;crypto;currency;snap;snapcraft;HOTCHAIN-Project;daemon;cli;qt;zerocoin;zhotxx
+Keywords=internet;hotchain;testnet;qt;crypto;currency;snap;snapcraft;HOTCHAIN-Project;daemon;cli;qt;zerocoin;zhotx
