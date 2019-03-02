@@ -360,16 +360,17 @@ UniValue getblock(const UniValue& params, bool fHelp)
     if (params.size() > 1)
         fVerbose = params[1].get_bool();
 
+    CBlock block;
+    CBlockIndex* pblockindex = mapBlockIndex[chainActive.Tip()->GetBlockHash()];
     if (mapBlockIndex.count(hash) == 0){
         //is an height
-        int Height = params[0].get_int();
+        int64_t Height = params[0].get_int64();
         CBlockIndex* pindexBest = mapBlockIndex[chainActive.Tip()->GetBlockHash()];
         if ((Height < 0) || (Height > pindexBest->nHeight)) {
             throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Block not found");
         }
         
         CBlock block;
-        CBlockIndex* pblockindex = mapBlockIndex[chainActive.Tip()->GetBlockHash()];
         while (pblockindex->nHeight > Height)
             pblockindex = pblockindex->pprev;
         strHash = pblockindex->GetBlockHash().GetHex();
@@ -377,9 +378,9 @@ UniValue getblock(const UniValue& params, bool fHelp)
         if (mapBlockIndex.count(hash) == 0){
             throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Block not found (2)");
     }
-
-    CBlock block;
-    CBlockIndex* pblockindex = mapBlockIndex[hash];
+    else{
+	pblockindex = mapBlockIndex[hash];
+    }
 
     if (!ReadBlockFromDisk(block, pblockindex))
         throw JSONRPCError(RPC_INTERNAL_ERROR, "Can't read block from disk");
