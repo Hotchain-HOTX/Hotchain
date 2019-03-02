@@ -53,7 +53,7 @@ static void convertSeed6(std::vector<CAddress>& vSeedsOut, const SeedSpec6* data
 // + Contains no strange transactions
 static Checkpoints::MapCheckpoints mapCheckpoints =
     boost::assign::map_list_of
-    (0, uint256("0xf97b44c715a03828098bd90965a4435e972f612a2f07d7f30287c999257e82a2"));
+    (0, uint256("0x4eff5d09936453a53e6474c1d055a1f2622b23e6bad9e38479e6abf840179cc4"));
     // (20, uint256("0x0000078b097880fef496b86cf8cdaa3eba9e11c8d4ae6c33ea1a132af184c299"))
     // (50, uint256("0x000000d3d3941d54578cbacccf887bc57c8cf3678fcf81559dc84451c1662c8c"))
     // (75, uint256("0x00000025aed031f0ede5692476334e3c7ade0edb98842cd086ae5c72760d2848"))
@@ -64,25 +64,25 @@ static Checkpoints::MapCheckpoints mapCheckpoints =
 	
 static const Checkpoints::CCheckpointData data = {
     &mapCheckpoints,
-    1550576664, // * UNIX timestamp of last checkpoint block
+    1551486723, // * UNIX timestamp of last checkpoint block
     0,    // * total number of transactions between genesis and last checkpoint
                 //   (the tx=... number in the SetBestChain debug.log lines)
     2000        // * estimated number of transactions per day after checkpoint
 };
 
 static Checkpoints::MapCheckpoints mapCheckpointsTestnet =
-    boost::assign::map_list_of(0, uint256("0xf97b44c715a03828098bd90965a4435e972f612a2f07d7f30287c999257e82a2"));
+    boost::assign::map_list_of(0, uint256("0x4eff5d09936453a53e6474c1d055a1f2622b23e6bad9e38479e6abf840179cc4"));
 static const Checkpoints::CCheckpointData dataTestnet = {
     &mapCheckpointsTestnet,
-    1550315311,
+    1551486723,
     0,
     250};
 
 static Checkpoints::MapCheckpoints mapCheckpointsRegtest =
-    boost::assign::map_list_of(0, uint256("0xf97b44c715a03828098bd90965a4435e972f612a2f07d7f30287c999257e82a2"));
+    boost::assign::map_list_of(0, uint256("0x4eff5d09936453a53e6474c1d055a1f2622b23e6bad9e38479e6abf840179cc4"));
 static const Checkpoints::CCheckpointData dataRegtest = {
     &mapCheckpointsRegtest,
-    1550315311,
+    1551486723,
     0,
     100};
 
@@ -133,7 +133,7 @@ public:
         nLastPoWBlock = 200;
         //nModifierUpdateBlock = 1;
         //nZerocoinStartHeight = 210;
-        //nZerocoinStartTime = 1550315311; 
+        //nZerocoinStartTime = 1551486723; 
         //nBlockEnforceSerialRange = 895400; //Enforce serial range starting this block
         //nBlockRecalculateAccumulators = 908000; //Trigger a recalculation of accumulators
         //nBlockFirstFraudulent = 891737; //First block that bad serials emerged
@@ -160,7 +160,7 @@ public:
         genesis.hashMerkleRoot = genesis.BuildMerkleTree();
         genesis.nVersion = 4;
         genesis.nAccumulatorCheckpoint = 0;
-        genesis.nTime = 1550536138;
+        genesis.nTime = 1551486723;
         genesis.nBits = 504365040;
         genesis.nNonce = 80512;
 
@@ -184,8 +184,8 @@ public:
                 std::cout << " merklehash: 0x"  << genesis.hashMerkleRoot.ToString().c_str() <<  "\n";
             }
         } else {
-            assert(hashGenesisBlock == uint256("0xf97b44c715a03828098bd90965a4435e972f612a2f07d7f30287c999257e82a2"));
-            assert(genesis.hashMerkleRoot == uint256("0xcd66da3d609db9fb3271182c465b1f7da758175e8d578067982e1df2652af654"));
+            assert(hashGenesisBlock == uint256("0x4eff5d09936453a53e6474c1d055a1f2622b23e6bad9e38479e6abf840179cc4"));
+            assert(genesis.hashMerkleRoot == uint256("0x37f367e789abcbaaebf111f37e5ae73d03b1aeab0d7308d3d3fe1370d6ac7be9"));
         }
 
 
@@ -270,11 +270,11 @@ public:
         nTargetTimespan = 1 * 60; // Hotchain: 1 day
         nTargetSpacing = 1 * 60;  // Hotchain: 1 minute
         nLastPoWBlock = 200;
-        nMaturity = 15;
-        nMaxMoneyOut = 43199500 * COIN;
+        nMaturity = 10;
+        nMaxMoneyOut = 21000000 * COIN;
 
         //! Modify the testnet genesis block so the timestamp is valid for a later start.
-        genesis.nTime = 1550536138;
+        genesis.nTime = 1551486723;
         genesis.nNonce = 80512;
 
         hashGenesisBlock = genesis.GetHash();
@@ -298,8 +298,8 @@ public:
 
             }
         } else {
-            assert(hashGenesisBlock == uint256("0xf97b44c715a03828098bd90965a4435e972f612a2f07d7f30287c999257e82a2"));
-            assert(genesis.hashMerkleRoot == uint256("0xcd66da3d609db9fb3271182c465b1f7da758175e8d578067982e1df2652af654"));
+            assert(hashGenesisBlock == uint256("0x4eff5d09936453a53e6474c1d055a1f2622b23e6bad9e38479e6abf840179cc4"));
+            assert(genesis.hashMerkleRoot == uint256("0x37f367e789abcbaaebf111f37e5ae73d03b1aeab0d7308d3d3fe1370d6ac7be9"));
         }
 
         vSeeds.clear();
@@ -361,7 +361,7 @@ public:
         nTargetTimespan = 24 * 60 * 60; // Hotchain: 1 day
         nTargetSpacing = 1 * 60;        // Hotchain: 1 minutes
         bnProofOfWorkLimit = ~uint256(0) >> 1;
-        genesis.nTime = 1550536138;
+        genesis.nTime = 1551486723;
         genesis.nBits = 504365040;
         genesis.nNonce = 80512;
         nP2pPort = 51476;
@@ -387,8 +387,8 @@ public:
 
             }
         } else {
-            assert(hashGenesisBlock == uint256("0xf97b44c715a03828098bd90965a4435e972f612a2f07d7f30287c999257e82a2"));
-            assert(genesis.hashMerkleRoot == uint256("0xcd66da3d609db9fb3271182c465b1f7da758175e8d578067982e1df2652af654"));
+            assert(hashGenesisBlock == uint256("0x4eff5d09936453a53e6474c1d055a1f2622b23e6bad9e38479e6abf840179cc4"));
+            assert(genesis.hashMerkleRoot == uint256("0x37f367e789abcbaaebf111f37e5ae73d03b1aeab0d7308d3d3fe1370d6ac7be9"));
         }
         if (regenerate)
             exit(0);
