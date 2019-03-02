@@ -364,7 +364,7 @@ UniValue getblock(const UniValue& params, bool fHelp)
     CBlockIndex* pblockindex = mapBlockIndex[chainActive.Tip()->GetBlockHash()];
     if (mapBlockIndex.count(hash) == 0){
         //is an height
-	std::string& tmp = params[0].get_str();
+	const std::string tmp = params[0].get_str();
 	params[0].setNumStr(tmp);
         int64_t Height = params[0].get_int64();
         CBlockIndex* pindexBest = mapBlockIndex[chainActive.Tip()->GetBlockHash()];
