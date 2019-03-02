@@ -362,7 +362,7 @@ UniValue getblock(const UniValue& params, bool fHelp)
 
     if (mapBlockIndex.count(hash) == 0){
         //is an height
-        int_64 Height = params[0].get_int();
+        int Height = params[0].get_int();
         CBlockIndex* pindexBest = mapBlockIndex[chainActive.Tip()->GetBlockHash()];
         if ((Height < 0) || (Height > pindexBest->nHeight)) {
             throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Block not found");
