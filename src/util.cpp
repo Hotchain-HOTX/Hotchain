@@ -402,7 +402,7 @@ static std::string FormatException(std::exception* pex, const char* pszThread)
     char pszModule[MAX_PATH] = "";
     GetModuleFileNameA(NULL, pszModule, sizeof(pszModule));
 #else
-    const char* pszModule = "hotchaincore";
+    const char* pszModule = "hotchain";
 #endif
     if (pex)
         return strprintf(
@@ -423,13 +423,13 @@ void PrintExceptionContinue(std::exception* pex, const char* pszThread)
 boost::filesystem::path GetDefaultDataDir()
 {
     namespace fs = boost::filesystem;
-// Windows < Vista: C:\Documents and Settings\Username\Application Data\HotchainCore
-// Windows >= Vista: C:\Users\Username\AppData\Roaming\HotchainCore
-// Mac: ~/Library/Application Support/HotchainCore
-// Unix: ~/.hotchaincore
+// Windows < Vista: C:\Documents and Settings\Username\Application Data\Hotchain
+// Windows >= Vista: C:\Users\Username\AppData\Roaming\Hotchain
+// Mac: ~/Library/Application Support/Hotchain
+// Unix: ~/.hotchain
 #ifdef WIN32
     // Windows
-    return GetSpecialFolderPath(CSIDL_APPDATA) / "HotchainCore";
+    return GetSpecialFolderPath(CSIDL_APPDATA) / "Hotchain";
 #else
     fs::path pathRet;
     char* pszHome = getenv("HOME");
@@ -441,10 +441,10 @@ boost::filesystem::path GetDefaultDataDir()
     // Mac
     pathRet /= "Library/Application Support";
     TryCreateDirectory(pathRet);
-    return pathRet / "HotchainCore";
+    return pathRet / "Hotchain";
 #else
     // Unix
-    return pathRet / ".hotchaincore";
+    return pathRet / ".hotchain";
 #endif
 #endif
 }
