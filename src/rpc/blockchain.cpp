@@ -377,6 +377,7 @@ UniValue getblock(const UniValue& params, bool fHelp)
         uint256 hash(strHash);
         if (mapBlockIndex.count(hash) == 0){
             throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Block not found (2)");
+	}
     }
     else{
 	pblockindex = mapBlockIndex[hash];
