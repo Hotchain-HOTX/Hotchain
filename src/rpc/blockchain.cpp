@@ -364,8 +364,8 @@ UniValue getblock(const UniValue& params, bool fHelp)
     CBlockIndex* pblockindex = mapBlockIndex[chainActive.Tip()->GetBlockHash()];
     if (mapBlockIndex.count(hash) == 0){
         //is an height
-	params[0].setNumStr(strHash);
-        int64_t Height = params[0].get_int64();
+	std::string::size_type sz;
+        int Height = std::stoi (strHash,&sz);;
         CBlockIndex* pindexBest = mapBlockIndex[chainActive.Tip()->GetBlockHash()];
         if ((Height < 0) || (Height > pindexBest->nHeight)) {
             throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Block not found");
