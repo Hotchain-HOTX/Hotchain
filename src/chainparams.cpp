@@ -53,11 +53,11 @@ static void convertSeed6(std::vector<CAddress>& vSeedsOut, const SeedSpec6* data
 // + Contains no strange transactions
 static Checkpoints::MapCheckpoints mapCheckpoints =
     boost::assign::map_list_of
-    (0, uint256("0xd068f8289608418e66e7beb9c2a4ba566ee90c0e56f9e4c6eb910135f6bfa98f"));
-    // (20, uint256("0x0000078b097880fef496b86cf8cdaa3eba9e11c8d4ae6c33ea1a132af184c299"))
-    // (50, uint256("0x000000d3d3941d54578cbacccf887bc57c8cf3678fcf81559dc84451c1662c8c"))
-    // (75, uint256("0x00000025aed031f0ede5692476334e3c7ade0edb98842cd086ae5c72760d2848"))
-    // (100, uint256("0x00000050d59e6c9ae52925e87a1eee680723897a13011bbf0be421104a457f92"))
+    (0, uint256("0xd068f8289608418e66e7beb9c2a4ba566ee90c0e56f9e4c6eb910135f6bfa98f"))
+    (20, uint256("0x000002e51d8e490cddf0c50405fd4f4b82aacf370cca51aa88654f43f30ef22e"))
+    (50, uint256("0x0000009f2cc7fc31c7521cf831b401e65ca766fda81727f2bd58707b18e5db29"))
+    (75, uint256("0x00000069ed8ff5995d1a0aa6f1cf264d65ed1f81b3a28bb6824b825818bcb920"))
+    (100, uint256("0x00000027acc7cdfe4d64cd2a18e9d31ff8790c24665e2a4cc49b9df8d511d9c6"));
     // (150, uint256("0x00000002388b41d0d36cb3cc5634807c32d647d620e89e32e2b0dc44e0b05132"))
     // (200, uint256("0x0000002bec538c8e4b4c68a90f453f20aa648c29d046cc758aa3033c803006a7"))
     // (250, uint256("0x038ccc4cb05202991cda5a383b3f0d283b8a37c092735fcc9a82bacb1cb451ca"))
@@ -65,7 +65,7 @@ static Checkpoints::MapCheckpoints mapCheckpoints =
 static const Checkpoints::CCheckpointData data = {
     &mapCheckpoints,
     1551486723, // * UNIX timestamp of last checkpoint block
-    0,    // * total number of transactions between genesis and last checkpoint
+    102,    // * total number of transactions between genesis and last checkpoint
                 //   (the tx=... number in the SetBestChain debug.log lines)
     2000        // * estimated number of transactions per day after checkpoint
 };
