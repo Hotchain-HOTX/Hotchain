@@ -1962,8 +1962,6 @@ void CheckForkWarningConditionsOnNewFork(CBlockIndex* pindexNewForkTip)
 // Requires cs_main.
 void Misbehaving(NodeId pnode, int howmuch)
 {
-	if(chainActive.Height() <= 4000) // ToBeRemoved
-		return; // ToBeRemoved
     if (howmuch == 0)
         return;
 
