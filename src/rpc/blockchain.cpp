@@ -302,13 +302,13 @@ UniValue getblock(const UniValue& params, bool fHelp)
 {
     if (fHelp || params.size() < 1 || params.size() > 2)
         throw runtime_error(
-            "getblock \"hash\" ( verbose )\n"
+            "getblock \"hash or height\" ( verbose )\n"
             "\nIf verbose is false, returns a string that is serialized, hex-encoded data for block 'hash'.\n"
             "If verbose is true, returns an Object with information about block <hash>.\n"
 
             "\nArguments:\n"
-            "1. \"hash\"          (string, required) The block hash\n"
-            "2. verbose           (boolean, optional, default=true) true for a json object, false for the hex encoded data\n"
+            "1. \"hash or height\"          (string, required) The block hash or height\n"
+            "2. verbose                     (boolean, optional, default=true) true for a json object, false for the hex encoded data\n"
 
             "\nResult (for verbose = true):\n"
             "{\n"
@@ -360,8 +360,23 @@ UniValue getblock(const UniValue& params, bool fHelp)
     if (params.size() > 1)
         fVerbose = params[1].get_bool();
 
-    if (mapBlockIndex.count(hash) == 0)
-        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Block not found");
+    if (mapBlockIndex.count(hash) == 0){
+        //is an height
+        int_64 Height = params[0].get_int();
+        CBlockIndex* pindexBest = mapBlockIndex[chainActive.Tip()->GetBlockHash()];
+        if ((Height < 0) || (Height > pindexBest->nHeight)) {
+            throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Block not found");
+        }
+        
+        CBlock block;
+        CBlockIndex* pblockindex = mapBlockIndex[chainActive.Tip()->GetBlockHash()];
+        while (pblockindex->nHeight > Height)
+            pblockindex = pblockindex->pprev;
+        strHash = pblockindex->GetBlockHash().GetHex();
+        hash(strHash);
+        if (mapBlockIndex.count(hash) == 0){
+            throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Block not found (2)");
+    }
 
     CBlock block;
     CBlockIndex* pblockindex = mapBlockIndex[hash];
