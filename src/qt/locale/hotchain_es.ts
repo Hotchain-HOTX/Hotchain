@@ -645,8 +645,8 @@
         <translation>Herramienta de pestañas</translation>
     </message>
     <message>
-        <source>Hotchain Core</source>
-        <translation>Hotchain Core</translation>
+        <source>Hotchain</source>
+        <translation>Hotchain</translation>
     </message>
     <message>
         <source>Send coins to a HOTCHAIN address</source>
@@ -669,12 +669,12 @@
         <translation>Explorar masternodes</translation>
     </message>
     <message>
-        <source>&amp;About Hotchain Core</source>
-        <translation>&amp;Sobre Hotchain Core</translation>
+        <source>&amp;About Hotchain</source>
+        <translation>&amp;Sobre Hotchain</translation>
     </message>
     <message>
-        <source>Show information about Hotchain Core</source>
-        <translation>Mostrar información sobre Hotchain Core</translation>
+        <source>Show information about Hotchain</source>
+        <translation>Mostrar información sobre Hotchain</translation>
     </message>
     <message>
         <source>Modify configuration options for HOTCHAIN</source>
@@ -729,12 +729,12 @@
         <translation>Ventana del explorador de bloques</translation>
     </message>
     <message>
-        <source>Show the Hotchain Core help message to get a list with possible HOTCHAIN command-line options</source>
-        <translation>Mostrar la ayuda de Hotchain Core para obtener una lista de posibles opciones en línea de comandos</translation>
+        <source>Show the Hotchain help message to get a list with possible HOTCHAIN command-line options</source>
+        <translation>Mostrar la ayuda de Hotchain para obtener una lista de posibles opciones en línea de comandos</translation>
     </message>
     <message>
-        <source>Hotchain Core client</source>
-        <translation>Cliente Hotchain Core</translation>
+        <source>Hotchain client</source>
+        <translation>Cliente Hotchain</translation>
     </message>
     <message numerus="yes">
         <source>%n active connection(s) to HOTCHAIN network</source>
@@ -1231,16 +1231,16 @@ MultiEnvío: %1</translation>
         <translation>versión</translation>
     </message>
     <message>
-        <source>Hotchain Core</source>
-        <translation>Hotchain Core</translation>
+        <source>Hotchain</source>
+        <translation>Hotchain</translation>
     </message>
     <message>
         <source>(%1-bit)</source>
         <translation>(%1-bit)</translation>
     </message>
     <message>
-        <source>About Hotchain Core</source>
-        <translation>Acerca de Hotchain Core</translation>
+        <source>About Hotchain</source>
+        <translation>Acerca de Hotchain</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -1286,16 +1286,16 @@ MultiEnvío: %1</translation>
         <translation>Bienvenido/a</translation>
     </message>
     <message>
-        <source>Welcome to Hotchain Core.</source>
-        <translation>Bienvenido/a a Hotchain Core.</translation>
+        <source>Welcome to Hotchain.</source>
+        <translation>Bienvenido/a a Hotchain.</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where Hotchain Core will store its data.</source>
-        <translation>Al ser la primera vez que se inicia el programa, usted puede elegir dónde guardará Hotchain Core sus datos.</translation>
+        <source>As this is the first time the program is launched, you can choose where Hotchain will store its data.</source>
+        <translation>Al ser la primera vez que se inicia el programa, usted puede elegir dónde guardará Hotchain sus datos.</translation>
     </message>
     <message>
-        <source>Hotchain Core will download and store a copy of the HOTCHAIN block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>Hotchain Core descargará y guardará una copia de la cadena de bloques HOTCHAIN. Por lo menos %1GB de datos serán guardados en esta carpeta, y crecerá con el tiempo. El monedero también se guardará en esta carpeta.</translation>
+        <source>Hotchain will download and store a copy of the HOTCHAIN block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>Hotchain descargará y guardará una copia de la cadena de bloques HOTCHAIN. Por lo menos %1GB de datos serán guardados en esta carpeta, y crecerá con el tiempo. El monedero también se guardará en esta carpeta.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -1306,8 +1306,8 @@ MultiEnvío: %1</translation>
         <translation>Usar una carpeta de datos personalizada:</translation>
     </message>
     <message>
-        <source>Hotchain Core</source>
-        <translation>Hotchain Core</translation>
+        <source>Hotchain</source>
+        <translation>Hotchain</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -1992,8 +1992,8 @@ https://www.transifex.com/hotchain-project/hotchain-project-translations</transl
         <translation>&amp;Puerto:</translation>
     </message>
     <message>
-        <source>Port of the proxy (e.g. 9050)</source>
-        <translation>Puerto del proxy (p.e. 9050)</translation>
+        <source>Port of the proxy (e.g. 9069)</source>
+        <translation>Puerto del proxy (p.e. 9069)</translation>
     </message>
     <message>
         <source>&amp;Window</source>
@@ -4079,7 +4079,7 @@ O mint las denominaciones más altas (por lo tanto, se necesitan menos datos) o 
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>Hotchain Core is shutting down...</source>
+        <source>Hotchain is shutting down...</source>
         <translation>El programa HOTCHAIN se está cerrando...</translation>
     </message>
     <message>
@@ -4229,8 +4229,8 @@ O mint las denominaciones más altas (por lo tanto, se necesitan menos datos) o 
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Hotchain Core</source>
-        <translation>Hotchain Core</translation>
+        <source>Hotchain</source>
+        <translation>Hotchain</translation>
     </message>
     <message>
         <source>Version %1</source>
@@ -4245,8 +4245,8 @@ O mint las denominaciones más altas (por lo tanto, se necesitan menos datos) o 
         <translation>Los desarrolladores de Dash Core</translation>
     </message>
     <message>
-        <source>The Hotchain Core developers</source>
-        <translation>Los desarrolladores de Hotchain Core</translation>
+        <source>The Hotchain developers</source>
+        <translation>Los desarrolladores de Hotchain</translation>
     </message>
     <message>
         <source>[testnet]</source>
@@ -4910,8 +4910,8 @@ O mint las denominaciones más altas (por lo tanto, se necesitan menos datos) o 
         <translation>El punto de chequeo del acumulador que hemos calculado no coincide con lo guardado en el índice de bloques</translation>
     </message>
     <message>
-        <source>Cannot obtain a lock on data directory %s. Hotchain Core is probably already running.</source>
-        <translation>No se puede obtener un bloqueo sobre el directorio de datos %s. Hotchain Core esta probablemente en ejecución.</translation>
+        <source>Cannot obtain a lock on data directory %s. Hotchain is probably already running.</source>
+        <translation>No se puede obtener un bloqueo sobre el directorio de datos %s. Hotchain esta probablemente en ejecución.</translation>
     </message>
     <message>
         <source>Change automatic finalized budget voting behavior. mode=auto: Vote for only exact finalized budget match to my generated budget. (string, default: auto)</source>
@@ -5086,8 +5086,8 @@ O mint las denominaciones más altas (por lo tanto, se necesitan menos datos) o 
         <translation>Este producto incluye software desarrollado por el Proyecto OpenSSL para uso en OpenSSL Toolkit &lt;https://www.openssl.org/&gt; y software de cifrado escrito por Eric Young y software de UPnP escrito por Thomas Bernard.</translation>
     </message>
     <message>
-        <source>Unable to bind to %s on this computer. Hotchain Core is probably already running.</source>
-        <translation>Imposible conectar a %s en esta computadora. Es probable que Hotchain Core ya este corriendo.</translation>
+        <source>Unable to bind to %s on this computer. Hotchain is probably already running.</source>
+        <translation>Imposible conectar a %s en esta computadora. Es probable que Hotchain ya este corriendo.</translation>
     </message>
     <message>
         <source>Unable to locate enough Obfuscation denominated funds for this transaction.</source>
@@ -5114,8 +5114,8 @@ O mint las denominaciones más altas (por lo tanto, se necesitan menos datos) o 
         <translation>Advertencia: -paytxfee esta muy alta! Esta es la comisión de transacción que pagarás si envías una transacción.</translation>
     </message>
     <message>
-        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong Hotchain Core will not work properly.</source>
-        <translation>Advertencia: Por favor verifique que la fecha y hora de su computadora sean correctas! Si su reloj esta fuera de hora Hotchain Core no funcionará adecuadamente.</translation>
+        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong Hotchain will not work properly.</source>
+        <translation>Advertencia: Por favor verifique que la fecha y hora de su computadora sean correctas! Si su reloj esta fuera de hora Hotchain no funcionará adecuadamente.</translation>
     </message>
     <message>
         <source>Warning: The network does not appear to fully agree! Some miners appear to be experiencing issues.</source>
@@ -5146,8 +5146,8 @@ O mint las denominaciones más altas (por lo tanto, se necesitan menos datos) o 
         <translation>Debes especificar un masternodeprivkey en la configuración. Por favor mira la documentación por ayuda.</translation>
     </message>
     <message>
-        <source>(9050 could be used only on mainnet)</source>
-        <translation>(9050 puede ser utilizado solo en mainnet)</translation>
+        <source>(9069 could be used only on mainnet)</source>
+        <translation>(9069 puede ser utilizado solo en mainnet)</translation>
     </message>
     <message>
         <source>(default: %s)</source>
@@ -5158,8 +5158,8 @@ O mint las denominaciones más altas (por lo tanto, se necesitan menos datos) o 
         <translation>(predeterminado: 1)</translation>
     </message>
     <message>
-        <source>(must be 9050 for mainnet)</source>
-        <translation>(debe ser 9050 para un mainnet)</translation>
+        <source>(must be 9069 for mainnet)</source>
+        <translation>(debe ser 9069 para un mainnet)</translation>
     </message>
     <message>
         <source>Accept command line and JSON-RPC commands</source>
@@ -5266,8 +5266,8 @@ O mint las denominaciones más altas (por lo tanto, se necesitan menos datos) o 
         <translation>Copyright (C) 2014-%i The Dash Core Developers</translation>
     </message>
     <message>
-        <source>Copyright (C) 2015-%i The Hotchain Core Developers</source>
-        <translation>Copyright (C) 2015-%i The Hotchain Core Developers</translation>
+        <source>Copyright (C) 2015-%i The Hotchain Developers</source>
+        <translation>Copyright (C) 2015-%i The Hotchain Developers</translation>
     </message>
     <message>
         <source>Corrupted block database detected</source>
@@ -5354,8 +5354,8 @@ O mint las denominaciones más altas (por lo tanto, se necesitan menos datos) o 
         <translation>Error al cargar wallet.dat: Monedero dañado</translation>
     </message>
     <message>
-        <source>Error loading wallet.dat: Wallet requires newer version of Hotchain Core</source>
-        <translation>Error al cargar wallet.dat: El monedero requiere una nueva versión del Hotchain Core</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of Hotchain</source>
+        <translation>Error al cargar wallet.dat: El monedero requiere una nueva versión del Hotchain</translation>
     </message>
     <message>
         <source>Error opening block database</source>
@@ -5470,8 +5470,8 @@ O mint las denominaciones más altas (por lo tanto, se necesitan menos datos) o 
         <translation>Información</translation>
     </message>
     <message>
-        <source>Initialization sanity check failed. Hotchain Core is shutting down.</source>
-        <translation>La prueba de salud de inicialización ha fallado. Hotchain Core se cerrará.</translation>
+        <source>Initialization sanity check failed. Hotchain is shutting down.</source>
+        <translation>La prueba de salud de inicialización ha fallado. Hotchain se cerrará.</translation>
     </message>
     <message>
         <source>Input is not valid.</source>
@@ -6294,8 +6294,8 @@ O mint las denominaciones más altas (por lo tanto, se necesitan menos datos) o 
         <translation>Monedero bloqueado.</translation>
     </message>
     <message>
-        <source>Wallet needed to be rewritten: restart Hotchain Core to complete</source>
-        <translation>El Monedero necesita ser reescrito: reinicie Hotchain Core para completar</translation>
+        <source>Wallet needed to be rewritten: restart Hotchain to complete</source>
+        <translation>El Monedero necesita ser reescrito: reinicie Hotchain para completar</translation>
     </message>
     <message>
         <source>Wallet options:</source>

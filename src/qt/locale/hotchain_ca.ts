@@ -421,8 +421,8 @@
         <translation>A&amp;juda</translation>
     </message>
     <message>
-        <source>Hotchain Core</source>
-        <translation>Hotchain Core</translation>
+        <source>Hotchain</source>
+        <translation>Hotchain</translation>
     </message>
     <message>
         <source>Send coins to a HOTCHAIN address</source>
@@ -437,8 +437,8 @@
         <translation>&amp;Masternodes</translation>
     </message>
     <message>
-        <source>&amp;About Hotchain Core</source>
-        <translation>&amp;Sobre Hotchain Core</translation>
+        <source>&amp;About Hotchain</source>
+        <translation>&amp;Sobre Hotchain</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -461,8 +461,8 @@
         <translation>Obre el fitxer de configuració del Masternode</translation>
     </message>
     <message>
-        <source>Hotchain Core client</source>
-        <translation>Client HOTCHAIN core</translation>
+        <source>Hotchain client</source>
+        <translation>Client Hotchain</translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -851,16 +851,16 @@
         <translation>versió</translation>
     </message>
     <message>
-        <source>Hotchain Core</source>
-        <translation>Hotchain Core</translation>
+        <source>Hotchain</source>
+        <translation>Hotchain</translation>
     </message>
     <message>
         <source>(%1-bit)</source>
         <translation>(%1-bit)</translation>
     </message>
     <message>
-        <source>About Hotchain Core</source>
-        <translation>Sobre Hotchain Core</translation>
+        <source>About Hotchain</source>
+        <translation>Sobre Hotchain</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -906,12 +906,12 @@
         <translation>Benvingut</translation>
     </message>
     <message>
-        <source>Welcome to Hotchain Core.</source>
-        <translation>Benvingut a Hotchain Core.</translation>
+        <source>Welcome to Hotchain.</source>
+        <translation>Benvingut a Hotchain.</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where Hotchain Core will store its data.</source>
-        <translation>Al ser el primer cop que s'inicia el programa, pots escollir on es desaran les dades del Hotchain Core.</translation>
+        <source>As this is the first time the program is launched, you can choose where Hotchain will store its data.</source>
+        <translation>Al ser el primer cop que s'inicia el programa, pots escollir on es desaran les dades del Hotchain.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -922,8 +922,8 @@
         <translation>Usar una carpeta de dades personalitzada:</translation>
     </message>
     <message>
-        <source>Hotchain Core</source>
-        <translation>Hotchain Core</translation>
+        <source>Hotchain</source>
+        <translation>Hotchain</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -1713,8 +1713,8 @@
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>Hotchain Core is shutting down...</source>
-        <translation>Hotchain Core s'està tancant...</translation>
+        <source>Hotchain is shutting down...</source>
+        <translation>Hotchain s'està tancant...</translation>
     </message>
     <message>
         <source>Do not shut down the computer until this window disappears.</source>
@@ -1779,8 +1779,8 @@
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Hotchain Core</source>
-        <translation>Hotchain Core</translation>
+        <source>Hotchain</source>
+        <translation>Hotchain</translation>
     </message>
     <message>
         <source>Version %1</source>

@@ -74,7 +74,7 @@ if BUILD_BITCOIN_UTILS
 endif
 
 .PHONY: FORCE check-symbols check-security
-# hotchain core #
+# Hotchain #
 BITCOIN_CORE_H = \
   activemasternode.h \
   accumulators.h \

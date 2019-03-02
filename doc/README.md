@@ -42,7 +42,7 @@ The following are developer notes on how to build HOTCHAIN on your native platfo
 
 Development
 ---------------------
-The Hotchain repo's [root README](https://github.com/HOTCHAIN-Project/HOTCHAIN/blob/master/README.md) contains relevant information on the development process and automated testing.
+The Hotchain repo's [root README](https://github.com/Hotchain-HOTX/Hotchain/blob/master/README.md) contains relevant information on the development process and automated testing.
 
 - [Developer Notes](developer-notes.md)
 - [Multiwallet Qt Development](multiwallet-qt.md)

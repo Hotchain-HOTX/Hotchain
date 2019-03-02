@@ -601,8 +601,8 @@
         <translation>Alatna traka kartica</translation>
     </message>
     <message>
-        <source>Hotchain Core</source>
-        <translation>Hotchain Core</translation>
+        <source>Hotchain</source>
+        <translation>Hotchain</translation>
     </message>
     <message>
         <source>Send coins to a HOTCHAIN address</source>
@@ -625,11 +625,11 @@
         <translation>Pregledajte masternode</translation>
     </message>
     <message>
-        <source>&amp;About Hotchain Core</source>
+        <source>&amp;About Hotchain</source>
         <translation>&amp; O HOTCHAIN Coreu</translation>
     </message>
     <message>
-        <source>Show information about Hotchain Core</source>
+        <source>Show information about Hotchain</source>
         <translation>Prikaz informacija o HOTCHAIN Coreu</translation>
     </message>
     <message>
@@ -653,8 +653,8 @@
         <translation>Šifriranje i dešifriranje privatnih ključeva pomoću zaporke</translation>
     </message>
     <message>
-        <source>Hotchain Core client</source>
-        <translation>Hotchain Core klijent</translation>
+        <source>Hotchain client</source>
+        <translation>Hotchain klijent</translation>
     </message>
     <message>
         <source>Error</source>
@@ -751,15 +751,15 @@
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>Hotchain Core</source>
-        <translation>Hotchain Core</translation>
+        <source>Hotchain</source>
+        <translation>Hotchain</translation>
     </message>
     </context>
 <context>
     <name>Intro</name>
     <message>
-        <source>Hotchain Core</source>
-        <translation>Hotchain Core</translation>
+        <source>Hotchain</source>
+        <translation>Hotchain</translation>
     </message>
     <message>
         <source>Error</source>
@@ -1111,8 +1111,8 @@
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>Hotchain Core is shutting down...</source>
-        <translation>Hotchain Core se gasi...</translation>
+        <source>Hotchain is shutting down...</source>
+        <translation>Hotchain se gasi...</translation>
     </message>
     </context>
 <context>
@@ -1197,8 +1197,8 @@
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Hotchain Core</source>
-        <translation>Hotchain Core</translation>
+        <source>Hotchain</source>
+        <translation>Hotchain</translation>
     </message>
     <message>
         <source>Version %1</source>

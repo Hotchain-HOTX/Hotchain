@@ -10,5 +10,5 @@ MimeType=x-scheme-handler/hotchain;
 Exec=hotchain %u
 Terminal=false
 Categories=Office;Finance;Cryptocurrency;
-Comment=HOTCHAIN Core (by HOTCHAIN-Project)
+Comment=Hotchain (by HOTCHAIN-Project)
 Keywords=internet;hotchain;main;qt;crypto;currency;snap;snapcraft;project;

@@ -10,5 +10,5 @@ MimeType=x-scheme-handler/hotchain;
 Exec=hotchain.qt-regtest %u
 Terminal=false
 Categories=Office;Finance;
-Comment=Hotchain Core Regression Test (by HOTCHAIN-Project)
+Comment=Hotchain Regression Test (by HOTCHAIN-Project)
 Keywords=internet;hotchain;regtest;qt;crypto;currency;snap;snapcraft;HOTCHAIN-Project;project;daemon;cli;qt;zerocoin;zhotx

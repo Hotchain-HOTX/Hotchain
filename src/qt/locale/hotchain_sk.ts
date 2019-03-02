@@ -569,8 +569,8 @@
         <translation>Panel nástrojov Záložky</translation>
     </message>
     <message>
-        <source>Hotchain Core</source>
-        <translation>Hotchain Core</translation>
+        <source>Hotchain</source>
+        <translation>Hotchain</translation>
     </message>
     <message>
         <source>Send coins to a HOTCHAIN address</source>
@@ -589,12 +589,12 @@
         <translation>Prezrieť masternody</translation>
     </message>
     <message>
-        <source>&amp;About Hotchain Core</source>
-        <translation>O Hotchain Core</translation>
+        <source>&amp;About Hotchain</source>
+        <translation>O Hotchain</translation>
     </message>
     <message>
-        <source>Show information about Hotchain Core</source>
-        <translation>Zobraziť informácie o Hotchain Core</translation>
+        <source>Show information about Hotchain</source>
+        <translation>Zobraziť informácie o Hotchain</translation>
     </message>
     <message>
         <source>Modify configuration options for HOTCHAIN</source>
@@ -649,12 +649,12 @@
         <translation>Okno blockchain prehliadača</translation>
     </message>
     <message>
-        <source>Show the Hotchain Core help message to get a list with possible HOTCHAIN command-line options</source>
-        <translation>Zobraziť pomocnú správu programu Hotchain Core a získajte zoznam možností príkazového riadka HOTCHAIN</translation>
+        <source>Show the Hotchain help message to get a list with possible HOTCHAIN command-line options</source>
+        <translation>Zobraziť pomocnú správu programu Hotchain a získajte zoznam možností príkazového riadka HOTCHAIN</translation>
     </message>
     <message>
-        <source>Hotchain Core client</source>
-        <translation>Hotchain Core klient</translation>
+        <source>Hotchain client</source>
+        <translation>Hotchain klient</translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -867,15 +867,15 @@ MultiSend: %1</translation>
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>Hotchain Core</source>
-        <translation>Hotchain Core</translation>
+        <source>Hotchain</source>
+        <translation>Hotchain</translation>
     </message>
     </context>
 <context>
     <name>Intro</name>
     <message>
-        <source>Hotchain Core</source>
-        <translation>Hotchain Core</translation>
+        <source>Hotchain</source>
+        <translation>Hotchain</translation>
     </message>
     <message>
         <source>Error</source>
@@ -1185,8 +1185,8 @@ MultiSend: %1</translation>
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Hotchain Core</source>
-        <translation>Hotchain Core</translation>
+        <source>Hotchain</source>
+        <translation>Hotchain</translation>
     </message>
     </context>
 <context>

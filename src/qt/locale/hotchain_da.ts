@@ -645,7 +645,7 @@
         <translation>Værktøjslinier</translation>
     </message>
     <message>
-        <source>Hotchain Core</source>
+        <source>Hotchain</source>
         <translation>HOTCHAIN kerne</translation>
     </message>
     <message>
@@ -669,11 +669,11 @@
         <translation>Vis masternoder</translation>
     </message>
     <message>
-        <source>&amp;About Hotchain Core</source>
+        <source>&amp;About Hotchain</source>
         <translation>&amp;Om HOTCHAIN kerne</translation>
     </message>
     <message>
-        <source>Show information about Hotchain Core</source>
+        <source>Show information about Hotchain</source>
         <translation>Vis information om HOTCHAIN kerne</translation>
     </message>
     <message>
@@ -729,11 +729,11 @@
         <translation>Blockexplorer vindue</translation>
     </message>
     <message>
-        <source>Show the Hotchain Core help message to get a list with possible HOTCHAIN command-line options</source>
+        <source>Show the Hotchain help message to get a list with possible HOTCHAIN command-line options</source>
         <translation>Vis hjelpetekster fra HOTCHAIN kernen for at få en liste med mulige HOTCHAIN kommandolinie-startparametre</translation>
     </message>
     <message>
-        <source>Hotchain Core client</source>
+        <source>Hotchain client</source>
         <translation>HOTCHAIN kerneklient</translation>
     </message>
     <message numerus="yes">
@@ -1231,7 +1231,7 @@ Adresse: %4
         <translation>version</translation>
     </message>
     <message>
-        <source>Hotchain Core</source>
+        <source>Hotchain</source>
         <translation>HOTCHAIN kerne</translation>
     </message>
     <message>
@@ -1239,7 +1239,7 @@ Adresse: %4
         <translation>(%1-bit)</translation>
     </message>
     <message>
-        <source>About Hotchain Core</source>
+        <source>About Hotchain</source>
         <translation>om HOTCHAIN kerne</translation>
     </message>
     <message>
@@ -1286,15 +1286,15 @@ Adresse: %4
         <translation>Velkommen</translation>
     </message>
     <message>
-        <source>Welcome to Hotchain Core.</source>
+        <source>Welcome to Hotchain.</source>
         <translation>Velkommen til HOTCHAIN kerne</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where Hotchain Core will store its data.</source>
+        <source>As this is the first time the program is launched, you can choose where Hotchain will store its data.</source>
         <translation>Da det er første gang programmet startes, kan De vælge hvor HOTCHAIN kernen skal lagre sine data</translation>
     </message>
     <message>
-        <source>Hotchain Core will download and store a copy of the HOTCHAIN block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <source>Hotchain will download and store a copy of the HOTCHAIN block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
         <translation>HOTCHAIN kernen vil nu hente og gemme en kopi af HOTCHAIN blockchain. Der skal være mindst %1GB ledigt på lagermediet, og behovet vil stige efterhånden som tiden går. Selve tegnebogen vil også blive gemt her.</translation>
     </message>
     <message>
@@ -1306,7 +1306,7 @@ Adresse: %4
         <translation>Anvend en mappe valgt af brugeren</translation>
     </message>
     <message>
-        <source>Hotchain Core</source>
+        <source>Hotchain</source>
         <translation>HOTCHAIN kerne</translation>
     </message>
     <message>
@@ -1992,8 +1992,8 @@ https://www.transifex.com/hotchain-project/hotchain-project-translations</transl
         <translation>&amp;port</translation>
     </message>
     <message>
-        <source>Port of the proxy (e.g. 9050)</source>
-        <translation>Proxyport (f.eks 9050)</translation>
+        <source>Port of the proxy (e.g. 9069)</source>
+        <translation>Proxyport (f.eks 9069)</translation>
     </message>
     <message>
         <source>&amp;Window</source>
@@ -4078,7 +4078,7 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>Hotchain Core is shutting down...</source>
+        <source>Hotchain is shutting down...</source>
         <translation>HOTCHAIN kernen lukker ned</translation>
     </message>
     <message>
@@ -4228,7 +4228,7 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Hotchain Core</source>
+        <source>Hotchain</source>
         <translation>HOTCHAIN kerne</translation>
     </message>
     <message>
@@ -4244,7 +4244,7 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
         <translation>DASH "core" udviklerne</translation>
     </message>
     <message>
-        <source>The Hotchain Core developers</source>
+        <source>The Hotchain developers</source>
         <translation>HOTCHAIN "core" udviklerne</translation>
     </message>
     <message>
@@ -4909,8 +4909,8 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
         <translation>Beregnet akkumulator kontrolpunkt er ikke det, der er registreret af blok indeks</translation>
     </message>
     <message>
-        <source>Cannot obtain a lock on data directory %s. Hotchain Core is probably already running.</source>
-        <translation>Kan ikke låse datamappen %s. HOTCHAIN core kører sandsynligvis allerede.</translation>
+        <source>Cannot obtain a lock on data directory %s. Hotchain is probably already running.</source>
+        <translation>Kan ikke låse datamappen %s. Hotchain kører sandsynligvis allerede.</translation>
     </message>
     <message>
         <source>Change automatic finalized budget voting behavior. mode=auto: Vote for only exact finalized budget match to my generated budget. (string, default: auto)</source>
@@ -5086,7 +5086,7 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
         <translation>Dette produkt anvender software udviklet i OpenSSL projektet til brug i OpenSSL værktøjssættet &lt;https://www.openssl.org/&gt; og kryptosoftware skrevet afEric Young og UPnP software skrevet af Thomas Bernard.</translation>
     </message>
     <message>
-        <source>Unable to bind to %s on this computer. Hotchain Core is probably already running.</source>
+        <source>Unable to bind to %s on this computer. Hotchain is probably already running.</source>
         <translation>Det var ikke muligt at forbinde %s på denne computer. HOTCHAIN kører sandsynligvis allerede.</translation>
     </message>
     <message>
@@ -5114,8 +5114,8 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
         <translation>Advarsel! -paytxfee er sat meget højt. Det er dette gebyr De kommer til at betale for transaktionen, hvis De gennemfører. </translation>
     </message>
     <message>
-        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong Hotchain Core will not work properly.</source>
-        <translation>Advarsel! Kontroller at computerens dato og tid er korrekt indstillet. Hvis tiden ikke er rigtig, vil HOTCHAIN core ikke fungere ordentligt.</translation>
+        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong Hotchain will not work properly.</source>
+        <translation>Advarsel! Kontroller at computerens dato og tid er korrekt indstillet. Hvis tiden ikke er rigtig, vil Hotchain ikke fungere ordentligt.</translation>
     </message>
     <message>
         <source>Warning: The network does not appear to fully agree! Some miners appear to be experiencing issues.</source>
@@ -5146,8 +5146,8 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
         <translation>Der skal angives en masternodeprivkey i konfigurationen. For mere information, se i dokumentationen.</translation>
     </message>
     <message>
-        <source>(9050 could be used only on mainnet)</source>
-        <translation>(9050 kunne kun bruges på hovednettet)</translation>
+        <source>(9069 could be used only on mainnet)</source>
+        <translation>(9069 kunne kun bruges på hovednettet)</translation>
     </message>
     <message>
         <source>(default: %s)</source>
@@ -5158,8 +5158,8 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
         <translation>(default: 1)</translation>
     </message>
     <message>
-        <source>(must be 9050 for mainnet)</source>
-        <translation>(skal være 9050 for hovednettet)</translation>
+        <source>(must be 9069 for mainnet)</source>
+        <translation>(skal være 9069 for hovednettet)</translation>
     </message>
     <message>
         <source>Accept command line and JSON-RPC commands</source>
@@ -5266,8 +5266,8 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
         <translation>Copyright (C) 2014-%i The Dash Core Developers </translation>
     </message>
     <message>
-        <source>Copyright (C) 2015-%i The Hotchain Core Developers</source>
-        <translation>Copyright (C) 2015-%i The Hotchain Core Developers</translation>
+        <source>Copyright (C) 2015-%i The Hotchain Developers</source>
+        <translation>Copyright (C) 2015-%i The Hotchain Developers</translation>
     </message>
     <message>
         <source>Corrupted block database detected</source>
@@ -5354,8 +5354,8 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
         <translation>Fejl ved indlæsning af wallet.dat: Tegnebogen er beskadiget</translation>
     </message>
     <message>
-        <source>Error loading wallet.dat: Wallet requires newer version of Hotchain Core</source>
-        <translation>Fejl ved indlæsning af wallet.dat: Tegnebogen kræver en nyere version af HOTCHAIN core</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of Hotchain</source>
+        <translation>Fejl ved indlæsning af wallet.dat: Tegnebogen kræver en nyere version af Hotchain</translation>
     </message>
     <message>
         <source>Error opening block database</source>
@@ -5470,8 +5470,8 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
         <translation>Info:</translation>
     </message>
     <message>
-        <source>Initialization sanity check failed. Hotchain Core is shutting down.</source>
-        <translation>Initiering af sanitetskontrollen fejlede. HOTCHAIN core lukker ned. </translation>
+        <source>Initialization sanity check failed. Hotchain is shutting down.</source>
+        <translation>Initiering af sanitetskontrollen fejlede. Hotchain lukker ned. </translation>
     </message>
     <message>
         <source>Input is not valid.</source>
@@ -6294,8 +6294,8 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
         <translation>Tegnebogen er låst</translation>
     </message>
     <message>
-        <source>Wallet needed to be rewritten: restart Hotchain Core to complete</source>
-        <translation>Tegnebogen måtte genskrives. Genstart HOTCHAIN core for at gøre færdig</translation>
+        <source>Wallet needed to be rewritten: restart Hotchain to complete</source>
+        <translation>Tegnebogen måtte genskrives. Genstart Hotchain for at gøre færdig</translation>
     </message>
     <message>
         <source>Wallet options:</source>

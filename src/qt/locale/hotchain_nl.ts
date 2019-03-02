@@ -645,8 +645,8 @@
         <translation>Tabblad werkbalk</translation>
     </message>
     <message>
-        <source>Hotchain Core</source>
-        <translation>Hotchain Core</translation>
+        <source>Hotchain</source>
+        <translation>Hotchain</translation>
     </message>
     <message>
         <source>Send coins to a HOTCHAIN address</source>
@@ -669,11 +669,11 @@
         <translation>Bekijk masternodes</translation>
     </message>
     <message>
-        <source>&amp;About Hotchain Core</source>
-        <translation>&amp;Over Hotchain Core</translation>
+        <source>&amp;About Hotchain</source>
+        <translation>&amp;Over Hotchain</translation>
     </message>
     <message>
-        <source>Show information about Hotchain Core</source>
+        <source>Show information about Hotchain</source>
         <translation>Toon informatie over HOTCHAIN Kern</translation>
     </message>
     <message>
@@ -729,12 +729,12 @@
         <translation>Block verkenner venster</translation>
     </message>
     <message>
-        <source>Show the Hotchain Core help message to get a list with possible HOTCHAIN command-line options</source>
-        <translation>Toon het Hotchain Core help bericht om een ​​lijst te krijgen met mogelijke HOTCHAIN command line opties</translation>
+        <source>Show the Hotchain help message to get a list with possible HOTCHAIN command-line options</source>
+        <translation>Toon het Hotchain help bericht om een ​​lijst te krijgen met mogelijke HOTCHAIN command line opties</translation>
     </message>
     <message>
-        <source>Hotchain Core client</source>
-        <translation>Hotchain Core client</translation>
+        <source>Hotchain client</source>
+        <translation>Hotchain client</translation>
     </message>
     <message numerus="yes">
         <source>%n active connection(s) to HOTCHAIN network</source>
@@ -1231,16 +1231,16 @@ MultiSend: %1</translation>
         <translation>versie</translation>
     </message>
     <message>
-        <source>Hotchain Core</source>
-        <translation>Hotchain Core</translation>
+        <source>Hotchain</source>
+        <translation>Hotchain</translation>
     </message>
     <message>
         <source>(%1-bit)</source>
         <translation>(%1-bit)</translation>
     </message>
     <message>
-        <source>About Hotchain Core</source>
-        <translation>Over Hotchain Core</translation>
+        <source>About Hotchain</source>
+        <translation>Over Hotchain</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -1286,16 +1286,16 @@ MultiSend: %1</translation>
         <translation>Welkom</translation>
     </message>
     <message>
-        <source>Welcome to Hotchain Core.</source>
-        <translation>Welkom bij Hotchain Core.</translation>
+        <source>Welcome to Hotchain.</source>
+        <translation>Welkom bij Hotchain.</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where Hotchain Core will store its data.</source>
-        <translation>Aangezien dit de eerste keer is dat het programma is gestart, kun je kiezen waar Hotchain Core zijn data opslaat.</translation>
+        <source>As this is the first time the program is launched, you can choose where Hotchain will store its data.</source>
+        <translation>Aangezien dit de eerste keer is dat het programma is gestart, kun je kiezen waar Hotchain zijn data opslaat.</translation>
     </message>
     <message>
-        <source>Hotchain Core will download and store a copy of the HOTCHAIN block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>Hotchain Core zal een kopie van de HOTCHAIN blockchain downloaden en opslaan. Tenminste %1GB aan data zal worden opgeslagen in deze map en het zal over de tijd groeien. De portemonnee zal ook in deze map worden opgeslagen.</translation>
+        <source>Hotchain will download and store a copy of the HOTCHAIN block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>Hotchain zal een kopie van de HOTCHAIN blockchain downloaden en opslaan. Tenminste %1GB aan data zal worden opgeslagen in deze map en het zal over de tijd groeien. De portemonnee zal ook in deze map worden opgeslagen.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -1306,8 +1306,8 @@ MultiSend: %1</translation>
         <translation>Gebruik een aangepaste data directory:</translation>
     </message>
     <message>
-        <source>Hotchain Core</source>
-        <translation>Hotchain Core</translation>
+        <source>Hotchain</source>
+        <translation>Hotchain</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -1992,8 +1992,8 @@ https://www.transifex.com/hotchain-project/hotchain-project-translations</transl
         <translation>&amp;Poort:</translation>
     </message>
     <message>
-        <source>Port of the proxy (e.g. 9050)</source>
-        <translation>Proxy-poort (v.b. 9050)</translation>
+        <source>Port of the proxy (e.g. 9069)</source>
+        <translation>Proxy-poort (v.b. 9069)</translation>
     </message>
     <message>
         <source>&amp;Window</source>
@@ -4079,8 +4079,8 @@ Ofwel het munten van hogere denominaties (dus minder invoer nodig) of het te bes
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>Hotchain Core is shutting down...</source>
-        <translation>Hotchain Core is aan het afsluiten...</translation>
+        <source>Hotchain is shutting down...</source>
+        <translation>Hotchain is aan het afsluiten...</translation>
     </message>
     <message>
         <source>Do not shut down the computer until this window disappears.</source>
@@ -4229,7 +4229,7 @@ Ofwel het munten van hogere denominaties (dus minder invoer nodig) of het te bes
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Hotchain Core</source>
+        <source>Hotchain</source>
         <translation>HOTCHAIN Kern</translation>
     </message>
     <message>
@@ -4245,7 +4245,7 @@ Ofwel het munten van hogere denominaties (dus minder invoer nodig) of het te bes
         <translation>De Dash Kernontwikkelaars</translation>
     </message>
     <message>
-        <source>The Hotchain Core developers</source>
+        <source>The Hotchain developers</source>
         <translation>De HOTCHAIN Kernontwikkelaars</translation>
     </message>
     <message>
@@ -4910,8 +4910,8 @@ Ofwel het munten van hogere denominaties (dus minder invoer nodig) of het te bes
         <translation>Het berekende accumulatie controlepunt is niet wat wordt geregistreerd door de blokindex</translation>
     </message>
     <message>
-        <source>Cannot obtain a lock on data directory %s. Hotchain Core is probably already running.</source>
-        <translation>Kan geen vergrendeling op data directory %s verkrijgen. Hotchain Core loopt waarschijnlijk al.</translation>
+        <source>Cannot obtain a lock on data directory %s. Hotchain is probably already running.</source>
+        <translation>Kan geen vergrendeling op data directory %s verkrijgen. Hotchain loopt waarschijnlijk al.</translation>
     </message>
     <message>
         <source>Change automatic finalized budget voting behavior. mode=auto: Vote for only exact finalized budget match to my generated budget. (string, default: auto)</source>
@@ -5086,8 +5086,8 @@ Ofwel het munten van hogere denominaties (dus minder invoer nodig) of het te bes
         <translation>Dit product bevat software ontwikkeld door het OpenSSL Project voor gebruik in de OpenSSL Toolkit &lt;https://www.openssl.org/&gt; en cryptografische software geschreven door Eric Young en UPnP software geschreven door Thomas Bernard.</translation>
     </message>
     <message>
-        <source>Unable to bind to %s on this computer. Hotchain Core is probably already running.</source>
-        <translation>Niet mogelijk te binden aan %s op deze computer. Hotchain Core loopt waarschijnlijk al.</translation>
+        <source>Unable to bind to %s on this computer. Hotchain is probably already running.</source>
+        <translation>Niet mogelijk te binden aan %s op deze computer. Hotchain loopt waarschijnlijk al.</translation>
     </message>
     <message>
         <source>Unable to locate enough Obfuscation denominated funds for this transaction.</source>
@@ -5114,8 +5114,8 @@ Ofwel het munten van hogere denominaties (dus minder invoer nodig) of het te bes
         <translation>Waarschuwing: -paytxfee is zeer hoog ingesteld! Dit zijn de transactie kosten die je betaalt als je een transactie verstuurt.</translation>
     </message>
     <message>
-        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong Hotchain Core will not work properly.</source>
-        <translation>Waarschuwing: Controleer of de datum en tijd van je computer juist zijn! Als je klok verkeerd staat, werkt Hotchain Core niet goed.</translation>
+        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong Hotchain will not work properly.</source>
+        <translation>Waarschuwing: Controleer of de datum en tijd van je computer juist zijn! Als je klok verkeerd staat, werkt Hotchain niet goed.</translation>
     </message>
     <message>
         <source>Warning: The network does not appear to fully agree! Some miners appear to be experiencing issues.</source>
@@ -5146,8 +5146,8 @@ Ofwel het munten van hogere denominaties (dus minder invoer nodig) of het te bes
         <translation>Je moet een masternodeprivkey opgeven in de configuratie. Raadpleeg de documentatie voor hulp.</translation>
     </message>
     <message>
-        <source>(9050 could be used only on mainnet)</source>
-        <translation>(9050 kan alleen op mainnet worden gebruikt)</translation>
+        <source>(9069 could be used only on mainnet)</source>
+        <translation>(9069 kan alleen op mainnet worden gebruikt)</translation>
     </message>
     <message>
         <source>(default: %s)</source>
@@ -5158,8 +5158,8 @@ Ofwel het munten van hogere denominaties (dus minder invoer nodig) of het te bes
         <translation>(standaard: 1)</translation>
     </message>
     <message>
-        <source>(must be 9050 for mainnet)</source>
-        <translation>(moet 9050 voor mainnet zijn)</translation>
+        <source>(must be 9069 for mainnet)</source>
+        <translation>(moet 9069 voor mainnet zijn)</translation>
     </message>
     <message>
         <source>Accept command line and JSON-RPC commands</source>
@@ -5266,7 +5266,7 @@ Ofwel het munten van hogere denominaties (dus minder invoer nodig) of het te bes
         <translation>Copyright (C) 2014-%i The Dash Kernontwikkelaars</translation>
     </message>
     <message>
-        <source>Copyright (C) 2015-%i The Hotchain Core Developers</source>
+        <source>Copyright (C) 2015-%i The Hotchain Developers</source>
         <translation>Copyright (C) 2015-%i The HOTCHAIN Kernontwikkelaars</translation>
     </message>
     <message>
@@ -5354,8 +5354,8 @@ Ofwel het munten van hogere denominaties (dus minder invoer nodig) of het te bes
         <translation>Error tijdens het laden van wallet.dat: Portemonnee corrupt</translation>
     </message>
     <message>
-        <source>Error loading wallet.dat: Wallet requires newer version of Hotchain Core</source>
-        <translation>Fout bij het laden van wallet.dat: Portemonnee vereist een nieuwere versie van Hotchain Core</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of Hotchain</source>
+        <translation>Fout bij het laden van wallet.dat: Portemonnee vereist een nieuwere versie van Hotchain</translation>
     </message>
     <message>
         <source>Error opening block database</source>
@@ -5470,8 +5470,8 @@ Ofwel het munten van hogere denominaties (dus minder invoer nodig) of het te bes
         <translation>Informatie</translation>
     </message>
     <message>
-        <source>Initialization sanity check failed. Hotchain Core is shutting down.</source>
-        <translation>Initialisatie saniteitscontrole mislukt. Hotchain Core wordt afgesloten.</translation>
+        <source>Initialization sanity check failed. Hotchain is shutting down.</source>
+        <translation>Initialisatie saniteitscontrole mislukt. Hotchain wordt afgesloten.</translation>
     </message>
     <message>
         <source>Input is not valid.</source>
@@ -6294,8 +6294,8 @@ Ofwel het munten van hogere denominaties (dus minder invoer nodig) of het te bes
         <translation>Portemonnee is vergrendeld.</translation>
     </message>
     <message>
-        <source>Wallet needed to be rewritten: restart Hotchain Core to complete</source>
-        <translation>Wallet moest worden herschreven: start Hotchain Core opnieuw om te voltooien</translation>
+        <source>Wallet needed to be rewritten: restart Hotchain to complete</source>
+        <translation>Wallet moest worden herschreven: start Hotchain opnieuw om te voltooien</translation>
     </message>
     <message>
         <source>Wallet options:</source>

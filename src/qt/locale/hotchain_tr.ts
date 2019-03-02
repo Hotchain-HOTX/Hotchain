@@ -637,8 +637,8 @@
         <translation>Sekme tablosu</translation>
     </message>
     <message>
-        <source>Hotchain Core</source>
-        <translation>HOTCHAIN CORE</translation>
+        <source>Hotchain</source>
+        <translation>Hotchain</translation>
     </message>
     <message>
         <source>Send coins to a HOTCHAIN address</source>
@@ -661,11 +661,11 @@
         <translation>Masternodları ara</translation>
     </message>
     <message>
-        <source>&amp;About Hotchain Core</source>
+        <source>&amp;About Hotchain</source>
         <translation>Hotchain Hakkında</translation>
     </message>
     <message>
-        <source>Show information about Hotchain Core</source>
+        <source>Show information about Hotchain</source>
         <translation>Hotchain hakkında bilgi göster</translation>
     </message>
     <message>
@@ -721,12 +721,12 @@
         <translation>Kaşif penceresini engelle</translation>
     </message>
     <message>
-        <source>Show the Hotchain Core help message to get a list with possible HOTCHAIN command-line options</source>
-        <translation>Olası HOTCHAIN komut satırı seçeneklerine sahip bir liste almak için Hotchain Core yardım mesajını gösterin</translation>
+        <source>Show the Hotchain help message to get a list with possible HOTCHAIN command-line options</source>
+        <translation>Olası HOTCHAIN komut satırı seçeneklerine sahip bir liste almak için Hotchain yardım mesajını gösterin</translation>
     </message>
     <message>
-        <source>Hotchain Core client</source>
-        <translation>Hotchain Core istemci</translation>
+        <source>Hotchain client</source>
+        <translation>Hotchain istemci</translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -1200,16 +1200,16 @@ Adres: %4
         <translation>versiyon</translation>
     </message>
     <message>
-        <source>Hotchain Core</source>
-        <translation>HOTCHAIN CORE</translation>
+        <source>Hotchain</source>
+        <translation>Hotchain</translation>
     </message>
     <message>
         <source>(%1-bit)</source>
         <translation>(%1-bit)</translation>
     </message>
     <message>
-        <source>About Hotchain Core</source>
-        <translation>hakkında Hotchain Core</translation>
+        <source>About Hotchain</source>
+        <translation>hakkında Hotchain</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -1255,16 +1255,16 @@ Adres: %4
         <translation>Hoşgeldiniz</translation>
     </message>
     <message>
-        <source>Welcome to Hotchain Core.</source>
-        <translation>Hotchain Core'a hoşgeldiniz.</translation>
+        <source>Welcome to Hotchain.</source>
+        <translation>Hotchain'a hoşgeldiniz.</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where Hotchain Core will store its data.</source>
-        <translation>Program ilk başlatıldığında Hotchain Core'un verilerini nerede saklayacağını seçebilirsiniz.</translation>
+        <source>As this is the first time the program is launched, you can choose where Hotchain will store its data.</source>
+        <translation>Program ilk başlatıldığında Hotchain'un verilerini nerede saklayacağını seçebilirsiniz.</translation>
     </message>
     <message>
-        <source>Hotchain Core will download and store a copy of the HOTCHAIN block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>Hotchain Core, HOTCHAIN blok zincirinin bir kopyasını indirecek ve depolayacaktır. Bu dizinde en az %1GB veri saklanacak ve zamanla büyüyecek. Cüzdan ayrıca bu dizinde saklanır.</translation>
+        <source>Hotchain will download and store a copy of the HOTCHAIN block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>Hotchain, HOTCHAIN blok zincirinin bir kopyasını indirecek ve depolayacaktır. Bu dizinde en az %1GB veri saklanacak ve zamanla büyüyecek. Cüzdan ayrıca bu dizinde saklanır.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -1275,8 +1275,8 @@ Adres: %4
         <translation>Özel bir veri dizini kullanın:</translation>
     </message>
     <message>
-        <source>Hotchain Core</source>
-        <translation>HOTCHAIN CORE</translation>
+        <source>Hotchain</source>
+        <translation>Hotchain</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -1947,8 +1947,8 @@ https://www.transifex.com/hotchain-project/hotchain-project-translations</transl
         <translation>&amp;Port:</translation>
     </message>
     <message>
-        <source>Port of the proxy (e.g. 9050)</source>
-        <translation>Port of the proxy (e.g. 9050)</translation>
+        <source>Port of the proxy (e.g. 9069)</source>
+        <translation>Port of the proxy (e.g. 9069)</translation>
     </message>
     <message>
         <source>&amp;Window</source>
@@ -3750,8 +3750,8 @@ Ya daha yüksek mezhepleri daraltın (daha az girdi gereklidir) veya harcama mik
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>Hotchain Core is shutting down...</source>
-        <translation>Hotchain Core kapanıyor ...</translation>
+        <source>Hotchain is shutting down...</source>
+        <translation>Hotchain kapanıyor ...</translation>
     </message>
     <message>
         <source>Do not shut down the computer until this window disappears.</source>
@@ -3900,8 +3900,8 @@ Ya daha yüksek mezhepleri daraltın (daha az girdi gereklidir) veya harcama mik
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Hotchain Core</source>
-        <translation>HOTCHAIN CORE</translation>
+        <source>Hotchain</source>
+        <translation>Hotchain</translation>
     </message>
     <message>
         <source>Version %1</source>
@@ -3916,8 +3916,8 @@ Ya daha yüksek mezhepleri daraltın (daha az girdi gereklidir) veya harcama mik
         <translation>The Dash Core developers</translation>
     </message>
     <message>
-        <source>The Hotchain Core developers</source>
-        <translation>The Hotchain Core developers</translation>
+        <source>The Hotchain developers</source>
+        <translation>The Hotchain developers</translation>
     </message>
     <message>
         <source>[testnet]</source>
@@ -4513,8 +4513,8 @@ Ya daha yüksek mezhepleri daraltın (daha az girdi gereklidir) veya harcama mik
         <translation>Hesaplanan akümülatör kontrol noktası, blok indeksiyle kaydedilen kontrol noktası değildir.</translation>
     </message>
     <message>
-        <source>Cannot obtain a lock on data directory %s. Hotchain Core is probably already running.</source>
-        <translation>Veri dizini %s üzerinde bir kilit elde edemiyor. Hotchain Core muhtemelen zaten çalışıyor.</translation>
+        <source>Cannot obtain a lock on data directory %s. Hotchain is probably already running.</source>
+        <translation>Veri dizini %s üzerinde bir kilit elde edemiyor. Hotchain muhtemelen zaten çalışıyor.</translation>
     </message>
     <message>
         <source>Change automatic finalized budget voting behavior. mode=auto: Vote for only exact finalized budget match to my generated budget. (string, default: auto)</source>
