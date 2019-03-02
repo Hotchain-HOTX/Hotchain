@@ -53,7 +53,7 @@ static void convertSeed6(std::vector<CAddress>& vSeedsOut, const SeedSpec6* data
 // + Contains no strange transactions
 static Checkpoints::MapCheckpoints mapCheckpoints =
     boost::assign::map_list_of
-    (0, uint256("0x4eff5d09936453a53e6474c1d055a1f2622b23e6bad9e38479e6abf840179cc4"));
+    (0, uint256("0xd068f8289608418e66e7beb9c2a4ba566ee90c0e56f9e4c6eb910135f6bfa98f"));
     // (20, uint256("0x0000078b097880fef496b86cf8cdaa3eba9e11c8d4ae6c33ea1a132af184c299"))
     // (50, uint256("0x000000d3d3941d54578cbacccf887bc57c8cf3678fcf81559dc84451c1662c8c"))
     // (75, uint256("0x00000025aed031f0ede5692476334e3c7ade0edb98842cd086ae5c72760d2848"))
@@ -71,7 +71,7 @@ static const Checkpoints::CCheckpointData data = {
 };
 
 static Checkpoints::MapCheckpoints mapCheckpointsTestnet =
-    boost::assign::map_list_of(0, uint256("0x4eff5d09936453a53e6474c1d055a1f2622b23e6bad9e38479e6abf840179cc4"));
+    boost::assign::map_list_of(0, uint256("0xd068f8289608418e66e7beb9c2a4ba566ee90c0e56f9e4c6eb910135f6bfa98f"));
 static const Checkpoints::CCheckpointData dataTestnet = {
     &mapCheckpointsTestnet,
     1551486723,
@@ -79,7 +79,7 @@ static const Checkpoints::CCheckpointData dataTestnet = {
     250};
 
 static Checkpoints::MapCheckpoints mapCheckpointsRegtest =
-    boost::assign::map_list_of(0, uint256("0x4eff5d09936453a53e6474c1d055a1f2622b23e6bad9e38479e6abf840179cc4"));
+    boost::assign::map_list_of(0, uint256("0xd068f8289608418e66e7beb9c2a4ba566ee90c0e56f9e4c6eb910135f6bfa98f"));
 static const Checkpoints::CCheckpointData dataRegtest = {
     &mapCheckpointsRegtest,
     1551486723,
@@ -184,8 +184,8 @@ public:
                 std::cout << " merklehash: 0x"  << genesis.hashMerkleRoot.ToString().c_str() <<  "\n";
             }
         } else {
-            assert(hashGenesisBlock == uint256("0x4eff5d09936453a53e6474c1d055a1f2622b23e6bad9e38479e6abf840179cc4"));
-            assert(genesis.hashMerkleRoot == uint256("0x37f367e789abcbaaebf111f37e5ae73d03b1aeab0d7308d3d3fe1370d6ac7be9"));
+            assert(hashGenesisBlock == uint256("0xd068f8289608418e66e7beb9c2a4ba566ee90c0e56f9e4c6eb910135f6bfa98f"));
+            assert(genesis.hashMerkleRoot == uint256("0x5d68db3baf3175ec87588e5dce18cdad7b2fc568b7303b27b10b068915742ce7"));
         }
 
 
@@ -298,8 +298,8 @@ public:
 
             }
         } else {
-            assert(hashGenesisBlock == uint256("0x4eff5d09936453a53e6474c1d055a1f2622b23e6bad9e38479e6abf840179cc4"));
-            assert(genesis.hashMerkleRoot == uint256("0x37f367e789abcbaaebf111f37e5ae73d03b1aeab0d7308d3d3fe1370d6ac7be9"));
+            assert(hashGenesisBlock == uint256("0xd068f8289608418e66e7beb9c2a4ba566ee90c0e56f9e4c6eb910135f6bfa98f"));
+            assert(genesis.hashMerkleRoot == uint256("0x5d68db3baf3175ec87588e5dce18cdad7b2fc568b7303b27b10b068915742ce7"));
         }
 
         vSeeds.clear();
@@ -387,8 +387,8 @@ public:
 
             }
         } else {
-            assert(hashGenesisBlock == uint256("0x4eff5d09936453a53e6474c1d055a1f2622b23e6bad9e38479e6abf840179cc4"));
-            assert(genesis.hashMerkleRoot == uint256("0x37f367e789abcbaaebf111f37e5ae73d03b1aeab0d7308d3d3fe1370d6ac7be9"));
+            assert(hashGenesisBlock == uint256("0xd068f8289608418e66e7beb9c2a4ba566ee90c0e56f9e4c6eb910135f6bfa98f"));
+            assert(genesis.hashMerkleRoot == uint256("0x5d68db3baf3175ec87588e5dce18cdad7b2fc568b7303b27b10b068915742ce7"));
         }
         if (regenerate)
             exit(0);
