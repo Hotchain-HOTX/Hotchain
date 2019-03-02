@@ -148,7 +148,7 @@ public:
          * Build the genesis block. Note that the output of the genesis coinbase cannot
          * be spent as it did not originally exist in the database.
          */
-        const char* pszTimestamp = "Il 19/02/2019 ho creato Hotchain per il sollazzo di tutti!";
+        const char* pszTimestamp = "Il 3/2/2019 ho creato Hotchain per il sollazzo di tutti!";
         CMutableTransaction txNew;
         txNew.vin.resize(1);
         txNew.vout.resize(1);
