@@ -1,5 +1,5 @@
 # Hotchain
-[![Discord](https://img.shields.io/discord/102860784329052160.svg?style=plastic)](https://discord.gg/k396XgX)
+[![Discord](https://img.shields.io/discord/102860784329052160.svg?style=plastic)](https://discord.hotchain.me)
 [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FHotchain-HOTX%2FHotchain.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2FHotchain-HOTX%2FHotchain?ref=badge_shield)
 [![HitCount](http://hits.dwyl.io/Hotchain-HOTX/Hotchain.svg)](http://hits.dwyl.io/Hotchain-HOTX/Hotchain)
 [![Build Status](https://travis-ci.org/Hotchain-HOTX/Hotchain.svg?branch=master)](https://travis-ci.org/Hotchain-HOTX/Hotchain)  [![GitHub version](https://badge.fury.io/gh/Hotchain-HOTX%2FHotchain.svg)](https://badge.fury.io/gh/Hotchain-HOTX%2FHotchain) [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/Hotchain-HOTX/Hotchain/issues) 
@@ -12,6 +12,7 @@ HOTX is a forefront cryptocurrency forked from the latest PIVX codebase. It is t
 
 # Specifications :
 
+  - Quark algo
   - Proof of Stake with Masternodes
   - Zerocoin v2 with staking
   - Instant Transactions via SwiftTx
@@ -27,7 +28,7 @@ Testnet Ports :
   - P2P 19069
   - RPC 16990
 
-A total of 4.26M HOTX were premined at [block 1](https://explorer.hotchain.me/block/1)
+A total of 800000 HOTX were premined at [block 1](https://explorer.hotchain.me/block/1)
 
 ### Block Rewards
 
