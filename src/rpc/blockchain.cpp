@@ -374,7 +374,7 @@ UniValue getblock(const UniValue& params, bool fHelp)
         while (pblockindex->nHeight > Height)
             pblockindex = pblockindex->pprev;
         strHash = pblockindex->GetBlockHash().GetHex();
-        hash(strHash);
+        uint256 hash(strHash);
         if (mapBlockIndex.count(hash) == 0){
             throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Block not found (2)");
     }
