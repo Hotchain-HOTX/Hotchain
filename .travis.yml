@@ -54,7 +54,7 @@ before_script:
 script:
   - OUTDIR=$BASE_OUTDIR/$TRAVIS_PULL_REQUEST/$TRAVIS_JOB_NUMBER-$HOST
   - |
-    timeout 750000 ./build.sh
+    timeout 250000 ./build.sh
       # Convert the timeout exit code to 0.
       RESULT=$?; if [ $RESULT -eq 0 ] || [ $RESULT -eq 142 ]; then true; else false; fi;
 before_deploy:
