@@ -62,12 +62,13 @@ static Checkpoints::MapCheckpoints mapCheckpoints =
     (200, uint256("0x00000036529d83e78ee89b0ff27e9b9844c3246af430095354040c575cd20b2b"))
     (250, uint256("0x6d9cfc90a07cd5771b4680bb7e842951786c26b1ad73f21682e0efb9891d6e1c"))
     (300, uint256("0x9a0faa4d2f0342d95017511a3e620775f9a2f56635ad5c59cf61d9cc1d1804e4"))
-    (500, uint256("0x5fc9a775b58c444811e2183ef46defc932a13344595ec3759400bc54ae0c2048"));
+    (500, uint256("0x5fc9a775b58c444811e2183ef46defc932a13344595ec3759400bc54ae0c2048"))
+    (15000, uint256("0x5fc9a775b58c444811e2183ef46defc932a13344595ec3759400bc54ae0c2048"));
 	
 static const Checkpoints::CCheckpointData data = {
     &mapCheckpoints,
-    1551510760, // * UNIX timestamp of last checkpoint block
-    841,    // * total number of transactions between genesis and last checkpoint
+    1552385233, // * UNIX timestamp of last checkpoint block
+    29934,    // * total number of transactions between genesis and last checkpoint
                 //   (the tx=... number in the SetBestChain debug.log lines)
     2000        // * estimated number of transactions per day after checkpoint
 };
@@ -191,7 +192,7 @@ public:
         }
 
 
-		vSeeds.push_back(CDNSSeedData("node-01.hotchain.me", "node-01.hotchain.me"));
+	vSeeds.push_back(CDNSSeedData("node-01.hotchain.me", "node-01.hotchain.me"));
         vSeeds.push_back(CDNSSeedData("node-02.hotchain.me", "node-02.hotchain.me"));
         vSeeds.push_back(CDNSSeedData("node-03.hotchain.me", "node-03.hotchain.me"));
         vSeeds.push_back(CDNSSeedData("node-04.hotchain.me", "node-04.hotchain.me"));
