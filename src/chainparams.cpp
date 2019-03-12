@@ -192,7 +192,7 @@ public:
         }
 
 
-	vSeeds.push_back(CDNSSeedData("node-01.hotchain.me", "node-01.hotchain.me"));
+        vSeeds.push_back(CDNSSeedData("node-01.hotchain.me", "node-01.hotchain.me"));
         vSeeds.push_back(CDNSSeedData("node-02.hotchain.me", "node-02.hotchain.me"));
         vSeeds.push_back(CDNSSeedData("node-03.hotchain.me", "node-03.hotchain.me"));
         vSeeds.push_back(CDNSSeedData("node-04.hotchain.me", "node-04.hotchain.me"));
