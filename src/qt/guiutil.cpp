@@ -102,7 +102,7 @@ void setupAddressWidget(QValidatedLineEdit* widget, QWidget* parent)
     widget->setFont(bitcoinAddressFont());
     // We don't want translators to use own addresses in translations
     // and this is the only place, where this address is supplied.
-    widget->setPlaceholderText(QObject::tr("Enter a HOTCHAIN address (e.g. %1)").arg("RHD3HxhEkWGsupqZeN1p3QkvZq7EjQTCQH"));
+    widget->setPlaceholderText(QObject::tr("Enter a HOTCHAIN address (e.g. %1)").arg("hWv33Hw2H65P5f3c2uVXoGjktpprmxryB7"));
     widget->setValidator(new BitcoinAddressEntryValidator(parent));
     widget->setCheckValidator(new BitcoinAddressCheckValidator(parent));
 }
