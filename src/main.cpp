@@ -1814,22 +1814,17 @@ int64_t GetBlockValue(int nHeight)
     
     if (nMoneySupply >= Params().MaxMoneyOut())
         return 0 * COIN;
-    
-    if (nHeight == 0) {
+       if (nHeight == 0) {
         nSubsidy = 800000 * COIN;
     } else if (nHeight < 20 && nHeight >= 0) {
         nSubsidy = 500 * COIN;
-	} else if (nHeight < 500 && nHeight >= 20) {
+    } else if (nHeight < 500 && nHeight >= 20) {
         nSubsidy = 100 * COIN;
-    } else if (nHeight < 25000 && nHeight >= 500) {
-        nSubsidy = 10 * COIN;
-    } else if (nHeight < 40000 && nHeight >= 25000) {
-        nSubsidy = 0.235 * COIN;
-    } else if (nHeight < 60000 && nHeight >= 40000) {
-        nSubsidy = 0.35 * COIN;
-    } else if (nHeight < 75000 && nHeight >= 60000) {
-        nSubsidy = 0.59 * COIN;
-    } else if (nHeight < 100000 && nHeight >= 75000) {
+    } else if (nHeight < 1000 && nHeight >= 500) {
+        nSubsidy = 1 * COIN;
+    } else if (nHeight < 20000 && nHeight >= 1000) {
+        nSubsidy = 0.59 * COIN;	
+    } else if (nHeight < 100000 && nHeight >= 20000) {
         nSubsidy = 4.75 * COIN;
     } else if (nHeight < 360000 && nHeight >= 100000) {
         nSubsidy = 6.06 * COIN;
@@ -1962,6 +1957,7 @@ void CheckForkWarningConditionsOnNewFork(CBlockIndex* pindexNewForkTip)
 // Requires cs_main.
 void Misbehaving(NodeId pnode, int howmuch)
 {
+
     if (howmuch == 0)
         return;
 

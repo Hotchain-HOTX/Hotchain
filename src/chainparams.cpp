@@ -53,39 +53,39 @@ static void convertSeed6(std::vector<CAddress>& vSeedsOut, const SeedSpec6* data
 // + Contains no strange transactions
 static Checkpoints::MapCheckpoints mapCheckpoints =
     boost::assign::map_list_of
-    (0, uint256("0xd068f8289608418e66e7beb9c2a4ba566ee90c0e56f9e4c6eb910135f6bfa98f"))
-    (20, uint256("0x000002e51d8e490cddf0c50405fd4f4b82aacf370cca51aa88654f43f30ef22e"))
-    (50, uint256("0x0000009f2cc7fc31c7521cf831b401e65ca766fda81727f2bd58707b18e5db29"))
-    (75, uint256("0x00000069ed8ff5995d1a0aa6f1cf264d65ed1f81b3a28bb6824b825818bcb920"))
-    (100, uint256("0x00000027acc7cdfe4d64cd2a18e9d31ff8790c24665e2a4cc49b9df8d511d9c6"))
-    (150, uint256("0x000000282a9338e31746eb7f6f355951bd7cf7fe6ac061e32eb3c116e8ca0de2"))
-    (200, uint256("0x00000036529d83e78ee89b0ff27e9b9844c3246af430095354040c575cd20b2b"))
-    (250, uint256("0x6d9cfc90a07cd5771b4680bb7e842951786c26b1ad73f21682e0efb9891d6e1c"))
-    (300, uint256("0x9a0faa4d2f0342d95017511a3e620775f9a2f56635ad5c59cf61d9cc1d1804e4"))
-    (500, uint256("0x5fc9a775b58c444811e2183ef46defc932a13344595ec3759400bc54ae0c2048"))
-    (15000, uint256("0x86af6be0db6343e22f9b9c0d7b526cc9308fc62e4285168804b9710f55659fbe"));
+    (0, uint256("0x639b64c0178c2b6629892024f79633fe9cd62ba6457cb5e2dd08d0c1e76d9dc4"))
+    (20, uint256("0x00000492be651e07acc7994f7f944e3c4dde2297cfe27493afd045c52cad1a36"))
+    (50, uint256("0x000002285bcb58ca7cfb0a8bc7082c22e2160664e5bf0585c637a484469ffef1"))
+    (75, uint256("0x0000031e9cdf4632b13aaa40edb6dddec9fec15ac376ad839eb0e8d7447d1b0d"))
+    (100, uint256("0x000003f2455798fdece75f97e098242968e76754d8c74bdbe5de90d06969ad3e"))
+    (150, uint256("0x000000ff70be9cf4cd255823c063dd74ee7d3b27df8dff9d0f9663a51b32de24"))
+    (200, uint256("0x0000017868e5e8f890acc015df37ff8d17805269190107b4e7788228f2f0e93f"))
+    (790, uint256("0xe1efc8c560e3fba913cb44edd3768bc0e114edfdec32b3f517d3e4f6ddf66bb5"));
+//    (300, uint256("0x9a0faa4d2f0342d95017511a3e620775f9a2f56635ad5c59cf61d9cc1d1804e4"))
+//    (500, uint256("0x5fc9a775b58c444811e2183ef46defc932a13344595ec3759400bc54ae0c2048"))
+//    (15000, uint256("0x86af6be0db6343e22f9b9c0d7b526cc9308fc62e4285168804b9710f55659fbe"));
 	
 static const Checkpoints::CCheckpointData data = {
     &mapCheckpoints,
-    1552385233, // * UNIX timestamp of last checkpoint block
-    29934,    // * total number of transactions between genesis and last checkpoint
+    1556095899, // * UNIX timestamp of last checkpoint block
+    1391,    // * total number of transactions between genesis and last checkpoint
                 //   (the tx=... number in the SetBestChain debug.log lines)
     2000        // * estimated number of transactions per day after checkpoint
 };
 
 static Checkpoints::MapCheckpoints mapCheckpointsTestnet =
-    boost::assign::map_list_of(0, uint256("0xd068f8289608418e66e7beb9c2a4ba566ee90c0e56f9e4c6eb910135f6bfa98f"));
+    boost::assign::map_list_of(0, uint256("0x639b64c0178c2b6629892024f79633fe9cd62ba6457cb5e2dd08d0c1e76d9dc4"));
 static const Checkpoints::CCheckpointData dataTestnet = {
     &mapCheckpointsTestnet,
-    1551486723,
+    1556047635,
     0,
     250};
 
 static Checkpoints::MapCheckpoints mapCheckpointsRegtest =
-    boost::assign::map_list_of(0, uint256("0xd068f8289608418e66e7beb9c2a4ba566ee90c0e56f9e4c6eb910135f6bfa98f"));
+    boost::assign::map_list_of(0, uint256("0x639b64c0178c2b6629892024f79633fe9cd62ba6457cb5e2dd08d0c1e76d9dc4"));
 static const Checkpoints::CCheckpointData dataRegtest = {
     &mapCheckpointsRegtest,
-    1551486723,
+    1556047635,
     0,
     100};
 
@@ -112,10 +112,10 @@ public:
          * The characters are rarely used upper ASCII, not valid as UTF-8, and produce
          * a large 4-byte int at any alignment.
          */
-        pchMessageStart[0] = 0x48;
-        pchMessageStart[1] = 0x4f;
-        pchMessageStart[2] = 0x54;
-        pchMessageStart[3] = 0x58;
+        pchMessageStart[0] = 0x3c;
+        pchMessageStart[1] = 0x4d;
+        pchMessageStart[2] = 0x5f;
+        pchMessageStart[3] = 0x6b;
         vAlertPubKey = ParseHex("0444c17bb301c3a3b2bf166a0815e73b0c715976df4ea972e86df1db0f58ab69bc7188661b1d53667f52d8cc9ce9e9037b7880c9ddf4bc664c7b2fbad349c9d94c");
         nP2pPort = 9069;
         nRpcPort = 6990;
@@ -136,7 +136,7 @@ public:
         nLastPoWBlock = 200;
         //nModifierUpdateBlock = 1;
         //nZerocoinStartHeight = 210;
-        //nZerocoinStartTime = 1551486723; 
+        //nZerocoinStartTime = 1556047635; 
         //nBlockEnforceSerialRange = 895400; //Enforce serial range starting this block
         //nBlockRecalculateAccumulators = 908000; //Trigger a recalculation of accumulators
         //nBlockFirstFraudulent = 891737; //First block that bad serials emerged
@@ -163,7 +163,7 @@ public:
         genesis.hashMerkleRoot = genesis.BuildMerkleTree();
         genesis.nVersion = 4;
         genesis.nAccumulatorCheckpoint = 0;
-        genesis.nTime = 1551486723;
+        genesis.nTime = 1556047635;
         genesis.nBits = 504365040;
         genesis.nNonce = 80512;
 
@@ -187,23 +187,18 @@ public:
                 std::cout << " merklehash: 0x"  << genesis.hashMerkleRoot.ToString().c_str() <<  "\n";
             }
         } else {
-            assert(hashGenesisBlock == uint256("0xd068f8289608418e66e7beb9c2a4ba566ee90c0e56f9e4c6eb910135f6bfa98f"));
+            assert(hashGenesisBlock == uint256("0x639b64c0178c2b6629892024f79633fe9cd62ba6457cb5e2dd08d0c1e76d9dc4"));
             assert(genesis.hashMerkleRoot == uint256("0x5d68db3baf3175ec87588e5dce18cdad7b2fc568b7303b27b10b068915742ce7"));
         }
 
 
-        vSeeds.push_back(CDNSSeedData("node-01.hotchain.me", "node-01.hotchain.me"));
-        vSeeds.push_back(CDNSSeedData("node-02.hotchain.me", "node-02.hotchain.me"));
-        vSeeds.push_back(CDNSSeedData("node-03.hotchain.me", "node-03.hotchain.me"));
-        vSeeds.push_back(CDNSSeedData("node-04.hotchain.me", "node-04.hotchain.me"));
-        vSeeds.push_back(CDNSSeedData("node-05.hotchain.me", "node-05.hotchain.me"));
-        vSeeds.push_back(CDNSSeedData("node-06.hotchain.me", "node-06.hotchain.me"));
-        vSeeds.push_back(CDNSSeedData("node-07.hotchain.me", "node-07.hotchain.me"));
-        vSeeds.push_back(CDNSSeedData("node-08.hotchain.me", "node-08.hotchain.me"));
-        vSeeds.push_back(CDNSSeedData("node-09.hotchain.me", "node-09.hotchain.me"));
-        vSeeds.push_back(CDNSSeedData("node-10.hotchain.me", "node-10.hotchain.me"));
+        vSeeds.push_back(CDNSSeedData("node-21.hotchain.me", "node-21.hotchain.me"));
+        vSeeds.push_back(CDNSSeedData("node-22.hotchain.me", "node-22.hotchain.me"));
+        vSeeds.push_back(CDNSSeedData("node-23.hotchain.me", "node-23.hotchain.me"));
+        vSeeds.push_back(CDNSSeedData("node-24.hotchain.me", "node-24.hotchain.me"));
+        vSeeds.push_back(CDNSSeedData("node-25.hotchain.me", "node-25.hotchain.me"));
 
-        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 100); // Hotchain's wallet address starts with a h
+        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 41); // Hotchain's wallet address starts with a h
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 40); // 7
         base58Prefixes[SECRET_KEY] = std::vector<unsigned char>(1, 40); // 7
         base58Prefixes[EXT_PUBLIC_KEY] = boost::assign::list_of(0x02)(0x2D)(0x25)(0x33).convert_to_container<std::vector<unsigned char> >();
@@ -222,7 +217,7 @@ public:
 
         nPoolMaxTransactions = 3;
         strSporkKey = "047c3db4661b777f31ceb1d61a9d8aa8035410e2134d01b6291966fe062e7abc207efe7d51019e20fd7809da1b306cc2040b44e60f65b7047cd4573a985328c946";
-        strObfuscationPoolDummyAddress = "hWQhYziqvYbRW6iutAeChDkjajNbevHgmh";
+        strObfuscationPoolDummyAddress = "HmHxoTS5e6hbxBysZR93vamBRjxqZy7qCR";
 
         /** Zerocoin */
         zerocoinModulus = "25195908475657893494027183240048398571429282126204032027777137836043662020707595556264018525880784"
@@ -277,7 +272,7 @@ public:
         nMaxMoneyOut = 21000000 * COIN;
 
         //! Modify the testnet genesis block so the timestamp is valid for a later start.
-        genesis.nTime = 1551486723;
+        genesis.nTime = 1556047635;
         genesis.nNonce = 80512;
 
         hashGenesisBlock = genesis.GetHash();
@@ -301,7 +296,7 @@ public:
 
             }
         } else {
-            assert(hashGenesisBlock == uint256("0xd068f8289608418e66e7beb9c2a4ba566ee90c0e56f9e4c6eb910135f6bfa98f"));
+            assert(hashGenesisBlock == uint256("0x639b64c0178c2b6629892024f79633fe9cd62ba6457cb5e2dd08d0c1e76d9dc4"));
             assert(genesis.hashMerkleRoot == uint256("0x5d68db3baf3175ec87588e5dce18cdad7b2fc568b7303b27b10b068915742ce7"));
         }
 
@@ -364,7 +359,7 @@ public:
         nTargetTimespan = 24 * 60 * 60; // Hotchain: 1 day
         nTargetSpacing = 1 * 60;        // Hotchain: 1 minutes
         bnProofOfWorkLimit = ~uint256(0) >> 1;
-        genesis.nTime = 1551486723;
+        genesis.nTime = 1556047635;
         genesis.nBits = 504365040;
         genesis.nNonce = 80512;
         nP2pPort = 51476;
@@ -390,7 +385,7 @@ public:
 
             }
         } else {
-            assert(hashGenesisBlock == uint256("0xd068f8289608418e66e7beb9c2a4ba566ee90c0e56f9e4c6eb910135f6bfa98f"));
+            assert(hashGenesisBlock == uint256("0x639b64c0178c2b6629892024f79633fe9cd62ba6457cb5e2dd08d0c1e76d9dc4"));
             assert(genesis.hashMerkleRoot == uint256("0x5d68db3baf3175ec87588e5dce18cdad7b2fc568b7303b27b10b068915742ce7"));
         }
         if (regenerate)
